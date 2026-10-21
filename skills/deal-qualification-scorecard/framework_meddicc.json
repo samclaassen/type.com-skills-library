@@ -1,0 +1,168 @@
+{
+ "schema_version": 1,
+ "key": "meddicc",
+ "name": "MEDDICC",
+ "elements": [
+  {
+   "key": "metrics",
+   "short": "M",
+   "label": "Metrics",
+   "description": "The measurable result the customer expects, in their own numbers.",
+   "parts": [
+    {
+     "key": "baseline",
+     "label": "Current number",
+     "question": "What does this cost you today, in hours, money or errors, and how do you measure it?"
+    },
+    {
+     "key": "target",
+     "label": "Target they will measure",
+     "question": "What number would tell you this worked, and by when?"
+    }
+   ],
+   "topics": [
+    "Target"
+   ]
+  },
+  {
+   "key": "economic_buyer",
+   "short": "E",
+   "label": "Economic buyer",
+   "description": "The person who can approve the spend, and whether they have engaged with us.",
+   "parts": [
+    {
+     "key": "named",
+     "label": "Named budget owner",
+     "question": "Who signs off on a purchase of this size?"
+    },
+    {
+     "key": "engaged",
+     "label": "Engaged directly",
+     "question": "Could we get 20 minutes with them to check this matches their priorities?"
+    }
+   ],
+   "topics": [
+    "Economic buyer"
+   ]
+  },
+  {
+   "key": "decision_criteria",
+   "short": "DC",
+   "label": "Decision criteria",
+   "description": "What the customer will judge the options on, and which criteria are must-haves.",
+   "parts": [
+    {
+     "key": "criteria",
+     "label": "Stated criteria",
+     "question": "What will you compare the options on?"
+    },
+    {
+     "key": "must_haves",
+     "label": "Must-haves ranked",
+     "question": "If you could only get two of those, which two?"
+    }
+   ],
+   "topics": []
+  },
+  {
+   "key": "decision_process",
+   "short": "DP",
+   "label": "Decision process",
+   "description": "The steps, people and date between now and a decision.",
+   "parts": [
+    {
+     "key": "steps",
+     "label": "Steps and approvers",
+     "question": "Walk me through what happens between now and a decision: who is involved at each step?"
+    },
+    {
+     "key": "date",
+     "label": "Decision date",
+     "question": "When do you need a decision, and what happens if it slips?"
+    }
+   ],
+   "topics": [
+    "Decision date"
+   ]
+  },
+  {
+   "key": "identify_pain",
+   "short": "I",
+   "label": "Identify pain",
+   "description": "The specific problem in the customer's words, and why it matters now.",
+   "parts": [
+    {
+     "key": "pain",
+     "label": "Pain in their words",
+     "question": "What is this problem costing the team today, in your own words?"
+    },
+    {
+     "key": "urgency",
+     "label": "Why it matters now",
+     "question": "What happens if nothing changes this quarter?"
+    }
+   ],
+   "topics": []
+  },
+  {
+   "key": "champion",
+   "short": "Ch",
+   "label": "Champion",
+   "description": "A named person on the customer side who wants this and has acted for it.",
+   "parts": [
+    {
+     "key": "named",
+     "label": "Named champion",
+     "question": "Who on your side wants this most, and why?"
+    },
+    {
+     "key": "acting",
+     "label": "Has acted for the deal",
+     "question": "What would help you make the case internally, and who else should hear it?"
+    }
+   ],
+   "topics": [
+    "Champion"
+   ]
+  },
+  {
+   "key": "competition",
+   "short": "Co",
+   "label": "Competition",
+   "description": "The alternatives the customer is weighing, including building it or doing nothing.",
+   "parts": [
+    {
+     "key": "alternatives",
+     "label": "Alternatives considered",
+     "question": "What else are you looking at, including building it yourselves or doing nothing?"
+    },
+    {
+     "key": "position",
+     "label": "How we compare",
+     "question": "Where do we stand against the other options on your must-haves?"
+    }
+   ],
+   "topics": []
+  }
+ ],
+ "crm_fields": [
+  {
+   "field": "close_date",
+   "label": "Close date",
+   "element": "decision_process",
+   "topic": "Decision date"
+  },
+  {
+   "field": "economic_buyer",
+   "label": "Economic buyer",
+   "element": "economic_buyer",
+   "topic": "Economic buyer"
+  },
+  {
+   "field": "champion",
+   "label": "Champion",
+   "element": "champion",
+   "topic": "Champion"
+  }
+ ]
+}

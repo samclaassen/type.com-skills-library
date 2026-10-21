@@ -1,0 +1,77 @@
+#### Search Console report: harborandvine.example — Aug 29–Sep 25 vs. Aug 1–Aug 28
+
+**Summary:** 2,434 clicks (−14%), 59,098 impressions (−2%), avg position 9.5 (+0.5, worse). 2 critical, 9 high-priority findings.
+_As of 2026-09-28; periods end 3 days before as-of for Search Console data lag. Mode: full (query x page). Totals: property totals (--totals). Expected CTR: auto curve (ctr_curve.json). Observed = from the export; est. = projection._
+
+**🔻 Declining pages** (sorted by click loss)
+| Page | Clicks now | Clicks prior | Change | Top query | Likely cause |
+|---|---|---|---|---|---|
+| /wine-club | 218 | 450 | −52% | "wine club membership" | Avg position 3.7→6.7 |
+| /blog/best-wine-gifts | 145 | 270 | −46% | "best wine gifts" | Impressions −45% at stable position (consistent with lower demand) |
+| /blog/2025-holiday-wines | 0 | 95 | −100% | "holiday wine picks" | No impressions this period |
+| /tasting-room | 152 | 208 | −27% | "wine tasting near me" | CTR 12.4%→9.4% at similar position |
+_Likely cause lists what the data shows changed; it is an observation, not a confirmed cause._
+→ Action: Open each page's top query in a live search and check URL Inspection. Position drops: refresh the content and internal links. Stable position with fewer impressions: demand fell, monitor rather than rewrite.
+
+**🎯 CTR opportunities** (position 1-5, CTR below benchmark)
+| Query | Position | Impressions | CTR | Expected CTR | Gap | Est. click gain |
+|---|---|---|---|---|---|---|
+| "pinot noir under $30" | 2.5 | 6,200 | 3.1% | 13.2% | −10.2pp | est. +632 |
+| "how long does opened wine last" | 3.4 | 2,400 | 2.5% | 9.8% | −7.3pp | est. +175 |
+| "wine tasting near me" | 2.9 | 1,450 | 4.8% | 11.5% | −6.6pp | est. +96 |
+| "best wine gifts" | 3.6 | 1,650 | 5.8% | 9.2% | −3.4pp | est. +57 |
+| "rosé wine delivery" | 4.6 | 1,500 | 3.8% | 6.8% | −3.0pp | est. +45 |
+| "wine gift ideas" | 4.1 | 1,000 | 5.0% | 7.8% | −2.8pp | est. +28 |
+→ Action: Rewrite title tag and meta description. Test question-format title.
+
+**📈 Rising queries**
+| Query | Impressions | Position change | Trend |
+|---|---|---|---|
+| "natural wine explained" | 2,600 | 14.2→9.6 | Impr +189%, pos ↑4.6 |
+| "orange wine" | 700 | new at 10.4 | New this period |
+| "pinot noir vs merlot" | 520 | 22.0→13.4 | Impr +30%, pos ↑8.6 |
+→ Action: Strengthen the ranking page for these queries (section, FAQ, internal links) or create a dedicated page to accelerate.
+
+**🔀 Cannibalization**
+| Query | URLs competing | Best position | Recommendation |
+|---|---|---|---|
+| "how to store wine" | /blog/how-to-store-wine (53%), /guides/wine-storage (34%), /blog/wine-fridge-temperature (12%) | 6.1 | Consolidate to /blog/how-to-store-wine, redirect or de-optimize /guides/wine-storage, /blog/wine-fridge-temperature |
+| "wine pairing for salmon" | /blog/wine-pairing-guide (66%), /blog/pinot-noir-food-pairing (34%) | 7.2 | Consolidate to /blog/wine-pairing-guide, redirect or de-optimize /blog/pinot-noir-food-pairing |
+_Percentages are each URL's share of the query's impressions; URLs under 10% are ignored as noise._
+→ Action: Pick one canonical URL per query, merge the overlapping content into it, and 301-redirect or de-optimize the others after checking they serve the same intent.
+
+**🏁 Page-1 opportunities** (positions 8-12)
+| Query | Position | Impressions | Est. click gain if pos 5 |
+|---|---|---|---|
+| "best wine for thanksgiving" | 9.3 | 3,200 | est. +152 clicks/28d |
+| "wine gift baskets" | 11.2 | 2,100 | est. +108 clicks/28d |
+| "natural wine explained" | 9.6 | 2,600 | est. +86 clicks/28d |
+| "cabernet sauvignon food pairing" | 8.6 | 900 | est. +40 clicks/28d |
+| "orange wine" | 10.4 | 700 | est. +17 clicks/28d |
+| "wine aerator worth it" | 8.5 | 340 | est. +8 clicks/28d |
+_Est. gain = impressions x (expected CTR at position 5, 6.0%, − current CTR), assuming impressions hold._
+_Left out because they are split across URLs (see 🔀 Cannibalization): "how to store wine"._
+→ Action: Expand the ranking page for the query (comparison table, fresher content, updated date in title) and add internal links from strong pages.
+
+**📱 Top queries by device & country** (current period)
+| Query | Clicks | Desktop | Mobile | Tablet | Top countries | Note |
+|---|---|---|---|---|---|---|
+| "harbor and vine" | 905 | 38% · pos 1.0 | 58% · pos 1.3 | 4% · pos 1.1 | USA 93%, CAN 5%, GBR 2% |  |
+| "pinot noir under $30" | 190 | 63% · pos 1.0 | 35% · pos 4.0 | 2% · pos 2.0 | USA 71%, CAN 12%, GBR 9% | Mobile pos 4.0 vs desktop 1.0 |
+| "wine club membership" | 120 | 38% · pos 6.5 | 57% · pos 7.0 | 4% · pos 6.8 | USA 71%, CAN 12%, GBR 9% |  |
+| "pinot noir" | 100 | 38% · pos 5.8 | 58% · pos 6.3 | 4% · pos 6.1 | USA 71%, CAN 12%, GBR 9% |  |
+| "best wine gifts" | 95 | 38% · pos 3.3 | 58% · pos 3.8 | 4% · pos 3.6 | USA 70%, CAN 12%, GBR 10% |  |
+_Device and country cells are each query's share of clicks._
+
+**✅ Prioritized actions**
+1. **[critical]** /wine-club lost 232 clicks (observed) — Check /wine-club for recent edits, indexing or canonical changes; refresh content for "wine club membership".
+2. **[critical]** "pinot noir under $30" est. +632 clicks if CTR met benchmark — Rewrite the title and meta description for "pinot noir under $30" (ranks 2.5, CTR −10.2pp vs. benchmark).
+3. **[high]** /blog/best-wine-gifts lost 125 clicks (observed) — Position held but impressions fell on /blog/best-wine-gifts; likely lower demand. Monitor; no on-page fix indicated by the data.
+4. **[high]** /blog/2025-holiday-wines lost 95 clicks (observed) — /blog/2025-holiday-wines has no impressions this period; check URL Inspection for indexing, redirect or removal.
+5. **[high]** /tasting-room lost 56 clicks (observed) — CTR fell at a similar position on /tasting-room; look at the live result for "wine tasting near me" and refresh the title and description.
+6. **[high]** "how long does opened wine last" est. +175 clicks if CTR met benchmark — Rewrite the title and meta description for "how long does opened wine last" (ranks 3.4, CTR −7.3pp vs. benchmark).
+7. **[high]** "natural wine explained" +1,700 impressions (observed) — Build on momentum for "natural wine explained": strengthen the ranking page or create a dedicated page.
+8. **[high]** "how to store wine" split across 3 URLs (observed) — Consolidate "how to store wine" onto /blog/how-to-store-wine; merge or redirect the competing URLs after an intent check.
+9. **[high]** "wine pairing for salmon" split across 2 URLs (observed) — Consolidate "wine pairing for salmon" onto /blog/wine-pairing-guide; merge or redirect the competing URLs after an intent check.
+10. **[high]** "best wine for thanksgiving" est. +152 clicks if moved to position 5 — Push "best wine for thanksgiving" from position 9.3 onto page 1: expand /blog/thanksgiving-wine-pairings and add internal links.
+11. **[high]** "wine gift baskets" est. +108 clicks if moved to position 5 — Push "wine gift baskets" from position 11.2 onto page 1: expand /gift-baskets and add internal links.

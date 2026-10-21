@@ -1,0 +1,16 @@
+handle,title,variant_title,sku,price,compare_at_price,unit_cost,collections,inventory,units_sold_90d,gift_card
+linen-apron,Linen Apron,Natural,FH-APR-NAT,48.00,,14.00,Textiles;BFCM Eligible,240,820,false
+ceramic-pour-over-set,Ceramic Pour-Over Set,Default Title,FH-POS-WHT,64.00,,21.00,Kitchen;BFCM Eligible,150,540,false
+waxed-canvas-tote,Waxed Canvas Tote,Olive,FH-TOT-OLV,78.00,,26.00,Bags;BFCM Eligible,120,360,false
+stoneware-mug-set,Stoneware Mug Set (4),Speckled,FH-MUG-SPK,56.00,,19.00,Kitchen;BFCM Eligible,180,610,false
+merino-wool-throw,Merino Wool Throw,Charcoal,FH-THR-CHA,140.00,,52.00,Textiles;BFCM Eligible,70,230,false
+walnut-serving-board,Walnut Serving Board,Default Title,FH-WSB-STD,72.00,96.00,24.00,Kitchen;BFCM Eligible,110,380,false
+linen-napkins,Linen Napkins (Set of 4),Default Title,FH-NAP-NAT,38.00,,11.00,Textiles;New Arrivals,140,95,false
+stoneware-pasta-bowls,Stoneware Pasta Bowls (2),Default Title,FH-PBW-SPK,52.00,,18.00,Kitchen;New Arrivals,96,64,false
+merino-wool-throw-oat,Merino Wool Throw — Oat,Default Title,FH-THR-OAT,77.00,140.00,52.00,Textiles;Last Chance,18,41,false
+stoneware-mug-set-slate,Stoneware Mug Set (4) — Slate,Default Title,FH-MUG-SLT,28.00,56.00,19.00,Kitchen;Last Chance,26,58,false
+linen-apron-sage,Linen Apron — Sage,Default Title,FH-APR-SGE,29.00,48.00,14.00,Textiles;Last Chance,33,66,false
+gift-card,Gift Card,$25,FH-GC-25,25.00,,,Gift Cards,,40,true
+gift-card,Gift Card,$50,FH-GC-50,50.00,,,Gift Cards,,120,true
+gift-card,Gift Card,$100,FH-GC-100,100.00,,,Gift Cards,,85,true
+gift-card,Gift Card,$200,FH-GC-200,200.00,,,Gift Cards,,20,true

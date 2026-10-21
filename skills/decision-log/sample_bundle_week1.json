@@ -1,0 +1,126 @@
+{
+  "schema_version": 1,
+  "_comment": "FICTIONAL sample data. Tessmarrow and every person here are invented; links are sample Granola-style URLs.",
+  "scan": {"from": "2026-10-05", "to": "2026-10-09", "cadence": "weekly", "folder": null, "workspace_only": false},
+  "sources": {
+    "meetings": {"provider": "granola", "status": "ok", "detail": null, "plan": "business"}
+  },
+  "meetings": [
+    {
+      "meeting_id": "sample-pc1005",
+      "title": "Pricing council",
+      "start": "2026-10-05T10:00:00-07:00",
+      "url": "https://notes.granola.ai/d/sample-pc1005",
+      "notes_status": "ok",
+      "transcript_status": "ok",
+      "transcript_text": "Dana: We've gone back and forth on twenty percent. Finance can live with fifteen. Okay, decided: fifteen percent off for annual, monthly stays at list. Sam, you own updating the price book. Sam: Got it, I'll have the price book updated before the renewal batch."
+    },
+    {
+      "meeting_id": "sample-cs1006",
+      "title": "CS leadership weekly",
+      "start": "2026-10-06T09:30:00-07:00",
+      "url": "https://notes.granola.ai/d/sample-cs1006",
+      "notes_status": "ok",
+      "transcript_status": "ok",
+      "transcript_text": "Priya: Churn above fifty k was double the average last quarter. A pooled team isn't catching it. So we're agreed: anything over fifty k ARR gets a named CSM from November first. Let's check how it's going mid-December."
+    },
+    {
+      "meeting_id": "sample-gtm1007",
+      "title": "GTM sync",
+      "start": "2026-10-07T11:00:00-07:00",
+      "url": "https://notes.granola.ai/d/sample-gtm1007",
+      "notes_status": "ok",
+      "transcript_status": "denied",
+      "notes_text": "Pipeline review. Leo proposed replacing the free tier with a 14-day trial; to be discussed with finance. No decision yet."
+    },
+    {
+      "meeting_id": "sample-fin1008",
+      "title": "Month-end close review",
+      "start": "2026-10-08T14:00:00-07:00",
+      "url": "https://notes.granola.ai/d/sample-fin1008",
+      "notes_status": "ok",
+      "transcript_status": "ok",
+      "transcript_text": "Mara: The board pack is due on day seven, so day eight is too late. Decision: we close on business day five from October. Let's look again on the fifteenth, after the first fast close."
+    },
+    {
+      "meeting_id": "sample-ss1008",
+      "title": "Sales standup",
+      "start": "2026-10-08T16:00:00-07:00",
+      "url": "https://notes.granola.ai/d/sample-ss1008",
+      "notes_status": "ok",
+      "transcript_status": "not_requested",
+      "summary_text": "Team confirmed annual plans get 15% off; monthly remains list price. Reps to quote annual first."
+    }
+  ],
+  "decisions": [
+    {
+      "ref": "w1-1",
+      "kind": "decision",
+      "meeting_id": "sample-pc1005",
+      "statement": "Annual plans get 15% off list price; monthly plans stay at list price",
+      "topic": "pricing/annual-discount",
+      "area": "pricing",
+      "decided_by": ["Dana Ortiz"],
+      "owner": "Sam Kim",
+      "rationale": "Finance can live with 15%; 20% was debated and dropped.",
+      "alternatives_rejected": ["20% off annual plans"],
+      "revisit_on": null,
+      "quote": "Okay, decided: fifteen percent off for annual, monthly stays at list. Sam, you own updating the price book.",
+      "quote_source": "transcript"
+    },
+    {
+      "ref": "w1-2",
+      "kind": "decision",
+      "meeting_id": "sample-cs1006",
+      "statement": "Accounts above $50k ARR get a named CSM from Nov 1",
+      "topic": "cs/named-csm-threshold",
+      "area": "customer-success",
+      "decided_by": ["Priya Raman"],
+      "owner": null,
+      "rationale": "Churn above $50k ARR was double the average last quarter.",
+      "alternatives_rejected": ["Keep one pooled CSM team"],
+      "revisit_on": "2026-12-15",
+      "quote": "So we're agreed: anything over fifty k ARR gets a named CSM from November first.",
+      "quote_source": "transcript"
+    },
+    {
+      "ref": "w1-3",
+      "kind": "proposal",
+      "meeting_id": "sample-gtm1007",
+      "statement": "Replace the free tier with a 14-day trial",
+      "topic": "pricing/free-tier",
+      "area": "pricing",
+      "decided_by": ["Leo Fischer"],
+      "quote": "Leo proposed replacing the free tier with a 14-day trial; to be discussed with finance.",
+      "quote_source": "notes"
+    },
+    {
+      "ref": "w1-4",
+      "kind": "decision",
+      "meeting_id": "sample-fin1008",
+      "statement": "Close the books on business day 5 instead of day 8, starting with October",
+      "topic": "finance/close-calendar",
+      "area": "finance",
+      "decided_by": ["Mara Quinn"],
+      "owner": "Mara Quinn",
+      "rationale": "The board pack is due on day 7, so day 8 is too late.",
+      "alternatives_rejected": ["Keep closing on day 8"],
+      "revisit_on": "2026-10-15",
+      "quote": "Decision: we close on business day five from October. Let's look again on the fifteenth, after the first fast close.",
+      "quote_source": "transcript"
+    },
+    {
+      "ref": "w1-5",
+      "kind": "decision",
+      "meeting_id": "sample-ss1008",
+      "statement": "Annual plans get 15% off list price; monthly plans stay at list price",
+      "topic": "pricing/annual-discount",
+      "area": "pricing",
+      "decided_by": [],
+      "owner": "Sam Kim",
+      "quote": "Team confirmed annual plans get 15% off; monthly remains list price.",
+      "quote_source": "summary"
+    }
+  ],
+  "user_actions": []
+}

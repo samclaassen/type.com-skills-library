@@ -1,0 +1,8 @@
+{
+  "client": "Acme Corp",
+  "items": [
+    {"description": "Brand strategy workshop", "qty": 1, "rate": 2500, "service_date": "2026-09-15"},
+    {"description": "Logo concepts — 3 rounds", "qty": 1, "rate": 4000},
+    {"description": "Brand guidelines document", "qty": 1, "rate": 1500}
+  ]
+}

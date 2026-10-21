@@ -1,0 +1,22 @@
+{
+  "description": "Expected organic CTR by average position, used when ctr_benchmark is auto. Values are fractions (0.28 = 28%). Generic, rounded figures in line with published industry click-through studies for desktop and mobile web results combined; they are not specific to any site or market. Positions between anchors are linearly interpolated; positions past the last anchor use the last value. Replace with your own curve via ctr_benchmark custom if you have one.",
+  "positions": {
+    "1": 0.28,
+    "2": 0.155,
+    "3": 0.11,
+    "4": 0.08,
+    "5": 0.06,
+    "6": 0.045,
+    "7": 0.035,
+    "8": 0.028,
+    "9": 0.023,
+    "10": 0.02,
+    "11": 0.014,
+    "12": 0.012,
+    "13": 0.011,
+    "14": 0.01,
+    "15": 0.009,
+    "20": 0.006,
+    "30": 0.003
+  }
+}

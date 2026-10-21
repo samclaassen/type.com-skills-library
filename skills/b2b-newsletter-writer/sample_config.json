@@ -1,0 +1,19 @@
+{
+  "_note": "Fictional sample configuration for the fictional company Harborline. Not real data.",
+  "newsletter_name": "The Ops Desk",
+  "voice_file": "",
+  "from_name": "Maya Okafor, Harborline",
+  "audience": "Operations leads at 10-80 person creative and digital agencies",
+  "sections": 3,
+  "max_word_count": 600,
+  "cta_type": "product",
+  "subject_line_count": 3,
+  "format": "html",
+  "past_issues": "past_issues",
+  "allow_emoji": false,
+  "extra_banned_phrases": ["resourcing", "excited to share"],
+  "extra_acronyms": [],
+  "brand": {
+    "accent_color": "#0f766e"
+  }
+}

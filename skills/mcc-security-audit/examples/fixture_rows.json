@@ -1,0 +1,66 @@
+{
+  "login_customer_id": "100-000-0001",
+  "as_of": "2026-09-20",
+  "api_version": "v25",
+  "accounts": [
+    {"cid": "1000000001", "name": "Northwind Agency MCC", "status": "ENABLED", "level": 0, "is_manager": true},
+    {"cid": "1000000002", "name": "Northwind - Retail sub-MCC", "status": "ENABLED", "level": 1, "is_manager": true},
+    {"cid": "2015550101", "name": "Harbor & Vine - Search", "status": "ENABLED", "level": 1, "is_manager": false},
+    {"cid": "2015550102", "name": "Summit Outdoor - Main", "status": "ENABLED", "level": 2, "is_manager": false},
+    {"cid": "2015550103", "name": "Bright Dental - Leads", "status": "ENABLED", "level": 2, "is_manager": false},
+    {"cid": "2015550199", "name": "Q3 Promo Test (old)", "status": "ENABLED", "level": 1, "is_manager": false},
+    {"cid": "2015550150", "name": "Legacy - Oakline", "status": "CANCELED", "level": 1, "is_manager": false}
+  ],
+  "manager_links": {
+    "1000000001": [],
+    "1000000002": [
+      {"manager_cid": "1000000001", "link_id": 400100, "status": "ACTIVE"}
+    ],
+    "2015550101": [
+      {"manager_cid": "1000000001", "link_id": 400210, "status": "ACTIVE"},
+      {"manager_cid": "3000000009", "link_id": 400180, "status": "ACTIVE"},
+      {"manager_cid": "4821169031", "link_id": 400977, "status": "PENDING"}
+    ],
+    "2015550102": [
+      {"manager_cid": "1000000002", "link_id": 400230, "status": "ACTIVE"},
+      {"manager_cid": "7392045518", "link_id": 400951, "status": "ACTIVE"}
+    ],
+    "2015550103": [
+      {"manager_cid": "1000000002", "link_id": 400240, "status": "ACTIVE"},
+      {"manager_cid": "4821169031", "link_id": 400960, "status": "REFUSED"},
+      {"manager_cid": "5550001234", "link_id": 400050, "status": "CANCELED"}
+    ],
+    "2015550199": [
+      {"manager_cid": "1000000001", "link_id": 400300, "status": "ACTIVE"}
+    ]
+  },
+  "user_access": {
+    "1000000001": [
+      {"user_id": "11", "email": "ops@northwind-agency.example", "role": "ADMIN", "created": "2024-01-10 09:00:00", "inviter": "", "passkey_enabled": true},
+      {"user_id": "12", "email": "dana@northwind-agency.example", "role": "ADMIN", "created": "2024-03-02 11:30:00", "inviter": "ops@northwind-agency.example", "passkey_enabled": false}
+    ],
+    "2015550101": [
+      {"user_id": "21", "email": "marketing@harborandvine.com", "role": "STANDARD", "created": "2025-02-14 10:00:00", "inviter": "ops@northwind-agency.example", "passkey_enabled": false},
+      {"user_id": "22", "email": "jo.designer@outlook.example", "role": "READ_ONLY", "created": "2025-06-01 16:20:00", "inviter": "marketing@harborandvine.com", "passkey_enabled": false},
+      {"user_id": "23", "email": "freelance.analyst@fastmail.example", "role": "READ_ONLY", "created": "2026-09-05 08:00:00", "inviter": "ops@northwind-agency.example", "passkey_enabled": false}
+    ],
+    "2015550102": [
+      {"user_id": "31", "email": "owner@summitoutdoor.com", "role": "ADMIN", "created": "2023-11-20 12:00:00", "inviter": "", "passkey_enabled": true},
+      {"user_id": "32", "email": "ads.support.verify@gmail.example", "role": "ADMIN", "created": "2026-09-14 03:12:45", "inviter": "owner@summitoutdoor.com", "passkey_enabled": false},
+      {"user_id": "33", "email": "sam@northwind-agency.example", "role": "STANDARD", "created": "2026-09-08 15:00:00", "inviter": "ops@northwind-agency.example", "passkey_enabled": true}
+    ],
+    "2015550103": [
+      {"user_id": "41", "email": "it@brightdental.example", "role": "ADMIN", "created": "2024-07-01 09:00:00", "inviter": "", "passkey_enabled": true}
+    ],
+    "2015550199": []
+  },
+  "invitations": {
+    "2015550103": [
+      {"invitation_id": "9001", "email": "billing-update@brightdental-support.example", "role": "ADMIN", "status": "PENDING", "created": "2026-09-18 22:41:03"},
+      {"invitation_id": "8990", "email": "old.contractor@yahoo.example", "role": "STANDARD", "status": "EXPIRED", "created": "2025-01-03 10:00:00"}
+    ]
+  },
+  "errors": {
+    "2015550150": "customer_manager_link: authorization_error: CUSTOMER_NOT_ENABLED | customer_user_access: authorization_error: CUSTOMER_NOT_ENABLED | customer_user_access_invitation: authorization_error: CUSTOMER_NOT_ENABLED"
+  }
+}

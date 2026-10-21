@@ -1,0 +1,17 @@
+task_id,task_name,owner,depends_on,estimate_days,remaining_days,status,completed_on,blocker_note,category
+T01,Close AP subledger,Priya Raman,,1,,complete,2026-09-01,,subledger
+T02,Close AR subledger,Diego Alvarez,,1,,complete,2026-09-01,,subledger
+T03,Import bank feeds and clear suspense,Priya Raman,T01,0.5,,complete,2026-09-02,,cash
+T04,Reconcile operating bank account,Priya Raman,T03,1,,complete,2026-09-03,,cash
+T05,Reconcile payroll bank account,Priya Raman,T03,0.5,,complete,2026-09-03,,cash
+T06,Reconcile Stripe payouts to GL,Diego Alvarez,T02,1,,complete,2026-09-03,,cash
+T07,Revenue cut-off and deferred revenue rollforward,Mei Lin,T06,1.5,0.5,in_progress,,,revenue
+T08,Book payroll and bonus accrual,Sofia Marchetti,T05,0.5,,complete,2026-09-04,,payroll
+T09,Post depreciation and prepaid amortisation,Tomas Weber,,1,,complete,2026-09-02,,schedules
+T10,Accrued expense review and AP cut-off,Tomas Weber,T01,1,1,blocked,,Awaiting August invoice from Halberd Logistics,accruals
+T11,Intercompany elimination entries,Mei Lin,T07;T10,1,,not_started,,,consolidation
+T12,FX revaluation of foreign balances,Mei Lin,T11,0.5,,not_started,,,consolidation
+T13,Assemble balance sheet tie-out pack,Diego Alvarez,T04;T05;T08;T09;T12,1,,not_started,,,reporting
+T14,Flux analysis and variance commentary,Sofia Marchetti,T13,1,,not_started,,,reporting
+T15,Controller review and sign-off,Aisha Bello,T14,0.5,,not_started,,,review
+T16,Board reporting pack,Aisha Bello,T15,1,,not_started,,,reporting

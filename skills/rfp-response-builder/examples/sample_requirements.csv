@@ -1,0 +1,20 @@
+requirement_id,section,requirement_text,classification,weight
+SEC-01,Security and Compliance,"The vendor must hold a current SOC 2 Type II report and make it available under NDA.",mandatory,
+SEC-02,Security and Compliance,"The platform must support SAML 2.0 single sign-on and SCIM user provisioning.",mandatory,
+SEC-03,Security and Compliance,"The vendor must maintain FedRAMP Moderate authorization for all hosting environments.",mandatory,
+SEC-04,Security and Compliance,"Customer data should be encrypted at rest using customer-managed encryption keys.",weighted,5
+SEC-05,Security and Compliance,"Describe your penetration testing cadence and the remediation timelines for critical findings.",weighted,3
+IMP-01,Implementation,"Implementation must complete within 90 days of contract signature.",mandatory,
+IMP-02,Implementation,"Describe your migration approach for historical shipment and order records.",weighted,4
+IMP-03,Implementation,"Describe the sandbox environments available to customers for integration testing.",optional,
+OPS-01,Implementation,"The vendor shall publish a public status page with historical uptime figures.",,
+PRD-01,Product Functionality,"The platform must provide role-based access control including custom roles.",mandatory,
+PRD-02,Product Functionality,"The platform should offer a documented REST API with webhook events for record changes.",weighted,5
+PRD-03,Product Functionality,"Describe native integrations with SAP, Oracle, and NetSuite ERP systems.",weighted,4
+PRD-04,Product Functionality,"The platform should give real-time inventory visibility across every warehouse location.",weighted,3
+PRD-06,Product Functionality,"The platform should expose webhook events, immutable audit logs, and exportable configuration change history.",weighted,4
+PRD-05,Product Functionality,"Describe mobile application availability for iOS and Android devices.",optional,
+SUP-01,Support,"The vendor must provide 24x7 support with a one-hour response for severity one incidents.",mandatory,
+SUP-02,Support,"Describe your customer success staffing model and quarterly business review cadence.",weighted,3
+COM-01,Commercial,"Pricing must be fixed for the initial three-year term.",mandatory,
+COM-02,Commercial,"Describe the volume discount tiers available above 500 licensed users.",weighted,2

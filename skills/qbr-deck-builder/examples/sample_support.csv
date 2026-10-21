@@ -1,0 +1,24 @@
+ticket_id,account_id,created_date,resolved_date,priority,status,subject,csat_score
+T-491,ACC-1001,2026-04-02,2026-04-04,p3,closed,Label printing misaligned on thermal printers,5
+T-492,ACC-1001,2026-04-15,2026-04-18,p3,closed,Question about carrier rate refresh schedule,4
+T-493,ACC-1001,2026-04-28,2026-05-02,p2,closed,Shipment status not updating for one carrier,4
+T-494,ACC-1001,2026-05-08,2026-05-09,p4,closed,How to add a new dispatch user,5
+T-495,ACC-1001,2026-05-19,2026-05-26,p2,closed,Manifest export missing customs fields,4
+T-496,ACC-1001,2026-06-01,2026-06-03,p3,closed,Notification emails going to spam,5
+T-497,ACC-1001,2026-06-10,2026-06-12,p3,closed,Request to rename a warehouse location,4
+T-498,ACC-1001,2026-06-19,2026-06-22,p2,closed,Rate shopping slow during morning peak,4
+T-501,ACC-1001,2026-06-28,2026-06-30,p3,closed,Label printing misaligned after driver update,4
+T-502,ACC-1001,2026-07-02,2026-07-06,p2,closed,API timeouts on bulk shipment import,3
+T-503,ACC-1001,2026-07-09,2026-07-10,p3,closed,User cannot reset password with SSO enabled,5
+T-504,ACC-1001,2026-07-15,2026-07-22,p2,closed,Carrier rates out of date for two lanes,3
+T-505,ACC-1001,2026-07-21,2026-07-23,p4,closed,How do we export a consolidated manifest,4
+T-506,ACC-1001,2026-07-30,2026-08-05,p2,closed,Duplicate shipment records after ERP sync,2
+T-507,ACC-1001,2026-08-04,2026-08-06,p3,closed,Dashboard slow for EU region users,3
+T-508,ACC-1001,2026-08-12,2026-08-19,p1,closed,Tracking webhooks stopped firing for 6 hours,2
+T-509,ACC-1001,2026-08-18,2026-08-20,p3,closed,Add new warehouse to routing rules,4
+T-510,ACC-1001,2026-08-26,2026-09-01,p2,closed,Rate shopping returns no options for LTL,3
+T-511,ACC-1001,2026-09-02,2026-09-04,p3,closed,SSO group mapping question,5
+T-512,ACC-1001,2026-09-05,,p1,open,Inventory sync failing for two warehouses,
+T-513,ACC-1001,2026-09-11,2026-09-15,p2,closed,Report export truncated at 10000 rows,3
+T-514,ACC-1001,2026-09-17,,p3,open,Request bulk edit for carrier rules,
+T-520,ACC-1002,2026-09-08,2026-09-09,p3,closed,Question about SSO metadata,5

@@ -1,0 +1,61 @@
+{
+  "feedback_types": {
+    "churn_risk": "Churn risk",
+    "bug": "Bug / defect",
+    "objection": "Objection / blocker",
+    "feature_request": "Feature request",
+    "usability": "Usability friction",
+    "competitor": "Competitor mention",
+    "praise": "Praise"
+  },
+  "type_priority": ["churn_risk", "bug", "objection", "feature_request", "usability", "competitor", "praise"],
+  "draftable_types": ["feature_request", "bug", "usability", "objection"],
+  "top_min_accounts": 2,
+  "max_top_themes": 8,
+  "max_quotes_per_theme": 3,
+  "max_single_mentions": 8,
+  "max_quieter_themes": 5,
+  "draft_min_accounts": 2,
+  "draft_if_customer_types": ["bug"],
+  "max_quote_chars": 400,
+  "max_role_chars": 60,
+  "currency_symbol": "$",
+  "plan_weights": {
+    "enterprise": 3,
+    "business": 2,
+    "growth": 2,
+    "pro": 2,
+    "team": 1,
+    "starter": 1,
+    "free": 1,
+    "trial": 1
+  },
+  "default_plan_weight": 1,
+  "ignored_attendee_domains": [
+    "fireflies.ai",
+    "otter.ai",
+    "fathom.video",
+    "read.ai",
+    "tldv.io",
+    "meetgeek.ai"
+  ],
+  "ignored_attendee_local_parts": [
+    "notetaker",
+    "no-reply",
+    "noreply",
+    "calendar-notification"
+  ],
+  "free_email_domains": [
+    "gmail.com",
+    "googlemail.com",
+    "outlook.com",
+    "hotmail.com",
+    "live.com",
+    "yahoo.com",
+    "icloud.com",
+    "me.com",
+    "proton.me",
+    "protonmail.com",
+    "aol.com"
+  ]
+}

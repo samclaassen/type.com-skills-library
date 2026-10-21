@@ -1,0 +1,100 @@
+### 1. August 2026 MRR movement, tied to the billing system's closing MRR
+SAAS METRICS PACK
+==========================================================================
+Opening measured on : 2026-08-01
+Closing measured on : 2026-08-31
+Subscriptions read  : 19 across 14 customer(s)
+
+MRR MOVEMENT WATERFALL
+--------------------------------------------------------------------------
+movement            mrr  logos     % of opening
+------------  ---------  --------  ------------
+Opening MRR   23,820.00  10 logos
+New            1,730.00  2 logos           7.3%
+Expansion      1,150.00  2 logos           4.8%
+Reactivation     900.00  1 logo            3.8%
+Contraction   -1,650.00  2 logos          -6.9%
+Churn         -1,570.00  2 logos          -6.6%
+Net new MRR      560.00                    2.4%
+Closing MRR   24,380.00  11 logos
+
+RECONCILIATION
+--------------------------------------------------------------------------
+check                                                              amount
+--------------------------------------------------------------  ---------
+opening + new + expansion + reactivation - contraction - churn  24,380.00
+closing MRR from customer balances                              24,380.00
+residual (must be 0.00)                                              0.00
+opening MRR summed independently from subscription rows         23,820.00
+opening residual (must be 0.00)                                      0.00
+closing MRR summed independently from subscription rows         24,380.00
+closing residual (must be 0.00)                                      0.00
+closing MRR per --expected-closing-mrr                          24,380.00
+control residual (must be 0.00)                                      0.00
+
+RETENTION AND EFFICIENCY
+--------------------------------------------------------------------------
+metric                                value  basis
+-----------------------------  ------------  --------------------------------------------------------
+Net revenue retention (NRR)           91.3%  excludes new logos and reactivations
+Gross revenue retention (GRR)         86.5%  capped at 100% by construction
+Logo churn                            20.0%  2 of 10 opening logos
+Quick ratio                            1.17  (new + expansion + reactivation) / (contraction + churn)
+ARPA opening                       2,382.00  10 logos
+ARPA closing                       2,216.36  11 logos
+CAC                                9,250.00  18,500.00 spend / 2 logos
+CAC payback                    13.37 months  spend / (new MRR 1,730.00 x 80.0% gross margin)
+
+LARGEST MOVEMENTS (top 6 by absolute MRR change)
+--------------------------------------------------------------------------
+customer_id  customer           movement       opening   closing    change
+-----------  -----------------  ------------  --------  --------  --------
+C006         Orchard Retail     new               0.00  1,250.00  1,250.00
+C004         Tessellate Design  churn           950.00      0.00   -950.00
+C007         Halberd Logistics  reactivation      0.00    900.00    900.00
+C012         Quarry Analytics   contraction   2,750.00  1,900.00   -850.00
+C002         Calder Group       expansion     1,800.00  2,600.00    800.00
+C003         Vela Systems       contraction   3,200.00  2,400.00   -800.00
+
+CUSTOMERS WITH NO WATERFALL IMPACT
+--------------------------------------------------------------------------
+These customers had zero MRR at both measurement dates. They started and stopped inside
+the period, so they appear in neither new nor churn. Review them before quoting logo counts:
+  C011 Saltbox Studios
+
+VERDICT
+--------------------------------------------------------------------------
+Waterfall ties exactly to the opening and closing balances. Exit status 0.
+exit status: 0
+
+### 2. Billing system reports a different closing MRR
+  C011 Saltbox Studios
+
+VERDICT
+--------------------------------------------------------------------------
+DOES NOT TIE: control residual vs --expected-closing-mrr -720.00.
+Do not publish these metrics. Check the subscription export for rows excluded by the
+billing system's own MRR definition (trials, one-off fees, taxes, annual amortisation).
+Exit status 1.
+exit status: 1
+
+### 3. Machine-readable movements
+{
+  "openingMrr": "23820.00",
+  "movements": {
+    "new": "1730.00",
+    "expansion": "1150.00",
+    "contraction": "1650.00",
+    "churn": "1570.00",
+    "reactivation": "900.00"
+  },
+  "closingMrr": "24380.00",
+  "nrrPct": "91.3",
+  "grrPct": "86.5",
+  "quickRatio": "1.17"
+}
+exit status: 0
+
+### 4. Bad input is rejected loudly
+error: examples/broken_subscriptions.csv line 3: column 'mrr' is negative ('-1800.00'); net discounts into the subscription MRR instead
+exit status: 2

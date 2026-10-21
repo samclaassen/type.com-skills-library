@@ -1,0 +1,145 @@
+{
+ "schema_version": 1,
+ "_note": "Fictional sample data. The deal list comes from sample_deals.csv via --deals-csv.",
+ "period": {
+  "start": "2026-09-01",
+  "end": "2026-09-30",
+  "label": "September 2026"
+ },
+ "currency": "USD",
+ "sources": {
+  "deals": {
+   "provider": "csv",
+   "status": "ok",
+   "detail": "CRM export pasted by the user"
+  },
+  "meetings": {
+   "provider": "granola",
+   "status": "ok"
+  },
+  "transcripts": {
+   "provider": "granola",
+   "status": "partial",
+   "detail": "1 meeting's workspace does not allow transcript access"
+  }
+ },
+ "meetings": [
+  {
+   "meeting_id": "c01",
+   "title": "Gorsebury Kitchens kickoff",
+   "start": "2026-09-02T10:00:00-04:00",
+   "url": "https://notes.granola.ai/d/sample-c01",
+   "attendees": [
+    {
+     "email": "lee@tamsquill.example"
+    },
+    {
+     "email": "chef@gorsebury.example"
+    }
+   ],
+   "transcript": "ok",
+   "transcript_text": "System audio (Gorsebury): We had it running before lunch. Nobody on the line needed a manual."
+  },
+  {
+   "meeting_id": "c02",
+   "title": "Quellmark Foods proposal review",
+   "start": "2026-09-11T15:00:00-04:00",
+   "url": "https://notes.granola.ai/d/sample-c02",
+   "attendees": [
+    {
+     "email": "sam@tamsquill.example"
+    },
+    {
+     "email": "buyer@quellmark.example"
+    }
+   ],
+   "transcript": "ok",
+   "transcript_text": "System audio (Quellmark): Countwhistle bundles the inventory module for free. Can you match that? Otherwise it's hard to justify the gap."
+  },
+  {
+   "meeting_id": "c03",
+   "title": "Plimsoll & Quist check-in",
+   "start": "2026-09-15T11:00:00-04:00",
+   "url": "https://notes.granola.ai/d/sample-c03",
+   "attendees": [
+    {
+     "email": "dana@tamsquill.example"
+    },
+    {
+     "email": "ana@plimsollquist.example"
+    }
+   ],
+   "transcript": "denied",
+   "notes_text": "Project paused until the new finance lead starts; no budget owner for now."
+  }
+ ],
+ "evidence": [
+  {
+   "id": "c-e1",
+   "deal_id": "Q-201",
+   "kind": "win_reason",
+   "category": "time_to_value",
+   "source": "transcript",
+   "meeting_id": "c01",
+   "quote": "We had it running before lunch.",
+   "speaker_role": "Head chef"
+  },
+  {
+   "id": "c-e2",
+   "deal_id": "Q-201",
+   "kind": "win_reason",
+   "category": "ease_of_use",
+   "source": "crm_field",
+   "crm_field": "Win Reason",
+   "quote": "Easy setup"
+  },
+  {
+   "id": "c-e3",
+   "deal_id": "Q-202",
+   "kind": "objection",
+   "category": "competitive_comparison",
+   "competitor": "Countwhistle",
+   "source": "transcript",
+   "meeting_id": "c02",
+   "quote": "Countwhistle bundles the inventory module for free. Can you match that?",
+   "speaker_role": "Purchasing manager"
+  },
+  {
+   "id": "c-e4",
+   "deal_id": "Q-202",
+   "kind": "loss_reason",
+   "category": "price_value",
+   "competitor": "Countwhistle",
+   "source": "crm_field",
+   "crm_field": "Closed Lost Reason",
+   "quote": "Went with Countwhistle - bundled pricing"
+  },
+  {
+   "id": "c-e5",
+   "deal_id": "Q-203",
+   "kind": "win_reason",
+   "category": "support_relationship",
+   "source": "crm_field",
+   "crm_field": "Win Reason",
+   "quote": "Referral from existing customer"
+  },
+  {
+   "id": "c-e6",
+   "deal_id": "Q-204",
+   "kind": "loss_reason",
+   "category": "no_decision_authority",
+   "source": "note",
+   "meeting_id": "c03",
+   "quote": "Project paused until the new finance lead starts; no budget owner for now."
+  },
+  {
+   "id": "c-e7",
+   "deal_id": "Q-204",
+   "kind": "loss_reason",
+   "category": "no_decision_status_quo",
+   "source": "crm_field",
+   "crm_field": "Closed Lost Reason",
+   "quote": "No decision"
+  }
+ ]
+}

@@ -1,0 +1,229 @@
+{
+  "_note": "FICTIONAL sample. Every company, person, product, URL and quote here is invented. Note links use the Granola URL shape with sample-* ids and do not resolve.",
+  "schema_version": 1,
+  "account": {
+    "name": "Quillfen Freight Co (fictional)",
+    "domains": ["quillfenfreight.example", "quillfen-eu.example"],
+    "aliases": ["Quillfen", "Quillfen Freight"]
+  },
+  "sources": {
+    "meeting_notes": {"provider": "granola", "status": "ok", "detail": null, "plan": "business", "scopes": ["personal", "public"]},
+    "crm": {"provider": "hubspot", "status": "ok", "detail": null},
+    "email": {"provider": "gmail", "status": "ok", "detail": null}
+  },
+  "search": {
+    "from": "2026-08-01",
+    "to": "2026-10-01",
+    "methods": ["Granola list_meetings by attendee domain", "Granola query_granola_meetings for the account name"],
+    "terms": ["Quillfen", "Quillfen Freight"]
+  },
+  "deal": {
+    "record_ref": "hubspot:deal/48213",
+    "url": "https://app.hubspot.example/deal/48213",
+    "name": "Quillfen Freight – Corvalto Dispatch",
+    "stage": "Closed won",
+    "closed_won": true,
+    "amount": 48000,
+    "currency": "USD",
+    "amount_period": "yr",
+    "close_date": "2026-09-30",
+    "created_date": "2026-08-12",
+    "owner": "Dana Ortiz",
+    "contract_start": "2026-10-15",
+    "term_months": 12,
+    "products": ["Corvalto Dispatch (25 seats)", "Carrier API add-on"],
+    "contract_read": true
+  },
+  "email": {"threads_read": 4},
+  "meetings": [
+    {
+      "meeting_id": "sample-k1",
+      "url": "https://notes.granola.ai/d/sample-k1",
+      "title": "Quillfen <> Corvalto intro & discovery",
+      "start": "2026-08-20T10:00:00-07:00",
+      "attendees": [
+        {"name": "Dana Ortiz", "email": "dana@corvalto.example"},
+        {"name": "Elena Novak", "email": "elena@quillfenfreight.example"},
+        {"name": "Owen Pratt", "email": "owen@quillfenfreight.example"},
+        {"name": "Notetaker", "email": "notetaker+k1@meetbot.example"}
+      ],
+      "matched_by": ["domain", "title"],
+      "notes_read": true,
+      "transcript": "ok"
+    },
+    {
+      "meeting_id": "sample-k2",
+      "url": "https://notes.granola.ai/d/sample-k2",
+      "title": "Technical deep dive: TMS integration",
+      "start": "2026-08-27T09:00:00-07:00",
+      "attendees": [
+        {"name": "Sam Kim", "email": "sam@corvalto.example"},
+        {"name": "Dana Ortiz", "email": "dana@corvalto.example"},
+        {"name": "Tomás Ruiz", "email": "tomas@quillfen-eu.example"},
+        {"name": "Elena Novak", "email": "elena@quillfenfreight.example"},
+        {"name": "Owen Pratt", "email": "owen@quillfenfreight.example"},
+        {"name": "Jordan Lee", "email": "jordan@tarnwick-advisory.example"}
+      ],
+      "matched_by": ["domain"],
+      "notes_read": true,
+      "transcript": "ok"
+    },
+    {
+      "meeting_id": "sample-k3",
+      "url": "https://notes.granola.ai/d/sample-k3",
+      "title": "Dispatch team demo",
+      "start": "2026-09-03T13:00:00-07:00",
+      "attendees": [
+        {"name": "Sam Kim", "email": "sam@corvalto.example"},
+        {"name": "Elena Novak", "email": "elena@quillfenfreight.example"},
+        {"name": "Hannah Cole", "email": "hannah@quillfenfreight.example"}
+      ],
+      "matched_by": ["domain"],
+      "notes_read": true,
+      "transcript": "denied"
+    },
+    {
+      "meeting_id": "sample-k4a",
+      "url": "https://notes.granola.ai/d/sample-k4a",
+      "title": "Commercials and rollout plan",
+      "start": "2026-09-15T11:00:00-07:00",
+      "attendees": [
+        {"name": "Dana Ortiz", "email": "dana@corvalto.example"},
+        {"name": "Elena Novak", "email": "elena@quillfenfreight.example"},
+        {"name": "Marcus Bell", "email": "marcus@quillfenfreight.example"}
+      ],
+      "matched_by": ["domain"],
+      "notes_read": true,
+      "transcript": "ok"
+    },
+    {
+      "meeting_id": "sample-k4b",
+      "url": "https://notes.granola.ai/d/sample-k4b",
+      "title": "Commercials & rollout plan",
+      "start": "2026-09-15T14:00:00-04:00",
+      "attendees": [
+        {"name": "Sam Kim", "email": "sam@corvalto.example"},
+        {"name": "Dana Ortiz", "email": "dana@corvalto.example"},
+        {"name": "Marcus Bell", "email": "marcus@quillfenfreight.example"}
+      ],
+      "matched_by": ["domain"],
+      "notes_read": true,
+      "transcript": "not_requested"
+    },
+    {
+      "meeting_id": "sample-k5",
+      "url": "https://notes.granola.ai/d/sample-k5",
+      "title": "Quillfen deal review",
+      "start": "2026-09-22T16:00:00-07:00",
+      "attendees": [
+        {"name": "Dana Ortiz", "email": "dana@corvalto.example"},
+        {"name": "Sam Kim", "email": "sam@corvalto.example"}
+      ],
+      "matched_by": ["title"],
+      "notes_read": false,
+      "transcript": "not_requested"
+    },
+    {
+      "meeting_id": "sample-k6",
+      "url": "https://notes.granola.ai/d/sample-k6",
+      "title": "Final terms",
+      "start": "2026-09-29T10:00:00-07:00",
+      "attendees": [
+        {"name": "Dana Ortiz", "email": "dana@corvalto.example"},
+        {"name": "Elena Novak", "email": "elena@quillfenfreight.example"},
+        {"name": "Marcus Bell", "email": "marcus@quillfenfreight.example"}
+      ],
+      "matched_by": ["domain"],
+      "notes_read": true,
+      "transcript": "ok"
+    }
+  ],
+  "excluded_meetings": [
+    {"meeting_id": "sample-x1", "title": "Quillfen Bakery tasting", "start": "2026-09-10T12:00:00-07:00", "reason": "different company (Quillfen Bakery), title match only"}
+  ],
+  "stakeholders": [
+    {
+      "name": "Elena Novak", "email": "elena@quillfenfreight.example", "title": "VP Operations",
+      "roles": ["champion", "day_to_day"],
+      "cares_about": [
+        {"text": "being live before peak season", "source": {"type": "meeting", "meeting_id": "sample-k1"}},
+        {"text": "fewer manual steps for dispatchers", "source": {"type": "meeting", "meeting_id": "sample-k2"}}
+      ]
+    },
+    {
+      "name": "Marcus Bell", "email": "marcus@quillfenfreight.example", "title": "CFO",
+      "roles": ["economic_buyer", "signer"],
+      "cares_about": [
+        {"text": "late-delivery penalty spend", "quote": "We paid about forty thousand in late penalties last quarter alone.", "quote_from": "transcript", "speaker": "Marcus Bell", "source": {"type": "meeting", "meeting_id": "sample-k4a"}}
+      ]
+    },
+    {"name": "Marcus Bell", "title": "Chief Financial Officer", "roles": ["signer"]},
+    {
+      "name": "Tomás Ruiz", "email": "tomas@quillfen-eu.example", "title": "IT Lead",
+      "roles": ["technical_owner", "data_owner"],
+      "cares_about": [{"text": "EU data residency", "source": {"type": "meeting", "meeting_id": "sample-k2"}}]
+    },
+    {"name": "Hannah Cole", "email": "hannah@quillfenfreight.example", "title": "Dispatch Manager", "roles": ["user"]},
+    {
+      "name": "Owen Pratt", "email": "owen@quillfenfreight.example", "title": "Procurement Lead",
+      "roles": ["procurement", "detractor"],
+      "cares_about": [{"text": "a 30-day termination clause in year one", "quote": "We'd need a thirty-day out in year one, that's standard for us.", "quote_from": "transcript", "speaker": "Owen Pratt", "source": {"type": "meeting", "meeting_id": "sample-k2"}}],
+      "note": "Procurement contact on the HubSpot deal."
+    }
+  ],
+  "findings": {
+    "pains": [
+      {"text": "Every load is typed in twice", "quote": "Every load gets typed in twice, once in the TMS and once in the dispatch spreadsheet.", "quote_from": "transcript", "speaker": "Elena Novak", "source": {"type": "meeting", "meeting_id": "sample-k1"}},
+      {"text": "Late-delivery penalties", "quote": "We paid about forty thousand in late penalties last quarter alone.", "quote_from": "transcript", "speaker": "Marcus Bell", "source": {"type": "meeting", "meeting_id": "sample-k4a"}}
+    ],
+    "triggers": [
+      {"text": "November peak season", "quote": "If this isn't live before the November peak, we'll just limp through another season on spreadsheets.", "quote_from": "transcript", "speaker": "Elena Novak", "source": {"type": "meeting", "meeting_id": "sample-k1"}}
+    ],
+    "success_criteria": [
+      {"goal": "Cut double data entry in dispatch", "metric": "share of loads entered by hand", "target": "under 5% by end of Q1", "measured_by": "weekly TMS export", "quote": "Honestly if we get manual entry under five percent, that's a win.", "quote_from": "transcript", "speaker": "Elena Novak", "source": {"type": "meeting", "meeting_id": "sample-k2"}},
+      {"goal": "Fewer late-delivery penalties", "metric": "carrier penalty spend", "target": "down 30% year over year", "measured_by": "finance quarterly review", "quote": "Thirty percent less in penalties and I'll call it a success.", "quote_from": "transcript", "speaker": "Marcus Bell", "source": {"type": "meeting", "meeting_id": "sample-k6"}}
+    ],
+    "milestones": [
+      {"label": "Carrier API connected in staging", "due": "2026-10-10", "quote": "Staging connection targeted for Oct 10.", "quote_from": "notes", "source": {"type": "meeting", "meeting_id": "sample-k4b"}},
+      {"label": "Go-live for 25 dispatchers", "due": "2026-11-01", "quote": "Go-live November first, that's the date I'm holding you to.", "quote_from": "transcript", "speaker": "Marcus Bell", "source": {"type": "meeting", "meeting_id": "sample-k6"}},
+      {"label": "Dispatcher training", "due": null, "quote": "Training for the dispatch team to be scheduled before go-live.", "quote_from": "notes", "source": {"type": "meeting", "meeting_id": "sample-k3"}}
+    ],
+    "promises": [
+      {"category": "integration", "topic": "Bramblecore TMS sync", "terms": "native two-way sync, no middleware", "in_contract": "yes", "quote": "Yes, the two-way sync with Bramblecore is native, no middleware.", "quote_from": "transcript", "speaker": "Sam Kim", "source": {"type": "meeting", "meeting_id": "sample-k2"}},
+      {"category": "roadmap", "topic": "Multi-depot routing", "terms": "available in Q1 2027 as part of their plan", "in_contract": "no", "quote": "Multi-depot routing is on the roadmap for Q1, you'd get it as part of your plan.", "quote_from": "transcript", "speaker": "Sam Kim", "source": {"type": "meeting", "meeting_id": "sample-k2"}},
+      {"category": "training", "topic": "Dispatcher training", "terms": "two live sessions for the dispatch team before go-live", "flags": {"non_standard": true}, "in_contract": "unknown", "quote": "Sam will run two live sessions for the dispatch team before go-live.", "quote_from": "notes", "source": {"type": "meeting", "meeting_id": "sample-k3"}},
+      {"category": "discount", "topic": "First-year discount", "terms": "15% off year one", "in_contract": "no", "quote": "Dana offered 15% off the first year.", "quote_from": "notes", "source": {"type": "meeting", "meeting_id": "sample-k4b"}},
+      {"category": "sla", "topic": "P1 response time", "terms": "1-hour response, 24/7", "flags": {"non_standard": true}, "in_contract": "unknown", "quote": "For P1s we'll respond within the hour, any time of day.", "quote_from": "transcript", "speaker": "Dana Ortiz", "source": {"type": "meeting", "meeting_id": "sample-k4a"}},
+      {"category": "discount", "topic": "First-year discount", "terms": "20% off year one if signed by Sep 30", "flags": {"non_standard": true}, "in_contract": "yes", "quote": "If you sign by the thirtieth I can get you to twenty percent off year one.", "quote_from": "transcript", "speaker": "Dana Ortiz", "source": {"type": "meeting", "meeting_id": "sample-k6"}},
+      {"category": "timeline", "topic": "Go-live date", "terms": "live by Nov 1", "in_contract": "yes", "quote": "We'll have you live by November first.", "quote_from": "transcript", "speaker": "Dana Ortiz", "source": {"type": "meeting", "meeting_id": "sample-k6"}},
+      {"category": "security", "topic": "SAML SSO", "terms": "included at no extra cost", "in_contract": "no", "quote": "Confirming SAML SSO is included in your plan at no extra cost.", "quote_from": "email", "speaker": "Dana Ortiz", "source": {"type": "email", "date": "2026-09-30", "label": "Email from Dana Ortiz"}}
+    ],
+    "technical_requirements": [
+      {"category": "integration", "text": "Two-way load and status sync with Bramblecore TMS (cloud).", "quote": "We need loads to flow both ways, status included.", "quote_from": "transcript", "speaker": "Tomás Ruiz", "source": {"type": "meeting", "meeting_id": "sample-k2"}},
+      {"category": "migration", "text": "18 months of load history on day one.", "quote": "We'd want eighteen months of history in there on day one.", "quote_from": "transcript", "speaker": "Tomás Ruiz", "source": {"type": "meeting", "meeting_id": "sample-k2"}},
+      {"category": "sso", "text": "SAML SSO through their identity provider.", "source": {"type": "meeting", "meeting_id": "sample-k2"}},
+      {"category": "compliance", "text": "EU entity's data must stay in an EU region.", "quote": "Anything from the EU entity has to stay in an EU region.", "quote_from": "transcript", "speaker": "Tomás Ruiz", "source": {"type": "meeting", "meeting_id": "sample-k2"}}
+    ],
+    "objections": [
+      {"text": "30-day termination clause in year one", "status": "open", "quote": "We'd need a thirty-day out in year one, that's standard for us.", "quote_from": "transcript", "speaker": "Owen Pratt", "source": {"type": "meeting", "meeting_id": "sample-k2"}},
+      {"text": "Dispatcher adoption", "status": "partly_resolved", "resolution": "two live training sessions offered", "quote": "Hannah worried the dispatch team will ignore anything that adds clicks.", "quote_from": "notes", "source": {"type": "meeting", "meeting_id": "sample-k3"}},
+      {"text": "Price above budget", "status": "resolved", "resolution": "Closed with a first-year discount", "quote": "We budgeted closer to forty for this.", "quote_from": "transcript", "speaker": "Marcus Bell", "source": {"type": "meeting", "meeting_id": "sample-k4a"}}
+    ],
+    "risks": [
+      {"text": "Go-live sits right before their peak; any slip lands in their busiest weeks.", "quote": "If this slips into November we'll be onboarding in the middle of peak.", "quote_from": "transcript", "speaker": "Elena Novak", "source": {"type": "meeting", "meeting_id": "sample-k6"}}
+    ],
+    "competitors": [
+      {"name": "Trundlebay", "status": "chosen_over", "context": "cheaper, but needed middleware for their TMS", "quote": "Trundlebay was cheaper but they'd need middleware for Bramblecore.", "quote_from": "transcript", "speaker": "Elena Novak", "source": {"type": "meeting", "meeting_id": "sample-k4a"}}
+    ],
+    "answered_questions": [
+      {"question": "How many dispatchers will use it?", "answer": "25 across two depots; the EU team joins in phase 2.", "source": {"type": "meeting", "meeting_id": "sample-k1"}},
+      {"question": "Which TMS do they run?", "answer": "Bramblecore TMS, cloud; the EU entity is on the same instance.", "quote": "We're on Bramblecore cloud, EU included, same instance.", "quote_from": "transcript", "speaker": "Tomás Ruiz", "source": {"type": "meeting", "meeting_id": "sample-k2"}},
+      {"question": "Who signs?", "answer": "Marcus Bell (CFO); procurement reviews the terms first.", "source": {"type": "meeting", "meeting_id": "sample-k4a"}}
+    ],
+    "open_questions": [
+      {"question": "Did procurement's 30-day termination ask make it into the signed contract?", "owner": "us", "source": {"type": "meeting", "meeting_id": "sample-k2"}},
+      {"question": "Who on their side owns the 18-month data migration?", "owner": "customer"},
+      {"question": "Is the EU entity in scope for the Nov 1 go-live or phase 2?", "owner": "customer", "source": {"type": "meeting", "meeting_id": "sample-k1"}}
+    ]
+  }
+}

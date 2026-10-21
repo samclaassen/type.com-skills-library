@@ -1,0 +1,147 @@
+=== 1. create (preview, no --write) ===
+#### Invoice INV-2026-042
+
+**From:** Fernhill Studio — 400 Example Street, Portland, OR 97201 — billing@fernhill.example
+**To:** Acme Corp — sarah@acmecorp.example — 1 Example Plaza, Springfield, IL 62701
+**Date:** Oct 2, 2026
+**Due:** Nov 1, 2026 (NET 30)
+
+| # | Description | Qty | Rate | Amount |
+|---|---|---|---|---|
+| 1 | Brand strategy workshop (Sep 15) | 1 | $2,500 | $2,500 |
+| 2 | Logo concepts — 3 rounds | 1 | $4,000 | $4,000 |
+| 3 | Brand guidelines document | 1 | $1,500 | $1,500 |
+
+**Subtotal:** $8,000
+**Total:** $8,000 (excluding tax)
+
+Payment: [Payment details: see Fernhill payment details (secure note)]
+
+---
+**Before this goes out** (review notes, not part of the invoice)
+- Number INV-2026-042: next in the 2026 sequence after INV-2026-041.
+- Auto-filled from the ledger: contact name, contact email, client address from INV-2026-038.
+- Payment terms NET 30: Acme Corp's previous terms (INV-2026-038).
+- Tax: no tax_rate configured, so the total is shown excluding tax.
+- Possible duplicate: INV-2026-038 (Aug 26, 2026, sent) has the same client and total.
+- Ledger: not recorded yet (preview). Once the user approves, rerun with --write to add INV-2026-042 as `draft`.
+- After the user approves and the invoice is actually sent: `mark-sent --number INV-2026-042 --date YYYY-MM-DD`.
+
+=== 2. chase ===
+#### Overdue invoices — Oct 2, 2026
+
+**Source:** ledger `sample_ledger.md` · **Follow-up mode:** draft — nothing is sent without your approval
+
+**Summary:** 6 of 7 open invoices are overdue — €4,750 EUR · $17,780.50 USD. 4 follow-up(s) drafted, 2 already chased at their current tier.
+
+| Invoice | Client | Balance | Due | Days overdue | Tier reached | Last chased | Action |
+|---|---|---|---|---|---|---|---|
+| INV-2026-034 | Harbor & Pine Co | $2,850 | Aug 31 | 32 | 4 · final notice | tier 3 · Sep 14 | Draft below |
+| INV-2026-035 | Lumen Bakery | $3,500 of $6,000 | Sep 3 | 29 | 3 · escalation | tier 3 · Sep 18 | Skip — tier 3 already sent; final notice due Oct 3 |
+| INV-2026-036 | Kestrel Outdoor GmbH | €4,750 | Sep 17 | 15 | 3 · escalation | never | Draft below (first reminder for this invoice) |
+| INV-2026-038 | Acme Corp | $8,000 | Sep 25 | 7 | 2 · firmer follow-up | tier 1 · Sep 26 | Draft below |
+| INV-2026-037 | Bluefin Labs | $1,980 | Sep 27 | 5 | 1 · gentle reminder | tier 1 · Sep 28 | Skip — tier 1 already sent; firmer follow-up due Oct 4 |
+| INV-2026-039 | Quill & Co | $1,450.50 | Oct 1 | 1 | 1 · gentle reminder | never | Draft below (first reminder for this invoice) |
+
+---
+
+**Draft 1 · INV-2026-034 → Dana Whitfield <dana@harborpine.example>** — tier 4 of 4 (final notice)
+
+```
+Subject: Final reminder: invoice INV-2026-034 ($2,850)
+
+Hi Dana, this is my final scheduled reminder about invoice INV-2026-034 ($2,850, due Aug 31), now 32 days past due. I'd really like to get this resolved with you directly.
+
+Could you reply with a payment date, or let me know if there's a problem with the invoice we should sort out first? If paying in instalments would make it easier, I'm open to that. [Payment details: see Fernhill payment details (secure note)]
+
+Thanks,
+Maya Okafor
+Fernhill Studio
+```
+
+---
+
+**Draft 2 · INV-2026-036 → Jonas Becker <jonas@kestrel-outdoor.example>** — tier 3 of 4 (escalation)
+
+```
+Subject: Invoice INV-2026-036 — now 15 days overdue
+
+Hi Jonas, I'm following up again on invoice INV-2026-036 (€4,750, due Sep 17), which is now 15 days past due. I haven't been able to confirm a payment date yet, so I wanted to check whether anything is holding it up — a missing PO, a change in who handles payables, or a question about the work itself.
+
+If it helps, I can send a copy straight to whoever processes payments, or we can jump on a quick call. Could you let me know an expected payment date this week? [Payment details: see Fernhill payment details (secure note)]
+
+Thanks,
+Maya Okafor
+Fernhill Studio
+```
+
+---
+
+**Draft 3 · INV-2026-038 → Sarah Chen <sarah@acmecorp.example>** — tier 2 of 4 (firmer follow-up)
+
+```
+Subject: Invoice INV-2026-038 — quick follow-up
+
+Hi Sarah, just a quick note that invoice INV-2026-038 ($8,000, due Sep 25) is now a week past due. Could you confirm it's in the queue?
+
+Happy to resend the invoice or sort out a different payment method if that's easier. [Payment details: see Fernhill payment details (secure note)]
+
+Thanks,
+Maya Okafor
+Fernhill Studio
+```
+
+---
+
+**Draft 4 · INV-2026-039 → Leo Marsh <leo@quillandco.example>** — tier 1 of 4 (gentle reminder)
+
+```
+Subject: Invoice INV-2026-039 — friendly reminder
+
+Hi Leo, hope things are going well. A friendly reminder that invoice INV-2026-039 ($1,450.50, due Oct 1) is now 1 day past due. It may already be on its way — if so, thank you, and please ignore this.
+
+Payment details are below in case they're handy. [Payment details: see Fernhill payment details (secure note)]
+
+Thanks,
+Maya Okafor
+Fernhill Studio
+```
+
+---
+
+**Next:** reply with which drafts to send (for example "send 1 and 3") or what to change. Nothing has been sent.
+After sending, record them so next week's run moves on a tier: `chase ... --as-of 2026-10-02 --record INV-2026-034,INV-2026-036,INV-2026-038,INV-2026-039` (only list the ones actually sent).
+
+=== 3. status ===
+#### Outstanding invoices — as of Oct 2, 2026
+
+**Source:** ledger `sample_ledger.md`
+
+**Summary:** 7 unpaid invoice(s) sent (6 overdue, 1 partially paid) · 1 draft(s) not yet sent.
+**Outstanding:** €4,750 EUR · $21,380.50 USD
+**Overdue:** €4,750 EUR · $17,780.50 USD
+
+| Invoice | Client | Status | Issued | Due | Balance | Days overdue | Last chased |
+|---|---|---|---|---|---|---|---|
+| INV-2026-034 | Harbor & Pine Co | overdue · sent | Aug 1 | Aug 31 | $2,850 | 32 | tier 3 · Sep 14 |
+| INV-2026-035 | Lumen Bakery | overdue · partial | Aug 20 | Sep 3 | $3,500 of $6,000 | 29 | tier 3 · Sep 18 |
+| INV-2026-036 | Kestrel Outdoor GmbH | overdue · sent | Aug 3 | Sep 17 | €4,750 | 15 | never |
+| INV-2026-038 | Acme Corp | overdue · sent | Aug 26 | Sep 25 | $8,000 | 7 | tier 1 · Sep 26 |
+| INV-2026-037 | Bluefin Labs | overdue · sent | Aug 28 | Sep 27 | $1,980 | 5 | tier 1 · Sep 28 |
+| INV-2026-039 | Quill & Co | overdue · sent | Sep 1 | Oct 1 | $1,450.50 | 1 | never |
+| INV-2026-040 | Bluefin Labs | sent | Sep 20 | Oct 20 | $3,600 | — | never |
+
+**Aging** (unpaid balance of sent invoices, by days past due)
+
+| Currency | Not yet due | 1–30 | 31–60 | 61–90 | 90+ | Total |
+|---|---|---|---|---|---|---|
+| EUR | — | €4,750 | — | — | — | €4,750 |
+| USD | $3,600 | $14,930.50 | $2,850 | — | — | $21,380.50 |
+
+**Drafts — not sent yet, not counted as outstanding**
+
+| Invoice | Client | Issued | Total | Note |
+|---|---|---|---|---|
+| INV-2026-041 | Harbor & Pine Co | Oct 1 | $1,200 |  |
+
+3 paid invoice(s) not shown.

@@ -1,0 +1,114 @@
+=== 1. "Qualify the Ostrevane deal": MEDDICC scorecard ===
+# Deal qualification: Ostrevane Freight \(fictional\) — MEDDICC
+
+_As of Oct 12, 2026 · 4 customer meetings (Aug 18 – Oct 6) · CRM: HubSpot deal [“Ostrevane — dispatch visibility”](https://crm.example/deals/58120) (Proposal, close date 2026-11-30) · Coverage checklist, not a win prediction._
+
+**Coverage:** 3 evidenced · 3 partial · 0 missing · 1 contradicted, of 7 elements.
+
+## Fix first
+- ⚠️ **Conflict, Decision process (Decision date):** “2026-11-20” (customer, [Ostrevane discovery\: carrier ETAs, Sep 2](https://notes.granola.ai/d/sample-o2)) vs “2027-01-29” (customer, [Ostrevane security and next steps, Oct 6](https://notes.granola.ai/d/sample-o5)).
+- ⚠️ **CRM disagrees, Champion:** CRM says “Teodor Vasko”; the calls say “Ines Marlowe” (customer, [Pricing and rollout review, Sep 23](https://notes.granola.ai/d/sample-o3b)).
+- ⚠️ **Our side only, Economic buyer:** every piece of evidence is our side speaking; the customer hasn't confirmed it on a call.
+- ⏳ **Stale, Competition:** newest evidence Aug 18 (55 days ago; stale after 45 days).
+- ↪️ **Changed, Metrics (Target):** from “92% on-time by end of Q1” to “95% on-time” (customer, [Ostrevane security and next steps, Oct 6](https://notes.granola.ai/d/sample-o5)).
+
+## Scorecard
+| | Element | Status | Evidence | Missing |
+|---|---|---|---|---|
+| M | Metrics | ✅ Evidenced | 3 quotes · customer | — |
+| E | Economic buyer | 🟡 Partial | 1 quote · our side | Named budget owner (only our side said it); Engaged directly (not heard) |
+| DC | Decision criteria | 🟡 Partial | 1 quote · customer | Must-haves ranked (not heard) |
+| DP | Decision process | ⚠️ Contradicted | 3 quotes · customer | Decision date conflicts across calls |
+| I | Identify pain | ✅ Evidenced | 2 quotes · customer | — |
+| Ch | Champion | ✅ Evidenced | 1 quote · customer | — |
+| Co | Competition | 🟡 Partial | 1 quote · customer | Alternatives considered (last confirmed Aug 18, 55 days ago); How we compare (not heard) |
+
+## By element
+
+### M · Metrics — Evidenced
+- “And we'd now hold ourselves to 95% on-time, not 92. The board raised the bar.” — customer (Ines Marlowe), [Ostrevane security and next steps, Oct 6](https://notes.granola.ai/d/sample-o5)
+- “Our on-time rate was 86% last quarter. That's the number the board looks at.” — customer (Teodor Vasko), [Ostrevane discovery\: carrier ETAs, Sep 2](https://notes.granola.ai/d/sample-o2)
+- …and 1 more quote (all of them are in `--format json`).
+
+### E · Economic buyer — Partial
+- “"Ruth Abernathy, your CFO, will sign this, right?" Ines nodded, no verbal confirmation” — notes, attributed to our side (Mara Lindqvist), [Pricing and rollout review, Sep 23](https://notes.granola.ai/d/sample-o3a)
+- Missing: Named budget owner (only our side said it); Engaged directly (not heard).
+- Ask next: Who signs off on a purchase of this size? · Could we get 20 minutes with them to check this matches their priorities?
+
+### DC · Decision criteria — Partial
+- “For us it comes down to three things\: live ETAs from every carrier, alerts in Slack, and no extra data entry for dispatchers.” — customer (Teodor Vasko), [Ostrevane discovery\: carrier ETAs, Sep 2](https://notes.granola.ai/d/sample-o2)
+- Missing: Must-haves ranked (not heard).
+- Ask next: If you could only get two of those, which two?
+
+### DP · Decision process — Contradicted
+- “Realistically we need to decide by January 29, before the new budget year starts.” — customer (Ines Marlowe), [Ostrevane security and next steps, Oct 6](https://notes.granola.ai/d/sample-o5)
+- “Once Ines signs off, I run the vendor review, then it goes to Ruth for signature.” — customer (Kofi Brandt), [Ostrevane security and next steps, Oct 6](https://notes.granola.ai/d/sample-o5)
+- …and 1 more quote (all of them are in `--format json`).
+- Ask next: Earlier we heard November 20 and now January 29. Which date is real, and what moved it? · Who has to approve before Kofi's vendor review can start?
+
+### I · Identify pain — Evidenced
+- “If peak season looks like last year, we will miss our on-time target again and lose the retail contracts up for renewal.” — customer (Teodor Vasko), [Ostrevane discovery\: carrier ETAs, Sep 2](https://notes.granola.ai/d/sample-o2)
+- “Honestly, we lose about six hours a week reconciling carrier ETAs by hand, and customers still call us before we know a truck is late.” — customer (Ines Marlowe), [Ostrevane intro call, Aug 18](https://notes.granola.ai/d/sample-o1) ⏳
+
+### Ch · Champion — Evidenced
+- “Ines will present the business case to Ruth herself” — notes, attributed to customer (Ines Marlowe), [Pricing and rollout review, Sep 23](https://notes.granola.ai/d/sample-o3b)
+
+### Co · Competition — Partial
+- “We looked at building it on top of our TMS last year and parked it.” — customer (Ines Marlowe), [Ostrevane intro call, Aug 18](https://notes.granola.ai/d/sample-o1) ⏳
+- Missing: Alternatives considered (last confirmed Aug 18, 55 days ago); How we compare (not heard).
+- Ask next: What else are you looking at, including building it yourselves or doing nothing? · Where do we stand against the other options on your must-haves?
+
+## CRM vs calls
+| CRM field | CRM | Calls | |
+|---|---|---|---|
+| Close date | 2026-11-30 | “2026-11-20” (customer, [Ostrevane discovery\: carrier ETAs, Sep 2](https://notes.granola.ai/d/sample-o2)) vs “2027-01-29” (customer, [Ostrevane security and next steps, Oct 6](https://notes.granola.ai/d/sample-o5)) | ⚠️ calls disagree |
+| Economic buyer | Ruth Abernathy | “Ruth Abernathy” (our side, [Pricing and rollout review, Sep 23](https://notes.granola.ai/d/sample-o3a)) | ✓ matches, our side only |
+| Champion | Teodor Vasko | “Ines Marlowe” (customer, [Pricing and rollout review, Sep 23](https://notes.granola.ai/d/sample-o3b)) | ⚠️ disagrees |
+
+## Coverage
+- Meetings scored: 4 customer meetings from 5 notes (1 duplicate note of the same meeting merged).
+- Not scored: Ostrevane deal review, Sep 30: internal-only.
+- 1 note-taker bot dropped from attendee lists.
+- 1 finding not used: it cites meetings that are not scored.
+- Transcripts: 3 read, 1 denied (notes used instead).
+- Quotes: 12 used; 12 checked against the note or transcript text in the bundle.
+- Evidence counts as stale after 45 days (`stale_days`).
+- Sources: Meeting notes: Granola ✓ (business plan) · CRM: HubSpot ✓ (deal found).
+- Gaps: none.
+
+_Internal deal review: a coverage checklist built from meeting evidence, not a forecast or a win probability. Don't paste customer quotes into anything the customer will see._
+
+=== 2. CRM field-update draft for the same deal (not written to the CRM) ===
+# CRM update DRAFT: Ostrevane Freight \(fictional\) — [“Ostrevane — dispatch visibility”](https://crm.example/deals/58120)
+
+_HubSpot deal · `hubspot:deal/58120` · as of Oct 12, 2026 · MEDDICC. Not written: nothing changes in the CRM until a person approves each line._
+
+| Field | Key | CRM now | Proposed | Evidence |
+|---|---|---|---|---|
+| Champion | `champion` | Teodor Vasko | Ines Marlowe | “Ines will present the business case to Ruth herself” — notes, attributed to customer (Ines Marlowe), [Pricing and rollout review, Sep 23](https://notes.granola.ai/d/sample-o3b) |
+
+**Not proposed**
+- Close date: the calls disagree (“2026-11-20” vs “2027-01-29”). Resolve it on the next call before changing the CRM.
+- Economic buyer: the CRM matches the calls (“Ruth Abernathy”), but only our side said it. Confirm with the customer.
+
+_Draft only. Each proposed value is the agent's reading of the cited customer quote. A person checks each line against the quote and the meeting, then approves it before anything is written to the CRM._
+
+=== 3. Batch: three open deals in one table ===
+# Deal qualification: 3 deals — MEDDICC
+
+_As of Oct 12, 2026 · Coverage checklist, not a win prediction._
+
+| Deal | Stage | Meetings | M | E | DC | DP | I | Ch | Co | Flags | Next gap |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| Ostrevane Freight \(fictional\) | Proposal | 4 | ✅ | 🟡 | 🟡 | ⚠️ | ✅ | ✅ | 🟡 | 1 conflict · 1 CRM ≠ calls · 1 our side only · 1 stale | Decision process: settle the decision date |
+| Ketterbrae Clinics \(fictional\) | Discovery | 1 | 🟡 | ❌ | ❌ | ❌ | 🟡 | 🟡 | ❌ | 1 our side only | Economic buyer: named budget owner |
+| Dunnolark Studio \(fictional\) | Negotiation | — | — | — | — | — | — | — | — | not scored: meeting notes unavailable (Granola is not added to this Space) | — |
+
+✅ evidenced · 🟡 partial · ❌ missing · ⚠️ contradicted. Columns: M Metrics, E Economic buyer, DC Decision criteria, DP Decision process, I Identify pain, Ch Champion, Co Competition.
+Run a single deal for its quotes, missing parts and questions to ask next.
+
+_Internal deal review: a coverage checklist built from meeting evidence, not a forecast or a win probability. Don't paste customer quotes into anything the customer will see._
+
+=== 4. One deal whose meeting notes could not be read: nothing is scored (exit 3) ===
+not scored: the meeting-notes source (Granola) is unavailable (Granola is not added to this Space). Nothing was scored, so nothing is reported as missing. Fix access or provide transcripts, then rerun.
+(exit code 3)

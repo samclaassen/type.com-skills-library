@@ -1,0 +1,14 @@
+{
+  "brand": "Fernhill Goods",
+  "currency": "USD",
+  "gross_margin_pct": 64,
+  "shipping_fulfillment_per_order": 11.0,
+  "payment_fee_pct": 2.9,
+  "payment_fee_fixed": 0.3,
+  "return_rate_pct": 7,
+  "discount_pct": 25,
+  "target": {
+    "type": "margin_floor",
+    "min_contribution_pct": 12
+  }
+}

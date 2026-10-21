@@ -1,0 +1,802 @@
+{
+  "schema_version": 1,
+  "_note": "FICTIONAL sample data for user-research-synthesis. Companies, people and links are invented; notes.granola.ai/d/sample-* links are placeholders.",
+  "study": {
+    "name": "Workspace onboarding interviews, September 2026",
+    "method": "interviews",
+    "research_questions": [
+      {
+        "id": "RQ1",
+        "text": "How do new admins get their first workflow live, and where do they stall?"
+      },
+      {
+        "id": "RQ2",
+        "text": "What do admins expect from the first-week setup checklist?"
+      },
+      {
+        "id": "RQ3",
+        "text": "Who else gets involved before a workspace is rolled out to the team?"
+      }
+    ],
+    "segments": [
+      {
+        "key": "self-serve",
+        "label": "Self-serve admins"
+      },
+      {
+        "key": "sales-led",
+        "label": "Sales-assisted teams"
+      }
+    ],
+    "private": {
+      "names": [
+        "Kwame Osei",
+        "Hana Iverson"
+      ],
+      "organisations": [
+        "Brindlecove"
+      ]
+    }
+  },
+  "sources": {
+    "meetings": {
+      "provider": "granola",
+      "status": "ok",
+      "folder": "Onboarding interviews",
+      "detail": "listed by folder for the study period"
+    },
+    "transcripts": {
+      "provider": "granola",
+      "status": "partial",
+      "detail": "1 transcript denied by workspace policy"
+    }
+  },
+  "participants": [
+    {
+      "id": "P1",
+      "segment": "self-serve",
+      "consent": "granted",
+      "private": {
+        "names": [
+          "Maya Okonjo"
+        ],
+        "organisations": [
+          "Vellicor Freight",
+          "Vellicor"
+        ],
+        "emails": [
+          "maya@vellicor.example"
+        ]
+      }
+    },
+    {
+      "id": "P2",
+      "segment": "self-serve",
+      "consent": "granted",
+      "private": {
+        "names": [
+          "Tomasz Ferreira"
+        ],
+        "organisations": [
+          "Dunmarrow Dental",
+          "Dunmarrow"
+        ],
+        "emails": [
+          "tomasz@dunmarrow.example"
+        ]
+      }
+    },
+    {
+      "id": "P3",
+      "segment": "sales-led",
+      "consent": "granted",
+      "private": {
+        "names": [
+          "Priya Halvorsen"
+        ],
+        "organisations": [
+          "Hobblestead Foods",
+          "Hobblestead"
+        ],
+        "emails": [
+          "priya.halvorsen@hobblestead.example"
+        ]
+      }
+    },
+    {
+      "id": "P4",
+      "segment": "self-serve",
+      "consent": "no_quotes",
+      "private": {
+        "names": [
+          "Dev Castellano",
+          "Dev"
+        ],
+        "organisations": [
+          "Tindleforge Agency",
+          "Tindleforge"
+        ],
+        "emails": [
+          "dev@tindleforge.example"
+        ]
+      }
+    },
+    {
+      "id": "P5",
+      "segment": "sales-led",
+      "consent": "granted",
+      "private": {
+        "names": [
+          "Ruth Adeyemi-Lund"
+        ],
+        "organisations": [
+          "Pridmoxa Clinics",
+          "Pridmoxa"
+        ],
+        "emails": [
+          "ruth.adeyemi@pridmoxa.example"
+        ]
+      }
+    },
+    {
+      "id": "P6",
+      "segment": "sales-led",
+      "consent": "unknown",
+      "private": {
+        "names": [
+          "Joaquim Brandt"
+        ],
+        "organisations": [
+          "Kipperwold Supply",
+          "Kipperwold"
+        ],
+        "emails": [
+          "joaquim@kipperwold.example"
+        ]
+      }
+    },
+    {
+      "id": "P7",
+      "segment": "self-serve",
+      "consent": "granted",
+      "private": {
+        "names": [
+          "Sunniva Patel"
+        ],
+        "organisations": [
+          "Ruskellan Print",
+          "Ruskellan"
+        ],
+        "emails": [
+          "sunniva@ruskellan.example"
+        ]
+      }
+    },
+    {
+      "id": "P8",
+      "segment": "self-serve",
+      "consent": "declined",
+      "private": {
+        "names": [
+          "Leo Marchetti"
+        ],
+        "organisations": [
+          "Fallowmere Studio"
+        ],
+        "emails": [
+          "leo@fallowmere.example"
+        ]
+      }
+    }
+  ],
+  "meetings": [
+    {
+      "meeting_id": "sample-urs-01",
+      "date": "2026-09-14",
+      "url": "https://notes.granola.ai/d/sample-urs-01",
+      "participant_ids": [
+        "P1"
+      ],
+      "transcript": {
+        "status": "ok",
+        "text": "Microphone: Thanks for making time, Maya. How did you get your first workflow live?\nSystem audio: Honestly, it took a week. I got stuck on the very first screen, connecting our shipment database. I asked Kwame in finance for the login and waited two days.\nMicrophone: What were you trying to get done?\nSystem audio: I want the Monday hand-offs between dispatch and billing to run without me chasing people, and without filing an IT ticket every time.\nMicrophone: Wouldn't a progress bar make you more likely to finish the checklist?\nSystem audio: Yeah, I guess a progress bar would be nice.\nMicrophone: What would a great first day look like?\nSystem audio: Seeing one workflow run end to end on day one. Then I'd trust it.\nMicrophone: Anything else about the checklist?\nSystem audio: Not really. Vellicor is small, so it's mostly me."
+      },
+      "notes": {
+        "status": "ok",
+        "text": "Maya (Vellicor Freight) stalled on connecting the shipment database; the credentials are held by finance. Wants the Monday hand-offs automated."
+      }
+    },
+    {
+      "meeting_id": "sample-urs-02",
+      "date": "2026-09-15",
+      "url": "https://notes.granola.ai/d/sample-urs-02",
+      "participant_ids": [
+        "P2"
+      ],
+      "transcript": {
+        "status": "ok",
+        "text": "Microphone: Can you walk me through setting up your workspace?\nSystem audio: Sure. I shared my screen with Hana last time, but basically I skipped the templates. They looked like they were for bigger companies.\nMicrophone: Where did it get hard?\nSystem audio: Connecting the patient-booking system. The API key lives with our IT contractor, so everything stopped there.\nMicrophone: How do you handle the reminders today?\nSystem audio: We still run the reminders from a shared spreadsheet. Until I trust the workflow, the spreadsheet stays.\nMicrophone: Would single sign-on matter for you?\nSystem audio: We don't need single sign-on. We're eleven people.\nMicrophone: What's the job you hired us for?\nSystem audio: Getting patient reminders out without someone copying rows every morning."
+      },
+      "notes": {
+        "status": "ok",
+        "text": "Tomasz shared his screen. He opened the template gallery, closed it after a few seconds, and built the workflow from a blank canvas. Stalled at the booking-system connection (API key held by their IT contractor)."
+      }
+    },
+    {
+      "meeting_id": "sample-urs-03",
+      "date": "2026-09-16",
+      "url": "https://notes.granola.ai/d/sample-urs-03",
+      "participant_ids": [
+        "P3"
+      ],
+      "transcript": {
+        "status": "ok",
+        "text": "Microphone: How did rollout start at your company?\nSystem audio: At Hobblestead we can't connect anything until IT signs off, and the warehouse system credentials sit with them.\nMicrophone: So connecting the first source was the slow part?\nSystem audio: Connecting the warehouse system took us nine days, mostly waiting.\nMicrophone: What would you want from the setup checklist?\nSystem audio: I need the checklist to show me what my team still has to do, not just my own steps. And single sign-on has to be on it, our security review asks for it first.\nMicrophone: Who else had to approve the purchase?\nSystem audio: Finance had to approve the plan before we could invite anyone. That's just how we work."
+      },
+      "notes": {
+        "status": "ok",
+        "text": "Priya Halvorsen, Hobblestead Foods. IT gate before any connection; SSO required by security review; finance approves the plan."
+      }
+    },
+    {
+      "meeting_id": "sample-urs-04",
+      "date": "2026-09-17",
+      "url": "https://notes.granola.ai/d/sample-urs-04",
+      "participant_ids": [
+        "P4"
+      ],
+      "transcript": {
+        "status": "ok",
+        "text": "Microphone: How did setup go?\nSystem audio: Slow at the start. Our client calendars sit in an account only the founder can log into, so I couldn't connect them.\nMicrophone: What were you hoping to automate?\nSystem audio: Weekly client status hand-offs, so the team stops pinging me for updates.\nMicrophone: And until then?\nSystem audio: A shared spreadsheet, honestly. Everyone updates a row.\nMicrophone: So a progress bar would help, right?\nSystem audio: Sure, that would probably help."
+      },
+      "notes": {
+        "status": "ok",
+        "text": "Dev from Tindleforge Agency. Calendars locked to the founder's account."
+      }
+    },
+    {
+      "meeting_id": "sample-urs-05",
+      "date": "2026-09-18",
+      "url": "https://notes.granola.ai/d/sample-urs-05",
+      "participant_ids": [
+        "P5"
+      ],
+      "transcript": {
+        "status": "ok",
+        "text": "Microphone: Tell me about the first week.\nSystem audio: The first week was mostly waiting on credentials for the scheduling system. Our ops lead holds them.\nMicrophone: If something goes wrong, who should we contact?\nSystem audio: Just send it to ruth.adeyemi@pridmoxa.example and I'll forward it.\nMicrophone: What about the checklist?\nSystem audio: I ignore progress bars, to be honest. I want the checklist to list single sign-on and who on my team hasn't logged in yet.\nMicrophone: What would make day one feel successful?\nSystem audio: One reminder going out for real on day one. That's the moment I'd show my boss."
+      },
+      "notes": {
+        "status": "ok",
+        "text": "Ruth shared her screen. She skipped the template gallery and started from a blank canvas. She asked where the SSO settings are. Waiting on scheduling-system credentials from the ops lead."
+      }
+    },
+    {
+      "meeting_id": "sample-urs-06",
+      "date": "2026-09-21",
+      "url": "https://notes.granola.ai/d/sample-urs-06",
+      "participant_ids": [
+        "P6"
+      ],
+      "transcript": {
+        "status": "ok",
+        "text": "Microphone: What's your setup like today?\nSystem audio: We keep the purchase-order hand-offs in a shared spreadsheet until the automation proves itself.\nMicrophone: What do you expect from the checklist?\nSystem audio: Single sign-on first, then a view of which teammates still have tasks open.\nMicrophone: Anything missing from what you've seen?\nSystem audio: The pricing page doesn't say which plan has audit logs. I had to ask sales."
+      },
+      "notes": {
+        "status": "ok",
+        "text": "Joaquim Brandt, Kipperwold Supply."
+      }
+    },
+    {
+      "meeting_id": "sample-urs-07",
+      "date": "2026-09-22",
+      "url": "https://notes.granola.ai/d/sample-urs-07",
+      "participant_ids": [
+        "P7"
+      ],
+      "transcript": {
+        "status": "denied"
+      },
+      "notes": {
+        "status": "ok",
+        "text": "Sunniva shared her screen. She connected the print-queue database herself in about ten minutes using the setup guide. She said she wants hand-offs between the studio and the print floor to run on their own. She did not open the template gallery and started from a blank canvas. Follow-up: +44 20 7946 0958."
+      }
+    },
+    {
+      "meeting_id": "sample-urs-08",
+      "date": "2026-09-23",
+      "url": "https://notes.granola.ai/d/sample-urs-08",
+      "participant_ids": [
+        "P8"
+      ],
+      "transcript": {
+        "status": "ok",
+        "text": "Microphone: How did the first connection go?\nSystem audio: It was slow, I needed someone else's password."
+      },
+      "notes": {
+        "status": "ok",
+        "text": "Leo Marchetti. Declined consent at the end of the session."
+      }
+    },
+    {
+      "meeting_id": "sample-urs-09",
+      "date": "2026-09-24",
+      "url": "https://notes.granola.ai/d/sample-urs-09",
+      "excluded_reason": "internal debrief, not an interview"
+    }
+  ],
+  "evidence": [
+    {
+      "id": "E1",
+      "participant_id": "P1",
+      "meeting_id": "sample-urs-01",
+      "kind": "said",
+      "source": "transcript",
+      "text": "I got stuck on the very first screen, connecting our shipment database.",
+      "question": "How did you get your first workflow live?",
+      "leading_question": false
+    },
+    {
+      "id": "E2",
+      "participant_id": "P1",
+      "meeting_id": "sample-urs-01",
+      "kind": "said",
+      "source": "transcript",
+      "text": "I asked Kwame in finance for the login and waited two days.",
+      "question": "How did you get your first workflow live?",
+      "leading_question": false
+    },
+    {
+      "id": "E3",
+      "participant_id": "P1",
+      "meeting_id": "sample-urs-01",
+      "kind": "said",
+      "source": "transcript",
+      "text": "I want the Monday hand-offs between dispatch and billing to run without me chasing people, and without filing an IT ticket every time.",
+      "question": "What were you trying to get done?",
+      "leading_question": false
+    },
+    {
+      "id": "E4",
+      "participant_id": "P1",
+      "meeting_id": "sample-urs-01",
+      "kind": "said",
+      "source": "transcript",
+      "text": "Yeah, I guess a progress bar would be nice.",
+      "question": "Wouldn't a progress bar make you more likely to finish the checklist?",
+      "leading_question": false
+    },
+    {
+      "id": "E5",
+      "participant_id": "P1",
+      "meeting_id": "sample-urs-01",
+      "kind": "said",
+      "source": "transcript",
+      "text": "Seeing one workflow run end to end on day one. Then I'd trust it.",
+      "question": "What would a great first day look like?",
+      "leading_question": false
+    },
+    {
+      "id": "E6",
+      "participant_id": "P2",
+      "meeting_id": "sample-urs-02",
+      "kind": "did",
+      "source": "notes",
+      "text": "He opened the template gallery, closed it after a few seconds, and built the workflow from a blank canvas."
+    },
+    {
+      "id": "E7",
+      "participant_id": "P2",
+      "meeting_id": "sample-urs-02",
+      "kind": "said",
+      "source": "transcript",
+      "text": "Connecting the patient-booking system. The API key lives with our IT contractor, so everything stopped there.",
+      "question": "Where did it get hard?",
+      "leading_question": false
+    },
+    {
+      "id": "E8",
+      "participant_id": "P2",
+      "meeting_id": "sample-urs-02",
+      "kind": "said",
+      "source": "transcript",
+      "text": "We still run the reminders from a shared spreadsheet. Until I trust the workflow, the spreadsheet stays.",
+      "question": "How do you handle the reminders today?",
+      "leading_question": false
+    },
+    {
+      "id": "E9",
+      "participant_id": "P2",
+      "meeting_id": "sample-urs-02",
+      "kind": "said",
+      "source": "transcript",
+      "text": "We don't need single sign-on. We're eleven people.",
+      "question": "Would single sign-on matter for you?",
+      "leading_question": false
+    },
+    {
+      "id": "E10",
+      "participant_id": "P2",
+      "meeting_id": "sample-urs-02",
+      "kind": "said",
+      "source": "transcript",
+      "text": "Getting patient reminders out without someone copying rows every morning.",
+      "question": "What's the job you hired us for?",
+      "leading_question": false
+    },
+    {
+      "id": "E11",
+      "participant_id": "P3",
+      "meeting_id": "sample-urs-03",
+      "kind": "said",
+      "source": "transcript",
+      "text": "At Hobblestead we can't connect anything until IT signs off, and the warehouse system credentials sit with them.",
+      "question": "How did rollout start at your company?",
+      "leading_question": false
+    },
+    {
+      "id": "E12",
+      "participant_id": "P3",
+      "meeting_id": "sample-urs-03",
+      "kind": "said",
+      "source": "transcript",
+      "text": "Connecting the warehouse system took us nine days, mostly waiting.",
+      "question": "So connecting the first source was the slow part?",
+      "leading_question": true
+    },
+    {
+      "id": "E13",
+      "participant_id": "P3",
+      "meeting_id": "sample-urs-03",
+      "kind": "said",
+      "source": "transcript",
+      "text": "I need the checklist to show me what my team still has to do, not just my own steps.",
+      "question": "What would you want from the setup checklist?",
+      "leading_question": false
+    },
+    {
+      "id": "E14",
+      "participant_id": "P3",
+      "meeting_id": "sample-urs-03",
+      "kind": "said",
+      "source": "transcript",
+      "text": "And single sign-on has to be on it, our security review asks for it first.",
+      "question": "What would you want from the setup checklist?",
+      "leading_question": false
+    },
+    {
+      "id": "E15",
+      "participant_id": "P3",
+      "meeting_id": "sample-urs-03",
+      "kind": "said",
+      "source": "transcript",
+      "text": "Finance had to approve the plan before we could invite anyone.",
+      "question": "Who else had to approve the purchase?",
+      "leading_question": false
+    },
+    {
+      "id": "E16",
+      "participant_id": "P4",
+      "meeting_id": "sample-urs-04",
+      "kind": "said",
+      "source": "transcript",
+      "text": "Our client calendars sit in an account only the founder can log into, so I couldn't connect them.",
+      "question": "How did setup go?",
+      "leading_question": false
+    },
+    {
+      "id": "E17",
+      "participant_id": "P4",
+      "meeting_id": "sample-urs-04",
+      "kind": "said",
+      "source": "transcript",
+      "text": "Weekly client status hand-offs, so the team stops pinging me for updates.",
+      "question": "What were you hoping to automate?",
+      "leading_question": false
+    },
+    {
+      "id": "E18",
+      "participant_id": "P4",
+      "meeting_id": "sample-urs-04",
+      "kind": "said",
+      "source": "transcript",
+      "text": "A shared spreadsheet, honestly. Everyone updates a row.",
+      "question": "And until then?",
+      "leading_question": false
+    },
+    {
+      "id": "E19",
+      "participant_id": "P4",
+      "meeting_id": "sample-urs-04",
+      "kind": "said",
+      "source": "transcript",
+      "text": "Sure, that would probably help.",
+      "question": "So a progress bar would help, right?",
+      "leading_question": true
+    },
+    {
+      "id": "E20",
+      "participant_id": "P5",
+      "meeting_id": "sample-urs-05",
+      "kind": "said",
+      "source": "transcript",
+      "text": "The first week was mostly waiting on credentials for the scheduling system.",
+      "question": "Tell me about the first week.",
+      "leading_question": false
+    },
+    {
+      "id": "E22",
+      "participant_id": "P5",
+      "meeting_id": "sample-urs-05",
+      "kind": "said",
+      "source": "transcript",
+      "text": "I ignore progress bars, to be honest.",
+      "question": "What about the checklist?",
+      "leading_question": false
+    },
+    {
+      "id": "E23",
+      "participant_id": "P5",
+      "meeting_id": "sample-urs-05",
+      "kind": "said",
+      "source": "transcript",
+      "text": "I want the checklist to list single sign-on and who on my team hasn't logged in yet.",
+      "question": "What about the checklist?",
+      "leading_question": false
+    },
+    {
+      "id": "E24",
+      "participant_id": "P5",
+      "meeting_id": "sample-urs-05",
+      "kind": "did",
+      "source": "notes",
+      "text": "She skipped the template gallery and started from a blank canvas."
+    },
+    {
+      "id": "E25",
+      "participant_id": "P5",
+      "meeting_id": "sample-urs-05",
+      "kind": "said",
+      "source": "transcript",
+      "text": "One reminder going out for real on day one. That's the moment I'd show my boss.",
+      "question": "What would make day one feel successful?",
+      "leading_question": false
+    },
+    {
+      "id": "E27",
+      "participant_id": "P6",
+      "meeting_id": "sample-urs-06",
+      "kind": "said",
+      "source": "transcript",
+      "text": "We keep the purchase-order hand-offs in a shared spreadsheet until the automation proves itself.",
+      "question": "What's your setup like today?",
+      "leading_question": false
+    },
+    {
+      "id": "E28",
+      "participant_id": "P6",
+      "meeting_id": "sample-urs-06",
+      "kind": "said",
+      "source": "transcript",
+      "text": "Single sign-on first, then a view of which teammates still have tasks open.",
+      "question": "What do you expect from the checklist?",
+      "leading_question": false
+    },
+    {
+      "id": "E29",
+      "participant_id": "P6",
+      "meeting_id": "sample-urs-06",
+      "kind": "said",
+      "source": "transcript",
+      "text": "The pricing page doesn't say which plan has audit logs.",
+      "question": "Anything missing from what you've seen?",
+      "leading_question": false
+    },
+    {
+      "id": "E30",
+      "participant_id": "P7",
+      "meeting_id": "sample-urs-07",
+      "kind": "said",
+      "source": "notes",
+      "text": "She connected the print-queue database herself in about ten minutes using the setup guide."
+    },
+    {
+      "id": "E31",
+      "participant_id": "P7",
+      "meeting_id": "sample-urs-07",
+      "kind": "said",
+      "source": "notes",
+      "text": "She said she wants hand-offs between the studio and the print floor to run on their own."
+    },
+    {
+      "id": "E32",
+      "participant_id": "P7",
+      "meeting_id": "sample-urs-07",
+      "kind": "said",
+      "source": "notes",
+      "text": "She did not open the template gallery and started from a blank canvas."
+    },
+    {
+      "id": "E33",
+      "participant_id": "P8",
+      "meeting_id": "sample-urs-08",
+      "kind": "said",
+      "source": "transcript",
+      "text": "It was slow, I needed someone else's password.",
+      "question": "How did the first connection go?",
+      "leading_question": false
+    }
+  ],
+  "findings": [
+    {
+      "id": "F1",
+      "type": "finding",
+      "rq": "RQ1",
+      "statement": "New admins stall at connecting the first data source, before they build any workflow.",
+      "supporting": [
+        "E1",
+        "E7",
+        "E12",
+        "E16",
+        "E20",
+        "E33"
+      ],
+      "contradicting": [
+        "E30"
+      ]
+    },
+    {
+      "id": "F2",
+      "type": "finding",
+      "rq": "RQ1",
+      "statement": "Admins skip the template gallery and build their first workflow from a blank canvas.",
+      "supporting": [
+        "E6",
+        "E24",
+        "E32"
+      ],
+      "surprise": {
+        "assumption": "Templates are the main way new admins get started."
+      }
+    },
+    {
+      "id": "F3",
+      "type": "finding",
+      "rq": "RQ2",
+      "statement": "Admins want the setup checklist to show what their teammates still have to do.",
+      "supporting": [
+        "E13",
+        "E23",
+        "E28"
+      ]
+    },
+    {
+      "id": "F4",
+      "type": "finding",
+      "rq": "RQ2",
+      "statement": "A progress bar would motivate admins to finish the setup checklist.",
+      "supporting": [
+        "E4",
+        "E19"
+      ],
+      "contradicting": [
+        "E22"
+      ]
+    },
+    {
+      "id": "F5",
+      "type": "finding",
+      "rq": "RQ3",
+      "statement": "Finance approves the plan before a sales-assisted workspace is rolled out.",
+      "supporting": [
+        "E15"
+      ]
+    },
+    {
+      "id": "F6",
+      "type": "finding",
+      "rq": "RQ2",
+      "statement": "Admins expect single sign-on to be a step in the setup checklist.",
+      "supporting": [
+        "E14",
+        "E23",
+        "E28"
+      ],
+      "contradicting": [
+        "E9"
+      ]
+    },
+    {
+      "id": "F7",
+      "type": "job",
+      "statement": "Get recurring team hand-offs running on their own, without chasing people or filing IT tickets.",
+      "supporting": [
+        "E3",
+        "E10",
+        "E17",
+        "E31"
+      ]
+    },
+    {
+      "id": "F8",
+      "type": "pain",
+      "statement": "The credentials for the first data source are held by someone else in the company.",
+      "supporting": [
+        "E2",
+        "E11",
+        "E20"
+      ]
+    },
+    {
+      "id": "F9",
+      "type": "workaround",
+      "statement": "Keep the hand-off in a shared spreadsheet until the workflow has earned trust.",
+      "supporting": [
+        "E8",
+        "E18",
+        "E27"
+      ]
+    },
+    {
+      "id": "F10",
+      "type": "desired_outcome",
+      "statement": "See one workflow run end to end on day one.",
+      "supporting": [
+        "E5",
+        "E25"
+      ]
+    },
+    {
+      "id": "F11",
+      "type": "pain",
+      "statement": "The pricing page does not say which plan includes audit logs.",
+      "supporting": [
+        "E29"
+      ]
+    }
+  ],
+  "opportunities": [
+    {
+      "id": "O1",
+      "statement": "Add a progress bar to the setup checklist.",
+      "findings": [
+        "F4"
+      ]
+    },
+    {
+      "id": "O2",
+      "statement": "Let admins invite the colleague who holds the credentials to connect the first data source.",
+      "findings": [
+        "F1",
+        "F8"
+      ]
+    },
+    {
+      "id": "O3",
+      "statement": "Make single sign-on and teammates' open tasks part of the sales-assisted checklist.",
+      "findings": [
+        "F6",
+        "F3"
+      ]
+    },
+    {
+      "id": "O4",
+      "statement": "Show a 'first workflow ran' moment on day one.",
+      "findings": [
+        "F10"
+      ]
+    },
+    {
+      "id": "O5",
+      "statement": "Say on the pricing page which plan includes audit logs.",
+      "findings": [
+        "F11"
+      ]
+    }
+  ],
+  "open_questions": [
+    {
+      "rq": "RQ3",
+      "text": "Whether IT or security reviews the workspace before rollout; only one participant described an approval step."
+    }
+  ]
+}

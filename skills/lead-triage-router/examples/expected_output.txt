@@ -1,0 +1,133 @@
+LEAD TRIAGE AND ROUTING — as of 2026-09-22
+leads: examples/sample_leads.csv   routing: examples/sample_routing.csv   rubric: config/rubric.json
+scoring: total = 0.60 x fit + 0.40 x (intent x recency); each component is 0-100
+
+SUMMARY
+  Leads scored               19
+  Tier A (>= 70)               5  avg score 83.9
+  Tier B (>= 50)               3  avg score 59.4
+  Tier C (>= 30)               7  avg score 42.4
+  Tier D (>= 0)                1  avg score 27.0
+  DQ (disqualified)            3  avg score 47.5
+
+ROUTING LOAD
+  sdr-sequence            SDR pod 2               7 lead(s)
+  marketing-nurture       (none)                  4 lead(s)
+  enterprise-na           Alex Rivera             3 lead(s)
+  enterprise-apac         Wei Chen                2 lead(s)
+  sdr-outbound            SDR pod 1               2 lead(s)
+  enterprise-emea         Ingrid Solberg          1 lead(s)
+
+TIER A — sales-ready, work immediately (5)
+  [ 94.0] L-2012  Derek Nwosu — VP Engineering, Kestrel Payments
+      firmographics: 1,800 employees | Financial Services | United States (NA) | segment enterprise | source demo_request
+      fit 90.0: 500-1,999 employees +26 [1,800 employees]; revenue $100M-$499M +16 [$410,000,000]; industry Financial Services +20 [listed ICP industry]; country United States +10 [priority market]; title band vp / head of function +18 [VP Engineering]
+      intent 100.0 x active within 7d (last activity 2026-09-22, 0d ago) x1 = 100.0: requested a demo +40 [yes]; started a trial +30 [yes]; pricing page views (30d) +24 [5 x 8, capped at 24]; website sessions (30d) +12 [8 x 2, capped at 12]
+      route -> enterprise-na / Alex Rivera (rule R-01, SLA 2h)
+  [ 86.0] L-2001  Priya Shah — VP of Operations, Northwind Logistics
+      firmographics: 1,400 employees | Logistics | United States (NA) | segment enterprise | source demo_request
+      fit 90.0: 500-1,999 employees +26 [1,400 employees]; revenue $100M-$499M +16 [$310,000,000]; industry Logistics +20 [listed ICP industry]; country United States +10 [priority market]; title band vp / head of function +18 [VP of Operations]
+      intent 80.0 x active within 7d (last activity 2026-09-20, 2d ago) x1 = 80.0: requested a demo +40 [yes]; pricing page views (30d) +24 [3 x 8]; gated content downloads (30d) +4 [1 x 4]; website sessions (30d) +12 [6 x 2]
+      route -> enterprise-na / Alex Rivera (rule R-01, SLA 2h)
+  [ 83.8] L-2015  Paulo Mendes — Chief Technology Officer, Vertex Freight
+      firmographics: 1,150 employees | Logistics | Australia (APAC) | segment enterprise | source demo_request
+      fit 89.0: 500-1,999 employees +26 [1,150 employees]; revenue $100M-$499M +16 [$260,000,000]; industry Logistics +20 [listed ICP industry]; country Australia +7 [priority market]; title band executive buyer +20 [Chief Technology Officer]
+      intent 76.0 x active within 7d (last activity 2026-09-21, 1d ago) x1 = 76.0: requested a demo +40 [yes]; pricing page views (30d) +16 [2 x 8]; website sessions (30d) +12 [7 x 2, capped at 12]; attended a webinar +8 [yes]
+      route -> enterprise-apac / Wei Chen (rule R-03, SLA 4h)
+  [ 83.2] L-2008  Ken Arai — Head of Supply Chain, Meridian Manufacturing
+      firmographics: 5,400 employees | Manufacturing | Japan (APAC) | segment enterprise | source demo_request
+      fit 88.0: 2,000+ employees +30 [5,400 employees]; revenue $500M+ +20 [$1,200,000,000]; industry Manufacturing +16 [listed ICP industry]; country Japan +4 [default market]; title band vp / head of function +18 [Head of Supply Chain]
+      intent 76.0 x active within 7d (last activity 2026-09-21, 1d ago) x1 = 76.0: requested a demo +40 [yes]; pricing page views (30d) +24 [4 x 8, capped at 24]; website sessions (30d) +12 [11 x 2, capped at 12]
+      route -> enterprise-apac / Wei Chen (rule R-03, SLA 4h)
+  [ 72.7] L-2002  Marcus Feld — Director of IT, Atlas Bio Labs
+      firmographics: 3,200 employees | Healthcare | Germany (EMEA) | segment enterprise | source webinar
+      fit 86.0: 2,000+ employees +30 [3,200 employees]; revenue $500M+ +20 [$900,000,000]; industry Healthcare +14 [listed ICP industry]; country Germany +8 [priority market]; title band director +14 [Director of IT]
+      intent 62.0 x active within 30d (last activity 2026-09-01, 21d ago) x0.85 = 52.7: started a trial +30 [yes]; pricing page views (30d) +8 [1 x 8]; gated content downloads (30d) +8 [2 x 4]; website sessions (30d) +8 [4 x 2]; attended a webinar +8 [yes]
+      route -> enterprise-emea / Ingrid Solberg (rule R-02, SLA 4h)
+
+TIER B — qualify before routing to an AE (3)
+  [ 67.8] L-2003  Amara Osei — Chief Operating Officer, Cascade Fintech
+      firmographics: 240 employees | Financial Services | United States (NA) | segment mid-market | source content_download
+      fit 81.0: 200-499 employees +20 [240 employees]; revenue $25M-$99M +11 [$48,000,000]; industry Financial Services +20 [listed ICP industry]; country United States +10 [priority market]; title band executive buyer +20 [Chief Operating Officer]
+      intent 48.0 x active within 7d (last activity 2026-09-19, 3d ago) x1 = 48.0: pricing page views (30d) +16 [2 x 8]; gated content downloads (30d) +12 [3 x 4]; website sessions (30d) +12 [9 x 2, capped at 12]; attended a webinar +8 [yes]
+      route -> sdr-outbound / SDR pod 1 (rule R-06, SLA 12h)
+  [ 57.6] L-2018  Mira Lindqvist — General Manager, Lantern Bay Hotels
+      firmographics: 260 employees | Hospitality | Sweden (EMEA) | segment mid-market | source content_download
+      fit 52.0: 200-499 employees +20 [260 employees]; revenue $25M-$99M +11 [$41,000,000]; industry Hospitality +8 [not an explicitly scored industry]; country Sweden +4 [default market]; title band manager +9 [General Manager]
+      intent 66.0 x active within 7d (last activity 2026-09-19, 3d ago) x1 = 66.0: started a trial +30 [yes]; pricing page views (30d) +24 [3 x 8]; website sessions (30d) +12 [6 x 2]
+      route -> sdr-outbound / SDR pod 1 (rule R-06, SLA 12h)
+  [ 52.8] L-2010  Robert Kline — Chief Financial Officer, Silverline Energy
+      firmographics: 2,100 employees | Energy | United States (NA) | segment enterprise | source referral
+      fit 88.0: 2,000+ employees +30 [2,100 employees]; revenue $500M+ +20 [$780,000,000]; industry Energy +8 [not an explicitly scored industry]; country United States +10 [priority market]; title band executive buyer +20 [Chief Financial Officer]
+      intent 0.0 x no activity date on record x0.25 = 0.0: no scoring signals present
+      route -> enterprise-na / Alex Rivera (rule R-05, SLA 8h)
+
+TIER C — sequence, do not call (7)
+  [ 47.8] L-2014  Grace Oduya — Director of Procurement, Fairmont Civic Partners
+      firmographics: 760 employees | Nonprofit | United States (NA) | segment mid-market | source referral
+      fit 65.0: 500-1,999 employees +26 [760 employees]; revenue $25M-$99M +11 [$95,000,000]; industry Nonprofit +4 [listed low-fit industry, below the +8 unlisted default]; country United States +10 [priority market]; title band director +14 [Director of Procurement]
+      intent 26.0 x active within 30d (last activity 2026-09-14, 8d ago) x0.85 = 22.1: pricing page views (30d) +16 [2 x 8]; gated content downloads (30d) +4 [1 x 4]; website sessions (30d) +6 [3 x 2]
+      route -> sdr-sequence / SDR pod 2 (rule R-07, SLA 48h)
+  [ 46.4] L-2019  Tomas Reyes — Forehead Office Manager, Clearbrow Clinics
+      firmographics: 320 employees | Healthcare | United States (NA) | segment mid-market | source content_download
+      fit 64.0: 200-499 employees +20 [320 employees]; revenue $25M-$99M +11 [$46,000,000]; industry Healthcare +14 [listed ICP industry]; country United States +10 [priority market]; title band manager +9 [Forehead Office Manager]
+      intent 20.0 x active within 7d (last activity 2026-09-17, 5d ago) x1 = 20.0: pricing page views (30d) +8 [1 x 8]; gated content downloads (30d) +4 [1 x 4]; website sessions (30d) +8 [4 x 2]
+      route -> sdr-sequence / SDR pod 2 (rule R-07, SLA 48h)
+  [ 43.6] L-2009  Elena Marchetti — Clinical Systems Analyst, Harbor Point Health
+      firmographics: 900 employees | Healthcare | United Kingdom (EMEA) | segment mid-market | source content_download
+      fit 69.0: 500-1,999 employees +26 [900 employees]; revenue $100M-$499M +16 [$220,000,000]; industry Healthcare +14 [listed ICP industry]; country United Kingdom +9 [priority market]; title band individual contributor +4 [Clinical Systems Analyst]
+      intent 10.0 x active within 90d (last activity 2026-07-18, 66d ago) x0.55 = 5.5: gated content downloads (30d) +8 [2 x 4]; website sessions (30d) +2 [1 x 2]
+      route -> sdr-sequence / SDR pod 2 (rule R-07, SLA 48h)
+  [ 40.8] L-2004  Tomas Rivera — Procurement Manager, Quill and Bramble Retail
+      firmographics: 620 employees | Retail | Spain (EMEA) | segment mid-market | source tradeshow
+      fit 65.0: 500-1,999 employees +26 [620 employees]; revenue $100M-$499M +16 [$140,000,000]; industry Retail +10 [listed ICP industry]; country Spain +4 [default market]; title band manager +9 [Procurement Manager]
+      intent 8.0 x active within 90d (last activity 2026-08-20, 33d ago) x0.55 = 4.4: gated content downloads (30d) +4 [1 x 4]; website sessions (30d) +4 [2 x 2]
+      route -> sdr-sequence / SDR pod 2 (rule R-07, SLA 48h)
+  [ 40.0] L-2017  Owen Castellanos — Plant Manager, Pinewood Manufacturing
+      firmographics: 140 employees | Manufacturing | Mexico (NA) | segment smb | source tradeshow
+      fit 52.0: 50-199 employees +12 [140 employees]; revenue $25M-$99M +11 [$30,000,000]; industry Manufacturing +16 [listed ICP industry]; country Mexico +4 [default market]; title band manager +9 [Plant Manager]
+      intent 26.0 x active within 30d (last activity 2026-09-13, 9d ago) x0.85 = 22.1: pricing page views (30d) +8 [1 x 8]; gated content downloads (30d) +8 [2 x 4]; website sessions (30d) +10 [5 x 2]
+      route -> sdr-sequence / SDR pod 2 (rule R-07, SLA 48h)
+  [ 39.8] L-2016  Nadia Petrov — Senior Analyst, Ridgeline Insurance
+      firmographics: 430 employees | Financial Services | United States (NA) | segment mid-market | source organic_search
+      fit 65.0: 200-499 employees +20 [430 employees]; revenue $25M-$99M +11 [$88,000,000]; industry Financial Services +20 [listed ICP industry]; country United States +10 [priority market]; title band individual contributor +4 [Senior Analyst]
+      intent 8.0 x no activity in 90d (last activity 2026-06-15, 99d ago) x0.25 = 2.0: gated content downloads (30d) +4 [1 x 4]; website sessions (30d) +4 [2 x 2]
+      route -> sdr-sequence / SDR pod 2 (rule R-07, SLA 48h)
+  [ 38.6] L-2013  Alice Berger — Marketing Coordinator, Copperfield Media
+      firmographics: 310 employees | Media | Canada (NA) | segment mid-market | source content_download
+      fit 53.0: 200-499 employees +20 [310 employees]; revenue $25M-$99M +11 [$52,000,000]; industry Media +8 [not an explicitly scored industry]; country Canada +10 [priority market]; title band individual contributor +4 [Marketing Coordinator]
+      intent 20.0 x active within 30d (last activity 2026-09-10, 12d ago) x0.85 = 17.0: gated content downloads (30d) +12 [4 x 4, capped at 12]; website sessions (30d) +8 [4 x 2]
+      route -> sdr-sequence / SDR pod 2 (rule R-07, SLA 48h)
+
+TIER D — marketing nurture only (1)
+  [ 27.0] L-2011  Hana Kovacs — IT Manager, Brightwater Utilities
+      firmographics: size unknown | Utilities | Netherlands (EMEA) | segment unknown | source webinar
+      fit 25.0: company size unknown +0 [employee_count blank]; revenue unknown +0 [annual_revenue_usd blank]; industry Utilities +8 [not an explicitly scored industry]; country Netherlands +8 [priority market]; title band manager +9 [IT Manager]
+      intent 30.0 x active within 7d (last activity 2026-09-16, 6d ago) x1 = 30.0: pricing page views (30d) +8 [1 x 8]; gated content downloads (30d) +4 [1 x 4]; website sessions (30d) +10 [5 x 2]; attended a webinar +8 [yes]
+      route -> marketing-nurture / (none) (rule R-08, SLA 168h)
+      data note: employee_count is blank: firmographic size scored 0 and segment unknown
+      data note: annual_revenue_usd is blank: revenue band scored 0
+
+DISQUALIFIED (3)
+  [ 69.2] L-2007  Sana Iqbal — Founder, Tiny Tools Co
+      firmographics: 4 employees | Software | Canada (NA) | segment smb | source organic_search
+      fit 50.0: under 10 employees +0 [4 employees]; revenue under $5M +2 [$600,000]; industry Software +18 [listed ICP industry]; country Canada +10 [priority market]; title band executive buyer +20 [Founder]
+      intent 98.0 x active within 7d (last activity 2026-09-20, 2d ago) x1 = 98.0: requested a demo +40 [yes]; started a trial +30 [yes]; pricing page views (30d) +16 [2 x 8]; website sessions (30d) +12 [7 x 2, capped at 12]
+      disqualified: 4 employees is below the 10 floor
+      route -> marketing-nurture / (none) (rule (disqualifier), SLA 168h)
+  [ 39.5] L-2006  Bill Hartley — Recruiting Director, Peak Staff Group
+      firmographics: 150 employees | Staffing | United States (NA) | segment smb | source webinar
+      fit 50.0: 50-199 employees +12 [150 employees]; revenue $5M-$24M +6 [$20,000,000]; industry Staffing +8 [not an explicitly scored industry]; country United States +10 [priority market]; title band director +14 [Recruiting Director]
+      intent 28.0 x active within 30d (last activity 2026-09-11, 11d ago) x0.85 = 23.8: pricing page views (30d) +8 [1 x 8]; gated content downloads (30d) +4 [1 x 4]; website sessions (30d) +8 [4 x 2]; attended a webinar +8 [yes]
+      disqualified: blocked industry (Staffing)
+      route -> marketing-nurture / (none) (rule (disqualifier), SLA 168h)
+  [ 33.8] L-2005  Jen Larkin — Operations Lead, Solstice Apparel Supply
+      firmographics: 80 employees | Retail | United States (NA) | segment smb | source newsletter
+      fit 47.0: 50-199 employees +12 [80 employees]; revenue $5M-$24M +6 [$9,000,000]; industry Retail +10 [listed ICP industry]; country United States +10 [priority market]; title band manager +9 [Operations Lead]
+      intent 14.0 x active within 7d (last activity 2026-09-18, 4d ago) x1 = 14.0: pricing page views (30d) +8 [1 x 8]; website sessions (30d) +6 [3 x 2]
+      disqualified: personal email domain (gmail.com)
+      route -> marketing-nurture / (none) (rule (disqualifier), SLA 168h)
+
+DATA QUALITY
+  2 field(s) missing across 1 lead(s);
+  missing fields score zero rather than guessing, which drags fit scores down.

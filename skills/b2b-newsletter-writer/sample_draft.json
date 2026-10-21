@@ -1,0 +1,57 @@
+{
+  "_note": "FICTIONAL SAMPLE. Harborline, Agency Hours, Dana Whitlock and the Studio Ops Collective are invented. Facts quotes stand in for text fetched from the source URLs.",
+  "issue_date": "2026-10-02",
+  "brief_topic_count": 3,
+  "subject_lines": [
+    "See the overbooked week before it happens",
+    "Why one COO stopped publishing utilization",
+    "58% of agencies leak margin the same way"
+  ],
+  "preheader": "Capacity Forecast is live, plus what 310 agencies say about scope creep.",
+  "opener": "Every expensive problem in an agency was cheap a few weeks earlier. The overbooked designer, the unpriced change request and the utilization target people quietly game were all visible in advance to anyone looking. This week is about looking.",
+  "sections": [
+    {
+      "headline": "Capacity Forecast shows who's overbooked six weeks out",
+      "body": "Capacity Forecast is live on every Harborline plan today. It reads the hours already booked against each person and flags anyone planned above 85% in any of the next six weeks. In the beta, 41 agencies saw 23% fewer over-allocated person-weeks, according to our launch report.\n\nWe think the timing matters more than the number. An overload you spot in week five is a scheduling decision. The same overload spotted on Friday afternoon is an apology to a client. The forecast is only as honest as your bookings, so book internal work too, or it will tell you everyone is free.\n\n**Steal this:** open the forecast on Monday and fix the reddest week first, not the nearest one.",
+      "source_url": "https://harborline.example/blog/capacity-forecast",
+      "source_title": "Capacity Forecast launch post"
+    },
+    {
+      "headline": "Why one studio COO stopped publishing utilization targets",
+      "body": "On Agency Hours episode 112, Dana Whitlock, COO of a 40-person studio, explains why she pulled utilization targets off the team dashboard: “people started hitting the number instead of doing the work.”\n\nShe's right, and the lesson goes past utilization. Any metric a team can see but can't control turns into theater. Utilization is a planning input for ops, not a scorecard for designers. Keep it on your screen and off theirs, and talk to people about workload in hours they recognize rather than percentages they resent.\n\n**Steal this:** swap the team-facing utilization chart for a plain booked-versus-capacity view per person, in hours.",
+      "source_url": "https://agencyhours.example/episodes/112",
+      "source_title": "Agency Hours, episode 112"
+    },
+    {
+      "headline": "Scope creep is still the biggest margin leak for agencies",
+      "body": "The Studio Ops Collective surveyed 310 agencies for its 2026 benchmark, and 58% called scope creep their biggest margin leak. The more useful finding sits further down the report: only one in four agencies attaches hours to a change request.\n\nThat's the gap worth closing. Scope creep isn't a client behavior you can stop. It's a pricing habit you can change. A change request with hours attached becomes a decision the client makes. Without hours, it's a favor you absorb, and favors don't show up in the forecast until they've already eaten the margin.\n\n**Steal this:** quote every change in hours this month, including the ones you plan to waive.",
+      "source_url": "https://studioops.example/benchmark-2026",
+      "source_title": "Agency Operations Benchmark 2026"
+    }
+  ],
+  "cta": {
+    "type": "product",
+    "text": "Capacity Forecast is already switched on in your workspace, with nothing to set up. Open it, look six weeks ahead, and fix one week before it becomes a client conversation.",
+    "url": "https://harborline.example/app/capacity-forecast",
+    "button_label": "Open Capacity Forecast"
+  },
+  "sign_off": "— Maya",
+  "facts": [
+    {
+      "quote": "Across the 41 agencies in the beta, over-allocated person-weeks fell by 23% compared with the six weeks before they switched Capacity Forecast on.",
+      "source": "https://harborline.example/blog/capacity-forecast"
+    },
+    {
+      "quote": "I stopped publishing utilization targets because people started hitting the number instead of doing the work.",
+      "source": "https://agencyhours.example/episodes/112"
+    },
+    {
+      "quote": "58% of the 310 agencies surveyed named scope creep as their single largest source of margin loss.",
+      "source": "https://studioops.example/benchmark-2026"
+    },
+    {
+      "quote": "Only one in four agencies prices change requests in hours.",
+      "source": "https://studioops.example/benchmark-2026"
+    }
+  ]
+}

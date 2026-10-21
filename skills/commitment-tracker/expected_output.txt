@@ -1,0 +1,148 @@
+=== 1. Weekly scheduled run, Fri Oct 9 (first run, empty state): digest staged as pending ===
+## Commitments — Mon Oct 5 to Fri Oct 9, 2026
+As of Fri Oct 9 16:00 UTC-07:00 · scheduled weekly run
+
+**1 overdue · 2 due in the next 7 days · 1 open with no date · 2 they owe us · 2 done since last run**
+
+### Overdue (1)
+1. **Send the renewal quote** · Sam Kim → Oatmerle Foods · due Thu Oct 8 (inferred from “tomorrow”) · **1 day overdue** · **new**
+   > “I'll have the renewal quote to you tomorrow, Tomás.” (transcript) — [Oatmerle Foods renewal](https://notes.granola.ai/d/sample-5e6f), Wed Oct 7
+   Likely done: [Sent “Renewal next steps” to Tomás Rivera](https://mail.google.com/mail/u/0/#sent/sample-msg-02) (Thu Oct 8) — an email went to Tomás the day after the call, but no quote attachment is confirmed. Confirm, or tell me it's still open.
+   `ct-e59182401c`
+
+### Due in the next 7 days (2)
+1. **Send the revised SOW** · Dana Ortiz → Fennaroot Dental · due Mon Oct 12 (inferred from “by Monday”) · re-promised Thu Oct 8, was due Wed Oct 7 · **new**
+   > “I'll send over the revised SOW by Wednesday so your legal team can start.” (transcript) — [Fennaroot Dental — Q4 rollout](https://notes.granola.ai/d/sample-1a2b), Mon Oct 5
+   Repeated in [Fennaroot Dental — security review](https://notes.granola.ai/d/sample-7a8b), Thu Oct 8: “Sorry, the SOW slipped on my side. I'll get it over to you by Monday.” (transcript)
+   No completion evidence in Gmail (sent mail), Slack, Google Calendar, later Granola meetings.
+   `ct-97efb9ee06`
+2. **Send the storefront integration checklist** · Dana Ortiz → Spokewren Cycles · due Fri Oct 16 (inferred from “next week”) · **new**
+   > “Dana to send the storefront integration checklist next week” (Granola AI summary, not verbatim speech) — [Spokewren Cycles onboarding](https://notes.granola.ai/d/sample-3c4d), Tue Oct 6
+   No completion evidence in Gmail (sent mail), Slack, Google Calendar, later Granola meetings.
+   `ct-d3b4a7efd6`
+
+### Open, no date (1)
+1. **Introduce Marcus to our data engineer** · Dana Ortiz → Spokewren Cycles · no date · **new**
+   > “Dana will intro Marcus to the data engineer” (Granola AI summary, not verbatim speech) — [Spokewren Cycles onboarding](https://notes.granola.ai/d/sample-3c4d), Tue Oct 6
+   No completion evidence in Gmail (sent mail), Slack, Google Calendar, later Granola meetings.
+   `ct-81931a148b`
+
+### They owe us (2)
+1. **Send the SKU export** · Marcus Lee (Spokewren Cycles) owes us · due Wed Oct 7 · **2 days overdue** · **new**
+   > “Marcus: SKU export to us by Oct 7” (your notes) — [Spokewren Cycles onboarding](https://notes.granola.ai/d/sample-3c4d), Tue Oct 6
+   No completion evidence in Gmail (received mail), Slack, Google Calendar, later Granola meetings.
+   `ct-628dc18c50`
+2. **Return the signed security questionnaire** · Priya Shah (Fennaroot Dental) owes us · due Fri Oct 9 (inferred from “by end of week”) · due today · **new**
+   > “I'll get the security questionnaire back to you, signed, by end of week.” (transcript) — [Fennaroot Dental — Q4 rollout](https://notes.granola.ai/d/sample-1a2b), Mon Oct 5
+   No completion evidence in Gmail (received mail), Slack, Google Calendar, later Granola meetings.
+   `ct-6e2d041bc1`
+
+### Done since last run (2)
+- ✓ **Set up a call with our finance lead** · Dana Ortiz → Oatmerle Foods · [Invite sent: “Oatmerle × Brackenvole finance” for Tue Oct 13](https://calendar.google.com/calendar/event?eid=sample-evt-01) (Thu Oct 8) · `ct-6014d29ff0`
+- ✓ **Send pricing for the two new locations** · Sam Kim → Fennaroot Dental · [Sent “Pricing: two new locations” to Priya Shah](https://mail.google.com/mail/u/0/#sent/sample-msg-01) (Thu Oct 8) · `ct-898a3abf81`
+
+### Coverage
+- Window: Mon Oct 5 to Fri Oct 9, 2026 (weekly) · Source: Granola
+- History limit: free plan, 30-day note history; this window is inside it.
+- Meetings scanned: 6 — 5 external, 1 internal (internal-only meetings excluded; scope: external)
+- Duplicate notes: 1 extra note of the same meeting (captured by more than one person); their commitments were merged.
+- Notes read: 6/6 · Transcripts: 3 read, 1 denied, 2 not requested
+  - Transcript denied: [Spokewren Cycles onboarding](https://notes.granola.ai/d/sample-3c4d), Tue Oct 6 — quotes come from the notes; a commitment the notes omit would be missed.
+- Completion evidence checked: Gmail ✓ · Slack ✓ · Google Calendar ✓ · later Granola meetings ✓
+- Gaps: Tracker: not configured (no Linear or Jira connected in this Space).
+- Also: 1 soft mention not listed (vague, no clear owner or deliverable) · 1 commitment from internal-only meetings skipped · 1 commitment repeated across meetings, merged.
+
+_Follow-up drafts available for 1 overdue item from the other side (polite nudge). Say “draft the nudges” to review them. Nothing is drafted in Gmail or sent without your OK._
+Period key: `weekly:2026-10-05..2026-10-09` · 8 commitments tracked in state.
+pending: post the digest above, then run --confirm-posted weekly:2026-10-05..2026-10-09
+
+=== 2. The schedule fires again before the post is confirmed: stops, posts nothing ===
+pending: a digest for weekly:2026-10-05..2026-10-09 was produced at 2026-10-09T16:00:00-07:00 but not confirmed posted. If it was posted, run --confirm-posted weekly:2026-10-05..2026-10-09. If posting failed (or you are not sure, check the destination first), rerun with --resume-pending to print it again, post it, then confirm.
+(exit 4)
+
+=== 3. The agent posted the digest, then confirms it ===
+Confirmed posted: weekly:2026-10-05..2026-10-09 (8 new, 2 reported done).
+
+=== 4. The schedule fires again at 4:30pm: --next-window flags this week as already posted; the run posts nothing ===
+{
+  "from": "2026-10-09",
+  "to": "2026-10-09",
+  "cadence": "weekly",
+  "period_key": "weekly:2026-10-09..2026-10-09",
+  "last_posted": {
+    "period_key": "weekly:2026-10-05..2026-10-09",
+    "as_of": "2026-10-09T16:00:00-07:00"
+  },
+  "already_posted": {
+    "period_key": "weekly:2026-10-05..2026-10-09",
+    "as_of": "2026-10-09T16:00:00-07:00"
+  },
+  "pending": [],
+  "unconfirmed_incomplete": [],
+  "reread": []
+}
+Skipped: already posted weekly:2026-10-05..2026-10-09 (as of 2026-10-09T16:00:00-07:00), the weekly digest for the week of Mon Oct 5; not posting weekly:2026-10-09..2026-10-09 as well.
+
+=== 5. Next weekly run, Fri Oct 16: window starts where the last posted run ended ===
+{
+  "from": "2026-10-09",
+  "to": "2026-10-16",
+  "cadence": "weekly",
+  "period_key": "weekly:2026-10-09..2026-10-16",
+  "last_posted": {
+    "period_key": "weekly:2026-10-05..2026-10-09",
+    "as_of": "2026-10-09T16:00:00-07:00"
+  },
+  "already_posted": null,
+  "pending": [],
+  "unconfirmed_incomplete": [],
+  "reread": []
+}
+## Commitments — Fri Oct 9 to Fri Oct 16, 2026
+As of Fri Oct 16 16:00 UTC-07:00 · scheduled weekly run
+
+**0 overdue · 1 due in the next 7 days · 0 open with no date · 3 they owe us · 2 done since last run**
+
+### Overdue (0)
+None.
+
+### Due in the next 7 days (1)
+1. **Send the storefront integration checklist** · Dana Ortiz → Spokewren Cycles · due Fri Oct 16 (inferred from “next week”) · due today
+   > “Dana to send the storefront integration checklist next week” (Granola AI summary, not verbatim speech) — [Spokewren Cycles onboarding](https://notes.granola.ai/d/sample-3c4d), Tue Oct 6
+   No completion evidence in Gmail (sent mail), Google Calendar, later Granola meetings.
+   `ct-d3b4a7efd6`
+
+### Open, no date (0)
+None.
+
+### They owe us (3)
+1. **Send the SKU export** · Marcus Lee (Spokewren Cycles) owes us · due Wed Oct 7 · **9 days overdue**
+   > “Marcus: SKU export to us by Oct 7” (your notes) — [Spokewren Cycles onboarding](https://notes.granola.ai/d/sample-3c4d), Tue Oct 6
+   Likely done: [Marcus Lee replied “export attached, partial”](https://mail.google.com/mail/u/0/#inbox/sample-msg-04) (Wed Oct 14) — Marcus sent a file but called it partial. Confirm, or tell me it's still open.
+   `ct-628dc18c50`
+2. **Return the signed security questionnaire** · Priya Shah (Fennaroot Dental) owes us · due Fri Oct 9 (inferred from “by end of week”) · **7 days overdue**
+   > “I'll get the security questionnaire back to you, signed, by end of week.” (transcript) — [Fennaroot Dental — Q4 rollout](https://notes.granola.ai/d/sample-1a2b), Mon Oct 5
+   No completion evidence in Gmail (received mail), Google Calendar, later Granola meetings.
+   `ct-6e2d041bc1`
+3. **Confirm the PO number** · Tomás Rivera (Oatmerle Foods) owes us · due Thu Oct 15 (inferred from “in two business days”) · **1 day overdue** · **new**
+   > “I'll confirm the PO number with procurement in two business days.” (transcript) — [Oatmerle Foods finance call](https://notes.granola.ai/d/sample-b1c2), Tue Oct 13
+   No completion evidence in Gmail (received mail), Google Calendar, later Granola meetings.
+   `ct-d70f5eb14a`
+
+### Done since last run (2)
+- ✓ **Send the revised SOW** · Dana Ortiz → Fennaroot Dental · [Sent “Fennaroot SOW v2” to Priya Shah](https://mail.google.com/mail/u/0/#sent/sample-msg-03) (Mon Oct 12) · `ct-97efb9ee06`
+- ✓ **Send the renewal quote** · Sam Kim → Oatmerle Foods · [Tomás confirmed he has the renewal quote (Oatmerle Foods finance call)](https://notes.granola.ai/d/sample-b1c2) (Tue Oct 13) · `ct-e59182401c`
+
+### Coverage
+- Window: Fri Oct 9 to Fri Oct 16, 2026 (weekly) · Source: Granola
+- History limit: free plan, 30-day note history; this window is inside it.
+- Meetings scanned: 1 — 1 external, 0 internal
+- Notes read: 1/1 · Transcripts: 1 read
+- Completion evidence checked: Gmail ✓ · Google Calendar ✓ · later Granola meetings ✓
+- Gaps: Slack: unavailable (search\.messages returned token_expired); Tracker: not configured (no Linear or Jira connected in this Space).
+- Also: 1 dismissed by you (hidden) · 3 items carried over from earlier runs.
+
+_Follow-up drafts available for 2 overdue items from the other side (polite nudge). Say “draft the nudges” to review them. Nothing is drafted in Gmail or sent without your OK._
+Period key: `weekly:2026-10-09..2026-10-16` · 9 commitments tracked in state.
+pending: post the digest above, then run --confirm-posted weekly:2026-10-09..2026-10-16
+Confirmed posted: weekly:2026-10-09..2026-10-16 (1 new, 2 reported done).

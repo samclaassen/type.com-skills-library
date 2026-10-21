@@ -1,0 +1,13 @@
+# Verification
+
+Offline synthetic verification only. No live Shopify, ad platform, inventory or Slack integration has been exercised. No scheduling or publishing was performed.
+
+Run `bash tests/run_tests.sh`: 28 end-to-end tests cover sample arithmetic and alert counts, golden output, quiet mode, visible alerts, stale/missing spend blocking recommendations and state, missing hourly rows, optional coverage, two-check scaling, pull-back bounds, zero spend and invalid thresholds/guardrails, plus the v2 QA fixes: strict number parsing (comma decimals, nan, inf, European files), negative hourly sales, a $0 budgeted channel blocking SCALE (and paused_channels), spend/sales cut-off alignment (12:01 and 13:45 reads, spread-out reads, simultaneous reads inside an incomplete hour: `test_simultaneous_reads_in_incomplete_hour`), UTC offsets and future skew, "Proposed (needs approval)" labels, duplicate/alias platforms, MER n/a with no sales, on-plan Thanksgiving against the planner's CSV (`test_on_plan_thanksgiving_holds`), budget calls requiring the unscaled raw MER to agree (`test_scaled_spend_needs_raw_agreement`), SCALE blocked while a lagging spend read leaves spend behind pace (`test_scale_blocked_while_spend_behind`, `test_channel_behind_its_band_blocks_scale`), and a lagging first above-scale check never saved as the confirming check for the next one (`test_lagging_first_check_does_not_confirm_scale`).
+
+`test_on_plan_thanksgiving_holds` reads `tests/fixtures/planner_sample_plan.csv`, the fixed planner's sample CSV with per-day guardrails (Planner QA 1.1): Thanksgiving pull_back_mer 3.14 sits below its plan MER 3.69, so on-plan actuals HOLD. `examples/data/plan.csv` is the same file.
+
+The fictional Black Friday sample yields 1 critical, 2 warnings, 1 resolved and HOLD. Cyber Monday's clean morning sample prints nothing under --quiet. Expected outputs are committed alongside inputs; tests also independently assert MER arithmetic and decision behavior.
+
+All 28 tests pass on Python 3.8, 3.12 and 3.14. Before unattended use, test actual exports, refresh cadence, DST offsets, financial definitions, checkpoint persistence, delivery deduplication and store-specific thresholds.
+
+Known limits: heuristic revenue curve, spend read later than the cut-off is scaled back along that curve (budget calls also require the unscaled raw MER to agree), DST-change days need 24 merged rows, no inventory timestamp, omitted discount rows count as zero, no automatic discovery of unplanned ad accounts, no real-time connector or scheduler, and possible shortened messages. Full JSON remains the audit output.

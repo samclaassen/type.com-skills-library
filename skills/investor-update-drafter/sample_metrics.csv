@@ -1,0 +1,10 @@
+metric,period,value,source,as_of
+cash,2026-09,1840000,Finance sheet (sample),2026-09-30
+cash,2026-08,1985000,Finance sheet (sample),2026-08-31
+net_burn,2026-09,145000,Finance sheet (sample),2026-09-30
+net_burn,2026-08,132000,Finance sheet (sample),2026-08-31
+runway_months,2026-09,12.7,Finance sheet (sample),2026-09-30
+runway_months,2026-08,15.0,Finance sheet (sample),2026-08-31
+headcount,2026-09,14,Finance sheet (sample),2026-09-30
+headcount,2026-08,12,Finance sheet (sample),2026-08-31
+gross_mrr_churn,2026-09,1.9,,2026-09-30

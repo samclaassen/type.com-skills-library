@@ -1,0 +1,7 @@
+{
+  "trusted_manager_ids": {
+    "300-000-0009": "Harbor & Vine parent company MCC (confirmed with client 2026-05)"
+  },
+  "trusted_email_domains": ["northwind-agency.example"],
+  "trusted_emails": ["freelance.analyst@fastmail.example"]
+}

@@ -1,0 +1,365 @@
+{
+  "version": 1,
+  "about": [
+    "Holiday macro templates. Wording only: every date, number, price, code and rule comes from policies.json.",
+    "{{placeholder}} = filled by your helpdesk when the macro is used. Allowed: customer_first_name, order_number, tracking_url, agent_first_name.",
+    "[[fact]] = filled from policies.json when the macro is generated. If a fact on a normal line is missing, the macro is NOT generated and the gap is reported.",
+    "A line starting with ? is optional: it is dropped when one of its facts is missing.",
+    "'when' generates the macro only if a yes/no fact is true ('!fact' = only if false). 'requires_any' needs at least one of the listed facts.",
+    "'use_from' / 'use_until' name date facts (optionally +N or -N days) and set the dates the macro should be used.",
+    "'if_missing': 'warning' makes a missing policy for this macro a warning (default: noted only). 'replaces' lists words that identify old macros it replaces, matched on the old macro's name.",
+    "The script refuses templates whose name or wording contains digits, month names, $ or %, and wording with promise words (guarantee, refund, free, always, never, Christmas, holiday, arrive by, in full): put those facts in policies.json.",
+    "The fact list is in DATA_CONTRACT.md section 5."
+  ],
+  "templates": [
+    {
+      "id": "wismo_processing",
+      "name": "WISMO: not shipped yet",
+      "ticket_type": "wismo",
+      "tags": ["processing"],
+      "body": [
+        "Hi {{customer_first_name}},",
+        "",
+        "Thanks for checking on order {{order_number}}. [[same_day_rule]]. Once yours has shipped, reply here any time and I'll send you the tracking link.",
+        "?Our warehouse is closed on [[closed_dates]].",
+        "",
+        "Thanks for your patience!",
+        "{{agent_first_name}}"
+      ]
+    },
+    {
+      "id": "wismo_backlog",
+      "name": "WISMO: BFCM order not shipped yet",
+      "ticket_type": "wismo",
+      "tags": ["bfcm-backlog"],
+      "if_missing": "warning",
+      "use_from": "backlog_from_date",
+      "use_until": "backlog_clears_date",
+      "body": [
+        "Hi {{customer_first_name}},",
+        "",
+        "Thank you for your order {{order_number}}, and for your patience while we work through our Black Friday orders. Orders placed [[backlog_orders]] ship within [[backlog_ship_days]], and we expect to be fully caught up by [[backlog_clears]].",
+        "",
+        "Once your order has shipped, reply here any time and I'll send you the tracking link.",
+        "",
+        "Thanks,",
+        "{{agent_first_name}}"
+      ]
+    },
+    {
+      "id": "wismo_in_transit",
+      "name": "WISMO: shipped, in transit",
+      "ticket_type": "wismo",
+      "tags": ["in-transit"],
+      "body": [
+        "Hi {{customer_first_name}},",
+        "",
+        "Good news: order {{order_number}} is on its way. You can follow it here: {{tracking_url}}",
+        "",
+        "Carriers are busier than usual this time of year, so tracking can take a little longer to update. If it looks stuck, reply to this email and we'll check with the carrier for you.",
+        "",
+        "Thanks,",
+        "{{agent_first_name}}"
+      ]
+    },
+    {
+      "id": "shipping_dates",
+      "name": "Shipping: holiday order-by dates",
+      "ticket_type": "shipping_deadline",
+      "tags": ["order-by-dates"],
+      "use_until": ["before_last_cutoff_date", "last_cutoff_date"],
+      "body": [
+        "Hi {{customer_first_name}},",
+        "",
+        "Here are the last days to order for delivery by [[deliver_by]]:",
+        "[[cutoff_lines]]",
+        "?These dates hold for most addresses ([[delivery_coverage]] of our customers).",
+        "",
+        "?[[same_day_rule]].",
+        "Choose [[checkout_options]] at checkout. If you've already ordered, reply with your order number and I'll check which one you picked.",
+        "",
+        "Thanks,",
+        "{{agent_first_name}}"
+      ]
+    },
+    {
+      "id": "shipping_last_option",
+      "name": "Shipping: only the fastest method is still on time",
+      "ticket_type": "shipping_deadline",
+      "tags": ["last-option"],
+      "use_from": "before_last_cutoff_date+1",
+      "use_until": "last_cutoff_date",
+      "body": [
+        "Hi {{customer_first_name}},",
+        "",
+        "The last order date has passed for [[earlier_services]], but there's still time: choose [[last_service]] at checkout and order by [[last_cutoff]] for delivery by [[deliver_by]].",
+        "?That date holds for most addresses ([[delivery_coverage]] of our customers).",
+        "?[[e_gift_cards]]",
+        "",
+        "Thanks,",
+        "{{agent_first_name}}"
+      ]
+    },
+    {
+      "id": "shipping_passed",
+      "name": "Shipping: after the last order date",
+      "ticket_type": "shipping_deadline",
+      "tags": ["after-cutoff"],
+      "use_from": "last_cutoff_date+1",
+      "body": [
+        "Hi {{customer_first_name}},",
+        "",
+        "I'm sorry, the last day to order for delivery by [[deliver_by]] was [[last_cutoff]]. We're still shipping every order, but we can't promise it will get there in time.",
+        "?[[e_gift_cards]]",
+        "",
+        "Thanks,",
+        "{{agent_first_name}}"
+      ]
+    },
+    {
+      "id": "discount_one_code",
+      "name": "Discount: code not working",
+      "ticket_type": "discount_code",
+      "tags": ["code-rules"],
+      "body": [
+        "Hi {{customer_first_name}},",
+        "",
+        "Sorry for the trouble at checkout! [[one_code_rule]] [[sale_stack_rule]]",
+        "?The sale runs [[sale_dates]].",
+        "?[[sale_auto_rule]]",
+        "?[[free_shipping_rule]]",
+        "",
+        "If your total still doesn't look right, reply with a screenshot of your cart and I'll take a look.",
+        "",
+        "Thanks,",
+        "{{agent_first_name}}"
+      ]
+    },
+    {
+      "id": "discount_excluded",
+      "name": "Discount: item not in the sale",
+      "ticket_type": "discount_code",
+      "tags": ["sale-exclusions"],
+      "use_from": "sale_start_date",
+      "use_until": "sale_end_date",
+      "body": [
+        "Hi {{customer_first_name}},",
+        "",
+        "Thanks for reaching out! Items in our [[sale_excludes]] collections aren't part of the [[sale_name]], so the discount doesn't apply to them.",
+        "?[[one_code_rule]]",
+        "",
+        "Thanks,",
+        "{{agent_first_name}}"
+      ]
+    },
+    {
+      "id": "price_adjustment_offered",
+      "name": "Price adjustment: request (we offer them)",
+      "ticket_type": "price_adjustment",
+      "tags": ["offered"],
+      "when": "pa_offered",
+      "body": [
+        "Hi {{customer_first_name}},",
+        "",
+        "Thanks for asking! If an item you bought drops in price within [[pa_window]] of your order, we offer a price adjustment.",
+        "[[pa_how]]",
+        "?Price adjustments don't apply to [[pa_excludes]].",
+        "",
+        "Thanks,",
+        "{{agent_first_name}}"
+      ]
+    },
+    {
+      "id": "price_adjustment_declined",
+      "name": "Price adjustment: request (we don't offer them)",
+      "ticket_type": "price_adjustment",
+      "tags": ["not-offered"],
+      "when": "!pa_offered",
+      "body": [
+        "Hi {{customer_first_name}},",
+        "",
+        "Thanks for reaching out, and I understand the timing is frustrating. We don't offer price adjustments on past orders.",
+        "?[[pa_alternative]]",
+        "",
+        "Thanks,",
+        "{{agent_first_name}}"
+      ]
+    },
+    {
+      "id": "order_change",
+      "name": "Order: change or cancel",
+      "ticket_type": "cancel_modify",
+      "tags": ["edit-window"],
+      "body": [
+        "Hi {{customer_first_name}},",
+        "",
+        "We can change or cancel an order within [[edit_window]] of it being placed.",
+        "?[[edit_how]]",
+        "Once that time has passed, we can't change or cancel it.",
+        "?Once it arrives, you can return eligible items: start at [[return_start]].",
+        "?[[final_sale]]",
+        "",
+        "Thanks,",
+        "{{agent_first_name}}"
+      ]
+    },
+    {
+      "id": "address_change",
+      "name": "Order: change the shipping address",
+      "ticket_type": "address_change",
+      "tags": ["address"],
+      "body": [
+        "Hi {{customer_first_name}},",
+        "",
+        "We can update the shipping address on order {{order_number}} until [[address_until]]. Reply with the full new address, including any apartment or unit number, and I'll confirm once it's changed.",
+        "?[[address_after]]",
+        "",
+        "Thanks,",
+        "{{agent_first_name}}"
+      ]
+    },
+    {
+      "id": "returns_holiday",
+      "name": "Returns: holiday window",
+      "ticket_type": "return_exchange",
+      "tags": ["holiday-window"],
+      "use_until": "holiday_return_by_date",
+      "body": [
+        "Hi {{customer_first_name}},",
+        "",
+        "Good news: orders placed from [[holiday_from]] to [[holiday_to]] can be returned until [[holiday_return_by]], so there's no rush. Other orders can be returned within [[return_window]].",
+        "?Items need to be [[return_condition]].",
+        "?Start your return at [[return_start]].",
+        "?[[return_shipping]]",
+        "?[[refund_rule]]",
+        "?[[exchange_rule]]",
+        "?[[final_sale]]",
+        "",
+        "Thanks,",
+        "{{agent_first_name}}"
+      ]
+    },
+    {
+      "id": "returns_standard",
+      "name": "Returns: standard window",
+      "ticket_type": "return_exchange",
+      "tags": ["standard-window"],
+      "when": "!has_holiday_window",
+      "body": [
+        "Hi {{customer_first_name}},",
+        "",
+        "You can return items within [[return_window]].",
+        "?Items need to be [[return_condition]].",
+        "?Start your return at [[return_start]].",
+        "?[[return_shipping]]",
+        "?[[refund_rule]]",
+        "?[[exchange_rule]]",
+        "?[[final_sale]]",
+        "",
+        "Thanks,",
+        "{{agent_first_name}}"
+      ]
+    },
+    {
+      "id": "returns_gift",
+      "name": "Returns: returning a gift",
+      "ticket_type": "return_exchange",
+      "tags": ["gift-return"],
+      "body": [
+        "Hi {{customer_first_name}},",
+        "",
+        "[[gift_returns]]",
+        "?Gifts ordered from [[holiday_from]] to [[holiday_to]] can be returned until [[holiday_return_by]].",
+        "?Start the return at [[return_start]].",
+        "",
+        "Thanks,",
+        "{{agent_first_name}}"
+      ]
+    },
+    {
+      "id": "damaged",
+      "name": "Damaged or defective item",
+      "ticket_type": "damaged_defective",
+      "tags": ["damaged"],
+      "body": [
+        "Hi {{customer_first_name}},",
+        "",
+        "I'm so sorry your order arrived damaged.",
+        "?[[damage_photo]]",
+        "We'll send you [[damage_resolution]]. Please let us know about any damage within [[damage_days]] of delivery.",
+        "?If that's worth more than [[refund_over]], [[escalation_owner]] approves it first, and I'll let you know as soon as they have.",
+        "?[[damage_return]]",
+        "",
+        "Thanks,",
+        "{{agent_first_name}}"
+      ]
+    },
+    {
+      "id": "gift_options",
+      "name": "Gift options",
+      "ticket_type": "gift_options",
+      "tags": ["gifting"],
+      "requires_any": ["gift_message_rule", "gift_receipt_rule", "gift_wrap_rule", "ship_to_other_rule", "e_gift_cards"],
+      "body": [
+        "Hi {{customer_first_name}},",
+        "",
+        "Happy to help with your gift!",
+        "?[[gift_message_rule]]",
+        "?[[gift_receipt_rule]]",
+        "?[[gift_wrap_rule]]",
+        "?[[ship_to_other_rule]]",
+        "?[[e_gift_cards]]",
+        "",
+        "Thanks,",
+        "{{agent_first_name}}"
+      ]
+    },
+    {
+      "id": "out_of_stock",
+      "name": "Out of stock: when is it back?",
+      "ticket_type": "out_of_stock",
+      "tags": ["restock"],
+      "body": [
+        "Hi {{customer_first_name}},",
+        "",
+        "Thanks for your interest! [[backorder_rule]]",
+        "?[[restock_rule]]",
+        "",
+        "Thanks,",
+        "{{agent_first_name}}"
+      ]
+    },
+    {
+      "id": "support_hours",
+      "name": "Holiday support hours",
+      "ticket_type": "other",
+      "tags": ["support-hours"],
+      "replaces": ["hours", "closed", "away", "out of office", "holiday schedule"],
+      "body": [
+        "Hi {{customer_first_name}},",
+        "",
+        "Thanks for your message! Our support team is available [[support_regular]], and we reply within [[first_reply]].",
+        "?[[support_holiday_note]]",
+        "?We're closed on [[support_closed]].",
+        "",
+        "Thanks,",
+        "{{agent_first_name}}"
+      ]
+    },
+    {
+      "id": "international",
+      "name": "Shipping: international orders",
+      "ticket_type": "other",
+      "tags": ["international"],
+      "replaces": ["international", "canada", "worldwide", "overseas"],
+      "body": [
+        "Hi {{customer_first_name}},",
+        "",
+        "Thanks for asking! We ship to [[ships_to]].",
+        "",
+        "Thanks,",
+        "{{agent_first_name}}"
+      ]
+    }
+  ]
+}

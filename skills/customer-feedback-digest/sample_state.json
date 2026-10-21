@@ -1,0 +1,59 @@
+{
+  "_note": "FICTIONAL sample state: two earlier weekly digests.",
+  "digests": [
+    {
+      "period_end": "2026-09-20",
+      "period_start": "2026-09-14",
+      "post_ref": "https://slack.example/archives/C0SAMPLE/p1",
+      "posted_at": "2026-09-21T08:01:00-07:00",
+      "rendered_at": "2026-09-21T08:00:00-07:00",
+      "status": "posted",
+      "themes": {
+        "bulk-csv-import": {
+          "accounts": 2,
+          "mentions": 2,
+          "title": "Bulk CSV import for orders"
+        },
+        "countwhistle-comparison": {
+          "accounts": 1,
+          "mentions": 1,
+          "title": "Compared with Countwhistle"
+        }
+      },
+      "week": "2026-W38"
+    },
+    {
+      "period_end": "2026-09-27",
+      "period_start": "2026-09-21",
+      "post_ref": "https://slack.example/archives/C0SAMPLE/p2",
+      "posted_at": "2026-09-28T08:01:00-07:00",
+      "rendered_at": "2026-09-28T08:00:00-07:00",
+      "status": "posted",
+      "themes": {
+        "bulk-csv-import": {
+          "accounts": 3,
+          "mentions": 4,
+          "title": "Bulk CSV import for orders"
+        },
+        "dashboard-load-time": {
+          "accounts": 1,
+          "mentions": 1,
+          "title": "Dashboards slow to load"
+        },
+        "mobile-offline-mode": {
+          "accounts": 2,
+          "mentions": 3,
+          "title": "Offline mode on mobile"
+        },
+        "weekly-report-automation": {
+          "accounts": 2,
+          "mentions": 2,
+          "title": "Weekly report automation saves time"
+        }
+      },
+      "week": "2026-W39"
+    }
+  ],
+  "schema_version": 1,
+  "skill": "customer-feedback-digest"
+}

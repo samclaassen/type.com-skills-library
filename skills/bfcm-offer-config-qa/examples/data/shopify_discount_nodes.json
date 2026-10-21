@@ -1,0 +1,302 @@
+{
+  "data": {
+    "discountNodes": {
+      "pageInfo": {
+        "hasNextPage": false,
+        "endCursor": "eyJsYXN0X2lkIjoxNDI2NzM4MDQ1NTEyLCJsYXN0X3ZhbHVlIjoxfQ=="
+      },
+      "nodes": [
+        {
+          "id": "gid://shopify/DiscountNode/1423538669647",
+          "discount": {
+            "__typename": "DiscountCodeBasic",
+            "title": "WELCOME10",
+            "status": "ACTIVE",
+            "startsAt": "2025-02-01T05:00:00Z",
+            "endsAt": null,
+            "updatedAt": "2026-03-18T15:22:09Z",
+            "discountClasses": [
+              "ORDER"
+            ],
+            "asyncUsageCount": 1734,
+            "usageLimit": null,
+            "appliesOncePerCustomer": true,
+            "tags": [
+              "welcome",
+              "popup"
+            ],
+            "codes": {
+              "nodes": [
+                {
+                  "code": "WELCOME10"
+                }
+              ]
+            },
+            "codesCount": {
+              "count": 1
+            },
+            "combinesWith": {
+              "productDiscounts": true,
+              "orderDiscounts": false,
+              "shippingDiscounts": true,
+              "productDiscountsWithTagsOnSameCartLine": null
+            },
+            "context": {
+              "__typename": "DiscountCustomerSegments",
+              "segments": [
+                {
+                  "name": "Never purchased"
+                }
+              ]
+            },
+            "minimumRequirement": null,
+            "customerGets": {
+              "value": {
+                "__typename": "DiscountPercentage",
+                "percentage": 0.1
+              },
+              "items": {
+                "__typename": "AllDiscountItems"
+              }
+            }
+          }
+        },
+        {
+          "id": "gid://shopify/DiscountNode/1423539426719",
+          "discount": {
+            "__typename": "DiscountAutomaticFreeShipping",
+            "title": "Free shipping on orders $75+",
+            "status": "ACTIVE",
+            "startsAt": "2025-03-03T05:00:00Z",
+            "endsAt": null,
+            "updatedAt": "2026-09-29T20:41:37Z",
+            "discountClasses": [
+              "SHIPPING"
+            ],
+            "asyncUsageCount": 7412,
+            "tags": [],
+            "combinesWith": {
+              "productDiscounts": true,
+              "orderDiscounts": true,
+              "shippingDiscounts": false,
+              "productDiscountsWithTagsOnSameCartLine": null
+            },
+            "context": {
+              "__typename": "DiscountBuyerSelectionAll"
+            },
+            "minimumRequirement": null,
+            "maximumShippingPrice": null
+          }
+        },
+        {
+          "id": "gid://shopify/DiscountNode/1423541748603",
+          "discount": {
+            "__typename": "DiscountCodeBasic",
+            "title": "SUMMER15",
+            "status": "ACTIVE",
+            "startsAt": "2026-06-01T04:00:00Z",
+            "endsAt": null,
+            "updatedAt": "2026-08-14T13:07:52Z",
+            "discountClasses": [
+              "PRODUCT"
+            ],
+            "asyncUsageCount": 23,
+            "usageLimit": null,
+            "appliesOncePerCustomer": false,
+            "tags": [
+              "summer-2026"
+            ],
+            "codes": {
+              "nodes": [
+                {
+                  "code": "SUMMER15"
+                }
+              ]
+            },
+            "codesCount": {
+              "count": 1
+            },
+            "combinesWith": {
+              "productDiscounts": false,
+              "orderDiscounts": false,
+              "shippingDiscounts": false,
+              "productDiscountsWithTagsOnSameCartLine": null
+            },
+            "context": {
+              "__typename": "DiscountBuyerSelectionAll"
+            },
+            "minimumRequirement": null,
+            "customerGets": {
+              "value": {
+                "__typename": "DiscountPercentage",
+                "percentage": 0.15
+              },
+              "items": {
+                "__typename": "AllDiscountItems"
+              }
+            }
+          }
+        },
+        {
+          "id": "gid://shopify/DiscountNode/1423549562727",
+          "discount": {
+            "__typename": "DiscountCodeBasic",
+            "title": "MAYA20",
+            "status": "ACTIVE",
+            "startsAt": "2026-09-01T04:00:00Z",
+            "endsAt": "2027-01-01T04:59:00Z",
+            "updatedAt": "2026-08-28T17:30:00Z",
+            "discountClasses": [
+              "PRODUCT"
+            ],
+            "asyncUsageCount": 118,
+            "usageLimit": null,
+            "appliesOncePerCustomer": false,
+            "tags": [
+              "creator"
+            ],
+            "codes": {
+              "nodes": [
+                {
+                  "code": "MAYA20"
+                }
+              ]
+            },
+            "codesCount": {
+              "count": 1
+            },
+            "combinesWith": {
+              "productDiscounts": true,
+              "orderDiscounts": false,
+              "shippingDiscounts": true,
+              "productDiscountsWithTagsOnSameCartLine": null
+            },
+            "context": {
+              "__typename": "DiscountBuyerSelectionAll"
+            },
+            "minimumRequirement": null,
+            "customerGets": {
+              "value": {
+                "__typename": "DiscountPercentage",
+                "percentage": 0.2
+              },
+              "items": {
+                "__typename": "AllDiscountItems"
+              }
+            }
+          }
+        },
+        {
+          "id": "gid://shopify/DiscountNode/1423557786914",
+          "discount": {
+            "__typename": "DiscountAutomaticBasic",
+            "title": "BFCM 25% off sitewide",
+            "status": "SCHEDULED",
+            "startsAt": "2026-11-26T05:00:00Z",
+            "endsAt": "2026-12-02T04:59:00Z",
+            "updatedAt": "2026-09-30T18:45:12Z",
+            "discountClasses": [
+              "PRODUCT"
+            ],
+            "asyncUsageCount": 0,
+            "tags": [
+              "bfcm-2026"
+            ],
+            "combinesWith": {
+              "productDiscounts": true,
+              "orderDiscounts": true,
+              "shippingDiscounts": true,
+              "productDiscountsWithTagsOnSameCartLine": null
+            },
+            "context": {
+              "__typename": "DiscountBuyerSelectionAll"
+            },
+            "minimumRequirement": null,
+            "customerGets": {
+              "value": {
+                "__typename": "DiscountPercentage",
+                "percentage": 0.25
+              },
+              "items": {
+                "__typename": "AllDiscountItems"
+              }
+            }
+          }
+        },
+        {
+          "id": "gid://shopify/DiscountNode/1423560526628",
+          "discount": {
+            "__typename": "DiscountCodeBasic",
+            "title": "VIPEARLY",
+            "status": "SCHEDULED",
+            "startsAt": "2026-11-24T05:00:00Z",
+            "endsAt": "2026-11-25T23:59:00Z",
+            "updatedAt": "2026-09-30T19:02:31Z",
+            "discountClasses": [
+              "PRODUCT"
+            ],
+            "asyncUsageCount": 0,
+            "usageLimit": null,
+            "appliesOncePerCustomer": false,
+            "tags": [
+              "bfcm-2026",
+              "vip"
+            ],
+            "codes": {
+              "nodes": [
+                {
+                  "code": "VIPEARLY"
+                }
+              ]
+            },
+            "codesCount": {
+              "count": 1
+            },
+            "combinesWith": {
+              "productDiscounts": false,
+              "orderDiscounts": false,
+              "shippingDiscounts": true,
+              "productDiscountsWithTagsOnSameCartLine": null
+            },
+            "context": {
+              "__typename": "DiscountCustomerSegments",
+              "segments": [
+                {
+                  "name": "SMS subscribers"
+                }
+              ]
+            },
+            "minimumRequirement": null,
+            "customerGets": {
+              "value": {
+                "__typename": "DiscountPercentage",
+                "percentage": 0.25
+              },
+              "items": {
+                "__typename": "DiscountCollections",
+                "collections": {
+                  "nodes": [
+                    {
+                      "title": "BFCM Eligible"
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  "extensions": {
+    "cost": {
+      "requestedQueryCost": 386,
+      "actualQueryCost": 41,
+      "throttleStatus": {
+        "maximumAvailable": 2000.0,
+        "currentlyAvailable": 1959,
+        "restoreRate": 100.0
+      }
+    }
+  }
+}

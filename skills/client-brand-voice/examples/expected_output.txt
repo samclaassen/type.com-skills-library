@@ -1,0 +1,24 @@
+== list clients with guidelines ==
+harbor-and-vine (Harbor & Vine): updated 2026-09-01, status approved, 3 banned, 2 prefer
+northwind-ledger (Northwind Ledger): updated 2026-08-18, status draft, 4 banned, 2 prefer
+clients: 2, invalid: 0
+exit: 0
+
+== check examples/draft.txt for harbor-and-vine ==
+client: harbor-and-vine (Harbor & Vine)
+rules: examples/clients/harbor-and-vine/brand-voice.md (updated 2026-09-01, status approved)
+draft: examples/draft.txt
+  L3:35 prefer: use "members" not "customers"
+  L4:1 sentence-length: 27 words (max 20): "We picked the fruit in the ..."
+  L5:22 exclamation: exclamation mark #1 (policy: none)
+  L7:7 prefer: use "bottles" not "products"
+  L8:24 banned: "cheap" is banned
+result: 5 violation(s) (banned 1, prefer 2, sentence-length 1, exclamation 1)
+exit: 1
+
+== check examples/draft.txt for northwind-ledger ==
+client: northwind-ledger (Northwind Ledger)
+rules: examples/clients/northwind-ledger/brand-voice.md (updated 2026-08-18, status draft)
+draft: examples/draft.txt
+result: 0 violation(s)
+exit: 0

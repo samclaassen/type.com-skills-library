@@ -1,0 +1,169 @@
+## Holiday Support Macros: Fernhill Goods, as of 2026-10-07
+
+**Verdict: NOT READY.** 4 critical issues and 6 warnings. Black Friday is Nov 27, 2026 (51 days away) and Cyber Monday is Nov 30; have the holiday macros live by **Nov 20**.
+Last season: 1,146 tickets (Nov 15–Dec 31, 2025). This season's forecast: 1,291 tickets (Nov 14–Dec 30, 2026), busiest on Mon Nov 30 with 88.
+
+**Issues, most severe first** (all detected; nothing was changed in your helpdesk or store)
+1. **CRITICAL**: No written policy for “Price adjustment request” tickets (`price_adjustment` missing in policies.json), but they were 107 of 1,146 tickets (9.3%) last season. Decide it by Nov 13.
+2. **CRITICAL**: Existing macro “Holiday shipping” says “order by Dec 18, 2025”: that date has passed, and this year's last order dates are Dec 14 (Standard) and Dec 21 (Express).
+3. **CRITICAL**: Existing macro “Free shipping” says “over $50” but the free-shipping threshold is $75 (discounts.free_shipping_threshold).
+4. **CRITICAL**: Existing macro “Holiday hours” mentions dates that have passed: “Dec 24, 2025”, “Jan 1, 2026”.
+5. **WARNING**: Existing macro “Holiday shipping” promises “guaranteed to arrive by Christmas”.
+6. **WARNING**: Existing macro “Returns & exchanges” says “items within 30 days of delivery” and doesn't mention the holiday window (orders Nov 1–Dec 24 can be returned until Jan 31, 2027).
+7. **WARNING**: Existing macro “Black Friday code” mentions code BF20, which isn't one of this year's codes (MAYA20, VIPEARLY and WELCOME10).
+8. **WARNING**: Existing macro “Discount code help” mentions code SUMMER15, which isn't one of this year's codes (MAYA20, VIPEARLY and WELCOME10).
+9. **WARNING**: The forecast is above capacity on 10 days: Sat Nov 14 (support closed), Sun Nov 15 (support closed), Sat Nov 21 (support closed), Sun Nov 22 (support closed), Thu Nov 26 (support closed), Sat Nov 28, Sun Nov 29, Fri Dec 25 (support closed), …. Unanswered tickets peak at 63 on Sun Dec 27 and clear by Mon Dec 28.
+10. **WARNING**: 60 of 1,146 tickets (5.2%) matched no rule, so the mix and forecast by type are incomplete.
+
+### 1. Last season's tickets (Nov 15–Dec 31, 2025)
+
+1,146 tickets over 47 days and 3,055 orders (37.5 tickets per 100 orders). Classified with references/ticket_rules.json: the first matching rule wins.
+
+| Ticket type | Tickets | Share | Per 100 orders | Peak day |
+| --- | ---: | ---: | ---: | --- |
+| Where is my order (WISMO) | 364 | 31.8% | 11.9 | Thu Dec 4 (32) |
+| Return or exchange | 142 | 12.4% | 4.6 | Fri Dec 26 (17) |
+| Shipping deadline question | 113 | 9.9% | 3.7 | Mon Dec 15 (7) |
+| Price adjustment request | 107 | 9.3% | 3.5 | Fri Nov 28 (20) |
+| Discount code not working | 97 | 8.5% | 3.2 | Fri Nov 28 (23) |
+| Cancel or change an order | 64 | 5.6% | 2.1 | Fri Nov 28 (7) |
+| Damaged or defective | 54 | 4.7% | 1.8 | Thu Dec 4 (4) |
+| Address change | 48 | 4.2% | 1.6 | Fri Nov 28 (3) |
+| Gift options | 45 | 3.9% | 1.5 | Thu Nov 27 (2) |
+| Out of stock or backorder | 44 | 3.8% | 1.4 | Thu Nov 27 (3) |
+| Escalation: chargeback, legal or safety | 8 | 0.7% | 0.3 | Sat Nov 29 (1) |
+| Other (unclassified) | 60 | 5.2% | 2.0 | Tue Dec 2 (3) |
+
+Busiest days: Mon Dec 1 (76, mostly WISMO); Fri Nov 28 (67, mostly discount code not working); Tue Dec 2 (59, mostly WISMO); Thu Dec 4 (55, mostly WISMO); Wed Dec 3 (53, mostly WISMO).
+Unclassified: 60 of 1,146 (5.2%). Most common: “Can't log in” (10), “Any update?” (9), “Corporate gifts” (8), “Collab request” (7), “Do you ship to Canada?” (6). Add keywords for the ones that belong to a type and re-run.
+
+### 2. This season's forecast and staffing (Nov 14–Dec 30, 2026)
+
+Each day = last season's tickets on the same weekday (364 days earlier, so Black Friday lines up with Black Friday) × this season's projected orders ÷ last season's orders, over the 7 days up to that day.
+Projected orders 3,430 vs 3,055 last season (+12.3%). Forecast 1,291 tickets (+12.7%).
+Dec 7–Dec 30 have no projection: used last season's orders × 1.12 (this season's projection ÷ last season over Nov 14–Dec 6).
+Capacity: 2 agents on weekdays and 1 on weekends from Sat Nov 28 to Sun Dec 20 only (support_hours.weekend_coverage), 45 tickets per agent per 8-hour shift; support closed Thu Nov 26 and Fri Dec 25. Agents needed and agent-hours cover the day's forecast plus the tickets still waiting from the day before.
+
+| Busiest days | Projected orders | Forecast tickets | Main types | Agent-hours needed | Agents needed | On shift | Short by | Waiting at day end |
+| --- | ---: | ---: | --- | ---: | ---: | ---: | ---: | ---: |
+| Mon Nov 30 | 232 | 88 | WISMO 28, Discount code not working 18 | 25.9 | 4 | 2 | — | 56 |
+| Fri Nov 27 | 353 | 80 | Discount code not working 28, Price adjustment request 24 | 23.6 | 3 | 2 | — | 43 |
+| Tue Dec 1 | 119 | 67 | WISMO 31, Price adjustment request 14 | 21.8 | 3 | 2 | — | 33 |
+| Thu Dec 3 | 87 | 60 | WISMO 35, Price adjustment request 7 | 10.9 | 2 | 2 | — | — |
+| Wed Dec 2 | 84 | 59 | WISMO 34, Price adjustment request 9 | 16.2 | 3 | 2 | — | 1 |
+
+Over capacity on 10 days of 47: Sat Nov 14 (short 8), Sun Nov 15 (short 13), Sat Nov 21 (short 10), Sun Nov 22 (short 11), Thu Nov 26 (short 53), Sat Nov 28 (short 8), Sun Nov 29 (short 7), Fri Dec 25 (short 28), Sat Dec 26 (short 19), Sun Dec 27 (short 16).
+With carry-over, unanswered tickets peak at 63 on Sun Dec 27 and are cleared by Mon Dec 28.
+
+| Week of | Forecast tickets | Busiest day | Capacity | Days short |
+| --- | ---: | --- | ---: | ---: |
+| Nov 9 | 21 | Sun Nov 15 (13) | 0 | 2 |
+| Nov 16 | 74 | Wed Nov 18 (11) | 450 | 2 |
+| Nov 23 | 273 | Fri Nov 27 (80) | 450 | 3 |
+| Nov 30 | 392 | Mon Nov 30 (88) | 540 | 0 |
+| Dec 7 | 202 | Mon Dec 7 (37) | 540 | 0 |
+| Dec 14 | 155 | Mon Dec 14 (28) | 540 | 0 |
+| Dec 21 | 108 | Fri Dec 25 (28) | 360 | 3 |
+| Dec 28 | 65 | Mon Dec 28 (26) | 270 | 0 |
+
+### 3. Policy coverage (a ticket type with at least 3% of last season's tickets needs a written policy)
+
+| Ticket type | Share | Macros generated | Status |
+| --- | ---: | ---: | --- |
+| Where is my order (WISMO) | 31.8% | 3 of 3 | OK |
+| Return or exchange | 12.4% | 2 of 2 | OK |
+| Shipping deadline question | 9.9% | 3 of 3 | OK |
+| Price adjustment request | 9.3% | 0 of 2 | **GAP**: `price_adjustment` missing. Decide by Nov 13 |
+| Discount code not working | 8.5% | 2 of 2 | OK |
+| Cancel or change an order | 5.6% | 1 of 1 | OK |
+| Damaged or defective | 4.7% | 1 of 1 | OK |
+| Address change | 4.2% | 1 of 1 | OK |
+| Gift options | 3.9% | 1 of 1 | OK |
+| Out of stock or backorder | 3.8% | 1 of 1 | OK |
+| Escalation: chargeback, legal or safety | 0.7% | 0 of 0 | Goes to a person (escalation map), not a macro |
+
+- **Price adjustment request**: customers will ask, and without a written rule each agent will improvise. Decide the rule, publish it where customers can see it, add it to policies.json and re-run. Options and trade-offs: references/playbook.md §3.
+
+### 4. Existing macros (10 macros checked)
+
+| Macro | Severity | Problem | What to do |
+| --- | --- | --- | --- |
+| Holiday shipping | CRITICAL | Says “order by Dec 18, 2025”: that date has passed, and this year's last order dates are Dec 14 (Standard) and Dec 21 (Express) | Retire it and use “Holiday 2026 - Shipping: holiday order-by dates” |
+| Holiday shipping | WARNING | Promises “guaranteed to arrive by Christmas” | Remove the promise and give the last order dates instead |
+| Returns & exchanges | WARNING | Says “items within 30 days of delivery” and doesn't mention the holiday window (orders Nov 1–Dec 24 can be returned until Jan 31, 2027) | Add the holiday window, or use “Holiday 2026 - Returns: holiday window” |
+| Black Friday code | WARNING | Mentions code BF20, which isn't one of this year's codes (MAYA20, VIPEARLY and WELCOME10) | Remove BF20, or use “Holiday 2026 - Discount: code not working” |
+| Discount code help | WARNING | Mentions code SUMMER15, which isn't one of this year's codes (MAYA20, VIPEARLY and WELCOME10) | Remove SUMMER15, or use “Holiday 2026 - Discount: code not working” |
+| Free shipping | CRITICAL | Says “over $50” but the free-shipping threshold is $75 (discounts.free_shipping_threshold) | Change it to $75 |
+| Holiday hours | CRITICAL | Mentions dates that have passed: “Dec 24, 2025”, “Jan 1, 2026” | Retire it and use “Holiday 2026 - Holiday support hours” |
+
+No problems found in 4: Where is my order, Cancel order, Damaged item, Gift message.
+Checks: dates that have passed or don't match this year's policy, return / damage / change windows, free-shipping threshold and reply time against policies.json, codes that aren't this year's, and delivery promises.
+
+### 5. Holiday macros generated from your policies (drafts for review)
+
+17 of 20 templates generated; 2 not generated because a policy is missing; 1 not applicable to your policies. Every date, number and rule in them comes from policies.json.
+
+| Macro | Ticket type | Use | Facts from | State |
+| --- | --- | --- | --- | --- |
+| Holiday 2026 - WISMO: not shipped yet | WISMO | all season | shipping, bfcm_backlog | recommended |
+| Holiday 2026 - WISMO: BFCM order not shipped yet | WISMO | Nov 26–Dec 3 | bfcm_backlog | recommended |
+| Holiday 2026 - WISMO: shipped, in transit | WISMO | all season | none (no policy facts) | recommended |
+| Holiday 2026 - Shipping: holiday order-by dates | Shipping deadline question | until Dec 14 | shipping, bfcm_backlog | recommended |
+| Holiday 2026 - Shipping: only the fastest method is still on time | Shipping deadline question | Dec 15–Dec 21 | shipping, gift_options | recommended |
+| Holiday 2026 - Shipping: after the last order date | Shipping deadline question | from Dec 22 | shipping, gift_options | recommended |
+| Holiday 2026 - Discount: code not working | Discount code not working | all season | discounts | recommended |
+| Holiday 2026 - Discount: item not in the sale | Discount code not working | Nov 26–Dec 1 | discounts | recommended |
+| Holiday 2026 - Order: change or cancel | Cancel or change an order | all season | order_changes, returns | recommended |
+| Holiday 2026 - Order: change the shipping address | Address change | all season | address_change | recommended |
+| Holiday 2026 - Returns: holiday window | Return or exchange | until Jan 31, 2027 | returns | recommended |
+| Holiday 2026 - Returns: returning a gift | Return or exchange | all season | returns | recommended |
+| Holiday 2026 - Damaged or defective item | Damaged or defective | all season | damaged_defective, escalation | recommended |
+| Holiday 2026 - Gift options | Gift options | all season | gift_options | recommended |
+| Holiday 2026 - Out of stock: when is it back? | Out of stock or backorder | all season | out_of_stock | recommended |
+| Holiday 2026 - Holiday support hours | General | all season | support_hours | recommended |
+| Holiday 2026 - Shipping: international orders | General | all season | international | recommended |
+
+- Not generated: “Holiday 2026 - Price adjustment: request (we offer them)” and “Holiday 2026 - Price adjustment: request (we don't offer them)”: need `price_adjustment` in policies.json.
+- Not needed with your policies: “Holiday 2026 - Returns: standard window”.
+
+Placeholders `{{customer_first_name}}`, `{{order_number}}`, `{{tracking_url}}` and `{{agent_first_name}}` are left for your helpdesk to fill. Map them to your helpdesk's syntax before saving (table in macros_preview.md and references/playbook.md §4): Gorgias leaves a variable it can't fill blank, and Help Scout and Shopify Inbox have no order-number or tracking-link variable, so agents type those in. A live macro that still needs a placeholder filled by hand is marked “needs manual fill”, never verified.
+
+### 6. Escalation map (these go to a person, not a macro)
+
+| Situation | Route to |
+| --- | --- |
+| Any order over $250 with a problem | the support lead |
+| A refund, credit or replacement worth more than $150 | the support lead, for approval |
+| Chargeback, payment dispute or suspected fraud | the support lead, same day; never answer with a macro |
+| Injury, burn, allergic reaction or any safety concern | the support lead, same day; never answer with a macro |
+| Legal threats, press or influencer complaints | the support lead |
+| “Price adjustment request” tickets, until the policy is decided | the support lead, so every customer gets the same answer |
+| A customer's third message about the same order | the support lead |
+
+Last season, 8 of 1,146 tickets (0.7%) contained an escalation word from policies.json: chargeback 1, dispute 3, cut myself 4.
+
+### 7. Checklist (nothing has been changed)
+
+| # | Severity | What to do | State | By |
+| ---: | --- | --- | --- | --- |
+| 1 | CRITICAL | Existing macro “Holiday shipping”: Retire it and use “Holiday 2026 - Shipping: holiday order-by dates”. | recommended | Oct 14 |
+| 2 | CRITICAL | Existing macro “Free shipping”: Change it to $75. | recommended | Oct 14 |
+| 3 | CRITICAL | Existing macro “Holiday hours”: Retire it and use “Holiday 2026 - Holiday support hours”. | recommended | Oct 14 |
+| 4 | CRITICAL | Decide the policy for “Price adjustment request” tickets and publish it, add `price_adjustment` to policies.json and re-run so the macros can be generated (options: references/playbook.md §3). | recommended | Nov 13 |
+| 5 | WARNING | Add keywords for the most common unclassified subjects to references/ticket_rules.json and re-run. The rules are in English: if many tickets are in another language, add keywords in that language too. | recommended | Nov 17 |
+| 6 | WARNING | Existing macro “Returns & exchanges”: Add the holiday window, or use “Holiday 2026 - Returns: holiday window”. | recommended | Nov 17 |
+| 7 | WARNING | Existing macro “Black Friday code”: Remove BF20, or use “Holiday 2026 - Discount: code not working”. | recommended | Nov 17 |
+| 8 | WARNING | Existing macro “Discount code help”: Remove SUMMER15, or use “Holiday 2026 - Discount: code not working”. | recommended | Nov 17 |
+| 9 | WARNING | Add cover on Sat Nov 28 (53 tickets forecast, 45 capacity) and Sun Nov 29 (52 tickets forecast, 45 capacity); plan who clears the tickets that arrive while support is closed on Sat Nov 14 (8), Sun Nov 15 (13), Sat Nov 21 (10), Sun Nov 22 (11), Thu Nov 26 (53), Fri Dec 25 (28), Sat Dec 26 (19) and Sun Dec 27 (16). Options: a second agent on those days, longer shifts, outside help or a trained teammate from another role. | recommended | Nov 20 |
+| 10 | PLAN | Review the 17 draft macros in macros_preview.md: check each fact against the policy, adapt the tone to your brand voice without changing any fact, and map the placeholders to your helpdesk. | recommended | Nov 17 |
+| 11 | PLAN | Put the macros live in your helpdesk with their tags and test each one on a test ticket. Then export your macros and re-run this skill with --macros to mark them verified. | recommended | Nov 20 |
+| 12 | PLAN | Final re-run with the final policies, cutoff dates and macros export. Brief the team on the escalation map. | recommended | Nov 24 |
+| 13 | PLAN | Start using “Holiday 2026 - WISMO: BFCM order not shipped yet” through Dec 3. | recommended | Nov 26 |
+| 14 | PLAN | Start using “Holiday 2026 - Discount: item not in the sale” through Dec 1. | recommended | Nov 26 |
+| 15 | PLAN | Stop using “Holiday 2026 - Discount: item not in the sale” (its last day is Dec 1). | recommended | Dec 2 |
+| 16 | PLAN | Stop using “Holiday 2026 - WISMO: BFCM order not shipped yet” (its last day is Dec 3). | recommended | Dec 4 |
+| 17 | PLAN | Switch from “Holiday 2026 - Shipping: holiday order-by dates” to “Holiday 2026 - Shipping: only the fastest method is still on time”. | recommended | Dec 15 |
+| 18 | PLAN | Switch from “Holiday 2026 - Shipping: only the fastest method is still on time” to “Holiday 2026 - Shipping: after the last order date”. | recommended | Dec 22 |
+| 19 | PLAN | Stop using “Holiday 2026 - Returns: holiday window” (its last day is Jan 31, 2027). | recommended | Feb 1, 2027 |
+
+_Gap threshold: ticket types with ≥ 3% of last season's tickets. Forecast: weekday-aligned (364 days), scaled by projected orders over 7 days. States: detected → recommended → applied → verified. Read-only: no replies sent and no helpdesk, store or macro changed._

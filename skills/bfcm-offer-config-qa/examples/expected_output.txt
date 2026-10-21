@@ -1,0 +1,159 @@
+## BFCM Offer & Discount Config QA: Fernhill Goods, as of 2026-10-06
+
+**Verdict: NOT READY.** 5 critical issues and 3 warnings. VIP early access opens Tue Nov 24, 2026 (49 days away); Main sale runs Thu Nov 26 – Tue Dec 1.
+Fix the items below by **Nov 10**, then re-run this check and the test checkouts by **Nov 17**. Two are live today: fix those now.
+Checked 6 discounts (export of Tue Oct 6 2:05 pm ET) against 5 planned offers and 15 SKUs. Times are store time, America/New_York (ET).
+
+**Issues, most severe first** (all detected, none changed)
+1. **CRITICAL**: BFCM 25% off sitewide applies to All products, so 5 SKUs the plan leaves out get 25% off: Last Chance (3) and New Arrivals (2).
+2. **CRITICAL**: BFCM 25% off sitewide and WELCOME10 stack: BFCM 25% off sitewide is set to combine with order discounts and WELCOME10 with product discounts, so all 11 discountable SKUs can go 32.5% off during Nov 26 – Dec 1 (plan max 25%).
+3. **CRITICAL**: 2 SKUs sell below unit cost at the worst-case stack (BFCM 25% off sitewide + WELCOME10, Nov 26 – Dec 1): Stoneware Mug Set (4) — Slate at $18.90 (unit cost $19.00) and Merino Wool Throw — Oat at $51.97 (unit cost $52.00).
+4. **CRITICAL**: Free shipping on orders $75+ has no minimum purchase ($0 instead of $75), so every order ships free.
+5. **CRITICAL**: SUMMER15 (15% off products) is still active with no end date; the plan says it must not be active.
+6. **WARNING**: MAYA20 (20% off products) has no usage limit (plan: 300 in total), isn't limited to one use per customer (plan: once per customer) and can combine with BFCM 25% off sitewide (plan: must not).
+7. **WARNING**: VIPEARLY ends Wed Nov 25 at 6:59 pm ET (23:59 UTC) instead of 11:59 pm ET, leaving a 5-hour gap (Wed Nov 25, 7:00 pm to midnight) before BFCM 25% off sitewide starts.
+8. **WARNING**: Walnut Serving Board: compare-at raised from $72.00 to $96.00 on Fri Oct 2, but in the 85 days of history before that it sold at $72.00 and never at $96.00. Reference-price risk to review, not a legal conclusion.
+
+### 1. Planned offers vs live discounts
+
+| Planned offer | Live discount | Status | Matches the plan? |
+| --- | --- | --- | --- |
+| VIP early access: code VIPEARLY, 25% off products | VIPEARLY | scheduled | **No**: dates (§2) |
+| Main sale: automatic, 25% off products | BFCM 25% off sitewide | scheduled | **No**: who gets it (§3), stacking (§4), settings (§5) |
+| Free shipping $75+: automatic, free shipping | Free shipping on orders $75+ | active, 7,412 uses | **No**: settings (§5) |
+| Welcome offer: code WELCOME10, 10% off order | WELCOME10 | active, 1,734 uses | **No**: stacking (§4) |
+| Creator code (Maya): code MAYA20, 20% off products | MAYA20 | active, 118 uses | **No**: settings (§5) |
+
+- **CRITICAL**: SUMMER15 (15% off products) is still active with no end date; the plan says it must not be active.
+  Active since Mon Jun 1, 23 uses, last edited Fri Aug 14.
+  Shopify clears the end date when an expired discount is reactivated, a common way old codes come back.
+  It doesn't combine with other discounts, so it can't stack, but anyone with the code gets 15% off everything, marked-down items included. The code is a common word plus a number (SUMMER + 15), the kind coupon sites and browser extensions try first.
+
+### 2. Sale windows in store time (ET)
+
+| Phase | Discount | Starts (ET) | Ends (ET) | vs plan |
+| --- | --- | --- | --- | --- |
+| VIP early access | VIPEARLY | Tue Nov 24 12:00 am | Wed Nov 25 6:59 pm | **ends 5 h early**: plan 11:59 pm, set as 23:59 UTC |
+| — | *no sale discount* | Wed Nov 25 7:00 pm | Thu Nov 26 12:00 am | **5 h gap** (plan: none) |
+| Main sale | BFCM 25% off sitewide | Thu Nov 26 12:00 am | Tue Dec 1 11:59 pm | matches |
+
+Always on or longer-running: WELCOME10 (since Sat Feb 1, 2025, no end; plan: always on); Free shipping on orders $75+ (since Mon Mar 3, 2025, no end; plan: always on); SUMMER15 (since Mon Jun 1, no end; must not be active); MAYA20 (Sep 1 – Dec 31; matches the plan).
+
+- **WARNING**: VIPEARLY ends Wed Nov 25 at 6:59 pm ET (23:59 UTC) instead of 11:59 pm ET, leaving a 5-hour gap (Wed Nov 25, 7:00 pm to midnight) before BFCM 25% off sitewide starts.
+  The time looks like it was entered in UTC (by an app, an import or an API script), not in the store's time zone.
+  Shoppers who try the code in that window are told it isn't valid, and no sale discount applies.
+
+### 3. Who gets each discount
+
+| Discount | Applies to | SKUs | Plan | Extra (shouldn't get it) | Missing |
+| --- | --- | ---: | --- | --- | --- |
+| VIPEARLY | collection BFCM Eligible | 6 | everything except Gift Cards, New Arrivals and Last Chance (6) | — | — |
+| BFCM 25% off sitewide | All products | 11 | everything except Gift Cards, New Arrivals and Last Chance (6) | **5**: Last Chance 3, New Arrivals 2 | — |
+| MAYA20 | All products | 11 | everything (11) | — | — |
+
+Order and shipping discounts (WELCOME10 and Free shipping on orders $75+) apply to the whole cart. Gift cards (4 SKUs) are only discounted by a discount that names the gift card product, never by All products or a collection (Shopify rule).
+
+- **CRITICAL**: BFCM 25% off sitewide applies to All products, so 5 SKUs the plan leaves out get 25% off: Last Chance (3) and New Arrivals (2).
+  Last Chance: Merino Wool Throw — Oat $77.00 → $57.75 (unit cost $52.00), Linen Apron — Sage $29.00 → $21.75 (unit cost $14.00), Stoneware Mug Set (4) — Slate $28.00 → $21.00 (unit cost $19.00).
+  New Arrivals: Stoneware Pasta Bowls (2) $52.00 → $39.00, Linen Napkins (Set of 4) $38.00 → $28.50.
+  3 of them are already marked down 40–50% from compare-at.
+
+### 4. Stacking and worst-case price per SKU
+
+Pairs that can combine (each discount must allow the other's class):
+
+| Pair | Both live (ET) | How they combine | Plan | Worst case on one item |
+| --- | --- | --- | --- | --- |
+| BFCM 25% off sitewide + WELCOME10 | Nov 26 – Dec 1 | product discount first, then the order discount on the reduced price | **not allowed** | **32.5%** |
+| BFCM 25% off sitewide + MAYA20 | Nov 26 – Dec 1 | separate items only (one product discount per item) | **not allowed** | 25% |
+| MAYA20 + Free shipping on orders $75+ | now on | free shipping on top | allowed | — |
+| WELCOME10 + Free shipping on orders $75+ | now on | free shipping on top | allowed | — |
+| VIPEARLY + Free shipping on orders $75+ | Nov 24 – Nov 25 | free shipping on top | allowed | — |
+| BFCM 25% off sitewide + Free shipping on orders $75+ | Nov 26 – Dec 1 | free shipping on top | allowed | — |
+
+- **CRITICAL**: BFCM 25% off sitewide and WELCOME10 stack: BFCM 25% off sitewide is set to combine with order discounts and WELCOME10 with product discounts, so all 11 discountable SKUs can go 32.5% off during Nov 26 – Dec 1 (plan max 25%).
+  Shopify takes the 25% product discount first, then 10% off the reduced subtotal: 1 − 0.75 × 0.9 = 32.5%.
+  The plan says they must not combine.
+- **CRITICAL**: 2 SKUs sell below unit cost at the worst-case stack (BFCM 25% off sitewide + WELCOME10, Nov 26 – Dec 1): Stoneware Mug Set (4) — Slate at $18.90 (unit cost $19.00) and Merino Wool Throw — Oat at $51.97 (unit cost $52.00).
+  44 units in stock. That is before shipping and payment fees.
+  Configured as planned, their worst case is MAYA20 alone: $22.40 and $61.60.
+
+Worst case per SKU, Oct 6 – Dec 1 (plan max 25%, margin floor 15%):
+
+| Item | Price | Unit cost | Planned worst case | Live worst case | Live via | When | Margin |
+| --- | ---: | ---: | --- | --- | --- | --- | ---: |
+| Stoneware Mug Set (4) — Slate (Last Chance) | $28.00 | $19.00 | $22.40 (20%) | **$18.90 (32.5%)** | BFCM 25% off sitewide + WELCOME10 | Nov 26 – Dec 1 | **−0.5%** |
+| Merino Wool Throw — Oat (Last Chance) | $77.00 | $52.00 | $61.60 (20%) | **$51.97 (32.5%)** | BFCM 25% off sitewide + WELCOME10 | Nov 26 – Dec 1 | **−0.1%** |
+| Linen Apron — Sage (Last Chance) | $29.00 | $14.00 | $23.20 (20%) | **$19.57 (32.5%)** | BFCM 25% off sitewide + WELCOME10 | Nov 26 – Dec 1 | 28.5% |
+| Merino Wool Throw — Charcoal | $140.00 | $52.00 | $105.00 (25%) | **$94.50 (32.5%)** | BFCM 25% off sitewide + WELCOME10 | Nov 26 – Dec 1 | 45.0% |
+| Stoneware Pasta Bowls (2) (New Arrivals) | $52.00 | $18.00 | $41.60 (20%) | **$35.10 (32.5%)** | BFCM 25% off sitewide + WELCOME10 | Nov 26 – Dec 1 | 48.7% |
+| Stoneware Mug Set (4) — Speckled | $56.00 | $19.00 | $42.00 (25%) | **$37.80 (32.5%)** | BFCM 25% off sitewide + WELCOME10 | Nov 26 – Dec 1 | 49.7% |
+| Walnut Serving Board | $72.00 | $24.00 | $54.00 (25%) | **$48.60 (32.5%)** | BFCM 25% off sitewide + WELCOME10 | Nov 26 – Dec 1 | 50.6% |
+| Waxed Canvas Tote — Olive | $78.00 | $26.00 | $58.50 (25%) | **$52.65 (32.5%)** | BFCM 25% off sitewide + WELCOME10 | Nov 26 – Dec 1 | 50.6% |
+| Ceramic Pour-Over Set | $64.00 | $21.00 | $48.00 (25%) | **$43.20 (32.5%)** | BFCM 25% off sitewide + WELCOME10 | Nov 26 – Dec 1 | 51.4% |
+| Linen Apron — Natural | $48.00 | $14.00 | $36.00 (25%) | **$32.40 (32.5%)** | BFCM 25% off sitewide + WELCOME10 | Nov 26 – Dec 1 | 56.8% |
+| Linen Napkins (Set of 4) (New Arrivals) | $38.00 | $11.00 | $30.40 (20%) | **$25.65 (32.5%)** | BFCM 25% off sitewide + WELCOME10 | Nov 26 – Dec 1 | 57.1% |
+
+_Model (Shopify Help Center, Combining discounts): two discounts combine only if each allows the other's class; product discounts apply first, then order discounts on the reduced subtotal (each percentage on that subtotal), then one shipping discount; one product discount per item unless both are tagged to share a line (Shopify Plus); if discounts can't combine, the customer gets the best one. The worst case assumes minimums are met and ignores who is eligible. Margin is on the discounted price, before shipping and payment fees._
+
+### 5. Codes, limits and free shipping
+
+| Code | Offer | Uses | Usage limit (plan) | Once per customer (plan) | Who can use it | Combines with |
+| --- | --- | ---: | --- | --- | --- | --- |
+| MAYA20 | 20% off products | 118 | **none** (300) | **no** (yes) | all customers | **product**, shipping |
+| SUMMER15 | 15% off products | 23 | none (must not be active) | no | all customers | nothing |
+| VIPEARLY | 25% off products | 0 | none (none) | no (no) | segment SMS subscribers | shipping |
+| WELCOME10 | 10% off order | 1,734 | none (none) | yes (yes) | segment Never purchased | **product**, shipping |
+
+Shipping discounts: Free shipping on orders $75+ (automatic): minimum $0 (plan $75).
+
+- **CRITICAL**: Free shipping on orders $75+ has no minimum purchase ($0 instead of $75), so every order ships free.
+  Estimate, not a measurement: if this BFCM looks like last year's (1,356 orders, 556 under $75), that is about $6,116 of shipping on orders the plan wouldn't ship free (556 × $11.00 per order). It is live now: at about 32 orders a day and the same 41% share, roughly $144 a day.
+  Last edited Tue Sep 29.
+- **WARNING**: MAYA20 (20% off products) has no usage limit (plan: 300 in total), isn't limited to one use per customer (plan: once per customer) and can combine with BFCM 25% off sitewide (plan: must not).
+  118 uses so far.
+  The code is a name plus a number (MAYA + 20): easy to guess, and coupon sites repost codes like it, so an uncapped code can run far past its planned uses.
+  Shopify gives each item only one product discount, so MAYA20 doesn't deepen any one item during BFCM 25% off sitewide, but it discounts the items BFCM 25% off sitewide leaves out in the same cart.
+
+### 6. Reference prices (compare-at)
+
+Compare-at below price: none. Compare-at prices checked against price history (raises, and compare-ats never seen as a selling price) for 15 SKUs from Jul 9.
+This check follows US (FTC 16 CFR 233.1) guidance. It does not apply the EU/UK rule that the reference price must be the lowest price in the prior 30 days.
+
+- **WARNING**: Walnut Serving Board: compare-at raised from $72.00 to $96.00 on Fri Oct 2, but in the 85 days of history before that it sold at $72.00 and never at $96.00. Reference-price risk to review, not a legal conclusion.
+  Today the product page shows $96.00 crossed out next to $72.00 (25% off). In the sale it ends at $54.00, which reads as 43.8% off $96.00 for a 25% discount.
+  The FTC's Guides Against Deceptive Pricing (16 CFR 233.1) treat a former price as genuine when the item was openly and actively offered at it for a reasonably substantial period in the recent, regular course of business. This check flags a compare-at the SKU wasn't sold at on at least 30 of the 90 days before it was set. State laws can be stricter.
+- OK: 3 compare-ats set to a price the SKU had sold at for 30+ days (markdowns on Mon Aug 17: Linen Apron — Sage, Merino Wool Throw — Oat, Stoneware Mug Set (4) — Slate).
+
+### 7. Test-checkout script
+
+Run these before launch. A scheduled discount can't be applied before it starts, so for sale-phase rows use a staff-only copy of each discount (same settings, eligibility limited to your test customer, starting now; delete it after) or test in the first minutes of the phase. Totals are merchandise after discounts, before shipping and tax; Shopify may round a cent differently. Row 1 is the worst case as exported; each other row isolates one problem and assumes the other fixes are in.
+
+| # | When (ET) | Customer | Cart | Code | Expect (as planned) | If you see | It means |
+| ---: | --- | --- | --- | --- | --- | --- | --- |
+| 1 | Thu Nov 26 12:05 am | segment Never purchased | Merino Wool Throw — Oat ($77.00) | WELCOME10 | $69.30 (WELCOME10) | $51.97 (BFCM 25% off sitewide + WELCOME10) | as exported, BFCM 25% off sitewide and WELCOME10 both apply to this Last Chance item: $0.03 below its $52.00 unit cost |
+| 2 | Thu Nov 26 12:05 am | any | Merino Wool Throw — Oat ($77.00) + Stoneware Pasta Bowls (2) ($52.00) | — | $129.00 (no discount) | $96.75 (BFCM 25% off sitewide) | BFCM 25% off sitewide reaches items the plan leaves out |
+| 3 | Thu Nov 26 12:05 am | segment Never purchased | Merino Wool Throw — Charcoal ($140.00) | WELCOME10 | $105.00 (BFCM 25% off sitewide; WELCOME10 refused) | $94.50 (BFCM 25% off sitewide + WELCOME10) | BFCM 25% off sitewide and WELCOME10 stack |
+| 4 | today | any | Walnut Serving Board ($72.00) | — | $72.00 (no discount), shipping charged | $72.00 (Free shipping on orders $75+), free shipping | Free shipping on orders $75+ has no minimum |
+| 5 | today | any | Walnut Serving Board ($72.00) | SUMMER15 | $72.00 (SUMMER15 refused) | $61.20 (SUMMER15) | SUMMER15 is still live |
+| 6 | Thu Nov 26 12:05 am | any | Merino Wool Throw — Charcoal ($140.00) + Linen Napkins (Set of 4) ($38.00) | MAYA20 | $142.40 (MAYA20) | $135.40 (BFCM 25% off sitewide + MAYA20) | MAYA20 combines with BFCM 25% off sitewide (as planned they can't, so Shopify applies only the better of the two) |
+| 7 | today | test customer | any item, then a second order with the same email | MAYA20 | second order: code refused | code accepted again | MAYA20 isn't limited to one use per customer |
+| 8 | Wed Nov 25 7:30 pm | segment SMS subscribers | Merino Wool Throw — Charcoal ($140.00) | VIPEARLY | $105.00 (VIPEARLY) | $140.00 (VIPEARLY refused) | VIPEARLY ends at 6:59 pm ET |
+
+### 8. Fix list and timeline (nothing has been changed)
+
+| # | Severity | What to do | State | By |
+| ---: | --- | --- | --- | --- |
+| 1 | CRITICAL | Change BFCM 25% off sitewide's Applies to from All products to the BFCM Eligible collection (the one VIPEARLY uses), which leaves out Gift Cards, New Arrivals and Last Chance. | recommended | Nov 10 |
+| 2 | CRITICAL | In Combinations, on BFCM 25% off sitewide untick Order discounts; on WELCOME10 untick Product discounts. Either one stops the stack; change both so a later edit can't reopen it. | recommended | Nov 10 |
+| 3 | CRITICAL | No separate change: fixes 1 and 2 bring these back to the planned worst case ($22.40 and $61.60). Re-run to confirm. To keep them out of every code, exclude them there too; Promo Margin Guard sets per-SKU floors. | recommended | Nov 10 |
+| 4 | CRITICAL | Set Free shipping on orders $75+'s minimum purchase amount to $75. It is live now. | recommended | Oct 6 (today) |
+| 5 | CRITICAL | Deactivate SUMMER15 (Discounts → SUMMER15 → Deactivate). It is live now. | recommended | Oct 6 (today) |
+| 6 | WARNING | On MAYA20, set Maximum discount uses to 300 in total (182 left after the 118 so far), tick Limit to one use per customer and untick Product discounts in Combinations. On BFCM 25% off sitewide, untick Product discounts too. | recommended | Nov 10 |
+| 7 | WARNING | Set VIPEARLY's end to Wed Nov 25, 11:59 pm ET in the admin (store time), or 2026-11-26T04:59:00Z through the API or an app. | recommended | Nov 10 |
+| 8 | WARNING | Put Walnut Serving Board's compare-at back to $72.00, or keep a record that $96.00 was a real former price; have whoever owns pricing compliance review it before launch. | recommended | Nov 10 |
+| 9 | PLAN | Re-run this check on a fresh export; it should say READY. Then run the test checkouts in §7 and mark a fix verified only when its row shows the expected total. | recommended | Nov 17 |
+| 10 | PLAN | Discount freeze through Dec 1: no new or edited discounts unless you re-run this check after the change. | recommended | Nov 21 |
+| 11 | PLAN | Final export and run. At 12:05 am Tue Nov 24 and 12:05 am Thu Nov 26 ET, place one order (or test order) in each phase and read the discount lines. | recommended | Nov 23 |
+
+_CRITICAL can lose margin or sell below cost; WARNING breaks the plan or the shopper's experience. Fixes are due 14 days before launch (Nov 10); items live today, now. Free-shipping costs are estimates. Reference-price notes are risks to review, not legal conclusions. States: detected → recommended → applied → verified. Read-only: no discounts, prices or Shopify settings were changed._

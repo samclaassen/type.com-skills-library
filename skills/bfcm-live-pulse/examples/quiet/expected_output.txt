@@ -1,0 +1,17 @@
+--quiet: exit 0, printed 0 characters
+
+Without --quiet:
+
+*BFCM Live Pulse · Fernhill Goods · Cyber Monday, Mon Nov 30 · 9:00 am ET*
+*ON TRACK*: no alerts. Pacing to *$19,461*, 4.6% over base $18,599 (low $15,809, high $20,459). MER to 8:20 am *4.79*: too early to call (first check at noon; judge from noon onward).
+
+*Numbers to 9:00 am* (9 of 24 hours; LY = Mon Dec 1, 2025, same hours)
+```
+Net sales $3,195 · LY $3,113 (+2.6%)
+Orders    36 · LY 35 (+2.9%) · AOV $88.75 · LY $88.94 (-0.2%)
+Spend     $594 of $3,954 (15.0%) · 101% of expected by now
+          Meta $353 103% · Google $161 96% · TikTok $80 101%
+MER       4.79 to 8:20 am · pull back < 4.00 · scale > 5.17 · plan 4.70
+Funnel    2.8% of 1,281 sessions ordered · LY 2.7%
+```
+_Read-only: nothing was changed. Expected spend assumes budgets pace like last year's hourly sales._

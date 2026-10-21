@@ -1,0 +1,14 @@
+client,campaign,channel,status,current_daily_budget,min_daily_budget,max_daily_budget
+Pinecrest Home Goods,PC_Search_Brand,Google Search,ACTIVE,250,150,400
+Pinecrest Home Goods,PC_Search_NonBrand,Google Search,ACTIVE,500,200,900
+Pinecrest Home Goods,PC_Shopping_Core,Google Shopping,ACTIVE,300,100,600
+Pinecrest Home Goods,PC_Display_Retarget,Google Display,ACTIVE,100,80,200
+Verity Legal Group,VL_Search_Core,Google Search,ACTIVE,200,50,350
+Verity Legal Group,VL_LinkedIn_Leadgen,LinkedIn Ads,ACTIVE,100,50,200
+Solstice Athletics,SA_Meta_Prospecting,Meta Ads,ACTIVE,800,400,1600
+Solstice Athletics,SA_Meta_Retargeting,Meta Ads,ACTIVE,350,150,700
+Solstice Athletics,SA_TikTok_Prospecting,TikTok Ads,ACTIVE,300,100,600
+Solstice Athletics,SA_Search_Brand,Google Search,ACTIVE,60,30,150
+Solstice Athletics,SA_Display_Legacy,Google Display,PAUSED,120,0,300
+Harbor & Vine,HV_Meta_Prospecting,Meta Ads,ACTIVE,420,100,800
+Harbor & Vine,HV_Search_Brand,Google Search,ACTIVE,115,50,300

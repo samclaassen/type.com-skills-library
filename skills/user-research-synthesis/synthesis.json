@@ -1,0 +1,36 @@
+{
+  "min_pattern_participants": 2,
+  "medium_min_participants": 3,
+  "high_min_participants": 4,
+  "high_min_share_of_participants": 0.5,
+  "high_max_contradicting_ratio": 0.25,
+  "segment_min_participants": 2,
+  "segment_gap_min_share": 0.5,
+  "max_quotes_per_finding": 3,
+  "max_contradicting_quotes": 2,
+  "max_quote_chars": 400,
+  "max_statement_chars": 300,
+  "max_single_signals": 20,
+  "date_precision": "day",
+  "leading_question_patterns": [
+    "^\\s*(?:so\\s+)?(?:wouldn'?t|won'?t|don'?t|doesn'?t|isn'?t|aren'?t|didn'?t|shouldn'?t|couldn'?t|haven'?t)\\b",
+    "\\b(?:don'?t you (?:think|agree|feel|find)|do you agree|would you agree|wouldn'?t you say|isn'?t it|wouldn'?t it)\\b",
+    "[,\\s](?:right|correct|yes|no|true|yeah)\\s*\\?\\s*$",
+    "\\b(?:how much (?:would|do|did) you (?:love|like|enjoy)|how (?:great|easy|helpful|useful|frustrating|annoying|hard|painful) (?:was|is|would)|surely)\\b",
+    "\\b(?:you'?d (?:love|like|want)|you would (?:love|like|want))\\b"
+  ],
+  "free_email_domains": [
+    "gmail.com",
+    "googlemail.com",
+    "outlook.com",
+    "hotmail.com",
+    "live.com",
+    "yahoo.com",
+    "icloud.com",
+    "me.com",
+    "proton.me",
+    "protonmail.com",
+    "aol.com",
+    "freemail.example"
+  ]
+}

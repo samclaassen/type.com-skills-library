@@ -1,0 +1,181 @@
+NOTE: no finance definitions file found (looked for finance/revenue_definitions.json).
+These figures use this skill's own defaults, not finance's definitions:
+  timezone: not used; order_date is carried for reference only
+  currency: one currency assumed; nothing is converted
+  revenue: gross_revenue at full price less discount_amount, excluding tax and shipping; refunds shown separately
+  refunds: counted in full against the promotion, whenever they were issued
+  excluded orders: none removed or reported; the export must already exclude cancelled and test orders
+Add finance/revenue_definitions.json or pass --definitions <path> to use finance's definitions.
+
+PROMOTION MARGIN GUARD
+promo codes: 6   orders: 670   units: 1050   skus: 13
+========================================================================================================
+
+ASSUMPTIONS
+  contribution margin = net revenue - refunds - expected further returns + shipping charged
+                        - shipping cost - fulfillment - payment fees - COGS + recovered COGS
+                        - return handling
+  payment fee: 2.9% of the amount captured + 0.30 per order, allocated to lines by gross revenue
+  payment fees are NOT refunded when an order is returned, which is how most processors work
+  fulfillment: 2.85 per order
+  return rate: per-SKU return_rate_pct where present, otherwise 0%
+  return handling: 8.50 per returned unit; 75% of unit cost recovered
+  'booked' counts only returns already processed: their refunds, handling, and recovered stock
+  'expected' = booked - refunds still to come - their handling + stock they will recover
+
+PROMOTION P&L (expected, after returns still to come)
+  promo          orders  units  full price   discount    net rev       COGS  ship net     fees    returns     margin  margin%
+  CLEARANCE50        90    141   12,708.00   6,354.00   6,354.00   4,284.02  1,047.99   211.26   2,155.85  -1,345.12   -21.2%
+  FLASH40           180    297   27,084.00  10,833.60  16,250.40   9,040.05  2,067.42   525.17   5,933.79  -1,316.03    -8.1%
+  VIP30              70    104    9,872.00   2,961.60   6,910.40   3,240.71    566.81   228.34   2,665.53     209.00     3.0%
+  SPRING20          150    235   19,919.00   3,983.80  15,935.20   6,846.21  1,734.92   507.24   5,009.86   1,836.97    11.5%
+  (no code)          60     92    8,287.00       0.00   8,287.00   2,817.79    533.14   262.96   2,794.90   1,878.21    22.7%
+  WELCOME15         120    181   15,405.00   2,310.75  13,094.25   5,156.66    947.07   428.37   4,537.40   2,024.75    15.5%
+  TOTAL             670   1050   93,275.00  26,443.75  66,831.25  31,385.43  6,897.35 2,163.34  23,097.35   3,287.78     4.9%
+  ship net = shipping cost and fulfillment minus shipping the customer paid; negative means shipping paid for itself.
+
+BOOKED TO EXPECTED BRIDGE (returns still to come)
+  promo               booked   - refunds  - handling  + recovered  = expected
+  CLEARANCE50        -545.15    1,733.13      226.94     1,160.10   -1,345.12
+  FLASH40             695.74    3,744.02      413.15     2,145.40   -1,316.03
+  VIP30             1,152.78    1,588.62      148.07       792.91      209.00
+  SPRING20          4,370.54    3,853.58      327.54     1,647.55    1,836.97
+  (no code)         3,334.74    2,013.92      135.82       693.21    1,878.21
+  WELCOME15         4,052.58    2,991.91      241.14     1,205.22    2,024.75
+  TOTAL            13,061.23   15,925.18    1,492.65     7,644.38    3,287.78
+  refunds = revenue expected back from returns not yet processed; handling = their return handling;
+  recovered = unit cost recovered by reselling them. Each row adds up: booked - refunds - handling + recovered.
+  Steps are rounded to cents cumulatively, so a component can differ from its own rounding by 0.01.
+
+PROMOTIONS THAT LOST MONEY
+  [LOSS] CLEARANCE50: -1,345.12 across 90 orders (-14.95 per order, 50.0% average discount)
+         booked margin before the returns still to come: -545.15; returns still to come cost 799.97 net of recovered stock
+  [LOSS] FLASH40: -1,316.03 across 180 orders (-7.31 per order, 40.0% average discount)
+         booked margin before the returns still to come: 695.74; returns still to come cost 2,011.77 net of recovered stock
+  [THIN] VIP30: 3.0% contribution margin, 209.00 on 6,910.40 of net revenue
+
+BREAKEVEN DISCOUNT DEPTH BY PRODUCT
+  sku                  list     cost   ret%  ship/unit    given  breakeven  headroom  product
+  WA-BOOT-CHL        198.00   104.00  45.0%       7.72    29.2%      22.0%     -7.2%  Chelsea Boot
+  WA-DRESS-MID       138.00    62.00  45.0%       8.42    27.9%      25.8%     -2.0%  Midi Slip Dress
+  WA-GIFT-SET         78.00    46.00   8.0%       5.89    28.2%      28.3%      0.1%  Cabin Gift Set
+  WA-KNIT-MER        165.00    84.00  30.0%       8.15    26.3%      31.5%      5.2%  Merino Crew Knit
+  WA-JEAN-STR        168.00    72.00  38.0%       8.55    31.5%      36.3%      4.8%  Straight Leg Selvedge Jean
+  WA-PANT-LNG         74.00    31.00  22.0%       6.02    28.3%      39.2%     10.9%  Lounge Pant
+  WA-SOCK-3PK         24.00     8.40   4.0%       4.82    28.6%      40.5%     11.9%  Everyday Sock 3 Pack
+  WA-SCARF-WL         58.00    24.50   7.0%       6.14    29.1%      42.7%     13.6%  Lambswool Scarf
+  WA-BELT-LTH         68.00    29.00   9.0%       5.86    24.7%      43.8%     19.1%  Bridle Leather Belt
+  WA-TOTE-CNV         52.00    21.00   6.0%       5.86    25.8%      44.2%     18.4%  Canvas Day Tote
+  WA-CAP-CNV          34.00    12.20   5.0%       5.11    28.1%      44.8%     16.7%  Washed Canvas Cap
+  WA-TEE-ORG          42.00    13.60  14.0%       5.45    27.6%      46.1%     18.5%  Willow & Ash Organic Tee
+  ... 1 more SKU(s) with deeper headroom; use --top or --json for the full list.
+  breakeven = the deepest discount off list price that still clears 0.00 of unit
+  contribution, after this SKU's return rate, its observed shipping economics, and payment fees.
+  given = the average discount this SKU actually received in the data. headroom = breakeven - given.
+
+EXCLUDE FROM THE NEXT 25% SITEWIDE SALE
+  WA-BOOT-CHL      cap at 22.0% — at 25% each unit contributes -3.08 (Chelsea Boot)
+  WA-DRESS-MID     thin headroom — breakeven 25.8% is barely above the planned 25%; any stacked code or free shipping tips it negative (Midi Slip Dress)
+  WA-GIFT-SET      thin headroom — breakeven 28.3% is barely above the planned 25%; any stacked code or free shipping tips it negative (Cabin Gift Set)
+
+SUMMARY
+  full-price value of everything sold on promotion: 93,275.00
+  discount given away:                              26,443.75 (28.4%)
+  booked contribution margin:                       13,061.23
+  expected contribution margin after returns:       3,287.78 (4.9% of net revenue)
+  promo codes losing money:                         2 of 6
+  skus to exclude or cap at 25%:                    1 of 13
+
+========================================================================================================
+Contribution margin only. Ad spend, overheads, and the value of any new customer the promotion acquired are not in these numbers.
+
+=== Scenario 2: with finance/revenue_definitions.json (examples/with_definitions) ===
+
+FINANCE DEFINITIONS
+  file: finance/revenue_definitions.json   version: 2026-09-23   owner: finance@example.com
+  timezone: America/New_York; used only to find each order's local date for its FX rate.
+    This report has no periods, so the timezone moves no order between buckets.
+  currency: USD; CAD orders and their lines converted with finance/fx_rates.csv (daily ECB close) at the order date's rate
+    product costs, list prices and the cost flags must already be in USD
+  net sales: full price - discount - refunds; reported in SUMMARY
+    the P&L columns and margin% do not change with these flags: margin% stays on net revenue after discount
+    tax: excluded (gross_revenue excludes tax)
+    gift card sales: cannot be identified by this skill; the orders file must already exclude them, as finance's definitions require
+  refunds: refund_date basis; no effect on a promotion's P&L, which has no periods
+  sale date: order_date column, which must be the order_created date
+  not used by this skill: checks, refunds.late_refund_days
+
+PROMOTION MARGIN GUARD
+promo codes: 3   orders: 6   units: 8   skus: 3
+========================================================================================================
+
+ASSUMPTIONS
+  contribution margin = net revenue - refunds - expected further returns + shipping charged
+                        - shipping cost - fulfillment - payment fees - COGS + recovered COGS
+                        - return handling
+  payment fee: 2.9% of the amount captured + 0.30 per order, allocated to lines by gross revenue
+  payment fees are NOT refunded when an order is returned, which is how most processors work
+  fulfillment: 2.85 per order
+  return rate: per-SKU return_rate_pct where present, otherwise 0%
+  return handling: 8.50 per returned unit; 75% of unit cost recovered
+  'booked' counts only returns already processed: their refunds, handling, and recovered stock
+  'expected' = booked - refunds still to come - their handling + stock they will recover
+
+EXCLUDED ORDERS (finance excluded_orders rules; value = net revenue after discount)
+  rule                             orders         value
+  tag = test                            1         25.20
+  cancelled                             1        158.40
+  financial_status = voided             1         34.80
+  tag = internal                        1          0.00
+  total excluded                        4        218.40
+  An order matching several rules is counted once, under the first: cancelled,
+  financial_status, tag, zero value.
+  4 line item(s) belonging to excluded orders were skipped.
+
+PROMOTION P&L (expected, after returns still to come)
+  promo          orders  units  full price   discount    net rev       COGS  ship net     fees    returns     margin  margin%
+  FLASH40             2      3      298.00     119.20     178.80      61.39     21.30     5.79     135.05     -44.72   -25.0%
+  (no code)           1      1       42.00       0.00      42.00      12.17      3.00     1.69       7.07      18.07    43.0%
+  SPRING20            3      4      161.32      32.26     129.06      59.73     20.46     4.73      18.98      25.15    19.5%
+  TOTAL               6      8      501.32     151.46     349.86     133.29     44.76    12.21     161.10      -1.50    -0.4%
+  ship net = shipping cost and fulfillment minus shipping the customer paid; negative means shipping paid for itself.
+
+BOOKED TO EXPECTED BRIDGE (returns still to come)
+  promo               booked   - refunds  - handling  + recovered  = expected
+  FLASH40             -39.69        5.96        1.79         2.72      -44.72
+  (no code)            23.71        5.88        1.19         1.43       18.07
+  SPRING20             38.57       14.82        4.17         5.57       25.15
+  TOTAL                22.59       26.67        7.14         9.72       -1.50
+  refunds = revenue expected back from returns not yet processed; handling = their return handling;
+  recovered = unit cost recovered by reselling them. Each row adds up: booked - refunds - handling + recovered.
+  Steps are rounded to cents cumulatively, so a component can differ from its own rounding by 0.01.
+
+PROMOTIONS THAT LOST MONEY
+  [LOSS] FLASH40: -44.72 across 2 orders (-22.36 per order, 40.0% average discount)
+         booked margin before the returns still to come: -39.69; returns still to come cost 5.03 net of recovered stock
+
+BREAKEVEN DISCOUNT DEPTH BY PRODUCT
+  sku                  list     cost   ret%  ship/unit    given  breakeven  headroom  product
+  WA-BOOT-CHL        198.00   104.00  45.0%      11.25    40.0%      18.6%    -21.4%  Chelsea Boot
+  WA-SCARF-WL         58.00    24.50   7.0%       4.61    30.0%      45.6%     15.6%  Lambswool Scarf
+  WA-TEE-ORG          42.00    13.60  14.0%       4.86    20.0%      47.8%     27.8%  Willow & Ash Organic Tee
+  breakeven = the deepest discount off list price that still clears 0.00 of unit
+  contribution, after this SKU's return rate, its observed shipping economics, and payment fees.
+  given = the average discount this SKU actually received in the data. headroom = breakeven - given.
+
+EXCLUDE FROM THE NEXT 25% SITEWIDE SALE
+  WA-BOOT-CHL      cap at 18.6% — at 25% each unit contributes -6.61 (Chelsea Boot)
+
+SUMMARY
+  full-price value of everything sold on promotion: 501.32
+  discount given away:                              151.46 (30.2%)
+  booked contribution margin:                       22.59
+  expected contribution margin after returns:       -1.50 (-0.4% of net revenue)
+  promo codes losing money:                         1 of 3
+  skus to exclude or cap at 25%:                    1 of 3
+  net sales, finance definition v2026-09-23:         231.06 (full price - discount - refunds)
+  refunds on refund_date basis: this P&L has no periods, so every refund is counted in full
+  whenever it was issued; the basis changes a period report, not a promotion's result
+
+========================================================================================================
+Contribution margin only. Ad spend, overheads, and the value of any new customer the promotion acquired are not in these numbers.

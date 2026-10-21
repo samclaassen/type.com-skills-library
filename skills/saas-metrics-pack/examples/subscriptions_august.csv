@@ -1,0 +1,20 @@
+customer_id,customer_name,subscription_id,plan,mrr,start_date,end_date
+C001,Northwind Labs,sub_1001,Growth,2400.00,2025-03-01,
+C002,Calder Group,sub_1002,Growth,1800.00,2024-11-01,2026-08-10
+C002,Calder Group,sub_1044,Scale,2600.00,2026-08-10,
+C003,Vela Systems,sub_1003,Scale,3200.00,2025-06-15,2026-08-06
+C003,Vela Systems,sub_1045,Growth,2400.00,2026-08-06,
+C004,Tessellate Design,sub_1004,Starter,950.00,2025-09-01,2026-08-18
+C005,Pinewood Facilities,sub_1046,Starter,480.00,2026-08-05,
+C006,Orchard Retail,sub_1047,Growth,1250.00,2026-08-12,
+C007,Halberd Logistics,sub_1005,Starter,700.00,2024-05-01,2026-03-01
+C007,Halberd Logistics,sub_1048,Growth,900.00,2026-08-20,
+C008,Fulton Street Co,sub_1006,Growth,1500.00,2025-01-01,
+C009,Cobalt Interiors,sub_1007,Starter,620.00,2026-02-01,2026-08-31
+C010,Meridian Leasing,sub_1008,Enterprise,4100.00,2024-08-01,
+C010,Meridian Leasing,sub_1049,Support add-on,350.00,2026-08-25,
+C011,Saltbox Studios,sub_1050,Starter,300.00,2026-08-03,2026-08-28
+C012,Quarry Analytics,sub_1009,Scale,2750.00,2025-12-01,2026-08-14
+C012,Quarry Analytics,sub_1051,Growth,1900.00,2026-08-14,
+C013,Lumen Foods,sub_1010,Enterprise,5400.00,2023-04-01,
+C014,Brightseed Media,sub_1011,Growth,1100.00,2026-07-10,

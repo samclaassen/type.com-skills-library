@@ -1,0 +1,5 @@
+date,channel,currency,net_sales,scope
+2026-09-22,shopify,USD,1156.00,all_records
+2026-09-22,amazon,USD,148.00,after_exclusions
+2026-09-22,amazon,EUR,36.00,after_exclusions
+2026-09-22,wholesale,USD,2410.00,after_exclusions

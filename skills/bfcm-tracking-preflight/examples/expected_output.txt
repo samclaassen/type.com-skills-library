@@ -1,0 +1,108 @@
+## BFCM Tracking Preflight: Fernhill Goods, as of 2026-10-05
+
+**Verdict: NOT READY.** 1 critical issue and 6 warnings. Black Friday is Nov 27, 2026 (53 days away) and Cyber Monday is Nov 30.
+Fix the items below by **Nov 10** so you have two weeks of clean data before Black Friday.
+
+**Issues, most severe first** (all detected, none changed)
+1. **CRITICAL**: Meta deduplication appears to have failed since Sep 24 (12 days; server and browser events both counted). In the last 7 days Meta counted 422 purchases for 233 Shopify orders (1.81x).
+2. **WARNING**: Meta browser pixel sent 0 purchase events on Sep 15–Sep 16 (2 days) while Shopify booked 62 orders. It came back on Sep 17.
+3. **WARNING**: Google Ads reports $117.07 per purchase conversion against Shopify net sales of $88.75 per order (1.32x).
+4. **WARNING**: 279 of 901 orders (31.0%) have no utm_source.
+5. **WARNING**: 73 orders (8.1%) carry an ad-platform click ID in the landing URL but no UTMs: Meta 64, TikTok 9.
+6. **WARNING**: utm_source is spelled inconsistently for 2 channels, so reports split one channel into several rows.
+7. **WARNING**: 12 orders carry an unfilled ad-platform macro in their UTMs: `{{campaign.name}}` in utm_campaign (12).
+
+### 1. Event coverage and deduplication (Sep 8–Oct 5, 28 days)
+
+Shopify booked 901 orders and $79,959 net sales (233 orders in the last 7 days). Meta and TikTok count every site purchase, so they should land at 0.85–1.10x Shopify orders. Google Ads counts only ad-attributed conversions, so it is checked for gaps and value, not count.
+
+- **CRITICAL**: Meta deduplication appears to have failed since Sep 24 (12 days; server and browser events both counted). In the last 7 days Meta counted 422 purchases for 233 Shopify orders (1.81x).
+  Browser pixel 205 + Conversions API 223 = 428 events. Meta merged only 6 as duplicates (3% of the 205 it could have).
+  Before Sep 24 it merged 97% of possible duplicates and counted 0.99x Shopify orders.
+  These aggregate counts suggest duplicate delivery; verify matching event IDs. Reported metrics may be distorted; counts alone do not establish the effect on attributed ROAS or CPA.
+- **WARNING**: Meta browser pixel sent 0 purchase events on Sep 15–Sep 16 (2 days) while Shopify booked 62 orders. It came back on Sep 17.
+  Conversions API events kept arriving on those days (59), so only the browser pixel broke.
+- **WARNING**: Google Ads reports $117.07 per purchase conversion against Shopify net sales of $88.75 per order (1.32x).
+  Aggregate averages can differ because attributed customers and revenue definitions differ. This ratio cannot establish a tax/shipping error or a ROAS correction factor.
+
+| Source | Last 7 days | Per Shopify order | Value per event vs Shopify | Zero-event days | Status |
+| --- | ---: | ---: | ---: | ---: | --- |
+| Shopify orders | 233 | — | $88.75 net sales per order | — | — |
+| Meta purchases (after dedup) | 422 | 1.81x | 1.00x | — | CRITICAL |
+| Meta browser pixel | 205 | 0.88x | — | 2 | WARNING |
+| Meta Conversions API | 223 | 0.96x | — | 0 | OK |
+| Google Ads (attributed only) | 61 | 0.26x attributed | 1.32x | 0 | WARNING |
+| TikTok | 212 | 0.91x | 0.99x | 0 | OK |
+
+### 2. UTM hygiene (901 orders, Sep 8–Oct 5)
+
+622 of 901 orders (69.0%) have a utm_source. 119 (13.2%) have no UTM, no referrer and no click ID.
+
+- **WARNING**: 279 of 901 orders (31.0%) have no utm_source.
+  119 of them (13.2% of all orders) also had no referrer and no click ID, so every report will call them direct.
+- **WARNING**: 73 orders (8.1%) carry an ad-platform click ID in the landing URL but no UTMs: Meta 64, TikTok 9.
+  64 carry a Meta click ID (fbclid), from ads or organic posts: Meta adds fbclid to organic Facebook/Instagram link clicks too, so these are not all untagged ads.
+  TikTok click IDs come from ad clicks, so those ads appear to be live without URL parameters and Shopify can't credit the platform or campaign.
+  Catalog, Advantage+, Spark and boosted-post ads are the usual gaps.
+- **INFO**: 41 orders have a Google click ID (gclid/gbraid/wbraid) and no UTMs.
+  Fine for Google Ads and GA4 with auto-tagging. Shopify's own reports need UTMs: add a final URL suffix if you report from Shopify (references/playbook.md §4).
+- **WARNING**: utm_source is spelled inconsistently for 2 channels, so reports split one channel into several rows.
+  Meta: 5 spellings across 308 orders: `facebook` 171, `fb` 45, `Facebook` 43, `ig` 28, `instagram` 21. Use `facebook`.
+  Google: 3 spellings across 139 orders: `google` 117, `Google` 13, `adwords` 9. Use `google`.
+- **WARNING**: 12 orders carry an unfilled ad-platform macro in their UTMs: `{{campaign.name}}` in utm_campaign (12).
+  By utm_source: tiktok 12.
+  `{{…}}` is Meta's macro syntax. TikTok uses `__CAMPAIGN_NAME__` and Google uses `{campaignid}`, so a template copied from Meta arrives unfilled.
+
+| Landing page (orders without UTMs) | Orders | With an ad click ID |
+| --- | ---: | ---: |
+| / | 79 | 14 |
+| /products/linen-apron | 52 | 30 |
+| /pages/gift-guide | 47 | 16 |
+| /products/ceramic-pour-over-set | 29 | 26 |
+| /products/waxed-canvas-tote | 28 | 18 |
+
+### 3. Last BFCM: platform claims vs Shopify (Nov 24–Dec 2, 2025)
+
+Platforms together reported **$252,000** of attributed sales vs **$120,000** in Shopify net sales (2.10x). This is a reporting gap, not a return.
+**Summing platform claims is not total sales.** Each platform counts every sale it touched, so one order is claimed by several platforms at once. View-through credit, modelled conversions, different attribution windows and gross-vs-net revenue definitions widen the gap further.
+
+| Date | Shopify net sales | Meta claimed | Google Ads claimed | TikTok claimed | All claims | Claims ÷ actual |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| Mon Nov 24 | $5,280 | $3,960 | $3,480 | $2,070 | $9,510 | 1.80x |
+| Tue Nov 25 | $5,760 | $4,240 | $3,760 | $2,190 | $10,190 | 1.77x |
+| Wed Nov 26 | $7,440 | $5,570 | $4,610 | $2,750 | $12,930 | 1.74x |
+| Thu Nov 27 (Thanksgiving) | $12,480 | $10,470 | $9,530 | $5,560 | $25,560 | 2.05x |
+| Fri Nov 28 (Black Friday) | $28,320 | $32,130 | $23,650 | $14,350 | $70,130 | 2.48x |
+| Sat Nov 29 | $17,760 | $17,020 | $15,660 | $9,220 | $41,900 | 2.36x |
+| Sun Nov 30 | $14,640 | $12,440 | $10,710 | $6,620 | $29,770 | 2.03x |
+| Mon Dec 1 (Cyber Monday) | $18,960 | $14,480 | $12,630 | $7,730 | $34,840 | 1.84x |
+| Tue Dec 2 | $9,360 | $7,690 | $5,970 | $3,510 | $17,170 | 1.83x |
+| **Total** | **$120,000** | **$108,000** | **$90,000** | **$54,000** | **$252,000** | **2.10x** |
+
+The aggregate attribution gap peaked on Nov 28 (Black Friday) at 2.48x.
+
+- **Meta** claimed $108,000 (90.0% of all Shopify sales on its own). Shopify booked $67,500 from orders with Meta UTMs, so Meta attribution-gap ratio is **1.60x** (platform revenue / UTM revenue). Reported ROAS 6.67 on $16,200 spend; Shopify UTM (last-click) ROAS 4.17.
+- **Google Ads** claimed $90,000 (75.0% of all Shopify sales on its own). Shopify booked $36,000 from orders with Google Ads UTMs, so Google Ads attribution-gap ratio is **2.50x** (platform revenue / UTM revenue). Reported ROAS 9.26 on $9,720 spend; Shopify UTM (last-click) ROAS 3.70.
+- **TikTok** claimed $54,000 (45.0% of all Shopify sales on its own). Shopify booked $10,800 from orders with TikTok UTMs, so TikTok attribution-gap ratio is **5.00x** (platform revenue / UTM revenue). Reported ROAS 13.24 on $4,080 spend; Shopify UTM (last-click) ROAS 2.65.
+- Shopify UTM sales and platform-attributed revenue use different attribution methods. Each ratio is descriptive, not a planning discount, correction multiplier or measure of incremental contribution.
+- **Blended MER: 4.00** ($120,000 Shopify net sales ÷ $30,000 total ad spend).
+
+Future gaps may differ. Use blended MER with margin and cash constraints; it includes non-ad-driven sales and is not causal ad ROI.
+
+### 4. Fix list and timeline (nothing has been changed)
+
+| # | Severity | What to do | State | By |
+| ---: | --- | --- | --- | --- |
+| 1 | CRITICAL | Restore Meta deduplication: the browser and server Purchase events must carry the same event_name and event_id. Look for what changed on Sep 24 (a second server-side app, a GTM server container, or a pixel/app reinstall) and keep one CAPI source. Confirm in Events Manager → Purchase → Event deduplication. | recommended | Nov 10 |
+| 2 | WARNING | Find what changed on or just before Sep 15 (theme publish, app install or update, checkout change). Place a test order after every theme or app change from now on. | recommended | Nov 10 |
+| 3 | WARNING | Reconcile matched Google Ads orders, currency, discounts, tax, shipping, refunds and attribution/reporting dates before proposing any purchase-value change. Do not divide ROAS by the aggregate ratio. | recommended | Nov 10 |
+| 4 | WARNING | Put UTMs on every paid ad, email and SMS link using the naming standard in references/playbook.md §4 (Meta URL parameters at ad level, Google final URL suffix, TikTok URL parameters, Klaviyo UTM tracking on). | recommended | Nov 10 |
+| 5 | WARNING | Add URL parameters to every Meta and TikTok ad, including catalog, Advantage+, Spark and boosted-post ads. The click ID alone is not enough for Shopify reports. | recommended | Nov 10 |
+| 6 | WARNING | Standardise utm_source to one lowercase value per platform (`facebook`, `google`) in every ad template. Put placement (fb/ig) in utm_content, not utm_source. | recommended | Nov 10 |
+| 7 | WARNING | Fix the URL templates so each platform uses its own macro syntax (references/playbook.md §4), then click a live ad and check the landing URL. | recommended | Nov 10 |
+| 8 | PLAN | Re-run this preflight. If it says READY, Nov 13–Nov 26 is your two weeks of clean data before Black Friday. | recommended | Nov 13 |
+| 9 | PLAN | Set BFCM budgets and scaling rules off blended MER (4.00 last year), not platform ROAS. Combine MER with contribution margin and cash constraints; attribution-gap ratios are not ROAS correction factors. | recommended | Nov 17 |
+| 10 | PLAN | Change freeze until Dec 1: no theme publishes, new apps, pixel, consent-banner or checkout changes. Any change after this needs a test order. | recommended | Nov 20 |
+| 11 | PLAN | Final preflight run. Then check Meta, Google Ads and TikTok purchases against Shopify orders every morning through Cyber Monday. | recommended | Nov 24 |
+
+_Thresholds: Meta/TikTok purchases 0.85–1.10x Shopify orders (critical outside 0.70–1.25x); dedup broken when under 50% of duplicates merge; value per event 0.85–1.15x Shopify net sales per order; no-UTM orders warning ≥ 20%, critical ≥ 40%. States: detected → recommended → applied → verified. Read-only: no pixels, ad accounts or Shopify settings were changed._

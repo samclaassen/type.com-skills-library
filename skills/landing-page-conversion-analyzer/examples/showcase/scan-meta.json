@@ -1,0 +1,17 @@
+{
+  "timezone": "UTC",
+  "currency": "USD",
+  "source_system": "synthetic_showcase",
+  "landing_page_form": "path",
+  "sampled": false,
+  "sampling_rate": null,
+  "other_row_sessions": 0,
+  "reconciliation_delta_pct": 0.0,
+  "date_range": [
+    "2026-07-25",
+    "2026-09-04"
+  ],
+  "complete_through": "2026-09-04",
+  "extracted_at": "2026-09-04T23:59:59Z",
+  "synthetic": true
+}

@@ -1,0 +1,18 @@
+id,date,amount,description,reference
+B001,2026-08-03,-12450.00,Payroll - August first half,JE-1201
+B002,2026-08-05,48900.00,Northwind Labs INV-4471,JE-1203
+B003,2026-08-06,-3275.40,AWS - August infrastructure,JE-1205
+B004,2026-08-07,-1899.00,Rent - Fulton Street,JE-1206
+B005,2026-08-07,-8640.00,Check 10241 - Halberd Logistics,JE-1207
+B006,2026-08-14,22145.75,Calder Group INV-4488,JE-1211
+B007,2026-08-14,12500.00,Stripe settled charges 08-14,JE-1212
+B008,2026-08-15,9876.50,Stripe settled charges 08-15 AM,JE-1213
+B009,2026-08-15,14205.85,Stripe settled charges 08-15 PM,JE-1214
+B010,2026-08-16,5200.00,Stripe settled charges 08-16,JE-1215
+B011,2026-08-18,-12450.00,Payroll - August second half,JE-1218
+B012,2026-08-20,-2340.60,SaaS subscriptions - August,JE-1220
+B013,2026-08-24,15000.00,Vela Systems INV-4502,JE-1224
+B014,2026-08-27,-5600.00,Equipment lease - Meridian,JE-1227
+B015,2026-08-28,-6412.80,Check 10259 - Tessellate Design,JE-1229
+B016,2026-08-29,-1204.55,Check 10260 - Pinewood Facilities,JE-1230
+B017,2026-08-31,9875.00,Deposit in transit - Orchard Retail,JE-1233

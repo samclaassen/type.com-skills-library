@@ -1,0 +1,53 @@
+{
+  "name": "Jordan Lee",
+  "role": "Marketing Manager",
+  "company": "Acme",
+  "scarf": {
+    "1": [
+      "autonomy",
+      "certainty",
+      "status",
+      "relatedness",
+      "fairness"
+    ],
+    "2": [
+      "autonomy",
+      "status",
+      "certainty",
+      "relatedness",
+      "fairness"
+    ],
+    "3": [
+      "certainty",
+      "autonomy",
+      "status",
+      "relatedness",
+      "fairness"
+    ],
+    "4": [
+      "autonomy",
+      "relatedness",
+      "certainty",
+      "status",
+      "fairness"
+    ],
+    "5": [
+      "fairness",
+      "autonomy",
+      "certainty",
+      "status",
+      "relatedness"
+    ]
+  },
+  "habits": {
+    "n1": 2,
+    "n2": 1,
+    "o1": 3,
+    "o2": 2,
+    "v1": 1,
+    "v2": 2,
+    "a1": 2,
+    "a2": 1
+  },
+  "blocker": "trust"
+}

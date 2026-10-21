@@ -1,0 +1,17 @@
+client,month,channel,campaign,spend,impressions,clicks,conversions,revenue
+Northwind Coffee Co.,2026-07,Google Ads,NW_US_Brand_Search,4100,205000,12300,498,39840
+Northwind Coffee Co.,2026-07,Google Ads,NW_US_NonBrand_Search,9400,455000,13600,246,19680
+Northwind Coffee Co.,2026-07,Google Ads,NW_US_Shopping_Core,7300,588000,10900,266,24480
+Northwind Coffee Co.,2026-07,Meta Ads,NW_US_Prospecting_Broad,9900,1280000,15600,231,17325
+Northwind Coffee Co.,2026-07,Meta Ads,NW_US_Retargeting_ATC,3900,470000,8800,239,23175
+Northwind Coffee Co.,2026-07,TikTok Ads,NW_US_CreatorWhitelist,3600,720000,8900,51,4080
+Northwind Coffee Co.,2026-07,Microsoft Ads,NW_US_Search_Core,1400,89000,2500,58,4930
+Northwind Coffee Co.,2026-08,Google Ads,NW_US_Brand_Search,4200,210000,12600,520,41600
+Northwind Coffee Co.,2026-08,Google Ads,NW_US_NonBrand_Search,9800,480000,14200,268,21440
+Northwind Coffee Co.,2026-08,Google Ads,NW_US_Shopping_Core,7600,610000,11400,310,27900
+Northwind Coffee Co.,2026-08,Meta Ads,NW_US_Prospecting_Broad,11200,1450000,18000,190,14250
+Northwind Coffee Co.,2026-08,Meta Ads,NW_US_Retargeting_ATC,4300,520000,9600,240,24000
+Northwind Coffee Co.,2026-08,TikTok Ads,NW_US_CreatorWhitelist,5200,980000,11800,58,3480
+Northwind Coffee Co.,2026-08,Microsoft Ads,NW_US_Search_Core,1450,92000,2600,61,5185
+Northwind Coffee Co.,2026-08,Pinterest Ads,NW_US_Pin_Prospecting,900,310000,4100,0,0
+Harborlight Supply Co.,2026-08,Google Ads,HL_US_Brand_Search,2100,88000,5400,140,11200

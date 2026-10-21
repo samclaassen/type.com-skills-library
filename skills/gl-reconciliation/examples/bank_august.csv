@@ -1,0 +1,14 @@
+id,date,amount,description,reference
+A001,2026-08-03,-12450.00,ACH payroll run - first half August,PAYROLL-0803
+A002,2026-08-05,48900.00,Wire in - Northwind Labs,WIRE-88213
+A003,2026-08-06,-3275.40,Card payment - AWS infrastructure,CARD-0806
+A004,2026-08-07,-1899.00,ACH out - Fulton Street rent,ACH-RENT-08
+A005,2026-08-12,-8640.00,Check 10241 presented,CHK-10241
+A006,2026-08-14,22145.75,ACH in - Calder Group,ACH-77412
+A007,2026-08-17,41782.33,Stripe payout,po_2026_08_17
+A008,2026-08-18,-12450.00,ACH payroll run - second half August,PAYROLL-0818
+A009,2026-08-20,-2340.60,Card payment - SaaS subscriptions,CARD-0820
+A010,2026-08-26,15000.00,Deposit - Vela Systems check,DEP-4471
+A011,2026-08-27,-5600.00,ACH out - equipment lease,ACH-LEASE-08
+A012,2026-08-31,-42.50,Monthly account analysis fee,FEE-0831
+A013,2026-08-31,318.94,Interest credit,INT-0831

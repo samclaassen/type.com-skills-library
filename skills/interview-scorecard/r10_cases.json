@@ -1,0 +1,1992 @@
+[
+ {
+  "origin": "qa9-repro",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "pregnancy",
+  "text": "Rebuilt the payroll reconciliation while seven months along.",
+  "twin": "Rebuilt the payroll reconciliation while the auditors were on site.",
+  "reason": "pregnancy_family",
+  "marker": "months along"
+ },
+ {
+  "origin": "qa9-repro",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "health",
+  "text": "Rebuilt the accruals schedule the week after her kidney transplant.",
+  "twin": "Rebuilt the accruals schedule the week after the system migration.",
+  "reason": "disability_health",
+  "marker": "kidney"
+ },
+ {
+  "origin": "qa9-repro",
+  "channel": "evidence",
+  "kind": "quote",
+  "family": "health",
+  "text": "Uses a screen reader to review the ledger exports.",
+  "twin": "Uses a pivot table to review the ledger exports.",
+  "reason": "disability_health",
+  "marker": "screen reader"
+ },
+ {
+  "origin": "qa9-repro",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "pregnancy",
+  "text": "Planning a second baby next year; reconciled the bank feeds well.",
+  "twin": "Planning a second ledger migration next year; reconciled the bank feeds well.",
+  "reason": "pregnancy_family",
+  "marker": "baby"
+ },
+ {
+  "origin": "qa9-repro",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "age",
+  "text": "Approaching pension age yet owns the AP automation project.",
+  "twin": "Approaching the close deadline yet owns the AP automation project.",
+  "reason": "age",
+  "marker": "pension age"
+ },
+ {
+  "origin": "qa9-repro",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "religion",
+  "text": "Devout Catholic who runs the payroll checklist carefully.",
+  "twin": "Careful analyst who runs the payroll checklist carefully.",
+  "reason": "religion",
+  "marker": "catholic"
+ },
+ {
+  "origin": "qa9-repro",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "nationality",
+  "text": "Second-generation Korean-American, built the cash flow model.",
+  "twin": "Second-year analyst, built the cash flow model.",
+  "reason": "national_origin",
+  "marker": "korean"
+ },
+ {
+  "origin": "qa9-repro",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "orientation",
+  "text": "Came out last year; owns the audit prep.",
+  "twin": "Joined the audit team last year; owns the audit prep.",
+  "reason": "sexual_orientation",
+  "marker": "came out"
+ },
+ {
+  "origin": "qa9-repro",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "criminal",
+  "text": "Did community service for shoplifting; reconciles the cash drawers.",
+  "twin": "Did a secondment in treasury; reconciles the cash drawers.",
+  "reason": "arrest_conviction",
+  "marker": "shoplifting"
+ },
+ {
+  "origin": "qa9-report",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "health",
+  "text": "Traced the duplicate payments while her insulin pump kept beeping.",
+  "twin": "Traced the duplicate payments while the bank feed kept failing.",
+  "reason": "disability_health",
+  "marker": "insulin"
+ },
+ {
+  "origin": "qa9-report",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "health",
+  "text": "Built the variance dashboard on crutches after the knee operation.",
+  "twin": "Built the variance dashboard on deadline after the ledger migration.",
+  "reason": "disability_health",
+  "marker": "crutches"
+ },
+ {
+  "origin": "qa9-report",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "pregnancy",
+  "text": "Built the expense model around nursery drop-offs.",
+  "twin": "Built the expense model around vendor payment runs.",
+  "reason": "pregnancy_family",
+  "marker": "nursery"
+ },
+ {
+  "origin": "qa9-report",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "age",
+  "text": "Automated the invoice matching, rare for a sixty-year-old.",
+  "twin": "Automated the invoice matching, rare for a first-month analyst.",
+  "reason": "age",
+  "marker": "sixty-year-old"
+ },
+ {
+  "origin": "qa9-report",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "age",
+  "text": "Has run payroll since before the millennium.",
+  "twin": "Has run payroll since before the ERP migration.",
+  "reason": "age",
+  "marker": "millennium"
+ },
+ {
+  "origin": "qa9-report",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "age",
+  "text": "Reviewed the accruals with grandmotherly patience.",
+  "twin": "Reviewed the accruals with methodical patience.",
+  "reason": "age",
+  "marker": "grandmotherly"
+ },
+ {
+  "origin": "qa9-report",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "age",
+  "text": "Mature reconciler with decades of ledger experience.",
+  "twin": "Careful reconciler with deep ledger experience.",
+  "reason": "age",
+  "marker": "decades"
+ },
+ {
+  "origin": "qa9-report",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "age",
+  "text": "Built the close checklist in her first job out of sixth form in 2023.",
+  "twin": "Built the close checklist in her first job out of audit in 2023.",
+  "reason": "age",
+  "marker": "sixth form"
+ },
+ {
+  "origin": "qa9-repro",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "politics",
+  "text": "Treasurer of a local PAC; reconciled its bank account monthly.",
+  "twin": "Treasurer of a local charity; reconciled its bank account monthly.",
+  "reason": "political_affiliation",
+  "marker": "pac"
+ },
+ {
+  "origin": "qa9-repro",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "politics",
+  "text": "BLM organiser who built the volunteer expense tracker.",
+  "twin": "Payroll organiser who built the volunteer expense tracker.",
+  "reason": "political_affiliation",
+  "marker": "blm"
+ },
+ {
+  "origin": "qa9-repro",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "politics",
+  "text": "Reconciled the fundraising ledger for a Democratic congressional campaign.",
+  "twin": "Reconciled the fundraising ledger for a regional food bank.",
+  "reason": "political_affiliation",
+  "marker": "congressional"
+ },
+ {
+  "origin": "qa9-report",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "politics",
+  "text": "Canvassed for a ballot initiative, built the budget model for it.",
+  "twin": "Volunteered for a food bank, built the budget model for it.",
+  "reason": "political_affiliation",
+  "marker": "ballot initiative"
+ },
+ {
+  "origin": "qa9-report",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "politics",
+  "text": "Ran the finance for a city council race, reconciled the donation ledger.",
+  "twin": "Ran the finance for a city sports club, reconciled the donation ledger.",
+  "reason": "political_affiliation",
+  "marker": "council race"
+ },
+ {
+  "origin": "qa9-report",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "politics",
+  "text": "Did finance reports for the Mamdani campaign.",
+  "twin": "Did monthly finance reports for the Mamdani bakery chain.",
+  "reason": "political_affiliation",
+  "marker": "mamdani"
+ },
+ {
+  "origin": "qa9-report",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "politics",
+  "text": "Libertarian, argued taxes are theft while explaining the accruals.",
+  "twin": "Thorough, argued the taxes were overaccrued while explaining the accruals.",
+  "reason": "political_affiliation",
+  "marker": "libertarian"
+ },
+ {
+  "origin": "qa9-repro",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "ranking",
+  "text": "Ahead of candidate B on the forecast exercise.",
+  "twin": "Ahead of schedule on the forecast exercise.",
+  "reason": "hiring_decision",
+  "marker": "candidate b"
+ },
+ {
+  "origin": "qa9-repro",
+  "channel": "evidence",
+  "kind": "quote",
+  "family": "ranking",
+  "text": "Ranked #1 of 4 on the close exercise.",
+  "twin": "Finished all 4 tasks on the close exercise.",
+  "reason": "hiring_decision",
+  "marker": "#1 of 4"
+ },
+ {
+  "origin": "qa9-repro",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "ranking",
+  "text": "Second only to Mei on the reconciliation exercise.",
+  "twin": "Second attempt at the reconciliation exercise was clean.",
+  "reason": "hiring_decision",
+  "marker": "second only"
+ },
+ {
+  "origin": "qa9-report",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "ranking",
+  "text": "Beats the referral on the variance analysis.",
+  "twin": "Beats the deadline on the variance analysis.",
+  "reason": "hiring_decision",
+  "marker": "referral"
+ },
+ {
+  "origin": "qa9-report",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "ranking",
+  "text": "Number one in this cohort on the variance case.",
+  "twin": "Strong on the variance case and the reconciliation steps.",
+  "reason": "hiring_decision",
+  "marker": "this cohort"
+ },
+ {
+  "origin": "qa9-report",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "ranking",
+  "text": "Cleaner reconciliation answer than candidate 3.",
+  "twin": "Cleaner reconciliation answer than the sample solution.",
+  "reason": "hiring_decision",
+  "marker": "candidate 3"
+ },
+ {
+  "origin": "qa9-report",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "ranking",
+  "text": "Stronger on accruals than the internal applicant.",
+  "twin": "Stronger on accruals than on prepayments in the exercise.",
+  "reason": "hiring_decision",
+  "marker": "internal applicant"
+ },
+ {
+  "origin": "qa9-report",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "ranking",
+  "text": "Better at the bank rec than the last three we saw.",
+  "twin": "Better at the bank rec than the intercompany exercise.",
+  "reason": "hiring_decision",
+  "marker": "last three"
+ },
+ {
+  "origin": "qa9-report",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "ranking",
+  "text": "The pick of this round for the reconciliation work.",
+  "twin": "The strongest part of the exercise was the reconciliation work.",
+  "reason": "hiring_decision",
+  "marker": "pick of this round"
+ },
+ {
+  "origin": "qa9-report",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "opinion",
+  "text": "Reminds me of my nephew; built a decent cash model.",
+  "twin": "Started with the bank data; built a decent cash model.",
+  "reason": "culture_fit",
+  "marker": "nephew"
+ },
+ {
+  "origin": "qa9-report",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "opinion",
+  "text": "Lazy energy, but finished the accruals exercise.",
+  "twin": "Rushed the opening, but finished the accruals exercise.",
+  "reason": "culture_fit",
+  "marker": "lazy"
+ },
+ {
+  "origin": "qa9-report",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "opinion",
+  "text": "Wouldn't want to be stuck on a flight with her; fine at reconciliations.",
+  "twin": "Walked through the cash proof with care; fine at reconciliations.",
+  "reason": "culture_fit",
+  "marker": "flight"
+ },
+ {
+  "origin": "qa9-repro",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "pay",
+  "text": "Equity ask is the blocker; strong on the ledger work.",
+  "twin": "Ledger access is the blocker; strong on the ledger work.",
+  "reason": "compensation",
+  "marker": "equity ask"
+ },
+ {
+  "origin": "qa9-report",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "pay",
+  "text": "Wants a sign-on bonus to cover notice; owns month-end close.",
+  "twin": "Wants a cleaner close calendar to cover notice; owns month-end close.",
+  "reason": "compensation",
+  "marker": "sign-on bonus"
+ },
+ {
+  "origin": "qa9-repro",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "opinion",
+  "text": "Bit of a diva about the reporting deadlines.",
+  "twin": "Bit of a stickler about the reporting deadlines.",
+  "reason": "culture_fit",
+  "marker": "diva"
+ },
+ {
+  "origin": "qa9-report",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "opinion",
+  "text": "Dressed scruffily but the reconciliation logic was sound.",
+  "twin": "Started slowly but the reconciliation logic was sound.",
+  "reason": "appearance",
+  "marker": "scruffily"
+ },
+ {
+  "origin": "qa9-report",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "opinion",
+  "text": "Felt like a beer-with-the-team kind of analyst for the close.",
+  "twin": "Worked like a checklist-driven kind of analyst for the close.",
+  "reason": "culture_fit",
+  "marker": "beer"
+ },
+ {
+  "origin": "qa9-repro",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "control",
+  "text": "Couldn't recall the exact figure but described the steps clearly.",
+  "twin": null,
+  "reason": "keep",
+  "marker": null
+ },
+ {
+  "origin": "qa9-repro",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "control",
+  "text": "Sounded confident walking through the three-way match.",
+  "twin": null,
+  "reason": "keep",
+  "marker": null
+ },
+ {
+  "origin": "qa9-repro",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "control",
+  "text": "The unreconciled amount dropped from 40k to under 2k after her clean-up.",
+  "twin": null,
+  "reason": "keep",
+  "marker": null
+ },
+ {
+  "origin": "qa9-repro",
+  "channel": "rationale",
+  "kind": "note",
+  "family": "religion",
+  "text": "Won't take calls on the Sabbath.",
+  "twin": "Won't take the bank rec question without the source data.",
+  "reason": "religion",
+  "marker": "sabbath"
+ },
+ {
+  "origin": "qa9-repro",
+  "channel": "gap",
+  "kind": "note",
+  "family": "religion",
+  "text": "Won't take calls on the Sabbath.",
+  "twin": "Won't take the bank rec question without the source data.",
+  "reason": "religion",
+  "marker": "sabbath"
+ },
+ {
+  "origin": "qa9-repro",
+  "channel": "rationale",
+  "kind": "note",
+  "family": "pay",
+  "text": "On 68 thousand plus overtime now.",
+  "twin": "On the bank rec she matched every open item.",
+  "reason": "gate",
+  "marker": "68 thousand"
+ },
+ {
+  "origin": "qa9-repro",
+  "channel": "gap",
+  "kind": "note",
+  "family": "pay",
+  "text": "On 68 thousand plus overtime now.",
+  "twin": "On the bank rec she matched every open item.",
+  "reason": "gate",
+  "marker": "68 thousand"
+ },
+ {
+  "origin": "qa9-authored",
+  "channel": "rationale",
+  "kind": "note",
+  "family": "religion",
+  "text": "Goes to Bible study on Wednesday nights.",
+  "twin": "Goes to the bank statement first on reconciliations.",
+  "reason": "religion",
+  "marker": "bible"
+ },
+ {
+  "origin": "qa9-authored",
+  "channel": "gap",
+  "kind": "note",
+  "family": "religion",
+  "text": "Goes to Bible study on Wednesday nights.",
+  "twin": "Goes to the bank statement first on reconciliations.",
+  "reason": "religion",
+  "marker": "bible"
+ },
+ {
+  "origin": "qa9-authored",
+  "channel": "rationale",
+  "kind": "note",
+  "family": "orientation",
+  "text": "Lives with her girlfriend in Leeds.",
+  "twin": "Lives in the ledger detail during the close.",
+  "reason": "sexual_orientation",
+  "marker": "girlfriend"
+ },
+ {
+  "origin": "qa9-authored",
+  "channel": "gap",
+  "kind": "note",
+  "family": "orientation",
+  "text": "Lives with her girlfriend in Leeds.",
+  "twin": "Lives in the ledger detail during the close.",
+  "reason": "sexual_orientation",
+  "marker": "girlfriend"
+ },
+ {
+  "origin": "qa9-authored",
+  "channel": "rationale",
+  "kind": "note",
+  "family": "politics",
+  "text": "Knocked doors for the Greens last spring.",
+  "twin": "Knocked out the open items for the close last spring.",
+  "reason": "political_affiliation",
+  "marker": "greens"
+ },
+ {
+  "origin": "qa9-authored",
+  "channel": "gap",
+  "kind": "note",
+  "family": "politics",
+  "text": "Knocked doors for the Greens last spring.",
+  "twin": "Knocked out the open items for the close last spring.",
+  "reason": "political_affiliation",
+  "marker": "greens"
+ },
+ {
+  "origin": "qa9-authored",
+  "channel": "rationale",
+  "kind": "note",
+  "family": "politics",
+  "text": "Big fan of Bernie Sanders.",
+  "twin": "Big fan of the three-way match control.",
+  "reason": "political_affiliation",
+  "marker": "bernie"
+ },
+ {
+  "origin": "qa9-authored",
+  "channel": "gap",
+  "kind": "note",
+  "family": "politics",
+  "text": "Big fan of Bernie Sanders.",
+  "twin": "Big fan of the three-way match control.",
+  "reason": "political_affiliation",
+  "marker": "bernie"
+ },
+ {
+  "origin": "qa9-authored",
+  "channel": "rationale",
+  "kind": "note",
+  "family": "age",
+  "text": "Close to retirement age.",
+  "twin": "Close to the anchor 4 example.",
+  "reason": "age",
+  "marker": "retirement"
+ },
+ {
+  "origin": "qa9-authored",
+  "channel": "gap",
+  "kind": "note",
+  "family": "age",
+  "text": "Close to retirement age.",
+  "twin": "Close to the anchor 4 example.",
+  "reason": "age",
+  "marker": "retirement"
+ },
+ {
+  "origin": "qa9-repro",
+  "channel": "rationale",
+  "kind": "note",
+  "family": "health",
+  "text": "Had a kidney transplant last year.",
+  "twin": "Had a reconciliation example from last year.",
+  "reason": "disability_health",
+  "marker": "kidney"
+ },
+ {
+  "origin": "qa9-repro",
+  "channel": "gap",
+  "kind": "note",
+  "family": "health",
+  "text": "Had a kidney transplant last year.",
+  "twin": "Had a reconciliation example from last year.",
+  "reason": "disability_health",
+  "marker": "kidney"
+ },
+ {
+  "origin": "qa9-authored",
+  "channel": "rationale",
+  "kind": "note",
+  "family": "pregnancy",
+  "text": "Seven months along.",
+  "twin": "Seven reconciling items cleared.",
+  "reason": "pregnancy_family",
+  "marker": "months along"
+ },
+ {
+  "origin": "qa9-authored",
+  "channel": "gap",
+  "kind": "note",
+  "family": "pregnancy",
+  "text": "Seven months along.",
+  "twin": "Seven reconciling items cleared.",
+  "reason": "pregnancy_family",
+  "marker": "months along"
+ },
+ {
+  "origin": "qa9-repro",
+  "channel": "rationale",
+  "kind": "note",
+  "family": "ranking",
+  "text": "Ahead of candidate B overall.",
+  "twin": "Ahead of the anchor 3 example overall.",
+  "reason": "hiring_decision",
+  "marker": "candidate b"
+ },
+ {
+  "origin": "qa9-repro",
+  "channel": "gap",
+  "kind": "note",
+  "family": "ranking",
+  "text": "Ahead of candidate B overall.",
+  "twin": "Ahead of the anchor 3 example overall.",
+  "reason": "hiring_decision",
+  "marker": "candidate b"
+ },
+ {
+  "origin": "qa9-authored",
+  "channel": "rationale",
+  "kind": "note",
+  "family": "pay",
+  "text": "Equity ask is the blocker.",
+  "twin": "Ledger access is the blocker.",
+  "reason": "compensation",
+  "marker": "equity ask"
+ },
+ {
+  "origin": "qa9-authored",
+  "channel": "gap",
+  "kind": "note",
+  "family": "pay",
+  "text": "Equity ask is the blocker.",
+  "twin": "Ledger access is the blocker.",
+  "reason": "compensation",
+  "marker": "equity ask"
+ },
+ {
+  "origin": "qa9-authored",
+  "channel": "rationale",
+  "kind": "note",
+  "family": "opinion",
+  "text": "Reminds me of my nephew.",
+  "twin": "Resembles the anchor 4 example.",
+  "reason": "culture_fit",
+  "marker": "nephew"
+ },
+ {
+  "origin": "qa9-authored",
+  "channel": "gap",
+  "kind": "note",
+  "family": "opinion",
+  "text": "Reminds me of my nephew.",
+  "twin": "Resembles the anchor 4 example.",
+  "reason": "culture_fit",
+  "marker": "nephew"
+ },
+ {
+  "origin": "qa9-authored",
+  "channel": "rationale",
+  "kind": "note",
+  "family": "nationality",
+  "text": "Second-generation Korean-American.",
+  "twin": "Second reconciliation example was clean.",
+  "reason": "national_origin",
+  "marker": "korean"
+ },
+ {
+  "origin": "qa9-authored",
+  "channel": "gap",
+  "kind": "note",
+  "family": "nationality",
+  "text": "Second-generation Korean-American.",
+  "twin": "Second reconciliation example was clean.",
+  "reason": "national_origin",
+  "marker": "korean"
+ },
+ {
+  "origin": "qa9-authored",
+  "channel": "rationale",
+  "kind": "note",
+  "family": "criminal",
+  "text": "Did community service for shoplifting.",
+  "twin": "Did the variance analysis for the bank rec.",
+  "reason": "arrest_conviction",
+  "marker": "shoplifting"
+ },
+ {
+  "origin": "qa9-authored",
+  "channel": "gap",
+  "kind": "note",
+  "family": "criminal",
+  "text": "Did community service for shoplifting.",
+  "twin": "Did the variance analysis for the bank rec.",
+  "reason": "arrest_conviction",
+  "marker": "shoplifting"
+ },
+ {
+  "origin": "r10-gate",
+  "channel": "rationale",
+  "kind": "note",
+  "family": "gate",
+  "text": "Drives a red hatchback.",
+  "twin": "Drives the tie-out checklist.",
+  "reason": "gate",
+  "marker": "hatchback"
+ },
+ {
+  "origin": "r10-gate",
+  "channel": "rationale",
+  "kind": "note",
+  "family": "gate",
+  "text": "Enjoys hiking at weekends.",
+  "twin": "Enjoys reconciling at month-end.",
+  "reason": "gate",
+  "marker": "hiking"
+ },
+ {
+  "origin": "r10-gate",
+  "channel": "gap",
+  "kind": "note",
+  "family": "gate",
+  "text": "Drives a red hatchback.",
+  "twin": "Drives the tie-out checklist.",
+  "reason": "gate",
+  "marker": "hatchback"
+ },
+ {
+  "origin": "r10-gate",
+  "channel": "gap",
+  "kind": "note",
+  "family": "gate",
+  "text": "Enjoys hiking at weekends.",
+  "twin": "Enjoys reconciling at month-end.",
+  "reason": "gate",
+  "marker": "hiking"
+ },
+ {
+  "origin": "fresh-r10",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "health_disability",
+  "text": "Closed the March books from her hospital bed after the appendix surgery.",
+  "twin": "Closed the March books from her desk after the ledger migration.",
+  "reason": "disability_health",
+  "marker": "appendix surgery"
+ },
+ {
+  "origin": "fresh-r10",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "health_disability",
+  "text": "Matched the supplier credits even with his arm in a cast.",
+  "twin": "Matched the supplier credits even with the subledger offline.",
+  "reason": "disability_health",
+  "marker": "arm in a cast"
+ },
+ {
+  "origin": "fresh-r10",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "health_disability",
+  "text": "Reworked the accrual template between physio sessions for her back.",
+  "twin": "Reworked the accrual template between review sessions for the audit.",
+  "reason": "disability_health",
+  "marker": "physio"
+ },
+ {
+  "origin": "fresh-r10",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "health_disability",
+  "text": "Wears hearing aids; caught the duplicated wire in the treasury ledger.",
+  "twin": "Reads the bank statements; caught the duplicated wire in the treasury ledger.",
+  "reason": "disability_health",
+  "marker": "hearing aids"
+ },
+ {
+  "origin": "fresh-r10",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "health_disability",
+  "text": "Rebuilt the FX revaluation workbook during his migraine flare-ups.",
+  "twin": "Rebuilt the FX revaluation workbook during the quarter-end close.",
+  "reason": "disability_health",
+  "marker": "migraine"
+ },
+ {
+  "origin": "fresh-r10",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "health_disability",
+  "text": "Took on the fixed asset roll-forward after coming back from cardiac rehab.",
+  "twin": "Took on the fixed asset roll-forward after coming back from the audit fieldwork.",
+  "reason": "disability_health",
+  "marker": "cardiac rehab"
+ },
+ {
+  "origin": "fresh-r10",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "health_disability",
+  "text": "Uses a magnifier for the small print on remittance advices; matched them all.",
+  "twin": "Uses a lookup for the reference numbers on remittance advices; matched them all.",
+  "reason": "disability_health",
+  "marker": "magnifier"
+ },
+ {
+  "origin": "fresh-r10",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "health_disability",
+  "text": "Cleared the unapplied cash queue right after her MS diagnosis.",
+  "twin": "Cleared the unapplied cash queue right after the system upgrade.",
+  "reason": "disability_health",
+  "marker": "ms diagnosis"
+ },
+ {
+  "origin": "fresh-r10",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "pregnancy_family_marital",
+  "text": "Drafted the close calendar in her third trimester.",
+  "twin": "Drafted the close calendar in her third week.",
+  "reason": "pregnancy_family",
+  "marker": "third trimester"
+ },
+ {
+  "origin": "fresh-r10",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "pregnancy_family_marital",
+  "text": "Reconciled the clearing accounts while her toddler napped.",
+  "twin": "Reconciled the clearing accounts while the batch job ran.",
+  "reason": "pregnancy_family",
+  "marker": "toddler"
+ },
+ {
+  "origin": "fresh-r10",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "pregnancy_family_marital",
+  "text": "Due to give birth in May; set up the accrual reversals already.",
+  "twin": "Due to migrate in May; set up the accrual reversals already.",
+  "reason": "pregnancy_family",
+  "marker": "give birth"
+ },
+ {
+  "origin": "fresh-r10",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "pregnancy_family_marital",
+  "text": "Newly engaged and rebuilt the vendor onboarding checklist.",
+  "twin": "Newly promoted and rebuilt the vendor onboarding checklist.",
+  "reason": "pregnancy_family",
+  "marker": "newly engaged"
+ },
+ {
+  "origin": "fresh-r10",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "pregnancy_family_marital",
+  "text": "Scheduled the payment runs around school pickups for her twins.",
+  "twin": "Scheduled the payment runs around bank cut-offs for the region.",
+  "reason": "pregnancy_family",
+  "marker": "school pickups"
+ },
+ {
+  "origin": "fresh-r10",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "pregnancy_family_marital",
+  "text": "Back from adoption leave and cleared the intercompany backlog.",
+  "twin": "Back from the audit and cleared the intercompany backlog.",
+  "reason": "pregnancy_family",
+  "marker": "adoption leave"
+ },
+ {
+  "origin": "fresh-r10",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "pregnancy_family_marital",
+  "text": "Her husband's job relocation is why she left; she ran the AP close there.",
+  "twin": "The finance reorganisation is why she left; she ran the AP close there.",
+  "reason": "pregnancy_family",
+  "marker": "husband"
+ },
+ {
+  "origin": "fresh-r10",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "age",
+  "text": "Built the cash application macros, impressive for someone in their late fifties.",
+  "twin": "Built the cash application macros, impressive for someone in their first month.",
+  "reason": "age",
+  "marker": "late fifties"
+ },
+ {
+  "origin": "fresh-r10",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "age",
+  "text": "Has been reconciling ledgers since the days of carbon paper.",
+  "twin": "Has been reconciling ledgers since the move to NetSuite.",
+  "reason": "gate",
+  "marker": "carbon paper"
+ },
+ {
+  "origin": "fresh-r10",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "age",
+  "text": "Fresh out of school, yet she owned the bank reconciliation for two entities.",
+  "twin": "Fresh out of the audit, yet she owned the bank reconciliation for two entities.",
+  "reason": "age",
+  "marker": "fresh out of school"
+ },
+ {
+  "origin": "fresh-r10",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "age",
+  "text": "Semi-retired controller who rebuilt the variance reporting pack.",
+  "twin": "Experienced controller who rebuilt the variance reporting pack.",
+  "reason": "age",
+  "marker": "semi-retired"
+ },
+ {
+  "origin": "fresh-r10",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "age",
+  "text": "Old-timer energy but tightened the journal approval workflow.",
+  "twin": "Steady approach and tightened the journal approval workflow.",
+  "reason": "age",
+  "marker": "old-timer"
+ },
+ {
+  "origin": "fresh-r10",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "age",
+  "text": "Rebuilt the payroll accrual with the patience of a grandad.",
+  "twin": "Rebuilt the payroll accrual with the patience of an auditor.",
+  "reason": "pregnancy_family",
+  "marker": "grandad"
+ },
+ {
+  "origin": "fresh-r10",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "age",
+  "text": "Started in accounts before most of our team was born; she tied out the bank feeds.",
+  "twin": "Started in accounts before the ERP migration; she tied out the bank feeds.",
+  "reason": "age",
+  "marker": "was born"
+ },
+ {
+  "origin": "fresh-r10",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "religion",
+  "text": "Leaves early on Fridays for Jummah prayers; matched the card spend anyway.",
+  "twin": "Leaves early on Fridays for the treasury call; matched the card spend anyway.",
+  "reason": "religion",
+  "marker": "jummah"
+ },
+ {
+  "origin": "fresh-r10",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "religion",
+  "text": "Practising Hindu, set up the GL account mapping cleanly.",
+  "twin": "Practising accountant, set up the GL account mapping cleanly.",
+  "reason": "religion",
+  "marker": "hindu"
+ },
+ {
+  "origin": "fresh-r10",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "religion",
+  "text": "Reconciled the church collection accounts every Sunday after mass.",
+  "twin": "Reconciled the client collection accounts every Monday after close.",
+  "reason": "religion",
+  "marker": "after mass"
+ },
+ {
+  "origin": "fresh-r10",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "religion",
+  "text": "Observes Lent strictly and still built the prepaid amortisation schedule.",
+  "twin": "Follows the policy strictly and still built the prepaid amortisation schedule.",
+  "reason": "religion",
+  "marker": "lent"
+ },
+ {
+  "origin": "fresh-r10",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "religion",
+  "text": "Keeps a kippah on during calls; walked us through the suspense account.",
+  "twin": "Keeps the ledger open during calls; walked us through the suspense account.",
+  "reason": "religion",
+  "marker": "kippah"
+ },
+ {
+  "origin": "fresh-r10",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "religion",
+  "text": "Cleared the open PO backlog before the Diwali holiday she always takes.",
+  "twin": "Cleared the open PO backlog before the year-end freeze she always plans for.",
+  "reason": "religion",
+  "marker": "diwali"
+ },
+ {
+  "origin": "fresh-r10",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "nationality_race_visa_accent",
+  "text": "Nigerian-born analyst who rebuilt the AR ageing report.",
+  "twin": "Detail-minded analyst who rebuilt the AR ageing report.",
+  "reason": "national_origin",
+  "marker": "nigerian-born"
+ },
+ {
+  "origin": "fresh-r10",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "nationality_race_visa_accent",
+  "text": "Her H-1B transfer is pending; she ran the payables close solo.",
+  "twin": "Her ERP access is pending; she ran the payables close solo.",
+  "reason": "national_origin",
+  "marker": "h-1b"
+ },
+ {
+  "origin": "fresh-r10",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "nationality_race_visa_accent",
+  "text": "Thick Glaswegian brogue, but explained the bank reconciliation well.",
+  "twin": null,
+  "reason": "accent_language",
+  "marker": "brogue"
+ },
+ {
+  "origin": "fresh-r10",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "nationality_race_visa_accent",
+  "text": "Mixed-race and grew up abroad; built the cost centre hierarchy.",
+  "twin": "Methodical and thorough; built the cost centre hierarchy.",
+  "reason": "race_ethnicity",
+  "marker": "mixed-race"
+ },
+ {
+  "origin": "fresh-r10",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "nationality_race_visa_accent",
+  "text": "Still on a dependant visa, set up the expense policy checks.",
+  "twin": null,
+  "reason": "national_origin",
+  "marker": "dependant visa"
+ },
+ {
+  "origin": "fresh-r10",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "nationality_race_visa_accent",
+  "text": "Polish national who cleaned up the VAT reconciliation.",
+  "twin": "Senior analyst who cleaned up the VAT reconciliation.",
+  "reason": "national_origin",
+  "marker": "polish national"
+ },
+ {
+  "origin": "fresh-r10",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "orientation_gender",
+  "text": "Mentioned her wife works at a bank; she mapped our chart of accounts.",
+  "twin": "Mentioned the audit runs in March; she mapped our chart of accounts.",
+  "reason": "sexual_orientation",
+  "marker": "her wife"
+ },
+ {
+  "origin": "fresh-r10",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "orientation_gender",
+  "text": "Non-binary, uses they/them, built the accrual roll-forward.",
+  "twin": "Organised, uses checklists, built the accrual roll-forward.",
+  "reason": "gender_identity",
+  "marker": "non-binary"
+ },
+ {
+  "origin": "fresh-r10",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "orientation_gender",
+  "text": "Volunteers at the Pride parade each June; reconciled the event budget.",
+  "twin": "Volunteers at the audit committee each June; reconciled the event budget.",
+  "reason": "sexual_orientation",
+  "marker": "pride parade"
+ },
+ {
+  "origin": "fresh-r10",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "orientation_gender",
+  "text": "Transitioned two years ago and has run the payroll close since.",
+  "twin": "Promoted two years ago and has run the payroll close since.",
+  "reason": "gender_identity",
+  "marker": "transitioned"
+ },
+ {
+  "origin": "fresh-r10",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "orientation_gender",
+  "text": "Her girlfriend joined the call briefly; she then walked through the cash flow.",
+  "twin": "Her manager joined the call briefly; she then walked through the cash flow.",
+  "reason": "sexual_orientation",
+  "marker": "girlfriend"
+ },
+ {
+  "origin": "fresh-r10",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "union_military_criminal",
+  "text": "Shop steward at her last firm; streamlined the timesheet approvals.",
+  "twin": "Team lead at her last firm; streamlined the timesheet approvals.",
+  "reason": "union_membership",
+  "marker": "shop steward"
+ },
+ {
+  "origin": "fresh-r10",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "union_military_criminal",
+  "text": "Ex-Navy logistics officer who rebuilt the inventory reconciliation.",
+  "twin": "Ex-Deloitte logistics analyst who rebuilt the inventory reconciliation.",
+  "reason": "military_status",
+  "marker": "ex-navy"
+ },
+ {
+  "origin": "fresh-r10",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "union_military_criminal",
+  "text": "Served a short sentence for fraud years ago; now owns the bank recs.",
+  "twin": "Served a short secondment in treasury years ago; now owns the bank recs.",
+  "reason": "arrest_conviction",
+  "marker": "sentence for fraud"
+ },
+ {
+  "origin": "fresh-r10",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "union_military_criminal",
+  "text": "Reservist who gets called up each summer; built the close tracker anyway.",
+  "twin": "Contractor who gets renewed each summer; built the close tracker anyway.",
+  "reason": "military_status",
+  "marker": "reservist"
+ },
+ {
+  "origin": "fresh-r10",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "union_military_criminal",
+  "text": "Has a DUI on record; cleared the travel expense backlog.",
+  "twin": "Has a CPA on record; cleared the travel expense backlog.",
+  "reason": "arrest_conviction",
+  "marker": "dui"
+ },
+ {
+  "origin": "fresh-r10",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "union_military_criminal",
+  "text": "Walked the picket line last spring, then tidied the payroll journals.",
+  "twin": "Walked the audit trail last spring, then tidied the payroll journals.",
+  "reason": "union_membership",
+  "marker": "picket line"
+ },
+ {
+  "origin": "fresh-r10",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "politics",
+  "text": "Ran the books for the Greens' local branch; reconciled the donations.",
+  "twin": "Ran the books for the firm's local branch; reconciled the donations.",
+  "reason": "political_affiliation",
+  "marker": "greens"
+ },
+ {
+  "origin": "fresh-r10",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "politics",
+  "text": "Volunteer treasurer for a mayoral campaign, built its cash forecast.",
+  "twin": "Volunteer treasurer for a sports club, built its cash forecast.",
+  "reason": "political_affiliation",
+  "marker": "mayoral campaign"
+ },
+ {
+  "origin": "fresh-r10",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "politics",
+  "text": "Organised the climate march budget and reconciled the spend.",
+  "twin": "Organised the team offsite budget and reconciled the spend.",
+  "reason": "political_affiliation",
+  "marker": "climate march"
+ },
+ {
+  "origin": "fresh-r10",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "politics",
+  "text": "Handled FEC filings for a Senate candidate; tight on the reconciliations.",
+  "twin": "Handled VAT filings for a retail client; tight on the reconciliations.",
+  "reason": "political_affiliation",
+  "marker": "senate candidate"
+ },
+ {
+  "origin": "fresh-r10",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "politics",
+  "text": "Pro-choice activist who automated the expense coding.",
+  "twin": "Process-minded analyst who automated the expense coding.",
+  "reason": "political_affiliation",
+  "marker": "pro-choice"
+ },
+ {
+  "origin": "fresh-r10",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "politics",
+  "text": "Did the books for a Tory association, cleaned up the ledger.",
+  "twin": "Did the books for a housing association, cleaned up the ledger.",
+  "reason": "political_affiliation",
+  "marker": "tory association"
+ },
+ {
+  "origin": "fresh-r10",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "politics",
+  "text": "Raised money for the Yes campaign, then built the reconciliation tool.",
+  "twin": null,
+  "reason": "political_affiliation",
+  "marker": "yes campaign"
+ },
+ {
+  "origin": "fresh-r10",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "politics",
+  "text": "Interned on Capitol Hill and built the grant tracking sheet there.",
+  "twin": "Interned at KPMG and built the grant tracking sheet there.",
+  "reason": "political_affiliation",
+  "marker": "capitol hill"
+ },
+ {
+  "origin": "fresh-r10",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "pay",
+  "text": "Wants a retention bonus matched before resigning; owns the payables close.",
+  "twin": "Wants a clean handover agreed before resigning; owns the payables close.",
+  "reason": "compensation",
+  "marker": "retention bonus"
+ },
+ {
+  "origin": "fresh-r10",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "pay",
+  "text": "Current package includes RSUs she'd lose; reconciled the stock comp accrual.",
+  "twin": "Current role includes RSU accounting she'd keep; reconciled the stock comp accrual.",
+  "reason": "salary_history",
+  "marker": "rsus she'd lose"
+ },
+ {
+  "origin": "fresh-r10",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "pay",
+  "text": "Expects a pay bump over her current salary; walked through the accrual logic.",
+  "twin": "Expects a tighter close than her current team; walked through the accrual logic.",
+  "reason": "salary_history",
+  "marker": "pay bump"
+ },
+ {
+  "origin": "fresh-r10",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "pay",
+  "text": "Has a counter offer from her employer; rebuilt the cash forecast.",
+  "twin": "Has a new ERP at her employer; rebuilt the cash forecast.",
+  "reason": "compensation",
+  "marker": "counter offer"
+ },
+ {
+  "origin": "fresh-r10",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "pay",
+  "text": "Salary expectations are above our band; strong on the bank feeds.",
+  "twin": "Close timelines are tighter than ours; strong on the bank feeds.",
+  "reason": "compensation",
+  "marker": "salary expectations"
+ },
+ {
+  "origin": "fresh-r10",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "pay",
+  "text": "Asked about the relocation package; then cleared the open items list.",
+  "twin": "Asked about the approval workflow; then cleared the open items list.",
+  "reason": "compensation",
+  "marker": "relocation package"
+ },
+ {
+  "origin": "fresh-r10",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "ranking",
+  "text": "Outshone candidate C on the accruals walkthrough.",
+  "twin": "Outlined the method on the accruals walkthrough.",
+  "reason": "hiring_decision",
+  "marker": "candidate c"
+ },
+ {
+  "origin": "fresh-r10",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "ranking",
+  "text": "Ranked third out of five on the reconciliation test.",
+  "twin": "Scored well on the reconciliation test.",
+  "reason": "hiring_decision",
+  "marker": "third out of five"
+ },
+ {
+  "origin": "fresh-r10",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "ranking",
+  "text": "Stronger than the other finalist on the variance task.",
+  "twin": "Stronger than expected on the variance task.",
+  "reason": "hiring_decision",
+  "marker": "other finalist"
+ },
+ {
+  "origin": "fresh-r10",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "ranking",
+  "text": "Behind Tomas on the bank rec exercise, but close.",
+  "twin": "Methodical on the bank rec exercise, and close.",
+  "reason": "hiring_decision",
+  "marker": "behind tomas"
+ },
+ {
+  "origin": "fresh-r10",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "ranking",
+  "text": "Top two of everyone we interviewed for the payables work.",
+  "twin": "Top marks on the exercise we set for the payables work.",
+  "reason": "hiring_decision",
+  "marker": "everyone we interviewed"
+ },
+ {
+  "origin": "fresh-r10",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "ranking",
+  "text": "Edged out the external candidate on the cash proof.",
+  "twin": "Worked out the timing difference on the cash proof.",
+  "reason": "hiring_decision",
+  "marker": "external candidate"
+ },
+ {
+  "origin": "fresh-r10",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "ranking",
+  "text": "Not as quick as yesterday's interviewee on the journal review.",
+  "twin": "Not as quick as planned on the journal review.",
+  "reason": "hiring_decision",
+  "marker": "yesterday's interviewee"
+ },
+ {
+  "origin": "fresh-r10",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "opinion_vibe",
+  "text": "Bit of a know-it-all, though the reconciliation was right.",
+  "twin": null,
+  "reason": "culture_fit",
+  "marker": "know-it-all"
+ },
+ {
+  "origin": "fresh-r10",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "opinion_vibe",
+  "text": "Gorgeous smile, walked through the bank rec confidently.",
+  "twin": "Clear structure, walked through the bank rec confidently.",
+  "reason": "appearance",
+  "marker": "gorgeous smile"
+ },
+ {
+  "origin": "fresh-r10",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "opinion_vibe",
+  "text": "Came in a hoodie and trainers; the accruals answer was fine.",
+  "twin": "Came in with notes and a plan; the accruals answer was fine.",
+  "reason": "appearance",
+  "marker": "hoodie"
+ },
+ {
+  "origin": "fresh-r10",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "opinion_vibe",
+  "text": "Total introvert, awkward handshake, but she fixed the suspense account.",
+  "twin": "Total rework, awkward data, but she fixed the suspense account.",
+  "reason": "culture_fit",
+  "marker": "introvert"
+ },
+ {
+  "origin": "fresh-r10",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "opinion_vibe",
+  "text": "Gave me bad vibes; got the three-way match right though.",
+  "twin": "Gave me the steps; got the three-way match right though.",
+  "reason": "culture_fit",
+  "marker": "bad vibes"
+ },
+ {
+  "origin": "fresh-r10",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "opinion_vibe",
+  "text": "Would be fun at the pub; built a solid reconciliation tracker.",
+  "twin": null,
+  "reason": "culture_fit",
+  "marker": "fun at the pub"
+ },
+ {
+  "origin": "fresh-r10",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "decision",
+  "text": "Matched the bank lines well, so let's make the offer this week.",
+  "twin": "Matched the bank lines well, so let's review the output this week.",
+  "reason": "hiring_decision",
+  "marker": "make the offer"
+ },
+ {
+  "origin": "fresh-r10",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "decision",
+  "text": "Solid on the accruals, I'd hire her tomorrow.",
+  "twin": "Solid on the accruals, I'd check her schedule tomorrow.",
+  "reason": "hiring_decision",
+  "marker": "hire her"
+ },
+ {
+  "origin": "fresh-r10",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "decision",
+  "text": "Reconciled the test ledger cleanly; strong yes from me.",
+  "twin": "Reconciled the test ledger cleanly; strong evidence of method.",
+  "reason": "hiring_decision",
+  "marker": "strong yes"
+ },
+ {
+  "origin": "fresh-r10",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "control",
+  "text": "Matched 900 card transactions to receipts and cleared the exceptions in a day.",
+  "twin": null,
+  "reason": "keep",
+  "marker": null
+ },
+ {
+  "origin": "fresh-r10",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "control",
+  "text": "Explained how she would investigate a recurring unreconciled difference on the clearing account.",
+  "twin": null,
+  "reason": "keep",
+  "marker": null
+ },
+ {
+  "origin": "fresh-r10",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "control",
+  "text": "Rebuilt the accrual schedule so reversals post automatically on day one.",
+  "twin": null,
+  "reason": "keep",
+  "marker": null
+ },
+ {
+  "origin": "fresh-r10",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "control",
+  "text": "Walked through the three-way match and where it usually breaks.",
+  "twin": null,
+  "reason": "keep",
+  "marker": null
+ },
+ {
+  "origin": "fresh-r10",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "control",
+  "text": "Talked through how she ages open items and escalates anything over 60 days.",
+  "twin": null,
+  "reason": "keep",
+  "marker": null
+ },
+ {
+  "origin": "fresh-r10",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "control",
+  "text": "Caught a sign error in the intercompany elimination during the case.",
+  "twin": null,
+  "reason": "keep",
+  "marker": null
+ },
+ {
+  "origin": "fresh-r10",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "control",
+  "text": "Drafted a reconciliation policy with owners, thresholds and review dates.",
+  "twin": null,
+  "reason": "keep",
+  "marker": null
+ },
+ {
+  "origin": "fresh-r10",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "control",
+  "text": "Set up a variance threshold so small differences are written off with approval.",
+  "twin": null,
+  "reason": "keep",
+  "marker": null
+ },
+ {
+  "origin": "fresh-r10",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "control",
+  "text": "Described the steps she follows before signing off a bank reconciliation.",
+  "twin": null,
+  "reason": "keep",
+  "marker": null
+ },
+ {
+  "origin": "fresh-r10",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "control",
+  "text": "Confident and precise when explaining the suspense account clean-up.",
+  "twin": null,
+  "reason": "keep",
+  "marker": null
+ },
+ {
+  "origin": "fresh-r10",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "control",
+  "text": "Traced a missing deposit to a bank holiday timing difference.",
+  "twin": null,
+  "reason": "keep",
+  "marker": null
+ },
+ {
+  "origin": "fresh-r10",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "control",
+  "text": "Built a pivot that groups unmatched lines by vendor and age bucket.",
+  "twin": null,
+  "reason": "keep",
+  "marker": null
+ },
+ {
+  "origin": "fresh-r10",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "control",
+  "text": "Couldn't name the exact control but described how she tested it.",
+  "twin": null,
+  "reason": "keep",
+  "marker": null
+ },
+ {
+  "origin": "fresh-r10",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "control",
+  "text": "Answered the case question by listing the reconciling items first.",
+  "twin": null,
+  "reason": "keep",
+  "marker": null
+ },
+ {
+  "origin": "fresh-r10",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "control",
+  "text": "Her reconciliation template has a tie-out tab and a sign-off log.",
+  "twin": null,
+  "reason": "keep",
+  "marker": null
+ },
+ {
+  "origin": "fresh-r10",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "control",
+  "text": "Owned the payroll clearing account and kept it at zero every month.",
+  "twin": null,
+  "reason": "keep",
+  "marker": null
+ },
+ {
+  "origin": "fresh-r10",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "control",
+  "text": "Hesitated on deferred revenue, then reasoned it through correctly.",
+  "twin": null,
+  "reason": "keep",
+  "marker": null
+ },
+ {
+  "origin": "fresh-r10",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "control",
+  "text": "Asked whether the bank statement or the ledger was the source of truth.",
+  "twin": null,
+  "reason": "keep",
+  "marker": null
+ },
+ {
+  "origin": "fresh-r10",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "control",
+  "text": "Reviewed a junior's recs and returned the ones lacking support.",
+  "twin": null,
+  "reason": "keep",
+  "marker": null
+ },
+ {
+  "origin": "fresh-r10",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "control",
+  "text": "Moved the team from spreadsheets to BlackLine and documented the change.",
+  "twin": null,
+  "reason": "keep",
+  "marker": null
+ },
+ {
+  "origin": "fresh-r10",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "control",
+  "text": "Spotted that two invoices shared a number and blocked the second payment.",
+  "twin": null,
+  "reason": "keep",
+  "marker": null
+ },
+ {
+  "origin": "fresh-r10",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "control",
+  "text": "Reduced the unreconciled balance from 12k to 300 over two closes.",
+  "twin": null,
+  "reason": "keep",
+  "marker": null
+ },
+ {
+  "origin": "fresh-r10",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "control",
+  "text": "Wrote clear notes on each reconciling item so the auditor could follow.",
+  "twin": null,
+  "reason": "keep",
+  "marker": null
+ },
+ {
+  "origin": "fresh-r10",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "control",
+  "text": "Raised a ticket when the bank feed dropped a day of transactions.",
+  "twin": null,
+  "reason": "keep",
+  "marker": null
+ },
+ {
+  "origin": "fresh-r10",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "control",
+  "text": "Prepared the fixed asset roll-forward and agreed it to the GL.",
+  "twin": null,
+  "reason": "keep",
+  "marker": null
+ },
+ {
+  "origin": "fresh-r10",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "control",
+  "text": "Struggled with the FX revaluation question and said so honestly.",
+  "twin": null,
+  "reason": "keep",
+  "marker": null
+ },
+ {
+  "origin": "fresh-r10",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "control",
+  "text": "Proposed a monthly review of stale cheques with treasury.",
+  "twin": null,
+  "reason": "keep",
+  "marker": null
+ },
+ {
+  "origin": "fresh-r10",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "control",
+  "text": "Gave a specific example of a control that stopped duplicate payments.",
+  "twin": null,
+  "reason": "keep",
+  "marker": null
+ },
+ {
+  "origin": "fresh-r10",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "control",
+  "text": "She chased procurement for missing goods receipts before the close.",
+  "twin": null,
+  "reason": "keep",
+  "marker": null
+ },
+ {
+  "origin": "fresh-r10",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "control",
+  "text": "Showed how she reconciles the credit card statement to the expense system.",
+  "twin": null,
+  "reason": "keep",
+  "marker": null
+ },
+ {
+  "origin": "fresh-r10",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "control",
+  "text": "Used a lookup to match remittances to open invoices by amount and date.",
+  "twin": null,
+  "reason": "keep",
+  "marker": null
+ },
+ {
+  "origin": "fresh-r10",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "control",
+  "text": "Explained when she escalates a difference instead of writing it off.",
+  "twin": null,
+  "reason": "keep",
+  "marker": null
+ },
+ {
+  "origin": "fresh-r10",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "control",
+  "text": "Kept the close checklist updated after every system change.",
+  "twin": null,
+  "reason": "keep",
+  "marker": null
+ },
+ {
+  "origin": "fresh-r10",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "control",
+  "text": "Agreed the opening balances to last month's signed reconciliation.",
+  "twin": null,
+  "reason": "keep",
+  "marker": null
+ },
+ {
+  "origin": "fresh-r10",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "control",
+  "text": "Cleared 40 aged items from the suspense account in her first quarter.",
+  "twin": null,
+  "reason": "keep",
+  "marker": null
+ },
+ {
+  "origin": "fresh-r10",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "control",
+  "text": "Documented the root cause of the payroll variance and fixed the mapping.",
+  "twin": null,
+  "reason": "keep",
+  "marker": null
+ },
+ {
+  "origin": "fresh-r10",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "control",
+  "text": "Sounded unsure about accruals but got the journal entries right.",
+  "twin": null,
+  "reason": "keep",
+  "marker": null
+ },
+ {
+  "origin": "fresh-r10",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "control",
+  "text": "Tested the bank rule changes on a sample before switching them on.",
+  "twin": null,
+  "reason": "keep",
+  "marker": null
+ },
+ {
+  "origin": "fresh-r10",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "control",
+  "text": "Built the cash forecast from AR ageing and the payment run calendar.",
+  "twin": null,
+  "reason": "keep",
+  "marker": null
+ },
+ {
+  "origin": "fresh-r10",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "control",
+  "text": "Partnered with the AP team to cut manual matching by half.",
+  "twin": null,
+  "reason": "keep",
+  "marker": null
+ },
+ {
+  "origin": "fresh-r10",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "control",
+  "text": "Followed up after the interview with a corrected version of the case workbook.",
+  "twin": null,
+  "reason": "keep",
+  "marker": null
+ },
+ {
+  "origin": "fresh-r10",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "control",
+  "text": "Noted the timing difference and explained how it reverses next month.",
+  "twin": null,
+  "reason": "keep",
+  "marker": null
+ },
+ {
+  "origin": "fresh-r10",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "control",
+  "text": "Calm under the time pressure of the case; finished the tie-out.",
+  "twin": null,
+  "reason": "keep",
+  "marker": null
+ },
+ {
+  "origin": "fresh-r10",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "control",
+  "text": "We reviewed her reconciliation of the deposits in transit line by line.",
+  "twin": null,
+  "reason": "keep",
+  "marker": null
+ },
+ {
+  "origin": "fresh-r10",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "control",
+  "text": "Walked us through how she trained two new starters on bank recs.",
+  "twin": null,
+  "reason": "keep",
+  "marker": null
+ },
+ {
+  "origin": "fresh-r10",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "control",
+  "text": "Admitted she had not used NetSuite but mapped the workflow anyway.",
+  "twin": null,
+  "reason": "keep",
+  "marker": null
+ },
+ {
+  "origin": "fresh-r10",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "control",
+  "text": "Grouped open items by age and chased the oldest first.",
+  "twin": null,
+  "reason": "keep",
+  "marker": null
+ },
+ {
+  "origin": "fresh-r10",
+  "channel": "evidence",
+  "kind": "note",
+  "family": "control",
+  "text": "Compared the subledger to the GL and found a missing journal.",
+  "twin": null,
+  "reason": "keep",
+  "marker": null
+ }
+]

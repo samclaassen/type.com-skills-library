@@ -1,0 +1,303 @@
+{
+  "_note": "FICTIONAL sample. People, quotes and the notes.granola.ai sample-* links are made up for illustration.",
+  "schema_version": 1,
+  "mode": "panel",
+  "role_id": "finance-ops-analyst",
+  "candidate": {
+    "ref": "cand-0142",
+    "display_name": "Jordan R."
+  },
+  "sources": {
+    "notes": {
+      "provider": "granola",
+      "status": "ok",
+      "detail": null
+    },
+    "transcript": {
+      "provider": "granola",
+      "status": "ok",
+      "detail": "denied for 1 of 3 meetings by workspace settings"
+    }
+  },
+  "interviews": [
+    {
+      "interview_id": "granola:sample-hm-0142",
+      "meeting_id": "sample-hm-0142",
+      "url": "https://notes.granola.ai/d/sample-hm-0142",
+      "date": "2026-09-29",
+      "stage_id": "hiring-manager",
+      "interviewer": {
+        "name": "Amara O.",
+        "role": "Hiring manager"
+      },
+      "recording_disclosed": true,
+      "notes_status": "ok",
+      "transcript_status": "ok",
+      "questions_asked": [
+        "hm-1",
+        "hm-2",
+        "hm-4"
+      ],
+      "evidence": [
+        {
+          "competency": "reconciliation",
+          "kind": "quote",
+          "evidence_kind": "behaviour_example",
+          "speaker": "candidate",
+          "text": "The bank rec was off by about four thousand dollars, and I traced it to a vendor payment that had been keyed twice after a remittance change.",
+          "url": "https://notes.granola.ai/d/sample-hm-0142"
+        },
+        {
+          "competency": "reconciliation",
+          "kind": "quote",
+          "evidence_kind": "behaviour_example",
+          "speaker": "candidate",
+          "text": "After that I added a duplicate-payment check to the weekly AP run, and we haven't had a duplicate since March.",
+          "url": "https://notes.granola.ai/d/sample-hm-0142"
+        },
+        {
+          "competency": "collaboration",
+          "kind": "quote",
+          "evidence_kind": "behaviour_example",
+          "speaker": "candidate",
+          "text": "My controller said my close notes were hard to follow, so I rewrote them as a checklist and walked the team through it.",
+          "url": "https://notes.granola.ai/d/sample-hm-0142"
+        }
+      ],
+      "scores": [
+        {
+          "competency": "reconciliation",
+          "score": 4,
+          "status": "interviewer_confirmed",
+          "rationale": "Found and cleared a duplicate vendor payment and added a control that stopped repeats (none since March).",
+          "observation_ids": [
+            1,
+            2
+          ]
+        },
+        {
+          "competency": "collaboration",
+          "score": 2,
+          "status": "interviewer_confirmed",
+          "rationale": "Acted on feedback (checklist rewrite); no example of helping a teammate meet a deadline.",
+          "observation_ids": [
+            3
+          ]
+        }
+      ],
+      "gaps": [],
+      "concerns": [
+        {
+          "topic": "pregnancy_family",
+          "url": "https://notes.granola.ai/d/sample-hm-0142"
+        }
+      ],
+      "observations": [
+        {
+          "id": 1,
+          "competency": "reconciliation",
+          "source_index": 0,
+          "action": "reconcile",
+          "object": "bank-reconciliation",
+          "result": "corrected"
+        },
+        {
+          "id": 2,
+          "competency": "reconciliation",
+          "source_index": 1,
+          "action": "implement",
+          "object": "reconciliation-control",
+          "result": "validated"
+        },
+        {
+          "id": 3,
+          "competency": "collaboration",
+          "source_index": 2,
+          "action": "revise",
+          "object": "feedback-plan",
+          "result": "documented"
+        }
+      ]
+    },
+    {
+      "interview_id": "granola:sample-peer-0142",
+      "meeting_id": "sample-peer-0142",
+      "url": "https://notes.granola.ai/d/sample-peer-0142",
+      "date": "2026-10-01",
+      "stage_id": "peer",
+      "interviewer": {
+        "name": "Theo K.",
+        "role": "Senior accountant"
+      },
+      "recording_disclosed": true,
+      "notes_status": "ok",
+      "transcript_status": "ok",
+      "questions_asked": [
+        "peer-1",
+        "peer-2",
+        "peer-3"
+      ],
+      "evidence": [
+        {
+          "competency": "close_process",
+          "kind": "quote",
+          "evidence_kind": "behaviour_example",
+          "speaker": "candidate",
+          "text": "I owned accruals and prepaids for close. I kept a day-by-day calendar and flagged on day two that the payroll file was late.",
+          "url": "https://notes.granola.ai/d/sample-peer-0142"
+        },
+        {
+          "competency": "systems_data",
+          "kind": "quote",
+          "evidence_kind": "behaviour_example",
+          "speaker": "candidate",
+          "text": "I rebuilt our AP aging workbook with lookups and a tie-out tab, and two other analysts use it every month now.",
+          "url": "https://notes.granola.ai/d/sample-peer-0142"
+        },
+        {
+          "competency": "collaboration",
+          "kind": "note",
+          "evidence_kind": "behaviour_example",
+          "text": "Covered a teammate's vendor statement recs in a crunch week so close stayed on schedule.",
+          "url": "https://notes.granola.ai/d/sample-peer-0142"
+        }
+      ],
+      "scores": [
+        {
+          "competency": "close_process",
+          "score": 3,
+          "status": "interviewer_confirmed",
+          "rationale": "Owned accruals and prepaids end to end with a calendar, and escalated the late payroll file early.",
+          "observation_ids": [
+            1
+          ]
+        },
+        {
+          "competency": "systems_data",
+          "score": 4,
+          "status": "interviewer_confirmed",
+          "rationale": "Built a checkable AP aging workbook that two other analysts adopted.",
+          "observation_ids": [
+            2
+          ]
+        },
+        {
+          "competency": "collaboration",
+          "score": 3,
+          "status": "interviewer_confirmed",
+          "rationale": "Covered a teammate's recs so the close stayed on schedule.",
+          "observation_ids": [
+            3
+          ]
+        }
+      ],
+      "gaps": [],
+      "concerns": [],
+      "observations": [
+        {
+          "id": 1,
+          "competency": "close_process",
+          "source_index": 0,
+          "action": "coordinate",
+          "object": "close-checklist",
+          "result": "completed"
+        },
+        {
+          "id": 2,
+          "competency": "systems_data",
+          "source_index": 1,
+          "action": "design",
+          "object": "data-validation",
+          "result": "proposed"
+        },
+        {
+          "id": 3,
+          "competency": "collaboration",
+          "source_index": 2,
+          "action": "revise",
+          "object": "feedback-plan",
+          "result": "documented"
+        }
+      ]
+    },
+    {
+      "interview_id": "granola:sample-case-0142",
+      "meeting_id": "sample-case-0142",
+      "url": "https://notes.granola.ai/d/sample-case-0142",
+      "date": "2026-10-02",
+      "stage_id": "case",
+      "interviewer": {
+        "name": "Lena V.",
+        "role": "Controller"
+      },
+      "recording_disclosed": true,
+      "notes_status": "ok",
+      "transcript_status": "denied",
+      "questions_asked": [
+        "case-1",
+        "case-2"
+      ],
+      "evidence": [
+        {
+          "competency": "reconciliation",
+          "kind": "note",
+          "evidence_kind": "work_output_observation",
+          "text": "Found the gap fast: unrecorded bank fee plus a timing difference on one deposit.",
+          "url": "https://notes.granola.ai/d/sample-case-0142"
+        },
+        {
+          "competency": "systems_data",
+          "kind": "summary",
+          "evidence_kind": "work_output_observation",
+          "text": "Proposed a template with a tie-out tab but did not explain how others would validate it.",
+          "url": "https://notes.granola.ai/d/sample-case-0142"
+        }
+      ],
+      "scores": [
+        {
+          "competency": "reconciliation",
+          "score": 3,
+          "status": "interviewer_confirmed",
+          "rationale": "Identified both causes of the case difference and how to clear them.",
+          "observation_ids": [
+            1
+          ]
+        },
+        {
+          "competency": "systems_data",
+          "score": 2,
+          "status": "interviewer_confirmed",
+          "rationale": "Proposed a structure but not how others would check it (anchor 3 needs validation).",
+          "observation_ids": [
+            2
+          ]
+        }
+      ],
+      "gaps": [
+        {
+          "competency": "process_improvement",
+          "note": "Ran out of time before the process-improvement question."
+        }
+      ],
+      "concerns": [],
+      "observations": [
+        {
+          "id": 1,
+          "competency": "reconciliation",
+          "source_index": 0,
+          "action": "reconcile",
+          "object": "bank-reconciliation",
+          "result": "corrected"
+        },
+        {
+          "id": 2,
+          "competency": "systems_data",
+          "source_index": 1,
+          "action": "design",
+          "object": "data-validation",
+          "result": "proposed"
+        }
+      ]
+    }
+  ]
+}

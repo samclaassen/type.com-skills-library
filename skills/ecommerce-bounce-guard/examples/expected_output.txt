@@ -1,0 +1,47 @@
+## Bounce Guard: Fernhill Goods (Klaviyo), as of 2026-10-04
+
+**2 flow(s) are bouncing above threshold, 2 critical, 2 still live.**
+
+- **Abandoned Checkout** (live): Abandoned Checkout: Email 1 bounced 1,344 of 1,597 sends (84.2%) in the week of Sep 28. The flow's baseline was 0.8% (weekly range 0.0%–1.6% over 10 weeks).
+- **Welcome Series** (live): Welcome: Email 1 bounced 552 of 851 sends (64.9%) in the week of Sep 28. The flow's baseline was 0.8% (weekly range 0.4%–1.5% over 10 weeks).
+
+**First bad day: Sep 26 (2026-09-26).** Abandoned Checkout: Email 1: 242 of 285 sends bounced (84.9%). The days before were clean: Sep 21–Sep 25 had 0 bounces out of 101 sends.
+The same day also broke: Welcome Series.
+
+**Diagnosis: LIKELY BOT / FAKE-CHECKOUT TRAFFIC**
+- Sudden step change on a single day, not a gradual creep
+- Several flows broke on the same day, which points to one upstream source
+- 96% of bounced profiles were created less than 48 hours before the bounce
+- 96% of sampled bounced profiles never fired Active on Site
+- 63% of bounced addresses have machine-generated patterns
+- Shopify abandoned checkouts rose 10.0x while orders stayed flat (0.98x)
+
+| Severity | Flow | Status | Latest week | Bounced (all emails) | Baseline (weekly range) | First bad day |
+| --- | --- | --- | --- | ---: | --- | --- |
+| CRITICAL | Abandoned Checkout | live | Sep 28 | 1,353/1,801 (75.1%) | 0.8% (0.0%–1.6%) | Sep 26 (242/285) |
+| CRITICAL | Welcome Series | live | Sep 28 | 553/1,096 (50.5%) | 0.8% (0.4%–1.5%) | Sep 26 (84/131) |
+| OK | Browse Abandonment | live | Sep 28 | 0/316 (0.0%) | 0.3% (0.0%–0.6%) | — |
+| OK | Post-Purchase Thank You | live | Sep 28 | 0/267 (0.0%) | 0.1% (0.0%–0.4%) | — |
+
+Not scored (under 25 recipients in the latest week): Winback 120 Days.
+
+**Who is bouncing** (300 bounce events)
+- Bounce type: all hard
+- Profile created < 48h before bouncing: 96% (of 300 with a creation date)
+- Never fired Active on Site: 96% (of 50 sampled)
+- Machine-generated address patterns: 63% (digit-heavy 81, dot-stuffed-freemail 58, random-local-part 57, random-domain 54)
+- Top domains: gmail.com 159, yahoo.com 32, outlook.com 24, hotmail.com 18, oldcompany.co 6, hotmial.com 3, acme-retail.com 2, gmial.com 2
+- Sources: Abandoned Checkout 208, Welcome Series 92
+- Masked samples: rj***d@gmail.com, sx***f@gmail.com, xz***a@gmail.com, li***7@cxrzgg.shop, ch***7@gjwmlm.shop
+
+**Shopify cross-check:** abandoned checkouts averaged 25/day for 12 days before the onset and 250/day after (10.0x). Orders went from 34/day to 34/day (0.98x).
+
+**Recommended next steps (nothing has been changed)**
+1. Add flow filters to Abandoned Checkout, Welcome Series: *Active on Site at least once in the last 30 days* and *Bounced Email zero times over all time*. Add trigger filters *$value > 0* and *Item Count ≥ 1*. This keeps real shoppers in the flow and drops scripted checkouts.
+2. If the filters can't go in today, set "Abandoned Checkout: Email 1" (84.2% bouncing), "Welcome: Email 1" (64.9% bouncing) to Manual so sends queue instead of bouncing. Review and clear the queue before switching back to Live.
+3. Block the source in Shopify: confirm bot protection (hCaptcha) is on for checkout, login and newsletter forms. Rate-limit /cart and /checkouts at the edge if it continues, and open a Shopify support ticket with the Sep 26 date.
+4. Add real-time email validation at capture, before the first flow email. Suppression alone won't fix this: hard bounces are already auto-suppressed and bots keep creating new addresses.
+5. Until bounces are under 1% on new sends, send campaigns only to people engaged in the last 30 days and grow volume no more than 20–30% per send day. Check Google Postmaster daily. The full ramp plan is in references/playbook.md.
+6. Re-run this audit 48–72 hours after each change to confirm it worked.
+
+_Thresholds: warning ≥ 2%, critical ≥ 5% or ≥ 3x the flow's own baseline. Read-only: no flows, filters or profiles were changed._

@@ -1,0 +1,181 @@
+# New business pitch — Tidewater Outfitters
+
+Prepared 2026-09-22 | Average order value $85.00 | Gross margin 55.0% | Gross profit per order $46.75
+
+## What we found
+
+- $60,000 of monthly paid media across 5 channels returns 1,101 conversions and $93,585 of platform-reported revenue (1.56x).
+- The site converts 1.39% of traffic end to end: 240,000 at 'Sessions' become 3,326 at 'Purchase'.
+- We found 13 gaps. After confidence haircuts they are worth $27,028 a month in gross profit ($324,333 annualized), counting only gaps that do not overlap, plus $6,518 a month of paid spend that could be redeployed or verified (budget, not profit, so not added in).
+- The highest-return first move is "Meta Ads costs $66.67 per conversion against $39.22 on Google Shopping" — $43,482 a year for about 2 weeks of work.
+
+## Prioritized gaps
+
+| # | Area | Gap | Monthly (raw) | Monthly (adj.) | Annual (adj.) | Conf. | Effort |
+| ---: | --- | --- | ---: | ---: | ---: | ---: | ---: |
+| 1 | Paid media | Meta Ads costs $66.67 per conversion against $39.22 on Google Shopping | $9,059 | $3,624 | $43,482 | 40.0% | 2w |
+| 2 | Funnel | Checkout started to Purchase converts at 35.00% against a 40.00% benchmark | $22,234 | $7,782 | $93,384 | 35.0% | 6w |
+| 3 | Paid media | Microsoft Ads reports no conversions on $2,000 of monthly spend | $2,000 | $1,200 | $14,400 | 60.0% | 1w |
+| 4 | Funnel | Sessions to Product view converts at 40.00% against a 45.00% benchmark | $19,436 | $6,803 | $81,633 | 35.0% | 6w |
+| 5 | Funnel | Add to cart to Checkout started converts at 45.00% against a 50.00% benchmark | $17,277 | $6,047 | $72,562 | 35.0% | 6w |
+| 6 | Paid media | Google Search converts at 2.00% against a 2.80% benchmark | $7,854 | $3,927 | $47,124 | 50.0% | 4w |
+| 7 | Paid media | TikTok Ads costs $133.33 per conversion against $39.22 on Google Shopping | $4,235 | $1,694 | $20,329 | 40.0% | 2w |
+| 8 | Funnel | Product view to Add to cart converts at 22.00% against a 24.00% benchmark | $14,136 | $4,947 | $59,369 | 35.0% | 6w |
+| 9 | Paid media | Google Shopping converts at 1.70% against a 2.40% benchmark | $5,891 | $2,945 | $35,343 | 50.0% | 4w |
+| 10 | Organic search | 'rain jacket' ranks 14 with 40,000 monthly searches | $2,643 | $793 | $9,516 | 30.0% | 12w |
+| 11 | Organic search | 'hiking boots women' ranks 8 with 27,000 monthly searches | $1,529 | $459 | $5,504 | 30.0% | 12w |
+| 12 | Organic search | 'how to layer for hiking' ranks 5 with 9,000 monthly searches | $330 | $99 | $1,190 | 30.0% | 12w |
+| 13 | Organic search | 'daypack 20l' ranks 11 with 5,400 monthly searches | $327 | $98 | $1,176 | 30.0% | 12w |
+
+Ranked by adjusted annual value per week of delivery effort, so a small fix that lands in week one outranks a larger one that takes a quarter.
+
+### 1. Meta Ads costs $66.67 per conversion against $39.22 on Google Shopping
+
+- Meta Ads spends $22,000 for 330 conversions.
+- At Google Shopping's $39.22 cost per conversion, the same volume costs $12,941 — $9,059 per month of spend to redeploy (41.2% of the channel).
+- Read another way — Meta Ads converts at 1.10% against a 1.60% benchmark — the same channel is worth $7,013 a month. The two framings describe one fix, so only the larger is counted.
+- Sized at $9,059 per month before a 40.0% confidence haircut, $3,624 after — $43,482 annualized.
+
+### 2. Checkout started to Purchase converts at 35.00% against a 40.00% benchmark
+
+- 9,504 users reach Checkout started and 3,326 continue to Purchase (35.00%).
+- At 40.00% that step passes 476 more users per month.
+- That is 476 additional orders per month.
+- Sized at $22,234 per month before a 35.0% confidence haircut, $7,782 after — $93,384 annualized.
+
+### 3. Microsoft Ads reports no conversions on $2,000 of monthly spend
+
+- Microsoft Ads spent $2,000 last month across 2,400 clicks with zero recorded conversions.
+- Either the channel genuinely produces nothing, or its conversion tracking is broken. Both are worth a month of spend to find out.
+- Sized at $2,000 per month before a 60.0% confidence haircut, $1,200 after — $14,400 annualized.
+
+### 4. Sessions to Product view converts at 40.00% against a 45.00% benchmark
+
+- 240,000 users reach Sessions and 96,000 continue to Product view (40.00%).
+- At 45.00% that step passes 12,000 more users per month.
+- Carried through the current downstream rates (3.46%), that is 416 additional orders per month.
+- Sized at $19,436 per month before a 35.0% confidence haircut, $6,803 after — $81,633 annualized.
+
+### 5. Add to cart to Checkout started converts at 45.00% against a 50.00% benchmark
+
+- 21,120 users reach Add to cart and 9,504 continue to Checkout started (45.00%).
+- At 50.00% that step passes 1,056 more users per month.
+- Carried through the current downstream rates (35.00%), that is 370 additional orders per month.
+- Sized at $17,277 per month before a 35.0% confidence haircut, $6,047 after — $72,562 annualized.
+
+### 6. Google Search converts at 2.00% against a 2.80% benchmark
+
+- 21,000 monthly clicks at 2.00% produce 420 conversions; at 2.80% the same traffic produces 588.
+- That is 168 additional conversions per month at $46.75 of gross profit each.
+- Sized at $7,854 per month before a 50.0% confidence haircut, $3,927 after — $47,124 annualized.
+
+### 7. TikTok Ads costs $133.33 per conversion against $39.22 on Google Shopping
+
+- TikTok Ads spends $6,000 for 45 conversions.
+- At Google Shopping's $39.22 cost per conversion, the same volume costs $1,765 — $4,235 per month of spend to redeploy (70.6% of the channel).
+- Read another way — TikTok Ads converts at 0.50% against a 0.90% benchmark — the same channel is worth $1,683 a month. The two framings describe one fix, so only the larger is counted.
+- Sized at $4,235 per month before a 40.0% confidence haircut, $1,694 after — $20,329 annualized.
+
+### 8. Product view to Add to cart converts at 22.00% against a 24.00% benchmark
+
+- 96,000 users reach Product view and 21,120 continue to Add to cart (22.00%).
+- At 24.00% that step passes 1,920 more users per month.
+- Carried through the current downstream rates (15.75%), that is 302 additional orders per month.
+- Sized at $14,136 per month before a 35.0% confidence haircut, $4,947 after — $59,369 annualized.
+
+### 9. Google Shopping converts at 1.70% against a 2.40% benchmark
+
+- 18,000 monthly clicks at 1.70% produce 306 conversions; at 2.40% the same traffic produces 432.
+- That is 126 additional conversions per month at $46.75 of gross profit each.
+- Sized at $5,891 per month before a 50.0% confidence haircut, $2,945 after — $35,343 annualized.
+
+### 10. 'rain jacket' ranks 14 with 40,000 monthly searches
+
+- https://tidewateroutfitters.example/collections/rain-jackets earns 320 monthly clicks at position 14.
+- At position 3 (11.0% click-through) the same keyword earns about 4,400 clicks — 4,080 more per month.
+- At the site's 1.39% conversion rate that is 57 additional orders per month.
+- Sized at $2,643 per month before a 30.0% confidence haircut, $793 after — $9,516 annualized.
+
+### 11. 'hiking boots women' ranks 8 with 27,000 monthly searches
+
+- https://tidewateroutfitters.example/collections/hiking-boots earns 610 monthly clicks at position 8.
+- At position 3 (11.0% click-through) the same keyword earns about 2,970 clicks — 2,360 more per month.
+- At the site's 1.39% conversion rate that is 33 additional orders per month.
+- Sized at $1,529 per month before a 30.0% confidence haircut, $459 after — $5,504 annualized.
+
+### 12. 'how to layer for hiking' ranks 5 with 9,000 monthly searches
+
+- https://tidewateroutfitters.example/blog/layering-guide earns 480 monthly clicks at position 5.
+- At position 3 (11.0% click-through) the same keyword earns about 990 clicks — 510 more per month.
+- At the site's 1.39% conversion rate that is 7 additional orders per month.
+- Sized at $330 per month before a 30.0% confidence haircut, $99 after — $1,190 annualized.
+
+### 13. 'daypack 20l' ranks 11 with 5,400 monthly searches
+
+- https://tidewateroutfitters.example/collections/backpacks earns 90 monthly clicks at position 11.
+- At position 3 (11.0% click-through) the same keyword earns about 594 clicks — 504 more per month.
+- At the site's 1.39% conversion rate that is 7 additional orders per month.
+- Sized at $327 per month before a 30.0% confidence haircut, $98 after — $1,176 annualized.
+
+## Opportunity summary
+
+| Area | Gaps | Valued as | Monthly (adjusted) | Annual (adjusted) |
+| --- | ---: | --- | ---: | ---: |
+| Funnel | 4 | gross profit | $25,579 | $306,948 |
+| Paid media — conversion rate | 2 | gross profit | $6,872 | $82,467 |
+| Organic search | 4 | gross profit | $1,449 | $17,385 |
+| Paid media — spend efficiency and tracking | 3 | recovered spend | $6,518 | $78,212 |
+
+There is no total row: the rows are in two different units, and the funnel and paid conversion-rate rows work on the same visitors.
+
+- **Gross profit, non-overlapping:** $27,028 per month ($324,333 annualized) after haircuts, from Funnel + Organic search. Paid media — conversion rate ($6,872 per month) is left out because it lifts conversion of the same visitors; count one or the other, not both.
+- **Paid spend to redeploy or verify:** $6,518 per month after haircuts. This is budget that can be moved or cut, not profit, and is not added to the gross-profit figure.
+
+Against a proposed $9,500 monthly retainer, the non-overlapping gross-profit estimate is 2.85x the fee, so the fee is matched if roughly 35.1% of that estimate is realized. These are benchmark-based estimates, not a forecast, and recovered spend is not counted toward the fee.
+
+## Proposed 90-day engagement
+
+### Days 1-30 — stop the leaks
+
+Fixes that need no new budget and pay back inside the engagement.
+
+- Reallocate spend from the weakest cost-per-acquisition channels to the strongest — *Meta Ads costs $66.67 per conversion against $39.22 on Google Shopping*
+- Set channel-level efficiency floors and a weekly reallocation cadence — *Meta Ads costs $66.67 per conversion against $39.22 on Google Shopping*
+- Rebuild conversion tracking and verify every channel fires the same purchase event — *Microsoft Ads reports no conversions on $2,000 of monthly spend*
+- Reconcile platform-reported conversions against the analytics property and the store — *Microsoft Ads reports no conversions on $2,000 of monthly spend*
+- Restructure campaigns and audiences around the highest-intent segments — *Google Search converts at 2.00% against a 2.80% benchmark*
+- Refresh creative and ad copy against the channels furthest from benchmark — *Google Search converts at 2.00% against a 2.80% benchmark*
+- Align landing pages with the ad promise for the highest-spend campaigns — *Google Search converts at 2.00% against a 2.80% benchmark*
+- Scope and baseline the organic search work so month 3 delivery starts from evidence — *'rain jacket' ranks 14 with 40,000 monthly searches*
+
+### Days 31-60 — convert the traffic already arriving
+
+Conversion work against the weakest measured step.
+
+- Instrument the funnel step by step and confirm the drop-off is real, not measurement — *Checkout started to Purchase converts at 35.00% against a 40.00% benchmark*
+- Run a prioritized test roadmap against the weakest step — *Checkout started to Purchase converts at 35.00% against a 40.00% benchmark*
+- Ship the winning variant and re-baseline the funnel — *Checkout started to Purchase converts at 35.00% against a 40.00% benchmark*
+
+### Days 61-90 — compound the gains
+
+Slower-burn work started now so it lands in months 4 to 6.
+
+- Technical and on-page fixes for the highest-volume near-miss pages — *'rain jacket' ranks 14 with 40,000 monthly searches*
+- Content refresh and internal linking for the target keyword cluster — *'rain jacket' ranks 14 with 40,000 monthly searches*
+- Digital PR and link acquisition for the money pages — *'rain jacket' ranks 14 with 40,000 monthly searches*
+
+## How these numbers were built
+
+- Every gap is valued in gross profit: $85.00 average order value x 55.0% gross margin = $46.75 per additional order. Paid-efficiency gaps are valued as recovered spend, not as profit.
+- Each gap carries a confidence haircut reflecting how reliably that class of work lands: funnel step 35.0%, paid conversion rate 50.0%, paid efficiency 40.0%, paid tracking 60.0%, seo position 30.0%.
+- Organic estimates assume a move to position 3 (11.0% click-through) and the site's current 1.39% conversion rate. Keywords beyond position 20 are excluded.
+- Funnel gaps are each computed with the other steps held at today's rates. Fixing more than one compounds, so the combined effect is larger than the sum shown here — we size them separately to keep each claim independently checkable.
+- Each paid channel contributes at most one gap. Where a conversion-rate gap and an efficiency gap describe the same channel, only the larger is counted and the other is shown as an alternative framing.
+- Benchmarks come from the benchmark file supplied with this analysis, not from the prospect's own history.
+
+## What this analysis cannot see
+
+- Platform-reported conversions and revenue are used as given. Attribution overlap between channels is not removed, so channel-level revenue double counts to an unknown degree.
+- No incrementality testing: none of these figures prove the paid channels caused the conversions they claim.
+- Seasonality, inventory, pricing, competitive response and brand demand are all outside the data provided.
+- '2 person tent' (https://tidewateroutfitters.example/collections/tents) sits at position 27, beyond the position 20 cutoff for a credible 90-day estimate.

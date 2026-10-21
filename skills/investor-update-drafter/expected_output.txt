@@ -1,0 +1,183 @@
+=== 1. Investor draft for September 2026 (default: --audience investors --format draft) ===
+# Wrenhallow \(fictional\) investor update — September 2026
+
+_Draft — not sent. Prepared 2026-10-02 for investors. Figures come only from the metrics data, each with its source and as-of date; references like (M2) point to the meetings listed at the end. Review “Before you send”, then delete it._
+
+## TL;DR
+
+- **Numbers:** MRR \$41,250 (+\$3,650, +9.7% MoM) · Paying customers 38 (+3, +8.6% MoM) · Runway 12.7 months (-2.3 months MoM)
+- **Highlight:** MRR reached \$41,250, against \$37,600 in August.
+- **Lowlight:** A regional home-goods retailer ended its pilot\: our per-dock pricing did not work for a multi-site rollout.
+- **Ask:** Intros to heads of operations at mid-size 3PLs in the Midwest; they are our best-fit buyers.
+
+## Key metrics
+
+| Metric | Sep 2026 | Aug 2026 | Change (MoM) | Source, as of |
+|---|---|---|---|---|
+| MRR | \$41,250 | \$37,600 | +\$3,650 (+9.7%) | Stripe, 2026-10-01 |
+| ARR | \$495,000 | \$451,200 | +\$43,800 (+9.7%) | Stripe, 2026-10-01 |
+| Net new MRR | \$3,650 | \$2,900 | +\$750 (+25.9%) | Stripe, 2026-10-01 |
+| Paying customers | 38 | 35 | +3 (+8.6%) | Stripe, 2026-10-01 |
+| New customers | 4 | 3 | +1 (+33.3%) | Stripe, 2026-10-01 |
+| Churned customers | 1 | 0 | +1 | Stripe, 2026-10-01 |
+| Gross MRR churn | withheld (see Before you send) | not supplied | n/a | — |
+| Cash | \$1,840,000 | \$1,985,000 | -\$145,000 (-7.3%) | Finance sheet \(sample\), 2026-09-30 |
+| Net burn | \$145,000 | \$132,000 | +\$13,000 (+9.8%) | Finance sheet \(sample\), 2026-09-30 |
+| Runway | 12.7 months | 15.0 months | -2.3 months | Finance sheet \(sample\), 2026-09-30 |
+| Headcount | 14 | 12 | +2 (+16.7%) | Finance sheet \(sample\), 2026-09-30 |
+
+## Highlights
+
+- MRR reached \$41,250, against \$37,600 in August. (metrics)
+- Tamberlind Foods renewed for two years and moved all of its warehouses onto the dock calendar. (M1)
+  > “The dock calendar is the first thing my team opens every morning.” — Head of Logistics, Tamberlind Foods (M1)
+- The carrier-portal beta went live with a mid-market logistics customer; their team now confirms carrier slots in the portal instead of by phone. (M2)
+
+## Lowlights
+
+- A regional home-goods retailer ended its pilot\: our per-dock pricing did not work for a multi-site rollout. (M6)
+- Net burn rose to \$145,000 because both engineering hires started earlier than planned. (metrics, M3)
+
+## Product
+
+- Rebuilt the dispatch board so planners see every dock on one screen. (M8)
+- We will open the carrier portal to all customers in November. (M3)
+
+## Customers & go-to-market
+
+- Signed a referral partnership with Drovemere Payments; the first joint webinar is booked. (M5)
+
+## Team & hiring
+
+- Tomas Reyes joined as a senior backend engineer. (you)
+- Final interviews for VP Sales are done; we are choosing between two finalists. (M4)
+
+## Asks
+
+- Intros to heads of operations at mid-size 3PLs in the Midwest; they are our best-fit buyers. (you)
+- A referral for a fractional CFO with SaaS experience. (you)
+
+## What we said last time vs what happened
+
+| We said (Aug 2026 update) | Status | What happened |
+|---|---|---|
+| Reach \$40,000 in MRR by the end of September. | Done | MRR \$41,250 vs a target of at least \$40,000 (met) (metrics) |
+| Open the carrier-portal beta to three customers. | Partial | — (M2) |
+| Hire a senior backend engineer. | Done | Tomas Reyes joined. (you) |
+| Convert the pilot with a regional home-goods retailer into a paid contract. | Missed | The pilot ended; see Lowlights. (M6) |
+| Keep net burn at or below \$130,000. | Missed | Net burn \$145,000 vs a target of at most \$130,000 (not met) (metrics) |
+| Publish the security whitepaper. | Not reviewed | — |
+
+## Before you send (delete this section)
+
+**Checks**
+
+- Withheld from the draft — Product #3 (items[7]): has forward-looking wording without a founder statement (founder_stated).
+- Withheld from the draft — Customers & go-to-market #2 (items[9]): writes the name of non-public entities[1] (shown as “a mid-market logistics customer”) directly; use its {org:...} placeholder.
+- Withheld from the draft — Customers & go-to-market #3 (items[10]): has a figure that is not from the metrics data; use a {metric:...} placeholder or remove it.
+- Withheld from the draft — Customers & go-to-market #4 (items[11]): may be confidential (legal): tag it, rephrase it, or have the founder clear it.
+- Moved the wrong way: Churned customers, Cash, Net burn and Runway. Make sure Lowlights covers them.
+- Held back as confidential: 2 items (1 board only, 1 personnel / HR). Not shown in an investor draft; run with --audience board for the board version.
+- Metrics — Gross MRR churn (Sep 2026) not shown: no source \(sample\_metrics\.csv line 10\).
+- Metrics — MRR for Aug 2026: the last update reported \$37,500; Stripe now says \$37,600. Say that it was restated, or explain the difference.
+- Commitment 2 (previous_update.commitments[1]): note withheld: reads as forward-looking without a founder statement (founder_stated): it names a date after the update period, or a schedule (scheduled, slated, due ...), with no past-tense verb.
+- Commitment 5 (previous_update.commitments[4]): status changed from Done to Missed because Net burn is \$145,000 against a target of at most \$130,000.
+- Commitment 6 (previous_update.commitments[5]): not reviewed; say what happened.
+- Highlights #3 (items[2]): quote left out: no permission to quote (permission is false).
+- Product #2 (items[6]): forward-looking wording kept because the founder said it (M3).
+
+**Coverage**
+
+- Meetings: 9 in the bundle, 9 in Sep 2026 (4 customer calls, 2 team meetings, 1 hiring meeting, 1 partner meeting, 1 board meeting); notes read for 8; transcripts: 3 read, 1 denied, 1 unavailable.
+- Transcript access was denied for some meetings; notes can omit details, so a missing detail does not mean it was not discussed.
+- Meeting notes: Granola (ok) — list\_meetings for Sep 1-30 \(sample data\)
+- Billing: Stripe (ok) — MRR, ARR and customer counts \(sample data\)
+- Metrics file: sample\_metrics\.csv (ok) — cash, burn, runway, headcount
+- Previous update: Gmail (ok) — the August update as sent
+- Sep 2026 began more than 30 days ago; Granola's free plan may not return older notes, so check the meeting count above.
+
+**Sources cited**
+
+- M1 · 2026-09-03 · customer call · [Tamberlind Foods renewal call](https://notes.granola.ai/d/sample-iu1)
+- M2 · 2026-09-08 · customer call · [(title withheld: it names a non-public entity)](https://notes.granola.ai/d/sample-iu2)
+- M3 · 2026-09-11 · team meeting · [Weekly all-hands](https://notes.granola.ai/d/sample-iu3)
+- M4 · 2026-09-15 · hiring meeting · [(title withheld: it names a non-public entity)](https://notes.granola.ai/d/sample-iu4)
+- M5 · 2026-09-17 · partner meeting · [Drovemere Payments partnership sync](https://notes.granola.ai/d/sample-iu5)
+- M6 · 2026-09-22 · customer call · [(title withheld: it names a non-public entity)](https://notes.granola.ai/d/sample-iu6)
+- M8 · 2026-09-29 · team meeting · [Engineering retro](https://notes.granola.ai/d/sample-iu8)
+- Previous update · [Aug 2026 update](https://mail.example/sample/wrenhallow-august-update) · sent 2026-09-03
+
+=== 2. Board version, email body only (after the founder approved the draft) ===
+Subject: Wrenhallow \(fictional\) board update — September 2026
+
+## TL;DR
+
+- **Numbers:** MRR \$41,250 (+\$3,650, +9.7% MoM) · Paying customers 38 (+3, +8.6% MoM) · Runway 12.7 months (-2.3 months MoM)
+- **Highlight:** MRR reached \$41,250, against \$37,600 in August.
+- **Lowlight:** A regional home-goods retailer ended its pilot\: our per-dock pricing did not work for a multi-site rollout.
+- **Ask:** Intros to heads of operations at mid-size 3PLs in the Midwest; they are our best-fit buyers.
+
+## Key metrics
+
+| Metric | Sep 2026 | Aug 2026 | Change (MoM) | Source, as of |
+|---|---|---|---|---|
+| MRR | \$41,250 | \$37,600 | +\$3,650 (+9.7%) | Stripe, 2026-10-01 |
+| ARR | \$495,000 | \$451,200 | +\$43,800 (+9.7%) | Stripe, 2026-10-01 |
+| Net new MRR | \$3,650 | \$2,900 | +\$750 (+25.9%) | Stripe, 2026-10-01 |
+| Paying customers | 38 | 35 | +3 (+8.6%) | Stripe, 2026-10-01 |
+| New customers | 4 | 3 | +1 (+33.3%) | Stripe, 2026-10-01 |
+| Churned customers | 1 | 0 | +1 | Stripe, 2026-10-01 |
+| Gross MRR churn | not available | not available | n/a | — |
+| Cash | \$1,840,000 | \$1,985,000 | -\$145,000 (-7.3%) | Finance sheet \(sample\), 2026-09-30 |
+| Net burn | \$145,000 | \$132,000 | +\$13,000 (+9.8%) | Finance sheet \(sample\), 2026-09-30 |
+| Runway | 12.7 months | 15.0 months | -2.3 months | Finance sheet \(sample\), 2026-09-30 |
+| Headcount | 14 | 12 | +2 (+16.7%) | Finance sheet \(sample\), 2026-09-30 |
+
+## Highlights
+
+- MRR reached \$41,250, against \$37,600 in August.
+- Tamberlind Foods renewed for two years and moved all of its warehouses onto the dock calendar.
+  > “The dock calendar is the first thing my team opens every morning.” — Head of Logistics, Tamberlind Foods
+- The carrier-portal beta went live with a mid-market logistics customer; their team now confirms carrier slots in the portal instead of by phone.
+
+## Lowlights
+
+- A regional home-goods retailer ended its pilot\: our per-dock pricing did not work for a multi-site rollout.
+- Net burn rose to \$145,000 because both engineering hires started earlier than planned.
+
+## Product
+
+- Rebuilt the dispatch board so planners see every dock on one screen.
+- We will open the carrier portal to all customers in November.
+
+## Customers & go-to-market
+
+- Signed a referral partnership with Drovemere Payments; the first joint webinar is booked.
+
+## Team & hiring
+
+- Tomas Reyes joined as a senior backend engineer.
+- Final interviews for VP Sales are done; we are choosing between two finalists.
+
+## Asks
+
+- Intros to heads of operations at mid-size 3PLs in the Midwest; they are our best-fit buyers.
+- A referral for a fractional CFO with SaaS experience.
+
+## What we said last time vs what happened
+
+| We said (Aug 2026 update) | Status | What happened |
+|---|---|---|
+| Reach \$40,000 in MRR by the end of September. | Done | MRR \$41,250 vs a target of at least \$40,000 (met) |
+| Open the carrier-portal beta to three customers. | Partial | — |
+| Hire a senior backend engineer. | Done | Tomas Reyes joined. |
+| Convert the pilot with a regional home-goods retailer into a paid contract. | Missed | The pilot ended; see Lowlights. |
+| Keep net burn at or below \$130,000. | Missed | Net burn \$145,000 vs a target of at most \$130,000 (not met) |
+| Publish the security whitepaper. | Not reviewed | — |
+
+## Board only — do not forward
+
+- **Personnel / HR:** A team member moved to a performance plan after missed sprint goals.
+- **Board only:** Two funds asked for a term sheet conversation about a bridge round; nothing is signed.
+
+_Confidential — please do not forward._

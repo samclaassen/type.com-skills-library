@@ -1,0 +1,101 @@
+id,date,source,sku,rating,text
+NF-RV-001,2026-08-02,review,NF-LID-STR,1,The straw lid leaks every time I put the bottle in my bag. Water all over my laptop sleeve.
+NF-RV-002,2026-08-04,review,NF-LID-STR,1,Lid leaked after two weeks. The silicone gasket had already deformed out of shape.
+NF-RV-003,2026-08-05,review,NF-BTL-32,2,"Leaks from the straw lid when it tips over, the seal does not hold at all."
+NF-RV-004,2026-08-09,review,NF-LID-STR,1,Second straw lid that leaks. The gasket pops out of its groove every time I wash it.
+NF-RV-005,2026-08-11,review,NF-BTL-32,2,"Great bottle, terrible lid. Any angle past forty five degrees and it leaks around the seal."
+NF-RV-006,2026-08-14,review,NF-BTL-20,1,Bought this for the gym and the lid leaked in my bag on day one. The lid does not seal.
+NF-TK-007,2026-08-15,ticket,NF-LID-STR,,Customer reports straw lid leaking from the gasket and is requesting a replacement lid.
+NF-TK-008,2026-08-18,ticket,NF-LID-STR,,"Leaking lid, third report on the same production lot, gasket sits proud of the groove."
+NF-RV-009,2026-08-19,review,NF-BTL-32,2,The flip lid leaks if the bottle is not upright. Not usable in a backpack at all.
+NF-RV-010,2026-08-23,review,NF-BTL-32,1,A leak from the lid seal ruined a notebook in my bag. The gasket is far too thin.
+NF-TK-011,2026-08-26,ticket,NF-BTL-20,,"Customer reports the lid seal leaks when the bottle lies flat, asking for a gasket replacement."
+NF-RV-012,2026-08-03,review,NF-BTL-32,2,The powder coat chipped the first time it fell over on a tile floor.
+NF-RV-013,2026-08-06,review,NF-TUMB-16,2,Paint chipped at the base within a week of completely normal desk use.
+NF-RV-014,2026-08-08,review,NF-BTL-20,1,The finish chips easily and the coating flakes off around the lip.
+NF-RV-015,2026-08-12,review,NF-TUMB-16,2,Two chips in the paint after one trip. The finish is much softer than it looks.
+NF-RV-016,2026-08-16,review,NF-BTL-32,1,Chipped paint after a short drop from a desk. The coating quality is poor for the price.
+NF-TK-017,2026-08-17,ticket,NF-BTL-32,,"Customer reports paint chipping and the coating flaking at the base, wants a replacement."
+NF-RV-018,2026-08-20,review,NF-MUG-12,3,Beautiful color but the finish scratches and chips almost immediately.
+NF-RV-019,2026-08-24,review,NF-BTL-20,2,The coating chipped on the bottom edge and it has started to rust slightly there.
+NF-TK-020,2026-08-27,ticket,NF-TUMB-16,,Customer sent photos of chipped powder coat on the base after two weeks of use.
+NF-RV-021,2026-08-01,review,NF-BTL-32,2,Does not fit in my car cup holder. The base is far too wide.
+NF-RV-022,2026-08-07,review,NF-BTL-32,3,"Check the base diameter before buying, it will not fit a standard car cup holder."
+NF-RV-023,2026-08-10,review,NF-BTL-32,2,"Too wide for the cup holder in my truck, I had to leave it on the seat."
+NF-RV-024,2026-08-13,review,NF-BTL-32,2,The listing should state the base diameter. It does not fit any cup holder I own.
+NF-RV-025,2026-08-21,review,NF-BTL-20,3,Bought it for commuting and it does not fit the car cup holder at all.
+NF-RV-026,2026-08-22,review,NF-BTL-32,2,"Fits nothing. Cup holder, bike cage or bag pocket, the base is simply too wide."
+NF-TK-027,2026-08-25,ticket,NF-BTL-32,,Customer asking for base dimensions because the bottle does not fit their car cup holder.
+NF-RV-028,2026-08-28,review,NF-BTL-32,3,Expected it to fit a standard cup holder like the photo suggested. The base is wider.
+NF-RV-029,2026-08-02,review,NF-TUMB-16,3,The color is nothing like the photos. Ordered sage and received a grey green.
+NF-RV-030,2026-08-06,review,NF-BTL-32,2,"The photo shows a deep navy, the actual color is much lighter and duller."
+NF-RV-031,2026-08-11,review,NF-MUG-12,3,The color on the listing image is far more saturated than the real product.
+NF-RV-032,2026-08-15,review,NF-TUMB-16,2,"The shade is different from the picture, more olive than the green advertised."
+NF-RV-033,2026-08-18,review,NF-BTL-20,3,Lovely bottle but the color does not match the listing photo at all.
+NF-TK-034,2026-08-22,ticket,NF-TUMB-16,,Customer says the color differs from the product photo and would like an exchange.
+NF-RV-035,2026-08-26,review,NF-MUG-12,2,Received a completely different shade than the image showed. Expected the brighter blue.
+NF-RV-036,2026-08-04,review,NF-BAG-SLING,2,Arrived eleven days late with no tracking updates for most of that time.
+NF-RV-037,2026-08-08,review,NF-TUMB-16,2,Shipping took two weeks and the box arrived crushed on one corner.
+NF-RV-038,2026-08-12,review,NF-BTL-32,3,The package was delivered to the wrong address and took another week to sort out.
+NF-RV-039,2026-08-16,review,NF-TUMB-16,2,The box arrived dented and the tumbler inside was dented in the same place.
+NF-TK-040,2026-08-19,ticket,NF-BTL-20,,"Order delivered late, carrier tracking stalled for six days with no scan."
+NF-RV-041,2026-08-23,review,NF-BAG-SLING,3,"Delivery was delayed twice. The product is fine, the shipping was not."
+NF-TK-042,2026-08-24,ticket,NF-TUMB-16,,"Package arrived damaged, carton crushed in transit, customer requesting a replacement."
+NF-RV-043,2026-08-27,review,NF-BTL-32,2,Ordered on the third and it arrived on the nineteenth with no shipping notification.
+NF-RV-044,2026-08-05,review,NF-LID-STR,1,Emailed support twice about a replacement lid and never got a reply.
+NF-RV-045,2026-08-09,review,NF-BTL-32,1,Support took nine days to respond and then asked for the order number I had already sent.
+NF-RV-046,2026-08-14,review,NF-BTL-20,1,"The warranty claim was ignored. Two emails to support, no response either time."
+NF-TK-047,2026-08-17,ticket,NF-BTL-32,,"Customer escalating, no response to their replacement request after eight days."
+NF-RV-048,2026-08-20,review,NF-TUMB-16,2,Customer service was unhelpful about the warranty on a chipped tumbler.
+NF-RV-049,2026-08-25,review,NF-LID-STR,3,"Support finally replied and sent a replacement lid, but it took three emails to get there."
+NF-TK-050,2026-08-28,ticket,NF-BTL-20,,Refund requested after support did not respond to the original return request.
+NF-RV-051,2026-08-03,review,NF-BTL-20,3,Too expensive for what it is. A cheaper bottle does the same job just as well.
+NF-RV-052,2026-08-10,review,NF-LID-STR,2,Not worth the price given the lid problems I have had.
+NF-RV-053,2026-08-13,review,NF-MUG-12,3,The price is premium but the quality is not premium.
+NF-RV-054,2026-08-21,review,NF-TUMB-16,3,"Good tumbler, but the price feels high compared to other brands I have owned."
+NF-RV-055,2026-08-26,review,NF-BTL-32,3,Expensive for a steel bottle. I expected more for the money at this price.
+NF-TK-056,2026-08-29,ticket,NF-BTL-32,,Customer asking for a price adjustment after seeing the sale price a day later.
+NF-RV-057,2026-08-07,review,NF-LID-STR,2,Impossible to clean the straw without buying the separate brush.
+NF-RV-058,2026-08-11,review,NF-BTL-32,2,The bottle smells of plastic after a week even with careful washing.
+NF-RV-059,2026-08-15,review,NF-TUMB-16,2,Not dishwasher safe despite what I assumed. The finish dulled in one cycle.
+NF-RV-060,2026-08-19,review,NF-LID-STR,1,The straw holds a smell and cannot be cleaned properly with any brush.
+NF-TK-061,2026-08-23,ticket,NF-LID-STR,,"Customer asking how to clean the straw assembly, reports a lingering smell."
+NF-RV-062,2026-08-27,review,NF-BTL-20,2,Cleaning the lid is a chore. The gasket has to come out and never seats right again.
+NF-RV-063,2026-08-29,review,NF-TUMB-16,1,The dishwasher ruined the coating. The listing does not say hand wash only anywhere.
+NF-RV-064,2026-08-02,review,NF-BTL-32,5,Keeps ice for two days. Exactly what I wanted.
+NF-RV-065,2026-08-05,review,NF-BTL-32,5,"Beautiful bottle, drinks stay cold all day on site."
+NF-RV-066,2026-08-08,review,NF-MUG-12,5,Perfect size for my desk. Very happy with it.
+NF-RV-067,2026-08-12,review,NF-BAG-SLING,4,"Sturdy, well made, and the handle is comfortable to carry."
+NF-RV-068,2026-08-14,review,NF-TUMB-16,5,Best tumbler I have owned. Sits nicely in my hand.
+NF-RV-069,2026-08-18,review,NF-BTL-20,5,Bought a second one as a gift. Recommended without reservation.
+NF-RV-070,2026-08-20,review,NF-BTL-32,5,"Excellent insulation, still cold after a long hike in the sun."
+NF-RV-071,2026-08-24,review,NF-MUG-12,4,Holds temperature well and looks sharp on a desk.
+NF-TK-072,2026-08-26,ticket,NF-LID-STR,,Customer asking whether a spare straw is available to purchase separately.
+NF-RV-073,2026-08-28,review,NF-TUMB-16,5,Love the matte finish and the weight of it in the hand.
+NF-RV-074,2026-08-30,review,NF-BAG-SLING,4,Roomy enough for a laptop and a bottle. Straps are comfortable.
+NF-RV-075,2026-08-30,review,NF-MUG-12,5,Lid seals well on this one and it fits my hand nicely.
+NF-RV-076,2026-08-01,review,NF-BTL-32,5,Holds ice overnight in a hot car. I refill it and the cubes are still there.
+NF-RV-077,2026-08-03,review,NF-BTL-32,5,Second season with mine and it still looks new. Worth every penny.
+NF-RV-078,2026-08-04,review,NF-BTL-20,5,The right size for my bag and it never sweats on paperwork.
+NF-RV-079,2026-08-06,review,NF-TUMB-16,4,Keeps coffee hot through a long morning. Solid build.
+NF-RV-080,2026-08-07,review,NF-MUG-12,5,The handle is well balanced and the mug feels substantial.
+NF-RV-081,2026-08-09,review,NF-BTL-32,4,Wide mouth makes it easy to add ice. Very pleased overall.
+NF-RV-082,2026-08-10,review,NF-BAG-SLING,5,"Carries a laptop, a bottle and a jacket without feeling bulky."
+NF-RV-083,2026-08-11,review,NF-BTL-20,5,Bought two for the family and both have been flawless so far.
+NF-RV-084,2026-08-13,review,NF-TUMB-16,5,Sits perfectly on my desk and keeps tea drinkable for hours.
+NF-RV-085,2026-08-15,review,NF-BTL-32,4,Solid piece of kit. The weight feels reassuring rather than heavy.
+NF-RV-086,2026-08-16,review,NF-MUG-12,5,Exactly as pictured and the insulation is genuinely impressive.
+NF-RV-087,2026-08-17,review,NF-BTL-32,5,Took it up a mountain in August and the water was still cold at the summit.
+NF-RV-088,2026-08-19,review,NF-BAG-SLING,4,Well stitched and the zips run smoothly. No complaints.
+NF-RV-089,2026-08-21,review,NF-BTL-20,5,My daily driver for a year now. Nothing has gone wrong with it.
+NF-RV-090,2026-08-22,review,NF-TUMB-16,4,"Good weight, good balance, and it survives being knocked about in a van."
+NF-RV-091,2026-08-23,review,NF-MUG-12,5,A gift that landed well. My father uses it every single morning.
+NF-RV-092,2026-08-24,review,NF-BTL-32,5,Genuinely keeps drinks cold for a full shift outdoors.
+NF-RV-093,2026-08-25,review,NF-BTL-20,4,"Simple, sturdy, does the job without fuss."
+NF-RV-094,2026-08-26,review,NF-BAG-SLING,5,Comfortable across the chest and the buckle has not slipped once.
+NF-RV-095,2026-08-27,review,NF-TUMB-16,5,"Fits under my coffee machine, which most tumblers do not."
+NF-RV-096,2026-08-28,review,NF-BTL-32,4,Happy with it. Insulation is as good as anything twice the price.
+NF-RV-097,2026-08-29,review,NF-MUG-12,5,Warm hands on a cold site. Exactly the mug I was after.
+NF-RV-098,2026-08-30,review,NF-BTL-20,5,No complaints at all after three months of daily use.
+NF-RV-099,2026-08-31,review,NF-BAG-SLING,4,"Handy little bag, and it survived a rainy commute untroubled."
+NF-RV-100,2026-08-31,review,NF-BTL-32,5,Third one in the house. They all still seal perfectly.

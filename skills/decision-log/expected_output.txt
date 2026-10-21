@@ -1,0 +1,231 @@
+=== 1. Weekly scheduled run, Fri Oct 9 (first run, empty log): ask for the window, then stage the report ===
+{
+  "from": "2026-10-05",
+  "to": "2026-10-09",
+  "cadence": "weekly",
+  "period_key": "weekly:2026-10-05..2026-10-09",
+  "last_posted": null,
+  "already_posted": null,
+  "incomplete_notice_posted": null,
+  "pending": []
+}
+## Decision log — Mon Oct 5 to Fri Oct 9, 2026
+As of Fri Oct 9, 2026 16:00 UTC-07:00 · scheduled weekly run
+
+**3 new decisions · 1 without an owner · 1 open proposal**
+
+### New decisions (3)
+1. **Annual plans get 15% off list price; monthly plans stay at list price** · pricing · `dl-5fafbb740f`
+    - Decided Mon Oct 5 in [Pricing council](https://notes.granola.ai/d/sample-pc1005) by Dana Ortiz · owner: Sam Kim
+    - “Okay, decided\: fifteen percent off for annual, monthly stays at list. Sam, you own updating the price book.” — transcript
+    - Why: Finance can live with 15%; 20% was debated and dropped.
+    - Rejected: 20% off annual plans
+    - Repeated: Thu Oct 8 in [Sales standup](https://notes.granola.ai/d/sample-ss1008)
+2. **Accounts above \$50k ARR get a named CSM from Nov 1** · customer-success · `dl-81a703c67c`
+    - Decided Tue Oct 6 in [CS leadership weekly](https://notes.granola.ai/d/sample-cs1006) by Priya Raman · owner: none named ⚠️
+    - “So we're agreed\: anything over fifty k ARR gets a named CSM from November first.” — transcript
+    - Why: Churn above \$50k ARR was double the average last quarter.
+    - Rejected: Keep one pooled CSM team
+    - Revisit: Tue Dec 15
+3. **Close the books on business day 5 instead of day 8, starting with October** · finance · `dl-648475149f`
+    - Decided Thu Oct 8 in [Month-end close review](https://notes.granola.ai/d/sample-fin1008) by Mara Quinn · owner: Mara Quinn
+    - “Decision\: we close on business day five from October. Let's look again on the fifteenth, after the first fast close.” — transcript
+    - Why: The board pack is due on day 7, so day 8 is too late.
+    - Rejected: Keep closing on day 8
+    - Revisit: Thu Oct 15
+
+### Needs attention
+**No owner (1)**
+- `dl-81a703c67c` “Accounts above \$50k ARR get a named CSM from Nov 1” (decided Tue Oct 6 in [CS leadership weekly](https://notes.granola.ai/d/sample-cs1006)). Reply “owner of dl-81a703c67c is …”.
+
+### Open proposals (1): discussed, not decided
+1. **Replace the free tier with a 14-day trial** · pricing · `dl-20a4d4a6da` · new
+    - Proposed Wed Oct 7 in [GTM sync](https://notes.granola.ai/d/sample-gtm1007) by Leo Fischer
+    - “Leo proposed replacing the free tier with a 14-day trial; to be discussed with finance.” — meeting notes
+
+A proposal stays here until a later meeting decides it (logged with supersedes) or you reply that it was decided; it is never promoted on its own.
+
+### Coverage
+- Window: Mon Oct 5 to Fri Oct 9, 2026 (weekly) · Source: Granola · Scope: all meetings this account can read
+- Meetings: 5 meetings · notes read 5 of 5 · transcripts read 3, denied 1 (GTM sync, Wed Oct 7), not requested 1.
+- Extracted: 4 decisions and 1 proposal · 4 new to the log · 1 repeat linked · 0 already logged · quotes checked against meeting text in the bundle: 5 of 5.
+- Log: 3 decisions (3 active, 0 superseded) · 1 open proposal · 0 dismissed.
+
+Period key: `weekly:2026-10-05..2026-10-09` · after posting, confirm it.
+pending: post the report above, then run --confirm-posted weekly:2026-10-05..2026-10-09
+
+=== 2. The schedule fires again before the post is confirmed: stops, posts nothing ===
+pending: a report for weekly:2026-10-05..2026-10-09 was produced at 2026-10-09T16:00:00-07:00 but not confirmed posted. If it was posted, run --confirm-posted weekly:2026-10-05..2026-10-09. If posting failed (or you are not sure, check the destination first), rerun with --resume-pending to print it again, post it, then confirm.
+(exit 4)
+
+=== 3. The agent posted the report, then confirms it ===
+Confirmed posted: weekly:2026-10-05..2026-10-09 (4 entries marked reported).
+
+=== 4. The schedule fires again at 4:30pm: --next-window flags this week as already posted; the run posts nothing ===
+{
+  "from": "2026-10-09",
+  "to": "2026-10-09",
+  "cadence": "weekly",
+  "period_key": "weekly:2026-10-09..2026-10-09",
+  "last_posted": {
+    "period_key": "weekly:2026-10-05..2026-10-09",
+    "as_of": "2026-10-09T16:00:00-07:00"
+  },
+  "already_posted": {
+    "period_key": "weekly:2026-10-05..2026-10-09",
+    "as_of": "2026-10-09T16:00:00-07:00"
+  },
+  "incomplete_notice_posted": null,
+  "pending": []
+}
+Skipped: already posted weekly:2026-10-05..2026-10-09 (as of 2026-10-09T16:00:00-07:00), the weekly report for the week of Mon Oct 5; not posting weekly:2026-10-09..2026-10-09 as well.
+
+=== 5. Next weekly run, Fri Oct 16: the window starts where the last posted report ended ===
+{
+  "from": "2026-10-09",
+  "to": "2026-10-16",
+  "cadence": "weekly",
+  "period_key": "weekly:2026-10-09..2026-10-16",
+  "last_posted": {
+    "period_key": "weekly:2026-10-05..2026-10-09",
+    "as_of": "2026-10-09T16:00:00-07:00"
+  },
+  "already_posted": null,
+  "incomplete_notice_posted": null,
+  "pending": []
+}
+
+=== 6. Fri Oct 16 report: a reversal, a possible conflict, a missing owner and a passed revisit date ===
+## Decision log — Fri Oct 9 to Fri Oct 16, 2026
+As of Fri Oct 16, 2026 16:00 UTC-07:00 · scheduled weekly run
+
+**2 new decisions · 1 reversal · 1 possible conflict · 1 without an owner · 1 revisit date passed · 2 open proposals**
+
+### New decisions (2)
+1. **Annual discount drops to 10%; 15% only with a 3-year prepay** · pricing · `dl-4d218be690`
+    - Decided Tue Oct 13 in [Pricing council](https://notes.granola.ai/d/sample-pc1013) by Dana Ortiz · owner: Sam Kim
+    - “We're changing it\: annual goes to ten percent off, and fifteen percent is only for a three-year prepay.” — transcript
+    - Why: Finance re-ran the model\: 15% is margin-negative at current CAC.
+    - Rejected: Keep 15% off for every annual plan
+    - ⚠️ Reverses `dl-5fafbb740f` “Annual plans get 15% off list price; monthly plans stay at list price” (decided Mon Oct 5 in [Pricing council](https://notes.granola.ai/d/sample-pc1005))
+2. **Named CSM threshold moves to \$75k ARR** · customer-success · `dl-5a9f6d4a66`
+    - Decided Wed Oct 14 in [CS leadership weekly](https://notes.granola.ai/d/sample-cs1014) by Priya Raman · owner: none named ⚠️
+    - “Fine, the named CSM line is seventy-five k ARR now.” — transcript
+    - Why: Not enough CSM headcount for every account over \$50k.
+    - ⚠️ Possible conflict with `dl-81a703c67c` “Accounts above \$50k ARR get a named CSM from Nov 1” (decided Tue Oct 6 in [CS leadership weekly](https://notes.granola.ai/d/sample-cs1006)) · same topic `cs/named-csm-threshold`
+
+### Needs attention
+**Reversals (1)**
+- `dl-4d218be690` “Annual discount drops to 10%; 15% only with a 3-year prepay” (decided Tue Oct 13 in [Pricing council](https://notes.granola.ai/d/sample-pc1013)) reverses `dl-5fafbb740f` “Annual plans get 15% off list price; monthly plans stay at list price” (decided Mon Oct 5 in [Pricing council](https://notes.granola.ai/d/sample-pc1005))
+
+**Possible conflicts (1): same topic, not linked**
+- `dl-5a9f6d4a66` “Named CSM threshold moves to \$75k ARR” (decided Wed Oct 14 in [CS leadership weekly](https://notes.granola.ai/d/sample-cs1014)) vs `dl-81a703c67c` “Accounts above \$50k ARR get a named CSM from Nov 1” (decided Tue Oct 6 in [CS leadership weekly](https://notes.granola.ai/d/sample-cs1006)) · topic `cs/named-csm-threshold`. Reply “dl-5a9f6d4a66 supersedes dl-81a703c67c” or “both stand”.
+
+**No owner (1)**
+- `dl-5a9f6d4a66` “Named CSM threshold moves to \$75k ARR” (decided Wed Oct 14 in [CS leadership weekly](https://notes.granola.ai/d/sample-cs1014)). Reply “owner of dl-5a9f6d4a66 is …”.
+
+**Revisit date passed (1)**
+- `dl-648475149f` “Close the books on business day 5 instead of day 8, starting with October” (decided Thu Oct 8 in [Month-end close review](https://notes.granola.ai/d/sample-fin1008)) · revisit was due Thu Oct 15.
+
+### Open proposals (2): discussed, not decided
+1. **Replace the free tier with a 14-day trial** · pricing · `dl-20a4d4a6da`
+    - Proposed Wed Oct 7 in [GTM sync](https://notes.granola.ai/d/sample-gtm1007) by Leo Fischer
+    - “Leo proposed replacing the free tier with a 14-day trial; to be discussed with finance.” — meeting notes
+2. **Offer agencies a 20% referral fee for their first year** · partnerships · `dl-4eeeaecc81` · new
+    - Proposed Thu Oct 15 in [Partner program sync](https://notes.granola.ai/d/sample-pt1015) by Leo Fischer
+    - “What if we offered agencies a twenty percent referral fee for the first year?” — transcript
+
+A proposal stays here until a later meeting decides it (logged with supersedes) or you reply that it was decided; it is never promoted on its own.
+
+### Coverage
+- Window: Fri Oct 9 to Fri Oct 16, 2026 (weekly) · Source: Granola · Scope: all meetings this account can read
+- Meetings: 3 meetings · notes read 3 of 3 · transcripts read 3.
+- Extracted: 2 decisions and 1 proposal · 3 new to the log · 0 repeats linked · 0 already logged · quotes checked against meeting text in the bundle: 3 of 3.
+- Replies: 1 applied.
+- Log: 5 decisions (4 active, 1 superseded) · 2 open proposals · 0 dismissed.
+
+Period key: `weekly:2026-10-09..2026-10-16` · after posting, confirm it.
+pending: post the report above, then run --confirm-posted weekly:2026-10-09..2026-10-16
+Confirmed posted: weekly:2026-10-09..2026-10-16 (3 entries marked reported).
+
+=== 7. Search: "when did we decide the annual discount?" ===
+## Decision log search: “when did we decide the annual discount?”
+2 matches in a log of 5 decisions (4 active, 1 superseded) · 2 open proposals · 0 dismissed. Logged entries date from Mon Oct 5, 2026 to Thu Oct 15, 2026. Answer only from these entries, citing their meetings.
+
+1. **Annual discount drops to 10%; 15% only with a 3-year prepay** · pricing · `dl-4d218be690`
+    - Decided Tue Oct 13 in [Pricing council](https://notes.granola.ai/d/sample-pc1013) by Dana Ortiz · owner: Sam Kim
+    - “We're changing it\: annual goes to ten percent off, and fifteen percent is only for a three-year prepay.” — transcript
+    - Why: Finance re-ran the model\: 15% is margin-negative at current CAC.
+    - Rejected: Keep 15% off for every annual plan
+    - ⚠️ Reverses `dl-5fafbb740f` “Annual plans get 15% off list price; monthly plans stay at list price” (decided Mon Oct 5 in [Pricing council](https://notes.granola.ai/d/sample-pc1005))
+    - Topic: `pricing/annual-discount`
+2. **Annual plans get 15% off list price; monthly plans stay at list price** · pricing · `dl-5fafbb740f` · superseded
+    - Decided Mon Oct 5 in [Pricing council](https://notes.granola.ai/d/sample-pc1005) by Dana Ortiz · owner: Sam Kim
+    - “Okay, decided\: fifteen percent off for annual, monthly stays at list. Sam, you own updating the price book.” — transcript
+    - Why: Finance can live with 15%; 20% was debated and dropped.
+    - Rejected: 20% off annual plans
+    - Repeated: Thu Oct 8 in [Sales standup](https://notes.granola.ai/d/sample-ss1008)
+    - Superseded by `dl-4d218be690` “Annual discount drops to 10%; 15% only with a 3-year prepay” (decided Tue Oct 13 in [Pricing council](https://notes.granola.ai/d/sample-pc1013))
+    - Topic: `pricing/annual-discount`
+
+=== 8. The full log, for the Type doc or markdown file you keep ===
+# Decision log
+As of Fri Oct 16, 2026 16:05 UTC-07:00 · 5 decisions (4 active, 1 superseded) · 2 open proposals · 0 dismissed · last updated Fri Oct 16, 2026 16:00 UTC-07:00
+**Needs attention: 1 possible conflict · 1 without an owner · 1 revisit date passed**
+
+## Active decisions (4)
+
+### customer-success
+1. **Accounts above \$50k ARR get a named CSM from Nov 1** · customer-success · `dl-81a703c67c`
+    - Decided Tue Oct 6 in [CS leadership weekly](https://notes.granola.ai/d/sample-cs1006) by Priya Raman · owner: Priya Raman (set by you Mon Oct 12)
+    - “So we're agreed\: anything over fifty k ARR gets a named CSM from November first.” — transcript
+    - Why: Churn above \$50k ARR was double the average last quarter.
+    - Rejected: Keep one pooled CSM team
+    - Revisit: Tue Dec 15
+    - Topic: `cs/named-csm-threshold`
+2. **Named CSM threshold moves to \$75k ARR** · customer-success · `dl-5a9f6d4a66`
+    - Decided Wed Oct 14 in [CS leadership weekly](https://notes.granola.ai/d/sample-cs1014) by Priya Raman · owner: none named ⚠️
+    - “Fine, the named CSM line is seventy-five k ARR now.” — transcript
+    - Why: Not enough CSM headcount for every account over \$50k.
+    - ⚠️ Possible conflict with `dl-81a703c67c` “Accounts above \$50k ARR get a named CSM from Nov 1” (decided Tue Oct 6 in [CS leadership weekly](https://notes.granola.ai/d/sample-cs1006)) · same topic `cs/named-csm-threshold`
+    - Topic: `cs/named-csm-threshold`
+
+### finance
+1. **Close the books on business day 5 instead of day 8, starting with October** · finance · `dl-648475149f`
+    - Decided Thu Oct 8 in [Month-end close review](https://notes.granola.ai/d/sample-fin1008) by Mara Quinn · owner: Mara Quinn
+    - “Decision\: we close on business day five from October. Let's look again on the fifteenth, after the first fast close.” — transcript
+    - Why: The board pack is due on day 7, so day 8 is too late.
+    - Rejected: Keep closing on day 8
+    - Revisit: Thu Oct 15 ⚠️ date passed
+    - Topic: `finance/close-calendar`
+
+### pricing
+1. **Annual discount drops to 10%; 15% only with a 3-year prepay** · pricing · `dl-4d218be690`
+    - Decided Tue Oct 13 in [Pricing council](https://notes.granola.ai/d/sample-pc1013) by Dana Ortiz · owner: Sam Kim
+    - “We're changing it\: annual goes to ten percent off, and fifteen percent is only for a three-year prepay.” — transcript
+    - Why: Finance re-ran the model\: 15% is margin-negative at current CAC.
+    - Rejected: Keep 15% off for every annual plan
+    - ⚠️ Reverses `dl-5fafbb740f` “Annual plans get 15% off list price; monthly plans stay at list price” (decided Mon Oct 5 in [Pricing council](https://notes.granola.ai/d/sample-pc1005))
+    - Topic: `pricing/annual-discount`
+
+## Open proposals (2): discussed, not decided
+1. **Offer agencies a 20% referral fee for their first year** · partnerships · `dl-4eeeaecc81`
+    - Proposed Thu Oct 15 in [Partner program sync](https://notes.granola.ai/d/sample-pt1015) by Leo Fischer
+    - “What if we offered agencies a twenty percent referral fee for the first year?” — transcript
+    - Topic: `partners/referral-fee`
+2. **Replace the free tier with a 14-day trial** · pricing · `dl-20a4d4a6da`
+    - Proposed Wed Oct 7 in [GTM sync](https://notes.granola.ai/d/sample-gtm1007) by Leo Fischer
+    - “Leo proposed replacing the free tier with a 14-day trial; to be discussed with finance.” — meeting notes
+    - Topic: `pricing/free-tier`
+
+## Superseded and closed (1)
+1. **Annual plans get 15% off list price; monthly plans stay at list price** · pricing · `dl-5fafbb740f` · superseded
+    - Decided Mon Oct 5 in [Pricing council](https://notes.granola.ai/d/sample-pc1005) by Dana Ortiz · owner: Sam Kim
+    - “Okay, decided\: fifteen percent off for annual, monthly stays at list. Sam, you own updating the price book.” — transcript
+    - Why: Finance can live with 15%; 20% was debated and dropped.
+    - Rejected: 20% off annual plans
+    - Repeated: Thu Oct 8 in [Sales standup](https://notes.granola.ai/d/sample-ss1008)
+    - Superseded by `dl-4d218be690` “Annual discount drops to 10%; 15% only with a 3-year prepay” (decided Tue Oct 13 in [Pricing council](https://notes.granola.ai/d/sample-pc1013))
+    - Topic: `pricing/annual-discount`
+
+Generated from the decision log file. Edits made to this page are not read back; reply with changes instead (dismiss, owner, revisit date, confirm a proposal, resolve a conflict).

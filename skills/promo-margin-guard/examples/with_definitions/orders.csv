@@ -1,0 +1,11 @@
+order_id,order_date,promo_code,gross_revenue,discount_amount,shipping_charged,shipping_cost,payment_fee,refund_amount,refund_date,currency,tags,financial_status,cancelled
+WB-01,2026-08-21T09:15:00-04:00,FLASH40,100.00,40.00,0.00,7.20,2.04,0.00,,USD,,paid,false
+WB-02,2026-08-22T03:30:00Z,FLASH40,198.00,79.20,0.00,8.40,3.75,118.80,2026-09-10T15:00:00-04:00,USD,,refunded,false
+WB-03,2026-08-22T01:30:00Z,SPRING20,84.00,16.80,0.00,7.20,2.25,0.00,,CAD,,paid,false
+WB-04,2026-08-23,SPRING20,58.00,11.60,5.95,6.50,1.82,0.00,,USD,,paid,false
+WB-05,2026-08-23,,42.00,0.00,5.95,6.10,1.69,0.00,,USD,,paid,false
+WB-06,2026-08-24,FLASH40,42.00,16.80,0.00,6.10,1.03,0.00,,USD,test,paid,false
+WB-07,2026-08-24,SPRING20,198.00,39.60,0.00,8.40,4.90,0.00,,USD,,paid,true
+WB-08,2026-08-25,FLASH40,58.00,23.20,0.00,6.50,0.00,0.00,,USD,,voided,false
+WB-09,2026-08-25,STAFF100,42.00,42.00,0.00,6.10,0.00,0.00,,USD,Internal,paid,false
+WB-10,2026-08-26,SPRING20,42.00,8.40,0.00,6.10,1.27,0.00,,USD,,paid,false

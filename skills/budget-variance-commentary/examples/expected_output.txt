@@ -1,0 +1,136 @@
+### 1. August 2026, material = 5,000 and 10% of budget, tied to the P&L
+BUDGET VARIANCE AND COMMENTARY
+==============================================================================
+Period            : August 2026 (as of 2026-08-31)
+Lines read        : 22 across 7 department(s)
+Materiality       : |variance| >= 5,000.00 and |variance %| >= 10.0%
+
+P&L SUMMARY
+------------------------------------------------------------------------------
+                          actual       budget    variance   var %
+------------------  ------------  -----------  ----------  ------
+Revenue               524,800.00   522,000.00    2,800.00    0.5%
+Cost of revenue        95,320.00    81,100.00   14,220.00   17.5%
+Operating expenses  1,069,000.00   987,000.00   82,000.00    8.3%
+Operating income     -639,520.00  -546,100.00  -93,420.00  -17.1%
+
+BY DEPARTMENT
+------------------------------------------------------------------------------
+department        lines      actual      budget   variance  var %  op income effect  direction
+----------------  -----  ----------  ----------  ---------  -----  ----------------  ------------
+Cost of Revenue       3   95,320.00   81,100.00  14,220.00  17.5%        -14,220.00  unfavourable
+Customer Success      3  136,900.00  122,500.00  14,400.00  11.8%        -14,400.00  unfavourable
+Engineering           3  383,300.00  383,000.00     300.00   0.1%           -300.00  unfavourable
+G&A                   5  164,300.00  126,500.00  37,800.00  29.9%        -37,800.00  unfavourable
+Marketing             3  171,900.00  170,000.00   1,900.00   1.1%         -1,900.00  unfavourable
+Revenue               2  524,800.00  522,000.00   2,800.00   0.5%          2,800.00  favourable
+Sales                 3  212,600.00  185,000.00  27,600.00  14.9%        -27,600.00  unfavourable
+
+MATERIAL VARIANCES (11 line(s))
+------------------------------------------------------------------------------
+department        account  name                               actual      budget    variance   var %  f/u  class         basis
+----------------  -------  -----------------------------  ----------  ----------  ----------  ------  ---  ------------  ------------------
+Marketing         6200     Paid media                     128,400.00   95,000.00   33,400.00   35.2%  U    volume        unit data
+Marketing         6210     Events and sponsorships         12,000.00   45,000.00  -33,000.00  -73.3%  F    timing        year-to-date data
+G&A               6810     Professional fees               41,000.00   18,000.00   23,000.00  127.8%  U    timing        stated in the file
+Sales             6000     Salaries and commissions       182,400.00  165,000.00   17,400.00   10.5%  U    volume        unit data
+Engineering       6410     Contractors                     44,500.00   28,000.00   16,500.00   58.9%  U    timing        year-to-date data
+Revenue           4100     Professional services revenue   38,500.00   52,000.00  -13,500.00  -26.0%  U    unclassified  year-to-date data
+Cost of Revenue   5000     Hosting and infrastructure      71,400.00   58,000.00   13,400.00   23.1%  U    permanent     year-to-date data
+G&A               6840     Bad debt expense                12,400.00        0.00   12,400.00     n/m  U    permanent     year-to-date data
+Customer Success  6620     Customer education              22,000.00   12,000.00   10,000.00   83.3%  U    unclassified  year-to-date data
+Sales             6010     Travel and entertainment        21,800.00   12,000.00    9,800.00   81.7%  U    timing        year-to-date data
+Customer Success  6610     Onboarding services             18,900.00   12,500.00    6,400.00   51.2%  U    permanent     prior period data
+
+Classification mix: volume 2, timing 4, permanent 3, unclassified 2
+
+IMMATERIAL LINES (aggregated, not dropped)
+------------------------------------------------------------------------------
+11 line(s) below threshold, net variance 3,220.00, operating income effect 29,380.00.
+  largest: Engineering 6400 Salaries -18,000.00 (-5.5%)
+  largest: Revenue 4000 Subscription revenue 16,300.00 (3.5%)
+  largest: Customer Success 6600 Salaries -2,000.00 (-2.0%)
+
+RECONCILIATION
+------------------------------------------------------------------------------
+check                                                            amount
+----------------------------------------------------------  -----------
+operating income effect of material lines                   -122,800.00
+operating income effect of immaterial lines                   29,380.00
+sum of all line effects                                      -93,420.00
+operating income variance from the P&L summary               -93,420.00
+residual (must be 0.00)                                            0.00
+operating income variance per --control-operating-variance   -93,420.00
+control residual (must be 0.00)                                    0.00
+
+DRAFT COMMENTARY (material lines only -- review before issuing)
+------------------------------------------------------------------------------
+1. [VOLUME] Marketing / 6200
+   Paid media (Marketing) came in at 128,400.00 against a budget of 95,000.00 for August 2026, unfavourable by 33,400.00 (35.2% of budget). The movement is volume-driven: marketing qualified leads 4,280 vs 3,100 plan (38.1%); at plan rate that is 36,161.29 of the variance, leaving -2,761.29 of rate/mix. Hold the plan rate and flex the forecast with volume rather than repricing the line. R. Okafor to confirm before the pack is issued.
+
+2. [TIMING] Marketing / 6210
+   Events and sponsorships (Marketing) came in at 12,000.00 against a budget of 45,000.00 for August 2026, favourable by 33,000.00 (73.3% of budget). This reads as timing: period variance -33,000.00 but year to date only -15,000.00 -- the swing is not carrying through, so it reads as phasing. No change to the full-year expectation is implied; confirm the phasing with the budget owner. R. Okafor to confirm before the pack is issued.
+
+3. [TIMING] G&A / 6810
+   Professional fees (G&A) came in at 41,000.00 against a budget of 18,000.00 for August 2026, unfavourable by 23,000.00 (127.8% of budget). This reads as timing: Audit fieldwork pulled forward from Q4 at the auditor's request. No change to the full-year expectation is implied; confirm the phasing with the budget owner. P. Raman to confirm before the pack is issued.
+
+4. [VOLUME] Sales / 6000
+   Salaries and commissions (Sales) came in at 182,400.00 against a budget of 165,000.00 for August 2026, unfavourable by 17,400.00 (10.5% of budget). The movement is volume-driven: quota-carrying reps 18 vs 16 plan (12.5%); at plan rate that is 20,625.00 of the variance, leaving -3,225.00 of rate/mix. Hold the plan rate and flex the forecast with volume rather than repricing the line. S. Marchetti to confirm before the pack is issued.
+
+5. [TIMING] Engineering / 6410
+   Contractors (Engineering) came in at 44,500.00 against a budget of 28,000.00 for August 2026, unfavourable by 16,500.00 (58.9% of budget). This reads as timing: period variance 16,500.00 but year to date only -44,000.00 -- the swing is not carrying through, so it reads as phasing. No change to the full-year expectation is implied; confirm the phasing with the budget owner. T. Weber to confirm before the pack is issued.
+
+6. [UNCLASSIFIED] Revenue / 4100
+   Professional services revenue (Revenue) came in at 38,500.00 against a budget of 52,000.00 for August 2026, unfavourable by 13,500.00 (26.0% of budget). Cause not determined from the data supplied (year-to-date variance -8,000.00 runs the same way as the period variance -13,500.00 but carries through only 59.3% of it -- above the 50.0% timing threshold and below a full carry-through, so it may be part phasing, part run rate; prior period was 9,000.00, not the same way). Do not assert timing or run rate in the pack until it is confirmed. Preparer note: Two implementations slipped; cause not yet confirmed. D. Alvarez to confirm before the pack is issued.
+
+7. [PERMANENT] Cost of Revenue / 5000
+   Hosting and infrastructure (Cost of Revenue) came in at 71,400.00 against a budget of 58,000.00 for August 2026, unfavourable by 13,400.00 (23.1% of budget). This looks like a permanent change in run rate: year-to-date variance 57,000.00 is at least as large and in the same direction as the period variance 13,400.00; prior period was 11,900.00 the same way. Reforecast the remaining periods at the new level. M. Lin to confirm before the pack is issued.
+
+8. [PERMANENT] G&A / 6840
+   Bad debt expense (G&A) came in at 12,400.00 against a budget of 0.00 for August 2026, unfavourable by 12,400.00 (n/m of budget). This looks like a permanent change in run rate: year-to-date variance 31,900.00 is at least as large and in the same direction as the period variance 12,400.00. Reforecast the remaining periods at the new level. Preparer note: Cobalt Interiors balance written off. P. Raman to confirm before the pack is issued.
+
+9. [UNCLASSIFIED] Customer Success / 6620
+   Customer education (Customer Success) came in at 22,000.00 against a budget of 12,000.00 for August 2026, unfavourable by 10,000.00 (83.3% of budget). Cause not determined from the data supplied (year-to-date variance 7,000.00 runs the same way as the period variance 10,000.00 but carries through only 70.0% of it -- above the 50.0% timing threshold and below a full carry-through, so it may be part phasing, part run rate; prior period was 6,000.00 the same way, which does not settle it). Do not assert timing or run rate in the pack until it is confirmed. A. Bello to confirm before the pack is issued.
+
+10. [TIMING] Sales / 6010
+   Travel and entertainment (Sales) came in at 21,800.00 against a budget of 12,000.00 for August 2026, unfavourable by 9,800.00 (81.7% of budget). This reads as timing: period variance 9,800.00 but year to date only -18,000.00 -- the swing is not carrying through, so it reads as phasing. No change to the full-year expectation is implied; confirm the phasing with the budget owner. S. Marchetti to confirm before the pack is issued.
+
+11. [PERMANENT] Customer Success / 6610
+   Onboarding services (Customer Success) came in at 18,900.00 against a budget of 12,500.00 for August 2026, unfavourable by 6,400.00 (51.2% of budget). This looks like a permanent change in run rate: prior period variance 3,700.00 ran the same way as this period's 6,400.00, with no year-to-date data to contradict it. Reforecast the remaining periods at the new level. A. Bello to confirm before the pack is issued.
+
+VERDICT
+------------------------------------------------------------------------------
+Every line variance is accounted for in the operating income variance. Exit status 0.
+exit status: 0
+
+### 2. Wider net: either threshold is enough (note Engineering salaries appears)
+MATERIAL VARIANCES (11 line(s))
+------------------------------------------------------------------------------
+department        account  name                               actual      budget    variance   var %  f/u  class         basis
+----------------  -------  -----------------------------  ----------  ----------  ----------  ------  ---  ------------  ------------------
+Marketing         6200     Paid media                     128,400.00   95,000.00   33,400.00   35.2%  U    volume        unit data
+Marketing         6210     Events and sponsorships         12,000.00   45,000.00  -33,000.00  -73.3%  F    timing        year-to-date data
+G&A               6810     Professional fees               41,000.00   18,000.00   23,000.00  127.8%  U    timing        stated in the file
+Engineering       6400     Salaries                       312,000.00  330,000.00  -18,000.00   -5.5%  F    permanent     year-to-date data
+Sales             6000     Salaries and commissions       182,400.00  165,000.00   17,400.00   10.5%  U    volume        unit data
+Engineering       6410     Contractors                     44,500.00   28,000.00   16,500.00   58.9%  U    timing        year-to-date data
+Revenue           4000     Subscription revenue           486,300.00  470,000.00   16,300.00    3.5%  F    volume        unit data
+Revenue           4100     Professional services revenue   38,500.00   52,000.00  -13,500.00  -26.0%  U    unclassified  year-to-date data
+Customer Success  6620     Customer education              22,000.00   12,000.00   10,000.00   83.3%  U    unclassified  year-to-date data
+Sales             6010     Travel and entertainment        21,800.00   12,000.00    9,800.00   81.7%  U    timing        year-to-date data
+Customer Success  6610     Onboarding services             18,900.00   12,500.00    6,400.00   51.2%  U    permanent     prior period data
+
+Classification mix: volume 3, timing 4, permanent 2, unclassified 2
+exit status: 0
+
+### 3. Control total from the P&L disagrees with the detail
+VERDICT
+------------------------------------------------------------------------------
+DOES NOT TIE: control residual -13,420.00.
+Check for rows excluded from the export or a department total that is not a sum of its lines.
+Exit status 1.
+exit status: 1
+
+### 4. Bad input is rejected loudly
+error: examples/broken_actuals.csv line 3: column 'account_type' value 'operating expense' is not one of revenue, cogs, opex
+exit status: 2

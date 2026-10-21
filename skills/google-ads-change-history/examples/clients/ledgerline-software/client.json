@@ -1,0 +1,10 @@
+{
+  "name": "Ledgerline Software",
+  "website": "https://ledgerline.example",
+  "industry": "b2b",
+  "accounts": {
+    "google_ads_customer_id": "555-010-2030",
+    "google_ads_login_customer_id": "987-654-3210"
+  },
+  "notes": "Synthetic example profile."
+}

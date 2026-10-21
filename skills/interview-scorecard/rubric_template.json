@@ -1,0 +1,72 @@
+{
+  "_help": "Copy to rubric_<role_id>.json in your hiring folder and fill in with the hiring team BEFORE any interview is scored. 3-10 competencies. Every competency needs a definition and an observable, job-related anchor for each score 1-4. No protected characteristics or proxies (age, background, accent, appearance, school prestige, 'culture fit'): the script rejects them. Keep status 'draft' until the hiring manager approves; then set status 'approved' and approved_by. See rubric-guide.md.",
+  "schema_version": 1,
+  "role_id": "role-id-here",
+  "role_title": "Role title here",
+  "version": "YYYY-MM-DD",
+  "status": "draft",
+  "approved_by": null,
+  "scale_labels": {
+    "1": "Does not meet the bar",
+    "2": "Partly meets the bar",
+    "3": "Meets the bar",
+    "4": "Exceeds the bar"
+  },
+  "competencies": [
+    {
+      "id": "competency-one",
+      "name": "Competency one",
+      "definition": "One sentence: what good looks like in this role, as observable behaviour.",
+      "must_have": true,
+      "anchors": {
+        "1": "What a 1 sounds like: no relevant example, or the example shows the opposite behaviour.",
+        "2": "What a 2 sounds like: a relevant example, but with a named gap.",
+        "3": "What a 3 sounds like: a specific example that shows the behaviour at the level the role needs.",
+        "4": "What a 4 sounds like: as 3, plus a stated, observable step beyond it."
+      }
+    },
+    {
+      "id": "competency-two",
+      "name": "Competency two",
+      "definition": "One sentence: what good looks like in this role, as observable behaviour.",
+      "must_have": false,
+      "anchors": {
+        "1": "Anchor for 1.",
+        "2": "Anchor for 2.",
+        "3": "Anchor for 3.",
+        "4": "Anchor for 4."
+      }
+    },
+    {
+      "id": "competency-three",
+      "name": "Competency three",
+      "definition": "One sentence: what good looks like in this role, as observable behaviour.",
+      "must_have": false,
+      "anchors": {
+        "1": "Anchor for 1.",
+        "2": "Anchor for 2.",
+        "3": "Anchor for 3.",
+        "4": "Anchor for 4."
+      }
+    }
+  ],
+  "interview_plan": [
+    {
+      "stage_id": "stage-one",
+      "stage_name": "Stage one (e.g. hiring manager interview)",
+      "competencies": ["competency-one", "competency-two"],
+      "questions": [
+        {"id": "s1-1", "competency": "competency-one", "text": "Tell me about a time you ..."},
+        {"id": "s1-2", "competency": "competency-two", "text": "Walk me through how you ..."}
+      ]
+    },
+    {
+      "stage_id": "stage-two",
+      "stage_name": "Stage two (e.g. peer interview)",
+      "competencies": ["competency-three"],
+      "questions": [
+        {"id": "s2-1", "competency": "competency-three", "text": "Describe a situation where you ..."}
+      ]
+    }
+  ]
+}

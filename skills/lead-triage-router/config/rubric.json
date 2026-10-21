@@ -1,0 +1,185 @@
+{
+  "fit_weight": 0.6,
+  "intent_weight": 0.4,
+  "fit": {
+    "max_points": 100,
+    "employee_bands": [
+      { "min": 2000, "points": 30, "label": "2,000+ employees" },
+      { "min": 500, "points": 26, "label": "500-1,999 employees" },
+      { "min": 200, "points": 20, "label": "200-499 employees" },
+      { "min": 50, "points": 12, "label": "50-199 employees" },
+      { "min": 10, "points": 6, "label": "10-49 employees" },
+      { "min": 0, "points": 0, "label": "under 10 employees" }
+    ],
+    "revenue_bands": [
+      { "min": 500000000, "points": 20, "label": "revenue $500M+" },
+      { "min": 100000000, "points": 16, "label": "revenue $100M-$499M" },
+      { "min": 25000000, "points": 11, "label": "revenue $25M-$99M" },
+      { "min": 5000000, "points": 6, "label": "revenue $5M-$24M" },
+      { "min": 0, "points": 2, "label": "revenue under $5M" }
+    ],
+    "industry_points": {
+      "Logistics": 20,
+      "Financial Services": 20,
+      "Software": 18,
+      "Manufacturing": 16,
+      "Healthcare": 14,
+      "Retail": 10,
+      "Education": 6,
+      "Nonprofit": 4,
+      "_default": 8
+    },
+    "country_points": {
+      "United States": 10,
+      "Canada": 10,
+      "United Kingdom": 9,
+      "Germany": 8,
+      "France": 8,
+      "Netherlands": 8,
+      "Australia": 7,
+      "_default": 4
+    },
+    "title_bands": [
+      {
+        "keywords": [
+          "chief",
+          "ceo",
+          "cto",
+          "cio",
+          "coo",
+          "cfo",
+          "founder",
+          "owner",
+          "president"
+        ],
+        "points": 20,
+        "label": "executive buyer"
+      },
+      {
+        "keywords": ["vp", "vice president", "svp", "evp", "head of"],
+        "points": 18,
+        "label": "vp / head of function"
+      },
+      { "keywords": ["director"], "points": 14, "label": "director" },
+      { "keywords": ["manager", "lead"], "points": 9, "label": "manager" },
+      {
+        "keywords": [
+          "analyst",
+          "specialist",
+          "coordinator",
+          "associate",
+          "intern"
+        ],
+        "points": 4,
+        "label": "individual contributor"
+      }
+    ],
+    "title_default": { "points": 2, "label": "unclassified title" }
+  },
+  "intent": {
+    "max_points": 100,
+    "signals": [
+      {
+        "field": "demo_requested",
+        "kind": "flag",
+        "points": 40,
+        "label": "requested a demo"
+      },
+      {
+        "field": "trial_started",
+        "kind": "flag",
+        "points": 30,
+        "label": "started a trial"
+      },
+      {
+        "field": "pricing_page_views_30d",
+        "kind": "count",
+        "points_per_unit": 8,
+        "cap": 24,
+        "label": "pricing page views (30d)"
+      },
+      {
+        "field": "content_downloads_30d",
+        "kind": "count",
+        "points_per_unit": 4,
+        "cap": 12,
+        "label": "gated content downloads (30d)"
+      },
+      {
+        "field": "website_sessions_30d",
+        "kind": "count",
+        "points_per_unit": 2,
+        "cap": 12,
+        "label": "website sessions (30d)"
+      },
+      {
+        "field": "webinar_attended",
+        "kind": "flag",
+        "points": 8,
+        "label": "attended a webinar"
+      }
+    ],
+    "recency_bands": [
+      { "max_days": 7, "multiplier": 1.0, "label": "active within 7d" },
+      { "max_days": 30, "multiplier": 0.85, "label": "active within 30d" },
+      { "max_days": 90, "multiplier": 0.55, "label": "active within 90d" },
+      { "max_days": null, "multiplier": 0.25, "label": "no activity in 90d" }
+    ],
+    "missing_recency": {
+      "multiplier": 0.25,
+      "label": "no activity date on record"
+    }
+  },
+  "tiers": [
+    {
+      "name": "A",
+      "min_score": 70,
+      "description": "sales-ready, work immediately"
+    },
+    {
+      "name": "B",
+      "min_score": 50,
+      "description": "qualify before routing to an AE"
+    },
+    { "name": "C", "min_score": 30, "description": "sequence, do not call" },
+    { "name": "D", "min_score": 0, "description": "marketing nurture only" }
+  ],
+  "segments": [
+    { "name": "enterprise", "min_employees": 1000 },
+    { "name": "mid-market", "min_employees": 200 },
+    { "name": "smb", "min_employees": 1 }
+  ],
+  "regions": {
+    "United States": "NA",
+    "Canada": "NA",
+    "Mexico": "NA",
+    "United Kingdom": "EMEA",
+    "Germany": "EMEA",
+    "France": "EMEA",
+    "Netherlands": "EMEA",
+    "Sweden": "EMEA",
+    "Spain": "EMEA",
+    "Australia": "APAC",
+    "Japan": "APAC",
+    "Singapore": "APAC",
+    "India": "APAC",
+    "_default": "INTL"
+  },
+  "disqualifiers": {
+    "free_email_domains": [
+      "gmail.com",
+      "yahoo.com",
+      "hotmail.com",
+      "outlook.com",
+      "icloud.com",
+      "proton.me",
+      "aol.com"
+    ],
+    "blocked_countries": [],
+    "blocked_industries": ["Staffing"],
+    "min_employee_count": 10,
+    "queue": "marketing-nurture",
+    "assignee": "(none)",
+    "sla_hours": 168
+  }
+}

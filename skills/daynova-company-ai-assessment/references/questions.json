@@ -1,0 +1,273 @@
+{
+  "_about": "Canonical question bank for the DayNova Company AI Assessment (the leader path of the DayNova Diagnostic). One leader answers for their team or company. Likert 1-5; reverse items are scored 6 - answer. Pillar max 15, total max 60. scripts/build_report.py reads this file.",
+  "stage_question": {
+    "stem": "Is AI in regular, systematic use across your team today?",
+    "options": {
+      "foundation": "AI Foundation: Not really. Maybe a few people use ChatGPT or Copilot, but nothing is systematic, owned, or measured.",
+      "in_practice": "AI in Practice: Yes. AI is woven into how some part of our team gets work done, with at least informal ownership and ongoing use."
+    }
+  },
+  "scale": "1 = Strongly Disagree, 2 = Disagree, 3 = Neutral, 4 = Agree, 5 = Strongly Agree. Answer based on where your team actually is today, not where you're headed.",
+  "stages": {
+    "foundation": {
+      "label": "AI Foundation",
+      "description": "Not really. Maybe a few people use ChatGPT or Copilot, but nothing is systematic, owned, or measured.",
+      "pillars": [
+        {
+          "key": "narrow",
+          "letter": "N",
+          "title": "Narrow",
+          "quote": "Tools follow strategy. Not the other way around.",
+          "questions": [
+            {
+              "id": "n1",
+              "text": "Our leadership has aligned on where we should adopt AI first, and why.",
+              "reverse": false
+            },
+            {
+              "id": "n2",
+              "text": "We've identified the specific outcomes AI needs to deliver before we evaluate tools.",
+              "reverse": false
+            },
+            {
+              "id": "n3",
+              "text": "We add new tools and platforms faster than we retire old ones.",
+              "reverse": true
+            }
+          ]
+        },
+        {
+          "key": "orchestrate",
+          "letter": "O",
+          "title": "Orchestrate",
+          "quote": "You can't plug AI into chaos and call it transformation.",
+          "questions": [
+            {
+              "id": "o1",
+              "text": "Our team has a shared, explicit understanding of how core work flows from idea to delivery today.",
+              "reverse": false
+            },
+            {
+              "id": "o2",
+              "text": "There is a clear point of accountability for AI decisions in our organization.",
+              "reverse": false
+            },
+            {
+              "id": "o3",
+              "text": "Processes differ from team to team, with little or no standardization.",
+              "reverse": true
+            }
+          ]
+        },
+        {
+          "key": "validate",
+          "letter": "V",
+          "title": "Validate",
+          "quote": "If you don't define good before AI lands, AI defines it for you.",
+          "questions": [
+            {
+              "id": "v1",
+              "text": "We have shared standards for what good looks like in our content, decisions, and deliverables.",
+              "reverse": false
+            },
+            {
+              "id": "v2",
+              "text": "Our team has discussed the brand, compliance, and accuracy risks AI poses to our specific work.",
+              "reverse": false
+            },
+            {
+              "id": "v3",
+              "text": "We have a defined review process for high-stakes work before it goes out the door.",
+              "reverse": false
+            }
+          ]
+        },
+        {
+          "key": "amplify",
+          "letter": "A",
+          "title": "Amplify",
+          "quote": "AI without ambition just produces more of the same.",
+          "questions": [
+            {
+              "id": "a1",
+              "text": "Our leadership treats AI as a capacity multiplier for strategic work, not just a cost-cutting tool.",
+              "reverse": false
+            },
+            {
+              "id": "a2",
+              "text": "Our team can articulate the strategic work we'd take on if execution capacity doubled.",
+              "reverse": false
+            },
+            {
+              "id": "a3",
+              "text": "We measure our team on output volume more than on strategic outcomes.",
+              "reverse": true
+            }
+          ]
+        }
+      ],
+      "bands": [
+        {
+          "max": 28,
+          "name": "Pre-Foundation",
+          "title": "You're in the Pre-Foundation band.",
+          "blurb": "You haven't done the strategic groundwork. Tools won't fix this, thinking will. The fastest move is a leadership alignment workshop to define priorities, ownership, and success.",
+          "cta": {
+            "label": "Book a Leadership Workshop",
+            "href": "https://daynova.ai/ai-services"
+          }
+        },
+        {
+          "max": 44,
+          "name": "Foundation-Building",
+          "title": "You're in the Foundation-Building band.",
+          "blurb": "You've started the thinking. The gap is between intent and operational rollout. Advisory engagement turns your direction into a concrete plan with owners, milestones, and guardrails.",
+          "cta": {
+            "label": "Explore Advisory",
+            "href": "https://daynova.ai/ai-services"
+          }
+        },
+        {
+          "max": 60,
+          "name": "Foundation-Ready",
+          "title": "You're in the Foundation-Ready band.",
+          "blurb": "You're ready to deploy. The next leverage isn't more discussion, it's a structured pilot. An AI Reboot Camp turns your alignment into adoption with the right people, tools, and feedback loops.",
+          "cta": {
+            "label": "AI Reboot Camp",
+            "href": "https://daynova.ai/ai-services"
+          }
+        }
+      ]
+    },
+    "in_practice": {
+      "label": "AI in Practice",
+      "description": "Yes. AI is woven into how some part of our team gets work done, with at least informal ownership and ongoing use.",
+      "pillars": [
+        {
+          "key": "narrow",
+          "letter": "N",
+          "title": "Narrow",
+          "quote": "The teams that win won't be the ones doing the most. They'll be the ones doing the right things.",
+          "questions": [
+            {
+              "id": "n1",
+              "text": "When we bring on a new AI tool, we take time to define what success looks like before we get started.",
+              "reverse": false
+            },
+            {
+              "id": "n2",
+              "text": "Our team has a shared understanding of which decisions belong to humans and which are great candidates for AI support.",
+              "reverse": false
+            },
+            {
+              "id": "n3",
+              "text": "We currently have more AI tools running than we have clear owners or defined use cases for.",
+              "reverse": true
+            }
+          ]
+        },
+        {
+          "key": "orchestrate",
+          "letter": "O",
+          "title": "Orchestrate",
+          "quote": "Work is a team sport. AI is a new team member. Does your team have clear roles, clear handoffs, and clear owners?",
+          "questions": [
+            {
+              "id": "o1",
+              "text": "Our team has a clear picture of how people collaborate and hand off work across our core workflows.",
+              "reverse": false
+            },
+            {
+              "id": "o2",
+              "text": "We know where AI tools plug into our process and who is responsible for each one.",
+              "reverse": false
+            },
+            {
+              "id": "o3",
+              "text": "Different team members use different AI tools for the same types of tasks, without a shared approach or standard.",
+              "reverse": true
+            }
+          ]
+        },
+        {
+          "key": "validate",
+          "letter": "V",
+          "title": "Validate",
+          "quote": "Speed without judgment isn't efficiency. It's liability.",
+          "questions": [
+            {
+              "id": "v1",
+              "text": "We have a consistent, shared approach to reviewing AI-generated content (written, visual, or otherwise) before it goes live.",
+              "reverse": false
+            },
+            {
+              "id": "v2",
+              "text": "Our team feels confident spotting when AI output misses the mark, whether that's a factual error, an off-brand tone, or a flawed recommendation.",
+              "reverse": false
+            },
+            {
+              "id": "v3",
+              "text": "Our prompts are reliable enough that we rarely feel the need to review AI outputs before they go live.",
+              "reverse": true
+            }
+          ]
+        },
+        {
+          "key": "amplify",
+          "letter": "A",
+          "title": "Amplify",
+          "quote": "AI should expand what's possible, not just replace what was.",
+          "questions": [
+            {
+              "id": "a1",
+              "text": "AI has created meaningful capacity on our team that we actively reinvest in bigger-picture, strategic work.",
+              "reverse": false
+            },
+            {
+              "id": "a2",
+              "text": "We're producing more, or meaningfully better, output than we were 12 months ago, without adding headcount.",
+              "reverse": false
+            },
+            {
+              "id": "a3",
+              "text": "We can point to real, measurable business outcomes that improved directly because of how our team adopted AI.",
+              "reverse": false
+            }
+          ]
+        }
+      ],
+      "bands": [
+        {
+          "max": 32,
+          "name": "In Practice, Fragmented",
+          "title": "You're in the In Practice, Fragmented band.",
+          "blurb": "You're using AI, but adoption is uneven and discipline is missing. A workshop creates the shared standards and ownership that turn scattered usage into systematic capability.",
+          "cta": {
+            "label": "Book a Workshop",
+            "href": "https://daynova.ai/ai-services"
+          }
+        },
+        {
+          "max": 44,
+          "name": "In Practice, Transitioning",
+          "title": "You're in the In Practice, Transitioning band.",
+          "blurb": "You've got real adoption. The risk now is scaling the wrong behaviors. Advisory engagement tightens the operating model before fragmentation locks in.",
+          "cta": {
+            "label": "Explore Advisory",
+            "href": "https://daynova.ai/ai-services"
+          }
+        },
+        {
+          "max": 60,
+          "name": "In Practice, Amplifying",
+          "title": "You're in the In Practice, Amplifying band.",
+          "blurb": "You're ahead of most. The next leverage is custom workflows that compound the advantage. We build the integrations that turn capability into a durable edge.",
+          "cta": {
+            "label": "AI Workflow Builds",
+            "href": "https://daynova.ai/ai-services"
+          }
+        }
+      ]
+    }
+  }
+}

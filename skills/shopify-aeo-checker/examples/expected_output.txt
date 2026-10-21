@@ -1,0 +1,25 @@
+AEO check: Northfield Knit (northfield-knit.example), 2026-09-25
+AEO score: 56/100 (Weak). Top-10 on 2 of 4 broad shopper queries across 2 products.
+Source: Shopify UCP catalog search, anonymous agent tier. Not ChatGPT/Gemini final rankings.
+
+== Harbor Merino Crew Oatmeal  score 68/100  (find 71, data 60, match 75)
+  [exact   ] 'Harbor Merino Crew Oatmeal'                     #1
+  [name    ] 'Harbor Merino Crew'                             #2
+  [category] 'sweater'                                        #6
+  [custom  ] 'merino sweater for travel'                      #5
+  - Medium: Agents receive 2 images; the product page has 7
+  - Medium: Compare-at price $128.00 on page is not shown to agents
+  - Low: 1 of 2 images agents see have no alt text
+  - Low: 3 internal tags exposed to agents: BFCM24, feed-exclude-meta, klaviyo_flow_b
+
+== Ridgeline Cardigan Charcoal  score 43/100  (find 33, data 55, match 50)
+  [exact   ] 'Ridgeline Cardigan Charcoal'                    #1
+  [name    ] 'Ridgeline Cardigan'                             #1
+  [category] 'cardigan'                                       not in top 20
+  [custom  ] 'merino sweater for travel'                      not in top 20
+  - High: Price mismatch: page $158.00, agents see $148.00
+  - High: Not in the top 20 for 'cardigan'; winners: Lambswool V-Neck Heather, Fisherman Rollneck Cream, Trailhead Quarter Zip Moss
+  - High: Not in the top 20 for 'merino sweater for travel'; winners: Trailhead Quarter Zip Moss, Harbor Merino Crew Navy, Dockside Beanie Rust
+  - Medium: Description agents receive is short (29 chars); aim for 150+ with fit, material and use case
+  - Medium: Agents receive 1 image; the product page has 5
+  - Medium: No Shopify standard product category; set it in admin so agents can classify the product

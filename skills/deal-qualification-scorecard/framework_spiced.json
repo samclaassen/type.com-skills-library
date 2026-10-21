@@ -1,0 +1,121 @@
+{
+ "schema_version": 1,
+ "key": "spiced",
+ "name": "SPICED",
+ "elements": [
+  {
+   "key": "situation",
+   "short": "S",
+   "label": "Situation",
+   "description": "The customer's current setup and context.",
+   "parts": [
+    {
+     "key": "setup",
+     "label": "Current setup",
+     "question": "How does this work today, and which tools are involved?"
+    },
+    {
+     "key": "context",
+     "label": "Team and scale",
+     "question": "Who works on this today, and at what volume?"
+    }
+   ],
+   "topics": []
+  },
+  {
+   "key": "pain",
+   "short": "P",
+   "label": "Pain",
+   "description": "The problem in the customer's words and its cause.",
+   "parts": [
+    {
+     "key": "problem",
+     "label": "Problem in their words",
+     "question": "What is the hardest part of this today?"
+    },
+    {
+     "key": "cause",
+     "label": "What causes it",
+     "question": "Why does that happen?"
+    }
+   ],
+   "topics": []
+  },
+  {
+   "key": "impact",
+   "short": "I",
+   "label": "Impact",
+   "description": "What the problem costs, or what solving it gains, in numbers.",
+   "parts": [
+    {
+     "key": "quantified",
+     "label": "Quantified impact",
+     "question": "What does that cost you in a month, in hours, money or customers?"
+    },
+    {
+     "key": "who",
+     "label": "Who feels it",
+     "question": "Who feels this most, inside and outside the team?"
+    }
+   ],
+   "topics": []
+  },
+  {
+   "key": "critical_event",
+   "short": "CE",
+   "label": "Critical event",
+   "description": "A dated event that forces a decision, and what happens if it is missed.",
+   "parts": [
+    {
+     "key": "date",
+     "label": "Event date",
+     "question": "Is there a date this has to be in place by?"
+    },
+    {
+     "key": "consequence",
+     "label": "Cost of missing it",
+     "question": "What happens if you miss that date?"
+    }
+   ],
+   "topics": [
+    "Critical event date"
+   ]
+  },
+  {
+   "key": "decision",
+   "short": "D",
+   "label": "Decision",
+   "description": "How they will decide: people, criteria and date.",
+   "parts": [
+    {
+     "key": "process",
+     "label": "Process and people",
+     "question": "Who is involved in the decision, and in what order?"
+    },
+    {
+     "key": "criteria",
+     "label": "Criteria",
+     "question": "What will you judge the options on?"
+    }
+   ],
+   "topics": [
+    "Decision date",
+    "Decision maker"
+   ]
+  }
+ ],
+ "crm_fields": [
+  {
+   "field": "close_date",
+   "label": "Close date",
+   "element": "decision",
+   "topic": "Decision date"
+  },
+  {
+   "field": "economic_buyer",
+   "label": "Economic buyer",
+   "element": "decision",
+   "topic": "Decision maker"
+  }
+ ]
+}

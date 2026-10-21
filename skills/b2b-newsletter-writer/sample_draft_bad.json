@@ -1,0 +1,44 @@
+{
+  "_note": "FICTIONAL, DELIBERATELY BAD draft used by tests.sh. Every problem here is intentional.",
+  "issue_date": "2026-10-02",
+  "subject_lines": [
+    "🚀 FREE webinar: LAST CHANCE to unlock your agency's full potential!!",
+    "RE: your capacity"
+  ],
+  "preheader": "Act now",
+  "opener": "Welcome to this week's edition of The Ops Desk! In today's fast-paced world, agencies face many challenges. We're excited to share some updates. Let's dive in. There's a lot to cover.",
+  "sections": [
+    {
+      "headline": "You Won't Believe What Capacity Forecast Can Do!",
+      "body": "Capacity Forecast is a game-changer that helps agencies delve into their data. Beta users saw 73% less burnout. It's important to note that results may vary. Check it out at [link].",
+      "source_url": "",
+      "source_title": ""
+    },
+    {
+      "headline": "Industry report",
+      "body": "According to a new report, 9 out of 10 agencies say “the future of agency work is AI-first.” This is a testament to how the landscape is shifting. In conclusion, agencies should leverage synergies.",
+      "source_url": "",
+      "source_title": ""
+    },
+    {
+      "headline": "Podcast",
+      "body": "We were on a podcast. It was fun. Give it a listen when you get a chance this week.",
+      "source_url": "agencyhours.example/episodes/112",
+      "source_title": ""
+    },
+    {
+      "headline": "One more thing",
+      "body": "TODO write this section.",
+      "source_url": "",
+      "source_title": ""
+    }
+  ],
+  "cta": {
+    "type": "event",
+    "text": "Register now for our webinar.",
+    "url": "",
+    "button_label": "Click here"
+  },
+  "sign_off": "",
+  "facts": []
+}

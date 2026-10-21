@@ -1,0 +1,185 @@
+=== 1. Research synthesis report (markdown, for a Type doc) ===
+# User Research Synthesis — Workspace onboarding interviews, September 2026
+
+_Internal research report · 7 participants · 7 interviews · Sep 14, 2026 – Sep 22, 2026 · synthesised Oct 2, 2026 · participants are pseudonymous (P1…); redaction is pattern-based, so read it before sharing._
+
+**At a glance** — 3 research questions; 5 findings supported by 2+ participants (1 high, 3 medium, 1 low confidence); top opportunity by evidence: O2 (5 participants): Let admins invite the colleague who holds the credentials to connect the first data source. 2 items kept separate as single-participant signals.
+
+## Research questions
+
+- **RQ1** How do new admins get their first workflow live, and where do they stall? — 2 findings
+- **RQ2** What do admins expect from the first-week setup checklist? — 3 findings
+- **RQ3** Who else gets involved before a workspace is rolled out to the team? — 0 findings
+
+## Findings by research question
+
+_Confidence counts distinct participants, never mentions. Answers to leading questions are weaker and do not count towards medium or high. See Method for the thresholds._
+
+### RQ1 — How do new admins get their first workflow live, and where do they stall?
+
+#### F1. New admins stall at connecting the first data source, before they build any workflow. — High confidence
+
+Support: 5 of 7 participants (P1, P2, P3, P4, P5) · 1 only via leading questions (P3) · Contradict: 1 (P7) · Said: P1, P2, P3, P4, P5 · Did (observed): none
+
+By segment (supporting/participants): Self-serve admins 3/4 (1 contradict) · Sales-assisted teams 2/3
+
+_Note: stated only; no observed behaviour._
+
+- “I got stuck on the very first screen, connecting our shipment database.” — P1, Sep 14 · [M1](https://notes.granola.ai/d/sample-urs-01)
+- “Connecting the patient-booking system. The API key lives with our IT contractor, so everything stopped there.” — P2, Sep 15 · [M2](https://notes.granola.ai/d/sample-urs-02)
+- “The first week was mostly waiting on credentials for the scheduling system.” — P5, Sep 18 · [M5](https://notes.granola.ai/d/sample-urs-05)
+- Contradicting: Note excerpt (notes, not verbatim speech): _She connected the print-queue database herself in about ten minutes using the setup guide._ — P7, Sep 22 · [M7](https://notes.granola.ai/d/sample-urs-07)
+- Quotes withheld (no quote consent): P4; their evidence still counts. Sources: [M4](https://notes.granola.ai/d/sample-urs-04)
+
+#### F2. Admins skip the template gallery and build their first workflow from a blank canvas. — Medium confidence
+
+Support: 3 of 7 participants (P2, P5, P7) · Contradict: 0 · Said: P7 · Did (observed): P2, P5
+
+By segment (supporting/participants): Self-serve admins 2/4 · Sales-assisted teams 1/3
+
+- Observed (notes, not verbatim speech): _He opened the template gallery, closed it after a few seconds, and built the workflow from a blank canvas._ — P2, Sep 15 · [M2](https://notes.granola.ai/d/sample-urs-02)
+- Observed (notes, not verbatim speech): _She skipped the template gallery and started from a blank canvas._ — P5, Sep 18 · [M5](https://notes.granola.ai/d/sample-urs-05)
+- Note excerpt (notes, not verbatim speech): _She did not open the template gallery and started from a blank canvas._ — P7, Sep 22 · [M7](https://notes.granola.ai/d/sample-urs-07)
+
+### RQ2 — What do admins expect from the first-week setup checklist?
+
+#### F3. Admins want the setup checklist to show what their teammates still have to do. — Medium confidence
+
+Support: 3 of 7 participants (P3, P5, P6) · Contradict: 0 · Said: P3, P5, P6 · Did (observed): none
+
+By segment (supporting/participants): Self-serve admins 0/4 · Sales-assisted teams 3/3
+
+_Note: stated only; no observed behaviour._
+
+- “I need the checklist to show me what my team still has to do, not just my own steps.” — P3, Sep 16 · [M3](https://notes.granola.ai/d/sample-urs-03)
+- “I want the checklist to list single sign-on and who on my team hasn't logged in yet.” — P5, Sep 18 · [M5](https://notes.granola.ai/d/sample-urs-05)
+- Quotes withheld (no quote consent): P6; their evidence still counts. Sources: [M6](https://notes.granola.ai/d/sample-urs-06)
+
+#### F6. Admins expect single sign-on to be a step in the setup checklist. — Medium confidence
+
+Support: 3 of 7 participants (P3, P5, P6) · Contradict: 1 (P2) · Said: P3, P5, P6 · Did (observed): none
+
+By segment (supporting/participants): Self-serve admins 0/4 (1 contradict) · Sales-assisted teams 3/3
+
+_Note: stated only; no observed behaviour._
+
+- “And single sign-on has to be on it, our security review asks for it first.” — P3, Sep 16 · [M3](https://notes.granola.ai/d/sample-urs-03)
+- “I want the checklist to list single sign-on and who on my team hasn't logged in yet.” — P5, Sep 18 · [M5](https://notes.granola.ai/d/sample-urs-05)
+- Contradicting: “We don't need single sign-on. We're eleven people.” — P2, Sep 15 · [M2](https://notes.granola.ai/d/sample-urs-02)
+- Quotes withheld (no quote consent): P6; their evidence still counts. Sources: [M6](https://notes.granola.ai/d/sample-urs-06)
+
+#### F4. A progress bar would motivate admins to finish the setup checklist. — Low confidence
+
+Support: 2 of 7 participants (P1, P4) · 2 only via leading questions (P1, P4) · Contradict: 1 (P5) · Said: P1, P4 · Did (observed): none
+
+By segment (supporting/participants): Self-serve admins 2/4 · Sales-assisted teams 0/3 (1 contradict)
+
+_Note: rests only on answers to leading questions; stated only; no observed behaviour._
+
+- “Yeah, I guess a progress bar would be nice.” — P1, Sep 14 · [M1](https://notes.granola.ai/d/sample-urs-01) — ⚠ answer to a leading question (“Wouldn't a progress bar make you more likely to finish the checklist?”), flagged by pattern; weaker evidence
+- Contradicting: “I ignore progress bars, to be honest.” — P5, Sep 18 · [M5](https://notes.granola.ai/d/sample-urs-05)
+- Quotes withheld (no quote consent): P4; their evidence still counts. Sources: [M4](https://notes.granola.ai/d/sample-urs-04)
+
+### RQ3 — Who else gets involved before a workspace is rolled out to the team?
+
+No finding for this question is supported by 2 or more participants.
+
+## Jobs, pains, workarounds and desired outcomes
+
+### Jobs to be done
+
+- **F7** Get recurring team hand-offs running on their own, without chasing people or filing IT tickets. — High confidence · 4 participants (P1, P2, P4, P7)
+  - “I want the Monday hand-offs between dispatch and billing to run without me chasing people, and without filing an IT ticket every time.” — P1, Sep 14 · [M1](https://notes.granola.ai/d/sample-urs-01)
+
+### Pains
+
+- **F8** The credentials for the first data source are held by someone else in the company. — Medium confidence · 3 participants (P1, P3, P5)
+  - “I asked \[name\] in finance for the login and waited two days.” — P1, Sep 14 · [M1](https://notes.granola.ai/d/sample-urs-01)
+
+### Current workarounds
+
+- **F9** Keep the hand-off in a shared spreadsheet until the workflow has earned trust. — Medium confidence · 3 participants (P2, P4, P6)
+  - “We still run the reminders from a shared spreadsheet. Until I trust the workflow, the spreadsheet stays.” — P2, Sep 15 · [M2](https://notes.granola.ai/d/sample-urs-02)
+
+### Desired outcomes
+
+- **F10** See one workflow run end to end on day one. — Low confidence · 2 participants (P1, P5)
+  - “Seeing one workflow run end to end on day one. Then I'd trust it.” — P1, Sep 14 · [M1](https://notes.granola.ai/d/sample-urs-01)
+
+## Single-participant signals (not patterns)
+
+- **F5** (finding, RQ3) Finance approves the plan before a sales-assisted workspace is rolled out. — P3 only
+  - “Finance had to approve the plan before we could invite anyone.” — P3, Sep 16 · [M3](https://notes.granola.ai/d/sample-urs-03)
+- **F11** (pain) The pricing page does not say which plan includes audit logs. — P6 only
+
+## Differences by segment
+
+_Share of each segment's participants supporting the finding. Listed when the gap is 50+ percentage points; segments with fewer than 2 participants are left out._
+
+| Finding | Self-serve admins (n=4) | Sales-assisted teams (n=3) |
+| --- | --- | --- |
+| F7 Get recurring team hand-offs running on their own, without chasing people or filing IT tickets. | 4/4 | 0/3 |
+| F3 Admins want the setup checklist to show what their teammates still have to do. | 0/4 | 3/3 |
+| F6 Admins expect single sign-on to be a step in the setup checklist. | 0/4 | 3/3 |
+| F4 A progress bar would motivate admins to finish the setup checklist. | 2/4 | 0/3 |
+
+## Surprises
+
+- **F2** Admins skip the template gallery and build their first workflow from a blank canvas. — medium confidence, 3 participants. We assumed: Templates are the main way new admins get started.
+
+## Opportunities, ranked by evidence
+
+_Ranked by distinct participants supporting the linked findings (not counting answers to leading questions), then all supporters, then fewest contradicting, then the strongest linked confidence. Not ranked by anyone's opinion of value or effort._
+
+| # | Opportunity | Based on | Support | Contradict | Best confidence |
+| --- | --- | --- | --- | --- | --- |
+| 1 | O2 Let admins invite the colleague who holds the credentials to connect the first data source. | F1, F8 | 5 (P1, P2, P3, P4, P5) | 1 (P7) | High confidence |
+| 2 | O3 Make single sign-on and teammates' open tasks part of the sales-assisted checklist. | F3, F6 | 3 (P3, P5, P6) | 1 (P2) | Medium confidence |
+| 3 | O4 Show a 'first workflow ran' moment on day one. | F10 | 2 (P1, P5) | 0 | Low confidence |
+| 4 | O1 Add a progress bar to the setup checklist. | F4 | 2 (P1, P4), 2 only via leading questions | 1 (P5) | Low confidence |
+| 5 | O5 Say on the pricing page which plan includes audit logs. | F11 | 1 (P6), not a pattern | 0 | Single participant |
+
+## What we still don't know
+
+- RQ3\: no finding is supported by 2 or more participants yet.
+- F4 rests only on answers to leading questions; ask neutrally before relying on it.
+- 1 session had no readable transcript; evidence from it comes from notes, which paraphrase.
+- RQ3\: Whether IT or security reviews the workspace before rollout; only one participant described an approval step.
+
+## Participants
+
+| ID | Segment | Interview date | Evidence from | Consent | Evidence items |
+| --- | --- | --- | --- | --- | --- |
+| P1 | Self-serve admins | Sep 14, 2026 [M1](https://notes.granola.ai/d/sample-urs-01) | transcript | quotes OK | 5 |
+| P2 | Self-serve admins | Sep 15, 2026 [M2](https://notes.granola.ai/d/sample-urs-02) | transcript | quotes OK | 5 |
+| P3 | Sales-assisted teams | Sep 16, 2026 [M3](https://notes.granola.ai/d/sample-urs-03) | transcript | quotes OK | 5 |
+| P4 | Self-serve admins | Sep 17, 2026 [M4](https://notes.granola.ai/d/sample-urs-04) | transcript | no quotes | 4 |
+| P5 | Sales-assisted teams | Sep 18, 2026 [M5](https://notes.granola.ai/d/sample-urs-05) | transcript | quotes OK | 5 |
+| P6 | Sales-assisted teams | Sep 21, 2026 [M6](https://notes.granola.ai/d/sample-urs-06) | transcript | unknown, so no quotes | 3 |
+| P7 | Self-serve admins | Sep 22, 2026 [M7](https://notes.granola.ai/d/sample-urs-07) | notes (transcript denied) | quotes OK | 3 |
+
+1 participant excluded because consent was declined (not listed; 1 evidence item dropped).
+
+## Method and coverage
+
+- **Interviews**: 7 included; 2 listed but excluded (all participants declined consent; internal debrief, not an interview).
+- **Transcripts**: 6 read, 1 denied, 0 unavailable, 0 not requested.
+- **Evidence**: 30 items (25 from transcripts, 5 from notes; 2 observed behaviour). 3 answers to leading questions (1 flagged by the question-wording pattern); 5 without the question's wording. 7 quotes withheld for consent; 0 not checked against source text because the text was not in the bundle.
+- **Confidence** (distinct participants; answers to leading questions only count towards low): High = 4+ supporting and at least 50% of the 7 participants, with contradicting participants at most 25% of supporting; Medium = 3+; Low = 2+ in total; Contested = at least as many contradict as support; Single = fewer than 2, never shown as a pattern.
+- **Anonymity**: participants appear as P1, P2… and sessions as M1, M2…; names, organisations and emails listed privately in the bundle (and the parts of listed full names) are replaced with [name] or [organisation], and email addresses, phone numbers and web addresses with a placeholder, in every displayed field. This is pattern-based and can miss unlisted names, nicknames, misspellings, look-alike letters and unusual formats; it can also blank ordinary words that match a listed name. Meeting links open the original notes, which are not anonymised.
+- **Sources**: Meeting list: Granola, ok (folder: Onboarding interviews); Transcripts: Granola, partial.
+- **Gaps**: transcripts partial (1 transcript denied by workspace policy).
+
+_Internal research document. The agent extracted and coded the evidence; the script validated citations and quotes, counted participants, computed confidence and pseudonymised the text._
+
+=== 2. Insight cards for a research repository (CSV; patterns only) ===
+study,card_id,type,research_question,statement,confidence,supporting_count,supporting_participants,contradicting_count,contradicting_participants,only_via_leading_questions,segments,quote_1,quote_1_participant,quote_1_source,quote_2,quote_2_participant,quote_2_source,meeting_refs,meeting_links,surprise_assumption
+"Workspace onboarding interviews, September 2026",F1,finding,"RQ1 How do new admins get their first workflow live, and where do they stall?","New admins stall at connecting the first data source, before they build any workflow.",high,5,P1 P2 P3 P4 P5,1,P7,P3,Self-serve admins 3/4; Sales-assisted teams 2/3,"I got stuck on the very first screen, connecting our shipment database.",P1,transcript quote,"Connecting the patient-booking system. The API key lives with our IT contractor, so everything stopped there.",P2,transcript quote,M1 M2 M3 M4 M5 M7,https://notes.granola.ai/d/sample-urs-01 https://notes.granola.ai/d/sample-urs-02 https://notes.granola.ai/d/sample-urs-03 https://notes.granola.ai/d/sample-urs-04 https://notes.granola.ai/d/sample-urs-05 https://notes.granola.ai/d/sample-urs-07,
+"Workspace onboarding interviews, September 2026",F2,finding,"RQ1 How do new admins get their first workflow live, and where do they stall?",Admins skip the template gallery and build their first workflow from a blank canvas.,medium,3,P2 P5 P7,0,,,Self-serve admins 2/4; Sales-assisted teams 1/3,"He opened the template gallery, closed it after a few seconds, and built the workflow from a blank canvas.",P2,"observed, notes excerpt, not verbatim",She skipped the template gallery and started from a blank canvas.,P5,"observed, notes excerpt, not verbatim",M2 M5 M7,https://notes.granola.ai/d/sample-urs-02 https://notes.granola.ai/d/sample-urs-05 https://notes.granola.ai/d/sample-urs-07,Templates are the main way new admins get started.
+"Workspace onboarding interviews, September 2026",F3,finding,RQ2 What do admins expect from the first-week setup checklist?,Admins want the setup checklist to show what their teammates still have to do.,medium,3,P3 P5 P6,0,,,Self-serve admins 0/4; Sales-assisted teams 3/3,"I need the checklist to show me what my team still has to do, not just my own steps.",P3,transcript quote,I want the checklist to list single sign-on and who on my team hasn't logged in yet.,P5,transcript quote,M3 M5 M6,https://notes.granola.ai/d/sample-urs-03 https://notes.granola.ai/d/sample-urs-05 https://notes.granola.ai/d/sample-urs-06,
+"Workspace onboarding interviews, September 2026",F6,finding,RQ2 What do admins expect from the first-week setup checklist?,Admins expect single sign-on to be a step in the setup checklist.,medium,3,P3 P5 P6,1,P2,,Self-serve admins 0/4; Sales-assisted teams 3/3,"And single sign-on has to be on it, our security review asks for it first.",P3,transcript quote,I want the checklist to list single sign-on and who on my team hasn't logged in yet.,P5,transcript quote,M2 M3 M5 M6,https://notes.granola.ai/d/sample-urs-02 https://notes.granola.ai/d/sample-urs-03 https://notes.granola.ai/d/sample-urs-05 https://notes.granola.ai/d/sample-urs-06,
+"Workspace onboarding interviews, September 2026",F4,finding,RQ2 What do admins expect from the first-week setup checklist?,A progress bar would motivate admins to finish the setup checklist.,low,2,P1 P4,1,P5,P1 P4,Self-serve admins 2/4; Sales-assisted teams 0/3,"Yeah, I guess a progress bar would be nice.",P1,"transcript quote, answer to a leading question",,,,M1 M4 M5,https://notes.granola.ai/d/sample-urs-01 https://notes.granola.ai/d/sample-urs-04 https://notes.granola.ai/d/sample-urs-05,
+"Workspace onboarding interviews, September 2026",F7,job,,"Get recurring team hand-offs running on their own, without chasing people or filing IT tickets.",high,4,P1 P2 P4 P7,0,,,Self-serve admins 4/4; Sales-assisted teams 0/3,"I want the Monday hand-offs between dispatch and billing to run without me chasing people, and without filing an IT ticket every time.",P1,transcript quote,Getting patient reminders out without someone copying rows every morning.,P2,transcript quote,M1 M2 M4 M7,https://notes.granola.ai/d/sample-urs-01 https://notes.granola.ai/d/sample-urs-02 https://notes.granola.ai/d/sample-urs-04 https://notes.granola.ai/d/sample-urs-07,
+"Workspace onboarding interviews, September 2026",F8,pain,,The credentials for the first data source are held by someone else in the company.,medium,3,P1 P3 P5,0,,,Self-serve admins 1/4; Sales-assisted teams 2/3,I asked [name] in finance for the login and waited two days.,P1,transcript quote,"At [organisation] we can't connect anything until IT signs off, and the warehouse system credentials sit with them.",P3,transcript quote,M1 M3 M5,https://notes.granola.ai/d/sample-urs-01 https://notes.granola.ai/d/sample-urs-03 https://notes.granola.ai/d/sample-urs-05,
+"Workspace onboarding interviews, September 2026",F9,workaround,,Keep the hand-off in a shared spreadsheet until the workflow has earned trust.,medium,3,P2 P4 P6,0,,,Self-serve admins 2/4; Sales-assisted teams 1/3,"We still run the reminders from a shared spreadsheet. Until I trust the workflow, the spreadsheet stays.",P2,transcript quote,,,,M2 M4 M6,https://notes.granola.ai/d/sample-urs-02 https://notes.granola.ai/d/sample-urs-04 https://notes.granola.ai/d/sample-urs-06,
+"Workspace onboarding interviews, September 2026",F10,desired_outcome,,See one workflow run end to end on day one.,low,2,P1 P5,0,,,Self-serve admins 1/4; Sales-assisted teams 1/3,Seeing one workflow run end to end on day one. Then I'd trust it.,P1,transcript quote,One reminder going out for real on day one. That's the moment I'd show my boss.,P5,transcript quote,M1 M5,https://notes.granola.ai/d/sample-urs-01 https://notes.granola.ai/d/sample-urs-05,

@@ -1,0 +1,97 @@
+{
+ "schema_version": 1,
+ "account": {
+  "name": "Ketterbrae Clinics (fictional)",
+  "domains": [
+   "ketterbrae.example"
+  ]
+ },
+ "sources": {
+  "meeting_notes": {
+   "provider": "granola",
+   "status": "ok",
+   "plan": "business"
+  },
+  "crm": {
+   "provider": "attio",
+   "status": "ok"
+  }
+ },
+ "deal": {
+  "name": "Ketterbrae — intake",
+  "stage": "Discovery",
+  "record_ref": "attio:deal/kb-7",
+  "fields": {
+   "close_date": null,
+   "champion": "Lena Corvo"
+  }
+ },
+ "meetings": [
+  {
+   "meeting_id": "sample-k1",
+   "title": "Ketterbrae discovery",
+   "start": "2026-10-08T11:00:00-04:00",
+   "url": "https://notes.granola.ai/d/sample-k1",
+   "attendees": [
+    {
+     "name": "Joel Ferrante",
+     "email": "joel@talvessa.example"
+    },
+    {
+     "name": "Lena Corvo",
+     "email": "lena.corvo@ketterbrae.example"
+    }
+   ],
+   "matched_by": [
+    "domain"
+   ],
+   "notes_read": true,
+   "transcript": "ok",
+   "transcript_text": "System audio (Lena Corvo): Our front desk spends about 20 hours a week chasing intake forms.\nMicrophone: What would good look like?\nSystem audio (Lena Corvo): Forms back before the visit, every time. I'm not sure who would sign off yet.\nMicrophone: I think you'd be the one to champion this internally, Lena."
+  }
+ ],
+ "findings": [
+  {
+   "element": "identify_pain",
+   "parts": [
+    "pain"
+   ],
+   "meeting_id": "sample-k1",
+   "quote": "Our front desk spends about 20 hours a week chasing intake forms.",
+   "quote_from": "transcript",
+   "speaker_side": "customer",
+   "speaker": "Lena Corvo"
+  },
+  {
+   "element": "metrics",
+   "parts": [
+    "baseline"
+   ],
+   "meeting_id": "sample-k1",
+   "quote": "Our front desk spends about 20 hours a week chasing intake forms.",
+   "quote_from": "transcript",
+   "speaker_side": "customer",
+   "speaker": "Lena Corvo"
+  },
+  {
+   "element": "champion",
+   "parts": [
+    "named"
+   ],
+   "meeting_id": "sample-k1",
+   "quote": "I think you'd be the one to champion this internally, Lena.",
+   "quote_from": "transcript",
+   "speaker_side": "ours",
+   "speaker": "Joel Ferrante",
+   "claim": {
+    "topic": "Champion",
+    "value": "Lena Corvo"
+   }
+  }
+ ],
+ "questions": {
+  "economic_buyer": [
+   "Who besides you would need to approve a purchase like this?"
+  ]
+ }
+}

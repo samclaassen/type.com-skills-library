@@ -1,0 +1,20 @@
+{
+  "name": "Columbus, OH warehouse",
+  "timezone": "America/New_York",
+  "order_cutoff": "13:00",
+  "after_cutoff_pct": 60,
+  "handling_days": 0,
+  "working_days": "Mon-Fri",
+  "closed_dates": [
+    {
+      "date": "2026-11-26",
+      "name": "Thanksgiving"
+    },
+    {
+      "date": "2026-12-25",
+      "name": "Christmas Day"
+    }
+  ],
+  "daily_capacity": 250,
+  "peak_capacity": []
+}

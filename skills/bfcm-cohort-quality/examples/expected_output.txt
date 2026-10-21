@@ -1,0 +1,109 @@
+## BFCM Cohort Quality: Fernhill Goods, BFCM 2025 (as of 2026-10-06)
+
+_BFCM 2025 = customers whose first-ever order fell on Nov 24–Dec 2, 2025 (the Monday of Thanksgiving week through the Tuesday after Cyber Monday). Compared with the customers first acquired in October 2025 (Oct 1–31, 2025) and Jan–Feb 2026 (Jan 1–Feb 28, 2026). Contribution margin (CM) = net sales kept after refunds − COGS − payment fees − shipping and fulfillment, before ad spend. A horizon is shown only when every customer in the cohort has reached it. Amounts in USD._
+
+**BFCM 2025 new customers were worth $31.49 in contribution each at 180 days, vs $52.54 for October 2025 (−40%) and $52.83 for Jan–Feb 2026 (−40%).**
+
+180 days is the longest horizon BFCM 2025, October 2025 and Jan–Feb 2026 have all fully reached. BFCM 2025's 365-day horizon matures on Dec 2, 2026.
+
+**What the data shows** (detected)
+1. **Cheaper to acquire, worth less.** Blended new-customer cost $35.59 (October 2025 $79.06, Jan–Feb 2026 $64.43). The average BFCM 2025 customer covered it on day 295. October 2025 had recovered 81% by day 340 and Jan–Feb 2026 had recovered 88% by day 220.
+2. **Fewer came back.** 12.3% ordered again within 180 days (104 of 843), vs 24.0% (October 2025) and 19.6% (Jan–Feb 2026).
+3. **More discount-dependent.** 48% of their repeat orders within 180 days used a discount (63 of 131), vs 26% (October 2025) and 22% (Jan–Feb 2026).
+4. **Customers acquired at deeper discounts repeated less.** 186 customers (22.1%) took more than 25% off their first order: 3.8% ordered again within 180 days (2–8%) vs 15.2% (13–18%) at 16–25%, and CM from repeat orders was $1.88 vs $6.18 per customer. First-order CM was $13.09 vs $27.24, lower by construction at a deeper discount. This may reflect who the discount attracts; confirm with a holdout test before setting a cap. Above 35% off (114): 2.6% ordered again, $1.79 of repeat-order CM.
+5. **Best entry product: `ceramic-pour-over-set`.** 23.9% ordered again within 180 days (18–31%) vs 12.3% for the cohort; 51% of those repeaters' next orders included `stoneware-mug-set`.
+6. **Weakest source: TikTok.** 3.8% ordered again within 180 days (1–9%) vs 12.3% for the cohort, worth $23.80 each. 49% of them took more than 25% off their first order (cohort: 22%), so the two effects overlap.
+7. **Refunds.** 9.2% of BFCM 2025 first-order net sales were refunded (84 of 843 orders), vs 5.2% for October 2025, 3.7% for Jan–Feb 2026 and the 7% return rate in economics.json.
+
+### 1. The cohorts side by side
+
+| | BFCM 2025 | October 2025 | Jan–Feb 2026 |
+| --- | ---: | ---: | ---: |
+| Window | Nov 24–Dec 2, 2025 | Oct 1–31, 2025 | Jan 1–Feb 28, 2026 |
+| New customers | 843 | 359 | 514 |
+| New customers per day | 93.7 | 11.6 | 8.7 |
+| First-order AOV (net sales) | $84.87 | $88.61 | $92.18 |
+| First-order discount, average depth | 26.4% | 5.4% | 5.1% |
+| First orders with a discount | 97.3% | 43.2% | 41.4% |
+| First-order net sales refunded | 9.2% | 5.2% | 3.7% |
+| Ad spend in the window (all channels) | $30,000 | $28,384 | $33,116 |
+| Blended new-customer cost | $35.59 | $79.06 | $64.43 |
+| Ordered again within 30 days | 2.0% | 5.0% | 2.1% |
+| Ordered again within 60 days | 3.8% | 12.3% | 6.0% |
+| Ordered again within 90 days | 6.8% | 17.3% | 10.1% |
+| Ordered again within 180 days | 12.3% | 24.0% | 19.6% |
+| Ordered again within 365 days | not mature | not mature | not mature |
+| CM per customer at 30 days | $26.59 | $40.91 | $42.38 |
+| CM per customer at 60 days | $27.25 | $43.46 | $43.83 |
+| CM per customer at 90 days | $28.38 | $47.04 | $45.66 |
+| CM per customer at 180 days | $31.49 | $52.54 | $52.83 |
+| CM per customer at 365 days | not mature | not mature | not mature |
+| Days to 2nd order, median (repeaters within 180 days) | 79 | 59 | 85 |
+| Repeat orders with a discount (within 180 days) | 48% of 131 | 26% of 125 | 22% of 148 |
+| Payback (CM per customer ≥ blended cost) | day 295 | not by day 340 (81% recovered) | not by day 220 (88% recovered) |
+
+Not mature yet: 365 days on Dec 2, 2026 (BFCM 2025), Oct 31, 2026 (October 2025) and Feb 28, 2027 (Jan–Feb 2026).
+Blended new-customer cost = all ad spend in the window ÷ new customers in the window. It is not attribution: it charges retention and brand spend to new customers and gives repeat orders none. Payback = first day the average customer's cumulative CM reaches that cost, read only over days every customer has reached.
+
+### 2. BFCM 2025 by first-order discount (180 days)
+
+| First-order discount | Customers | Share | First-order AOV | Ordered again within 180 days (95% range) | CM per customer at 180 days | of which first order | of which repeat orders | Repeat orders with a discount |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| 0% | 23 | 2.7% | $119.57 | fewer than 30 customers | — | — | — | — |
+| 1–15% | 35 | 4.2% | $123.48 | 11.4% (5–26%) | $57.88 | $53.22 | $4.66 | 2 of 4 |
+| 16–25% (planned depth) | 599 | 71.1% | $84.31 | 15.2% (13–18%) | $33.42 | $27.24 | $6.18 | 55 of 113 |
+| 26–35% | 72 | 8.5% | $80.14 | 5.6% (2–13%) | $19.45 | $17.42 | $2.03 | 3 of 4 |
+| >35% | 114 | 13.5% | $71.99 | 2.6% (1–7%) | $12.13 | $10.35 | $1.79 | 1 of 4 |
+| **All BFCM 2025** | **843** | **100%** | **$84.87** | **12.3%** | **$31.49** | **$26.04** | **$5.45** | — |
+
+Discount codes on first orders above 25% off: MAYA20 106, WELCOME10 67, MAYA20+WELCOME10 8, VIPEARLY+WELCOME10 5. An order deeper than any single code may mean a code stacked on an automatic sale discount.
+Depth = discount ÷ (net sales + discount) on the first order, rounded to a whole percent. First-order CM includes any other order placed the same day; a deeper discount lowers it by construction, so compare the repeat rate and repeat-order CM to judge the customers. Compare-at markdowns (clearance) aren't in the order's discount, so they don't count here.
+
+### 3. BFCM 2025 by acquisition source (180 days)
+
+| Source (first order's utm_source) | Customers | Spellings merged | First order >25% off | Ordered again within 180 days (95% range) | vs cohort (12.3%) | CM per customer at 180 days |
+| --- | ---: | --- | ---: | ---: | --- | ---: |
+| Meta | 452 | `facebook` 269, `Facebook` 57, `fb` 56, `ig` 42, `instagram` 28 | 20% | 11.1% (8–14%) | within noise | $31.36 |
+| Google | 221 | `google` 189, `Google` 21, `adwords` 11 | 15% | 18.6% (14–24%) | clearly higher | $36.12 |
+| TikTok | 106 | `tiktok` 89, `TikTok` 17 | 49% | 3.8% (1–9%) | clearly lower | $23.80 |
+| Klaviyo | 15 | `klaviyo` 15 | 13% | fewer than 30 customers | — | — |
+| Pinterest | 5 | `pinterest` 5 | 20% | fewer than 30 customers | — | — |
+| No UTM (direct/unknown) | 44 | — | 16% | 15.9% (8–29%) | within noise | $31.55 |
+
+utm_source was spelled 10 ways for 3 channels; spellings were merged before cutting.
+Source is the first order's utm_source: where the first order came from, last click, not what convinced the customer.
+
+### 4. BFCM 2025 by entry product (180 days)
+
+| Product in the first order | Customers | Ordered again within 180 days (95% range) | vs cohort (12.3%) | CM per customer at 180 days | Most common next product (share of repeaters) |
+| --- | ---: | ---: | --- | ---: | --- |
+| `merino-wool-throw` | 212 | 12.3% (9–17%) | within noise | $57.09 | `ceramic-pour-over-set` (23%) |
+| `linen-apron` | 208 | 9.6% (6–14%) | within noise | $29.36 | `stoneware-mug-set` (35%) |
+| `stoneware-mug-set` | 200 | 13.5% (9–19%) | within noise | $34.89 | `stoneware-mug-set` (33%) |
+| `waxed-canvas-tote` | 200 | 12.0% (8–17%) | within noise | $38.70 | `stoneware-mug-set` (42%) |
+| `walnut-serving-board` | 193 | 12.4% (9–18%) | within noise | $33.39 | `walnut-serving-board` (33%) |
+| `ceramic-pour-over-set` | 180 | 23.9% (18–31%) | clearly higher | $43.32 | `stoneware-mug-set` (51%) |
+
+A first order with two products counts under both, so rows overlap. Next product = what the repeaters' second order included.
+
+### 5. Recommendations for BFCM 2026 (recommended; nothing has been changed)
+
+1. **New customers: test a first-order discount cap at 25% with a holdout before setting it.** BFCM 2025 customers acquired above 25% off (186 customers, 22.1% of the cohort) repeated 3.8% within 180 days (2–8%) vs 15.2% (13–18%) at 16–25%, and added $1.88 vs $6.18 of CM per customer after the first order. This may reflect who the discount attracts; confirm with a holdout test before setting a cap. First-order CM was $13.09 vs $27.24; a deeper discount lowers that by itself, so it isn't read as customer quality. Codes on those first orders: MAYA20 (106), WELCOME10 (67) and MAYA20+WELCOME10 (8). Check that welcome and other codes can't combine with the BFCM 2026 sale (BFCM Offer & Discount Config QA checks combinations).
+2. **Existing customers: early access, not a deeper code.** Give them the same depth as new customers with an early-access window, and don't open the post-purchase flow with another discount: 48% of BFCM 2025 customers' repeat orders already used one, vs 26% for October 2025.
+3. **Prospect with `ceramic-pour-over-set`.** BFCM 2025 customers whose first order included it ordered again 23.9% of the time within 180 days (18–31%) vs 12.3% for the whole cohort, and were worth $43.32 each. 51% of those repeaters' next orders included `stoneware-mug-set`: feature `ceramic-pour-over-set` in BFCM prospecting creative and gift-guide placements, and cross-sell `stoneware-mug-set` after it.
+4. **Time the post-purchase flow to day 51–79.** Of the BFCM 2025 customers who ordered again within 180 days (104 customers), a quarter came back by day 51, half by day 79 and three quarters by day 122. Send the first cross-sell (the entry product's natural next buy, at full price) by day 51, a second touch before day 79, and move non-buyers to the regular newsletter after day 122. 16 of those second orders came before Dec 25: add a gift reminder before your ground-shipping cutoff (Holiday Shipping Cutoff Checker).
+5. **Budget math: plan BFCM on first-order contribution, not on lifetime value.** By 180 days a BFCM 2025 customer had added $5.45 of contribution after the first day (October 2025: $13.69). In the BFCM Holiday Budget Planner, keep the target MER on first-order contribution and don't lower it for expected repeat purchases; set return_rate_pct to 9.2 (what BFCM 2025 first orders actually refunded) instead of 7; and treat $31.49 (contribution per BFCM 2025 customer at 180 days) as the most a BFCM new customer can cost if it has to pay back within 180 days. BFCM 2025's blended cost was $35.59. If the plan's blended new-customer cost is above $31.49, expect BFCM 2026 customers not to pay back within 180 days at BFCM 2025's quality.
+6. **Re-run twice:** on Dec 2, 2026, when BFCM 2025's 365-day horizon matures; and in January for an early read on BFCM 2026 (first horizons: 30 days on Dec 31, 2026 and 60 days on Jan 30, 2027). For the January read, compare like with like: `--year 2026 --compare "BFCM 2025=2025-11-24:2025-12-02" --compare "October 2026=2026-10-01:2026-10-31"`. Horizons that haven't matured print as not mature.
+
+### 6. Caveats and data checks
+
+- **Data:** 2,434 orders from 1,716 customers, Oct 1, 2025–Oct 6, 2026. Every customer in the file is in an analysed cohort.
+- **New customers:** a customer counts as new only if the file holds no earlier order. The file is taken to hold every order since Mar 1, 2021 (--history-since).
+- **Costs:** COGS estimated at 36% of the pre-discount price (gross margin 64% in economics.json) for every order (no cogs column); shipping and fulfillment $11.00 per order; payment fees 2.9% + $0.30 on net sales (fees on tax and shipping charged aren't counted, so CM is slightly overstated); refunded goods restocked, shipping and fees not recovered (the same assumptions as the BFCM Holiday Budget Planner).
+- **Same-day orders:** customers who placed another order on their first day: 20 (BFCM 2025), 4 (October 2025), 9 (Jan–Feb 2026). Those orders count toward value, not as a repeat.
+- **Seasons differ:** 16 of October 2025's 125 repeat orders within 180 days were placed during BFCM 2025 itself; 16 of BFCM 2025's 104 second orders within 180 days came before Dec 25 (gift shopping). Each cohort's first months fall in a different part of the year, so compare them as what they are, not as a controlled test.
+- **Small cells:** cuts with fewer than 30 customers show no rates (--min-cell). Ranges are 95% Wilson intervals; "clearly higher/lower" means the range excludes the cohort-wide rate. A rough screen for noise, not proof.
+- **Correlation, not causation:** the cuts show who came back, not why. Customers who chose a deep code or came from a given channel may differ in ways the data can't see. Test a change (a holdout, or one channel at a time) before treating a cut as the cause.
+- **Time zone:** timestamps converted to America/New_York before taking the order date.
+
+_States: findings are detected; section 5 is recommended. Nothing was applied: read-only, no store, ad account or email flow was changed._

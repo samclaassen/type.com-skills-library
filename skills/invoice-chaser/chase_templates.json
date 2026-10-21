@@ -1,0 +1,37 @@
+{
+  "signoff": "Thanks,\n{sender_name}\n{business_name}",
+  "tones": {
+    "gentle": {
+      "label": "gentle reminder",
+      "subject": "Invoice {number} — friendly reminder",
+      "body": [
+        "Hi {greeting_name}, hope things are going well. A friendly reminder that invoice {number} ({amount}, due {due}) is now {overdue} past due. It may already be on its way — if so, thank you, and please ignore this.",
+        "Payment details are below in case they're handy. {payment}"
+      ]
+    },
+    "firm": {
+      "label": "firmer follow-up",
+      "subject": "Invoice {number} — quick follow-up",
+      "body": [
+        "Hi {greeting_name}, just a quick note that invoice {number} ({amount}, due {due}) is now {overdue} past due. Could you confirm it's in the queue?",
+        "Happy to resend the invoice or sort out a different payment method if that's easier. {payment}"
+      ]
+    },
+    "escalation": {
+      "label": "escalation",
+      "subject": "Invoice {number} — now {overdue} overdue",
+      "body": [
+        "Hi {greeting_name}, I'm following up again on invoice {number} ({amount}, due {due}), which is now {overdue} past due. I haven't been able to confirm a payment date yet, so I wanted to check whether anything is holding it up — a missing PO, a change in who handles payables, or a question about the work itself.",
+        "If it helps, I can send a copy straight to whoever processes payments, or we can jump on a quick call. Could you let me know an expected payment date this week? {payment}"
+      ]
+    },
+    "final": {
+      "label": "final notice",
+      "subject": "Final reminder: invoice {number} ({amount})",
+      "body": [
+        "Hi {greeting_name}, this is my final scheduled reminder about invoice {number} ({amount}, due {due}), now {overdue} past due. I'd really like to get this resolved with you directly.",
+        "Could you reply with a payment date, or let me know if there's a problem with the invoice we should sort out first? If paying in instalments would make it easier, I'm open to that. {payment}"
+      ]
+    }
+  }
+}

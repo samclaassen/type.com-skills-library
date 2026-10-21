@@ -1,0 +1,13 @@
+name,body,tags
+Holiday shipping,"Hi {{ticket.customer.firstname}}, thanks for shopping with us! To get your gifts in time, order by Dec 18, 2025 and they're guaranteed to arrive by Christmas. Orders placed by 1 pm ET ship the same business day.","shipping,holiday"
+Where is my order,"Hi {{ticket.customer.firstname}}, your order {{ticket.customer.integrations.shopify.orders[0].name}} is on its way! Track it here: {{ticket.customer.integrations.shopify.orders[0].fulfillments[0].tracking_url}}
+
+{{current_user.firstname}}",order-status
+Returns & exchanges,"Hi {{ticket.customer.firstname}}, you can return or exchange unused items within 30 days of delivery. Start at fernhillgoods.com/returns and we'll email you a free return label.",returns
+Black Friday code,Use code BF20 at checkout for 20% off everything during our Black Friday sale!,promo
+Discount code help,"Only one code works per order. If WELCOME10 isn't working, try SUMMER15 instead.",promo
+Free shipping,Free shipping on all orders over $50 in the US!,shipping
+Holiday hours,"Our team is away from Dec 24, 2025 to Jan 1, 2026. We'll reply within 1 business day when we're back.",hours
+Cancel order,We can cancel or change your order within 1 hour of purchase. After that it's with our warehouse team.,cancel
+Damaged item,So sorry! Please send us a photo within 14 days of delivery and we'll send a free replacement.,damaged
+Gift message,"You can add a gift message in the cart, and we leave prices off the packing slip.",gift

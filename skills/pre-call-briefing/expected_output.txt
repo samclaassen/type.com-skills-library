@@ -1,0 +1,47 @@
+=== 1. Scheduled run: external call starting in 25 minutes ===
+#### Briefing: Example Outfitters Co (fictional) — Q4 rollout & pricing at Tue Oct 6, 10:00 PDT
+
+**TL;DR** — Evaluation · $24,000/yr · close Oct 30. This call needs to pin the real deadline and close the budget gap ($24,000/yr vs ~$18,000/yr ceiling) with Marcus Lee (signer, first meeting).
+
+**The deal**
+| Field | Value | Flag |
+|---|---|---|
+| Stage | Evaluation | |
+| Amount | $24,000/yr | ⚠️ Priya said ~$18,000/yr ceiling (call note Sep 24) |
+| Close date | Oct 30 | ⚠️ “Before Black Friday” — date unclear |
+| Days since last activity | 3 | |
+
+**Who's on the call**
+- **Priya Sharma**, Head of Ops — decision influencer, 3 prior calls, 7 emails. Last (Oct 3): asked for security questionnaire (sent ✓).
+- **Marcus Lee**, VP Finance — signer. First meeting. No prior touchpoints. ⚠️
+- Our side: Dana Ortiz, Sam Kim
+
+**Open threads**
+- Priya asked about SSO support (Sep 28 email) — unanswered.
+- Dana committed to a 3-seat quote by Oct 2 — not done yet (4 days overdue). ⚠️
+- Priya owes Q4 order-volume forecast by Oct 9 — waiting on them.
+- Slack #deal-outfitters — Sam Kim (Oct 5): “Priya says Marcus wants a cost comparison against the BI seats they already pay for.”
+
+**Risks & landmines**
+- Budget conflict: CRM says $24,000/yr, prospect said ~$18,000/yr ceiling — “Realistically we're around eighteen thousand a year, and that's the ceiling this fiscal year.” (Priya Sharma, call note Sep 24).
+- Tallyboard: Trialed in spring — “nobody opened the dashboards” (Priya Sharma, call note Sep 10).
+- Signer in the room for the first time: Marcus Lee (VP Finance) — no relationship yet.
+
+Company context: not available (enrichment: basic).
+
+**Suggested agenda**
+1. Confirm Black Friday prep timeline → pin the real deadline
+2. Walk Marcus through the payback case (address the ~$18,000/yr ceiling)
+3. Answer the SSO support question (Priya, Sep 28)
+4. Deliver a 3-seat quote (due Oct 2) and confirm it was received
+
+Sources: Calendar: Google ✓ · CRM: HubSpot ✓ (record found) · Email: Gmail ✓ (5 threads) · Slack ✓ (1 mention in 7 days) · Enrichment: off (basic)
+Gaps: none.
+Event key: google:7kq2n4rp9d0v1s3h5j6m8b2c4f@2026-10-06T10:00:00-07:00 · as of 2026-10-06T09:35:00-07:00
+_Internal prep only — never paste any of this into a customer-facing email, deck or shared doc._
+
+=== 2. Next 15-minute run: same event is already in the log ===
+Skipped: already briefed google:7kq2n4rp9d0v1s3h5j6m8b2c4f@2026-10-06T10:00:00-07:00 (logged 2026-10-06T09:35:00-07:00).
+
+=== 3. Internal-only meeting ===
+Skipped: internal-only meeting “Weekly pipeline review” — no briefing.

@@ -1,0 +1,5 @@
+record_type,invoice_id,refund_id,created_at,refunded_at,currency,product_amount,discount_amount,shipping_amount,tax_amount,gift_card_amount,tags,financial_status,cancelled,retailer,extracted_at
+sale,INV-2040,,2026-09-21T16:00:00-04:00,,USD,1200.00,0.00,60.00,0.00,0.00,,open,false,Greenleaf Market,2026-09-23T05:30:00-04:00
+sale,INV-2041,,2026-09-22T10:00:00-04:00,,USD,480.00,0.00,0.00,0.00,0.00,,open,false,Bloom & Co,2026-09-23T05:30:00-04:00
+sale,INV-2042,,2026-09-22T15:45:00-04:00,,USD,960.00,0.00,40.00,0.00,0.00,,open,false,Harbor Apothecary,2026-09-23T05:30:00-04:00
+sale,INV-2043,,2026-09-22T16:10:00-04:00,,USD,300.00,0.00,0.00,0.00,0.00,,voided,false,Bloom & Co,2026-09-23T05:30:00-04:00

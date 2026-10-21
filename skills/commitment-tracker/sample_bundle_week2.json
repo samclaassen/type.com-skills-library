@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "_note": "FICTIONAL sample data for the second weekly run. The window starts on the day of the last posted run (Fri Oct 9, from --next-window), so nothing after that 4pm run is missed. Items from week 1 are referenced by the commitment ids the script printed and stored in the state file.",
+  "scan": {"from": "2026-10-09", "to": "2026-10-16", "cadence": "weekly"},
+  "sources": {
+    "meetings": {"provider": "granola", "status": "ok", "detail": null, "plan": "free", "history_limit_days": null},
+    "email": {"provider": "gmail", "status": "ok", "detail": null},
+    "slack": {"provider": "slack", "status": "unavailable", "detail": "search.messages returned token_expired"},
+    "tracker": {"provider": null, "status": "not_configured", "detail": "no Linear or Jira connected in this Space"},
+    "calendar": {"provider": "google", "status": "ok", "detail": null}
+  },
+  "meetings": [
+    {
+      "meeting_id": "sample-b1c2",
+      "title": "Oatmerle Foods finance call",
+      "start": "2026-10-13T10:00:00-07:00",
+      "url": "https://notes.granola.ai/d/sample-b1c2",
+      "account": "Oatmerle Foods",
+      "attendees": [
+        {"name": "Dana Ortiz", "email": "dana@brackenvole.example"},
+        {"name": "Sam Kim", "email": "sam@brackenvole.example"},
+        {"name": "Tomás Rivera", "email": "tomas@oatmerle.example"}
+      ],
+      "notes_status": "ok",
+      "transcript_status": "ok"
+    }
+  ],
+  "commitments": [
+    {
+      "ref": "c11", "meeting_id": "sample-b1c2", "direction": "they_owe",
+      "owner": "Tomás Rivera", "owner_email": "tomas@oatmerle.example",
+      "counterpart": "Oatmerle Foods",
+      "deliverable": "Confirm the PO number",
+      "quote": "I'll confirm the PO number with procurement in two business days.",
+      "quote_source": "transcript",
+      "due": {"kind": "relative", "phrase": "in two business days"}
+    }
+  ],
+  "evidence": [
+    {
+      "commitment_id": "ct-97efb9ee06", "kind": "sent_email", "strength": "strong", "date": "2026-10-12",
+      "url": "https://mail.google.com/mail/u/0/#sent/sample-msg-03",
+      "summary": "Sent “Fennaroot SOW v2” to Priya Shah"
+    },
+    {
+      "commitment_id": "ct-e59182401c", "kind": "later_meeting", "strength": "strong", "date": "2026-10-13",
+      "url": "https://notes.granola.ai/d/sample-b1c2",
+      "summary": "Tomás confirmed he has the renewal quote (Oatmerle Foods finance call)"
+    },
+    {
+      "commitment_id": "ct-628dc18c50", "kind": "received_email", "strength": "weak", "date": "2026-10-14",
+      "url": "https://mail.google.com/mail/u/0/#inbox/sample-msg-04",
+      "summary": "Marcus Lee replied “export attached, partial”",
+      "why": "Marcus sent a file but called it partial."
+    }
+  ],
+  "user_actions": [
+    {"commitment_id": "ct-81931a148b", "action": "dismiss", "date": "2026-10-14", "note": "Sam handled the intro in person"}
+  ]
+}

@@ -1,0 +1,282 @@
+=== 1. Q3 win/loss report from the CRM deal list and Granola calls ===
+# Win/Loss Analysis — Q3 2026
+
+Jul 1 – Sep 30, 2026 · closed deals, as of Oct 5, 2026
+
+**At a glance** — 12 closed deals: 5 won, 7 lost (win rate 42%). Losses: 3 competitive, 2 no decision, 1 other, 1 no recorded reason. Top loss reason: Price or value not justified (2 lost deals). Top win reason: Fast time to value (2 won deals). Most-seen competitor: Countwhistle, in 5 deals; we won 3 of 5 (60%). 2 deals have no call coverage.
+
+_Counted by distinct deals: a deal with three calls that all mention price counts once. Percentages appear only when the group has at least 5 deals; smaller groups show counts. Every reason cites a customer quote from a call transcript, a labelled note excerpt, or a CRM field._
+
+## Why we lose
+
+### Competitive losses (3 deals)
+
+_Lost to a named competitor, as recorded in a CRM field or in a cited loss reason._
+
+1. **Price or value not justified** — 2 of 3 competitive losses
+   - **Marrowby &amp; Vane** (D-1002 · \$60,000 · lost at Proposal · we lost to Countwhistle): “But at sixty thousand against their forty, finance would not sign it.” — Procurement lead · [Marrowby &amp; Vane decision call, Sep 10](https://notes.granola.ai/d/sample-w04)
+   - **Sallowfen Dental** (D-1010 · \$22,000 · lost at Proposal · we lost to Countwhistle): Note excerpt (AI meeting notes, not verbatim speech): _Chose Countwhistle; their quote came in roughly 30% lower for the same seats._ · [Sallowfen Dental decision, Sep 8](https://notes.granola.ai/d/sample-w12b)
+   - **Marrowby &amp; Vane** (D-1002 · \$60,000 · lost at Proposal · we lost to Countwhistle): [CRM field “Closed lost reason”](https://crm.tamsquill.example/deals/D-1002): “Price”
+   - Deals: Marrowby &amp; Vane \(D-1002\); Sallowfen Dental \(D-1010\)
+2. **Competitor was a better fit** — 1 of 3 competitive losses
+   - **Wrenholt Clinics** (D-1007 · \$45,000 · lost at Negotiation · we lost to Pindleworth): “Pindleworth already runs our scheduling, so adding their module was the easy path.” — Clinical ops lead · [Wrenholt Clinics loss debrief, Sep 30](https://notes.granola.ai/d/sample-w11)
+   - Deals: Wrenholt Clinics \(D-1007\)
+3. **Missing feature or capability** — 1 of 3 competitive losses
+   - **Wrenholt Clinics** (D-1007 · \$45,000 · lost at Negotiation · we lost to Pindleworth): “We needed the HL7 feed on day one and that's on your roadmap, not in the product.” — Clinical ops lead · [Wrenholt Clinics loss debrief, Sep 30](https://notes.granola.ai/d/sample-w11)
+   - Deals: Wrenholt Clinics \(D-1007\)
+
+### No-decision losses (2 deals)
+
+_Every cited reason is a no-decision category in the taxonomy (for example they stayed with the status quo)._
+
+1. **No decision\: stayed with the status quo** — 1 of 2 no-decision losses
+   - **Plimsoll &amp; Quist** (D-1003 · \$18,000 · lost at Evaluation): “Honestly we're going to stick with the spreadsheets this year and look again in spring.” — Operations director · [Plimsoll &amp; Quist evaluation check-in, Jul 14](https://notes.granola.ai/d/sample-w05)
+   - **Plimsoll &amp; Quist** (D-1003 · \$18,000 · lost at Evaluation): [CRM field “Closed lost reason”](https://crm.tamsquill.example/deals/D-1003): “No decision”
+   - Deals: Plimsoll &amp; Quist \(D-1003\)
+2. **No decision\: timing or other priorities** — 1 of 2 no-decision losses
+   - **Dovecrane Logistics** (D-1008 · \$15,000 · lost at Discovery): [CRM field “Closed lost reason”](https://crm.tamsquill.example/deals/D-1008): “Timing - revisit in Q1”
+   - Deals: Dovecrane Logistics \(D-1008\)
+
+### Other losses (1 deal)
+
+_Lost with a cited reason, but not to a named competitor and not as no decision._
+
+1. **Security, legal or compliance blocker** — 1 of 1 other loss
+   - **Thrumcastle Supply** (D-1004 · \$32,000 · lost at Security review): “Without SAML single sign-on our IT team won't sign off, full stop.” — IT manager · [Thrumcastle Supply next steps, Aug 27](https://notes.granola.ai/d/sample-w07)
+   - Deals: Thrumcastle Supply \(D-1004\)
+
+### Losses with no recorded reason (1 deal)
+
+_No loss reason in the CRM fields read and none stated on the calls read. Not counted in any reason below; never read silence as a reason._
+
+- **Corrabeck Studio** (D-1011 · lost at Evaluation) — 2 calls read
+
+## Why we win
+
+1. **Fast time to value** — 2 of 5 won deals (40%)
+   - **Example Outfitters Co** (D-1001 · \$24,000): “We were live in a week, which is what sold the ops team.” — Head of Ops · [Example Outfitters trial review, Jul 28](https://notes.granola.ai/d/sample-w01)
+   - **Brimvasse Labs** (D-1012 · \$40,000): Note excerpt (AI meeting notes, not verbatim speech): _Two-week rollout plan was a deciding factor for the CTO._ · [Brimvasse Labs rollout planning, Sep 21](https://notes.granola.ai/d/sample-w17)
+   - **Example Outfitters Co** (D-1001 · \$24,000): [CRM field “Win reason”](https://crm.tamsquill.example/deals/D-1001): “Fast rollout”
+   - Deals: Example Outfitters Co \(D-1001\); Brimvasse Labs \(D-1012\)
+2. **Met security or compliance needs** — 1 of 5 won deals (20%)
+   - **Brimvasse Labs** (D-1012 · \$40,000): “You were the only one with SAML and audit logs out of the box.” — CTO · [Brimvasse Labs security deep-dive, Sep 15](https://notes.granola.ai/d/sample-w16)
+   - Deals: Brimvasse Labs \(D-1012\)
+3. **Solved the core use case** — 1 of 5 won deals (20%)
+   - **Tarnwick Freight** (D-1009 · \$27,000): [CRM field “Win reason”](https://crm.tamsquill.example/deals/D-1009): “Product fit for multi-depot routing”
+   - Deals: Tarnwick Freight \(D-1009\)
+4. **Successful trial or proof of concept** — 1 of 5 won deals (20%)
+   - **Example Outfitters Co** (D-1001 · \$24,000): Note excerpt (AI meeting notes, not verbatim speech): _Trial on two stores convinced the team; regional managers want the rest of the stores next._ · [Example Outfitters trial review, Jul 28](https://notes.granola.ai/d/sample-w01)
+   - Deals: Example Outfitters Co \(D-1001\)
+5. **Integrations** — 1 of 5 won deals (20%)
+   - **Quirnwell Studio** (D-1006 · \$12,000): “The fact that it talks to our project tool is the whole reason.” — Managing director · [Quirnwell Studio demo, Aug 25](https://notes.granola.ai/d/sample-w09)
+   - Deals: Quirnwell Studio \(D-1006\)
+6. **Ease of use** — 1 of 5 won deals (20%)
+   - **Brackenvolt Labs** (D-1005 · \$9,000): “My team just got it without training.” — Founder · [Brackenvolt Labs onboarding scope, Jul 2](https://notes.granola.ai/d/sample-w08)
+   - Deals: Brackenvolt Labs \(D-1005\)
+7. **Price or value** — 1 of 5 won deals (20%)
+   - **Brackenvolt Labs** (D-1005 · \$9,000): “And it fit the budget we had without a fight.” — Founder · [Brackenvolt Labs onboarding scope, Jul 2](https://notes.granola.ai/d/sample-w08)
+   - Deals: Brackenvolt Labs \(D-1005\)
+
+## Competitor head-to-head
+
+_Every figure is from our side: deals = deals where the CRM lists the competitor or we lost to them; "We won" = deals we won against them. Calls where a customer only mentioned them are counted separately and not rated._
+
+| Competitor | Deals | We won | We lost to them | We lost otherwise | Our win rate | Mentioned on calls only |
+|---|---|---|---|---|---|---|
+| Countwhistle | 5 | 3 | 2 | 0 | 60% | 0 |
+| Pindleworth | 1 | 0 | 1 | 0 | n<5 | 0 |
+
+- **Countwhistle** — 5 deals against them; we won 3 of 5 (60%); we lost to them: Marrowby &amp; Vane \(D-1002\); Sallowfen Dental \(D-1010\)
+   - **Example Outfitters Co** (D-1001): “Countwhistle came back with a lower number, but they wanted eight weeks to set up.” — Head of Ops · [Example Outfitters commercial close, Aug 12](https://notes.granola.ai/d/sample-w02)
+   - **Marrowby &amp; Vane** (D-1002): “Countwhistle is pitching us hard on price, and they include the reporting module.” — Procurement lead · [Marrowby &amp; Vane pricing review, Aug 20](https://notes.granola.ai/d/sample-w03)
+   - **Quirnwell Studio** (D-1006): “Countwhistle couldn't pull client data from our project tool at all.” — Managing director · [Quirnwell Studio demo, Aug 25](https://notes.granola.ai/d/sample-w09)
+- **Pindleworth** — 1 deal against them; we won 0 of 1; we lost to them: Wrenholt Clinics \(D-1007\)
+   - **Wrenholt Clinics** (D-1007): “Pindleworth is already in the building, so you have to be clearly better, not just a bit better.” — Clinical ops lead · [Wrenholt Clinics negotiation, Sep 2](https://notes.granola.ai/d/sample-w10)
+   - **Wrenholt Clinics** (D-1007): “Pindleworth already runs our scheduling, so adding their module was the easy path.” — Clinical ops lead · [Wrenholt Clinics loss debrief, Sep 30](https://notes.granola.ai/d/sample-w11)
+- **Ostlemere** — mentioned on calls in 1 deal (not in the CRM's competitor field)
+   - **Thrumcastle Supply** (D-1004): “We also looked at Ostlemere, but they have the same single sign-on gap.” — IT manager \(speaker unconfirmed\) · [Thrumcastle Supply security review, Jul 9](https://notes.granola.ai/d/sample-w06)
+
+## Where losses happen (stage)
+
+| Stage lost at | Lost deals | Share of losses | Amount |
+|---|---|---|---|
+| Discovery | 1 | 14% | \$15,000 |
+| Evaluation | 2 | 29% | \$18,000 (amount unknown for 1 of 2) |
+| Security review | 1 | 14% | \$32,000 |
+| Proposal | 2 | 29% | \$82,000 |
+| Negotiation | 1 | 14% | \$45,000 |
+
+## By segment
+
+| Segment | Deals | Won | Lost | Win rate | Won amount | Lost amount |
+|---|---|---|---|---|---|---|
+| Mid-market | 5 | 2 | 3 | 40% | \$51,000 | \$72,000 |
+| Enterprise | 3 | 1 | 2 | n<5 | \$40,000 | \$105,000 |
+| SMB | 3 | 1 | 2 | n<5 | \$9,000 | \$15,000 (amount unknown for 1 of 2) |
+| Agency | 1 | 1 | 0 | n<5 | \$12,000 | \$0 |
+
+## Objections raised before a loss
+
+_From calls on or before each deal's close date. Recurring = raised in 2 or more lost deals._
+
+- **Competitive comparison** — before the loss in 2 lost deals; also raised in 0 won deals
+   - **Marrowby &amp; Vane** (D-1002): “Countwhistle is pitching us hard on price, and they include the reporting module.” — Procurement lead · [Marrowby &amp; Vane pricing review, Aug 20](https://notes.granola.ai/d/sample-w03)
+   - **Wrenholt Clinics** (D-1007): “Pindleworth is already in the building, so you have to be clearly better, not just a bit better.” — Clinical ops lead · [Wrenholt Clinics negotiation, Sep 2](https://notes.granola.ai/d/sample-w10)
+- **Price or value** — before the loss in 2 lost deals; also raised in 1 won deal
+   - **Marrowby &amp; Vane** (D-1002): “That number is well above what we planned for.” — Procurement lead · [Marrowby &amp; Vane pricing review, Aug 20](https://notes.granola.ai/d/sample-w03)
+   - **Sallowfen Dental** (D-1010): Note excerpt (AI meeting notes, not verbatim speech): _Concerned about price compared with Countwhistle's quote._ · [Sallowfen Dental proposal walkthrough, Sep 1](https://notes.granola.ai/d/sample-w12)
+- Raised before a loss in one lost deal: Security or compliance \(Thrumcastle Supply \(D-1004\)\); Status quo is good enough \(Plimsoll &amp; Quist \(D-1003\)\)
+
+## Deals with no call coverage
+
+_No readable meeting with an attendee on the deal's domains (or linked to the deal). Reasons for these deals come from the CRM only, if at all._
+
+- **Dovecrane Logistics** (D-1008), lost, closed Aug 5 — no meetings found; CRM reason cited
+- **Tarnwick Freight** (D-1009), won, closed Sep 18 — no meetings found; CRM reason cited
+
+## Deals
+
+| Deal | Account | Outcome | Amount | Segment | Lost at | Competitors | Calls | Reasons cited |
+|---|---|---|---|---|---|---|---|---|
+| [D-1001](https://crm.tamsquill.example/deals/D-1001) | Example Outfitters Co | won | \$24,000 | Mid-market | — | Countwhistle | 2 | Fast time to value, Successful trial or proof of concept |
+| [D-1002](https://crm.tamsquill.example/deals/D-1002) | Marrowby &amp; Vane | lost \(competitive\) | \$60,000 | Enterprise | Proposal | Countwhistle | 2 | Price or value not justified |
+| [D-1003](https://crm.tamsquill.example/deals/D-1003) | Plimsoll &amp; Quist | lost \(no decision\) | \$18,000 | Mid-market | Evaluation | — | 1 | No decision\: stayed with the status quo |
+| [D-1004](https://crm.tamsquill.example/deals/D-1004) | Thrumcastle Supply | lost \(other\) | \$32,000 | Mid-market | Security review | — | 2 | Security, legal or compliance blocker |
+| [D-1005](https://crm.tamsquill.example/deals/D-1005) | Brackenvolt Labs | won | \$9,000 | SMB | — | — | 1 | Ease of use, Price or value |
+| [D-1006](https://crm.tamsquill.example/deals/D-1006) | Quirnwell Studio | won | \$12,000 | Agency | — | Countwhistle | 1 | Integrations |
+| [D-1007](https://crm.tamsquill.example/deals/D-1007) | Wrenholt Clinics | lost \(competitive\) | \$45,000 | Enterprise | Negotiation | Pindleworth | 2 | Competitor was a better fit, Missing feature or capability |
+| [D-1008](https://crm.tamsquill.example/deals/D-1008) | Dovecrane Logistics | lost \(no decision\) | \$15,000 | SMB | Discovery | — | 0 | No decision\: timing or other priorities |
+| [D-1009](https://crm.tamsquill.example/deals/D-1009) | Tarnwick Freight | won | \$27,000 | Mid-market | — | — | 0 | Solved the core use case |
+| [D-1010](https://crm.tamsquill.example/deals/D-1010) | Sallowfen Dental | lost \(competitive\) | \$22,000 | Mid-market | Proposal | Countwhistle | 2 | Price or value not justified |
+| [D-1011](https://crm.tamsquill.example/deals/D-1011) | Corrabeck Studio | lost \(no recorded reason\) | — | SMB | Evaluation | — | 2 | — |
+| [D-1012](https://crm.tamsquill.example/deals/D-1012) | Brimvasse Labs | won | \$40,000 | Enterprise | — | Countwhistle | 3 | Met security or compliance needs, Fast time to value |
+
+## Coverage
+
+- Period: Jul 1 – Sep 30, 2026 (closed deals), as of 2026-10-05T09:00:00-07:00.
+- Deals read: 13; in the period: 12; closed outside the period (ignored): 1.
+- Meetings listed: 22; linked to a deal in the period: 18; duplicate notes of one call merged: 1.
+- Not used: internal-only 1 (title not shown); only the note taker listed 1; external but on no deal's domains 1; linked only to deals outside the period 0.
+- Transcripts for linked meetings: 13 read, 2 denied, 0 unavailable, 3 not requested. A denied transcript means notes only, never "not discussed".
+- Evidence items: 31 in the bundle, 28 used after dropping out-of-scope items and duplicates. Call quotes checked word for word against transcript or notes text in the bundle: 23 of 23. CRM-field items checked against the field value: 5.
+- Dropped: 1 for deals outside the period; 1 citing an internal-only meeting; 1 objection from calls after the deal closed.
+- ⚠️ Linked by the agent with no attendee on the deal's domains (check): [Intro call, Jul 24](https://notes.granola.ai/d/sample-w14) → Corrabeck Studio.
+
+Sources: Deals: HubSpot ✓ · Meeting notes: Granola ✓ · Transcripts: Granola partial
+Gaps: Transcripts partial (2 meetings' workspace does not allow transcript access).
+
+_Internal only — contains customer quotes. Quotes in “ ” are verbatim from call transcripts or CRM fields; note excerpts are from AI meeting notes._
+
+=== 2. Slack summary draft of the same report (shown for approval, never posted by the script) ===
+*Win/Loss Analysis — Q3 2026* (Jul 1 – Sep 30, 2026)
+12 closed deals: 5 won, 7 lost (win rate 42%).
+Losses: 3 competitive · 2 no decision · 1 other · 1 no recorded reason
+Top loss reasons: Price or value not justified (2) · Competitor was a better fit (1, tied) · Missing feature or capability (1, tied) · 3 more tied at 1
+Top win reasons: Fast time to value (2) · Met security or compliance needs (1, tied) · Solved the core use case (1, tied) · 4 more tied at 1
+Head-to-head (our record): vs Countwhistle: we won 3 of 5 deals (60%) · vs Pindleworth: we won 0 of 1 deal
+No call coverage: 2 deals
+Full report: <https://type.com/sample-win-loss-report|Win/Loss Analysis — Q3 2026>
+_Counts are distinct deals; percentages only for groups of 5 or more._
+
+=== 3. Deal list from a CSV export, amount-weighted, 4 deals (counts only, no percentages) ===
+# Win/Loss Analysis — September 2026
+
+Sep 1 – Sep 30, 2026 · closed deals, as of Oct 1, 2026
+
+**At a glance** — 4 closed deals: 2 won, 2 lost (win rate not shown: fewer than 5 deals). Losses: 1 competitive, 1 no decision. Top loss reason: tied: Price or value not justified, No decision\: no sign-off, No decision\: stayed with the status quo (1 lost deal each). Top win reason: tied: Ease of use, Fast time to value, Support and relationship (1 won deal each). Most-seen competitor: Countwhistle, in 2 deals; we won 1 of 2. 1 deal has no call coverage.
+
+_Counted by distinct deals: a deal with three calls that all mention price counts once. Percentages appear only when the group has at least 5 deals; smaller groups show counts. Every reason cites a customer quote from a call transcript, a labelled note excerpt, or a CRM field._
+
+## Why we lose
+
+### Competitive losses (1 deal)
+
+_Lost to a named competitor, as recorded in a CRM field or in a cited loss reason._
+
+1. **Price or value not justified** — 1 of 1 competitive loss · amount \$42,000
+   - **Quellmark Foods** (Q-202 · \$42,000 · lost at Proposal · we lost to Countwhistle): CRM field “Closed Lost Reason”: “Went with Countwhistle - bundled pricing”
+   - Deals: Quellmark Foods \(Q-202\)
+
+### No-decision losses (1 deal)
+
+_Every cited reason is a no-decision category in the taxonomy (for example they stayed with the status quo)._
+
+1. **No decision\: no sign-off** — 1 of 1 no-decision loss · amount unknown
+   - **Plimsoll &amp; Quist** (Q-204 · lost at Evaluation): Note excerpt (AI meeting notes, not verbatim speech): _Project paused until the new finance lead starts; no budget owner for now._ · [Plimsoll &amp; Quist check-in, Sep 15](https://notes.granola.ai/d/sample-c03)
+   - Deals: Plimsoll &amp; Quist \(Q-204\)
+2. **No decision\: stayed with the status quo** — 1 of 1 no-decision loss · amount unknown
+   - **Plimsoll &amp; Quist** (Q-204 · lost at Evaluation): CRM field “Closed Lost Reason”: “No decision”
+   - Deals: Plimsoll &amp; Quist \(Q-204\)
+
+## Why we win
+
+1. **Ease of use** — 1 of 2 won deals · amount \$18,500
+   - **Gorsebury Kitchens** (Q-201 · \$18,500): CRM field “Win Reason”: “Easy setup”
+   - Deals: Gorsebury Kitchens \(Q-201\)
+2. **Fast time to value** — 1 of 2 won deals · amount \$18,500
+   - **Gorsebury Kitchens** (Q-201 · \$18,500): “We had it running before lunch.” — Head chef · [Gorsebury Kitchens kickoff, Sep 2](https://notes.granola.ai/d/sample-c01)
+   - Deals: Gorsebury Kitchens \(Q-201\)
+3. **Support and relationship** — 1 of 2 won deals · amount \$9,600
+   - **Fennaroot Bakery** (Q-203 · \$9,600): CRM field “Win Reason”: “Referral from existing customer”
+   - Deals: Fennaroot Bakery \(Q-203\)
+
+## Competitor head-to-head
+
+_Every figure is from our side: deals = deals where the CRM lists the competitor or we lost to them; "We won" = deals we won against them. Calls where a customer only mentioned them are counted separately and not rated._
+
+| Competitor | Deals | We won | We lost to them | We lost otherwise | Our win rate | Mentioned on calls only |
+|---|---|---|---|---|---|---|
+| Countwhistle | 2 | 1 | 1 | 0 | n<5 | 0 |
+
+- **Countwhistle** — 2 deals against them; we won 1 of 2; we lost to them: Quellmark Foods \(Q-202\)
+   - **Quellmark Foods** (Q-202): “Countwhistle bundles the inventory module for free. Can you match that?” — Purchasing manager · [Quellmark Foods proposal review, Sep 11](https://notes.granola.ai/d/sample-c02)
+
+## Where losses happen (stage)
+
+| Stage lost at | Lost deals | Share of losses | Amount |
+|---|---|---|---|
+| Evaluation | 1 | n<5 | unknown |
+| Proposal | 1 | n<5 | \$42,000 |
+
+## By segment
+
+| Segment | Deals | Won | Lost | Win rate | Won amount | Lost amount |
+|---|---|---|---|---|---|---|
+| Mid-market | 2 | 0 | 2 | n<5 | \$0 | \$42,000 (amount unknown for 1 of 2) |
+| SMB | 2 | 2 | 0 | n<5 | \$28,100 | \$0 |
+
+## Objections raised before a loss
+
+_From calls on or before each deal's close date. Recurring = raised in 2 or more lost deals._
+
+- None raised in 2 or more lost deals.
+- Raised before a loss in one lost deal: Competitive comparison \(Quellmark Foods \(Q-202\)\)
+
+## Deals with no call coverage
+
+_No readable meeting with an attendee on the deal's domains (or linked to the deal). Reasons for these deals come from the CRM only, if at all._
+
+- **Fennaroot Bakery** (Q-203), won, closed Sep 22 — no meetings found; CRM reason cited
+
+## Deals
+
+| Deal | Account | Outcome | Amount | Segment | Lost at | Competitors | Calls | Reasons cited |
+|---|---|---|---|---|---|---|---|---|
+| Q-201 | Gorsebury Kitchens | won | \$18,500 | SMB | — | Countwhistle | 1 | Fast time to value, Ease of use |
+| Q-202 | Quellmark Foods | lost \(competitive\) | \$42,000 | Mid-market | Proposal | Countwhistle | 1 | Price or value not justified |
+| Q-203 | Fennaroot Bakery | won | \$9,600 | SMB | — | — | 0 | Support and relationship |
+| Q-204 | Plimsoll &amp; Quist | lost \(no decision\) | — | Mid-market | Evaluation | — | 1 | No decision\: no sign-off, No decision\: stayed with the status quo |
+
+## Coverage
+
+- Period: Sep 1 – Sep 30, 2026 (closed deals), as of 2026-10-01T09:00:00-04:00.
+- Deals read: 4; in the period: 4; closed outside the period (ignored): 0.
+- Meetings listed: 3; linked to a deal in the period: 3; duplicate notes of one call merged: 0.
+- Not used: internal-only 0 (title not shown); only the note taker listed 0; external but on no deal's domains 0; linked only to deals outside the period 0.
+- Transcripts for linked meetings: 2 read, 1 denied, 0 unavailable, 0 not requested. A denied transcript means notes only, never "not discussed".
+- Evidence items: 7 in the bundle, 7 used after dropping out-of-scope items and duplicates. Call quotes checked word for word against transcript or notes text in the bundle: 3 of 3. CRM-field items checked against the field value: 4.
+
+Sources: Deals: CSV export ✓ · Meeting notes: Granola ✓ · Transcripts: Granola partial
+Gaps: Transcripts partial (1 meeting's workspace does not allow transcript access).
+
+_Internal only — contains customer quotes. Quotes in “ ” are verbatim from call transcripts or CRM fields; note excerpts are from AI meeting notes._

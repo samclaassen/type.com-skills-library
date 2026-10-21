@@ -1,0 +1,144 @@
+# Paid account audit — Aurora Bikeworks — Google Ads (US/CA)
+
+Period 2026-09-01 to 2026-09-21 (21 days) | 9 campaigns (8 enabled) | $16,583 spend
+
+## Spend at issue
+
+| Bucket | Amount | % of spend | What it means |
+| --- | ---: | ---: | --- |
+| Wasted spend | $608 | 3.7% | Spend on traffic that converted zero times and can be blocked outright. |
+| Unmeasured spend | $3,150 | 19.0% | Spend in campaigns with no recorded conversion. Not proven waste - it is unproven either way until tracking is fixed. |
+| Unspent capacity | $4,030 | 24.3% | Budgeted capacity the account did not deliver against in the period. |
+| Spend at risk | $7,290 | 44.0% | Spend exposed to a disapproval, an uncapped budget, or creative long past its refresh date. |
+| Unattributable by naming | $780 | 4.7% | Spend in campaigns that break the naming convention, so it cannot be rolled up automatically. |
+
+Conversion tracking coverage: 80.3% of spend sits in campaigns with at least one recorded conversion.
+
+Buckets overlap by design — one campaign can appear in several — so do not add them together. Only the wasted-spend bucket is money that can be stopped outright.
+
+## Findings (14)
+
+### 1. [HIGH] No conversions recorded on $3,150 of spend — $3,150 unmeasured spend
+
+- Campaign: `AB_US_PMax_AllProducts`
+- Check: Conversion tracking
+- AB_US_PMax_AllProducts spent $3,150 across 4,200 clicks and reported zero conversions.
+- Every efficiency metric for this campaign is undefined until a conversion action fires.
+- Fix: Confirm the conversion action is enabled, set as a primary goal, and included in this campaign's bidding. Re-audit after one full conversion window before judging performance.
+
+### 2. [HIGH] Every enabled ad is disapproved - the campaign cannot serve — $2,100 spend at risk
+
+- Campaign: `AB_US_YouTube_Awareness`
+- Check: Ad approvals
+- All 2 enabled ads are DISAPPROVED: ad-101001, ad-101002.
+- The campaign holds $100.00/day of budget ($2,100 over 21 days) that cannot be delivered; actual spend was $120.
+- Fix: Fix the policy violation or rebuild the ads. Until then, move the budget to a campaign that can serve instead of leaving it stranded.
+
+### 3. [HIGH] Delivering only 5.7% of its daily cap — $1,980 unspent capacity
+
+- Campaign: `AB_US_YouTube_Awareness`
+- Check: Budget pacing
+- Daily cap $100.00 x 21 days = $2,100 of capacity; actual spend was $120 ($5.71/day).
+- $1,980 of committed capacity went undelivered in the period.
+- Fix: Check bid caps, auction eligibility and audience size. If the campaign genuinely cannot absorb the budget, move the difference to a channel that can rather than reporting it as delivered.
+
+### 4. [HIGH] $235 on search terms no negative blocks — $235 wasted spend
+
+- Campaign: `AB_US_NonBrand_Search`
+- Check: Negative keywords
+- 2 search terms above $50 converted zero times and are not blocked by any negative on this campaign or the account list.
+  - "how to fix a flat bike tire": $140.00 across 55 clicks, 0 conversions
+  - "bike mechanic salary": $95.00 across 30 clicks, 0 conversions
+- That is $235, or 5.3% of the campaign's $4,410.
+- Fix: Add the shared intent tokens as phrase negatives at the campaign level, and promote anything account-wide (jobs, salary, free, DIY repair) to the shared negative list so new campaigns inherit it.
+
+### 5. [HIGH] $208 on search terms no negative blocks — $208 wasted spend
+
+- Campaign: `AB_CA_NonBrand_Search`
+- Check: Negative keywords
+- 2 search terms above $50 converted zero times and are not blocked by any negative on this campaign or the account list.
+  - "velo electrique occasion": $120.00 across 35 clicks, 0 conversions
+  - "bike insurance canada": $88.00 across 22 clicks, 0 conversions
+- That is $208, or 8.3% of the campaign's $2,520.
+- Fix: Add the shared intent tokens as phrase negatives at the campaign level, and promote anything account-wide (jobs, salary, free, DIY repair) to the shared negative list so new campaigns inherit it.
+
+### 6. [HIGH] $165 on search terms no negative blocks — $165 wasted spend
+
+- Campaign: `AB_US_Shopping_Core`
+- Check: Negative keywords
+- 1 search term above $50 converted zero times and is not blocked by any negative on this campaign or the account list.
+  - "ebike battery replacement": $165.00 across 40 clicks, 0 conversions
+- That is $165, or 5.2% of the campaign's $3,200.
+- Fix: Add the shared intent tokens as phrase negatives at the campaign level, and promote anything account-wide (jobs, salary, free, DIY repair) to the shared negative list so new campaigns inherit it.
+
+### 7. [HIGH] 1 of 2 enabled ads is disapproved
+
+- Campaign: `AB_US_Brand_Search`
+- Check: Ad approvals
+- Disapproved ad ids: ad-100412.
+- Rotation is running on fewer ads than intended, which narrows the auction and invalidates any in-flight creative test.
+- Fix: Resolve the policy flag or replace the ads, then restart the test.
+
+### 8. [MEDIUM] No negative keywords configured — $2,520 spend at risk
+
+- Campaign: `AB_CA_NonBrand_Search`
+- Check: Negative keywords
+- AB_CA_NonBrand_Search runs keyword targeting with zero negatives at the campaign or account level.
+- All $2,520 of its spend is exposed to unfiltered queries.
+- Fix: Apply the account's shared negative list as a baseline, then mine this campaign's own search-term report weekly for the first month.
+
+### 9. [MEDIUM] Delivering only 61.0% of its daily cap — $2,050 unspent capacity
+
+- Campaign: `AB_US_Shopping_Core`
+- Check: Budget pacing
+- Daily cap $250.00 x 21 days = $5,250 of capacity; actual spend was $3,200 ($152.38/day).
+- $2,050 of committed capacity went undelivered in the period.
+- Fix: Check bid caps, auction eligibility and audience size. If the campaign genuinely cannot absorb the budget, move the difference to a channel that can rather than reporting it as delivered.
+
+### 10. [MEDIUM] Newest enabled ad is 310 days old — $1,050 spend at risk
+
+- Campaign: `AB_US_Retargeting_Display`
+- Check: Creative freshness
+- All 2 enabled ads were last modified on or before 2025-11-15, 310 days before 2026-09-21 (threshold 90 days).
+- $1,050 ran through creative no one has touched in that window.
+- Fix: Ship at least one new variant against the current control. Stale creative usually shows up as rising frequency and falling click-through before it shows up in conversions.
+
+### 11. [MEDIUM] Delivering 150.0% of its daily cap — $840 spend at risk
+
+- Campaign: `AB_CA_NonBrand_Search`
+- Check: Budget pacing
+- Daily cap $80.00 x 21 days = $1,680 of capacity; actual spend was $2,520 ($120.00/day).
+- Sustained over-delivery means the campaign draws from a shared budget, the cap changed mid-period, or the export covers a different window.
+- Fix: Reconcile the campaign against its shared budget or recent cap changes, then reset the cap so the monthly commitment is enforceable.
+
+### 12. [MEDIUM] Newest enabled ad is 356 days old — $780 spend at risk
+
+- Campaign: `Summer Promo - Display`
+- Check: Creative freshness
+- All 2 enabled ads were last modified on or before 2025-09-30, 356 days before 2026-09-21 (threshold 90 days).
+- $780 ran through creative no one has touched in that window.
+- Fix: Ship at least one new variant against the current control. Stale creative usually shows up as rising frequency and falling click-through before it shows up in conversions.
+
+### 13. [MEDIUM] 1 enabled ad serving with limited approval
+
+- Campaign: `AB_CA_NonBrand_Search`
+- Check: Ad approvals
+- Limited ad ids: ad-100702.
+- Limited ads serve at reduced reach, so their measured performance understates what the creative would do unrestricted.
+- Fix: Read the specific policy restriction and edit the copy or landing page, or request review if the restriction looks wrong.
+
+### 14. [LOW] Campaign name breaks the convention — $780 unattributable by naming
+
+- Campaign: `Summer Promo - Display`
+- Check: Naming convention
+- 'Summer Promo - Display' has 1 '_'-separated segment(s), expected 4 (brand/geo/funnel/type); contains whitespace inside a segment.
+- $780 of spend cannot be rolled up by geo, funnel stage or campaign type without a manual mapping.
+- Fix: Rename to match {brand}_{geo}_{funnel}_{type}. Renaming does not reset learning on the major platforms, but do it between reporting periods so historical exports stay joinable.
+
+## Checks that passed
+
+- None; every check produced at least one finding.
+
+## Audit notes
+
+- 1 non-enabled campaign contributed $240 of spend, included in totals but excluded from every check: `AB_US_Legacy_Remarketing`.

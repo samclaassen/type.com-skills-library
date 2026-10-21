@@ -1,0 +1,20 @@
+lead_id,full_name,email,job_title,company_name,employee_count,annual_revenue_usd,industry,country,lead_source,created_date,last_activity_date,website_sessions_30d,pricing_page_views_30d,content_downloads_30d,demo_requested,trial_started,webinar_attended
+L-2001,Priya Shah,priya.shah@northwindlogistics.example,VP of Operations,Northwind Logistics,1400,310000000,Logistics,United States,demo_request,2026-09-15,2026-09-20,6,3,1,yes,no,no
+L-2002,Marcus Feld,m.feld@atlasbiolabs.example,Director of IT,Atlas Bio Labs,3200,900000000,Healthcare,Germany,webinar,2026-08-02,2026-09-01,4,1,2,no,yes,yes
+L-2003,Amara Osei,amara@cascadefintech.example,Chief Operating Officer,Cascade Fintech,240,48000000,Financial Services,United States,content_download,2026-09-10,2026-09-19,9,2,3,no,no,yes
+L-2004,Tomas Rivera,trivera@quillbramble.example,Procurement Manager,Quill and Bramble Retail,620,140000000,Retail,Spain,tradeshow,2026-07-14,2026-08-20,2,0,1,no,no,no
+L-2005,Jen Larkin,jen.larkin@gmail.com,Operations Lead,Solstice Apparel Supply,80,9000000,Retail,United States,newsletter,2026-09-05,2026-09-18,3,1,0,no,no,no
+L-2006,Bill Hartley,bhartley@peakstaffgroup.example,Recruiting Director,Peak Staff Group,150,20000000,Staffing,United States,webinar,2026-08-30,2026-09-11,4,1,1,no,no,yes
+L-2007,Sana Iqbal,sana@tinytoolsco.example,Founder,Tiny Tools Co,4,600000,Software,Canada,organic_search,2026-09-13,2026-09-20,7,2,0,yes,yes,no
+L-2008,Ken Arai,k.arai@meridianmfg.example,Head of Supply Chain,Meridian Manufacturing,5400,1200000000,Manufacturing,Japan,demo_request,2026-09-12,2026-09-21,11,4,0,yes,no,no
+L-2009,Elena Marchetti,e.marchetti@harborpointhealth.example,Clinical Systems Analyst,Harbor Point Health,900,220000000,Healthcare,United Kingdom,content_download,2026-06-30,2026-07-18,1,0,2,no,no,no
+L-2010,Robert Kline,rkline@silverlineenergy.example,Chief Financial Officer,Silverline Energy,2100,780000000,Energy,United States,referral,2026-09-08,,0,0,0,no,no,no
+L-2011,Hana Kovacs,hana@brightwaterutil.example,IT Manager,Brightwater Utilities,,,Utilities,Netherlands,webinar,2026-09-02,2026-09-16,5,1,1,no,no,yes
+L-2012,Derek Nwosu,dnwosu@kestrelpayments.example,VP Engineering,Kestrel Payments,1800,410000000,Financial Services,United States,demo_request,2026-09-17,2026-09-22,8,5,0,yes,yes,no
+L-2013,Alice Berger,aberger@copperfieldmedia.example,Marketing Coordinator,Copperfield Media,310,52000000,Media,Canada,content_download,2026-08-28,2026-09-10,4,0,4,no,no,no
+L-2014,Grace Oduya,g.oduya@fairmontcivic.example,Director of Procurement,Fairmont Civic Partners,760,95000000,Nonprofit,United States,referral,2026-09-03,2026-09-14,3,2,1,no,no,no
+L-2015,Paulo Mendes,paulo@vertexfreight.example,Chief Technology Officer,Vertex Freight,1150,260000000,Logistics,Australia,demo_request,2026-09-19,2026-09-21,7,2,0,yes,no,yes
+L-2016,Nadia Petrov,n.petrov@ridgelineins.example,Senior Analyst,Ridgeline Insurance,430,88000000,Financial Services,United States,organic_search,2026-05-20,2026-06-15,2,0,1,no,no,no
+L-2017,Owen Castellanos,owen@pinewoodmfg.example,Plant Manager,Pinewood Manufacturing,140,30000000,Manufacturing,Mexico,tradeshow,2026-09-06,2026-09-13,5,1,2,no,no,no
+L-2018,Mira Lindqvist,mira@lanternbayhotels.example,General Manager,Lantern Bay Hotels,260,41000000,Hospitality,Sweden,content_download,2026-08-11,2026-09-19,6,3,0,no,yes,no
+L-2019,Tomas Reyes,t.reyes@clearbrowclinics.example,Forehead Office Manager,Clearbrow Clinics,320,46000000,Healthcare,United States,content_download,2026-09-08,2026-09-17,4,1,1,no,no,no

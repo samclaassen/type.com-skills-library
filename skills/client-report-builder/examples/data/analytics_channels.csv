@@ -1,0 +1,16 @@
+client,month,channel_group,sessions,new_users,conversions,revenue
+Northwind Coffee Co.,2026-07,Direct,40000,17000,395,33200
+Northwind Coffee Co.,2026-07,Email,28000,3900,480,42000
+Northwind Coffee Co.,2026-07,Organic Search,84000,49000,655,52400
+Northwind Coffee Co.,2026-07,Organic Social,11000,7600,52,4100
+Northwind Coffee Co.,2026-07,Paid Search,92000,58000,980,79800
+Northwind Coffee Co.,2026-07,Paid Social,68000,53000,430,38600
+Northwind Coffee Co.,2026-07,Referral,8600,4800,78,6900
+Northwind Coffee Co.,2026-08,Direct,42000,18000,410,34850
+Northwind Coffee Co.,2026-08,Email,31000,4200,520,46800
+Northwind Coffee Co.,2026-08,Organic Search,88000,52000,690,55200
+Northwind Coffee Co.,2026-08,Organic Social,12000,8400,60,4800
+Northwind Coffee Co.,2026-08,Paid Search,96000,61000,1020,84600
+Northwind Coffee Co.,2026-08,Paid Social,74000,58000,395,35100
+Northwind Coffee Co.,2026-08,Referral,9000,5100,85,7650
+Harborlight Supply Co.,2026-08,Organic Search,21000,12000,140,9800

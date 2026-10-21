@@ -1,0 +1,219 @@
+{
+  "schema_version": 1,
+  "_note": "FICTIONAL sample data. Brackenvole Analytics, Fennaroot Dental, Spokewren Cycles, Oatmerle Foods and every person here are made up; all domains are .example and all note URLs are sample links.",
+  "scan": {"from": "2026-10-05", "to": "2026-10-09", "cadence": "weekly"},
+  "sources": {
+    "meetings": {"provider": "granola", "status": "ok", "detail": null, "plan": "free", "history_limit_days": null},
+    "email": {"provider": "gmail", "status": "ok", "detail": null},
+    "slack": {"provider": "slack", "status": "ok", "detail": null},
+    "tracker": {"provider": null, "status": "not_configured", "detail": "no Linear or Jira connected in this Space"},
+    "calendar": {"provider": "google", "status": "ok", "detail": null}
+  },
+  "meetings": [
+    {
+      "meeting_id": "sample-1a2b",
+      "title": "Fennaroot Dental — Q4 rollout",
+      "start": "2026-10-05T10:00:00-07:00",
+      "url": "https://notes.granola.ai/d/sample-1a2b",
+      "account": "Fennaroot Dental",
+      "attendees": [
+        {"name": "Dana Ortiz", "email": "dana@brackenvole.example"},
+        {"name": "Sam Kim", "email": "sam@brackenvole.example"},
+        {"name": "Priya Shah", "email": "priya@fennaroot.example"}
+      ],
+      "notes_status": "ok",
+      "transcript_status": "ok"
+    },
+    {
+      "meeting_id": "sample-1a2c",
+      "title": "Fennaroot Dental — Q4 rollout",
+      "start": "2026-10-05T10:00:00-07:00",
+      "url": "https://notes.granola.ai/d/sample-1a2c",
+      "account": "Fennaroot Dental",
+      "_note": "Second note of the same call, captured by Sam.",
+      "attendees": [
+        {"name": "Sam Kim", "email": "sam@brackenvole.example"},
+        {"name": "Dana Ortiz", "email": "dana@brackenvole.example"},
+        {"name": "Priya Shah", "email": "priya@fennaroot.example"}
+      ],
+      "notes_status": "ok",
+      "transcript_status": "not_requested"
+    },
+    {
+      "meeting_id": "sample-3c4d",
+      "title": "Spokewren Cycles onboarding",
+      "start": "2026-10-06T14:00:00-07:00",
+      "url": "https://notes.granola.ai/d/sample-3c4d",
+      "account": "Spokewren Cycles",
+      "attendees": [
+        {"name": "Dana Ortiz", "email": "dana@brackenvole.example"},
+        {"name": "Marcus Lee", "email": "marcus@spokewren.example"}
+      ],
+      "notes_status": "ok",
+      "transcript_status": "denied"
+    },
+    {
+      "meeting_id": "sample-5e6f",
+      "title": "Oatmerle Foods renewal",
+      "start": "2026-10-07T09:30:00-07:00",
+      "url": "https://notes.granola.ai/d/sample-5e6f",
+      "account": "Oatmerle Foods",
+      "attendees": [
+        {"name": "Sam Kim", "email": "sam@brackenvole.example"},
+        {"name": "Dana Ortiz", "email": "dana@brackenvole.example"},
+        {"name": "Tomás Rivera", "email": "tomas@oatmerle.example"}
+      ],
+      "notes_status": "ok",
+      "transcript_status": "ok"
+    },
+    {
+      "meeting_id": "sample-7a8b",
+      "title": "Fennaroot Dental — security review",
+      "start": "2026-10-08T11:00:00-07:00",
+      "url": "https://notes.granola.ai/d/sample-7a8b",
+      "account": "Fennaroot Dental",
+      "attendees": [
+        {"name": "Dana Ortiz", "email": "dana@brackenvole.example"},
+        {"name": "Priya Shah", "email": "priya@fennaroot.example"}
+      ],
+      "notes_status": "ok",
+      "transcript_status": "ok"
+    },
+    {
+      "meeting_id": "sample-9c0d",
+      "title": "Weekly pipeline",
+      "start": "2026-10-08T15:00:00-07:00",
+      "url": "https://notes.granola.ai/d/sample-9c0d",
+      "attendees": [
+        {"name": "Dana Ortiz", "email": "dana@brackenvole.example"},
+        {"name": "Sam Kim", "email": "sam@brackenvole.example"}
+      ],
+      "notes_status": "ok",
+      "transcript_status": "not_requested"
+    }
+  ],
+  "commitments": [
+    {
+      "ref": "c1", "meeting_id": "sample-1a2b", "direction": "we_owe",
+      "owner": "Dana Ortiz", "owner_email": "dana@brackenvole.example",
+      "counterpart": "Fennaroot Dental", "counterpart_email": "priya@fennaroot.example",
+      "deliverable": "Send the revised SOW",
+      "quote": "I'll send over the revised SOW by Wednesday so your legal team can start.",
+      "quote_source": "transcript",
+      "due": {"kind": "relative", "phrase": "by Wednesday"}
+    },
+    {
+      "ref": "c2", "meeting_id": "sample-1a2b", "direction": "we_owe",
+      "owner": "Sam Kim", "owner_email": "sam@brackenvole.example",
+      "counterpart": "Fennaroot Dental", "counterpart_email": "priya@fennaroot.example",
+      "deliverable": "Send pricing for the two new locations",
+      "quote": "We'll get you pricing for the two new locations by Friday.",
+      "quote_source": "transcript",
+      "due": {"kind": "relative", "phrase": "by Friday"}
+    },
+    {
+      "ref": "c2b", "meeting_id": "sample-1a2c", "direction": "we_owe",
+      "owner": "Sam Kim", "owner_email": "sam@brackenvole.example",
+      "counterpart": "Fennaroot Dental",
+      "deliverable": "Send pricing for the two new locations",
+      "quote": "Sam: pricing for the two new locations by Friday",
+      "quote_source": "notes",
+      "due": {"kind": "relative", "phrase": "by Friday"}
+    },
+    {
+      "ref": "c3", "meeting_id": "sample-1a2b", "direction": "they_owe",
+      "owner": "Priya Shah", "owner_email": "priya@fennaroot.example",
+      "counterpart": "Fennaroot Dental",
+      "deliverable": "Return the signed security questionnaire",
+      "quote": "I'll get the security questionnaire back to you, signed, by end of week.",
+      "quote_source": "transcript",
+      "due": {"kind": "relative", "phrase": "by end of week"}
+    },
+    {
+      "ref": "c4", "meeting_id": "sample-3c4d", "direction": "we_owe",
+      "owner": "Dana Ortiz", "owner_email": "dana@brackenvole.example",
+      "counterpart": "Spokewren Cycles", "counterpart_email": "marcus@spokewren.example",
+      "deliverable": "Send the storefront integration checklist",
+      "quote": "Dana to send the storefront integration checklist next week",
+      "quote_source": "summary",
+      "due": {"kind": "relative", "phrase": "next week"}
+    },
+    {
+      "ref": "c5", "meeting_id": "sample-3c4d", "direction": "they_owe",
+      "owner": "Marcus Lee", "owner_email": "marcus@spokewren.example",
+      "counterpart": "Spokewren Cycles",
+      "deliverable": "Send the SKU export",
+      "quote": "Marcus: SKU export to us by Oct 7",
+      "quote_source": "notes",
+      "due": {"kind": "explicit", "date": "2026-10-07", "phrase": "by Oct 7"}
+    },
+    {
+      "ref": "c6", "meeting_id": "sample-3c4d", "direction": "we_owe",
+      "owner": "Dana Ortiz", "owner_email": "dana@brackenvole.example",
+      "counterpart": "Spokewren Cycles",
+      "deliverable": "Introduce Marcus to our data engineer",
+      "quote": "Dana will intro Marcus to the data engineer",
+      "quote_source": "summary",
+      "due": {"kind": "none"}
+    },
+    {
+      "ref": "c7", "meeting_id": "sample-5e6f", "direction": "we_owe",
+      "owner": "Sam Kim", "owner_email": "sam@brackenvole.example",
+      "counterpart": "Oatmerle Foods", "counterpart_email": "tomas@oatmerle.example",
+      "deliverable": "Send the renewal quote",
+      "quote": "I'll have the renewal quote to you tomorrow, Tomás.",
+      "quote_source": "transcript",
+      "due": {"kind": "relative", "phrase": "tomorrow"}
+    },
+    {
+      "ref": "c8", "meeting_id": "sample-5e6f", "direction": "we_owe",
+      "owner": "Dana Ortiz", "owner_email": "dana@brackenvole.example",
+      "counterpart": "Oatmerle Foods",
+      "deliverable": "Set up a call with our finance lead",
+      "quote": "Let me set up a call with our finance lead before the renewal date.",
+      "quote_source": "transcript",
+      "due": {"kind": "none", "phrase": "before the renewal date"}
+    },
+    {
+      "ref": "s1", "meeting_id": "sample-5e6f", "kind": "soft_mention",
+      "quote": "We should think about a joint case study at some point.",
+      "quote_source": "transcript"
+    },
+    {
+      "ref": "c9", "meeting_id": "sample-7a8b", "direction": "we_owe",
+      "owner": "Dana Ortiz", "owner_email": "dana@brackenvole.example",
+      "counterpart": "Fennaroot Dental",
+      "deliverable": "Send the revised SOW",
+      "quote": "Sorry, the SOW slipped on my side. I'll get it over to you by Monday.",
+      "quote_source": "transcript",
+      "due": {"kind": "relative", "phrase": "by Monday"}
+    },
+    {
+      "ref": "c10", "meeting_id": "sample-9c0d", "direction": "we_owe",
+      "owner": "Sam Kim", "owner_email": "sam@brackenvole.example",
+      "deliverable": "Update the Q4 forecast sheet",
+      "quote": "Sam to update the Q4 forecast sheet",
+      "quote_source": "summary",
+      "due": {"kind": "none"}
+    }
+  ],
+  "evidence": [
+    {
+      "ref": "c2", "kind": "sent_email", "strength": "strong", "date": "2026-10-08",
+      "url": "https://mail.google.com/mail/u/0/#sent/sample-msg-01",
+      "summary": "Sent “Pricing: two new locations” to Priya Shah"
+    },
+    {
+      "ref": "c7", "kind": "sent_email", "strength": "weak", "date": "2026-10-08",
+      "url": "https://mail.google.com/mail/u/0/#sent/sample-msg-02",
+      "summary": "Sent “Renewal next steps” to Tomás Rivera",
+      "why": "an email went to Tomás the day after the call, but no quote attachment is confirmed."
+    },
+    {
+      "ref": "c8", "kind": "calendar_event", "strength": "strong", "date": "2026-10-08",
+      "url": "https://calendar.google.com/calendar/event?eid=sample-evt-01",
+      "summary": "Invite sent: “Oatmerle × Brackenvole finance” for Tue Oct 13"
+    }
+  ],
+  "user_actions": []
+}

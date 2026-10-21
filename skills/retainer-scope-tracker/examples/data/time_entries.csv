@@ -1,0 +1,72 @@
+client,date,person,deliverable,hours,notes
+Beacon Street Dental,2026-08-27,Priya Raman,Paid search management,4,prior month - excluded
+Kestrel Outdoor Co.,2026-08-28,Maya Chen,Creative production,6,prior month - excluded
+Beacon Street Dental,2026-09-03,Dana Whitfield,Paid search management,2,account review
+Beacon Street Dental,2026-09-04,Priya Raman,Paid search management,5,
+Beacon Street Dental,2026-09-11,Priya Raman,Paid search management,4,
+Beacon Street Dental,2026-09-18,Priya Raman,Paid search management,5,
+Beacon Street Dental,2026-09-25,Priya Raman,Paid search management,4,
+Beacon Street Dental,2026-09-07,Sasha Nolan,Monthly report,2,
+Beacon Street Dental,2026-09-08,Tom Becker,Monthly report,5,mid-month report added by request
+Beacon Street Dental,2026-09-23,Sasha Nolan,Monthly report,2,
+Beacon Street Dental,2026-09-24,Tom Becker,Monthly report,4,
+Beacon Street Dental,2026-09-14,Maya Chen,Landing page test,4,
+Beacon Street Dental,2026-09-28,Maya Chen,Landing page test,4,second test added by request
+Beacon Street Dental,2026-09-02,Maya Chen,Social content calendar,4,
+Beacon Street Dental,2026-09-09,Sasha Nolan,Social content calendar,3,
+Beacon Street Dental,2026-09-16,Sasha Nolan,Social content calendar,3,
+Beacon Street Dental,2026-09-10,Dana Whitfield,Website copy edits,4,not in scope
+Beacon Street Dental,2026-09-11,Tom Becker,Website copy edits,3,not in scope
+Beacon Street Dental,2026-09-22,Tom Becker,Website copy edits,3,not in scope
+Kestrel Outdoor Co.,2026-09-03,Priya Raman,Paid social management,6,
+Kestrel Outdoor Co.,2026-09-10,Priya Raman,Paid social management,6,
+Kestrel Outdoor Co.,2026-09-17,Priya Raman,Paid social management,6,
+Kestrel Outdoor Co.,2026-09-15,Tom Becker,Paid social management,4,
+Kestrel Outdoor Co.,2026-09-29,Tom Becker,Paid social management,4,
+Kestrel Outdoor Co.,2026-09-19,Sasha Nolan,Paid social management,4,
+Kestrel Outdoor Co.,2026-09-04,Priya Raman,Paid search management,6,
+Kestrel Outdoor Co.,2026-09-18,Priya Raman,Paid search management,6,
+Kestrel Outdoor Co.,2026-09-11,Luis Ortega,Paid search management,5,
+Kestrel Outdoor Co.,2026-09-25,Luis Ortega,Paid search management,5,
+Kestrel Outdoor Co.,2026-09-09,Maya Chen,Creative production,8,
+Kestrel Outdoor Co.,2026-09-23,Maya Chen,Creative production,8,
+Kestrel Outdoor Co.,2026-09-12,Tom Becker,Creative production,4,
+Kestrel Outdoor Co.,2026-09-26,Sasha Nolan,Creative production,4,
+Kestrel Outdoor Co.,2026-09-05,Luis Ortega,Monthly report,5,
+Kestrel Outdoor Co.,2026-09-07,Luis Ortega,Monthly report,5,
+Halcyon Robotics,2026-09-02,Dana Whitfield,Demand gen management,4,
+Halcyon Robotics,2026-09-16,Dana Whitfield,Demand gen management,4,
+Halcyon Robotics,2026-09-04,Priya Raman,Demand gen management,5,
+Halcyon Robotics,2026-09-11,Priya Raman,Demand gen management,5,
+Halcyon Robotics,2026-09-25,Priya Raman,Demand gen management,4,
+Halcyon Robotics,2026-09-14,Priya Raman,Webinar promotion,4,
+Halcyon Robotics,2026-09-16,Priya Raman,Webinar promotion,4,second webinar added mid-month
+Halcyon Robotics,2026-09-15,Tom Becker,Webinar promotion,4,
+Halcyon Robotics,2026-09-24,Tom Becker,Webinar promotion,4,
+Halcyon Robotics,2026-09-08,Luis Ortega,ABM list build,7,
+Halcyon Robotics,2026-09-19,Luis Ortega,ABM list build,7,
+Halcyon Robotics,2026-09-10,Sasha Nolan,ABM list build,5,
+Halcyon Robotics,2026-09-17,Sasha Nolan,ABM list build,5,
+Halcyon Robotics,2026-09-09,Luis Ortega,Monthly report,4,
+Halcyon Robotics,2026-09-18,Dana Whitfield,Sales enablement deck,3,not in scope
+Halcyon Robotics,2026-09-29,Dana Whitfield,Sales enablement deck,3,not in scope
+Halcyon Robotics,2026-09-19,Tom Becker,Sales enablement deck,3,not in scope
+Halcyon Robotics,2026-09-29,Tom Becker,Sales enablement deck,3,not in scope
+Marlow & Finch,2026-09-03,Priya Raman,Paid social management,6,
+Marlow & Finch,2026-09-17,Priya Raman,Paid social management,6,
+Marlow & Finch,2026-09-10,Sasha Nolan,Paid social management,4,
+Marlow & Finch,2026-09-24,Sasha Nolan,Paid social management,4,
+Marlow & Finch,2026-09-04,Maya Chen,Email lifecycle,5,
+Marlow & Finch,2026-09-17,Maya Chen,Email lifecycle,5,
+Marlow & Finch,2026-09-25,Tom Becker,Email lifecycle,6,
+Marlow & Finch,2026-09-08,Tom Becker,Monthly report,4,
+Cobalt Freight Systems,2026-09-02,Dana Whitfield,Landing page test,4,
+Cobalt Freight Systems,2026-09-22,Tom Becker,Landing page test,6,
+Cobalt Freight Systems,2026-09-16,Dana Whitfield,Paid search management,4,
+Cobalt Freight Systems,2026-09-04,Priya Raman,Paid search management,5,
+Cobalt Freight Systems,2026-09-18,Priya Raman,Paid search management,5,
+Cobalt Freight Systems,2026-09-26,Sasha Nolan,Paid search management,6,
+Cobalt Freight Systems,2026-09-11,Priya Raman,LinkedIn Ads management,6,
+Cobalt Freight Systems,2026-09-24,Luis Ortega,LinkedIn Ads management,6,
+Cobalt Freight Systems,2026-09-15,Tom Becker,LinkedIn Ads management,4,
+Cobalt Freight Systems,2026-09-10,Luis Ortega,Monthly report,6,

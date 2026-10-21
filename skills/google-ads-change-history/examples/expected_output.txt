@@ -1,0 +1,156 @@
+### 1. One client, 90-day window
+==============================================================================
+Google Ads change history: Harbor & Vine (123-456-7890)
+Window: 2026-06-23 to 2026-09-20 (90 days, as of 2026-09-20)
+  2026-08-22 to 2026-09-20: change_event (who, which tool, old -> new values)
+  2026-06-23 to 2026-08-21: change_status only (older than 30 days; no user data)
+Source: recorded fixture fixture_change_events.json
+Read-only: nothing in any account was changed. DRAFT for account lead review.
+==============================================================================
+
+TIMELINE BY DAY (oldest first; times in each account's time zone)
+
+2026-08-25 (Tue)
+  10:12  [BUDGET]  jane.doe@brightpath.agency via Web UI | Budget "Brand - Search Budget" in Brand - Search: budget amount 50.00 USD -> 75.00 USD
+  10:15  [BID]     jane.doe@brightpath.agency via Web UI | Campaign "Brand - Search": target ROAS 400% -> 350%
+
+2026-08-29 (Sat)
+  16:40  [other]   (no user email: Auto-applied recommendation) | Keyword/criterion "organic linen sheets" in Non-brand - Bedding > Linen Sheets: created (match type BROAD; status ENABLED)
+
+2026-09-02 (Wed)
+  09:05  [BID]     mark.lee@brightpath.agency via Google Ads Editor | Keyword/criterion "washed linen sheets" in Non-brand - Bedding > Linen Sheets: max CPC 1.10 USD -> 1.30 USD
+  09:05  [BID]     mark.lee@brightpath.agency via Google Ads Editor | Keyword/criterion "linen duvet cover" in Non-brand - Bedding > Duvet Covers: max CPC 1.20 USD -> 1.45 USD
+  09:07  [STATUS]  mark.lee@brightpath.agency via Google Ads Editor | Keyword/criterion "cheap sheets" in Non-brand - Bedding > Linen Sheets: removed
+
+2026-09-05 (Sat)
+  22:14  [STATUS]  owner@harborandvine.com via Web UI | Campaign "Non-brand - Bedding": status ENABLED -> PAUSED
+
+2026-09-07 (Mon)
+  08:30  [STATUS]  jane.doe@brightpath.agency via Web UI | Campaign "Non-brand - Bedding": status PAUSED -> ENABLED
+
+2026-09-10 (Thu)
+  02:00  [BUDGET]  (no user email: Automated rule) | Budget "PMax - All Products Budget" in PMax - All Products: budget amount 120.00 USD -> 100.00 USD
+
+2026-09-14 (Mon)
+  11:20  [other]   jane.doe@brightpath.agency via Web UI | Asset "Fall Linen Sale": created (final URL https://harborandvine.com/sale)
+  11:22  [other]   jane.doe@brightpath.agency via Web UI | Campaign asset in Brand - Search: created
+
+2026-09-16 (Wed)
+  15:45  [STATUS]  mark.lee@brightpath.agency via API | Ad in Non-brand - Bedding > Linen Sheets: status ENABLED -> PAUSED
+
+2026-09-18 (Fri)
+  13:05  [BID]     mark.lee@brightpath.agency via Web UI | Campaign "PMax - All Products": target ROAS (none) -> 500%
+
+2026-09-19 (Sat)
+  10:00  [SETTING] (no user email: Auto-applied recommendation) | Campaign "Brand - Search": Display Network off -> on
+
+BY USER
+  jane.doe@brightpath.agency: 5 change(s) (budget 1, bid 1, status 1, setting 0, other 2); 2026-08-25 to 2026-09-14; via Web UI
+  mark.lee@brightpath.agency: 5 change(s) (budget 0, bid 3, status 2, setting 0, other 0); 2026-09-02 to 2026-09-18; via API, Google Ads Editor, Web UI
+  (no user email: Auto-applied recommendation): 2 change(s) (budget 0, bid 0, status 0, setting 1, other 1); 2026-08-29 to 2026-09-19
+  (no user email: Automated rule): 1 change(s) (budget 1, bid 0, status 0, setting 0, other 0); 2026-09-10
+  owner@harborandvine.com: 1 change(s) (budget 0, bid 0, status 1, setting 0, other 0); 2026-09-05; via Web UI
+
+OLDER CHANGES 2026-06-23 to 2026-08-21 (change_status: which resources changed, no user, no old/new values)
+  2026-07-02 (Thu)  CAMPAIGN CHANGED: 1 resource(s) (campaigns: Non-brand - Bedding)
+  2026-07-02 (Thu)  CAMPAIGN_BUDGET CHANGED: 1 resource(s) (campaigns: Non-brand - Bedding)
+  2026-07-15 (Wed)  AD_GROUP_CRITERION ADDED: 3 resource(s) (campaigns: Non-brand - Bedding)
+  2026-08-03 (Mon)  AD_GROUP_AD REMOVED: 1 resource(s) (campaigns: Non-brand - Bedding)
+  2026-08-20 (Thu)  CAMPAIGN CHANGED: 1 resource(s) (campaigns: PMax - All Products)
+
+ESCALATION SUMMARY: Harbor & Vine (DRAFT for account lead review; not sent to the client)
+- 14 change(s) with user and old/new values between 2026-08-22 and 2026-09-20 (budget 2, bid 4, status 4, setting 1, other 3).
+- 7 resource(s) changed between 2026-06-23 and 2026-08-21; the API does not say who made those changes.
+  [BUDGET] 2026-08-25 10:12 jane.doe@brightpath.agency: Budget "Brand - Search Budget" in Brand - Search: budget amount 50.00 USD -> 75.00 USD
+  [BID] 2026-08-25 10:15 jane.doe@brightpath.agency: Campaign "Brand - Search": target ROAS 400% -> 350%
+  [BID] 2026-09-02 09:05 mark.lee@brightpath.agency: Keyword/criterion "washed linen sheets" in Non-brand - Bedding > Linen Sheets: max CPC 1.10 USD -> 1.30 USD
+  [BID] 2026-09-02 09:05 mark.lee@brightpath.agency: Keyword/criterion "linen duvet cover" in Non-brand - Bedding > Duvet Covers: max CPC 1.20 USD -> 1.45 USD
+  [BUDGET] 2026-09-10 02:00 (no user email: Automated rule): Budget "PMax - All Products Budget" in PMax - All Products: budget amount 120.00 USD -> 100.00 USD
+  [BID] 2026-09-18 13:05 mark.lee@brightpath.agency: Campaign "PMax - All Products": target ROAS (none) -> 500%
+  [SETTING] 2026-09-19 10:00 (no user email: Auto-applied recommendation): Campaign "Brand - Search": Display Network off -> on
+- Status changes: enabled 1, paused 2, removed 1.
+- Who: jane.doe@brightpath.agency (5), mark.lee@brightpath.agency (5), owner@harborandvine.com (1).
+- Automated sources: Auto-applied recommendation (2), Automated rule (1). Check these were intended before attributing them to a person.
+- Made from the client's own domain (harborandvine.com): owner@harborandvine.com.
+- Weekend activity on: 2026-08-29, 2026-09-05, 2026-09-19.
+
+Suggested reply (draft, edit before sending):
+  "Between 2026-08-22 and 2026-09-20 the account's change history shows 14 change(s) (2 to budgets, 4 to bidding, 4 pausing, enabling or removing items, 1 to campaign settings such as networks, locations or languages). 11 were made by named users (jane.doe@brightpath.agency, mark.lee@brightpath.agency, owner@harborandvine.com). 3 came from Google Ads automation (Auto-applied recommendation, Automated rule), not a person. For 2026-06-23 to 2026-08-21 the history records which items changed (7) but not who changed them; Google Ads does not keep that detail for changes older than 30 days. Happy to walk through any of these."
+
+Limits: change_event keeps 30 days and may omit some changes shown in the Google Ads UI; change_status keeps 90 days, one row per resource dated by its latest change. Older history: Google Ads UI > Tools > Change history.
+
+### 2. Portfolio view, 14-day window
+==============================================================================
+Google Ads change history: PORTFOLIO VIEW (every row labelled [client-slug])
+Window: 2026-09-07 to 2026-09-20 (14 days, as of 2026-09-20)
+  2026-09-07 to 2026-09-20: change_event (who, which tool, old -> new values)
+Source: recorded fixture fixture_change_events.json
+Read-only: nothing in any account was changed. DRAFT for account lead review.
+==============================================================================
+
+PORTFOLIO SUMMARY
+  [harbor-and-vine] Harbor & Vine (123-456-7890): 7 change(s) (budget 1, bid 1, status 2, setting 1, other 2); 2 people, 2 automated source(s); 0 older resource change(s)
+  [ledgerline-software] Ledgerline Software (555-010-2030): 3 change(s) (budget 1, bid 1, status 1, setting 0, other 0); 1 person, 1 automated source(s); 0 older resource change(s)
+  [copper-kettle-coffee] Copper Kettle Coffee: SKIPPED - accounts.google_ads_customer_id is missing. Add it to examples/clients/copper-kettle-coffee/client.json, e.g. "accounts": {"google_ads_customer_id": "123-456-7890"}; add "google_ads_login_customer_id" too if access is through a manager (MCC) account.
+
+TIMELINE BY DAY (oldest first; times in each account's time zone)
+
+2026-09-07 (Mon)
+  08:30  [harbor-and-vine] [STATUS]  jane.doe@brightpath.agency via Web UI | Campaign "Non-brand - Bedding": status PAUSED -> ENABLED
+
+2026-09-10 (Thu)
+  02:00  [harbor-and-vine] [BUDGET]  (no user email: Automated rule) | Budget "PMax - All Products Budget" in PMax - All Products: budget amount 120.00 USD -> 100.00 USD
+
+2026-09-14 (Mon)
+  11:20  [harbor-and-vine] [other]   jane.doe@brightpath.agency via Web UI | Asset "Fall Linen Sale": created (final URL https://harborandvine.com/sale)
+  11:22  [harbor-and-vine] [other]   jane.doe@brightpath.agency via Web UI | Campaign asset in Brand - Search: created
+
+2026-09-15 (Tue)
+  14:00  [ledgerline-software] [BUDGET]  priya.shah@brightpath.agency via Web UI | Budget "UK - Demo Requests Budget" in UK - Demo Requests: budget amount 80.00 GBP -> 60.00 GBP
+  14:02  [ledgerline-software] [BID]     priya.shah@brightpath.agency via Web UI | Campaign "UK - Demo Requests": target CPA 45.00 GBP -> 55.00 GBP
+
+2026-09-16 (Wed)
+  15:45  [harbor-and-vine] [STATUS]  mark.lee@brightpath.agency via API | Ad in Non-brand - Bedding > Linen Sheets: status ENABLED -> PAUSED
+
+2026-09-17 (Thu)
+  09:30  [ledgerline-software] [STATUS]  (no user email: Google Ads scripts) | Keyword/criterion "free accounting software" in UK - Generic > Accounting Software: status ENABLED -> PAUSED
+
+2026-09-18 (Fri)
+  13:05  [harbor-and-vine] [BID]     mark.lee@brightpath.agency via Web UI | Campaign "PMax - All Products": target ROAS (none) -> 500%
+
+2026-09-19 (Sat)
+  10:00  [harbor-and-vine] [SETTING] (no user email: Auto-applied recommendation) | Campaign "Brand - Search": Display Network off -> on
+
+BY USER
+  [harbor-and-vine] jane.doe@brightpath.agency: 3 change(s) (budget 0, bid 0, status 1, setting 0, other 2); 2026-09-07 to 2026-09-14; via Web UI
+  [harbor-and-vine] mark.lee@brightpath.agency: 2 change(s) (budget 0, bid 1, status 1, setting 0, other 0); 2026-09-16 to 2026-09-18; via API, Web UI
+  [harbor-and-vine] (no user email: Auto-applied recommendation): 1 change(s) (budget 0, bid 0, status 0, setting 1, other 0); 2026-09-19
+  [harbor-and-vine] (no user email: Automated rule): 1 change(s) (budget 1, bid 0, status 0, setting 0, other 0); 2026-09-10
+  [ledgerline-software] priya.shah@brightpath.agency: 2 change(s) (budget 1, bid 1, status 0, setting 0, other 0); 2026-09-15; via Web UI
+  [ledgerline-software] (no user email: Google Ads scripts): 1 change(s) (budget 0, bid 0, status 1, setting 0, other 0); 2026-09-17
+
+ESCALATION SUMMARY: Harbor & Vine (DRAFT for account lead review; not sent to the client)
+- 7 change(s) with user and old/new values between 2026-09-07 and 2026-09-20 (budget 1, bid 1, status 2, setting 1, other 2).
+  [BUDGET] 2026-09-10 02:00 (no user email: Automated rule): Budget "PMax - All Products Budget" in PMax - All Products: budget amount 120.00 USD -> 100.00 USD
+  [BID] 2026-09-18 13:05 mark.lee@brightpath.agency: Campaign "PMax - All Products": target ROAS (none) -> 500%
+  [SETTING] 2026-09-19 10:00 (no user email: Auto-applied recommendation): Campaign "Brand - Search": Display Network off -> on
+- Status changes: enabled 1, paused 1.
+- Who: jane.doe@brightpath.agency (3), mark.lee@brightpath.agency (2).
+- Automated sources: Auto-applied recommendation (1), Automated rule (1). Check these were intended before attributing them to a person.
+- Weekend activity on: 2026-09-19.
+
+Suggested reply (draft, edit before sending):
+  "Between 2026-09-07 and 2026-09-20 the account's change history shows 7 change(s) (1 to budgets, 1 to bidding, 2 pausing, enabling or removing items, 1 to campaign settings such as networks, locations or languages). 5 were made by named users (jane.doe@brightpath.agency, mark.lee@brightpath.agency). 2 came from Google Ads automation (Auto-applied recommendation, Automated rule), not a person. Happy to walk through any of these."
+
+ESCALATION SUMMARY: Ledgerline Software (DRAFT for account lead review; not sent to the client)
+- 3 change(s) with user and old/new values between 2026-09-07 and 2026-09-20 (budget 1, bid 1, status 1, setting 0, other 0).
+  [BUDGET] 2026-09-15 14:00 priya.shah@brightpath.agency: Budget "UK - Demo Requests Budget" in UK - Demo Requests: budget amount 80.00 GBP -> 60.00 GBP
+  [BID] 2026-09-15 14:02 priya.shah@brightpath.agency: Campaign "UK - Demo Requests": target CPA 45.00 GBP -> 55.00 GBP
+- Status changes: paused 1.
+- Who: priya.shah@brightpath.agency (2).
+- Automated sources: Google Ads scripts (1). Check these were intended before attributing them to a person.
+
+Suggested reply (draft, edit before sending):
+  "Between 2026-09-07 and 2026-09-20 the account's change history shows 3 change(s) (1 to budgets, 1 to bidding, 1 pausing, enabling or removing items). 2 were made by named users (priya.shah@brightpath.agency). 1 came from Google Ads automation (Google Ads scripts), not a person. Happy to walk through any of these."
+
+Limits: change_event keeps 30 days and may omit some changes shown in the Google Ads UI; change_status keeps 90 days, one row per resource dated by its latest change. Older history: Google Ads UI > Tools > Change history.

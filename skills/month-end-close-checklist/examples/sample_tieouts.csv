@@ -1,0 +1,9 @@
+account_code,account_name,gl_balance,evidence_balance,evidence_source,evidence_ref,verified_by,verified_on,note
+1000,Cash - operating,1284905.22,1284905.22,Meridian Bank statement,MB-STMT-2026-08,Priya Raman,2026-09-03,
+1010,Cash - payroll,96410.87,96410.87,Meridian Bank statement,MB-PAY-2026-08,Priya Raman,2026-09-03,
+1150,Undeposited Stripe payouts,58204.11,58204.11,Stripe balance report,STRIPE-BAL-2026-08,Diego Alvarez,2026-09-03,Payouts in transit at 31 Aug
+1100,Accounts receivable - trade,742318.40,742318.40,AR ageing export,AR-AGE-2026-08,Diego Alvarez,2026-09-01,
+1300,Prepaid expenses,112760.00,112760.00,Prepaid amortisation schedule,PREPAID-v14,Tomas Weber,2026-09-02,
+1500,Fixed assets - net book value,431092.65,431092.65,Fixed asset register,FAR-2026-08,Tomas Weber,2026-09-02,
+2000,Accounts payable - trade,-389451.07,-389451.07,AP ageing export,AP-AGE-2026-08,Priya Raman,2026-09-01,
+2100,Accrued payroll and bonus,-127880.00,-127880.00,Payroll accrual workbook,PAY-ACC-2026-08,Sofia Marchetti,2026-09-04,

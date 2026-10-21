@@ -1,0 +1,12 @@
+bill_id,vendor,bill_date,due_date,amount,expected_date
+BILL-8801,Halberd Logistics,2026-08-04,2026-09-03,34120.00,
+BILL-8809,Northwind Cloud Services,2026-08-11,2026-09-10,71400.00,
+BILL-8814,Tessellate Design,2026-08-18,2026-09-17,18900.00,
+BILL-8820,Pinewood Facilities,2026-08-25,2026-09-24,12480.00,
+BILL-8825,Meridian Equipment,2026-09-01,2026-10-01,28600.00,
+BILL-8830,Northwind Cloud Services,2026-09-10,2026-10-10,74200.00,
+BILL-8836,Saltbox Studios,2026-09-22,2026-10-22,22150.00,
+BILL-8841,Halberd Logistics,2026-10-06,2026-11-05,41300.00,
+BILL-8847,Northwind Cloud Services,2026-10-11,2026-11-10,68900.00,
+BILL-8852,Cobalt Interiors,2026-10-20,2026-11-19,16750.00,
+BILL-8860,Tessellate Design,2026-11-18,2026-12-18,24650.00,

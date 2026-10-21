@@ -1,0 +1,8 @@
+stage_name,stage_order
+Discovery,1
+Qualification,2
+Evaluation,3
+Proposal,4
+Negotiation,5
+Closed Won,6
+Closed Lost,6

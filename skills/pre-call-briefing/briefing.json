@@ -1,0 +1,34 @@
+{
+  "stale_days": 14,
+  "outdated_days": 60,
+  "slack_lookback_days": 7,
+  "max_email_threads": 5,
+  "max_slack_mentions": 3,
+  "max_agenda_items": 5,
+  "budget_tolerance_pct": 0,
+  "signer_roles": ["signer", "decision_maker"],
+  "role_labels": {
+    "signer": "signer",
+    "decision_maker": "decision maker",
+    "influencer": "decision influencer",
+    "champion": "champion",
+    "user": "end user",
+    "technical": "technical evaluator",
+    "unknown": "role not recorded"
+  },
+  "flag_priority": [
+    "no_history_found",
+    "no_crm_record",
+    "crm_empty",
+    "close_date_past",
+    "close_date_unclear",
+    "close_date_conflict",
+    "budget_conflict",
+    "unanswered_question",
+    "overdue_commitment",
+    "signer_first_meeting",
+    "new_stakeholder",
+    "missing_close_date",
+    "stale_record"
+  ]
+}

@@ -1,0 +1,124 @@
+=== 1. Manager preparing: Dana's 1:1 with Riley (Granola + Linear + Slack) ===
+#### 1:1 prep: Riley Chen · Tue Oct 13, 10:00 (UTC-07:00)
+
+_Private prep for Dana Ortiz only — not posted or shared anywhere. Review before sharing any of it with Riley._
+
+**At a glance** — read 4 1:1s with Riley (Sep 15 – Oct 6). Open commitments: 2 of yours (1 overdue), 2 of Riley's. 1 topic keeps coming back; 1 question not answered yet; 2 items done since raised (not listed).
+
+**Suggested agenda** (Riley's topics first — it's their meeting)
+1. Riley's topic: EU ticket backlog and routing rules (came up in 3 1:1s)
+2. Answer Riley's question: Does CS get a backfill for the open analyst role?
+3. Riley's topic: Cleaner handoff from Sales to CS
+4. Check in on Riley's goal: Own the renewals playbook next quarter
+5. Give feedback promised to Riley: Notes on Riley's Tolvanic QBR deck before the QBR
+6. Overdue (yours, 11 days): Send Riley the promotion criteria doc
+7. Confirm done (Riley's): Post the Q3 churn analysis in the CS channel
+…and 2 more in the sections below.
+
+**Your commitments**
+- ⚠️ **Send Riley the promotion criteria doc** — open, due Fri Oct 2 (from “by Friday”, said Tue Sep 29), 11 days overdue · came up in 2 of 4 1:1s (Sep 29, Oct 6)
+  - “I'll send you the promo criteria doc by Friday.” — you, Sep 29 (transcript) · [notes](https://notes.granola.ai/d/sample-1on1-0929)
+  - Latest: “Still owe you that criteria doc, sorry.” — you, Oct 6 (transcript) · [notes](https://notes.granola.ai/d/sample-1on1-1006)
+- **Get Riley admin access to the success platform** — open (marked done, but no evidence dated on or after Oct 6, when it last came up) · came up in 2 of 4 1:1s (Sep 22, Oct 6)
+  - “I'll get you admin on the success platform.” — you, Sep 22 (your notes) · [notes](https://notes.granola.ai/d/sample-1on1-0922)
+  - Latest: AI summary, Oct 6: Riley still can't edit playbooks in the success platform; Dana to chase IT. · [notes](https://notes.granola.ai/d/sample-1on1-1006)
+
+**Riley's commitments**
+- **Write up renewal risks for the three enterprise accounts** — open, due Fri Oct 16 · raised Oct 6
+  - “I'll write up the renewal risks for Tolvanic, Quenvault and Pyrelith by the 16th.” — Riley, Oct 6 (transcript) · [notes](https://notes.granola.ai/d/sample-1on1-1006)
+- **Post the Q3 churn analysis in the CS channel** — likely done — confirm: Slack, Oct 8: churn analysis posted in \#cs-leads · [thread](https://feltharrow.slack.example/archives/C0SAMPLE/p1728400000) · raised Sep 22
+  - “I'll have the churn analysis posted in the CS channel by end of next week.” — Riley, Sep 22 (transcript) · [notes](https://notes.granola.ai/d/sample-1on1-0922)
+
+**Keeps coming back (no resolution yet)**
+- **EU ticket backlog and routing rules** — open · came up in 3 of 4 1:1s (Sep 15, Sep 29, Oct 6)
+  - “The EU queue is over two hundred again and nobody owns the routing.” — Riley, Sep 15 (your notes) · [notes](https://notes.granola.ai/d/sample-1on1-0915)
+  - Latest: “The EU backlog is still sitting around two hundred tickets, the routing rules haven't changed.” — Riley, Oct 6 (transcript) · [notes](https://notes.granola.ai/d/sample-1on1-1006)
+  - Latest status: Linear, Oct 9: SUP-412 EU routing rules in progress · [SUP-412](https://linear.app/feltharrow-sample/issue/SUP-412)
+
+**Other open topics**
+- **Cleaner handoff from Sales to CS** — open · raised Oct 6
+  - “Can we get a cleaner handoff from Sales? We keep re-asking customers the same discovery questions.” — Riley, Oct 6 (transcript) · [notes](https://notes.granola.ai/d/sample-1on1-1006)
+
+**Goals and projects raised**
+- **Own the renewals playbook next quarter** — open · came up in 2 of 4 1:1s (Sep 22, Oct 6)
+  - “Long term I want to be the person who owns renewals.” — Riley, Sep 22 (transcript) · [notes](https://notes.granola.ai/d/sample-1on1-0922)
+  - Latest: “I'd really like to own the renewals playbook next quarter.” — Riley, Oct 6 (transcript) · [notes](https://notes.granola.ai/d/sample-1on1-1006)
+  - Latest status: Linear, Oct 9: CS-88 playbook draft in progress, 2 of 5 sections · [CS-88](https://linear.app/feltharrow-sample/issue/CS-88)
+
+**Feedback you promised Riley**
+- **Notes on Riley's Tolvanic QBR deck before the QBR** — open, due Wed Oct 14 · raised Sep 29
+  - “Send me the deck and I'll give you notes before the QBR.” — you, Sep 29 (transcript) · [notes](https://notes.granola.ai/d/sample-1on1-0929)
+
+**Questions not answered yet**
+- **Does CS get a backfill for the open analyst role?** — open · raised Sep 29
+  - “Are we getting a backfill for the analyst seat or is that gone?” — Riley, Sep 29 (transcript) · [notes](https://notes.granola.ai/d/sample-1on1-0929)
+
+**Open work assigned to Riley** (Linear)
+- [CS-88](https://linear.app/feltharrow-sample/issue/CS-88) Renewals playbook draft — In Progress, updated Oct 9
+- [SUP-412](https://linear.app/feltharrow-sample/issue/SUP-412) EU queue routing rules — In Progress, updated Oct 9
+- [CS-95](https://linear.app/feltharrow-sample/issue/CS-95) Tolvanic QBR deck — Todo, updated Oct 7
+
+Withheld: 1 item withheld as personal or uncategorised (not shown; check your own notes if you need it).
+Sources: Granola ✓ (4 1:1s read, the newest 4 of 5 found) · Transcripts ✓ · Linear ✓ (3 open issues) · Slack ✓
+Gaps: not read: 1 meeting with other people on the invite; not shown: 1 item citing a meeting outside the 1:1s read.
+As of 2026-10-13T09:30:00-07:00 · you are the manager
+_Not a performance review. A private draft: only items filed under a work topic are shown, and a pattern-based check that can miss wording leaves out personal, rating, judgement and mood wording. Read it before sharing any of it._
+
+=== 2. The same 1:1 from the other side: Riley (the report) preparing, notes only ===
+#### 1:1 prep: Dana Ortiz · Tue Oct 13, 10:00 (UTC-07:00)
+
+_Private prep for Riley Chen only — not posted or shared anywhere. Review before sharing any of it with Dana._
+
+**At a glance** — read 4 1:1s with Dana (Sep 15 – Oct 6). Open commitments: 1 of yours, 1 of Dana's (1 overdue). 1 topic keeps coming back; 1 question not answered yet.
+
+**Suggested agenda** (your topics first — it's your meeting)
+1. Your topic: EU backlog\: ask Dana to assign routing ownership (came up in 2 1:1s)
+2. Follow up on your question: Is the analyst seat being backfilled?
+3. Check in on your goal: Own the renewals playbook next quarter
+4. Ask Dana for the feedback promised: Dana's notes on my Tolvanic QBR deck
+5. Overdue (Dana's, 11 days): Dana sends the promotion criteria doc
+6. Check on your commitment: Renewal-risk write-up for Tolvanic, Quenvault and Pyrelith
+
+**Your commitments**
+- **Renewal-risk write-up for Tolvanic, Quenvault and Pyrelith** — open, due Fri Oct 16 (from “October 16”, said Tue Oct 6) · raised Oct 6
+  - “renewal risks write-up \(Tolvanic, Quenvault, Pyrelith\) by the 16th” — Oct 6 (your notes) · [notes](https://notes.granola.ai/d/sample-r-1006)
+
+**Dana's commitments**
+- ⚠️ **Dana sends the promotion criteria doc** — open, due Fri Oct 2 (from “by Friday”, said Tue Sep 29), 11 days overdue · raised Sep 29
+  - “promo criteria doc to me by Fri” — Sep 29 (your notes) · [notes](https://notes.granola.ai/d/sample-r-0929)
+
+**Keeps coming back (no resolution yet)**
+- **EU backlog\: ask Dana to assign routing ownership** — open · came up in 2 of 4 1:1s (Sep 15, Oct 6)
+  - “EU queue 200+ again, nobody owns routing” — Sep 15 (your notes) · [notes](https://notes.granola.ai/d/sample-r-0915)
+  - Latest: “EU backlog still \~200, raise routing owner again” — Oct 6 (your notes) · [notes](https://notes.granola.ai/d/sample-r-1006)
+
+**Goals and projects raised**
+- **Own the renewals playbook next quarter** — open · raised Oct 6
+  - “Told Dana I want to own the renewals playbook in Q1” — Oct 6 (your notes) · [notes](https://notes.granola.ai/d/sample-r-1006)
+
+**Feedback Dana promised you**
+- ⚠️ **Dana's notes on my Tolvanic QBR deck** — open, due Tue Oct 6 (from “before our next 1\:1”, said Tue Sep 29), 7 days overdue · raised Sep 29
+  - “Send Dana the QBR deck, she'll give notes before our next 1\:1” — Sep 29 (your notes) · [notes](https://notes.granola.ai/d/sample-r-0929)
+
+**Questions not answered yet**
+- **Is the analyst seat being backfilled?** — open · raised Sep 29
+  - “Asked about analyst backfill, Dana to check with finance” — Sep 29 (your notes) · [notes](https://notes.granola.ai/d/sample-r-0929)
+
+Withheld: 1 item withheld as personal or uncategorised (not shown; check your own notes if you need it).
+Left out: 1 item worded as a rating or judgement of a person, or their mood (not shown).
+Sources: Granola ✓ (4 1:1s read) · Transcripts: access denied · Issues (Linear/Jira): not configured · Slack: not configured
+Gaps: your notes plan shows only the last 30 days, so older 1:1s may be missing; notes not readable for the Sep 22 1:1; transcripts access denied — quotes come from notes and summaries.
+As of 2026-10-13T09:30:00-07:00 · you are the report
+_Not a performance review. A private draft: only items filed under a work topic are shown, and a pattern-based check that can miss wording leaves out personal, rating, judgement and mood wording. Read it before sharing any of it._
+
+=== 3. First 1:1 with a new report: no history yet ===
+#### 1:1 prep: Ade Okonkwo · Wed Oct 14, 15:30 (UTC+01:00)
+
+_Private prep for Dana Ortiz only — not posted or shared anywhere. Review before sharing any of it with Ade._
+
+No previous 1:1s with Ade found in the last 120 days (matched on both of your e-mail addresses and the series title). Nothing to carry over; ask what's on their mind.
+
+Sources: Granola ✓ (0 1:1s read) · Transcripts: not configured · Jira: unavailable · Slack: not configured
+Gaps: found 0 of the 4 1:1s asked for in the last 120 days; Jira unavailable — open work and issue status not checked.
+As of 2026-10-13T09:30:00-07:00 · you are the manager
+_Not a performance review. A private draft: only items filed under a work topic are shown, and a pattern-based check that can miss wording leaves out personal, rating, judgement and mood wording. Read it before sharing any of it._

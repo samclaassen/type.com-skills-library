@@ -1,0 +1,204 @@
+CHURN RISK SCAN — as of 2026-09-22
+accounts: examples/sample_accounts.csv   usage: examples/sample_usage_monthly.csv   support: examples/sample_support.csv
+contacts: examples/sample_contacts.csv   invoices: examples/sample_invoices.csv   model: config/risk_model.json
+weights: usage_decline 25, user_attrition 15, license_utilization 10, support_burden 15, sentiment 15, champion_departure 10, invoice_history 10
+scoring: sum(factor score x weight) / weight of available factors; ARR at risk = ARR x score/100
+
+BOOK SUMMARY
+  Accounts scored            10
+  Book ARR                   $2,405,000
+  Weighted ARR at risk       $762,432 (31.7% of book)
+  critical    (score >= 70)       1 account(s)   $262,880 at risk
+  high        (score >= 50)       2 account(s)   $148,712 at risk
+  medium      (score >= 30)       3 account(s)   $220,840 at risk
+  low         (score >= 0)        4 account(s)   $130,000 at risk
+
+FACTOR PREVALENCE (accounts scoring 50 or higher on each factor)
+  usage_decline         4 flagged     0 without data
+  user_attrition        3 flagged     0 without data
+  license_utilization   4 flagged     0 without data
+  support_burden        5 flagged     0 without data
+  sentiment             3 flagged     1 without data
+  champion_departure    2 flagged     0 without data
+  invoice_history       2 flagged     0 without data
+
+RANKED BOOK — by weighted ARR at risk (10 of 10 shown)
+
+  1. [critical  84.8] ACC-3002  Atlas Bio Labs
+      ARR $310,000 -> $262,880 at risk   renews 2026-12-15 (84d)   segment enterprise   CSM Helena Voss
+      top reasons: usage_decline (25.0 pts); user_attrition (15.0 pts); sentiment (12.0 pts)
+        usage_decline        score 100.0  weight   25  contributes  25.0  core usage down more than 30%
+          key actions 37,167 -> 19,233 (-48.3%) across 3-month windows
+        user_attrition       score 100.0  weight   15  contributes  15.0  active users down more than 25%
+          active users 167 -> 99 (-40.6%) across 3-month windows
+        sentiment            score  80.0  weight   15  contributes  12.0  CSAT 2.5-3.0
+          average CSAT 2.60 across 5 response(s) in 180d
+        support_burden       score  75.0  weight   15  contributes  11.2  heavy support load
+          9 ticket(s) in 90d = 3.6/100 seats, 2 P1, 2 escalation(s); index 19.6
+        champion_departure   score 100.0  weight   10  contributes  10.0  every champion has left
+          2 champion contact(s) departed, most recently 2026-08-10 (43d ago); no active replacement
+        license_utilization  score  70.0  weight   10  contributes   7.0  30-50% of seats active
+          82 of 250 seats active in 2026-09 (33%)
+        invoice_history      score  45.0  weight   10  contributes   4.5  occasionally late
+          4 paid invoice(s), average 20.0d late; 0 unpaid past due; index 20.0
+
+  2. [ medium   30.5] ACC-3010  Meridian Manufacturing
+      ARR $380,000 -> $115,900 at risk   renews 2027-02-28 (159d)   segment enterprise   CSM Luis Ferreira
+      top reasons: usage_decline (12.5 pts); support_burden (7.5 pts); user_attrition (6.8 pts)
+        usage_decline        score  50.0  weight   25  contributes  12.5  core usage down 5-15%
+          key actions 82,167 -> 77,500 (-5.7%) across 3-month windows
+        support_burden       score  50.0  weight   15  contributes   7.5  elevated support load
+          6 ticket(s) in 90d = 1.2/100 seats, 1 P1, 0 escalation(s); index 6.2
+        user_attrition       score  45.0  weight   15  contributes   6.8  active users drifting down
+          active users 390 -> 376 (-3.7%) across 3-month windows
+        sentiment            score  15.0  weight   15  contributes   2.2  CSAT 4.0-4.5
+          average CSAT 4.25 across 4 response(s) in 180d
+        license_utilization  score  15.0  weight   10  contributes   1.5  70-85% of seats active
+          372 of 500 seats active in 2026-09 (74%)
+        champion_departure   score   0.0  weight   10  contributes   0.0  champion in place
+          2 active champion contact(s), no departures in 180d
+        invoice_history      score   0.0  weight   10  contributes   0.0  pays on time
+          4 paid invoice(s), average 0.0d late; 0 unpaid past due; index 0.0
+
+  3. [  high    64.2] ACC-3003  Cascade Fintech
+      ARR $180,000 -> $115,560 at risk   renews 2026-10-31 (39d)   segment mid-market   CSM Ana Duarte
+      top reasons: usage_decline (18.8 pts); user_attrition (10.5 pts); sentiment (9.0 pts)
+        usage_decline        score  75.0  weight   25  contributes  18.8  core usage down 15-30%
+          key actions 17,233 -> 14,233 (-17.4%) across 3-month windows
+        user_attrition       score  70.0  weight   15  contributes  10.5  active users down 10-25%
+          active users 92 -> 75 (-18.5%) across 3-month windows
+        sentiment            score  60.0  weight   15  contributes   9.0  CSAT 3.0-3.5
+          average CSAT 3.50 across 4 response(s) in 180d
+        support_burden       score  50.0  weight   15  contributes   7.5  elevated support load
+          4 ticket(s) in 90d = 2.7/100 seats, 1 P1, 0 escalation(s); index 7.7
+        invoice_history      score  75.0  weight   10  contributes   7.5  frequently late
+          2 paid invoice(s), average 12.0d late; 1 unpaid past due ($60,000 outstanding); index 27.0
+        license_utilization  score  70.0  weight   10  contributes   7.0  30-50% of seats active
+          70 of 150 seats active in 2026-09 (47%)
+        champion_departure   score  40.0  weight   10  contributes   4.0  a champion left, one remains
+          departed: Amara Osei (2026-07-05); 1 active champion contact(s) remain
+
+  4. [  low     17.8] ACC-3008  Kestrel Payments
+      ARR $520,000 -> $92,560 at risk   renews 2026-12-31 (100d)   segment enterprise   CSM Helena Voss
+      top reasons: support_burden (7.5 pts); champion_departure (6.0 pts); sentiment (2.2 pts)
+        support_burden       score  50.0  weight   15  contributes   7.5  elevated support load
+          5 ticket(s) in 90d = 1.2/100 seats, 1 P1, 0 escalation(s); index 6.2
+        champion_departure   score  60.0  weight   10  contributes   6.0  no champion on record
+          no contact carries a champion or economic-buyer role
+        sentiment            score  15.0  weight   15  contributes   2.2  CSAT 4.0-4.5
+          average CSAT 4.50 across 4 response(s) in 180d
+        invoice_history      score  20.0  weight   10  contributes   2.0  slightly late
+          3 paid invoice(s), average 5.3d late; 0 unpaid past due; index 5.3
+        usage_decline        score   0.0  weight   25  contributes   0.0  core usage growing
+          key actions 72,167 -> 78,233 (+8.4%) across 3-month windows
+        user_attrition       score   0.0  weight   15  contributes   0.0  active users growing
+          active users 312 -> 342 (+9.6%) across 3-month windows
+        license_utilization  score   0.0  weight   10  contributes   0.0  over 85% of seats active
+          352 of 400 seats active in 2026-09 (88%)
+
+  5. [ medium   37.2] ACC-3005  Harbor Point Health
+      ARR $240,000 -> $89,280 at risk   renews 2026-11-05 (44d)   segment enterprise   CSM Luis Ferreira
+      top reasons: support_burden (15.0 pts); sentiment (9.0 pts); user_attrition (6.8 pts)
+        support_burden       score 100.0  weight   15  contributes  15.0  very heavy support load
+          12 ticket(s) in 90d = 6.0/100 seats, 3 P1, 2 escalation(s); index 27.0
+        sentiment            score  60.0  weight   15  contributes   9.0  CSAT 3.0-3.5
+          average CSAT 3.33 across 6 response(s) in 180d
+        user_attrition       score  45.0  weight   15  contributes   6.8  active users drifting down
+          active users 150 -> 143 (-4.7%) across 3-month windows
+        usage_decline        score  20.0  weight   25  contributes   5.0  core usage flat
+          key actions 30,100 -> 28,600 (-5.0%) across 3-month windows
+        license_utilization  score  15.0  weight   10  contributes   1.5  70-85% of seats active
+          141 of 200 seats active in 2026-09 (70%)
+        champion_departure   score   0.0  weight   10  contributes   0.0  champion in place
+          2 active champion contact(s), no departures in 180d
+        invoice_history      score   0.0  weight   10  contributes   0.0  pays on time
+          4 paid invoice(s), average 0.0d late; 0 unpaid past due; index 0.0
+
+  6. [  low     24.0] ACC-3007  Silverline Energy
+      ARR $150,000 -> $36,000 at risk   renews 2027-01-20 (120d)   segment mid-market   CSM Luis Ferreira
+      top reasons: license_utilization (10.0 pts); user_attrition (6.8 pts); usage_decline (5.0 pts)
+        license_utilization  score 100.0  weight   10  contributes  10.0  under 30% of seats active
+          69 of 250 seats active in 2026-09 (28%)
+        user_attrition       score  45.0  weight   15  contributes   6.8  active users drifting down
+          active users 76 -> 70 (-7.5%) across 3-month windows
+        usage_decline        score  20.0  weight   25  contributes   5.0  core usage flat
+          key actions 11,800 -> 11,300 (-4.2%) across 3-month windows
+        sentiment            score  15.0  weight   15  contributes   2.2  CSAT 4.0-4.5
+          average CSAT 4.33 across 3 response(s) in 180d
+        support_burden       score   0.0  weight   15  contributes   0.0  quiet
+          3 ticket(s) in 90d = 1.2/100 seats, 0 P1, 0 escalation(s); index 1.2
+        champion_departure   score   0.0  weight   10  contributes   0.0  champion in place
+          1 active champion contact(s), no departures in 180d
+        invoice_history      score   0.0  weight   10  contributes   0.0  pays on time
+          2 paid invoice(s), average 0.0d late; 0 unpaid past due; index 0.0
+
+  7. [  high    51.8] ACC-3006  Quill and Bramble Retail
+      ARR $64,000 -> $33,152 at risk   renews 2026-10-10 (18d)   segment smb   CSM Ana Duarte
+      top reasons: usage_decline (22.1 pts); user_attrition (12.3 pts); license_utilization (8.2 pts)
+        usage_decline        score  75.0  weight   25  contributes  22.1  core usage down 15-30%
+          key actions 6,833 -> 5,233 (-23.4%) across 3-month windows
+        user_attrition       score  70.0  weight   15  contributes  12.3  active users down 10-25%
+          active users 38 -> 29 (-22.1%) across 3-month windows
+        license_utilization  score  70.0  weight   10  contributes   8.2  30-50% of seats active
+          28 of 60 seats active in 2026-09 (47%)
+        champion_departure   score  40.0  weight   10  contributes   4.7  a champion left, one remains
+          departed: Tomas Rivera (2026-06-20); 1 active champion contact(s) remain
+        support_burden       score  25.0  weight   15  contributes   4.4  normal support load
+          2 ticket(s) in 90d = 3.3/100 seats, 0 P1, 0 escalation(s); index 3.3
+        invoice_history      score   0.0  weight   10  contributes   0.0  pays on time
+          2 paid invoice(s), average 0.0d late; 0 unpaid past due; index 0.0
+        sentiment            NO DATA — weight 15 redistributed  (no CSAT responses in the last 180d)
+      scored on 85 of 100 available weight points
+
+  8. [ medium   34.8] ACC-3009  Lantern Bay Hotels
+      ARR $45,000 -> $15,660 at risk   renews 2026-10-05 (13d)   segment smb   CSM Ana Duarte
+      top reasons: invoice_history (10.0 pts); user_attrition (6.8 pts); sentiment (5.2 pts)
+        invoice_history      score 100.0  weight   10  contributes  10.0  chronically late or overdue
+          1 paid invoice(s), average 20.0d late; 2 unpaid past due ($22,500 outstanding); index 50.0
+        user_attrition       score  45.0  weight   15  contributes   6.8  active users drifting down
+          active users 33 -> 31 (-7.0%) across 3-month windows
+        sentiment            score  35.0  weight   15  contributes   5.2  CSAT 3.5-4.0
+          average CSAT 4.00 across 2 response(s) in 180d
+        usage_decline        score  20.0  weight   25  contributes   5.0  core usage flat
+          key actions 4,917 -> 4,717 (-4.1%) across 3-month windows
+        license_utilization  score  40.0  weight   10  contributes   4.0  50-70% of seats active
+          30 of 50 seats active in 2026-09 (60%)
+        support_burden       score  25.0  weight   15  contributes   3.8  normal support load
+          2 ticket(s) in 90d = 4.0/100 seats, 0 P1, 0 escalation(s); index 4.0
+        champion_departure   score   0.0  weight   10  contributes   0.0  champion in place
+          1 active champion contact(s), no departures in 180d
+
+  9. [  low      1.5] ACC-3004  Pinewood Manufacturing
+      ARR $96,000 -> $1,440 at risk   renews 2027-03-01 (160d)   segment mid-market   CSM Ana Duarte
+      top reasons: license_utilization (1.5 pts)
+        license_utilization  score  15.0  weight   10  contributes   1.5  70-85% of seats active
+          68 of 80 seats active in 2026-09 (85%)
+        usage_decline        score   0.0  weight   25  contributes   0.0  core usage growing
+          key actions 9,200 -> 9,867 (+7.2%) across 3-month windows
+        user_attrition       score   0.0  weight   15  contributes   0.0  active users growing
+          active users 63 -> 66 (+5.3%) across 3-month windows
+        support_burden       score   0.0  weight   15  contributes   0.0  quiet
+          1 ticket(s) in 90d = 1.2/100 seats, 0 P1, 0 escalation(s); index 1.2
+        sentiment            score   0.0  weight   15  contributes   0.0  CSAT above 4.5
+          average CSAT 5.00 across 1 response(s) in 180d
+        champion_departure   score   0.0  weight   10  contributes   0.0  champion in place
+          1 active champion contact(s), no departures in 180d
+        invoice_history      score   0.0  weight   10  contributes   0.0  pays on time
+          2 paid invoice(s), average 0.0d late; 0 unpaid past due; index 0.0
+
+  10. [  low      0.0] ACC-3001  Northwind Logistics
+      ARR $420,000 -> $0 at risk   renews 2026-11-30 (69d)   segment enterprise   CSM Helena Voss
+        usage_decline        score   0.0  weight   25  contributes   0.0  core usage growing
+          key actions 52,833 -> 60,167 (+13.9%) across 3-month windows
+        user_attrition       score   0.0  weight   15  contributes   0.0  active users growing
+          active users 245 -> 279 (+13.7%) across 3-month windows
+        license_utilization  score   0.0  weight   10  contributes   0.0  over 85% of seats active
+          286 of 300 seats active in 2026-09 (95%)
+        support_burden       score   0.0  weight   15  contributes   0.0  quiet
+          3 ticket(s) in 90d = 1.0/100 seats, 0 P1, 0 escalation(s); index 1.0
+        sentiment            score   0.0  weight   15  contributes   0.0  CSAT above 4.5
+          average CSAT 4.67 across 3 response(s) in 180d
+        champion_departure   score   0.0  weight   10  contributes   0.0  champion in place
+          1 active champion contact(s), no departures in 180d
+        invoice_history      score   0.0  weight   10  contributes   0.0  pays on time
+          4 paid invoice(s), average 0.0d late; 0 unpaid past due; index 0.0

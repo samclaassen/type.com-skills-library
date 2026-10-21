@@ -1,0 +1,443 @@
+{
+  "mode": "baseline",
+  "meta": {
+    "timezone": "UTC",
+    "currency": "USD",
+    "source_system": "synthetic_showcase",
+    "landing_page_form": "path",
+    "sampled": false,
+    "sampling_rate": null,
+    "other_row_sessions": 0,
+    "reconciliation_delta_pct": 0.0,
+    "date_range": [
+      "2026-07-25",
+      "2026-08-28"
+    ],
+    "complete_through": "2026-08-28",
+    "extracted_at": "2026-08-28T23:59:59Z",
+    "synthetic": true
+  },
+  "data": {
+    "rows_in_cube": 210,
+    "date_range": [
+      "2026-07-25",
+      "2026-08-28"
+    ],
+    "complete_through": "2026-08-28",
+    "total_sessions": 420000,
+    "funnel": [
+      "step_view_item",
+      "step_add_to_cart",
+      "step_begin_checkout",
+      "step_purchase"
+    ],
+    "conversion_step": "step_purchase",
+    "usable_optional_dims": [
+      "device",
+      "new_vs_returning"
+    ],
+    "findings": []
+  },
+  "windows": {
+    "current": [
+      "2026-08-22",
+      "2026-08-28"
+    ],
+    "baseline": [
+      "2026-07-25",
+      "2026-08-21"
+    ],
+    "baseline_mode": "trailing",
+    "excluded_dates": [],
+    "notes": []
+  },
+  "hygiene": {
+    "findings": [],
+    "alias_clusters": [],
+    "source_inventory": [
+      {
+        "utm_source": "bing",
+        "utm_medium": "organic",
+        "sessions": 140000,
+        "cvr": 0.04,
+        "revenue": 560000.0,
+        "testable_at_cell_level": true
+      },
+      {
+        "utm_source": "google",
+        "utm_medium": "cpc",
+        "sessions": 140000,
+        "cvr": 0.04,
+        "revenue": 560000.0,
+        "testable_at_cell_level": true
+      },
+      {
+        "utm_source": "newsletter",
+        "utm_medium": "email",
+        "sessions": 140000,
+        "cvr": 0.04,
+        "revenue": 560000.0,
+        "testable_at_cell_level": true
+      }
+    ],
+    "abbreviation_candidates": [],
+    "counts": {
+      "distinct_landing_pages": 2,
+      "distinct_sources": 3,
+      "distinct_mediums": 3,
+      "distinct_countries": 1,
+      "cube_rows": 210
+    }
+  },
+  "channel_stack": [
+    {
+      "utm_medium": "cpc",
+      "sessions": 28000,
+      "revenue": 112000.0,
+      "revenue_share": 0.3333,
+      "traffic_share": 0.3333,
+      "traffic_share_before": 0.3333,
+      "cvr": 0.04,
+      "cvr_baseline": 0.04,
+      "rel_change": 0.0,
+      "p": 1.0,
+      "mde_rel": 9.2,
+      "testable": false,
+      "revenue_impact": 0.0,
+      "within_contribution_pp": 0.0,
+      "mix_contribution_pp": 0.0,
+      "standardised_cvr": null,
+      "mix_effect_pp": null,
+      "rank": 1
+    },
+    {
+      "utm_medium": "email",
+      "sessions": 28000,
+      "revenue": 112000.0,
+      "revenue_share": 0.3333,
+      "traffic_share": 0.3333,
+      "traffic_share_before": 0.3333,
+      "cvr": 0.04,
+      "cvr_baseline": 0.04,
+      "rel_change": 0.0,
+      "p": 1.0,
+      "mde_rel": 9.2,
+      "testable": false,
+      "revenue_impact": 0.0,
+      "within_contribution_pp": 0.0,
+      "mix_contribution_pp": 0.0,
+      "standardised_cvr": null,
+      "mix_effect_pp": null,
+      "rank": 2
+    },
+    {
+      "utm_medium": "organic",
+      "sessions": 28000,
+      "revenue": 112000.0,
+      "revenue_share": 0.3333,
+      "traffic_share": 0.3333,
+      "traffic_share_before": 0.3333,
+      "cvr": 0.04,
+      "cvr_baseline": 0.04,
+      "rel_change": 0.0,
+      "p": 1.0,
+      "mde_rel": 9.2,
+      "testable": false,
+      "revenue_impact": 0.0,
+      "within_contribution_pp": 0.0,
+      "mix_contribution_pp": 0.0,
+      "standardised_cvr": null,
+      "mix_effect_pp": null,
+      "rank": 3
+    }
+  ],
+  "source_stack": [
+    {
+      "utm_source": "bing",
+      "sessions": 28000,
+      "revenue": 112000.0,
+      "revenue_share": 0.3333,
+      "traffic_share": 0.3333,
+      "traffic_share_before": 0.3333,
+      "cvr": 0.04,
+      "cvr_baseline": 0.04,
+      "rel_change": 0.0,
+      "p": 1.0,
+      "mde_rel": 9.2,
+      "testable": false,
+      "revenue_impact": 0.0,
+      "within_contribution_pp": 0.0,
+      "mix_contribution_pp": 0.0,
+      "standardised_cvr": null,
+      "mix_effect_pp": null,
+      "rank": 1
+    },
+    {
+      "utm_source": "google",
+      "sessions": 28000,
+      "revenue": 112000.0,
+      "revenue_share": 0.3333,
+      "traffic_share": 0.3333,
+      "traffic_share_before": 0.3333,
+      "cvr": 0.04,
+      "cvr_baseline": 0.04,
+      "rel_change": 0.0,
+      "p": 1.0,
+      "mde_rel": 9.2,
+      "testable": false,
+      "revenue_impact": 0.0,
+      "within_contribution_pp": 0.0,
+      "mix_contribution_pp": 0.0,
+      "standardised_cvr": null,
+      "mix_effect_pp": null,
+      "rank": 2
+    },
+    {
+      "utm_source": "newsletter",
+      "sessions": 28000,
+      "revenue": 112000.0,
+      "revenue_share": 0.3333,
+      "traffic_share": 0.3333,
+      "traffic_share_before": 0.3333,
+      "cvr": 0.04,
+      "cvr_baseline": 0.04,
+      "rel_change": 0.0,
+      "p": 1.0,
+      "mde_rel": 9.2,
+      "testable": false,
+      "revenue_impact": 0.0,
+      "within_contribution_pp": 0.0,
+      "mix_contribution_pp": 0.0,
+      "standardised_cvr": null,
+      "mix_effect_pp": null,
+      "rank": 3
+    }
+  ],
+  "page_stack": [
+    {
+      "landing_page": "/refill",
+      "sessions": 42000,
+      "revenue": 168000.0,
+      "revenue_share": 0.5,
+      "traffic_share": 0.5,
+      "traffic_share_before": 0.5,
+      "cvr": 0.04,
+      "cvr_baseline": 0.04,
+      "rel_change": 0.0,
+      "p": 1.0,
+      "mde_rel": 7.5,
+      "testable": false,
+      "revenue_impact": 0.0,
+      "within_contribution_pp": 0.0,
+      "mix_contribution_pp": 0.0,
+      "standardised_cvr": 0.04,
+      "mix_effect_pp": 0.0,
+      "rank": 1
+    },
+    {
+      "landing_page": "/starter-kit",
+      "sessions": 42000,
+      "revenue": 168000.0,
+      "revenue_share": 0.5,
+      "traffic_share": 0.5,
+      "traffic_share_before": 0.5,
+      "cvr": 0.04,
+      "cvr_baseline": 0.04,
+      "rel_change": 0.0,
+      "p": 1.0,
+      "mde_rel": 7.5,
+      "testable": false,
+      "revenue_impact": 0.0,
+      "within_contribution_pp": 0.0,
+      "mix_contribution_pp": 0.0,
+      "standardised_cvr": 0.04,
+      "mix_effect_pp": 0.0,
+      "rank": 2
+    }
+  ],
+  "sensitivity": {
+    "conversion_rate_observed": 0.04,
+    "current_window_sessions": 84000,
+    "method": "two-proportion z, alpha=0.05 two-sided, power=0.80",
+    "levels": [
+      {
+        "level": "site",
+        "cells_total": 1,
+        "cells_testable": 1,
+        "sessions_covered_share": 1.0,
+        "median_mde_rel": 5.3,
+        "best_mde_rel": 5.3
+      },
+      {
+        "level": "landing_page",
+        "cells_total": 2,
+        "cells_testable": 2,
+        "sessions_covered_share": 1.0,
+        "median_mde_rel": 7.5,
+        "best_mde_rel": 7.5
+      },
+      {
+        "level": "utm_source",
+        "cells_total": 3,
+        "cells_testable": 3,
+        "sessions_covered_share": 1.0,
+        "median_mde_rel": 9.2,
+        "best_mde_rel": 9.2
+      },
+      {
+        "level": "landing_page x utm_source",
+        "cells_total": 6,
+        "cells_testable": 6,
+        "sessions_covered_share": 1.0,
+        "median_mde_rel": 13.0,
+        "best_mde_rel": 13.0
+      },
+      {
+        "level": "landing_page x utm_source x utm_campaign",
+        "cells_total": 6,
+        "cells_testable": 6,
+        "sessions_covered_share": 1.0,
+        "median_mde_rel": 13.0,
+        "best_mde_rel": 13.0
+      }
+    ],
+    "recommendations": []
+  },
+  "baselines": {
+    "landing_page": [
+      {
+        "landing_page": "/refill",
+        "sessions": 210000,
+        "conversions": 8400,
+        "cvr_pooled": 0.04,
+        "cvr_daily_median": 0.04,
+        "cvr_p25": 0.04,
+        "cvr_p75": 0.04,
+        "volatility": 0.0,
+        "revenue": 840000.0
+      },
+      {
+        "landing_page": "/starter-kit",
+        "sessions": 210000,
+        "conversions": 8400,
+        "cvr_pooled": 0.04,
+        "cvr_daily_median": 0.04,
+        "cvr_p25": 0.04,
+        "cvr_p75": 0.04,
+        "volatility": 0.0,
+        "revenue": 840000.0
+      }
+    ],
+    "utm_source": [
+      {
+        "utm_source": "bing",
+        "sessions": 140000,
+        "conversions": 5600,
+        "cvr_pooled": 0.04,
+        "cvr_daily_median": 0.04,
+        "cvr_p25": 0.04,
+        "cvr_p75": 0.04,
+        "volatility": 0.0,
+        "revenue": 560000.0
+      },
+      {
+        "utm_source": "google",
+        "sessions": 140000,
+        "conversions": 5600,
+        "cvr_pooled": 0.04,
+        "cvr_daily_median": 0.04,
+        "cvr_p25": 0.04,
+        "cvr_p75": 0.04,
+        "volatility": 0.0,
+        "revenue": 560000.0
+      },
+      {
+        "utm_source": "newsletter",
+        "sessions": 140000,
+        "conversions": 5600,
+        "cvr_pooled": 0.04,
+        "cvr_daily_median": 0.04,
+        "cvr_p25": 0.04,
+        "cvr_p75": 0.04,
+        "volatility": 0.0,
+        "revenue": 560000.0
+      }
+    ],
+    "landing_page_x_utm_source": [
+      {
+        "landing_page": "/refill",
+        "utm_source": "bing",
+        "sessions": 70000,
+        "conversions": 2800,
+        "cvr_pooled": 0.04,
+        "cvr_daily_median": 0.04,
+        "cvr_p25": 0.04,
+        "cvr_p75": 0.04,
+        "volatility": 0.0,
+        "revenue": 280000.0
+      },
+      {
+        "landing_page": "/refill",
+        "utm_source": "google",
+        "sessions": 70000,
+        "conversions": 2800,
+        "cvr_pooled": 0.04,
+        "cvr_daily_median": 0.04,
+        "cvr_p25": 0.04,
+        "cvr_p75": 0.04,
+        "volatility": 0.0,
+        "revenue": 280000.0
+      },
+      {
+        "landing_page": "/refill",
+        "utm_source": "newsletter",
+        "sessions": 70000,
+        "conversions": 2800,
+        "cvr_pooled": 0.04,
+        "cvr_daily_median": 0.04,
+        "cvr_p25": 0.04,
+        "cvr_p75": 0.04,
+        "volatility": 0.0,
+        "revenue": 280000.0
+      },
+      {
+        "landing_page": "/starter-kit",
+        "utm_source": "bing",
+        "sessions": 70000,
+        "conversions": 2800,
+        "cvr_pooled": 0.04,
+        "cvr_daily_median": 0.04,
+        "cvr_p25": 0.04,
+        "cvr_p75": 0.04,
+        "volatility": 0.0,
+        "revenue": 280000.0
+      },
+      {
+        "landing_page": "/starter-kit",
+        "utm_source": "google",
+        "sessions": 70000,
+        "conversions": 2800,
+        "cvr_pooled": 0.04,
+        "cvr_daily_median": 0.04,
+        "cvr_p25": 0.04,
+        "cvr_p75": 0.04,
+        "volatility": 0.0,
+        "revenue": 280000.0
+      },
+      {
+        "landing_page": "/starter-kit",
+        "utm_source": "newsletter",
+        "sessions": 70000,
+        "conversions": 2800,
+        "cvr_pooled": 0.04,
+        "cvr_daily_median": 0.04,
+        "cvr_p25": 0.04,
+        "cvr_p75": 0.04,
+        "volatility": 0.0,
+        "revenue": 280000.0
+      }
+    ]
+  },
+  "alerts": [],
+  "note": "Baseline run: no alerts by design. There is nothing to compare against yet. Resolve the hygiene findings before trusting slice-level output, and read the sensitivity table before reading silence as good news."
+}

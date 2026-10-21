@@ -1,0 +1,20 @@
+{
+  "name": "bigcommerce-qbo-order-sync",
+  "version": "3.1.1",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "bun test ./test_sync.ts ./test_runtime.ts ./test_scheduler.ts ./test_repairs.ts ./test_ack.ts && python3 -m unittest test_main -q",
+    "typecheck": "tsc --noEmit --target es2022 --module preserve --moduleResolution bundler --types bun --skipLibCheck --strict main.ts sync.ts ack.ts journal.ts scheduler.ts config.ts render.ts qbo.ts preview.ts test_sync.ts test_runtime.ts test_scheduler.ts test_repairs.ts test_ack.ts test_support.ts",
+    "preview": "bun preview.ts"
+  },
+  "dependencies": {
+    "@type-dot-com/sdk": "0.2.0",
+    "zod": "4.4.3",
+    "neverthrow": "8.2.0"
+  },
+  "devDependencies": {
+    "@types/bun": "1.4.3",
+    "typescript": "7.0.2"
+  }
+}

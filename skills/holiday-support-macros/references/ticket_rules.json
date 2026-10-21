@@ -1,0 +1,108 @@
+{
+  "version": 1,
+  "about": [
+    "Keyword rules that sort helpdesk tickets into types. Edit them freely and re-run.",
+    "Matching is case-insensitive on the subject and body together, on whole words or phrases.",
+    "The FIRST type in this list that matches wins, so specific types sit above general ones (WISMO is last).",
+    "Types marked 'escalate': true (chargebacks, legal threats, injuries) are checked before all others; these tickets go to a person, never a macro.",
+    "'first' phrases win over every other type's keywords: 'hasn't arrived' is WISMO even when the ticket also says 'refund'.",
+    "A keyword doesn't count when 'not', 'no', 'isn't', 'wasn't' or 'never' comes up to 3 words before it ('box was not damaged'). Set 'negation': false to turn that off for a type (WISMO: 'no tracking' is a WISMO ticket).",
+    "A ticket also matches a type when it carries one of that type's helpdesk tags.",
+    "Phrases under 'not' are ignored for that type only: 'zip code' never counts as 'code' for discount_code.",
+    "Tickets that match nothing are 'other' (unclassified); the report prints the most common ones so you can add keywords."
+  ],
+  "fallback": "other",
+  "types": [
+    {
+      "type": "escalation",
+      "label": "Escalation: chargeback, legal or safety",
+      "escalate": true,
+      "keywords": ["chargeback", "charge back", "dispute", "disputing", "fraud", "fraudulent", "lawyer", "attorney",
+                   "legal action", "small claims", "injured", "injury", "cut myself", "hurt myself", "burned myself",
+                   "allergic reaction", "bbb", "better business bureau"],
+      "tags": ["escalation", "chargeback"]
+    },
+    {
+      "type": "damaged_defective",
+      "label": "Damaged or defective",
+      "keywords": ["damaged", "damage", "broken", "cracked", "chipped", "shattered", "defective",
+                   "faulty", "ripped", "torn", "crushed", "split open", "missing piece"],
+      "tags": ["damaged", "defective"]
+    },
+    {
+      "type": "price_adjustment",
+      "label": "Price adjustment request",
+      "keywords": ["price adjustment", "price match", "refund the difference", "the difference back",
+                   "honor the sale", "honour the sale", "price dropped", "price drop",
+                   "went on sale", "now on sale", "on sale now", "now cheaper", "cheaper now", "paid full price"],
+      "tags": ["price-adjustment"]
+    },
+    {
+      "type": "discount_code",
+      "label": "Discount code not working",
+      "keywords": ["discount code", "promo code", "coupon", "code", "promo", "discount", "applied automatically",
+                   "apply automatically", "automatically applied", "applies automatically"],
+      "not": ["zip code", "postal code", "postcode", "area code", "tracking code", "qr code"],
+      "tags": ["discount", "promo-code"]
+    },
+    {
+      "type": "address_change",
+      "label": "Address change",
+      "keywords": ["shipping address", "wrong address", "change address", "change the address",
+                   "update the address", "update my address", "old address", "new address", "address change",
+                   "apartment number", "unit number"],
+      "tags": ["address-change"]
+    },
+    {
+      "type": "cancel_modify",
+      "label": "Cancel or change an order",
+      "keywords": ["cancel", "cancellation", "change my order", "change the order", "modify", "edit my order",
+                   "add an item", "add to my order", "add a second", "swap", "wrong color", "wrong size",
+                   "ordered twice", "duplicate order"],
+      "tags": ["cancel", "order-edit"]
+    },
+    {
+      "type": "gift_options",
+      "label": "Gift options",
+      "keywords": ["gift wrap", "gift wrapping", "gift message", "gift note", "gift receipt", "packing slip",
+                   "hide the price", "prices off", "include a message", "include a note"],
+      "tags": ["gift"]
+    },
+    {
+      "type": "return_exchange",
+      "label": "Return or exchange",
+      "keywords": ["return", "returns", "returning", "exchange", "refund", "send it back", "send back"],
+      "not": ["return address", "return customer", "returning customer", "repeat customer"],
+      "tags": ["returns", "return", "exchange"]
+    },
+    {
+      "type": "out_of_stock",
+      "label": "Out of stock or backorder",
+      "keywords": ["sold out", "out of stock", "back in stock", "restock", "restocking", "backorder",
+                   "back order", "pre-order", "preorder", "notify me"],
+      "tags": ["out-of-stock"]
+    },
+    {
+      "type": "shipping_deadline",
+      "label": "Shipping deadline question",
+      "keywords": ["by christmas", "before christmas", "for christmas", "christmas delivery", "in time",
+                   "arrive by", "arrives by", "arrive before", "get it by", "need it by", "by dec",
+                   "shipping deadline", "holiday shipping", "last day to order", "cutoff", "cut-off", "order by"],
+      "not": ["order by phone", "ordered by phone", "order by email", "ordered by email", "order by mistake",
+              "ordered by mistake"],
+      "tags": ["holiday-shipping"]
+    },
+    {
+      "type": "wismo",
+      "label": "Where is my order (WISMO)",
+      "negation": false,
+      "first": ["hasn't arrived", "has not arrived", "hasn't come", "never arrived", "never came", "didn't arrive",
+                "did not arrive", "not arrived", "hasn't shown up", "never received"],
+      "keywords": ["where is my order", "where's my order", "order status", "tracking", "track my",
+                   "has my order shipped", "shipped yet", "not shipped", "hasn't shipped", "still waiting",
+                   "when will my order", "hasn't arrived", "not arrived", "package", "shipping email",
+                   "unfulfilled", "no movement"],
+      "tags": ["order-status", "wismo", "where-is-my-order"]
+    }
+  ]
+}

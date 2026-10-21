@@ -1,0 +1,110 @@
+{
+  "_about": "Canonical question bank for the DayNova Individual AI Assessment. Part 1 (SCARF) and the driver write-ups come from the DayNova Diagnostic. Part 2 (AI habits) is scored 0-3 per question, 2 questions per NOVA pillar. scripts/build_report.py reads this file, so edit questions here and nowhere else.",
+
+  "scarf": {
+    "instructions": "Rank all five from most important to you (1st) to least important (5th). There are no right answers. Your honest ranking is the data.",
+    "questions": [
+      { "num": 1, "stem": "When your organization announces a major AI initiative, your concern is most likely:",
+        "options": {
+          "status": "Whether your expertise will still be valued",
+          "certainty": "Whether you will know what is expected of you",
+          "autonomy": "Whether you will have a say in how AI gets used in your own work",
+          "relatedness": "Whether your team will still feel connected through the change",
+          "fairness": "Whether the rollout will be applied evenly across the organization" } },
+      { "num": 2, "stem": "You feel most resistant to a new AI tool when:",
+        "options": {
+          "status": "You are treated as a beginner in front of peers who have used it longer",
+          "certainty": "The instructions keep changing or feel vague",
+          "autonomy": "You are forced to use it in a specific way",
+          "relatedness": "You cannot get help from anyone you trust",
+          "fairness": "Other teams are getting better support or training than yours" } },
+      { "num": 3, "stem": "In a successful AI transformation, what would matter most to you?",
+        "options": {
+          "status": "Being recognized as someone who adapted well",
+          "certainty": "Having clarity on the new way of working",
+          "autonomy": "Maintaining control over how you do your job",
+          "relatedness": "Going through it together with your team",
+          "fairness": "Knowing the process was fair to everyone involved" } },
+      { "num": 4, "stem": "You are most likely to disengage from an AI rollout when:",
+        "options": {
+          "status": "You feel your contributions go unnoticed",
+          "certainty": "Plans keep shifting and you cannot predict next week",
+          "autonomy": "Decisions are made about your work without your input",
+          "relatedness": "You feel isolated from the people you usually work with",
+          "fairness": "You see favoritism in who gets opportunities" } },
+      { "num": 5, "stem": "After an AI initiative is complete, you would feel it was worthwhile if:",
+        "options": {
+          "status": "Your professional standing improved",
+          "certainty": "Your day-to-day became more predictable",
+          "autonomy": "You gained more control over your work",
+          "relatedness": "Your relationships with colleagues got stronger",
+          "fairness": "Everyone benefited equitably" } }
+    ]
+  },
+
+  "habits": {
+    "instructions": "Pick the answer closest to how you work today, not how you'd like to work.",
+    "questions": [
+      { "id": "n1", "pillar": "narrow", "stem": "How clear are you on which parts of your job AI should help with?",
+        "options": [
+          "I haven't figured that out yet",
+          "I have a general sense, but nothing specific",
+          "I know a few specific tasks where it helps",
+          "I have a clear list of where AI helps in my role, and where it doesn't belong" ] },
+      { "id": "n2", "pillar": "narrow", "stem": "When AI gives you a weak answer, what do you usually do?",
+        "options": [
+          "Give up and do it myself",
+          "Rephrase the question and try again",
+          "Add context, examples, or constraints until it's right",
+          "I've set up reusable instructions, projects, or prompts so it starts with the right context" ] },
+      { "id": "o1", "pillar": "orchestrate", "stem": "How often do you use AI tools in your work?",
+        "options": [
+          "Rarely or never",
+          "A few times a month",
+          "A few times a week",
+          "Daily. It's part of how I work" ] },
+      { "id": "o2", "pillar": "orchestrate", "stem": "Which best describes how you use AI?",
+        "options": [
+          "I haven't found a regular use yet",
+          "Quick questions, lookups, or rewording",
+          "Drafting, summarizing, or analyzing real work",
+          "Multi-step workflows, custom assistants, or automations I've set up" ] },
+      { "id": "v1", "pillar": "validate", "stem": "Before you use AI output in real work, what do you do?",
+        "options": [
+          "I mostly use it as-is, or I don't use AI output yet",
+          "I skim it for anything obviously wrong",
+          "I fact-check the key points and edit it into my own voice",
+          "I check it against a clear standard for what good looks like, and I know where AI tends to slip in my work" ] },
+      { "id": "v2", "pillar": "validate", "stem": "How confident are you at spotting when AI gets something wrong (a factual error, an off tone, a flawed recommendation)?",
+        "options": [
+          "Not confident yet",
+          "I catch the obvious mistakes",
+          "I usually catch it",
+          "Very confident. I know its typical failure points in my field" ] },
+      { "id": "a1", "pillar": "amplify", "stem": "In a typical week, how much time does AI save you?",
+        "options": [
+          "None yet, or I'm not sure",
+          "Less than an hour",
+          "One to three hours",
+          "More than three hours" ] },
+      { "id": "a2", "pillar": "amplify", "stem": "What happens with the time AI saves you?",
+        "options": [
+          "It hasn't saved me time yet, or I haven't noticed",
+          "It gets absorbed by more of the same work",
+          "Some of it goes to higher-value work",
+          "I deliberately put it into strategic, creative, or growth work" ] }
+    ],
+    "blocker": {
+      "id": "blocker",
+      "stem": "What would most help you get more out of AI right now?",
+      "options": {
+        "start": "Knowing where to start in my own role",
+        "permission": "Clarity on what I'm allowed to use and share",
+        "trust": "Being able to trust the outputs",
+        "time": "Time set aside to learn and experiment",
+        "fit": "Tools that fit the way my work is actually done",
+        "next": "Nothing's in the way. I want to go further and build more advanced workflows"
+      }
+    }
+  }
+}

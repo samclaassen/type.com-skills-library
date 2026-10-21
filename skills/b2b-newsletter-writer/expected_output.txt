@@ -1,0 +1,276 @@
+===== 1. voice-stats (past issues) =====
+#### Voice stats (measured from past issues)
+
+Issues analysed: past_issue_2026-09-11-the-ops-desk.md, past_issue_2026-09-18-the-ops-desk.md, past_issue_2026-09-25-the-ops-desk.md
+Body words per issue: 153, 144, 138
+
+| Signal | Measured |
+|---|---|
+| Sentences analysed | 38 |
+| Average / median sentence length | 11.4 / 10.0 words |
+| Short (<= 8 words) / long (>= 25 words) sentences | 45% / 3% |
+| Longest sentence | 26 words |
+| I/me/my per 1,000 words | 6.9 |
+| we/our/us per 1,000 words | 2.3 |
+| you/your per 1,000 words | 27.6 |
+| contractions per 1,000 words | 48.4 |
+| exclamation marks per 1,000 words | 0.0 |
+| questions per 1,000 words | 6.9 |
+| Section headings | 6 (avg 7.2 words, 6 in sentence case) |
+| Opener length (sentences per issue) | 2, 2, 2 |
+| Recurring bold labels (in 2+ issues) | "Steal this:" |
+| Sign-off | "— Maya" (all 3 issues) |
+| Past subject lines | 3, 33-39 chars |
+| Banned phrases already in past issues | none |
+
+These are measurements, not the voice profile. Write the profile from them with voice-profile-template.md, and show it to the user.
+
+===== 2. lint (good draft) =====
+#### Newsletter lint — The Ops Desk, Oct 2, 2026
+
+**Result: PASS** · 0 FAIL · 0 WARN · 19 checks passed
+
+**Word budget:** 427 / 600 words (opener 39 · sections 357 · CTA 30 · sign-off 1; subject lines, preheader and button label excluded)
+
+| § | Headline | Body words | Target | Source link |
+|---|---|---|---|---|
+| 1 | Capacity Forecast shows who's overbooked six... | 118 | 80-150 | yes |
+| 2 | Why one studio COO stopped publishing utiliza... | 103 | 80-150 | yes |
+| 3 | Scope creep is still the biggest margin leak... | 110 | 80-150 | yes |
+
+Trim option if needed: cut §2 "Why one studio COO stopped publishing..." (-111 words -> 316 / 600).
+
+| Status | Check | Where | Detail |
+|---|---|---|---|
+| PASS | settings | all | cta_type product, 3 sections, 600 words max |
+| PASS | subject line count | all | 3 of 3 |
+| PASS | subject lines | all | all under 50 chars, no caps/emoji/spam/urgency (longest 42) |
+| PASS | preheader | all | 72 chars |
+| PASS | opener | all | 3 sentences, no greeting opener |
+| PASS | section count | all | 3 of 3 |
+| PASS | section length | all | all bodies 80-150 words |
+| PASS | headlines | all | descriptive, no clickbait |
+| PASS | source links | all | every section that cites a source links it |
+| PASS | commentary has a take | all | every section states a position |
+| PASS | no verbatim lifting | all | no 8-word run copied from a fact quote |
+| PASS | banned phrases | all | none of 69 banned phrases used |
+| PASS | placeholders | all | none |
+| PASS | figures verified | all | 9 figure(s) all traced to facts[] or the brief |
+| PASS | quotes verified | all | every direct quote is verbatim in facts[] or the brief |
+| PASS | fact sources | all | 4 fact(s), all sources linked |
+| PASS | CTA | all | product CTA with a link |
+| PASS | sign-off | all | "— Maya" |
+| PASS | word budget | all | 427 / 600 words |
+
+No FAIL. Review WARN rows, then render. Figures and quotes were matched against facts[] and the brief only; the tool cannot confirm the quotes match the live source.
+
+===== 3. render --format markdown =====
+#### Newsletter draft — Week of Oct 2, 2026
+
+**Newsletter:** The Ops Desk · **From:** Maya Okafor, Harborline · **Audience:** Operations leads at 10-80 person creative and digital agencies
+
+**Subject line options:**
+1. "See the overbooked week before it happens" (41 chars)
+2. "Why one COO stopped publishing utilization" (42 chars)
+3. "58% of agencies leak margin the same way" (40 chars)
+
+**Preheader:** Capacity Forecast is live, plus what 310 agencies say about scope creep.
+
+---
+
+Every expensive problem in an agency was cheap a few weeks earlier. The overbooked designer, the unpriced change request and the utilization target people quietly game were all visible in advance to anyone looking. This week is about looking.
+
+### Capacity Forecast shows who's overbooked six weeks out
+
+Capacity Forecast is live on every Harborline plan today. It reads the hours already booked against each person and flags anyone planned above 85% in any of the next six weeks. In the beta, 41 agencies saw 23% fewer over-allocated person-weeks, according to our launch report.
+
+We think the timing matters more than the number. An overload you spot in week five is a scheduling decision. The same overload spotted on Friday afternoon is an apology to a client. The forecast is only as honest as your bookings, so book internal work too, or it will tell you everyone is free.
+
+**Steal this:** open the forecast on Monday and fix the reddest week first, not the nearest one.
+
+→ [Capacity Forecast launch post](https://harborline.example/blog/capacity-forecast)
+
+### Why one studio COO stopped publishing utilization targets
+
+On Agency Hours episode 112, Dana Whitlock, COO of a 40-person studio, explains why she pulled utilization targets off the team dashboard: “people started hitting the number instead of doing the work.”
+
+She's right, and the lesson goes past utilization. Any metric a team can see but can't control turns into theater. Utilization is a planning input for ops, not a scorecard for designers. Keep it on your screen and off theirs, and talk to people about workload in hours they recognize rather than percentages they resent.
+
+**Steal this:** swap the team-facing utilization chart for a plain booked-versus-capacity view per person, in hours.
+
+→ [Agency Hours, episode 112](https://agencyhours.example/episodes/112)
+
+### Scope creep is still the biggest margin leak for agencies
+
+The Studio Ops Collective surveyed 310 agencies for its 2026 benchmark, and 58% called scope creep their biggest margin leak. The more useful finding sits further down the report: only one in four agencies attaches hours to a change request.
+
+That's the gap worth closing. Scope creep isn't a client behavior you can stop. It's a pricing habit you can change. A change request with hours attached becomes a decision the client makes. Without hours, it's a favor you absorb, and favors don't show up in the forecast until they've already eaten the margin.
+
+**Steal this:** quote every change in hours this month, including the ones you plan to waive.
+
+→ [Agency Operations Benchmark 2026](https://studioops.example/benchmark-2026)
+
+---
+
+Capacity Forecast is already switched on in your workspace, with nothing to set up. Open it, look six weeks ahead, and fix one week before it becomes a client conversation.
+
+**[Open Capacity Forecast →](https://harborline.example/app/capacity-forecast)**
+
+— Maya
+
+---
+
+*Body: 427 / 600 words. Sections are modular — cut §2 (-111 words -> 316) if you need it shorter.*
+
+===== 4. render --format html =====
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="x-apple-disable-message-reformatting" />
+<title>See the overbooked week before it happens</title>
+</head>
+<body style="margin:0;padding:0;background-color:#f4f4f5;">
+<span style="display:none;font-size:1px;line-height:1px;max-height:0;max-width:0;opacity:0;overflow:hidden;mso-hide:all;color:#f4f4f5;">Capacity Forecast is live, plus what 310 agencies say about scope creep.&#8204;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;&nbsp;</span>
+<table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#f4f4f5" style="background-color:#f4f4f5;">
+<tr>
+<td align="center" style="padding:24px 12px;">
+<!--[if mso]><table role="presentation" width="600" border="0" cellpadding="0" cellspacing="0"><tr><td><![endif]-->
+<table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#ffffff" style="width:100%;max-width:600px;background-color:#ffffff;">
+<tr>
+<td style="padding:28px 32px 20px 32px;border-bottom:3px solid #0f766e;"><p style="margin:0;font-family:Helvetica, Arial, sans-serif;font-size:20px;line-height:28px;font-weight:bold;color:#1f2933;">The Ops Desk</p><p style="margin:4px 0 0 0;font-family:Helvetica, Arial, sans-serif;font-size:13px;line-height:20px;color:#6b7280;">Oct 2, 2026 · Maya Okafor, Harborline</p></td>
+</tr>
+<tr>
+<td style="padding:24px 32px 8px 32px;"><p style="margin:0 0 16px 0;font-family:Helvetica, Arial, sans-serif;font-size:16px;line-height:24px;color:#1f2933;">Every expensive problem in an agency was cheap a few weeks earlier. The overbooked designer, the unpriced change request and the utilization target people quietly game were all visible in advance to anyone looking. This week is about looking.</p></td>
+</tr>
+<tr>
+<td style="padding:0 32px;"><table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0"><tr><td style="border-top:1px solid #e4e4e7;font-size:0;line-height:0;">&nbsp;</td></tr></table></td>
+</tr>
+<tr>
+<td style="padding:24px 32px 8px 32px;"><h2 style="margin:0 0 12px 0;font-family:Helvetica, Arial, sans-serif;font-size:20px;line-height:28px;font-weight:bold;color:#1f2933;">Capacity Forecast shows who&#x27;s overbooked six weeks out</h2><p style="margin:0 0 16px 0;font-family:Helvetica, Arial, sans-serif;font-size:16px;line-height:24px;color:#1f2933;">Capacity Forecast is live on every Harborline plan today. It reads the hours already booked against each person and flags anyone planned above 85% in any of the next six weeks. In the beta, 41 agencies saw 23% fewer over-allocated person-weeks, according to our launch report.</p><p style="margin:0 0 16px 0;font-family:Helvetica, Arial, sans-serif;font-size:16px;line-height:24px;color:#1f2933;">We think the timing matters more than the number. An overload you spot in week five is a scheduling decision. The same overload spotted on Friday afternoon is an apology to a client. The forecast is only as honest as your bookings, so book internal work too, or it will tell you everyone is free.</p><p style="margin:0 0 16px 0;font-family:Helvetica, Arial, sans-serif;font-size:16px;line-height:24px;color:#1f2933;"><strong>Steal this:</strong> open the forecast on Monday and fix the reddest week first, not the nearest one.</p><p style="margin:0 0 8px 0;font-family:Helvetica, Arial, sans-serif;font-size:14px;line-height:22px;"><a href="https://harborline.example/blog/capacity-forecast" target="_blank" style="color:#0f766e;text-decoration:underline;font-weight:bold;">Capacity Forecast launch post &rarr;</a></p></td>
+</tr>
+<tr>
+<td style="padding:0 32px;"><table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0"><tr><td style="border-top:1px solid #e4e4e7;font-size:0;line-height:0;">&nbsp;</td></tr></table></td>
+</tr>
+<tr>
+<td style="padding:24px 32px 8px 32px;"><h2 style="margin:0 0 12px 0;font-family:Helvetica, Arial, sans-serif;font-size:20px;line-height:28px;font-weight:bold;color:#1f2933;">Why one studio COO stopped publishing utilization targets</h2><p style="margin:0 0 16px 0;font-family:Helvetica, Arial, sans-serif;font-size:16px;line-height:24px;color:#1f2933;">On Agency Hours episode 112, Dana Whitlock, COO of a 40-person studio, explains why she pulled utilization targets off the team dashboard: “people started hitting the number instead of doing the work.”</p><p style="margin:0 0 16px 0;font-family:Helvetica, Arial, sans-serif;font-size:16px;line-height:24px;color:#1f2933;">She&#x27;s right, and the lesson goes past utilization. Any metric a team can see but can&#x27;t control turns into theater. Utilization is a planning input for ops, not a scorecard for designers. Keep it on your screen and off theirs, and talk to people about workload in hours they recognize rather than percentages they resent.</p><p style="margin:0 0 16px 0;font-family:Helvetica, Arial, sans-serif;font-size:16px;line-height:24px;color:#1f2933;"><strong>Steal this:</strong> swap the team-facing utilization chart for a plain booked-versus-capacity view per person, in hours.</p><p style="margin:0 0 8px 0;font-family:Helvetica, Arial, sans-serif;font-size:14px;line-height:22px;"><a href="https://agencyhours.example/episodes/112" target="_blank" style="color:#0f766e;text-decoration:underline;font-weight:bold;">Agency Hours, episode 112 &rarr;</a></p></td>
+</tr>
+<tr>
+<td style="padding:0 32px;"><table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0"><tr><td style="border-top:1px solid #e4e4e7;font-size:0;line-height:0;">&nbsp;</td></tr></table></td>
+</tr>
+<tr>
+<td style="padding:24px 32px 8px 32px;"><h2 style="margin:0 0 12px 0;font-family:Helvetica, Arial, sans-serif;font-size:20px;line-height:28px;font-weight:bold;color:#1f2933;">Scope creep is still the biggest margin leak for agencies</h2><p style="margin:0 0 16px 0;font-family:Helvetica, Arial, sans-serif;font-size:16px;line-height:24px;color:#1f2933;">The Studio Ops Collective surveyed 310 agencies for its 2026 benchmark, and 58% called scope creep their biggest margin leak. The more useful finding sits further down the report: only one in four agencies attaches hours to a change request.</p><p style="margin:0 0 16px 0;font-family:Helvetica, Arial, sans-serif;font-size:16px;line-height:24px;color:#1f2933;">That&#x27;s the gap worth closing. Scope creep isn&#x27;t a client behavior you can stop. It&#x27;s a pricing habit you can change. A change request with hours attached becomes a decision the client makes. Without hours, it&#x27;s a favor you absorb, and favors don&#x27;t show up in the forecast until they&#x27;ve already eaten the margin.</p><p style="margin:0 0 16px 0;font-family:Helvetica, Arial, sans-serif;font-size:16px;line-height:24px;color:#1f2933;"><strong>Steal this:</strong> quote every change in hours this month, including the ones you plan to waive.</p><p style="margin:0 0 8px 0;font-family:Helvetica, Arial, sans-serif;font-size:14px;line-height:22px;"><a href="https://studioops.example/benchmark-2026" target="_blank" style="color:#0f766e;text-decoration:underline;font-weight:bold;">Agency Operations Benchmark 2026 &rarr;</a></p></td>
+</tr>
+<tr>
+<td style="padding:0 32px;"><table role="presentation" width="100%" border="0" cellpadding="0" cellspacing="0"><tr><td style="border-top:1px solid #e4e4e7;font-size:0;line-height:0;">&nbsp;</td></tr></table></td>
+</tr>
+<tr>
+<td style="padding:24px 32px 32px 32px;"><p style="margin:0 0 16px 0;font-family:Helvetica, Arial, sans-serif;font-size:16px;line-height:24px;color:#1f2933;">Capacity Forecast is already switched on in your workspace, with nothing to set up. Open it, look six weeks ahead, and fix one week before it becomes a client conversation.</p><table role="presentation" border="0" cellpadding="0" cellspacing="0" style="margin:8px 0 16px 0;"><tr><td align="center" bgcolor="#0f766e" style="border-radius:6px;background-color:#0f766e;"><a href="https://harborline.example/app/capacity-forecast" target="_blank" style="display:inline-block;padding:12px 24px;font-family:Helvetica, Arial, sans-serif;font-size:16px;line-height:20px;font-weight:bold;color:#ffffff;text-decoration:none;border-radius:6px;">Open Capacity Forecast</a></td></tr></table><p style="margin:8px 0 0 0;font-family:Helvetica, Arial, sans-serif;font-size:16px;line-height:24px;color:#1f2933;">— Maya</p></td>
+</tr>
+</table>
+<!--[if mso]></td></tr></table><![endif]-->
+</td>
+</tr>
+</table>
+</body>
+</html>
+
+===== 5. check-html (rendered html) =====
+#### Email HTML check — newsletter.html
+
+**Result: PASS** · 0 FAIL · 0 WARN · 13 checks passed
+
+| Status | Check | Line | Detail |
+|---|---|---|---|
+| PASS | doctype | - | present |
+| PASS | charset declared | - | UTF-8 declared |
+| PASS | size (Gmail clipping) | - | 9214 bytes (limit 102000) |
+| PASS | table-based layout | - | 7 tables |
+| PASS | width <= max | - | nothing wider than 600px |
+| PASS | no unsafe tags | - | no style/link/div/script/form/media tags |
+| PASS | inline CSS email-safe | - | no flex/grid/positioning/at-rules/variables |
+| PASS | no script handlers | - | none |
+| PASS | links absolute | - | 4 links, all absolute https/mailto |
+| PASS | images have alt | - | 0 images |
+| PASS | tags balanced | - | every tag closed in order |
+| PASS | hidden preheader | - | present |
+| PASS | layout tables role=presentation | - | all layout tables |
+
+Static check only. It does not render in real clients; send a test to Gmail and Outlook from your ESP before scheduling.
+
+===== 6. render --format text (plain-text alternative) =====
+The Ops Desk — Oct 2, 2026
+
+Every expensive problem in an agency was cheap a few weeks earlier. The
+overbooked designer, the unpriced change request and the utilization
+target people quietly game were all visible in advance to anyone
+looking. This week is about looking.
+
+----------------------------------------
+Capacity Forecast shows who's overbooked six weeks out
+
+Capacity Forecast is live on every Harborline plan today. It reads the
+hours already booked against each person and flags anyone planned above
+85% in any of the next six weeks. In the beta, 41 agencies saw 23% fewer
+over-allocated person-weeks, according to our launch report.
+
+We think the timing matters more than the number. An overload you spot
+in week five is a scheduling decision. The same overload spotted on
+Friday afternoon is an apology to a client. The forecast is only as
+honest as your bookings, so book internal work too, or it will tell you
+everyone is free.
+
+Steal this: open the forecast on Monday and fix the reddest week first,
+not the nearest one.
+
+Source: Capacity Forecast launch post
+https://harborline.example/blog/capacity-forecast
+
+----------------------------------------
+Why one studio COO stopped publishing utilization targets
+
+On Agency Hours episode 112, Dana Whitlock, COO of a 40-person studio,
+explains why she pulled utilization targets off the team dashboard:
+“people started hitting the number instead of doing the work.”
+
+She's right, and the lesson goes past utilization. Any metric a team can
+see but can't control turns into theater. Utilization is a planning
+input for ops, not a scorecard for designers. Keep it on your screen and
+off theirs, and talk to people about workload in hours they recognize
+rather than percentages they resent.
+
+Steal this: swap the team-facing utilization chart for a plain
+booked-versus-capacity view per person, in hours.
+
+Source: Agency Hours, episode 112
+https://agencyhours.example/episodes/112
+
+----------------------------------------
+Scope creep is still the biggest margin leak for agencies
+
+The Studio Ops Collective surveyed 310 agencies for its 2026 benchmark,
+and 58% called scope creep their biggest margin leak. The more useful
+finding sits further down the report: only one in four agencies attaches
+hours to a change request.
+
+That's the gap worth closing. Scope creep isn't a client behavior you
+can stop. It's a pricing habit you can change. A change request with
+hours attached becomes a decision the client makes. Without hours, it's
+a favor you absorb, and favors don't show up in the forecast until
+they've already eaten the margin.
+
+Steal this: quote every change in hours this month, including the ones
+you plan to waive.
+
+Source: Agency Operations Benchmark 2026
+https://studioops.example/benchmark-2026
+
+----------------------------------------
+Capacity Forecast is already switched on in your workspace, with nothing
+to set up. Open it, look six weeks ahead, and fix one week before it
+becomes a client conversation.
+
+Open Capacity Forecast: https://harborline.example/app/capacity-forecast
+
+— Maya

@@ -1,0 +1,64 @@
+{
+  "_comment": "FICTIONAL sample of the Stripe GET /v1/invoices list shape (trimmed to the fields the skill reads).",
+  "object": "list",
+  "url": "/v1/invoices",
+  "has_more": false,
+  "data": [
+    {
+      "id": "in_sample_0001",
+      "object": "invoice",
+      "number": "FERN-0007",
+      "status": "open",
+      "customer_name": "Bluefin Labs",
+      "customer_email": "priya@bluefinlabs.example",
+      "currency": "usd",
+      "amount_due": 240000,
+      "amount_paid": 0,
+      "amount_remaining": 240000,
+      "created": 1786752000,
+      "due_date": 1789344000
+    },
+    {
+      "id": "in_sample_0002",
+      "object": "invoice",
+      "number": "FERN-0008",
+      "status": "open",
+      "customer_name": "Sakura Tea House KK",
+      "customer_email": "aiko@sakuratea.example",
+      "currency": "jpy",
+      "amount_due": 180000,
+      "amount_paid": 60000,
+      "amount_remaining": 120000,
+      "created": 1787616000,
+      "due_date": 1790208000
+    },
+    {
+      "id": "in_sample_0003",
+      "object": "invoice",
+      "number": "FERN-0009",
+      "status": "open",
+      "customer_name": "Quill & Co",
+      "customer_email": "leo@quillandco.example",
+      "currency": "usd",
+      "amount_due": 99000,
+      "amount_paid": 0,
+      "amount_remaining": 99000,
+      "created": 1790553600,
+      "due_date": null
+    },
+    {
+      "id": "in_sample_0004",
+      "object": "invoice",
+      "number": "FERN-0006",
+      "status": "paid",
+      "customer_name": "Acme Corp",
+      "customer_email": "sarah@acmecorp.example",
+      "currency": "usd",
+      "amount_due": 500000,
+      "amount_paid": 500000,
+      "amount_remaining": 0,
+      "created": 1785542400,
+      "due_date": 1788134400
+    }
+  ]
+}

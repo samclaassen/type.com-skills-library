@@ -1,0 +1,243 @@
+{
+  "window": {
+    "since": "2026-10-15T00:00:00Z",
+    "until": "2026-10-17T00:00:00Z",
+    "timezone": "UTC"
+  },
+  "config": {
+    "storeHash": "demo",
+    "currency": "USD",
+    "region": "US",
+    "eligibleStatusIds": [2, 10, 11],
+    "itemMap": {
+      "WIDGET": "Widget",
+      "GADGET": "Gadget",
+      "TAXED": "Taxed item"
+    },
+    "shippingItemName": "Shipping",
+    "allowNewCustomers": true,
+    "customerNameSource": "billing_name",
+    "paidOrderTreatment": "sales_receipt_worksheet",
+    "paymentMethodName": "Credit Card",
+    "depositAccountName": "Undeposited Funds",
+    "purchaseOrders": true,
+    "suppliers": {
+      "WIDGET": {
+        "vendorName": "Example Supply Co",
+        "unitCostCents": 500,
+        "currency": "USD",
+        "verified": true
+      }
+    },
+    "invoicePrefix": "BC-",
+    "termsDays": 30,
+    "termsName": "Net 30",
+    "dateFormat": "MM/DD/YYYY"
+  },
+  "bigcommerce": {
+    "orders": [
+      {
+        "id": 1001,
+        "date_created": "2026-10-16T12:00:00Z",
+        "date_modified": "2026-10-16T12:00:00Z",
+        "status_id": 11,
+        "payment_status": "captured",
+        "default_currency_code": "USD",
+        "currency_code": "USD",
+        "billing_address": {
+          "first_name": "Example",
+          "last_name": "Buyer",
+          "email": "buyer@example.test",
+          "street_1": "1 Example Street",
+          "city": "Example",
+          "state": "CA",
+          "zip": "90001",
+          "country_iso2": "US"
+        },
+        "total_inc_tax": "22.00",
+        "total_ex_tax": "22.00",
+        "subtotal_ex_tax": "20.00",
+        "subtotal_tax": "0.00",
+        "shipping_cost_ex_tax": "5.00",
+        "shipping_cost_tax": "0.00",
+        "discount_amount": "3.00",
+        "coupon_discount": "0.00",
+        "handling_cost_ex_tax": "0",
+        "handling_cost_tax": "0",
+        "wrapping_cost_ex_tax": "0",
+        "wrapping_cost_tax": "0",
+        "refunded_amount": "0",
+        "gift_certificate_amount": "0",
+        "store_credit_amount": "0",
+        "products": [
+          {
+            "sku": "WIDGET",
+            "name": "Widget, large",
+            "quantity": 2,
+            "price_ex_tax": "10.00",
+            "total_ex_tax": "20.00",
+            "total_tax": "0.00",
+            "tax_class_id": 0,
+            "applied_discounts": []
+          }
+        ]
+      },
+      {
+        "id": 1002,
+        "date_created": "2026-10-16T13:00:00Z",
+        "date_modified": "2026-10-16T13:00:00Z",
+        "status_id": 11,
+        "payment_status": "pending",
+        "default_currency_code": "USD",
+        "currency_code": "USD",
+        "billing_address": {
+          "first_name": "Pat",
+          "last_name": "Sample",
+          "company": "Sample Studio",
+          "email": "pat@example.test",
+          "phone": "555-0100",
+          "street_1": "2 Sample Road",
+          "street_2": "Unit 3",
+          "city": "Sampleton",
+          "state": "NY",
+          "zip": "10001",
+          "country_iso2": "US"
+        },
+        "total_inc_tax": "20.00",
+        "total_ex_tax": "20.00",
+        "subtotal_ex_tax": "15.50",
+        "subtotal_tax": "0.00",
+        "shipping_cost_ex_tax": "4.50",
+        "shipping_cost_tax": "0.00",
+        "discount_amount": "0.00",
+        "coupon_discount": "0.00",
+        "handling_cost_ex_tax": "0",
+        "handling_cost_tax": "0",
+        "wrapping_cost_ex_tax": "0",
+        "wrapping_cost_tax": "0",
+        "refunded_amount": "0",
+        "gift_certificate_amount": "0",
+        "store_credit_amount": "0",
+        "products": [
+          {
+            "sku": "GADGET",
+            "name": "=Gadget \"deluxe\"",
+            "quantity": 1,
+            "price_ex_tax": "15.50",
+            "total_ex_tax": "15.50",
+            "total_tax": "0.00",
+            "tax_class_id": 0,
+            "applied_discounts": []
+          }
+        ]
+      },
+      {
+        "id": 1003,
+        "date_created": "2026-10-16T14:00:00Z",
+        "date_modified": "2026-10-16T14:00:00Z",
+        "status_id": 11,
+        "payment_status": "captured",
+        "default_currency_code": "USD",
+        "currency_code": "USD",
+        "billing_address": {
+          "first_name": "Refund",
+          "last_name": "Case",
+          "email": "refund@example.test"
+        },
+        "total_inc_tax": "10.00",
+        "total_ex_tax": "10.00",
+        "subtotal_ex_tax": "10.00",
+        "subtotal_tax": "0.00",
+        "shipping_cost_ex_tax": "0.00",
+        "shipping_cost_tax": "0.00",
+        "discount_amount": "0.00",
+        "coupon_discount": "0.00",
+        "handling_cost_ex_tax": "0",
+        "handling_cost_tax": "0",
+        "wrapping_cost_ex_tax": "0",
+        "wrapping_cost_tax": "0",
+        "refunded_amount": "10.00",
+        "gift_certificate_amount": "0",
+        "store_credit_amount": "0",
+        "products": [
+          {
+            "sku": "WIDGET",
+            "name": "Widget, large",
+            "quantity": 1,
+            "price_ex_tax": "10.00",
+            "total_ex_tax": "10.00",
+            "total_tax": "0.00",
+            "tax_class_id": 0,
+            "applied_discounts": []
+          }
+        ]
+      },
+      {
+        "id": 1004,
+        "date_created": "2026-10-16T15:00:00Z",
+        "date_modified": "2026-10-16T15:00:00Z",
+        "status_id": 11,
+        "payment_status": "pending",
+        "default_currency_code": "USD",
+        "currency_code": "USD",
+        "billing_address": {
+          "first_name": "Tax",
+          "last_name": "Case",
+          "email": "tax@example.test"
+        },
+        "total_inc_tax": "10.80",
+        "total_ex_tax": "10.00",
+        "subtotal_ex_tax": "10.00",
+        "subtotal_tax": "0.80",
+        "shipping_cost_ex_tax": "0.00",
+        "shipping_cost_tax": "0.00",
+        "discount_amount": "0.00",
+        "coupon_discount": "0.00",
+        "handling_cost_ex_tax": "0",
+        "handling_cost_tax": "0",
+        "wrapping_cost_ex_tax": "0",
+        "wrapping_cost_tax": "0",
+        "refunded_amount": "0",
+        "gift_certificate_amount": "0",
+        "store_credit_amount": "0",
+        "products": [
+          {
+            "sku": "TAXED",
+            "name": "Taxed item",
+            "quantity": 1,
+            "price_ex_tax": "10.00",
+            "total_ex_tax": "10.00",
+            "total_tax": "0.80",
+            "tax_class_id": 1,
+            "applied_discounts": []
+          }
+        ]
+      }
+    ]
+  },
+  "quickbooks": {
+    "companyInfo": {
+      "CompanyName": "Example Books",
+      "Country": "US"
+    },
+    "homeCurrency": "USD",
+    "customers": [
+      {
+        "Id": "10",
+        "DisplayName": "Example Buyer",
+        "Active": true,
+        "PrimaryEmailAddr": {
+          "Address": "buyer@example.test"
+        }
+      }
+    ],
+    "vendors": [
+      {
+        "Id": "88",
+        "DisplayName": "Example Supply Co",
+        "Active": true
+      }
+    ],
+    "invoices": []
+  }
+}

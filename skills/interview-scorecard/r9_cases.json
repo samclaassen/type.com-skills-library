@@ -1,0 +1,3831 @@
+[
+[
+"qa8",
+"politics",
+"Votes Tory.",
+"w",
+"political_affiliation"
+],
+[
+"qa8",
+"politics",
+"Lifelong Labour voter.",
+"w",
+"political_affiliation"
+],
+[
+"qa8",
+"politics",
+"Big Bernie fan.",
+"w",
+"political_affiliation"
+],
+[
+"qa8",
+"politics",
+"Campaigned for Obama in 2008.",
+"w",
+"political_affiliation"
+],
+[
+"qa8",
+"politics",
+"Reform UK supporter.",
+"w",
+"political_affiliation"
+],
+[
+"qa8",
+"politics",
+"Lib Dem councillor in her spare time.",
+"w",
+"political_affiliation"
+],
+[
+"qa8",
+"politics",
+"Door-knocked for the SNP.",
+"w",
+"political_affiliation"
+],
+[
+"qa8",
+"politics",
+"Card-carrying Republican.",
+"w",
+"political_affiliation"
+],
+[
+"qa8",
+"politics",
+"Voted Leave in the referendum.",
+"w",
+"political_affiliation"
+],
+[
+"qa8",
+"politics",
+"Pro-Brexit.",
+"w",
+"political_affiliation"
+],
+[
+"qa8",
+"politics",
+"Very progressive politics.",
+"w",
+"political_affiliation"
+],
+[
+"qa8",
+"politics",
+"Hard-right views.",
+"w",
+"political_affiliation"
+],
+[
+"qa8",
+"politics",
+"Socialist leanings.",
+"w",
+"political_affiliation"
+],
+[
+"qa8",
+"politics",
+"Ran for city council as an independent.",
+"w",
+"political_affiliation"
+],
+[
+"qa8",
+"politics",
+"Big into the Greens.",
+"w",
+"political_affiliation"
+],
+[
+"qa8",
+"politics",
+"Supports the AfD.",
+"w",
+"political_affiliation"
+],
+[
+"qa8",
+"politics",
+"Volunteered on the BJP campaign.",
+"w",
+"political_affiliation"
+],
+[
+"qa8",
+"politics",
+"Member of the Communist Party.",
+"w",
+"political_affiliation"
+],
+[
+"qa8",
+"politics",
+"Mentioned she is a Trump supporter.",
+"w",
+"political_affiliation"
+],
+[
+"qa8",
+"politics",
+"Has a Bernie sticker on his laptop.",
+"w",
+"political_affiliation"
+],
+[
+"qa8",
+"politics",
+"Phone-banked for Harris.",
+"w",
+"political_affiliation"
+],
+[
+"qa8",
+"politics",
+"Staunch conservative.",
+"w",
+"political_affiliation"
+],
+[
+"qa8",
+"politics",
+"Liberal Democrat activist.",
+"w",
+"political_affiliation"
+],
+[
+"qa8",
+"politics",
+"Donated to the DNC.",
+"w",
+"political_affiliation"
+],
+[
+"qa8",
+"politics",
+"Hates Starmer.",
+"w",
+"political_affiliation"
+],
+[
+"qa8",
+"politics",
+"Libertarian politics.",
+"w",
+"political_affiliation"
+],
+[
+"qa8",
+"politics",
+"Went on a Just Stop Oil march.",
+"w",
+"political_affiliation"
+],
+[
+"qa8",
+"politics",
+"Plaid Cymru member.",
+"w",
+"political_affiliation"
+],
+[
+"qa8",
+"politics",
+"Was a Young Conservatives chair at uni.",
+"w",
+"political_affiliation"
+],
+[
+"qa8",
+"politics",
+"Votes Democrat every time.",
+"w",
+"political_affiliation"
+],
+[
+"qa8",
+"pay",
+"Asking 140k.",
+"w",
+"compensation"
+],
+[
+"qa8",
+"pay",
+"Currently on 95 plus bonus.",
+"w",
+"salary_history"
+],
+[
+"qa8",
+"pay",
+"Wants six figures.",
+"w",
+"compensation"
+],
+[
+"qa8",
+"pay",
+"Looking for a 15k uplift.",
+"w",
+"compensation"
+],
+[
+"qa8",
+"pay",
+"Day rate 500.",
+"w",
+"compensation"
+],
+[
+"qa8",
+"pay",
+"On 82k base right now.",
+"w",
+"salary_history"
+],
+[
+"qa8",
+"pay",
+"Expecting around 120.",
+"w",
+"compensation"
+],
+[
+"qa8",
+"pay",
+"Won't move for less than 110.",
+"w",
+"compensation"
+],
+[
+"qa8",
+"pay",
+"Salary expectation: mid-90s.",
+"w",
+"compensation"
+],
+[
+"qa8",
+"pay",
+"Wants £70k.",
+"w",
+"compensation"
+],
+[
+"qa8",
+"pay",
+"Currently earning 65k.",
+"w",
+"salary_history"
+],
+[
+"qa8",
+"pay",
+"Needs at least 100 to leave.",
+"w",
+"compensation"
+],
+[
+"qa8",
+"pay",
+"Package is 130 all in.",
+"w",
+"compensation"
+],
+[
+"qa8",
+"pay",
+"Making 48 an hour now.",
+"w",
+"salary_history"
+],
+[
+"qa8",
+"pay",
+"Wants a 10% raise over current.",
+"w",
+"compensation"
+],
+[
+"qa8",
+"pay",
+"Looking for 20 percent more than now.",
+"w",
+"compensation"
+],
+[
+"qa8",
+"pay",
+"Ask is 125k.",
+"w",
+"compensation"
+],
+[
+"qa8",
+"pay",
+"Total comp around 160k.",
+"w",
+"salary_history"
+],
+[
+"qa8",
+"pay",
+"Range 90-100k.",
+"w",
+"compensation"
+],
+[
+"qa8",
+"pay",
+"Wants the top of the band.",
+"w",
+"compensation"
+],
+[
+"qa8",
+"pay",
+"Current salary 72,000.",
+"w",
+"salary_history"
+],
+[
+"qa8",
+"pay",
+"Bonus was 15% last year.",
+"w",
+"compensation"
+],
+[
+"qa8",
+"pay",
+"Wants equity plus 110.",
+"w",
+"compensation"
+],
+[
+"qa8",
+"pay",
+"Earns about 4k a month.",
+"w",
+"salary_history"
+],
+[
+"qa8",
+"pay",
+"Paid 38 an hour at the agency.",
+"w",
+"compensation"
+],
+[
+"qa8",
+"personal_rate",
+"Her day rate is 600.",
+"w",
+"compensation"
+],
+[
+"qa8",
+"personal_rate",
+"Charges 90 an hour freelance.",
+"w",
+"compensation"
+],
+[
+"qa8",
+"personal_rate",
+"Personal rate 75/hr.",
+"w",
+"compensation"
+],
+[
+"qa8",
+"personal_rate",
+"Contracts at £450 per day.",
+"w",
+"compensation"
+],
+[
+"qa8",
+"personal_rate",
+"Freelance rate is 650 a day.",
+"w",
+"compensation"
+],
+[
+"qa8",
+"personal_rate",
+"Wants 700 a day as a contractor.",
+"w",
+"compensation"
+],
+[
+"qa8",
+"ranking",
+"Top of my list.",
+"w",
+"hiring_decision"
+],
+[
+"qa8",
+"ranking",
+"Ranks above Jordan.",
+"w",
+"hiring_decision"
+],
+[
+"qa8",
+"ranking",
+"Clear frontrunner.",
+"w",
+"hiring_decision"
+],
+[
+"qa8",
+"ranking",
+"Would take Priya first.",
+"w",
+"hiring_decision"
+],
+[
+"qa8",
+"ranking",
+"Strongest candidate so far.",
+"w",
+"hiring_decision"
+],
+[
+"qa8",
+"ranking",
+"Best I've seen this cycle.",
+"w",
+"hiring_decision"
+],
+[
+"qa8",
+"ranking",
+"Head and shoulders above the others.",
+"w",
+"hiring_decision"
+],
+[
+"qa8",
+"ranking",
+"Comfortably beats the other finalists.",
+"w",
+"hiring_decision"
+],
+[
+"qa8",
+"ranking",
+"Puts her ahead of Sam.",
+"w",
+"hiring_decision"
+],
+[
+"qa8",
+"ranking",
+"Leading the pack.",
+"w",
+"hiring_decision"
+],
+[
+"qa8",
+"ranking",
+"Weakest of the three.",
+"w",
+"hiring_decision"
+],
+[
+"qa8",
+"ranking",
+"Bottom of the shortlist.",
+"w",
+"hiring_decision"
+],
+[
+"qa8",
+"ranking",
+"Pick of the bunch.",
+"w",
+"hiring_decision"
+],
+[
+"qa8",
+"ranking",
+"Outshone Priya on the case study.",
+"w",
+"hiring_decision"
+],
+[
+"qa8",
+"ranking",
+"Priya was sharper.",
+"w",
+"hiring_decision"
+],
+[
+"qa8",
+"ranking",
+"If I had to choose between her and Sam, her.",
+"w",
+"hiring_decision"
+],
+[
+"qa8",
+"ranking",
+"Ranked #2 for me.",
+"w",
+"hiring_decision"
+],
+[
+"qa8",
+"ranking",
+"In my top two.",
+"w",
+"hiring_decision"
+],
+[
+"qa8",
+"ranking",
+"Not in the same league as Priya.",
+"w",
+"hiring_decision"
+],
+[
+"qa8",
+"ranking",
+"Would rank first.",
+"w",
+"hiring_decision"
+],
+[
+"qa8",
+"health",
+"On antidepressants.",
+"w",
+"disability_health"
+],
+[
+"qa8",
+"health",
+"Has ADHD.",
+"w",
+"disability_health"
+],
+[
+"qa8",
+"health",
+"Mentioned a bad back.",
+"w",
+"disability_health"
+],
+[
+"qa8",
+"health",
+"Is diabetic.",
+"w",
+"disability_health"
+],
+[
+"qa8",
+"health",
+"Recovering from cancer treatment.",
+"w",
+"disability_health"
+],
+[
+"qa8",
+"health",
+"Had a breakdown last year.",
+"w",
+"disability_health"
+],
+[
+"qa8",
+"health",
+"In remission.",
+"w",
+"disability_health"
+],
+[
+"qa8",
+"health",
+"Has long Covid.",
+"w",
+"disability_health"
+],
+[
+"qa8",
+"health",
+"Off sick for six months in 2023.",
+"w",
+"disability_health"
+],
+[
+"qa8",
+"health",
+"Mentioned therapy sessions on Thursdays.",
+"w",
+"disability_health"
+],
+[
+"qa8",
+"health",
+"Uses a wheelchair.",
+"w",
+"disability_health"
+],
+[
+"qa8",
+"health",
+"Partially deaf in one ear.",
+"w",
+"disability_health"
+],
+[
+"qa8",
+"health",
+"Has epilepsy.",
+"w",
+"disability_health"
+],
+[
+"qa8",
+"health",
+"Is autistic.",
+"w",
+"disability_health"
+],
+[
+"qa8",
+"health",
+"Struggles with anxiety.",
+"w",
+"disability_health"
+],
+[
+"qa8",
+"health",
+"Recovering alcoholic.",
+"w",
+"disability_health"
+],
+[
+"qa8",
+"health",
+"Had surgery in the spring.",
+"w",
+"disability_health"
+],
+[
+"qa8",
+"health",
+"Takes insulin at lunch.",
+"w",
+"disability_health"
+],
+[
+"qa8",
+"family",
+"Has a newborn.",
+"w",
+"pregnancy_family"
+],
+[
+"qa8",
+"family",
+"Recently divorced.",
+"w",
+"pregnancy_family"
+],
+[
+"qa8",
+"family",
+"Single mum.",
+"w",
+"pregnancy_family"
+],
+[
+"qa8",
+"family",
+"Two kids under five.",
+"w",
+"pregnancy_family"
+],
+[
+"qa8",
+"family",
+"Wife is expecting in March.",
+"w",
+"pregnancy_family"
+],
+[
+"qa8",
+"family",
+"Her husband works at Deloitte.",
+"w",
+"pregnancy_family"
+],
+[
+"qa8",
+"family",
+"Going through IVF.",
+"w",
+"pregnancy_family"
+],
+[
+"qa8",
+"family",
+"Looking after her elderly mum.",
+"w",
+"pregnancy_family"
+],
+[
+"qa8",
+"family",
+"Just got engaged.",
+"w",
+"pregnancy_family"
+],
+[
+"qa8",
+"family",
+"Has a toddler at nursery.",
+"w",
+"pregnancy_family"
+],
+[
+"qa8",
+"family",
+"Newly married.",
+"w",
+"pregnancy_family"
+],
+[
+"qa8",
+"family",
+"Primary carer for his dad.",
+"w",
+"pregnancy_family"
+],
+[
+"qa8",
+"family",
+"Planning to start a family.",
+"w",
+"pregnancy_family"
+],
+[
+"qa8",
+"family",
+"Childcare is a juggle.",
+"w",
+"pregnancy_family"
+],
+[
+"qa8",
+"family",
+"On maternity leave until June.",
+"w",
+"pregnancy_family"
+],
+[
+"qa8",
+"family",
+"Separated from her partner last year.",
+"w",
+"pregnancy_family"
+],
+[
+"qa8",
+"age",
+"Close to retirement.",
+"w",
+"age"
+],
+[
+"qa8",
+"age",
+"Digital native.",
+"w",
+"age"
+],
+[
+"qa8",
+"age",
+"Fresh out of uni.",
+"w",
+"age"
+],
+[
+"qa8",
+"age",
+"Late fifties.",
+"w",
+"age"
+],
+[
+"qa8",
+"age",
+"Gen Z.",
+"w",
+"age"
+],
+[
+"qa8",
+"age",
+"Bit of a boomer.",
+"w",
+"age"
+],
+[
+"qa8",
+"age",
+"Twenty-something.",
+"w",
+"age"
+],
+[
+"qa8",
+"age",
+"Young and hungry.",
+"w",
+"age"
+],
+[
+"qa8",
+"age",
+"Older candidate.",
+"w",
+"age"
+],
+[
+"qa8",
+"age",
+"Born in 1968.",
+"w",
+"age"
+],
+[
+"qa8",
+"age",
+"Turns 60 next year.",
+"w",
+"age"
+],
+[
+"qa8",
+"age",
+"Millennial energy.",
+"w",
+"age"
+],
+[
+"qa8",
+"age",
+"Probably mid-40s.",
+"w",
+"age"
+],
+[
+"qa8",
+"age",
+"Graduated at 21 last summer.",
+"w",
+"age"
+],
+[
+"qa8",
+"age",
+"Old-timer.",
+"w",
+"age"
+],
+[
+"qa8",
+"other_protected",
+"Goes to mosque on Fridays.",
+"w",
+"religion"
+],
+[
+"qa8",
+"other_protected",
+"Devout Catholic.",
+"w",
+"religion"
+],
+[
+"qa8",
+"other_protected",
+"Observes Shabbat.",
+"w",
+"religion"
+],
+[
+"qa8",
+"other_protected",
+"Wears a hijab.",
+"w",
+"religion"
+],
+[
+"qa8",
+"other_protected",
+"Needs visa sponsorship.",
+"w",
+"national_origin"
+],
+[
+"qa8",
+"other_protected",
+"On a Tier 2 visa.",
+"w",
+"national_origin"
+],
+[
+"qa8",
+"other_protected",
+"Originally from Nigeria.",
+"w",
+"national_origin"
+],
+[
+"qa8",
+"other_protected",
+"Green card pending.",
+"w",
+"national_origin"
+],
+[
+"qa8",
+"other_protected",
+"Not a native speaker.",
+"w",
+"accent_language"
+],
+[
+"qa8",
+"other_protected",
+"Mentioned his boyfriend.",
+"w",
+"pregnancy_family"
+],
+[
+"qa8",
+"other_protected",
+"Is gay.",
+"w",
+"sexual_orientation"
+],
+[
+"qa8",
+"other_protected",
+"Her wife is a nurse.",
+"w",
+"pregnancy_family"
+],
+[
+"qa8",
+"other_protected",
+"Is married.",
+"w",
+"pregnancy_family"
+],
+[
+"qa8",
+"other_protected",
+"Asian guy.",
+"w",
+"race_ethnicity"
+],
+[
+"qa8",
+"other_protected",
+"Black woman.",
+"w",
+"race_ethnicity"
+],
+[
+"qa8",
+"other_protected",
+"Mixed race.",
+"w",
+"race_ethnicity"
+],
+[
+"qa8",
+"other_protected",
+"Has a DUI.",
+"w",
+"arrest_conviction"
+],
+[
+"qa8",
+"other_protected",
+"Spent time in prison.",
+"w",
+"arrest_conviction"
+],
+[
+"qa8",
+"other_protected",
+"Six months pregnant.",
+"w",
+"pregnancy_family"
+],
+[
+"qa8",
+"other_protected",
+"Uses they/them pronouns.",
+"w",
+"sex_gender"
+],
+[
+"qa8",
+"other_protected",
+"Is trans.",
+"w",
+"gender_identity"
+],
+[
+"qa8",
+"other_protected",
+"Strong accent.",
+"w",
+"accent_language"
+],
+[
+"qa8",
+"other_protected",
+"Ex-Army reservist.",
+"w",
+"military_status"
+],
+[
+"qa8",
+"other_protected",
+"Union rep at last job.",
+"w",
+"union_membership"
+],
+[
+"qa8",
+"other_protected",
+"Has a spent conviction.",
+"w",
+"arrest_conviction"
+],
+[
+"qa8",
+"ctrl_politics",
+"Handled the Labour cost allocation.",
+"k",
+null
+],
+[
+"qa8",
+"ctrl_politics",
+"Party-level ledger reconciliation.",
+"k",
+null
+],
+[
+"qa8",
+"ctrl_politics",
+"Took a conservative approach to accruals.",
+"k",
+null
+],
+[
+"qa8",
+"ctrl_politics",
+"Liberal use of pivot tables in the tie-out.",
+"k",
+null
+],
+[
+"qa8",
+"ctrl_politics",
+"Reconciled the third-party ledger.",
+"k",
+null
+],
+[
+"qa8",
+"ctrl_politics",
+"Built the green-energy capex model.",
+"k",
+null
+],
+[
+"qa8",
+"ctrl_politics",
+"Leave accrual reconciliation for 300 staff.",
+"k",
+null
+],
+[
+"qa8",
+"ctrl_politics",
+"Moved the close to a progressive sign-off.",
+"k",
+null
+],
+[
+"qa8",
+"ctrl_pay",
+"Negotiated a 12% discount with AWS.",
+"k",
+null
+],
+[
+"qa8",
+"ctrl_pay",
+"Cut vendor spend by 140k.",
+"k",
+null
+],
+[
+"qa8",
+"ctrl_pay",
+"Reconciled 95 accounts each month.",
+"k",
+null
+],
+[
+"qa8",
+"ctrl_pay",
+"Closed the books in 5 days.",
+"k",
+null
+],
+[
+"qa8",
+"ctrl_pay",
+"Built a payroll reconciliation.",
+"k",
+null
+],
+[
+"qa8",
+"ctrl_pay",
+"Processed 15k invoices a year.",
+"k",
+null
+],
+[
+"qa8",
+"ctrl_pay",
+"Managed a 2.4M AP ledger.",
+"k",
+null
+],
+[
+"qa8",
+"ctrl_pay",
+"Saved 30k in duplicate payments.",
+"k",
+null
+],
+[
+"qa8",
+"ctrl_pay",
+"Raised the approval threshold to 10k.",
+"k",
+null
+],
+[
+"qa8",
+"ctrl_pay",
+"Ran the bonus accrual for 200 staff.",
+"k",
+null
+],
+[
+"qa8",
+"ctrl_pay",
+"Wrote the compensation accrual journal entries.",
+"k",
+null
+],
+[
+"qa8",
+"ctrl_pay",
+"Firm billed 450 a day for her team.",
+"k",
+null
+],
+[
+"qa8",
+"ctrl_pay",
+"Invoiced clients 1,200 a day for the audit team.",
+"k",
+null
+],
+[
+"qa8",
+"ctrl_pay",
+"Our day rate to clients was 900.",
+"k",
+null
+],
+[
+"qa8",
+"ctrl_pay",
+"Recovered 110k of overpaid VAT.",
+"k",
+null
+],
+[
+"qa8",
+"ctrl_ranking",
+"Ranked vendors by cost.",
+"k",
+null
+],
+[
+"qa8",
+"ctrl_ranking",
+"Compared two forecasting models; picked the better one.",
+"k",
+null
+],
+[
+"qa8",
+"ctrl_ranking",
+"Ranked the reconciling items by size.",
+"k",
+null
+],
+[
+"qa8",
+"ctrl_ranking",
+"Chose the stronger of two control designs.",
+"k",
+null
+],
+[
+"qa8",
+"ctrl_ranking",
+"Top of the close checklist is bank recs.",
+"k",
+null
+],
+[
+"qa8",
+"ctrl_ranking",
+"Picked NetSuite over Xero after a cost comparison.",
+"k",
+null
+],
+[
+"qa8",
+"ctrl_ranking",
+"Ahead of schedule on the close.",
+"k",
+null
+],
+[
+"qa8",
+"ctrl_ranking",
+"Prioritised the top 20 debtors by balance.",
+"k",
+null
+],
+[
+"qa8",
+"ctrl_personal",
+"Fixed a holiday-pay accrual error.",
+"k",
+null
+],
+[
+"qa8",
+"ctrl_personal",
+"Ran a health check on the ERP data.",
+"k",
+null
+],
+[
+"qa8",
+"ctrl_personal",
+"Built the billing model for a healthcare client.",
+"k",
+null
+],
+[
+"qa8",
+"ctrl_personal",
+"Stress-tested the cash forecast.",
+"k",
+null
+],
+[
+"qa8",
+"ctrl_personal",
+"Diagnosed the root cause of the FX variance.",
+"k",
+null
+],
+[
+"qa8",
+"ctrl_personal",
+"Reconciled the parent company intercompany balances.",
+"k",
+null
+],
+[
+"qa8",
+"ctrl_personal",
+"Built the child-entity consolidation.",
+"k",
+null
+],
+[
+"qa8",
+"ctrl_personal",
+"Ran the AR ageing report.",
+"k",
+null
+],
+[
+"qa8",
+"ctrl_personal",
+"Cleared items older than 90 days.",
+"k",
+null
+],
+[
+"qa8",
+"ctrl_personal",
+"Retired the legacy GL.",
+"k",
+null
+],
+[
+"qa8",
+"ctrl_personal",
+"Reconciled the Visa card settlements.",
+"k",
+null
+],
+[
+"qa8",
+"ctrl_personal",
+"Built a VAT return for the Nigeria entity.",
+"k",
+null
+],
+[
+"qa8",
+"ctrl_personal",
+"Ran the Christmas accrual cutoff.",
+"k",
+null
+],
+[
+"qa8",
+"ctrl_personal",
+"Mapped the Asian subsidiaries to the group chart of accounts.",
+"k",
+null
+],
+[
+"qa8",
+"ctrl_personal",
+"Reconciled the union dues deductions.",
+"k",
+null
+],
+[
+"qa8",
+"ctrl_personal",
+"Handled the pension scheme reconciliation.",
+"k",
+null
+],
+[
+"qa8",
+"r7_regression",
+"Votes Labour.",
+"w",
+"political_affiliation"
+],
+[
+"qa8",
+"r7_regression",
+"Volunteers for the Democrats.",
+"w",
+"political_affiliation"
+],
+[
+"qa8",
+"r7_regression",
+"Canvassed for Trump.",
+"w",
+"political_affiliation"
+],
+[
+"qa8",
+"r7_regression",
+"Supports Trump.",
+"w",
+"political_affiliation"
+],
+[
+"qa8",
+"r7_regression",
+"Member of the Green Party.",
+"w",
+"political_affiliation"
+],
+[
+"qa8",
+"r7_regression",
+"Conservative party member.",
+"w",
+"political_affiliation"
+],
+[
+"qa8",
+"r7_regression",
+"Very left-wing.",
+"w",
+"political_affiliation"
+],
+[
+"qa8",
+"r7_regression",
+"Is a liberal.",
+"w",
+"political_affiliation"
+],
+[
+"qa8",
+"r7_regression",
+"Wore a MAGA hat on the call.",
+"w",
+"political_affiliation"
+],
+[
+"qa8",
+"r7_regression",
+"Wants 130.",
+"w",
+"compensation"
+],
+[
+"qa8",
+"r7_regression",
+"OTE 200",
+"w",
+"compensation"
+],
+[
+"qa8",
+"r7_regression",
+"Target comp is 130.",
+"w",
+"compensation"
+],
+[
+"qa8",
+"r7_regression",
+"Comp: 150.",
+"w",
+"compensation"
+],
+[
+"qa8",
+"r7_regression",
+"hourly 75",
+"w",
+"compensation"
+],
+[
+"qa8",
+"r7_regression",
+"Paid 65 an hour as a contractor.",
+"w",
+"compensation"
+],
+[
+"qa8",
+"r7_regression",
+"Needs 110 minimum.",
+"w",
+"compensation"
+],
+[
+"qa8",
+"r7_regression",
+"Her number is 140.",
+"w",
+"compensation"
+],
+[
+"qa8",
+"r7_regression",
+"Expects a 20% bump.",
+"w",
+"compensation"
+],
+[
+"qa8",
+"r7_regression",
+"Wants 1.2x current.",
+"w",
+"compensation"
+],
+[
+"qa8",
+"r7_regression",
+"Stronger than Priya.",
+"w",
+"hiring_decision"
+],
+[
+"qa8",
+"r7_regression",
+"Better than the other candidate.",
+"w",
+"hiring_decision"
+],
+[
+"qa8",
+"r7_regression",
+"My #1 pick.",
+"w",
+"hiring_decision"
+],
+[
+"qa8",
+"r7_regression",
+"Second choice after Priya.",
+"w",
+"hiring_decision"
+],
+[
+"qa8",
+"r7_regression",
+"Would pick her over Jordan.",
+"w",
+"hiring_decision"
+],
+[
+"qa8",
+"r7_regression",
+"Best of the bunch.",
+"w",
+"hiring_decision"
+],
+[
+"qa8",
+"r7_regression",
+"Edges out Sam.",
+"w",
+"hiring_decision"
+],
+[
+"qa8",
+"r7_regression",
+"Behind Priya.",
+"w",
+"hiring_decision"
+],
+[
+"qa8",
+"r7_regression",
+"Not as strong as Priya.",
+"w",
+"hiring_decision"
+],
+[
+"qa8",
+"r7_regression",
+"Took time off for burnout and depression.",
+"w",
+"disability_health"
+],
+[
+"qa8",
+"r7_regression",
+"Kids are 3 and 5.",
+"w",
+"pregnancy_family"
+],
+[
+"qa8",
+"r7_regression",
+"Bit old for a junior role.",
+"w",
+"age"
+],
+[
+"qa8",
+"r7_ctrl",
+"Billed 450 a day in consulting fees for the firm.",
+"k",
+null
+],
+[
+"tuning",
+"T_tune_politics",
+"Tory through and through.",
+"w",
+"political_affiliation"
+],
+[
+"tuning",
+"T_tune_politics",
+"Hardcore Corbyn supporter.",
+"w",
+"political_affiliation"
+],
+[
+"tuning",
+"T_tune_politics",
+"Said she's a Democrat but votes on the issues.",
+"w",
+"political_affiliation"
+],
+[
+"tuning",
+"T_tune_politics",
+"Runs the local Conservative association.",
+"w",
+"political_affiliation"
+],
+[
+"tuning",
+"T_tune_politics",
+"Spent last summer interning for a congressman.",
+"w",
+"political_affiliation"
+],
+[
+"tuning",
+"T_tune_politics",
+"Mentioned she canvasses for the Lib Dems every election.",
+"w",
+"political_affiliation"
+],
+[
+"tuning",
+"T_tune_politics",
+"Wears a MAGA cap to the office.",
+"w",
+"political_affiliation"
+],
+[
+"tuning",
+"T_tune_politics",
+"Very anti-Trump.",
+"w",
+"political_affiliation"
+],
+[
+"tuning",
+"T_tune_politics",
+"Keen Remainer.",
+"w",
+"political_affiliation"
+],
+[
+"tuning",
+"T_tune_politics",
+"Treasurer of her constituency Labour party.",
+"w",
+"political_affiliation"
+],
+[
+"tuning",
+"T_tune_politics",
+"Talked a lot about voting Green.",
+"w",
+"political_affiliation"
+],
+[
+"tuning",
+"T_tune_politics",
+"Is on the SNP's local committee.",
+"w",
+"political_affiliation"
+],
+[
+"tuning",
+"T_tune_politics",
+"Ex-Ukip candidate.",
+"w",
+"political_affiliation"
+],
+[
+"tuning",
+"T_tune_politics",
+"Organises for the DSA on weekends.",
+"w",
+"political_affiliation"
+],
+[
+"tuning",
+"T_tune_politics",
+"He's a Farage fan.",
+"w",
+"political_affiliation"
+],
+[
+"tuning",
+"T_tune_politics",
+"Loves Bernie.",
+"w",
+"political_affiliation"
+],
+[
+"tuning",
+"T_tune_politics",
+"Marched against the Iraq war back in the day.",
+"w",
+"political_affiliation"
+],
+[
+"tuning",
+"T_tune_politics",
+"Leans libertarian.",
+"w",
+"political_affiliation"
+],
+[
+"tuning",
+"T_tune_politics",
+"Reconciled the ledger well, though she spent ten minutes on why she backs Reform UK.",
+"w",
+"political_affiliation"
+],
+[
+"tuning",
+"T_tune_politics",
+"Built the AP dashboard and mentioned she's a Labour councillor.",
+"w",
+"political_affiliation"
+],
+[
+"tuning",
+"T_tune_politics",
+"Explained the close process clearly; also a big Trump guy.",
+"w",
+"political_affiliation"
+],
+[
+"tuning",
+"T_tune_politics",
+"Walked me through the variance analysis, then said he votes Conservative.",
+"w",
+"political_affiliation"
+],
+[
+"tuning",
+"T_tune_politics",
+"Raised money for the Kamala campaign.",
+"w",
+"political_affiliation"
+],
+[
+"tuning",
+"T_tune_politics",
+"Proud Brexiteer.",
+"w",
+"political_affiliation"
+],
+[
+"tuning",
+"T_tune_politics",
+"Far-left politics.",
+"w",
+"political_affiliation"
+],
+[
+"tuning",
+"T_tune_politics",
+"Thinks Starmer is doing a great job.",
+"w",
+"political_affiliation"
+],
+[
+"tuning",
+"T_tune_politics",
+"Is active in Momentum.",
+"w",
+"political_affiliation"
+],
+[
+"tuning",
+"T_tune_politics",
+"Stood as a Green candidate in the locals.",
+"w",
+"political_affiliation"
+],
+[
+"tuning",
+"T_tune_politics",
+"Phones voters for the Democrats in election season.",
+"w",
+"political_affiliation"
+],
+[
+"tuning",
+"T_tune_politics",
+"Ran the AR collections team while serving as a parish councillor.",
+"w",
+"political_affiliation"
+],
+[
+"tuning",
+"T_tune_politics",
+"Reconciled 40 bank accounts a month; outside work she leads a Young Labour branch.",
+"w",
+"political_affiliation"
+],
+[
+"tuning",
+"T_tune_politics",
+"Big on Bernie's policies.",
+"w",
+"political_affiliation"
+],
+[
+"tuning",
+"T_tune_politics",
+"Spends evenings leafleting for Plaid.",
+"w",
+"political_affiliation"
+],
+[
+"tuning",
+"T_tune_politics",
+"She described herself as left of centre.",
+"h",
+null
+],
+[
+"tuning",
+"T_tune_politics",
+"Automated the payroll journals, and is chair of the local Tory association.",
+"w",
+"political_affiliation"
+],
+[
+"tuning",
+"T_tune_politics",
+"Strong Labour values.",
+"w",
+"political_affiliation"
+],
+[
+"tuning",
+"T_tune_politics",
+"Volunteers with a pro-life group.",
+"w",
+"political_affiliation"
+],
+[
+"tuning",
+"T_tune_politics",
+"Was a delegate at the Democratic convention.",
+"w",
+"political_affiliation"
+],
+[
+"tuning",
+"T_tune_politics",
+"Owned the month-end close and told me she phone-banks for the Greens.",
+"w",
+"political_affiliation"
+],
+[
+"tuning",
+"T_tune_politics",
+"Built a cash forecast in Excel; he's a paid-up member of the Labour Party.",
+"w",
+"political_affiliation"
+],
+[
+"tuning",
+"T_tune_politics",
+"Explained the FX variance to the CFO, then talked about canvassing for Reform.",
+"w",
+"political_affiliation"
+],
+[
+"tuning",
+"T_tune_politics",
+"Ran the AP team; mentioned she's a lifelong lefty.",
+"w",
+"political_affiliation"
+],
+[
+"tuning",
+"T_tune_politics",
+"Strong on reconciliations, and an outspoken critic of the government.",
+"w",
+"political_affiliation"
+],
+[
+"tuning",
+"T_tune_politics",
+"Migrated the GL to NetSuite; he's on the Republican county committee.",
+"w",
+"political_affiliation"
+],
+[
+"tuning",
+"T_tune_politics",
+"Led the AR clean-up and wants to stand for Parliament next year.",
+"w",
+"political_affiliation"
+],
+[
+"tuning",
+"T_tune_politics",
+"Handled vendor onboarding, and is very pro-Palestine.",
+"w",
+"political_affiliation"
+],
+[
+"tuning",
+"T_tune_politics",
+"Prepared the board pack and described himself as a centrist.",
+"w",
+"political_affiliation"
+],
+[
+"tuning",
+"T_tune_politics",
+"Closed the books in four days; said he'd never vote Tory.",
+"w",
+"political_affiliation"
+],
+[
+"tuning",
+"T_tune_pay",
+"Wants 85 base.",
+"w",
+"compensation"
+],
+[
+"tuning",
+"T_tune_pay",
+"Looking at 95-105.",
+"h",
+null
+],
+[
+"tuning",
+"T_tune_pay",
+"Asked for a 12k bump.",
+"w",
+"compensation"
+],
+[
+"tuning",
+"T_tune_pay",
+"Her floor is 70.",
+"w",
+"compensation"
+],
+[
+"tuning",
+"T_tune_pay",
+"Would come over for 115.",
+"h",
+null
+],
+[
+"tuning",
+"T_tune_pay",
+"Base expectation 90k, flexible on bonus.",
+"w",
+"compensation"
+],
+[
+"tuning",
+"T_tune_pay",
+"Currently on £62k plus car allowance.",
+"w",
+"salary_history"
+],
+[
+"tuning",
+"T_tune_pay",
+"Day rate around 550.",
+"w",
+"compensation"
+],
+[
+"tuning",
+"T_tune_pay",
+"Charges clients 120 an hour as a freelancer.",
+"w",
+"compensation"
+],
+[
+"tuning",
+"T_tune_pay",
+"Expects at least a 15% increase.",
+"w",
+"compensation"
+],
+[
+"tuning",
+"T_tune_pay",
+"Total package needs to be north of 140.",
+"w",
+"compensation"
+],
+[
+"tuning",
+"T_tune_pay",
+"Wouldn't consider anything under 100k.",
+"w",
+"compensation"
+],
+[
+"tuning",
+"T_tune_pay",
+"Rebuilt the close calendar, and mentioned she's after 110 to move.",
+"w",
+"compensation"
+],
+[
+"tuning",
+"T_tune_pay",
+"Mentioned his current package is about 150 all-in.",
+"w",
+"salary_history"
+],
+[
+"tuning",
+"T_tune_pay",
+"Wants to be on six figures.",
+"w",
+"compensation"
+],
+[
+"tuning",
+"T_tune_pay",
+"Paid 450 a day by her last client.",
+"w",
+"compensation"
+],
+[
+"tuning",
+"T_tune_pay",
+"Hourly is 65.",
+"w",
+"compensation"
+],
+[
+"tuning",
+"T_tune_pay",
+"Expecting 20% more than his current base.",
+"w",
+"salary_history"
+],
+[
+"tuning",
+"T_tune_pay",
+"Built a 13-week cash forecast and said her salary expectation is around 95.",
+"w",
+"salary_history"
+],
+[
+"tuning",
+"T_tune_pay",
+"Comp target 120-130.",
+"w",
+"compensation"
+],
+[
+"tuning",
+"T_tune_pay",
+"Would need 15 percent on top.",
+"h",
+null
+],
+[
+"tuning",
+"T_tune_pay",
+"Freelances at 80 quid an hour.",
+"h",
+null
+],
+[
+"tuning",
+"T_tune_pay",
+"Bills 700 a day through her own company.",
+"w",
+"compensation"
+],
+[
+"tuning",
+"T_tune_pay",
+"On 70 grand at the moment.",
+"w",
+"salary_history"
+],
+[
+"tuning",
+"T_tune_pay",
+"Rate's 500 a day outside IR35.",
+"w",
+"compensation"
+],
+[
+"tuning",
+"T_tune_pay",
+"Earning just under 80 now.",
+"w",
+"salary_history"
+],
+[
+"tuning",
+"T_tune_pay",
+"Reconciled 300 accounts each month; currently making 58k.",
+"w",
+"salary_history"
+],
+[
+"tuning",
+"T_tune_pay",
+"Prepared the VAT return; wants 10k more than she gets now.",
+"w",
+"compensation"
+],
+[
+"tuning",
+"T_tune_pay",
+"Day rate expectations of 600.",
+"w",
+"compensation"
+],
+[
+"tuning",
+"T_tune_pay",
+"Contracting rate is 525.",
+"w",
+"compensation"
+],
+[
+"tuning",
+"T_tune_pay",
+"Holding out for 130.",
+"w",
+"compensation"
+],
+[
+"tuning",
+"T_tune_pay",
+"His ask: 110.",
+"h",
+null
+],
+[
+"tuning",
+"T_tune_pay",
+"Expects to be paid 90 an hour.",
+"w",
+"compensation"
+],
+[
+"tuning",
+"T_tune_pay",
+"Range she gave was 85 to 95.",
+"h",
+null
+],
+[
+"tuning",
+"T_tune_pay",
+"Rebuilt the expense workflow; she'd want 105 to switch.",
+"w",
+"compensation"
+],
+[
+"tuning",
+"T_tune_pay",
+"Ran payroll for 400 staff and is asking for 75 plus bonus.",
+"w",
+"compensation"
+],
+[
+"tuning",
+"T_tune_pay",
+"Explained the accrual logic well; her number is 95 base.",
+"w",
+"compensation"
+],
+[
+"tuning",
+"T_tune_pay",
+"Is on a 60k package.",
+"w",
+"salary_history"
+],
+[
+"tuning",
+"T_tune_pay",
+"Gets 40 an hour at her current agency.",
+"w",
+"compensation"
+],
+[
+"tuning",
+"T_tune_pay",
+"Owns the AP process end to end; package expectation around 85k.",
+"w",
+"compensation"
+],
+[
+"tuning",
+"T_tune_pay",
+"Automated the bank feeds and wants a 10 percent raise to move.",
+"w",
+"compensation"
+],
+[
+"tuning",
+"T_tune_pay",
+"Handled 200 invoices a week, and her current day rate is 450.",
+"w",
+"compensation"
+],
+[
+"tuning",
+"T_tune_ranking",
+"Easily the best of today's candidates.",
+"w",
+"hiring_decision"
+],
+[
+"tuning",
+"T_tune_ranking",
+"She's my clear favourite.",
+"h",
+null
+],
+[
+"tuning",
+"T_tune_ranking",
+"Would put her first on my list.",
+"w",
+"hiring_decision"
+],
+[
+"tuning",
+"T_tune_ranking",
+"Slightly behind Priya on the technical side.",
+"w",
+"hiring_decision"
+],
+[
+"tuning",
+"T_tune_ranking",
+"Better prepared than anyone else today.",
+"w",
+"hiring_decision"
+],
+[
+"tuning",
+"T_tune_ranking",
+"Not a patch on Priya.",
+"h",
+null
+],
+[
+"tuning",
+"T_tune_ranking",
+"Clearly outranks the other two.",
+"h",
+null
+],
+[
+"tuning",
+"T_tune_ranking",
+"Rebuilt the AP workflow better than any of the other finalists described.",
+"w",
+"hiring_decision"
+],
+[
+"tuning",
+"T_tune_ranking",
+"The panel's top pick.",
+"w",
+"hiring_decision"
+],
+[
+"tuning",
+"T_tune_ranking",
+"Ranked her below Priya and Sam.",
+"w",
+"hiring_decision"
+],
+[
+"tuning",
+"T_tune_ranking",
+"She'd be my second pick.",
+"w",
+"hiring_decision"
+],
+[
+"tuning",
+"T_tune_ranking",
+"Head of the pack.",
+"w",
+"hiring_decision"
+],
+[
+"tuning",
+"T_tune_ranking",
+"Explained the variance clearly - sharper than Priya on this.",
+"w",
+"hiring_decision"
+],
+[
+"tuning",
+"T_tune_ranking",
+"Owned the close, and frankly ahead of everyone else we've interviewed.",
+"w",
+"hiring_decision"
+],
+[
+"tuning",
+"T_tune_ranking",
+"First among the finalists for me.",
+"h",
+null
+],
+[
+"tuning",
+"T_tune_ranking",
+"Edges it over Sam for me.",
+"h",
+null
+],
+[
+"tuning",
+"T_tune_ranking",
+"Comfortably the standout.",
+"h",
+null
+],
+[
+"tuning",
+"T_tune_ranking",
+"Built a cleaner tie-out than either of the other two.",
+"w",
+"hiring_decision"
+],
+[
+"tuning",
+"T_tune_ranking",
+"Trailing Priya after the case study.",
+"w",
+"hiring_decision"
+],
+[
+"tuning",
+"T_tune_ranking",
+"Would happily hire her over Sam.",
+"w",
+"hiring_decision"
+],
+[
+"tuning",
+"T_tune_ranking",
+"Narrowly second to Priya overall.",
+"w",
+"hiring_decision"
+],
+[
+"tuning",
+"T_tune_ranking",
+"Reconciled the suspense account faster than Sam managed in his case study.",
+"w",
+"hiring_decision"
+],
+[
+"tuning",
+"T_tune_ranking",
+"Not as polished as Sam.",
+"w",
+"hiring_decision"
+],
+[
+"tuning",
+"T_tune_ranking",
+"Puts Priya in second place.",
+"h",
+null
+],
+[
+"tuning",
+"T_tune_ranking",
+"In the top three for sure.",
+"h",
+null
+],
+[
+"tuning",
+"T_tune_ranking",
+"Pipped by Sam on the modelling exercise.",
+"w",
+"hiring_decision"
+],
+[
+"tuning",
+"T_tune_ranking",
+"Lost out to Priya in my scoring.",
+"h",
+null
+],
+[
+"tuning",
+"T_tune_ranking",
+"Ahead on every competency compared with Sam.",
+"w",
+"hiring_decision"
+],
+[
+"tuning",
+"T_tune_ranking",
+"Nobody else came close.",
+"w",
+"hiring_decision"
+],
+[
+"tuning",
+"T_tune_ranking",
+"Head and shoulders the best answer on recs.",
+"w",
+"hiring_decision"
+],
+[
+"tuning",
+"T_tune_ranking",
+"Gave the strongest reconciliation answer of all the finalists.",
+"w",
+"hiring_decision"
+],
+[
+"tuning",
+"T_tune_ranking",
+"Walked through the bank rec well, but Priya was more structured.",
+"w",
+"hiring_decision"
+],
+[
+"tuning",
+"T_tune_ranking",
+"Her close checklist was the best I've seen in this loop.",
+"w",
+"hiring_decision"
+],
+[
+"tuning",
+"T_tune_ranking",
+"Traced the variance quickly; would rank her above Sam.",
+"w",
+"hiring_decision"
+],
+[
+"tuning",
+"T_tune_ctrl",
+"Ranked the vendor bids by total cost of ownership.",
+"k",
+null
+],
+[
+"tuning",
+"T_tune_ctrl",
+"Our close was faster than the industry average.",
+"k",
+null
+],
+[
+"tuning",
+"T_tune_ctrl",
+"Picked Xero over Sage after a pilot.",
+"k",
+null
+],
+[
+"tuning",
+"T_tune_ctrl",
+"The new matching rule performed better than the old one.",
+"k",
+null
+],
+[
+"tuning",
+"T_tune_ctrl",
+"Prioritised the top three risks for the audit.",
+"k",
+null
+],
+[
+"tuning",
+"T_tune_ctrl",
+"Put the highest-value invoices first in the queue.",
+"k",
+null
+],
+[
+"tuning",
+"T_tune_ctrl",
+"Came in under budget and ahead of schedule.",
+"k",
+null
+],
+[
+"tuning",
+"T_tune_ctrl",
+"Compared NetSuite with Xero and chose NetSuite.",
+"k",
+null
+],
+[
+"tuning",
+"T_tune_ctrl",
+"Best month-end close the team had in two years.",
+"k",
+null
+],
+[
+"tuning",
+"T_tune_ctrl",
+"Chose the better of the two bank feeds.",
+"k",
+null
+],
+[
+"tuning",
+"T_tune_ctrl",
+"Was ranked first by the CFO for close accuracy.",
+"k",
+null
+],
+[
+"tuning",
+"T_tune_ctrl",
+"A better forecast than last quarter's.",
+"k",
+null
+],
+[
+"tuning",
+"T_tune_ctrl",
+"Faster than the manual process by two days.",
+"k",
+null
+],
+[
+"tuning",
+"T_tune_ctrl",
+"Picked the strongest of three vendor proposals.",
+"k",
+null
+],
+[
+"tuning",
+"T_tune_ctrl",
+"Her team ranked second in the group audit league table.",
+"k",
+null
+],
+[
+"tuning",
+"T_tune_ctrl",
+"Closed the books faster than planned.",
+"k",
+null
+],
+[
+"tuning",
+"T_tune_ctrl",
+"Reduced the vendor's day rate from 900 to 750.",
+"k",
+null
+],
+[
+"tuning",
+"T_tune_ctrl",
+"Negotiated the agency's hourly rate down to 45.",
+"o",
+null
+],
+[
+"tuning",
+"T_tune_ctrl",
+"Set the bonus accrual at 120k for Q4.",
+"k",
+null
+],
+[
+"tuning",
+"T_tune_ctrl",
+"Booked 85 journal entries for the payroll close.",
+"k",
+null
+],
+[
+"tuning",
+"T_tune_ctrl",
+"Cut contractor spend by 15% in six months.",
+"k",
+null
+],
+[
+"tuning",
+"T_tune_ctrl",
+"Built a salary benchmarking model for 40 roles.",
+"k",
+null
+],
+[
+"tuning",
+"T_tune_ctrl",
+"Wants 20 invoices approved per day.",
+"k",
+null
+],
+[
+"tuning",
+"T_tune_ctrl",
+"Needs 3 approvers on any payment over 10k.",
+"k",
+null
+],
+[
+"tuning",
+"T_tune_ctrl",
+"Our blended rate to clients is 950 a day.",
+"k",
+null
+],
+[
+"tuning",
+"T_tune_ctrl",
+"The client paid 1,500 a day for the audit team.",
+"k",
+null
+],
+[
+"tuning",
+"T_tune_ctrl",
+"Raised prices 8% across the SKU range.",
+"k",
+null
+],
+[
+"tuning",
+"T_tune_ctrl",
+"Compensation accruals were 45k under budget.",
+"k",
+null
+],
+[
+"tuning",
+"T_tune_ctrl",
+"Reconciled the equity method investment of 2.4M quarterly.",
+"k",
+null
+],
+[
+"tuning",
+"T_tune_ctrl",
+"Expecting 120 invoices from the new supplier.",
+"k",
+null
+],
+[
+"tuning",
+"T_tune_ctrl",
+"Looking for a 15% reduction in close time.",
+"k",
+null
+],
+[
+"tuning",
+"T_tune_ctrl",
+"Asked for 30 minutes to finish the reconciliation.",
+"k",
+null
+],
+[
+"tuning",
+"T_tune_ctrl",
+"Targeting 95% auto-match on bank lines.",
+"k",
+null
+],
+[
+"tuning",
+"T_tune_ctrl",
+"Needs at least 99.5% uptime on the bank feed.",
+"k",
+null
+],
+[
+"tuning",
+"T_tune_ctrl",
+"Makes 40 journal entries a day.",
+"k",
+null
+],
+[
+"tuning",
+"T_tune_ctrl",
+"Reduced contractor day rates from 650 to 500.",
+"o",
+null
+],
+[
+"tuning",
+"T_tune_ctrl",
+"The agency charged 38 an hour for temps on the AP backlog.",
+"k",
+null
+],
+[
+"tuning",
+"T_tune_ctrl",
+"Earned a 98% accuracy score on the audit sample.",
+"k",
+null
+],
+[
+"tuning",
+"T_tune_ctrl",
+"Needs 15k more in budget for the migration.",
+"o",
+null
+],
+[
+"tuning",
+"T_tune_ctrl",
+"Saved 30k on the audit fee.",
+"k",
+null
+],
+[
+"tuning",
+"T_tune_ctrl",
+"Moved the payment run to after 2pm on Fridays.",
+"k",
+null
+],
+[
+"tuning",
+"T_tune_ctrl",
+"Migrated to NetSuite after 2019 and rebuilt the chart of accounts.",
+"k",
+null
+],
+[
+"tuning",
+"T_tune_ctrl",
+"Reconciled the party-ledger balances for the group.",
+"k",
+null
+],
+[
+"tuning",
+"T_tune_ctrl",
+"Mapped the Labour Day public holiday into the payroll calendar.",
+"k",
+null
+],
+[
+"tuning",
+"T_tune_ctrl",
+"Booked the conservative end of the warranty provision.",
+"k",
+null
+],
+[
+"tuning",
+"T_tune_ctrl",
+"Ran a progressive rollout of the new ERP.",
+"k",
+null
+],
+[
+"tuning",
+"T_tune_ctrl",
+"Cleared the leave accrual backlog before year-end.",
+"k",
+null
+],
+[
+"tuning",
+"T_tune_ctrl",
+"Built the labour cost model for the warehouse.",
+"k",
+null
+],
+[
+"tuning",
+"T_tune_ctrl",
+"Canvassed the AP team for feedback on the new workflow.",
+"k",
+null
+],
+[
+"tuning",
+"T_tune_ctrl",
+"Supported the controller through the audit.",
+"k",
+null
+],
+[
+"tuning",
+"T_tune_ctrl",
+"Ran the green-bond reporting for treasury.",
+"k",
+null
+],
+[
+"tuning",
+"T_tune_ctrl",
+"Traced a 4k difference to a timing issue in the bank feed.",
+"k",
+null
+],
+[
+"tuning",
+"T_tune_ctrl",
+"Cut the close from 9 days to 5.",
+"k",
+null
+],
+[
+"tuning",
+"T_tune_ctrl",
+"Built a Power BI dashboard for AR ageing.",
+"k",
+null
+],
+[
+"tuning",
+"T_tune_ctrl",
+"Trained two junior analysts on bank recs.",
+"k",
+null
+],
+[
+"tuning",
+"T_tune_ctrl",
+"Wrote SQL to pull unapplied cash every morning.",
+"k",
+null
+],
+[
+"tuning",
+"T_tune_ctrl",
+"Set up a weekly vendor statement reconciliation.",
+"k",
+null
+],
+[
+"tuning",
+"T_tune_ctrl",
+"Rebuilt the accrual tracker in Google Sheets.",
+"k",
+null
+],
+[
+"tuning",
+"T_tune_ctrl",
+"Presented the variance bridge to the CFO.",
+"k",
+null
+],
+[
+"tuning",
+"T_tune_ctrl",
+"Owned the intercompany eliminations each month.",
+"k",
+null
+],
+[
+"tuning",
+"T_tune_ctrl",
+"Fixed a broken lookup in the AP workbook.",
+"k",
+null
+],
+[
+"tuning",
+"T_tune_ctrl",
+"Caught a duplicate payment of 12k before release.",
+"k",
+null
+],
+[
+"tuning",
+"T_tune_ctrl",
+"Led the migration from Sage to NetSuite.",
+"k",
+null
+],
+[
+"tuning",
+"T_tune_ctrl",
+"Documented the close checklist for the team.",
+"k",
+null
+],
+[
+"tuning",
+"T_tune_ctrl",
+"Handled three-way match exceptions daily.",
+"k",
+null
+],
+[
+"tuning",
+"T_tune_ctrl",
+"Moved cash application to a lockbox feed.",
+"k",
+null
+],
+[
+"tuning",
+"T_tune_ctrl",
+"Reconciled the payroll clearing account to zero.",
+"k",
+null
+],
+[
+"tuning",
+"T_tune_ctrl",
+"Explained the deferred revenue roll-forward to the auditors.",
+"k",
+null
+],
+[
+"tuning",
+"T_tune_ctrl",
+"Automated the FX revaluation journal in NetSuite.",
+"k",
+null
+],
+[
+"fresh2",
+"F2_politics",
+"Massive Lib Dem.",
+"w",
+"political_affiliation"
+],
+[
+"fresh2",
+"F2_politics",
+"Knocks on doors for Labour most weekends.",
+"w",
+"political_affiliation"
+],
+[
+"fresh2",
+"F2_politics",
+"Thinks Farage talks sense.",
+"w",
+"political_affiliation"
+],
+[
+"fresh2",
+"F2_politics",
+"Has a Trump 2024 mug on the desk behind her.",
+"w",
+"hiring_decision"
+],
+[
+"fresh2",
+"F2_politics",
+"Said she'd never vote Tory.",
+"w",
+"political_affiliation"
+],
+[
+"fresh2",
+"F2_politics",
+"Green Party activist.",
+"w",
+"political_affiliation"
+],
+[
+"fresh2",
+"F2_politics",
+"Big Sanders guy in college.",
+"w",
+"political_affiliation"
+],
+[
+"fresh2",
+"F2_politics",
+"Was on the Remain campaign in 2016.",
+"w",
+"political_affiliation"
+],
+[
+"fresh2",
+"F2_politics",
+"Hands out leaflets for the SNP.",
+"w",
+"political_affiliation"
+],
+[
+"fresh2",
+"F2_politics",
+"Tweets a lot about Biden.",
+"w",
+"political_affiliation"
+],
+[
+"fresh2",
+"F2_politics",
+"Former Conservative councillor.",
+"w",
+"political_affiliation"
+],
+[
+"fresh2",
+"F2_politics",
+"Calls herself a socialist.",
+"w",
+"political_affiliation"
+],
+[
+"fresh2",
+"F2_politics",
+"Spent the weekend at a Reform UK rally.",
+"w",
+"political_affiliation"
+],
+[
+"fresh2",
+"F2_politics",
+"Proudly progressive.",
+"h",
+null
+],
+[
+"fresh2",
+"F2_politics",
+"Very right-wing on immigration.",
+"w",
+"political_affiliation"
+],
+[
+"fresh2",
+"F2_politics",
+"Volunteered for the Obama campaign.",
+"w",
+"political_affiliation"
+],
+[
+"fresh2",
+"F2_politics",
+"His dad is a Labour MP and he helps out.",
+"w",
+"political_affiliation"
+],
+[
+"fresh2",
+"F2_politics",
+"Hardline Brexiteer.",
+"w",
+"political_affiliation"
+],
+[
+"fresh2",
+"F2_politics",
+"Wore a Plaid badge to the interview.",
+"w",
+"political_affiliation"
+],
+[
+"fresh2",
+"F2_politics",
+"Strong opinions on the Tories.",
+"w",
+"political_affiliation"
+],
+[
+"fresh2",
+"F2_politics",
+"Reconciled 30 accounts weekly, but kept bringing up how much she hates Starmer.",
+"w",
+"political_affiliation"
+],
+[
+"fresh2",
+"F2_politics",
+"Built the variance pack; also a paid-up Green.",
+"h",
+null
+],
+[
+"fresh2",
+"F2_politics",
+"Ran the close calendar, and he campaigns for the Republicans.",
+"w",
+"political_affiliation"
+],
+[
+"fresh2",
+"F2_politics",
+"Explained the accrual logic well; mentioned she's a Democrat delegate.",
+"w",
+"political_affiliation"
+],
+[
+"fresh2",
+"F2_politics",
+"Automated bank feeds, though she spent a while on why Brexit was a mistake.",
+"h",
+null
+],
+[
+"fresh2",
+"F2_politics",
+"Cleared the AP backlog and is a member of the SNP.",
+"w",
+"political_affiliation"
+],
+[
+"fresh2",
+"F2_politics",
+"Fixed the FX revaluation; outside work he's a Tory activist.",
+"w",
+"political_affiliation"
+],
+[
+"fresh2",
+"F2_politics",
+"Owned the audit PBC list, and she's standing for the council in May.",
+"w",
+"political_affiliation"
+],
+[
+"fresh2",
+"F2_politics",
+"Migrated the ledger; he's very left-wing.",
+"w",
+"political_affiliation"
+],
+[
+"fresh2",
+"F2_politics",
+"Rebuilt the cash forecast, then talked about marching against the Conservatives.",
+"w",
+"political_affiliation"
+],
+[
+"fresh2",
+"F2_pay",
+"Wants 95 base.",
+"w",
+"compensation"
+],
+[
+"fresh2",
+"F2_pay",
+"Asking 110k plus bonus.",
+"w",
+"compensation"
+],
+[
+"fresh2",
+"F2_pay",
+"Current package around 88.",
+"w",
+"salary_history"
+],
+[
+"fresh2",
+"F2_pay",
+"Won't take less than 105.",
+"w",
+"compensation"
+],
+[
+"fresh2",
+"F2_pay",
+"Day rate 550.",
+"w",
+"compensation"
+],
+[
+"fresh2",
+"F2_pay",
+"Hourly is 70.",
+"w",
+"compensation"
+],
+[
+"fresh2",
+"F2_pay",
+"Expecting a 20% jump.",
+"h",
+null
+],
+[
+"fresh2",
+"F2_pay",
+"Range she quoted: 100 to 115.",
+"h",
+null
+],
+[
+"fresh2",
+"F2_pay",
+"On 92 now.",
+"w",
+"compensation"
+],
+[
+"fresh2",
+"F2_pay",
+"Looking for six figures.",
+"w",
+"compensation"
+],
+[
+"fresh2",
+"F2_pay",
+"Wants 10k more than she's on.",
+"w",
+"compensation"
+],
+[
+"fresh2",
+"F2_pay",
+"Needs 120 to make the move worthwhile.",
+"w",
+"compensation"
+],
+[
+"fresh2",
+"F2_pay",
+"Charges clients of hers 85 an hour.",
+"w",
+"compensation"
+],
+[
+"fresh2",
+"F2_pay",
+"Her freelance day rate is 600.",
+"w",
+"compensation"
+],
+[
+"fresh2",
+"F2_pay",
+"Bonus target 20 percent.",
+"w",
+"compensation"
+],
+[
+"fresh2",
+"F2_pay",
+"Wants the upper end of the range.",
+"w",
+"compensation"
+],
+[
+"fresh2",
+"F2_pay",
+"Asked about salary - said 115.",
+"h",
+null
+],
+[
+"fresh2",
+"F2_pay",
+"Currently earning 98k.",
+"w",
+"salary_history"
+],
+[
+"fresh2",
+"F2_pay",
+"Contractor rate around 500 a day.",
+"w",
+"compensation"
+],
+[
+"fresh2",
+"F2_pay",
+"Equity matters more than base; wants 0.5%.",
+"h",
+null
+],
+[
+"fresh2",
+"F2_pay",
+"Reconciled the intercompany accounts, and is asking for 120 base.",
+"w",
+"compensation"
+],
+[
+"fresh2",
+"F2_pay",
+"Built the close checklist; wants 105 minimum.",
+"w",
+"compensation"
+],
+[
+"fresh2",
+"F2_pay",
+"Fixed the payment run, but needs 115 to leave.",
+"w",
+"compensation"
+],
+[
+"fresh2",
+"F2_pay",
+"Traced the duplicate invoices; she freelances at 75 an hour.",
+"w",
+"compensation"
+],
+[
+"fresh2",
+"F2_pay",
+"Cleaned up the vendor master, and her current base is 90.",
+"w",
+"salary_history"
+],
+[
+"fresh2",
+"F2_pay",
+"Rebuilt the accruals model; expects a 10k bump.",
+"w",
+"compensation"
+],
+[
+"fresh2",
+"F2_pay",
+"Automated the bank rec, though she won't move for under 100.",
+"w",
+"compensation"
+],
+[
+"fresh2",
+"F2_pay",
+"Owned the AR ledger and is on 85 at the moment.",
+"w",
+"compensation"
+],
+[
+"fresh2",
+"F2_pay",
+"Explained the FX variance; bills 650 a day as a contractor.",
+"w",
+"compensation"
+],
+[
+"fresh2",
+"F2_pay",
+"Led the audit prep, and wants equity plus 110.",
+"w",
+"compensation"
+],
+[
+"fresh2",
+"F2_ranking",
+"Better than Priya on the case.",
+"w",
+"hiring_decision"
+],
+[
+"fresh2",
+"F2_ranking",
+"Stronger than the other two.",
+"w",
+"hiring_decision"
+],
+[
+"fresh2",
+"F2_ranking",
+"Miles ahead of the rest.",
+"w",
+"hiring_decision"
+],
+[
+"fresh2",
+"F2_ranking",
+"Not as polished as Sam.",
+"w",
+"hiring_decision"
+],
+[
+"fresh2",
+"F2_ranking",
+"Easily the best of the bunch.",
+"w",
+"hiring_decision"
+],
+[
+"fresh2",
+"F2_ranking",
+"My second choice.",
+"w",
+"hiring_decision"
+],
+[
+"fresh2",
+"F2_ranking",
+"Ranked her third.",
+"w",
+"hiring_decision"
+],
+[
+"fresh2",
+"F2_ranking",
+"Behind Jordan for me.",
+"w",
+"hiring_decision"
+],
+[
+"fresh2",
+"F2_ranking",
+"Top pick so far.",
+"h",
+null
+],
+[
+"fresh2",
+"F2_ranking",
+"Beat Sam on every question.",
+"w",
+"hiring_decision"
+],
+[
+"fresh2",
+"F2_ranking",
+"Comes out ahead of Priya.",
+"w",
+"hiring_decision"
+],
+[
+"fresh2",
+"F2_ranking",
+"The weakest candidate we've seen.",
+"w",
+"hiring_decision"
+],
+[
+"fresh2",
+"F2_ranking",
+"Would hire her over Sam.",
+"w",
+"hiring_decision"
+],
+[
+"fresh2",
+"F2_ranking",
+"Sam edged her on the modelling.",
+"w",
+"hiring_decision"
+],
+[
+"fresh2",
+"F2_ranking",
+"First of the four finalists.",
+"h",
+null
+],
+[
+"fresh2",
+"F2_ranking",
+"Lagging the other finalists.",
+"h",
+null
+],
+[
+"fresh2",
+"F2_ranking",
+"Outperformed everyone else.",
+"w",
+"hiring_decision"
+],
+[
+"fresh2",
+"F2_ranking",
+"Leagues ahead of Priya.",
+"w",
+"hiring_decision"
+],
+[
+"fresh2",
+"F2_ranking",
+"Not a patch on the others.",
+"h",
+null
+],
+[
+"fresh2",
+"F2_ranking",
+"Clearly the strongest finalist.",
+"h",
+null
+],
+[
+"fresh2",
+"F2_ranking",
+"Reconciled the bank accounts faster than Priya did.",
+"w",
+"hiring_decision"
+],
+[
+"fresh2",
+"F2_ranking",
+"Built a better model than the other finalists.",
+"w",
+"hiring_decision"
+],
+[
+"fresh2",
+"F2_ranking",
+"Explained accruals well, but Sam was clearer.",
+"w",
+"hiring_decision"
+],
+[
+"fresh2",
+"F2_ranking",
+"Fixed the mapping, and frankly ahead of the other two.",
+"w",
+"hiring_decision"
+],
+[
+"fresh2",
+"F2_ranking",
+"Owned the close; best of the three we saw.",
+"w",
+"hiring_decision"
+],
+[
+"fresh2",
+"F2_ranking",
+"Traced the break quicker than anyone else we interviewed.",
+"w",
+"hiring_decision"
+],
+[
+"fresh2",
+"F2_ranking",
+"Cleared the backlog, though not as quickly as Priya.",
+"w",
+"hiring_decision"
+],
+[
+"fresh2",
+"F2_ranking",
+"Rebuilt the checklist; stronger than Jordan on controls.",
+"w",
+"hiring_decision"
+],
+[
+"fresh2",
+"F2_ranking",
+"Automated the feed, and outshone the others on the case.",
+"w",
+"hiring_decision"
+],
+[
+"fresh2",
+"F2_ranking",
+"Led the audit prep better than any other candidate.",
+"w",
+"hiring_decision"
+],
+[
+"fresh2",
+"F2_ctrl",
+"Reconciled 30 bank accounts weekly and cleared every break within two days.",
+"k",
+null
+],
+[
+"fresh2",
+"F2_ctrl",
+"Rebuilt the accruals model so it ties to the GL automatically.",
+"k",
+null
+],
+[
+"fresh2",
+"F2_ctrl",
+"Picked Xero over QuickBooks after testing both on the AP flow.",
+"k",
+null
+],
+[
+"fresh2",
+"F2_ctrl",
+"Our agency charges 40 an hour for temp AP clerks; she cut the temp hours in half.",
+"k",
+null
+],
+[
+"fresh2",
+"F2_ctrl",
+"Negotiated the vendor's rate down from 120 to 95 per seat.",
+"k",
+null
+],
+[
+"fresh2",
+"F2_ctrl",
+"Cut DSO from 55 to 41 days by changing the dunning schedule.",
+"k",
+null
+],
+[
+"fresh2",
+"F2_ctrl",
+"Ran a pilot with two forecasting tools and chose the faster one.",
+"k",
+null
+],
+[
+"fresh2",
+"F2_ctrl",
+"Reduced manual journals by 30% after moving to rule-based matching.",
+"k",
+null
+],
+[
+"fresh2",
+"F2_ctrl",
+"Built the commission calculation for the sales team in Excel.",
+"k",
+null
+],
+[
+"fresh2",
+"F2_ctrl",
+"Processed 400 invoices a day during the peak.",
+"k",
+null
+],
+[
+"fresh2",
+"F2_ctrl",
+"Compared the Labour cost allocation across three entities.",
+"k",
+null
+],
+[
+"fresh2",
+"F2_ctrl",
+"Set up the payroll accrual and reconciled it to the payroll provider.",
+"k",
+null
+],
+[
+"fresh2",
+"F2_ctrl",
+"Moved the payment run to Thursday so approvals land before the cut-off.",
+"k",
+null
+],
+[
+"fresh2",
+"F2_ctrl",
+"Prepared the board pack and walked the CFO through the variance bridge.",
+"k",
+null
+],
+[
+"fresh2",
+"F2_ctrl",
+"Found the root cause: a duplicate supplier record in the vendor master.",
+"k",
+null
+],
+[
+"fresh2",
+"F2_ctrl",
+"Led the migration from Sage to NetSuite with no missed close.",
+"k",
+null
+],
+[
+"fresh2",
+"F2_ctrl",
+"Explained how she tested the new matching rules against last quarter's data.",
+"k",
+null
+],
+[
+"fresh2",
+"F2_ctrl",
+"Ranked the open audit items by risk and closed the top five first.",
+"k",
+null
+],
+[
+"fresh2",
+"F2_ctrl",
+"The new process was faster than the old spreadsheet approach.",
+"k",
+null
+],
+[
+"fresh2",
+"F2_ctrl",
+"Cleared 2,000 unapplied cash items before year-end.",
+"k",
+null
+],
+[
+"fresh2",
+"F2_ctrl",
+"Wrote the SOP for intercompany settlements and trained two analysts on it.",
+"k",
+null
+],
+[
+"fresh2",
+"F2_ctrl",
+"Built a bonus accrual schedule that matched HR's payout file.",
+"k",
+null
+],
+[
+"fresh2",
+"F2_ctrl",
+"Benchmarked our close timeline against peers and cut two days.",
+"k",
+null
+],
+[
+"fresh2",
+"F2_ctrl",
+"Took over Sam's reconciliations when he left and documented each one.",
+"k",
+null
+],
+[
+"fresh2",
+"F2_ctrl",
+"Worked with Priya in treasury to fix the FX rate feed.",
+"k",
+null
+],
+[
+"fresh2",
+"F2_ctrl",
+"Flagged that the conservative reserve estimate was overstated by 50k.",
+"k",
+null
+],
+[
+"fresh2",
+"F2_ctrl",
+"Tracked the 15% budget variance to a mis-mapped cost centre.",
+"k",
+null
+],
+[
+"fresh2",
+"F2_ctrl",
+"Billed clients 1,100 a day for the audit support engagement at her firm.",
+"k",
+null
+],
+[
+"fresh2",
+"F2_ctrl",
+"Owned the expense policy update and the approval workflow change.",
+"k",
+null
+],
+[
+"fresh2",
+"F2_ctrl",
+"Investigated why the auto-match rate fell from 92% to 80% and fixed the rule.",
+"k",
+null
+]
+]

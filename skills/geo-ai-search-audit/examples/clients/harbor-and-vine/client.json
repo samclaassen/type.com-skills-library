@@ -1,0 +1,8 @@
+{
+  "name": "Harbor & Vine",
+  "website": "https://harborandvine.example",
+  "industry": "dtc",
+  "competitors": ["https://tidewater-goods.example", "https://saltmarsh-co.example"],
+  "goals": ["Be named in AI assistant answers for 'best linen bedding'"],
+  "notes": "Synthetic example client. Brand never uses exclamation marks."
+}

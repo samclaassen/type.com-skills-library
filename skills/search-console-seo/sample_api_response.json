@@ -1,0 +1,65 @@
+{
+  "rows": [
+    {
+      "keys": [
+        "harbor and vine",
+        "https://harborandvine.example/"
+      ],
+      "clicks": 905.0,
+      "impressions": 2010.0,
+      "ctr": 0.4502487562189055,
+      "position": 1.1
+    },
+    {
+      "keys": [
+        "harbor and vine wine club",
+        "https://harborandvine.example/wine-club"
+      ],
+      "clicks": 38.0,
+      "impressions": 85.0,
+      "ctr": 0.4470588235294118,
+      "position": 1.0
+    },
+    {
+      "keys": [
+        "harbor & vine wine bar",
+        "https://harborandvine.example/tasting-room"
+      ],
+      "clicks": 30.0,
+      "impressions": 40.0,
+      "ctr": 0.75,
+      "position": 1.0
+    },
+    {
+      "keys": [
+        "wine club membership",
+        "https://harborandvine.example/wine-club"
+      ],
+      "clicks": 120.0,
+      "impressions": 3900.0,
+      "ctr": 0.03076923076923077,
+      "position": 6.8
+    },
+    {
+      "keys": [
+        "monthly wine subscription",
+        "https://harborandvine.example/wine-club"
+      ],
+      "clicks": 60.0,
+      "impressions": 2500.0,
+      "ctr": 0.024,
+      "position": 6.1
+    },
+    {
+      "keys": [
+        "best wine gifts",
+        "https://harborandvine.example/blog/best-wine-gifts"
+      ],
+      "clicks": 95.0,
+      "impressions": 1650.0,
+      "ctr": 0.05757575757575758,
+      "position": 3.6
+    }
+  ],
+  "responseAggregationType": "byPage"
+}

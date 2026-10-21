@@ -1,0 +1,204 @@
+# Landing Page CVR Analyzer — brand config
+# Human-authored. The engine reads it, never writes it.
+# Every default below is a starting point, not a standard. Tune after the baseline run.
+
+brand: "Example Co"
+currency: "USD"
+timezone: "America/New_York"
+
+# Example ecommerce funnel. Replace these with your confirmed event names.
+funnel:
+  steps:
+    - {name: view_item, event: view_item}
+    - {name: add_to_cart, event: add_to_cart}
+    - {name: begin_checkout, event: begin_checkout}
+    - {name: purchase, event: purchase, is_conversion: true}
+
+# ---------------------------------------------------------------------------
+# Windows
+# ---------------------------------------------------------------------------
+windows:
+  # The period being judged. 7 days is the default because it contains one of
+  # every weekday, which removes day-of-week effects without any modelling.
+  # Drop to 3 for a fast-moving account that can tolerate more false positives;
+  # 1 only if you also raise min_sessions_current hard.
+  current_days: 7
+
+  # What "normal" means. Compared day-of-week to day-of-week against the current
+  # window, so a Tuesday is only ever compared to Tuesdays.
+  baseline_days: 28
+
+  # Gap between the two windows. 0 = baseline ends the day the current window
+  # starts. Raise it if a known event (a sale, a site migration) should not
+  # contaminate the baseline.
+  gap_days: 0
+
+  # Window for the slow-drift detector — a decline too gradual to ever trip a
+  # week-over-week test but obvious over a quarter.
+  drift_days: 90
+
+# ---------------------------------------------------------------------------
+# Volume floors — the single biggest lever on noise
+# ---------------------------------------------------------------------------
+# A cell must clear ALL of these to be eligible for an alert. Below the floor it
+# is not "fine", it is untested — and the engine says untested, never "no change".
+floors:
+  min_sessions_current: 300      # sessions in the current window
+  min_sessions_baseline: 1000    # sessions in the baseline window
+  min_conversions_baseline: 25   # a CVR built on 4 orders is not a CVR
+  # NOTE: there is deliberately no revenue floor here any more. Whether a cell is
+  # big enough to be worth a notification is a business preference, not a
+  # statistical one, and it lives in `notification` below. Everything that clears
+  # the volume floors is evaluated and reported regardless of size.
+
+# ---------------------------------------------------------------------------
+# Statistics
+# ---------------------------------------------------------------------------
+stats:
+  # False discovery rate for the Benjamini-Hochberg correction across all cells
+  # tested in a run. 0.10 = roughly 1 in 10 surviving findings is expected noise.
+  # Tighten to 0.05 if the team is losing trust; loosen to 0.20 only while tuning.
+  fdr_q: 0.10
+
+  # A move can be significant and still not matter. Both gates apply.
+  min_relative_change: 0.10      # 10% relative CVR change
+  min_absolute_change_pp: 0.15   # and at least 0.15 percentage points
+
+  # If mix shift explains more than this share of a move, the finding is
+  # reclassified from "CVR changed" to "mix shifted" and reported differently.
+  mix_dominance_threshold: 0.60
+
+# ---------------------------------------------------------------------------
+# Hierarchical scan — how deep to drill
+# ---------------------------------------------------------------------------
+scan:
+  # Level 2+ cells are only tested if their parent margin moved, or if the cell
+  # itself is above this share of site revenue. Keeps the comparison count sane.
+  drill_revenue_share: 0.01      # 1% of site revenue
+  max_depth: 3                   # LP x source x campaign
+  top_n_findings: 20             # hard cap on what reaches the model
+
+# ---------------------------------------------------------------------------
+# Landing page handling
+# ---------------------------------------------------------------------------
+landing_pages:
+  # Query params that MEAN something and must stay part of the page identity.
+  # Everything else is reported as noise, never silently stripped.
+  keep_params: ["variant", "lang", "step", "tab"]
+
+  # Params known to be tracking-only. Listed here purely so the hygiene report
+  # can say "these are safe to drop" rather than asking about each one.
+  known_tracking_params:
+    ["gclid", "fbclid", "ttclid", "msclkid", "wbraid", "gbraid", "_ga",
+     "utm_source", "utm_medium", "utm_campaign", "utm_content", "utm_term",
+     "irclickid", "epik", "twclid", "li_fat_id", "srsltid"]
+
+# ---------------------------------------------------------------------------
+# Source grouping — the ONLY place aliases may be combined
+# ---------------------------------------------------------------------------
+# The engine never infers these. A human writes them after reading the hygiene
+# report. Anything not listed stays split, and stays split loudly.
+source_groups: {}
+#   meta:
+#     - "facebook"
+#     - "fb"
+#     - "Facebook_Ads"
+#     - "ig"
+#   klaviyo:
+#     - "klaviyo"
+#     - "Klaviyo"
+#     - "email"        # only if you have actually confirmed email == klaviyo here
+
+# Sources the team knows about and has deliberately accepted as-is. Suppresses
+# the "unrecognised source" hygiene finding without merging anything.
+acknowledged_sources: []
+
+# ---------------------------------------------------------------------------
+# Known events — context the engine cannot infer and must not guess at
+# ---------------------------------------------------------------------------
+# Dated events that legitimately move CVR. The engine excludes these ranges from
+# baselines and annotates any finding that overlaps them.
+known_events: []
+#   - name: "Site migration to new theme"
+#     start: "2026-07-14"
+#     end: "2026-07-16"
+#     expect: "CVR disruption across all LPs"
+#   - name: "Summer sale"
+#     start: "2026-06-01"
+#     end: "2026-06-08"
+#     expect: "CVR up, AOV down"
+
+# ---------------------------------------------------------------------------
+# Business rules the engine cannot know
+# ---------------------------------------------------------------------------
+business:
+  # Markets the brand actually ships to. Traffic from anywhere else is reported
+  # as a separate class, not as a conversion-rate problem. Empty = ship anywhere.
+  shippable_countries: []
+
+  # Pages that are not supposed to convert. Excluded from CVR alerting, still
+  # tracked for traffic anomalies. Blog, careers, support, etc.
+  non_converting_paths: ["/blogs/", "/pages/careers", "/pages/support", "/policies/"]
+
+# ---------------------------------------------------------------------------
+# Output
+# ---------------------------------------------------------------------------
+output:
+  # "operator"  = full slicing, evidence, method notes
+  # "exec"      = the one number and the one thing that broke
+  # "both"      = exec line on top, operator detail below   <- default
+  view: "both"
+
+# ---------------------------------------------------------------------------
+# Notification policy -- what is worth interrupting someone for
+# ---------------------------------------------------------------------------
+# This does NOT affect the analysis. Every cell above the volume floors is
+# evaluated identically and every finding appears in the report, whatever its
+# size. This block decides only which findings get pushed.
+#
+# The two are separated on purpose. Whether something is TRUE is a statistical
+# question with one right answer. Whether it deserves a push is a preference that
+# belongs to the brand, changes by season, and differs between an in-house team and
+# an agency watching twelve accounts. Fold the second into the first and a small
+# market that is genuinely collapsing stops appearing anywhere at all.
+notification:
+  notify:
+    min_revenue_at_stake: 5000   # absolute dollars in the current window
+    min_revenue_share: 0.02      # and share of total current-window revenue
+    require_both: true           # true = the higher bar of the two must be cleared
+  flag:
+    min_revenue_at_stake: 250    # below notify, above this: in the report, not pushed
+  # Anything below the flag bar is tiered `context` -- still recorded, not surfaced.
+
+  # These bypass the tiers entirely. A broken conversion tag is not a small finding
+  # just because the week happened to be quiet, and a restatement invalidates work
+  # already sent.
+  always_notify:
+    - possible_tracking_break
+    - data_restated
+    - landing_page_disappeared
+    - cardinality_overflow
+
+# ---------------------------------------------------------------------------
+# Scheduling
+# ---------------------------------------------------------------------------
+# There is deliberately no lag or freshness setting. Schedule the run for a time
+# when this brand's data has settled -- most teams know theirs -- and refresh the
+# artifact on demand whenever you want a live read.
+#
+# Two things happen automatically, and neither needs configuring:
+#   - a day whose traffic looks structurally incomplete (a spike in unresolved
+#     sources, which is what a mid-write export looks like) is dropped, with one
+#     line saying so
+#   - if a day you already saw has changed since the last run, it says which and
+#     by how much
+#
+# `settles_by` is the brand's own observation of when yesterday's data stops moving
+# -- most analytics teams know theirs. It is used for exactly two things: recommending
+# a schedule during setup, and warning if a run fires before it. It never changes how
+# anything is calculated. It matters for a daily cadence and barely at all weekly or
+# monthly.
+schedule:
+  settles_by: "12:00"          # local time, in `timezone` above
+  cadence: "daily"             # daily | weekly | monthly
+  reread_trailing_days: 14     # how far back to re-read so changed numbers stay visible

@@ -1,0 +1,216 @@
+=== 1. Client audit with competitor benchmark (Markdown DRAFT) ===
+> **DRAFT for account-lead review.** Prepared for Harbor & Vine. Not sent to the client. Check every finding before sharing.
+
+# AI Search Readiness (GEO) Audit: Harbor & Vine
+
+- Site: https://harborandvine.example/
+- Audit date: 2026-01-15
+- Fetch mode: offline
+- Pages analysed: 4 of 5 requested
+  - https://harborandvine.example/ (HTTP 200)
+  - https://harborandvine.example/about (HTTP 200)
+  - https://harborandvine.example/faq (HTTP 200)
+  - https://harborandvine.example/collections/linen (HTTP 200)
+  - https://harborandvine.example/contact (HTTP 404)
+
+## Summary
+
+**GEO readiness score: 59/100 (Poor)** - a heuristic readiness score, not a measured AI ranking.
+
+| Area | Score | Weight |
+|---|---|---|
+| Content citability | 53/100 | 30% |
+| AI crawler access | 90/100 | 25% |
+| Structured data | 40/100 | 20% |
+| Technical / on-page | 85/100 | 15% |
+| llms.txt | 0/100 | 10% |
+
+Issues found: 0 critical, 3 high, 2 medium, 4 low.
+
+## Prioritized fix list
+
+Effort: S = under an hour, M = a day or less, L = a project.
+
+| # | Priority | Area | Finding | Recommended fix | Effort |
+|---|---|---|---|---|---|
+| 1 | High | AI crawler access | AI search/answer crawlers blocked site-wide: PerplexityBot. | Allow these user agents in robots.txt unless the client has decided to opt out of AI answers. | S |
+| 2 | High | Structured data | 1 JSON-LD block(s) fail to parse. | Fix the JSON syntax; invalid blocks are ignored entirely. | S |
+| 3 | High | Structured data | No Organization (or LocalBusiness) entity in structured data. | Add an Organization block with name, url, logo and sameAs (draft in Appendix B). | S |
+| 4 | Medium | Structured data | Product is missing brand on 1 page(s), e.g. https://harborandvine.example/collections/linen. | Fill in the missing properties. | S |
+| 5 | Medium | Technical / on-page | Linked pages did not load: https://harborandvine.example/contact (HTTP 404). | Fix or remove the broken links; AI crawlers and users hit the same dead ends. | S |
+| 6 | Low | Technical / on-page | Homepage has no canonical link. | Add <link rel="canonical">. | S |
+| 7 | Low | Technical / on-page | Only 50% of 2 images have alt text. | Add descriptive alt text to content images. | M |
+| 8 | Low | Technical / on-page | Homepage is missing og:title or og:description. | Add Open Graph tags. | S |
+| 9 | Low | llms.txt | No /llms.txt file. | Optional, low-cost: publish the draft in Appendix A. Engine support for llms.txt is not confirmed. | S |
+
+## Competitor benchmark
+
+Same checks, homepage-led sample, same day. Heuristic scores only.
+
+| Site | Overall | Content citability | AI crawler access | Structured data | Technical / on-page | llms.txt |
+|---|---|---|---|---|---|---|
+| Harbor & Vine (client) | 59/100 | 53/100 | 90/100 | 40/100 | 85/100 | 0/100 |
+| https://tidewater-goods.example/ | 88/100 | 74/100 | 100/100 | 80/100 | 100/100 | 95/100 |
+| https://saltmarsh-co.example/ | 31/100 | 0/100 | 100/100 | 0/100 | 40/100 | 0/100 |
+
+Where a competitor leads:
+
+- Content citability: https://tidewater-goods.example/ scores 74 vs 53 for Harbor & Vine.
+- AI crawler access: https://tidewater-goods.example/ scores 100 vs 90 for Harbor & Vine.
+- Structured data: https://tidewater-goods.example/ scores 80 vs 40 for Harbor & Vine.
+- Technical / on-page: https://tidewater-goods.example/ scores 100 vs 85 for Harbor & Vine.
+- llms.txt: https://tidewater-goods.example/ scores 95 vs 0 for Harbor & Vine.
+
+## Details
+
+### AI crawler access (robots.txt)
+
+robots.txt: present
+
+| Crawler | Operator | Used for | Type | Status | Rule |
+|---|---|---|---|---|---|
+| Googlebot | Google | Google Search index; AI Overviews and AI Mode draw on it | Search index | allowed | wildcard |
+| Bingbot | Microsoft | Bing index; Copilot and several AI assistants draw on it | Search index | allowed | wildcard |
+| OAI-SearchBot | OpenAI | ChatGPT search results | AI search / answers | allowed | wildcard |
+| ChatGPT-User | OpenAI | Pages a ChatGPT user asks it to open | AI search / answers | allowed | wildcard |
+| Claude-SearchBot | Anthropic | Claude search results | AI search / answers | allowed | wildcard |
+| Claude-User | Anthropic | Pages a Claude user asks it to open | AI search / answers | allowed | wildcard |
+| PerplexityBot | Perplexity | Perplexity search index | AI search / answers | blocked | explicit |
+| Perplexity-User | Perplexity | Pages a Perplexity user asks it to open | AI search / answers | allowed | wildcard |
+| GPTBot | OpenAI | OpenAI model training | Training / model use | blocked | explicit |
+| ClaudeBot | Anthropic | Anthropic model training | Training / model use | allowed | wildcard |
+| Google-Extended | Google | Gemini training/grounding use (does not affect Google Search) | Training / model use | allowed | wildcard |
+| Applebot-Extended | Apple | Apple AI model training | Training / model use | allowed | wildcard |
+| Meta-ExternalAgent | Meta | Meta AI model training | Training / model use | allowed | wildcard |
+| CCBot | Common Crawl | Open web dataset widely used for training | Training / model use | blocked | explicit |
+| Amazonbot | Amazon | Amazon AI and Alexa features | Training / model use | allowed | wildcard |
+| Bytespider | ByteDance | ByteDance AI products | Training / model use | allowed | wildcard |
+
+Training crawlers are not scored: blocking them is a policy choice for the client and does not remove the site from AI search results. Currently blocked: GPTBot, CCBot.
+
+### Content citability
+
+6 passage(s) scored; average 52.7/100; 0 in the 134-167 word range. Grades: A 0, B 1, C 3, D 1, F 1.
+
+Strongest passages:
+
+- 76/100 (B) "Why linen?" on https://harborandvine.example/ - 115 words: Linen is a natural fabric woven from the fibres of the flax plant. Harbor & Vine sheets use 100% European flax, certified by Masters of Linen, and are stonewashed for...
+- 58/100 (C) "Linen bedding" on https://harborandvine.example/collections/linen - 46 words: The Oat Linen Sheet Set is a four-piece set of stonewashed European flax linen: one flat sheet, one fitted sheet with 16 inch pockets, and two standard pillowcases. Each set...
+- 57/100 (C) "How do I wash linen sheets?" on https://harborandvine.example/faq - 60 words: Linen sheets are machine washable. Harbor & Vine recommends a cold, gentle cycle with a mild liquid detergent, then tumble drying on low heat or line drying. Avoid bleach and...
+
+Weakest passages (rewrite first):
+
+- 30/100 (F) "Linen bedding that gets softer every wash" on https://harborandvine.example/ - 24 words: Welcome to our little corner of the internet. We think you are going to love it here, and we hope it feels like home.
+- 40/100 (D) "Our story" on https://harborandvine.example/about - 55 words: It started with a trip. We fell in love with it there, and they showed us how it was done, which changed everything for us and for them too. Since...
+- 55/100 (C) "How long does shipping take?" on https://harborandvine.example/faq - 28 words: Orders ship from Portland, Maine within 2 business days. Standard delivery takes 3 to 5 business days in the continental United States, and orders over $150 ship free.
+
+### Structured data
+
+JSON-LD blocks: 4 (1 invalid). Microdata: yes. RDFa: no.
+
+- FAQPage: https://harborandvine.example/faq
+- Product: https://harborandvine.example/collections/linen
+- WebSite: https://harborandvine.example/
+
+### llms.txt
+
+/llms.txt: missing; /llms-full.txt: missing.
+
+### Technical / on-page (homepage)
+
+- Title: Harbor & Vine | Stonewashed Linen Bedding
+- Meta description: Harbor & Vine makes stonewashed European flax linen sheets, duvet covers and throws, shipped from Portland, Maine.
+- Words in raw HTML: 169; H1 count: 1; images with alt text: 50% of 2
+- server rendered text: pass
+- title: pass
+- meta description: pass
+- canonical: FAIL
+- single h1: pass
+- html lang: pass
+- indexable and snippetable: pass
+- open graph: FAIL
+
+## Appendix A: draft llms.txt
+
+Generated from homepage links. Replace every TODO before publishing at /llms.txt.
+Left out because they did not load during this audit: https://harborandvine.example/contact (HTTP 404). Links the audit did not sample were not checked; open each one before publishing.
+
+```markdown
+# Harbor & Vine
+
+> Harbor & Vine makes stonewashed European flax linen sheets, duvet covers and throws, shipped from Portland, Maine.
+
+## Products & Services
+
+- [Linen bedding](https://harborandvine.example/collections/linen): TODO one-line description
+
+## Company
+
+- [Our story](https://harborandvine.example/about): TODO one-line description
+
+## Support
+
+- [FAQ](https://harborandvine.example/faq): TODO one-line description
+
+## Contact
+
+- [Website](https://harborandvine.example/): TODO add the public contact route
+```
+
+## Appendix B: draft Organization JSON-LD
+
+Place in a <script type="application/ld+json"> tag site-wide. Replace every TODO; sameAs was prefilled from profile links found on the site.
+
+```json
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": "https://harborandvine.example/#organization",
+  "name": "Harbor & Vine",
+  "url": "https://harborandvine.example/",
+  "logo": "https://harborandvine.example/TODO-logo.png",
+  "description": "Harbor & Vine makes stonewashed European flax linen sheets, duvet covers and throws, shipped from Portland, Maine.",
+  "sameAs": [
+    "https://www.instagram.com/harborandvine.example"
+  ]
+}
+```
+
+## Method and limits
+
+- Scores are heuristics from the page HTML, robots.txt and llms.txt. They are not rankings, citation counts or traffic from ChatGPT, Perplexity, Gemini, Claude or Google AI features.
+- Crawler access is inferred from robots.txt only. It shows what the site asks crawlers to do; firewalls, bot-management tools (e.g. CDN bot blocking) and crawler behaviour are not tested.
+- Only the raw HTML is analysed. Content injected by JavaScript is not seen, which is also true for most AI crawlers.
+- A sample of up to 5 page(s) per site was analysed, not the whole site.
+- Brand authority, third-party mentions, reviews and E-E-A-T are not measured by this audit.
+- llms.txt is a community proposal; whether a given AI engine reads it is not confirmed.
+
+
+=== 2. Single saved page: --url + --html-file + --robots-file + --llms-file ===
+## Summary
+
+**GEO readiness score: 88/100 (Good)** - a heuristic readiness score, not a measured AI ranking.
+
+| Area | Score | Weight |
+|---|---|---|
+| Content citability | 74/100 | 30% |
+| AI crawler access | 100/100 | 25% |
+| Structured data | 80/100 | 20% |
+| Technical / on-page | 100/100 | 15% |
+| llms.txt | 95/100 | 10% |
+
+Issues found: 0 critical, 0 high, 1 medium, 0 low.
+
+=== 3. JSON output (scores only) ===
+draft: True
+overall: 59 Poor
+  citability: 53
+  crawler_access: 90
+  llms_txt: 0
+  structured_data: 40
+  technical: 85
+issues: 9
+
+=== 4. Client profile without a website field (expected error, exit 2) ===
+error: Client 'No Website Co' has no "website" field in examples/clients/no-website-co/client.json. Add "website": "https://..." to that file and rerun.
+exit code: 2

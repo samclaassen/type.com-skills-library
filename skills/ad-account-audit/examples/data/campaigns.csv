@@ -1,0 +1,10 @@
+campaign_name,status,channel,daily_budget,spend,impressions,clicks,conversions,conversion_value
+AB_US_Brand_Search,ENABLED,search,60,1113,96000,4800,118,14160
+AB_US_NonBrand_Search,ENABLED,search,200,4410,412000,3100,62,7440
+AB_US_Shopping_Core,ENABLED,shopping,250,3200,540000,5900,74,9620
+AB_CA_NonBrand_Search,ENABLED,search,80,2520,188000,2050,19,2280
+AB_US_PMax_AllProducts,ENABLED,pmax,150,3150,610000,4200,0,0
+AB_US_Retargeting_Display,ENABLED,display,50,1050,880000,2600,21,2520
+AB_US_YouTube_Awareness,ENABLED,video,100,120,41000,190,0,0
+Summer Promo - Display,ENABLED,display,40,780,320000,1400,3,210
+AB_US_Legacy_Remarketing,PAUSED,display,0,240,90000,410,4,380

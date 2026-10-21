@@ -1,0 +1,159 @@
+{
+  "_note": "FICTIONAL sample. People, quotes and the notes.granola.ai sample-* links are made up for illustration. The legacy suggested ratings deliberately demonstrate the Awaiting interviewer rating migration path; an agent must not generate or confirm a rating.",
+  "schema_version": 1,
+  "mode": "single",
+  "role_id": "finance-ops-analyst",
+  "candidate": {
+    "ref": "cand-0142",
+    "display_name": "Jordan R."
+  },
+  "sources": {
+    "notes": {
+      "provider": "granola",
+      "status": "ok",
+      "detail": null
+    },
+    "transcript": {
+      "provider": "granola",
+      "status": "ok",
+      "detail": null
+    }
+  },
+  "interviews": [
+    {
+      "interview_id": "granola:sample-hm-0142",
+      "meeting_id": "sample-hm-0142",
+      "url": "https://notes.granola.ai/d/sample-hm-0142",
+      "title": "Jordan R. / Amara O. - Finance Ops Analyst (HM)",
+      "date": "2026-09-29",
+      "stage_id": "hiring-manager",
+      "interviewer": {
+        "name": "Amara O.",
+        "role": "Hiring manager"
+      },
+      "recording_disclosed": true,
+      "notes_status": "ok",
+      "transcript_status": "ok",
+      "questions_asked": [
+        "hm-1",
+        "hm-2",
+        "hm-4"
+      ],
+      "evidence": [
+        {
+          "competency": "reconciliation",
+          "kind": "quote",
+          "evidence_kind": "behaviour_example",
+          "speaker": "candidate",
+          "text": "The bank rec was off by about four thousand dollars, and I traced it to a vendor payment that had been keyed twice after a remittance change.",
+          "timestamp": null,
+          "url": "https://notes.granola.ai/d/sample-hm-0142"
+        },
+        {
+          "competency": "reconciliation",
+          "kind": "quote",
+          "evidence_kind": "behaviour_example",
+          "speaker": "candidate",
+          "text": "After that I added a duplicate-payment check to the weekly AP run, and we haven't had a duplicate since March.",
+          "timestamp": null,
+          "url": "https://notes.granola.ai/d/sample-hm-0142"
+        },
+        {
+          "competency": "reconciliation",
+          "kind": "note",
+          "evidence_kind": "planned_question_answer",
+          "text": "Clear tie-out steps: bank export, open items, then subledger.",
+          "timestamp": null,
+          "url": "https://notes.granola.ai/d/sample-hm-0142"
+        },
+        {
+          "competency": "collaboration",
+          "kind": "quote",
+          "evidence_kind": "behaviour_example",
+          "speaker": "candidate",
+          "text": "My controller said my close notes were hard to follow, so I rewrote them as a checklist and walked the team through it.",
+          "timestamp": null,
+          "url": "https://notes.granola.ai/d/sample-hm-0142"
+        },
+        {
+          "competency": "collaboration",
+          "kind": "quote",
+          "evidence_kind": "behaviour_example",
+          "speaker": "candidate",
+          "text": "I had to leave at five for daycare pickup, so I set up handoff notes so the team could finish the tie-out.",
+          "timestamp": null,
+          "url": "https://notes.granola.ai/d/sample-hm-0142"
+        }
+      ],
+      "scores": [
+        {
+          "competency": "reconciliation",
+          "score": 4,
+          "status": "suggested",
+          "rationale": "Found and cleared a specific difference (duplicate vendor payment) and added a control that stopped repeats, with a stated result (none since March). Matches anchor 4.",
+          "observation_ids": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "competency": "collaboration",
+          "score": 2,
+          "status": "suggested",
+          "rationale": "Acted on feedback by rewriting close notes as a checklist and sharing it. No example yet of helping a teammate meet a deadline, which anchor 3 needs.",
+          "observation_ids": [
+            4
+          ]
+        }
+      ],
+      "gaps": [
+        {
+          "competency": "collaboration",
+          "note": "Ask for an example of helping a teammate hit a deadline."
+        }
+      ],
+      "concerns": [
+        {
+          "topic": "pregnancy_family",
+          "timestamp": null,
+          "url": "https://notes.granola.ai/d/sample-hm-0142"
+        }
+      ],
+      "observations": [
+        {
+          "id": 1,
+          "competency": "reconciliation",
+          "source_index": 0,
+          "action": "reconcile",
+          "object": "bank-reconciliation",
+          "result": "corrected"
+        },
+        {
+          "id": 2,
+          "competency": "reconciliation",
+          "source_index": 1,
+          "action": "implement",
+          "object": "reconciliation-control",
+          "result": "validated"
+        },
+        {
+          "id": 3,
+          "competency": "reconciliation",
+          "source_index": 2,
+          "action": "reconcile",
+          "object": "bank-reconciliation",
+          "result": "corrected"
+        },
+        {
+          "id": 4,
+          "competency": "collaboration",
+          "source_index": 3,
+          "action": "revise",
+          "object": "feedback-plan",
+          "result": "documented"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+# Retainer scope and margin — September 2026
+
+5 clients | $39,000 in fees | 317 of 295 contracted hours delivered (+7.5%) | blended margin 52.4% against a 55.0% target
+
+## Portfolio
+
+| Client | Fee | Scoped h | Delivered h | Var | Effective rate | Cost | Margin | Margin % | Flags |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | --- |
+| Beacon Street Dental | $4,500 | 40 | 61 | +21 | $73.77 | $3,691 | $809 | 18.0% | SCOPE CREEP, MARGIN, RATE, UNSCOPED WORK |
+| Cobalt Freight Systems | $7,500 | 50 | 52 | +2 | $144.23 | $3,082 | $4,418 | 58.9% | — |
+| Halcyon Robotics | $9,000 | 60 | 78 | +18 | $115.38 | $4,668 | $4,332 | 48.1% | SCOPE CREEP, MARGIN, RATE, UNSCOPED WORK |
+| Kestrel Outdoor Co. | $12,000 | 90 | 86 | -4 | $139.53 | $4,872 | $7,128 | 59.4% | — |
+| Marlow & Finch | $6,000 | 55 | 40 | -15 | $150.00 | $2,266 | $3,734 | 62.2% | UNDER-DELIVERED |
+| **Portfolio** | **$39,000** | **295** | **317** | **+22** | **$123.03** | **$18,579** | **$20,421** | **52.4%** | |
+
+## Scope variance detail
+
+### Beacon Street Dental
+
+| Deliverable | Scoped qty | Delivered qty | Scoped h | Actual h | Var |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| Landing page test | 1 | 2 | 8 | 8 | 0 |
+| Monthly report | 1 | 2 | 4 | 13 | +9 |
+| Paid search management | 1 | 1 | 14 | 20 | +6 |
+| Social content calendar | 1 | 1 | 14 | 10 | -4 |
+| Website copy edits (out of scope) | — | 3 | — | 10 | +10 |
+
+- Delivered 61h against 40h contracted (+52.5%); the extra 21h cost $1,271 to deliver and was not billed.
+- 'Landing page test': 2 delivered against 1 contracted, using 8h versus 8h scoped.
+- 'Monthly report': 2 delivered against 1 contracted, using 13h versus 4h scoped.
+- 'Website copy edits' is not in the contracted scope at all: 10h, $710 of delivery cost.
+- Margin 18.0% is below the 55.0% target.
+- Effective rate $73.77/h is 34.4% below the contracted $112.50/h.
+
+### Halcyon Robotics
+
+| Deliverable | Scoped qty | Delivered qty | Scoped h | Actual h | Var |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| ABM list build | 1 | 1 | 21 | 24 | +3 |
+| Demand gen management | 1 | 1 | 22 | 22 | 0 |
+| Monthly report | 1 | 1 | 5 | 4 | -1 |
+| Sales enablement deck (out of scope) | — | 2 | — | 12 | +12 |
+| Webinar promotion | 1 | 2 | 12 | 16 | +4 |
+
+- Delivered 78h against 60h contracted (+30.0%); the extra 18h cost $1,077 to deliver and was not billed.
+- 'Webinar promotion': 2 delivered against 1 contracted, using 16h versus 12h scoped.
+- 'Sales enablement deck' is not in the contracted scope at all: 12h, $900 of delivery cost.
+- Margin 48.1% is below the 55.0% target.
+- Effective rate $115.38/h is 23.1% below the contracted $150.00/h.
+
+### Marlow & Finch
+
+| Deliverable | Scoped qty | Delivered qty | Scoped h | Actual h | Var |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| Email lifecycle | 4 | 3 | 24 | 16 | -8 |
+| Monthly report | 1 | 1 | 5 | 4 | -1 |
+| Paid social management | 1 | 1 | 20 | 20 | 0 |
+| SEO content brief | 2 | 0 | 6 | 0 | -6 |
+
+- Contracted but not fully delivered: 'Email lifecycle' (3 of 4), 'SEO content brief' (0 of 2).
+
+## Clients to renegotiate
+
+### 1. Beacon Street Dental — $19,992 annualized gap
+
+- Current deal: $4,500 for 40h ($112.50/h contracted). Delivered 61h at an effective $73.77/h.
+- Margin $809 (18.0%) against a 55.0% target — $1,666 per month, $19,992 annualized.
+- Lever 1, hold the line on scope: delivering exactly 40h at this team's $60.51/h blended cost costs $2,420 and returns 46.2% margin — still short of target, so the contract itself is underpriced.
+- Lever 2, reprice at current delivery: $8,300 per month holds a 55.0% margin on 61h.
+- Out of scope this month: 10h ($710 of cost) on Website copy edits. Either add it to the scope at a price or stop doing it.
+- Renewal 2026-12-31; open the conversation by 2026-11-16.
+
+### 2. Halcyon Robotics — $7,416 annualized gap
+
+- Current deal: $9,000 for 60h ($150.00/h contracted). Delivered 78h at an effective $115.38/h.
+- Margin $4,332 (48.1%) against a 55.0% target — $618 per month, $7,416 annualized.
+- Lever 1, hold the line on scope: delivering exactly 60h at this team's $59.85/h blended cost costs $3,591 and returns 60.1% margin — enough on its own, so fix delivery discipline before touching price.
+- Lever 2, reprice at current delivery: $10,400 per month holds a 55.0% margin on 78h.
+- Out of scope this month: 12h ($900 of cost) on Sales enablement deck. Either add it to the scope at a price or stop doing it.
+- Renewal 2026-10-31 is inside the 45-day notice window — this conversation is already late.
+
+## Clients to re-engage
+
+- **Marlow & Finch** delivered 40h against 55h contracted (-27.3%). The margin looks healthy at 62.2%, but the client is paying for work that did not happen — deploy the remaining 15h before renewal on 2027-06-30.
+
+## Healthy retainers
+
+- **Cobalt Freight Systems** — 58.9% margin, 52h delivered against 50h contracted, effective rate $144.23/h.
+- **Kestrel Outdoor Co.** — 59.4% margin, 86h delivered against 90h contracted, effective rate $139.53/h.
+
+## Method and caveats
+
+- Margin is `(retainer fee - delivery cost) / retainer fee`, where delivery cost is logged hours priced at each person's internal cost per hour. It excludes overhead, software, media and pass-through costs, so true account margin is lower.
+- Flags fire at: hours over scope by more than 10.0%, hours under scope by more than 15.0%, margin below 55.0%, or effective rate more than 15.0% below the contracted rate.
+- Only time entries dated inside the reporting month are counted. Work logged late lands in the month it was logged.

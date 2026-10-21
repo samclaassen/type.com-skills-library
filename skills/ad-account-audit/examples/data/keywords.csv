@@ -1,0 +1,15 @@
+campaign_name,ad_group,list_type,keyword,match_type
+AB_US_Brand_Search,Core Brand,targeting,aurora bikeworks,exact
+AB_US_Brand_Search,Core Brand,targeting,aurora bikeworks ebike,phrase
+AB_US_Brand_Search,,negative,jobs,broad
+AB_US_Brand_Search,,negative,warranty claim,phrase
+AB_US_NonBrand_Search,Commuter Ebikes,targeting,electric commuter bike,broad
+AB_US_NonBrand_Search,Commuter Ebikes,targeting,ebike for commuting,phrase
+AB_US_NonBrand_Search,Cargo Ebikes,targeting,cargo ebike,phrase
+AB_US_NonBrand_Search,,negative,free,broad
+AB_US_NonBrand_Search,,negative,used,broad
+AB_US_NonBrand_Search,,negative,repair,phrase
+AB_US_Shopping_Core,All Products,targeting,ebike,broad
+AB_US_Shopping_Core,,negative,cheap,broad
+AB_CA_NonBrand_Search,Commuter Ebikes CA,targeting,electric bike canada,broad
+AB_CA_NonBrand_Search,Commuter Ebikes CA,targeting,velo electrique,broad

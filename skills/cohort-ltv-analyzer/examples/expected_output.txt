@@ -1,0 +1,153 @@
+NOTE: no finance definitions file found (looked for finance/revenue_definitions.json).
+These figures use this skill's own defaults, not finance's definitions:
+  timezone: none; order_date is read as a plain date (its first 10 characters), no conversion
+  currency: one currency assumed; nothing is converted
+  revenue: net_revenue as supplied (after discounts, excluding tax and shipping) minus refund_amount
+  refunds: counted in the month of the original order, not the month they were issued
+  excluded orders: none removed or reported; the export must already exclude cancelled and test orders
+Add finance/revenue_definitions.json or pass --definitions <path> to use finance's definitions.
+
+COHORT LTV AND CAC PAYBACK
+orders: 927   customers: 730   cohorts: 8   order dates: 2026-01-01 to 2026-08-31   as of: 2026-09-01
+================================================================================================
+
+ASSUMPTIONS
+  contribution margin = net_revenue + shipping_charged - refund_amount - COGS
+                        + recovered COGS - shipping_cost - payment_fee - fulfillment_cost
+  COGS: from the cogs column on each order
+  payment fee: 2.9% + 0.30 per order (overridden by a payment_fee column when present)
+  fulfillment: 3.25 per order
+  refunded COGS recovered: 0%
+  Marketing spend is NOT deducted from contribution margin; it is compared as CAC.
+  CAC source: per-cohort marketing spend file
+
+COHORT SUMMARY (horizon M3)
+  cohort    custs  orders  obs       AOV  repeat%   rev/cust   CM/cust      CAC        payback
+  2026-01      60      84   M7     62.86    28.3%      86.16     30.83    21.00             M0
+  2026-02      68     107   M6     63.47    39.7%      94.99     33.97    22.50             M0
+  2026-03      75     109   M5     61.41    34.7%      86.72     27.48    24.00             M1
+  2026-04      82     115   M4     56.93    30.5%      79.04     23.78    26.50   none thru M4
+  2026-05      90     124   M3     60.18    30.0%      82.91     28.11    29.00   none thru M3
+  2026-06     105     122   M2     45.15    15.2%      52.46      9.69    41.00   none thru M2  (immature)
+  2026-07     120     136   M1     43.39    13.3%      49.17      9.23    46.00   none thru M1  (immature)
+  2026-08     130     130   M0     43.97     0.0%      43.97      9.61    49.00   none thru M0  (immature)
+  obs = last fully elapsed month for that cohort. repeat% and per-customer figures are cumulative through M3,
+  or through obs when a cohort is younger than the horizon; those rows are marked immature
+  and are excluded from the reference comparison below.
+
+CUMULATIVE REVENUE PER CUSTOMER
+  cohort     size          M0        M1        M2        M3        M4        M5        M6        M7
+  2026-01      60       61.83     77.15     82.56     86.16     87.15     87.15     88.00     88.00
+  2026-02      68       63.79     78.97     87.98     94.99     97.58     98.47     99.88         .
+  2026-03      75       61.74     76.43     82.62     86.72     88.51     89.25         .         .
+  2026-04      82       54.04     66.07     73.11     79.04     79.84         .         .         .
+  2026-05      90       61.00     71.50     80.35     82.91         .         .         .         .
+  2026-06     105       45.72     50.04     52.46         .         .         .         .         .
+  2026-07     120       42.98     49.17         .         .         .         .         .         .
+  2026-08     130       43.97         .         .         .         .         .         .         .
+  '.' = month has not fully elapsed as of the reporting date.
+
+CUMULATIVE CONTRIBUTION MARGIN PER CUSTOMER
+  cohort     size          M0        M1        M2        M3        M4        M5        M6        M7
+  2026-01      60       21.64     27.54     29.52     30.83     31.15     31.15     31.08     31.08
+  2026-02      68       23.23     28.50     31.35     33.97     34.87     35.11     35.72         .
+  2026-03      75       19.17     24.47     26.39     27.48     28.08     28.28         .         .
+  2026-04      82       15.64     19.56     21.99     23.78     24.06         .         .         .
+  2026-05      90       20.76     23.89     27.18     28.11         .         .         .         .
+  2026-06     105        8.41      9.04      9.69         .         .         .         .         .
+  2026-07     120        7.93      9.23         .         .         .         .         .         .
+  2026-08     130        9.61         .         .         .         .         .         .         .
+  '.' = month has not fully elapsed as of the reporting date.
+
+PAYBACK AGAINST CAC
+  2026-01: CM/cust at M3 30.83 vs CAC 21.00 -> 9.83 (paid back at M0)
+  2026-02: CM/cust at M3 33.97 vs CAC 22.50 -> 11.47 (paid back at M0)
+  2026-03: CM/cust at M3 27.48 vs CAC 24.00 -> 3.48 (paid back at M1)
+  2026-04: CM/cust at M3 23.78 vs CAC 26.50 -> -2.72 (not paid back through M4)
+  2026-05: CM/cust at M3 28.11 vs CAC 29.00 -> -0.89 (not paid back through M3)
+  2026-06: CM/cust at M3 9.69 vs CAC 41.00 -> -31.31 (not paid back through M2)
+  2026-07: CM/cust at M3 9.23 vs CAC 46.00 -> -36.77 (not paid back through M1)
+  2026-08: CM/cust at M3 9.61 vs CAC 49.00 -> -39.40 (not paid back through M0)
+
+COHORTS TRENDING BELOW REFERENCE
+  reference cohort 2026-01: CM/cust at M3 30.83, repeat 28.3%
+  [BELOW] 2026-03: CM/cust 27.48 vs 30.83 (-10.9%), repeat 34.7% vs 28.3%
+  [BELOW] 2026-04: CM/cust 23.78 vs 30.83 (-22.9%), repeat 30.5% vs 28.3%
+
+================================================================================================
+Cohorts are assigned by first order month and never move. Figures at a given month index are only comparable between cohorts that have fully lived through that month.
+
+=== Scenario 2: with finance/revenue_definitions.json (examples/with_definitions) ===
+
+FINANCE DEFINITIONS
+  file: finance/revenue_definitions.json   version: 2026-09-23   owner: finance@example.com
+  timezone: America/New_York; timestamps with a UTC offset are converted before an order or refund is given a month; plain dates are taken as already local
+  currency: USD; CAD converted with finance/fx_rates.csv (daily ECB close) at the order date's rate, refunds included
+  net sales (revenue, rev/cust, AOV): net_revenue (after discounts) - refunds
+    tax: excluded (net_revenue excludes tax)
+    gift card sales: cannot be identified by this skill; net_revenue must already exclude them, as finance's definitions require
+    contribution margin is unchanged by these flags: it is always the cash the order left behind
+  refunds: refund_date basis; a refund lands in the month it was issued (1 landed in a later month than their order)
+  sale date: order_date column, which must be the order_created date
+  not used by this skill: checks, refunds.late_refund_days
+
+COHORT LTV AND CAC PAYBACK
+orders: 10   customers: 7   cohorts: 3   order dates: 2026-01-05 to 2026-05-01   as of: 2026-05-01
+================================================================================================
+
+ASSUMPTIONS
+  contribution margin = net_revenue + shipping_charged - refund_amount - COGS
+                        + recovered COGS - shipping_cost - payment_fee - fulfillment_cost
+  COGS: from the cogs column on each order
+  payment fee: 2.9% + 0.30 per order (overridden by a payment_fee column when present)
+  fulfillment: 3.25 per order
+  refunded COGS recovered: 0%
+  Marketing spend is NOT deducted from contribution margin; it is compared as CAC.
+  CAC source: blended --cac
+
+EXCLUDED ORDERS (finance excluded_orders rules; value = net_revenue in reporting currency)
+  rule                             orders         value
+  tag = test                            1         55.00
+  cancelled                             1         70.00
+  financial_status = voided             1         40.00
+  tag = replacement                     1          0.00
+  zero value                            1          0.00
+  tag = internal                        1         30.00
+  total excluded                        6        195.00
+  An order matching several rules is counted once, under the first: cancelled,
+  financial_status, tag, zero value.
+
+COHORT SUMMARY (horizon M2)
+  cohort    custs  orders  obs       AOV  repeat%   rev/cust   CM/cust      CAC        payback
+  2026-01       3       4   M3     45.50    33.3%      60.67      8.73    20.00    M0, lost M2
+  2026-02       3       4   M2     50.50     0.0%      54.00     17.55    20.00   none thru M2
+  2026-03       1       2   M1     48.50   100.0%      97.00     35.08    20.00             M1  (immature)
+  obs = last fully elapsed month for that cohort. repeat% and per-customer figures are cumulative through M2,
+  or through obs when a cohort is younger than the horizon; those rows are marked immature
+  and are excluded from the reference comparison below.
+
+CUMULATIVE REVENUE PER CUSTOMER
+  cohort     size          M0        M1        M2        M3
+  2026-01       3       70.67     87.33     60.67     60.67
+  2026-02       3       54.00     54.00     54.00         .
+  2026-03       1       45.00     97.00         .         .
+  '.' = month has not fully elapsed as of the reporting date.
+
+CUMULATIVE CONTRIBUTION MARGIN PER CUSTOMER
+  cohort     size          M0        M1        M2        M3
+  2026-01       3       29.23     35.40      8.73      8.73
+  2026-02       3       17.55     17.55     17.55         .
+  2026-03       1       15.64     35.08         .         .
+  '.' = month has not fully elapsed as of the reporting date.
+
+PAYBACK AGAINST CAC
+  2026-01: CM/cust at M2 8.73 vs CAC 20.00 -> -11.27 (paid back at M0, fell back below CAC at M2 and still below at M3)
+  2026-02: CM/cust at M2 17.55 vs CAC 20.00 -> -2.45 (not paid back through M2)
+  2026-03: CM/cust at M2 35.08 vs CAC 20.00 -> 15.08 (paid back at M1)
+
+COHORTS TRENDING BELOW REFERENCE
+  reference cohort 2026-01: CM/cust at M2 8.73, repeat 33.3%
+  No mature cohort is more than 10% below the reference.
+
+================================================================================================
+Cohorts are assigned by first order month and never move. Figures at a given month index are only comparable between cohorts that have fully lived through that month.

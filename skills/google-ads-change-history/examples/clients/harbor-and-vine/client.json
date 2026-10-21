@@ -1,0 +1,11 @@
+{
+  "name": "Harbor & Vine",
+  "website": "https://harborandvine.com",
+  "industry": "dtc",
+  "accounts": {
+    "google_ads_customer_id": "123-456-7890",
+    "google_ads_login_customer_id": "987-654-3210"
+  },
+  "goals": ["Grow non-brand search revenue 20% by Q4"],
+  "notes": "Synthetic example profile."
+}

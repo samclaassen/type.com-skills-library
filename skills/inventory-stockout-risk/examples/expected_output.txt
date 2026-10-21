@@ -1,0 +1,88 @@
+INVENTORY STOCKOUT AND OVERSTOCK RISK
+skus: 18   sales history: 2026-06-18 to 2026-09-15   as of: 2026-09-15
+======================================================================================================================
+
+ASSUMPTIONS
+  velocity = 70% of the trailing 28-day rate + 30% of the trailing 84-day rate, in units per day
+  days of cover = on_hand / velocity; a day with no sales counts as a zero, not a gap
+  order-up-to = velocity x (lead time + 14-day review period) + safety stock
+  safety stock = z(95% service level) = 1.6449 x daily demand sigma x sqrt(lead time)
+  default lead time when no supplier row exists: 30 days
+  overstock threshold: more than 120 days of cover
+
+STOCKOUT RISK, RANKED BY REVENUE EXPOSURE
+  sku           on hand on order  vel/day   trend   cover    stockout  lead  short  rev at risk  status
+  TW-COOLER-25     44.0     60.0      3.9    +21%    11.4  2026-10-12    60   33.0    24,057.00  STOCKOUT BEFORE REPLENISHMENT
+  TW-SHADE-10      26.0      0.0      3.6    +40%     7.3  2026-09-23    60   52.0    23,861.31  STOCKOUT BEFORE REPLENISHMENT
+  TW-KAYAK-PDL     62.0      0.0      6.7     +1%     9.2  2026-09-25    35   25.0    16,591.34  STOCKOUT BEFORE REPLENISHMENT
+  TW-DRYBAG-20    110.0      0.0     12.2    +23%     9.0  2026-09-25    35   25.0    12,780.00  STOCKOUT BEFORE REPLENISHMENT
+  TW-CHAIR-LOW    155.0      0.0      3.9    -10%    40.0  2026-10-25    60   20.0     6,122.50  STOCKOUT BEFORE REPLENISHMENT
+  TW-HAT-BRIM     -12.0      0.0      5.5     -1%    -2.2  2026-09-15    21   21.0     4,139.10  OVERSOLD
+  TW-WAGON-BCH     38.0     24.0      1.1     -6%    33.7  2026-10-19    60   14.0     3,934.20  STOCKOUT BEFORE REPLENISHMENT
+  TW-TOWEL-SND    175.0      0.0     13.8     +7%    12.7  2026-09-28    21    8.0     3,083.20  STOCKOUT BEFORE REPLENISHMENT
+  TW-LANTERN-S     62.0      0.0      4.1     +8%    15.0  2026-10-01    30   14.0     2,541.00  STOCKOUT BEFORE REPLENISHMENT
+  TW-LEASH-SUP     58.0      0.0      2.6     +2%    22.1  2026-10-08    35   12.0     1,545.60  STOCKOUT BEFORE REPLENISHMENT
+  TW-RASHGD-M      96.0      0.0      3.0    -13%    32.2  2026-10-18    21    0.0         0.00  AT RISK
+    TW-COOLER-25: inbound PO of 60.0 landing 2026-09-26 only extends cover to 2026-10-12; a new order lands 2026-11-14
+    TW-SHADE-10: earliest units land 2026-11-14
+    TW-KAYAK-PDL: earliest units land 2026-10-20
+    TW-DRYBAG-20: earliest units land 2026-10-20
+    TW-CHAIR-LOW: earliest units land 2026-11-14
+    TW-HAT-BRIM: negative on hand; the storefront has sold units that do not exist
+    TW-WAGON-BCH: earliest units land 2026-11-02 (inbound PO)
+    TW-TOWEL-SND: earliest units land 2026-10-06
+    TW-LANTERN-S: earliest units land 2026-10-15
+    TW-LEASH-SUP: earliest units land 2026-10-20
+    TW-RASHGD-M: cover runs out inside lead time plus the review period
+  trend = recent-window velocity against the baseline window.
+  short = empty-shelf days before a new order placed today can land; inbound PO units count by quantity and ETA.
+  rev at risk = short days x velocity x unit price, at current selling price and no substitution.
+
+RECOMMENDED REPLENISHMENT
+  (no supplier on file) [-] — lead 30d (default), no MOQ or case pack on file
+    TW-LANTERN-S    137 units    1,883.75 at cost   (order-up-to 198.5, on hand 62.0, on order 0.0)
+    subtotal: 1,883.75
+  Coastal Rigging Ltd [SUP-COASTAL] — lead 35d, MOQ 50, case pack 10
+    TW-DRYBAG-20    530 units    6,572.00 at cost   (order-up-to 631.8, on hand 110.0, on order 0.0)
+    TW-KAYAK-PDL    300 units   11,400.00 at cost   (order-up-to 355.0, on hand 62.0, on order 0.0)
+    TW-LEASH-SUP     90 units    1,278.00 at cost   (order-up-to 145.0, on hand 58.0, on order 0.0)
+    subtotal: 19,250.00
+  Millbrook Textiles [SUP-MILLBROOK] — lead 21d, MOQ 100, case pack 12
+    TW-HAT-BRIM     228 units    2,508.00 at cost   (order-up-to 209.3, on hand -12.0, on order 0.0)
+    TW-RASHGD-M     108 units    1,684.80 at cost   (order-up-to 117.4, on hand 96.0, on order 0.0)
+    TW-TOWEL-SND    348 units    2,366.40 at cost   (order-up-to 512.9, on hand 175.0, on order 0.0)
+    subtotal: 6,559.20
+  Northpine Outdoor Works [SUP-NORTHPINE] — lead 60d, MOQ 25, case pack 5
+    TW-CHAIR-LOW    160 units    4,400.00 at cost   (order-up-to 313.5, on hand 155.0, on order 0.0)
+    TW-COOLER-25    205 units   14,555.00 at cost   (order-up-to 308.7, on hand 44.0, on order 60.0)
+    TW-SHADE-10     265 units   11,660.00 at cost   (order-up-to 287.9, on hand 26.0, on order 0.0)
+    TW-WAGON-BCH     40 units    3,840.00 at cost   (order-up-to 97.3, on hand 38.0, on order 24.0)
+    subtotal: 34,455.00
+  total purchase order value: 62,147.95
+  Quantities are rounded up to the case pack and raised to the MOQ where one exists.
+
+OVERSTOCK AND DEAD STOCK
+  sku           on hand  vel/day    cover   excess     capital  status
+  TW-COOLER-45    210.0      1.3    159.8     52.3    5,646.86  OVERSTOCK
+  TW-FIN-SET      190.0      0.0 no sales    190.0    3,135.00  DEAD STOCK
+  TW-MUG-STL       48.0      0.0 no sales     48.0      355.20  NO DEMAND SIGNAL
+  TW-ANCHOR-SM    420.0      3.2    131.1     35.6      192.09  OVERSTOCK
+  working capital in excess units: 9,329.14 at landed cost
+  excess = on hand minus 120 days of demand; SKUs with no sales show their whole on-hand value.
+
+SUMMARY
+  OVERSOLD                           1 sku(s)
+  STOCKOUT BEFORE REPLENISHMENT      9 sku(s)
+  AT RISK                            1 sku(s)
+  HEALTHY                            3 sku(s)
+  OVERSTOCK                          2 sku(s)
+  DEAD STOCK                         1 sku(s)
+  NO DEMAND SIGNAL                   1 sku(s)
+  revenue at risk over the next lead time: 98,655.25
+  working capital in excess inventory:     9,329.14
+
+DATA QUALITY
+  1 sku(s) appear in the sales history but not the inventory snapshot and were skipped: TW-LEGACY-99
+
+======================================================================================================================
+Velocity is history, not a forecast. Promotions, seasonality, and paid spend changes are not modelled; override velocity-driven calls for any SKU with a known event coming.

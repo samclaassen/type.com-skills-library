@@ -1,0 +1,42 @@
+{
+  "version": 1,
+  "loss_reasons": {
+    "price_value": {"label": "Price or value not justified", "description": "Too expensive for the value they saw, or a cheaper option was good enough."},
+    "budget": {"label": "No budget or budget cut", "description": "Money was not there or was taken away. Use no_decision instead if they simply stopped."},
+    "missing_capability": {"label": "Missing feature or capability", "description": "A specific capability they needed that we lack. Name it in the quote."},
+    "integration_fit": {"label": "Integration or technical fit", "description": "Did not fit their stack, data or workflow."},
+    "security_compliance": {"label": "Security, legal or compliance blocker", "description": "SSO, data residency, a security review, contract terms."},
+    "competitor_strength": {"label": "Competitor was a better fit", "description": "The customer preferred a competitor's product or relationship. Set competitor."},
+    "implementation_effort": {"label": "Implementation effort or time to value", "description": "Rollout looked too slow, too hard or too resource-heavy."},
+    "trust_risk": {"label": "Trust, risk or vendor viability", "description": "Doubts about us as a vendor: references, size, stability, past experience."},
+    "champion_change": {"label": "Champion left or reorganisation", "description": "Our sponsor or champion moved on, or the buying team changed."},
+    "no_decision_status_quo": {"label": "No decision: stayed with the status quo", "description": "They kept what they had (spreadsheets, an incumbent, doing nothing).", "no_decision": true},
+    "no_decision_priority": {"label": "No decision: timing or other priorities", "description": "Paused, deprioritised or pushed to a later period.", "no_decision": true},
+    "no_decision_authority": {"label": "No decision: no sign-off", "description": "Could not get approval from the economic buyer or committee.", "no_decision": true},
+    "other_loss": {"label": "Other loss reason", "description": "A reason that fits nothing above; the quote carries the detail."}
+  },
+  "win_reasons": {
+    "product_fit": {"label": "Solved the core use case", "description": "The product did the main job they bought it for."},
+    "ease_of_use": {"label": "Ease of use", "description": "Simpler to use or adopt than the alternatives."},
+    "time_to_value": {"label": "Fast time to value", "description": "Quick setup or quick results."},
+    "integrations": {"label": "Integrations", "description": "Worked with the tools and data they already have."},
+    "price_value": {"label": "Price or value", "description": "Better price, packaging or ROI case."},
+    "security_compliance": {"label": "Met security or compliance needs", "description": "Passed the review the alternatives did not."},
+    "support_relationship": {"label": "Support and relationship", "description": "Responsiveness, trust in the team, references."},
+    "proof_trial": {"label": "Successful trial or proof of concept", "description": "A pilot, trial or POC proved it."},
+    "champion_exec": {"label": "Strong champion or executive sponsor", "description": "Someone inside drove the purchase."},
+    "other_win": {"label": "Other win reason", "description": "A reason that fits nothing above; the quote carries the detail."}
+  },
+  "objections": {
+    "price_value": {"label": "Price or value", "description": "Pushback on cost or ROI. A negotiation move (asking for a discount while still buying) is still logged here; note it in the quote."},
+    "timing_priority": {"label": "Timing or priority", "description": "Not now, other projects first."},
+    "competitive_comparison": {"label": "Competitive comparison", "description": "Comparing us with a named competitor. Set competitor."},
+    "risk_trust": {"label": "Risk or trust", "description": "Doubts about delivery, references or vendor stability."},
+    "authority": {"label": "Authority or sign-off", "description": "Needs someone else's approval."},
+    "status_quo": {"label": "Status quo is good enough", "description": "Current process or tool works well enough."},
+    "missing_capability": {"label": "Missing feature or capability", "description": "Asked for something we lack."},
+    "security_compliance": {"label": "Security or compliance", "description": "SSO, data residency, security questionnaire, legal terms."},
+    "integration_fit": {"label": "Integration or technical fit", "description": "Concerns about fitting their stack."},
+    "implementation_effort": {"label": "Implementation effort", "description": "Worry about rollout time or resources."}
+  }
+}

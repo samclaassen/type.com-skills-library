@@ -1,0 +1,13 @@
+{
+  "due_soon_days": 7,
+  "stale_days": 21,
+  "business_days": ["mon", "tue", "wed", "thu", "fri"],
+  "holidays": [],
+  "plan_history_days": {"free": 30, "basic": 30},
+  "max_quote_chars": 240,
+  "prune_after_days": 120,
+  "prune_open_after_days": 180,
+  "unreadable_retry_runs": 2,
+  "unreadable_retry_days": 3,
+  "max_runs_logged": 200
+}

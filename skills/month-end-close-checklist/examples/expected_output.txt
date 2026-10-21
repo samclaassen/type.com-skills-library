@@ -1,0 +1,104 @@
+### 1. Close status on business day 5, tie-outs clean
+MONTH-END CLOSE STATUS
+========================================================================
+Period end        : 2026-08-31
+As of             : 2026-09-08 (business day 5 of the close)
+Target close      : business day 8 (2026-09-11)
+Projected close   : business day 11.0 (2026-09-16)
+Variance to target: +3.0 business days (behind target)
+Progress          : 6.5 of 14.0 estimated days complete (46.4%)
+Task counts       : not started 6, in progress 1, BLOCKED 1, complete 8
+
+CRITICAL PATH
+------------------------------------------------------------------------
+id   task                                   owner                 status  rem_days  finish_day
+---  -------------------------------------  ---------------  -----------  --------  ----------
+T10  Accrued expense review and AP cut-off  Tomas Weber          BLOCKED       1.0         6.0
+T11  Intercompany elimination entries       Mei Lin          not started       1.0         7.0
+T12  FX revaluation of foreign balances     Mei Lin          not started       0.5         7.5
+T13  Assemble balance sheet tie-out pack    Diego Alvarez    not started       1.0         8.5
+T14  Flux analysis and variance commentary  Sofia Marchetti  not started       1.0         9.5
+T15  Controller review and sign-off         Aisha Bello      not started       0.5        10.0
+T16  Board reporting pack                   Aisha Bello      not started       1.0        11.0
+
+Next action on the path: T10 Accrued expense review and AP cut-off (Tomas Weber) -- Awaiting August invoice from Halberd Logistics
+
+BLOCKED AND AT-RISK TASKS
+------------------------------------------------------------------------
+id   task                                   owner            status       waiting_on  note
+---  -------------------------------------  ---------------  -----------  ----------  ----------------------------------------------
+T10  Accrued expense review and AP cut-off  Tomas Weber      BLOCKED      -           Awaiting August invoice from Halberd Logistics
+T11  Intercompany elimination entries       Mei Lin          not started  T07, T10    -
+T12  FX revaluation of foreign balances     Mei Lin          not started  T11         -
+T13  Assemble balance sheet tie-out pack    Diego Alvarez    not started  T12         -
+T14  Flux analysis and variance commentary  Sofia Marchetti  not started  T13         -
+T15  Controller review and sign-off         Aisha Bello      not started  T14         -
+T16  Board reporting pack                   Aisha Bello      not started  T15         -
+
+SEQUENCE (dependency order)
+------------------------------------------------------------------------
+#   id   task                                              owner            status                    depends_on  est_days  finish
+--  ---  ------------------------------------------------  ---------------  -----------  -----------------------  --------  ----------
+1   T01  Close AP subledger                                Priya Raman      complete                           -       1.0  2026-09-01
+2   T02  Close AR subledger                                Diego Alvarez    complete                           -       1.0  2026-09-01
+3   T03  Import bank feeds and clear suspense              Priya Raman      complete                         T01       0.5  2026-09-02
+4   T04  Reconcile operating bank account                  Priya Raman      complete                         T03       1.0  2026-09-03
+5   T05  Reconcile payroll bank account                    Priya Raman      complete                         T03       0.5  2026-09-03
+6   T06  Reconcile Stripe payouts to GL                    Diego Alvarez    complete                         T02       1.0  2026-09-03
+7   T07  Revenue cut-off and deferred revenue rollforward  Mei Lin          in progress                      T06       1.5  2026-09-09
+8   T08  Book payroll and bonus accrual                    Sofia Marchetti  complete                         T05       0.5  2026-09-04
+9   T09  Post depreciation and prepaid amortisation        Tomas Weber      complete                           -       1.0  2026-09-02
+10  T10  Accrued expense review and AP cut-off             Tomas Weber      BLOCKED                          T01       1.0  2026-09-09
+11  T11  Intercompany elimination entries                  Mei Lin          not started                 T07, T10       1.0  2026-09-10
+12  T12  FX revaluation of foreign balances                Mei Lin          not started                      T11       0.5  2026-09-11
+13  T13  Assemble balance sheet tie-out pack               Diego Alvarez    not started  T04, T05, T08, T09, T12       1.0  2026-09-14
+14  T14  Flux analysis and variance commentary             Sofia Marchetti  not started                      T13       1.0  2026-09-15
+15  T15  Controller review and sign-off                    Aisha Bello      not started                      T14       0.5  2026-09-15
+16  T16  Board reporting pack                              Aisha Bello      not started                      T15       1.0  2026-09-16
+
+TIE-OUT LOG
+------------------------------------------------------------------------
+account  name                                     gl      evidence  diff  source                         ref                 by               verdict
+-------  -----------------------------  ------------  ------------  ----  -----------------------------  ------------------  ---------------  -------
+1000     Cash - operating               1,284,905.22  1,284,905.22  0.00  Meridian Bank statement        MB-STMT-2026-08     Priya Raman      tied
+1010     Cash - payroll                    96,410.87     96,410.87  0.00  Meridian Bank statement        MB-PAY-2026-08      Priya Raman      tied
+1150     Undeposited Stripe payouts        58,204.11     58,204.11  0.00  Stripe balance report          STRIPE-BAL-2026-08  Diego Alvarez    tied
+1100     Accounts receivable - trade      742,318.40    742,318.40  0.00  AR ageing export               AR-AGE-2026-08      Diego Alvarez    tied
+1300     Prepaid expenses                 112,760.00    112,760.00  0.00  Prepaid amortisation schedule  PREPAID-v14         Tomas Weber      tied
+1500     Fixed assets - net book value    431,092.65    431,092.65  0.00  Fixed asset register           FAR-2026-08         Tomas Weber      tied
+2000     Accounts payable - trade        -389,451.07   -389,451.07  0.00  AP ageing export               AP-AGE-2026-08      Priya Raman      tied
+2100     Accrued payroll and bonus       -127,880.00   -127,880.00  0.00  Payroll accrual workbook       PAY-ACC-2026-08     Sofia Marchetti  tied
+
+Accounts verified : 8 of 8
+GL total          : 2,208,360.18
+Evidence total    : 2,208,360.18 (verified accounts only)
+Tolerance applied : 0.00 per account
+
+VERDICT
+------------------------------------------------------------------------
+All supplied balances tie to evidence within tolerance. Exit status 0.
+exit status: 0
+
+### 2. Same close with an unresolved difference and an unevidenced balance
+TIE-OUT LOG
+------------------------------------------------------------------------
+account  name                        gl      evidence      diff  source                        ref              by           verdict
+-------  ----------------  ------------  ------------  --------  ----------------------------  ---------------  -----------  -----------
+1000     Cash - operating  1,284,905.22  1,283,700.67  1,204.55  Meridian Bank statement       MB-STMT-2026-08  Priya Raman  DIFFERENCE
+1010     Cash - payroll       96,410.87     96,410.87      0.00  Meridian Bank statement       MB-PAY-2026-08   Priya Raman  tied
+2300     Deferred revenue   -908,745.33             -         -  Deferred revenue rollforward  -                -            NO EVIDENCE
+
+Accounts verified : 2 of 3
+GL total          : 472,570.76
+Evidence total    : 1,380,111.54 (verified accounts only)
+Tolerance applied : 0.00 per account
+
+VERDICT
+------------------------------------------------------------------------
+CLOSE DOES NOT TIE. Resolve the accounts marked DIFFERENCE or NO EVIDENCE
+before signing off the close. Exit status 1.
+exit status: 1
+
+### 3. Bad input is rejected loudly
+error: examples/broken_tasks.csv: dependency cycle detected among task_id(s): T01, T02, T03
+exit status: 2

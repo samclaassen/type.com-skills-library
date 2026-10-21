@@ -1,0 +1,36 @@
+{
+  "store": "Fernhill Goods",
+  "timezone": "America/New_York",
+  "tz_label": "ET",
+  "currency_symbol": "$",
+  "utc_offset": "-05:00",
+  "as_of": "2026-11-27 14:00",
+  "quiet_mode": {
+    "enabled": false,
+    "summary_times": [
+      "12:00",
+      "18:00"
+    ]
+  },
+  "thresholds": {
+    "orders_stall_pct": 40,
+    "orders_stall_min_expected": 8,
+    "checkout_drop_pct": 30,
+    "checkout_baseline_hours": 3,
+    "checkout_min_sessions": 20,
+    "aov_drop_pct": 15,
+    "aov_hours": 2,
+    "aov_min_orders": 20,
+    "code_multiple": 10,
+    "code_min_uses": 25,
+    "cover_hours": 6,
+    "resolve_after_hours": 2,
+    "max_alerts": 5,
+    "spend_pace_band_pct": 20,
+    "stale_spend_minutes": 120,
+    "min_pace_share_pct": 10,
+    "pull_back_cut_pct": 20,
+    "max_daily_increase_pct": 30,
+    "max_chars": 1800
+  }
+}

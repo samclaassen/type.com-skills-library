@@ -1,0 +1,7 @@
+{
+  "plan_history_days": {"free": 30, "basic": 30},
+  "max_quote_chars": 280,
+  "max_runs_logged": 104,
+  "max_mentions_kept": 20,
+  "search_max_results": 10
+}

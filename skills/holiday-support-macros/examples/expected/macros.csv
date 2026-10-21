@@ -1,0 +1,148 @@
+name,tags,body
+Holiday 2026 - WISMO: not shipped yet,"holiday-2026,wismo,processing","Hi {{customer_first_name}},
+
+Thanks for checking on order {{order_number}}. Orders placed by 1 pm ET on a business day usually ship the same day, but not during our Black Friday rush: orders placed from Thursday, November 26 to Monday, November 30 ship within 3 business days, and same-day shipping resumes once we're caught up, which we expect by Thursday, December 3. Once yours has shipped, reply here any time and I'll send you the tracking link.
+Our warehouse is closed on Thursday, November 26 and Friday, December 25.
+
+Thanks for your patience!
+{{agent_first_name}}"
+Holiday 2026 - WISMO: BFCM order not shipped yet,"holiday-2026,wismo,bfcm-backlog","Hi {{customer_first_name}},
+
+Thank you for your order {{order_number}}, and for your patience while we work through our Black Friday orders. Orders placed from Thursday, November 26 to Monday, November 30 ship within 3 business days, and we expect to be fully caught up by Thursday, December 3.
+
+Once your order has shipped, reply here any time and I'll send you the tracking link.
+
+Thanks,
+{{agent_first_name}}"
+"Holiday 2026 - WISMO: shipped, in transit","holiday-2026,wismo,in-transit","Hi {{customer_first_name}},
+
+Good news: order {{order_number}} is on its way. You can follow it here: {{tracking_url}}
+
+Carriers are busier than usual this time of year, so tracking can take a little longer to update. If it looks stuck, reply to this email and we'll check with the carrier for you.
+
+Thanks,
+{{agent_first_name}}"
+Holiday 2026 - Shipping: holiday order-by dates,"holiday-2026,shipping-deadline,order-by-dates","Hi {{customer_first_name}},
+
+Here are the last days to order for delivery by Thursday, December 24:
+- Standard: order by Monday, December 14
+- Express: order by Monday, December 21
+These dates hold for most addresses (95% of our customers).
+
+Orders placed by 1 pm ET on a business day usually ship the same day, but not during our Black Friday rush: orders placed from Thursday, November 26 to Monday, November 30 ship within 3 business days, and same-day shipping resumes once we're caught up, which we expect by Thursday, December 3.
+Choose Standard or Express at checkout. If you've already ordered, reply with your order number and I'll check which one you picked.
+
+Thanks,
+{{agent_first_name}}"
+Holiday 2026 - Shipping: only the fastest method is still on time,"holiday-2026,shipping-deadline,last-option","Hi {{customer_first_name}},
+
+The last order date has passed for Standard, but there's still time: choose Express at checkout and order by Monday, December 21 for delivery by Thursday, December 24.
+That date holds for most addresses (95% of our customers).
+Our digital gift cards are emailed right away, or on a date you choose.
+
+Thanks,
+{{agent_first_name}}"
+Holiday 2026 - Shipping: after the last order date,"holiday-2026,shipping-deadline,after-cutoff","Hi {{customer_first_name}},
+
+I'm sorry, the last day to order for delivery by Thursday, December 24 was Monday, December 21. We're still shipping every order, but we can't promise it will get there in time.
+Our digital gift cards are emailed right away, or on a date you choose.
+
+Thanks,
+{{agent_first_name}}"
+Holiday 2026 - Discount: code not working,"holiday-2026,discount-code,code-rules","Hi {{customer_first_name}},
+
+Sorry for the trouble at checkout! Only one discount code can be used per order. Discount codes can't be combined with the BFCM sale (25% off sitewide).
+The sale runs from Thursday, November 26 to Tuesday, December 1.
+The sale price comes off automatically at checkout, so you don't need a code for it.
+Free shipping on orders of $75 or more still applies on top of a code or the sale.
+
+If your total still doesn't look right, reply with a screenshot of your cart and I'll take a look.
+
+Thanks,
+{{agent_first_name}}"
+Holiday 2026 - Discount: item not in the sale,"holiday-2026,discount-code,sale-exclusions","Hi {{customer_first_name}},
+
+Thanks for reaching out! Items in our Gift Cards, New Arrivals and Last Chance collections aren't part of the BFCM sale (25% off sitewide), so the discount doesn't apply to them.
+Only one discount code can be used per order.
+
+Thanks,
+{{agent_first_name}}"
+Holiday 2026 - Order: change or cancel,"holiday-2026,cancel-modify,edit-window","Hi {{customer_first_name}},
+
+We can change or cancel an order within 1 hour of it being placed.
+Reply to your order confirmation email or message us with your order number.
+Once that time has passed, we can't change or cancel it.
+Once it arrives, you can return eligible items: start at fernhillgoods.com/returns.
+Items from Last Chance and Gift Cards are final sale.
+
+Thanks,
+{{agent_first_name}}"
+Holiday 2026 - Order: change the shipping address,"holiday-2026,address-change,address","Hi {{customer_first_name}},
+
+We can update the shipping address on order {{order_number}} until your order ships. Reply with the full new address, including any apartment or unit number, and I'll confirm once it's changed.
+Once a package has shipped, we can't redirect it.
+
+Thanks,
+{{agent_first_name}}"
+Holiday 2026 - Returns: holiday window,"holiday-2026,return-exchange,holiday-window","Hi {{customer_first_name}},
+
+Good news: orders placed from Sunday, November 1 to Thursday, December 24 can be returned until Sunday, January 31, 2027, so there's no rush. Other orders can be returned within 30 days of delivery.
+Items need to be unused and in the original packaging.
+Start your return at fernhillgoods.com/returns.
+Return shipping is free.
+Refunds go back to your original payment method.
+Want something else instead? We're happy to exchange it.
+Items from Last Chance and Gift Cards are final sale.
+
+Thanks,
+{{agent_first_name}}"
+Holiday 2026 - Returns: returning a gift,"holiday-2026,return-exchange,gift-return","Hi {{customer_first_name}},
+
+Received a gift from us? You can return it for store credit with the order number from the packing slip, and we won't tell the sender.
+Gifts ordered from Sunday, November 1 to Thursday, December 24 can be returned until Sunday, January 31, 2027.
+Start the return at fernhillgoods.com/returns.
+
+Thanks,
+{{agent_first_name}}"
+Holiday 2026 - Damaged or defective item,"holiday-2026,damaged-defective,damaged","Hi {{customer_first_name}},
+
+I'm so sorry your order arrived damaged.
+Could you reply with a photo of the item and the box it came in?
+We'll send you a free replacement, or a full refund if it's sold out. Please let us know about any damage within 14 days of delivery.
+If that's worth more than $150, the support lead approves it first, and I'll let you know as soon as they have.
+You don't need to send the damaged item back.
+
+Thanks,
+{{agent_first_name}}"
+Holiday 2026 - Gift options,"holiday-2026,gift-options,gifting","Hi {{customer_first_name}},
+
+Happy to help with your gift!
+You can add a gift message to your order.
+We can include a gift receipt.
+We don't offer gift wrapping.
+You can ship to a different address from your billing address: just enter the recipient's address at checkout.
+Our digital gift cards are emailed right away, or on a date you choose.
+
+Thanks,
+{{agent_first_name}}"
+Holiday 2026 - Out of stock: when is it back?,"holiday-2026,out-of-stock,restock","Hi {{customer_first_name}},
+
+Thanks for your interest! When an item sells out, we can't take orders for it until it's back in stock.
+You can sign up for a restock alert, and we'll let you know when it's back.
+
+Thanks,
+{{agent_first_name}}"
+Holiday 2026 - Holiday support hours,"holiday-2026,general,support-hours","Hi {{customer_first_name}},
+
+Thanks for your message! Our support team is available Monday to Friday, 9 am to 5 pm ET, and we reply within 24 hours.
+From November 28 to December 20 we also answer on weekends, 10 am to 2 pm ET.
+We're closed on Thursday, November 26, Friday, December 25 and Friday, January 1, 2027.
+
+Thanks,
+{{agent_first_name}}"
+Holiday 2026 - Shipping: international orders,"holiday-2026,general,international","Hi {{customer_first_name}},
+
+Thanks for asking! We ship to the United States only, including APO/FPO addresses.
+
+Thanks,
+{{agent_first_name}}"

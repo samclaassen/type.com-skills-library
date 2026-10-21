@@ -1,0 +1,19 @@
+*BFCM Live Pulse · Fernhill Goods · Black Friday, Fri Nov 27 · 2:00 pm ET*
+*ACTION NEEDED*: 1 critical, 2 warnings, 1 resolved. Pacing to *$31,128*, 0.8% under base $31,393 (low $26,684, high $34,533). MER to 1:20 pm *4.32*: *HOLD* (noon check passed; next check 6 pm).
+
+*Alerts*
+1. *CRITICAL* MAYA20: 40 uses in the 1 pm hour (40 of 43 orders) vs its usual 0.6/hour (67x); 55 uses today. Likely leaked. Next: pause it or set a usage limit and once per customer now; check it can't combine with the sale (BFCM Offer & Discount Config QA).
+2. *WARNING* AOV $73.09 over noon–2 pm vs $88.27 last year, same hours (-17.2%). MAYA20 was on 52 of these 70 orders. Next: check whether MAYA20 stacks with the sale (BFCM Offer & Discount Config QA).
+3. *WARNING* Linen Apron: 46 left, 30 sold in the last 3 hours (10/hour), 4.6 hours of cover (out about 6:35 pm). Next: pull it from ads and emails or accept the sell-out; reorder with Inventory Stockout Risk.
+4. *RESOLVED* Checkout conversion fell to 37.1% in the 11 am hour (61.2% the 3 hours before); back to 64.3% at noon and 60.6% at 1 pm.
+
+*Numbers to 2:00 pm* (14 of 24 hours; LY = Fri Nov 28, 2025, same hours)
+```
+Net sales $14,344 · LY $13,050 (+9.9%)
+Orders    175 · LY 148 (+18.2%) · AOV $81.97 · LY $88.18 (-7.0%)
+Spend     $3,004 of $6,672 (45.0%) · 102% of expected by now
+          Meta $1,714 103% · Google $895 101% · TikTok $395 102%
+MER       4.32 to 1:20 pm · pull back < 4.00 · scale > 5.18 · plan 4.71
+Funnel    3.0% of 5,833 sessions ordered · LY 2.9%
+```
+_Read-only: nothing was changed. Expected spend assumes budgets pace like last year's hourly sales._

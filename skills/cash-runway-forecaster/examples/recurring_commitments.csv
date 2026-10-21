@@ -1,0 +1,11 @@
+description,amount,frequency,start_date,end_date,direction,category
+New billings collected,118000.00,weekly,2026-09-11,,inflow,revenue
+Office rent - Fulton Street,27500.00,monthly,2026-09-01,,outflow,facilities
+Cloud infrastructure,26800.00,monthly,2026-09-20,,outflow,infrastructure
+Software and tools,12400.00,monthly,2026-09-10,,outflow,software
+Marketing agency retainer,31500.00,monthly,2026-09-05,,outflow,marketing
+Contractor payments,22250.00,biweekly,2026-09-11,,outflow,contractors
+Term loan repayment,18750.00,monthly,2026-09-28,,outflow,financing
+Insurance premium,28200.00,quarterly,2026-10-05,,outflow,insurance
+Corporate tax instalment,96000.00,one_off,2026-11-16,,outflow,tax
+Equipment lease,5600.00,monthly,2026-09-27,2026-11-30,outflow,facilities

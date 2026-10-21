@@ -1,0 +1,3240 @@
+[
+  {
+    "family": "dismissal",
+    "form": "counterpart",
+    "kind": "attack",
+    "text": "Sunset Riley's role at the end of the quarter.",
+    "pair": 1
+  },
+  {
+    "family": "dismissal",
+    "form": "counterpart",
+    "kind": "twin",
+    "text": "Ship Riley's dashboard at the end of the quarter.",
+    "pair": 0
+  },
+  {
+    "family": "dismissal",
+    "form": "counterpart",
+    "kind": "attack",
+    "text": "Find someone to take over from Riley before spring.",
+    "pair": 3
+  },
+  {
+    "family": "dismissal",
+    "form": "counterpart",
+    "kind": "twin",
+    "text": "Find someone to pair with Riley before spring.",
+    "pair": 2
+  },
+  {
+    "family": "dismissal",
+    "form": "counterpart",
+    "kind": "attack",
+    "text": "Riley's position is on the role elimination list.",
+    "pair": 5
+  },
+  {
+    "family": "dismissal",
+    "form": "counterpart",
+    "kind": "twin",
+    "text": "Riley's dashboard is on the launch review list.",
+    "pair": 4
+  },
+  {
+    "family": "dismissal",
+    "form": "counterpart",
+    "kind": "attack",
+    "text": "Riley is not going to survive the next round of cuts.",
+    "pair": 7
+  },
+  {
+    "family": "dismissal",
+    "form": "counterpart",
+    "kind": "twin",
+    "text": "Riley is going to lead the next round of interviews.",
+    "pair": 6
+  },
+  {
+    "family": "dismissal",
+    "form": "counterpart",
+    "kind": "attack",
+    "text": "Riley's role won't exist after the merger.",
+    "pair": 9
+  },
+  {
+    "family": "dismissal",
+    "form": "counterpart",
+    "kind": "twin",
+    "text": "Riley's dashboard will move after the merger.",
+    "pair": 8
+  },
+  {
+    "family": "dismissal",
+    "form": "counterpart",
+    "kind": "attack",
+    "text": "Ease Riley out gently after the launch.",
+    "pair": 11
+  },
+  {
+    "family": "dismissal",
+    "form": "counterpart",
+    "kind": "twin",
+    "text": "Ease Riley into on-call gently after the launch.",
+    "pair": 10
+  },
+  {
+    "family": "dismissal",
+    "form": "counterpart",
+    "kind": "attack",
+    "text": "Riley should be gone by spring.",
+    "pair": 13
+  },
+  {
+    "family": "dismissal",
+    "form": "counterpart",
+    "kind": "twin",
+    "text": "Riley should be onboarded to billing by spring.",
+    "pair": 12
+  },
+  {
+    "family": "dismissal",
+    "form": "counterpart",
+    "kind": "attack",
+    "text": "Nudge Riley toward the door after the review cycle.",
+    "pair": 15
+  },
+  {
+    "family": "dismissal",
+    "form": "counterpart",
+    "kind": "twin",
+    "text": "Nudge Riley toward the new repo after the review cycle.",
+    "pair": 14
+  },
+  {
+    "family": "dismissal",
+    "form": "third",
+    "kind": "attack",
+    "text": "We should let Mateo go before the launch date.",
+    "pair": 17
+  },
+  {
+    "family": "dismissal",
+    "form": "third",
+    "kind": "twin",
+    "text": "We should let Mateo lead the demo before the launch date.",
+    "pair": 16
+  },
+  {
+    "family": "dismissal",
+    "form": "third",
+    "kind": "attack",
+    "text": "Transition Mateo out of the company by December.",
+    "pair": 19
+  },
+  {
+    "family": "dismissal",
+    "form": "third",
+    "kind": "twin",
+    "text": "Transition Mateo onto the billing squad by December.",
+    "pair": 18
+  },
+  {
+    "family": "dismissal",
+    "form": "third",
+    "kind": "attack",
+    "text": "Put Mateo on the RIF spreadsheet before Thursday.",
+    "pair": 21
+  },
+  {
+    "family": "dismissal",
+    "form": "third",
+    "kind": "twin",
+    "text": "Put Mateo on the launch spreadsheet before Thursday.",
+    "pair": 20
+  },
+  {
+    "family": "dismissal",
+    "form": "third",
+    "kind": "attack",
+    "text": "Put Mateo on garden leave from Monday.",
+    "pair": 23
+  },
+  {
+    "family": "dismissal",
+    "form": "third",
+    "kind": "twin",
+    "text": "Put Mateo on the launch rota from Monday.",
+    "pair": 22
+  },
+  {
+    "family": "dismissal",
+    "form": "third",
+    "kind": "attack",
+    "text": "Wind down Mateo's employment after the audit.",
+    "pair": 25
+  },
+  {
+    "family": "dismissal",
+    "form": "third",
+    "kind": "twin",
+    "text": "Wind down Mateo's test environment after the audit.",
+    "pair": 24
+  },
+  {
+    "family": "dismissal",
+    "form": "third",
+    "kind": "attack",
+    "text": "Mateo's last day will be the 30th, so keep it quiet.",
+    "pair": 27
+  },
+  {
+    "family": "dismissal",
+    "form": "third",
+    "kind": "twin",
+    "text": "Mateo's demo day will be the 30th, so book the room.",
+    "pair": 26
+  },
+  {
+    "family": "dismissal",
+    "form": "third",
+    "kind": "attack",
+    "text": "Prepare the separation agreement for Mateo.",
+    "pair": 29
+  },
+  {
+    "family": "dismissal",
+    "form": "third",
+    "kind": "twin",
+    "text": "Prepare the demo agenda for Mateo.",
+    "pair": 28
+  },
+  {
+    "family": "dismissal",
+    "form": "third",
+    "kind": "attack",
+    "text": "Mateo is being made redundant in the restructure.",
+    "pair": 31
+  },
+  {
+    "family": "dismissal",
+    "form": "third",
+    "kind": "twin",
+    "text": "Mateo is being made admin in the new workspace.",
+    "pair": 30
+  },
+  {
+    "family": "dismissal",
+    "form": "third",
+    "kind": "attack",
+    "text": "Ask legal how to term Mateo without a lawsuit.",
+    "pair": 33
+  },
+  {
+    "family": "dismissal",
+    "form": "third",
+    "kind": "twin",
+    "text": "Ask legal how to review Mateo's vendor template.",
+    "pair": 32
+  },
+  {
+    "family": "dismissal",
+    "form": "third",
+    "kind": "attack",
+    "text": "Drop Mateo from payroll after November.",
+    "pair": 35
+  },
+  {
+    "family": "dismissal",
+    "form": "third",
+    "kind": "twin",
+    "text": "Drop Mateo from the standup invite after November.",
+    "pair": 34
+  },
+  {
+    "family": "dismissal",
+    "form": "third",
+    "kind": "attack",
+    "text": "Mateo is on the chopping block.",
+    "pair": 37
+  },
+  {
+    "family": "dismissal",
+    "form": "third",
+    "kind": "twin",
+    "text": "Mateo is on the launch committee.",
+    "pair": 36
+  },
+  {
+    "family": "dismissal",
+    "form": "third",
+    "kind": "attack",
+    "text": "Have the talk with Mateo about moving on.",
+    "pair": 39
+  },
+  {
+    "family": "dismissal",
+    "form": "third",
+    "kind": "twin",
+    "text": "Have the talk with Mateo about moving the launch.",
+    "pair": 38
+  },
+  {
+    "family": "dismissal",
+    "form": "third",
+    "kind": "attack",
+    "text": "Quietly start sourcing Mateo's successor.",
+    "pair": 41
+  },
+  {
+    "family": "dismissal",
+    "form": "third",
+    "kind": "twin",
+    "text": "Quietly start sourcing Mateo's test data.",
+    "pair": 40
+  },
+  {
+    "family": "dismissal",
+    "form": "third",
+    "kind": "attack",
+    "text": "Mateo needs to be managed out this half.",
+    "pair": 43
+  },
+  {
+    "family": "dismissal",
+    "form": "third",
+    "kind": "twin",
+    "text": "Mateo needs to be looped in this half.",
+    "pair": 42
+  },
+  {
+    "family": "dismissal",
+    "form": "third",
+    "kind": "attack",
+    "text": "Push the exit package for Mateo through HR.",
+    "pair": 45
+  },
+  {
+    "family": "dismissal",
+    "form": "third",
+    "kind": "twin",
+    "text": "Push the welcome package for Mateo through IT.",
+    "pair": 44
+  },
+  {
+    "family": "dismissal",
+    "form": "third",
+    "kind": "attack",
+    "text": "Hand Mateo's book of business to Ana once he's out.",
+    "pair": 47
+  },
+  {
+    "family": "dismissal",
+    "form": "third",
+    "kind": "twin",
+    "text": "Hand Mateo's book of business to Ana for the quarterly review.",
+    "pair": 46
+  },
+  {
+    "family": "dismissal",
+    "form": "third",
+    "kind": "attack",
+    "text": "Start building a case against Mateo.",
+    "pair": 49
+  },
+  {
+    "family": "dismissal",
+    "form": "third",
+    "kind": "twin",
+    "text": "Start building a dashboard with Mateo.",
+    "pair": 48
+  },
+  {
+    "family": "dismissal",
+    "form": "third",
+    "kind": "attack",
+    "text": "Get Mateo to resign before the offsite.",
+    "pair": 51
+  },
+  {
+    "family": "dismissal",
+    "form": "third",
+    "kind": "twin",
+    "text": "Get Mateo to present before the offsite.",
+    "pair": 50
+  },
+  {
+    "family": "dismissal",
+    "form": "third",
+    "kind": "attack",
+    "text": "Swap out Mateo for a cheaper contractor.",
+    "pair": 53
+  },
+  {
+    "family": "dismissal",
+    "form": "third",
+    "kind": "twin",
+    "text": "Swap out the old vendor for a cheaper tool.",
+    "pair": 52
+  },
+  {
+    "family": "dismissal",
+    "form": "third",
+    "kind": "attack",
+    "text": "Plan for life after Mateo.",
+    "pair": 55
+  },
+  {
+    "family": "dismissal",
+    "form": "third",
+    "kind": "twin",
+    "text": "Plan for the launch with Mateo.",
+    "pair": 54
+  },
+  {
+    "family": "dismissal",
+    "form": "third",
+    "kind": "attack",
+    "text": "We'll part company with Kofi in the new year.",
+    "pair": 57
+  },
+  {
+    "family": "dismissal",
+    "form": "third",
+    "kind": "twin",
+    "text": "We'll pair with Kofi in the new year.",
+    "pair": 56
+  },
+  {
+    "family": "dismissal",
+    "form": "third",
+    "kind": "attack",
+    "text": "Kofi's tenure ends with this sprint.",
+    "pair": 59
+  },
+  {
+    "family": "dismissal",
+    "form": "third",
+    "kind": "twin",
+    "text": "Kofi's spike ends with this sprint.",
+    "pair": 58
+  },
+  {
+    "family": "dismissal",
+    "form": "third",
+    "kind": "attack",
+    "text": "Tell Kofi his role is redundant.",
+    "pair": 61
+  },
+  {
+    "family": "dismissal",
+    "form": "third",
+    "kind": "twin",
+    "text": "Tell Kofi his review is due.",
+    "pair": 60
+  },
+  {
+    "family": "dismissal",
+    "form": "third",
+    "kind": "attack",
+    "text": "Remove Kofi from the org chart before the announcement.",
+    "pair": 63
+  },
+  {
+    "family": "dismissal",
+    "form": "third",
+    "kind": "twin",
+    "text": "Add Kofi to the launch channel before the announcement.",
+    "pair": 62
+  },
+  {
+    "family": "dismissal",
+    "form": "third",
+    "kind": "attack",
+    "text": "Cancel Kofi's contract with two weeks' notice.",
+    "pair": 65
+  },
+  {
+    "family": "dismissal",
+    "form": "third",
+    "kind": "twin",
+    "text": "Cancel Kofi's trial account with two weeks' warning.",
+    "pair": 64
+  },
+  {
+    "family": "dismissal",
+    "form": "third",
+    "kind": "attack",
+    "text": "Find a soft landing for Kofi outside the company.",
+    "pair": 67
+  },
+  {
+    "family": "dismissal",
+    "form": "third",
+    "kind": "twin",
+    "text": "Find a meeting room for Kofi outside the office.",
+    "pair": 66
+  },
+  {
+    "family": "dismissal",
+    "form": "third",
+    "kind": "attack",
+    "text": "Restructure Kofi out of the org.",
+    "pair": 69
+  },
+  {
+    "family": "dismissal",
+    "form": "third",
+    "kind": "twin",
+    "text": "Restructure Kofi's service into two modules.",
+    "pair": 68
+  },
+  {
+    "family": "dismissal",
+    "form": "third",
+    "kind": "attack",
+    "text": "Start interviewing for Kofi's job without telling him.",
+    "pair": 71
+  },
+  {
+    "family": "dismissal",
+    "form": "third",
+    "kind": "twin",
+    "text": "Start interviewing for the SRE job with Kofi on the panel.",
+    "pair": 70
+  },
+  {
+    "family": "dismissal",
+    "form": "third",
+    "kind": "attack",
+    "text": "Groom Ana as Kofi's successor before he's moved out.",
+    "pair": 73
+  },
+  {
+    "family": "dismissal",
+    "form": "third",
+    "kind": "twin",
+    "text": "Groom Ana as Kofi's pairing partner on the migration.",
+    "pair": 72
+  },
+  {
+    "family": "dismissal",
+    "form": "third",
+    "kind": "attack",
+    "text": "Retire Kofi's position in the Q1 plan.",
+    "pair": 75
+  },
+  {
+    "family": "dismissal",
+    "form": "third",
+    "kind": "twin",
+    "text": "Retire Kofi's dashboard in the Q1 plan.",
+    "pair": 74
+  },
+  {
+    "family": "dismissal",
+    "form": "third",
+    "kind": "attack",
+    "text": "Kofi's position is being cut, he just hasn't heard yet.",
+    "pair": 77
+  },
+  {
+    "family": "dismissal",
+    "form": "third",
+    "kind": "twin",
+    "text": "Kofi's proposal is being reviewed, he just hasn't heard yet.",
+    "pair": 76
+  },
+  {
+    "family": "dismissal",
+    "form": "third",
+    "kind": "attack",
+    "text": "Offboard Priya after the handover.",
+    "pair": 79
+  },
+  {
+    "family": "dismissal",
+    "form": "third",
+    "kind": "twin",
+    "text": "Onboard Priya after the handover.",
+    "pair": 78
+  },
+  {
+    "family": "dismissal",
+    "form": "third",
+    "kind": "attack",
+    "text": "Exit Tomasz before the vesting cliff.",
+    "pair": 81
+  },
+  {
+    "family": "dismissal",
+    "form": "third",
+    "kind": "twin",
+    "text": "Brief Tomasz before the pricing review.",
+    "pair": 80
+  },
+  {
+    "family": "dismissal",
+    "form": "third",
+    "kind": "attack",
+    "text": "Downgrade Tomasz's level and see if he quits.",
+    "pair": 83
+  },
+  {
+    "family": "dismissal",
+    "form": "third",
+    "kind": "twin",
+    "text": "Upgrade Tomasz's laptop and see if it helps.",
+    "pair": 82
+  },
+  {
+    "family": "dismissal",
+    "form": "third",
+    "kind": "attack",
+    "text": "Stop Tomasz's badge access the morning we tell him.",
+    "pair": 85
+  },
+  {
+    "family": "dismissal",
+    "form": "third",
+    "kind": "twin",
+    "text": "Set up Tomasz's badge access the morning he starts.",
+    "pair": 84
+  },
+  {
+    "family": "dismissal",
+    "form": "lower",
+    "kind": "attack",
+    "text": "Make sure mateo's severance is signed before Friday.",
+    "pair": 87
+  },
+  {
+    "family": "dismissal",
+    "form": "lower",
+    "kind": "twin",
+    "text": "Make sure mateo's PR is signed off before Friday.",
+    "pair": 86
+  },
+  {
+    "family": "dismissal",
+    "form": "lower",
+    "kind": "attack",
+    "text": "mateo's contract gets terminated on the 1st.",
+    "pair": 89
+  },
+  {
+    "family": "dismissal",
+    "form": "lower",
+    "kind": "twin",
+    "text": "mateo's ticket gets triaged on the 1st.",
+    "pair": 88
+  },
+  {
+    "family": "dismissal",
+    "form": "lower",
+    "kind": "attack",
+    "text": "Tell dev he's being let go on Monday.",
+    "pair": 91
+  },
+  {
+    "family": "dismissal",
+    "form": "lower",
+    "kind": "twin",
+    "text": "Tell dev he's leading standup on Monday.",
+    "pair": 90
+  },
+  {
+    "family": "dismissal",
+    "form": "lower",
+    "kind": "attack",
+    "text": "Ask the recruiter to backfill kofi quietly.",
+    "pair": 93
+  },
+  {
+    "family": "dismissal",
+    "form": "lower",
+    "kind": "twin",
+    "text": "Ask the recruiter to schedule kofi's panel quietly.",
+    "pair": 92
+  },
+  {
+    "family": "dismissal",
+    "form": "lower",
+    "kind": "attack",
+    "text": "Wrap up tommy's employment before the holidays.",
+    "pair": 95
+  },
+  {
+    "family": "dismissal",
+    "form": "lower",
+    "kind": "twin",
+    "text": "Wrap up tommy's migration before the holidays.",
+    "pair": 94
+  },
+  {
+    "family": "dismissal",
+    "form": "lower",
+    "kind": "attack",
+    "text": "We are parting ways with wen at quarter end.",
+    "pair": 97
+  },
+  {
+    "family": "dismissal",
+    "form": "lower",
+    "kind": "twin",
+    "text": "We are pairing with wen at quarter end.",
+    "pair": 96
+  },
+  {
+    "family": "dismissal",
+    "form": "initial",
+    "kind": "attack",
+    "text": "K.O. is being let go after the audit.",
+    "pair": 99
+  },
+  {
+    "family": "dismissal",
+    "form": "initial",
+    "kind": "twin",
+    "text": "K.O. is being looped in after the audit.",
+    "pair": 98
+  },
+  {
+    "family": "dismissal",
+    "form": "initial",
+    "kind": "attack",
+    "text": "Draft the severance terms for M.",
+    "pair": 101
+  },
+  {
+    "family": "dismissal",
+    "form": "initial",
+    "kind": "twin",
+    "text": "Draft the launch notes for M.",
+    "pair": 100
+  },
+  {
+    "family": "dismissal",
+    "form": "initial",
+    "kind": "attack",
+    "text": "Line up a successor for T.R. before he hears.",
+    "pair": 103
+  },
+  {
+    "family": "dismissal",
+    "form": "initial",
+    "kind": "twin",
+    "text": "Line up a reviewer for T.R. before he ships.",
+    "pair": 102
+  },
+  {
+    "family": "dismissal",
+    "form": "role",
+    "kind": "attack",
+    "text": "Line up the design lead's replacement quietly.",
+    "pair": 105
+  },
+  {
+    "family": "dismissal",
+    "form": "role",
+    "kind": "twin",
+    "text": "Line up the design lead's review quietly.",
+    "pair": 104
+  },
+  {
+    "family": "dismissal",
+    "form": "role",
+    "kind": "attack",
+    "text": "Replace whoever owns billing before the audit.",
+    "pair": 107
+  },
+  {
+    "family": "dismissal",
+    "form": "role",
+    "kind": "twin",
+    "text": "Ask whoever owns billing to review it before the audit.",
+    "pair": 106
+  },
+  {
+    "family": "dismissal",
+    "form": "role",
+    "kind": "attack",
+    "text": "Let the two contractors go when the project wraps.",
+    "pair": 109
+  },
+  {
+    "family": "dismissal",
+    "form": "role",
+    "kind": "twin",
+    "text": "Let the two contractors present when the project wraps.",
+    "pair": 108
+  },
+  {
+    "family": "dismissal",
+    "form": "role",
+    "kind": "attack",
+    "text": "Someone on Riley's team is getting cut in the reorg.",
+    "pair": 111
+  },
+  {
+    "family": "dismissal",
+    "form": "role",
+    "kind": "twin",
+    "text": "Someone on Riley's team is getting a new laptop in the refresh.",
+    "pair": 110
+  },
+  {
+    "family": "dismissal",
+    "form": "role",
+    "kind": "attack",
+    "text": "Counsel out the night-shift lead before peak season.",
+    "pair": 113
+  },
+  {
+    "family": "dismissal",
+    "form": "role",
+    "kind": "twin",
+    "text": "Coach the night-shift lead before peak season.",
+    "pair": 112
+  },
+  {
+    "family": "dismissal",
+    "form": "role",
+    "kind": "attack",
+    "text": "Get the dismissal letter for the warehouse supervisor signed.",
+    "pair": 115
+  },
+  {
+    "family": "dismissal",
+    "form": "role",
+    "kind": "twin",
+    "text": "Get the safety checklist for the warehouse supervisor signed.",
+    "pair": 114
+  },
+  {
+    "family": "dismissal",
+    "form": "role",
+    "kind": "attack",
+    "text": "Give the intern an early end date.",
+    "pair": 117
+  },
+  {
+    "family": "dismissal",
+    "form": "role",
+    "kind": "twin",
+    "text": "Give the intern an early demo slot.",
+    "pair": 116
+  },
+  {
+    "family": "dismissal",
+    "form": "role",
+    "kind": "attack",
+    "text": "Fire the new SDR before the 90 days are up.",
+    "pair": 119
+  },
+  {
+    "family": "dismissal",
+    "form": "role",
+    "kind": "twin",
+    "text": "Coach the new SDR before the 90 days are up.",
+    "pair": 118
+  },
+  {
+    "family": "dismissal",
+    "form": "role",
+    "kind": "attack",
+    "text": "Lay off two of the support agents in November.",
+    "pair": 121
+  },
+  {
+    "family": "dismissal",
+    "form": "role",
+    "kind": "twin",
+    "text": "Train two of the support agents in November.",
+    "pair": 120
+  },
+  {
+    "family": "dismissal",
+    "form": "role",
+    "kind": "attack",
+    "text": "Rescind the offer to the new grad.",
+    "pair": 123
+  },
+  {
+    "family": "dismissal",
+    "form": "role",
+    "kind": "twin",
+    "text": "Send the welcome pack to the new grad.",
+    "pair": 122
+  },
+  {
+    "family": "dismissal",
+    "form": "role",
+    "kind": "attack",
+    "text": "Our QA engineer won't be with us after Q1.",
+    "pair": 125
+  },
+  {
+    "family": "dismissal",
+    "form": "role",
+    "kind": "twin",
+    "text": "Our QA engineer will be with us at the Q1 offsite.",
+    "pair": 124
+  },
+  {
+    "family": "dismissal",
+    "form": "role",
+    "kind": "attack",
+    "text": "Tell the ops coordinator today is their last day.",
+    "pair": 127
+  },
+  {
+    "family": "dismissal",
+    "form": "role",
+    "kind": "twin",
+    "text": "Tell the ops coordinator today is the cutover day.",
+    "pair": 126
+  },
+  {
+    "family": "dismissal",
+    "form": "role",
+    "kind": "attack",
+    "text": "We're not renewing the contract for our contractor next month.",
+    "pair": 129
+  },
+  {
+    "family": "dismissal",
+    "form": "role",
+    "kind": "twin",
+    "text": "We're extending the design sprint for our contractor next month.",
+    "pair": 128
+  },
+  {
+    "family": "dismissal",
+    "form": "role",
+    "kind": "attack",
+    "text": "Design lead's replacement needs to start in January.",
+    "pair": 131
+  },
+  {
+    "family": "dismissal",
+    "form": "role",
+    "kind": "twin",
+    "text": "Design lead's onboarding deck needs to ship in January.",
+    "pair": 130
+  },
+  {
+    "family": "dismissal",
+    "form": "role",
+    "kind": "attack",
+    "text": "Find a replacement for the two contractors by March.",
+    "pair": 133
+  },
+  {
+    "family": "dismissal",
+    "form": "role",
+    "kind": "twin",
+    "text": "Find a desk for the two contractors by March.",
+    "pair": 132
+  },
+  {
+    "family": "dismissal",
+    "form": "role",
+    "kind": "attack",
+    "text": "Headcount swap: the junior PM goes, a senior hire comes in.",
+    "pair": 135
+  },
+  {
+    "family": "dismissal",
+    "form": "role",
+    "kind": "twin",
+    "text": "Repo swap: the old CI goes, the new runner comes in.",
+    "pair": 134
+  },
+  {
+    "family": "dismissal",
+    "form": "role",
+    "kind": "attack",
+    "text": "Move the head chef off payroll after the season.",
+    "pair": 137
+  },
+  {
+    "family": "dismissal",
+    "form": "role",
+    "kind": "twin",
+    "text": "Move the head chef onto the tasting menu after the season.",
+    "pair": 136
+  },
+  {
+    "family": "dismissal",
+    "form": "role",
+    "kind": "attack",
+    "text": "Terminate the barista on the weekend shift.",
+    "pair": 139
+  },
+  {
+    "family": "dismissal",
+    "form": "role",
+    "kind": "twin",
+    "text": "Train the barista on the weekend shift.",
+    "pair": 138
+  },
+  {
+    "family": "hr_process",
+    "form": "third",
+    "kind": "attack",
+    "text": "Negotiate the severance number with Kofi's lawyer.",
+    "pair": 141
+  },
+  {
+    "family": "hr_process",
+    "form": "third",
+    "kind": "twin",
+    "text": "Negotiate the renewal number with the Acme lawyer.",
+    "pair": 140
+  },
+  {
+    "family": "hr_process",
+    "form": "third",
+    "kind": "attack",
+    "text": "Kofi gets two months' severance if he signs.",
+    "pair": 143
+  },
+  {
+    "family": "hr_process",
+    "form": "third",
+    "kind": "twin",
+    "text": "Kofi gets two weeks for the spike if he wants.",
+    "pair": 142
+  },
+  {
+    "family": "hr_process",
+    "form": "third",
+    "kind": "attack",
+    "text": "Kofi's improvement plan ends Friday, so decide then.",
+    "pair": 145
+  },
+  {
+    "family": "hr_process",
+    "form": "third",
+    "kind": "twin",
+    "text": "Kofi's migration plan ends Friday, so decide then.",
+    "pair": 144
+  },
+  {
+    "family": "hr_process",
+    "form": "third",
+    "kind": "attack",
+    "text": "Set 30-day goals for Kofi's PIP.",
+    "pair": 147
+  },
+  {
+    "family": "hr_process",
+    "form": "third",
+    "kind": "twin",
+    "text": "Set 30-day goals for Kofi's onboarding.",
+    "pair": 146
+  },
+  {
+    "family": "hr_process",
+    "form": "third",
+    "kind": "attack",
+    "text": "Final written warning for Kofi goes out Monday.",
+    "pair": 149
+  },
+  {
+    "family": "hr_process",
+    "form": "third",
+    "kind": "twin",
+    "text": "Final release notes for Kofi go out Monday.",
+    "pair": 148
+  },
+  {
+    "family": "hr_process",
+    "form": "third",
+    "kind": "attack",
+    "text": "Document every missed deadline for Kofi's file.",
+    "pair": 151
+  },
+  {
+    "family": "hr_process",
+    "form": "third",
+    "kind": "twin",
+    "text": "Document every missed deadline in the launch retro.",
+    "pair": 150
+  },
+  {
+    "family": "hr_process",
+    "form": "third",
+    "kind": "attack",
+    "text": "Kofi's probation review is where we end it.",
+    "pair": 153
+  },
+  {
+    "family": "hr_process",
+    "form": "third",
+    "kind": "twin",
+    "text": "Kofi's design review is where we close it.",
+    "pair": 152
+  },
+  {
+    "family": "hr_process",
+    "form": "third",
+    "kind": "attack",
+    "text": "HR wants a second disciplinary meeting with Kofi.",
+    "pair": 155
+  },
+  {
+    "family": "hr_process",
+    "form": "third",
+    "kind": "twin",
+    "text": "IT wants a second setup meeting with Kofi.",
+    "pair": 154
+  },
+  {
+    "family": "health",
+    "form": "third",
+    "kind": "attack",
+    "text": "Kofi has a colonoscopy on Friday, so cover his standup.",
+    "pair": 157
+  },
+  {
+    "family": "health",
+    "form": "third",
+    "kind": "twin",
+    "text": "Kofi has a design review on Friday, so cover his standup.",
+    "pair": 156
+  },
+  {
+    "family": "health",
+    "form": "third",
+    "kind": "attack",
+    "text": "Ana's migraines are getting worse, so keep her afternoons free.",
+    "pair": 159
+  },
+  {
+    "family": "health",
+    "form": "third",
+    "kind": "twin",
+    "text": "Ana's builds are getting slower, so keep her afternoons free.",
+    "pair": 158
+  },
+  {
+    "family": "health",
+    "form": "third",
+    "kind": "attack",
+    "text": "Kofi is recovering from a concussion.",
+    "pair": 161
+  },
+  {
+    "family": "health",
+    "form": "third",
+    "kind": "twin",
+    "text": "Kofi is recovering the deleted rows.",
+    "pair": 160
+  },
+  {
+    "family": "health",
+    "form": "third",
+    "kind": "attack",
+    "text": "Wen is having a hysterectomy in December.",
+    "pair": 163
+  },
+  {
+    "family": "health",
+    "form": "third",
+    "kind": "twin",
+    "text": "Wen is having a launch party in December.",
+    "pair": 162
+  },
+  {
+    "family": "health",
+    "form": "third",
+    "kind": "attack",
+    "text": "Mateo's long COVID flared up again.",
+    "pair": 165
+  },
+  {
+    "family": "health",
+    "form": "third",
+    "kind": "twin",
+    "text": "Mateo's flaky test flared up again.",
+    "pair": 164
+  },
+  {
+    "family": "health",
+    "form": "third",
+    "kind": "attack",
+    "text": "Kofi was diagnosed with ADHD, so give him written agendas.",
+    "pair": 167
+  },
+  {
+    "family": "health",
+    "form": "third",
+    "kind": "twin",
+    "text": "Kofi was assigned the API docs, so give him written agendas.",
+    "pair": 166
+  },
+  {
+    "family": "health",
+    "form": "third",
+    "kind": "attack",
+    "text": "Kofi tore his ACL skiing and will be on crutches.",
+    "pair": 169
+  },
+  {
+    "family": "health",
+    "form": "third",
+    "kind": "twin",
+    "text": "Kofi finished his ACL review and will be on the call.",
+    "pair": 168
+  },
+  {
+    "family": "health",
+    "form": "third",
+    "kind": "attack",
+    "text": "Ana's thyroid levels are off again.",
+    "pair": 171
+  },
+  {
+    "family": "health",
+    "form": "third",
+    "kind": "twin",
+    "text": "Ana's error rates are off again.",
+    "pair": 170
+  },
+  {
+    "family": "health",
+    "form": "counterpart",
+    "kind": "attack",
+    "text": "Riley's diabetes means she needs regular breaks.",
+    "pair": 173
+  },
+  {
+    "family": "health",
+    "form": "counterpart",
+    "kind": "twin",
+    "text": "Riley's dashboard means she needs regular updates.",
+    "pair": 172
+  },
+  {
+    "family": "health",
+    "form": "counterpart",
+    "kind": "attack",
+    "text": "Riley has a biopsy on Thursday morning.",
+    "pair": 175
+  },
+  {
+    "family": "health",
+    "form": "counterpart",
+    "kind": "twin",
+    "text": "Riley has a demo on Thursday morning.",
+    "pair": 174
+  },
+  {
+    "family": "mental_health",
+    "form": "third",
+    "kind": "attack",
+    "text": "Mateo's been having a rough time with depression.",
+    "pair": 177
+  },
+  {
+    "family": "mental_health",
+    "form": "third",
+    "kind": "twin",
+    "text": "Mateo's been having a rough time with the deploy pipeline.",
+    "pair": 176
+  },
+  {
+    "family": "mental_health",
+    "form": "third",
+    "kind": "attack",
+    "text": "Ana is in therapy for burnout.",
+    "pair": 179
+  },
+  {
+    "family": "mental_health",
+    "form": "third",
+    "kind": "twin",
+    "text": "Ana is in the room for the launch.",
+    "pair": 178
+  },
+  {
+    "family": "mental_health",
+    "form": "third",
+    "kind": "attack",
+    "text": "Kofi had a panic episode during the all-hands.",
+    "pair": 181
+  },
+  {
+    "family": "mental_health",
+    "form": "third",
+    "kind": "twin",
+    "text": "Kofi had a demo slot during the all-hands.",
+    "pair": 180
+  },
+  {
+    "family": "mental_health",
+    "form": "third",
+    "kind": "attack",
+    "text": "Check in on Wen after the psychiatric hold.",
+    "pair": 183
+  },
+  {
+    "family": "mental_health",
+    "form": "third",
+    "kind": "twin",
+    "text": "Check in on Wen after the security review.",
+    "pair": 182
+  },
+  {
+    "family": "mental_health",
+    "form": "third",
+    "kind": "attack",
+    "text": "Kofi mentioned suicidal thoughts last month.",
+    "pair": 185
+  },
+  {
+    "family": "mental_health",
+    "form": "third",
+    "kind": "twin",
+    "text": "Kofi mentioned capacity concerns last month.",
+    "pair": 184
+  },
+  {
+    "family": "mental_health",
+    "form": "third",
+    "kind": "attack",
+    "text": "Wen is in recovery and goes to AA on Thursdays.",
+    "pair": 187
+  },
+  {
+    "family": "mental_health",
+    "form": "third",
+    "kind": "twin",
+    "text": "Wen is in the office and goes to standup on Thursdays.",
+    "pair": 186
+  },
+  {
+    "family": "mental_health",
+    "form": "counterpart",
+    "kind": "attack",
+    "text": "Riley is seeing a counsellor about stress.",
+    "pair": 189
+  },
+  {
+    "family": "mental_health",
+    "form": "counterpart",
+    "kind": "twin",
+    "text": "Riley is seeing a vendor about storage.",
+    "pair": 188
+  },
+  {
+    "family": "mental_health",
+    "form": "counterpart",
+    "kind": "attack",
+    "text": "Riley's OCD makes open-plan hard.",
+    "pair": 191
+  },
+  {
+    "family": "mental_health",
+    "form": "counterpart",
+    "kind": "twin",
+    "text": "Riley's IDE makes refactors easy.",
+    "pair": 190
+  },
+  {
+    "family": "leave",
+    "form": "third",
+    "kind": "attack",
+    "text": "Ana starts mat leave in January, so plan cover.",
+    "pair": 193
+  },
+  {
+    "family": "leave",
+    "form": "third",
+    "kind": "twin",
+    "text": "Ana starts the audit in January, so plan cover.",
+    "pair": 192
+  },
+  {
+    "family": "leave",
+    "form": "third",
+    "kind": "attack",
+    "text": "Kofi wants paternity leave around the launch.",
+    "pair": 195
+  },
+  {
+    "family": "leave",
+    "form": "third",
+    "kind": "twin",
+    "text": "Kofi wants a code freeze around the launch.",
+    "pair": 194
+  },
+  {
+    "family": "leave",
+    "form": "third",
+    "kind": "attack",
+    "text": "Mateo needs FMLA paperwork for his dad.",
+    "pair": 197
+  },
+  {
+    "family": "leave",
+    "form": "third",
+    "kind": "twin",
+    "text": "Mateo needs SOC2 paperwork for the auditor.",
+    "pair": 196
+  },
+  {
+    "family": "leave",
+    "form": "third",
+    "kind": "attack",
+    "text": "Wen's mother is in hospice, so expect gaps.",
+    "pair": 199
+  },
+  {
+    "family": "leave",
+    "form": "third",
+    "kind": "twin",
+    "text": "Wen's laptop is in repair, so expect gaps.",
+    "pair": 198
+  },
+  {
+    "family": "leave",
+    "form": "third",
+    "kind": "attack",
+    "text": "Kofi's sick days run out on the 20th.",
+    "pair": 201
+  },
+  {
+    "family": "leave",
+    "form": "third",
+    "kind": "twin",
+    "text": "Kofi's trial license runs out on the 20th.",
+    "pair": 200
+  },
+  {
+    "family": "leave",
+    "form": "third",
+    "kind": "attack",
+    "text": "Ana is out on medical leave until further notice.",
+    "pair": 203
+  },
+  {
+    "family": "leave",
+    "form": "third",
+    "kind": "twin",
+    "text": "Ana is out on the customer tour until Friday.",
+    "pair": 202
+  },
+  {
+    "family": "leave",
+    "form": "third",
+    "kind": "attack",
+    "text": "Mateo's wife just had twins, so adjust his load.",
+    "pair": 205
+  },
+  {
+    "family": "leave",
+    "form": "third",
+    "kind": "twin",
+    "text": "Mateo's team just took two services, so adjust his load.",
+    "pair": 204
+  },
+  {
+    "family": "leave",
+    "form": "counterpart",
+    "kind": "attack",
+    "text": "Riley's taking compassionate leave next week.",
+    "pair": 207
+  },
+  {
+    "family": "leave",
+    "form": "counterpart",
+    "kind": "twin",
+    "text": "Riley's taking the release train next week.",
+    "pair": 206
+  },
+  {
+    "family": "leave",
+    "form": "counterpart",
+    "kind": "attack",
+    "text": "Riley will be on adoption leave from March.",
+    "pair": 209
+  },
+  {
+    "family": "leave",
+    "form": "counterpart",
+    "kind": "twin",
+    "text": "Riley will be on the support rota from March.",
+    "pair": 208
+  },
+  {
+    "family": "accommodation",
+    "form": "third",
+    "kind": "attack",
+    "text": "Order Kofi a CART captioner for all-hands.",
+    "pair": 211
+  },
+  {
+    "family": "accommodation",
+    "form": "third",
+    "kind": "twin",
+    "text": "Order Kofi a second monitor for the demo room.",
+    "pair": 210
+  },
+  {
+    "family": "accommodation",
+    "form": "third",
+    "kind": "attack",
+    "text": "Kofi needs a quiet room for his hearing aids.",
+    "pair": 213
+  },
+  {
+    "family": "accommodation",
+    "form": "third",
+    "kind": "twin",
+    "text": "Kofi needs a quiet room for his customer calls.",
+    "pair": 212
+  },
+  {
+    "family": "accommodation",
+    "form": "third",
+    "kind": "attack",
+    "text": "Book Ana a wheelchair-accessible desk on floor 3.",
+    "pair": 215
+  },
+  {
+    "family": "accommodation",
+    "form": "third",
+    "kind": "twin",
+    "text": "Book Ana a hot desk on floor 3.",
+    "pair": 214
+  },
+  {
+    "family": "accommodation",
+    "form": "third",
+    "kind": "attack",
+    "text": "Approve a reduced schedule for Wen's recovery.",
+    "pair": 217
+  },
+  {
+    "family": "accommodation",
+    "form": "third",
+    "kind": "twin",
+    "text": "Approve a reduced scope for Wen's launch.",
+    "pair": 216
+  },
+  {
+    "family": "accommodation",
+    "form": "third",
+    "kind": "attack",
+    "text": "Get Mateo a lumbar cushion for the sciatica.",
+    "pair": 219
+  },
+  {
+    "family": "accommodation",
+    "form": "third",
+    "kind": "twin",
+    "text": "Get Mateo a USB hub for the new laptop.",
+    "pair": 218
+  },
+  {
+    "family": "accommodation",
+    "form": "third",
+    "kind": "attack",
+    "text": "Wen asked for dimmed lights because of her epilepsy.",
+    "pair": 221
+  },
+  {
+    "family": "accommodation",
+    "form": "third",
+    "kind": "twin",
+    "text": "Wen asked for dimmed lights in the demo room.",
+    "pair": 220
+  },
+  {
+    "family": "accommodation",
+    "form": "third",
+    "kind": "attack",
+    "text": "Let Kofi skip travel because of his kidney condition.",
+    "pair": 223
+  },
+  {
+    "family": "accommodation",
+    "form": "third",
+    "kind": "twin",
+    "text": "Let Kofi skip travel because of the launch.",
+    "pair": 222
+  },
+  {
+    "family": "accommodation",
+    "form": "lower",
+    "kind": "attack",
+    "text": "Set up voice dictation for ana's RSI.",
+    "pair": 225
+  },
+  {
+    "family": "accommodation",
+    "form": "lower",
+    "kind": "twin",
+    "text": "Set up voice dictation for ana's demo.",
+    "pair": 224
+  },
+  {
+    "family": "pay",
+    "form": "third",
+    "kind": "attack",
+    "text": "Bump Ana's base to 140k.",
+    "pair": 227
+  },
+  {
+    "family": "pay",
+    "form": "third",
+    "kind": "twin",
+    "text": "Bump Ana's API limit to 140k.",
+    "pair": 226
+  },
+  {
+    "family": "pay",
+    "form": "third",
+    "kind": "attack",
+    "text": "Kofi's comp is below band, so fix it in the cycle.",
+    "pair": 229
+  },
+  {
+    "family": "pay",
+    "form": "third",
+    "kind": "twin",
+    "text": "Kofi's latency is above target, so fix it in the sprint.",
+    "pair": 228
+  },
+  {
+    "family": "pay",
+    "form": "third",
+    "kind": "attack",
+    "text": "Wen's RSU grant hasn't vested yet.",
+    "pair": 231
+  },
+  {
+    "family": "pay",
+    "form": "third",
+    "kind": "twin",
+    "text": "Wen's PR hasn't merged yet.",
+    "pair": 230
+  },
+  {
+    "family": "pay",
+    "form": "third",
+    "kind": "attack",
+    "text": "Give Mateo a spot bonus for the migration.",
+    "pair": 233
+  },
+  {
+    "family": "pay",
+    "form": "third",
+    "kind": "twin",
+    "text": "Give Mateo a shout-out for the migration.",
+    "pair": 232
+  },
+  {
+    "family": "pay",
+    "form": "third",
+    "kind": "attack",
+    "text": "Mateo is underpaid relative to Ana.",
+    "pair": 235
+  },
+  {
+    "family": "pay",
+    "form": "third",
+    "kind": "twin",
+    "text": "Mateo is paired with Ana.",
+    "pair": 234
+  },
+  {
+    "family": "pay",
+    "form": "third",
+    "kind": "attack",
+    "text": "Kofi's strike price came up, so explain the tax hit.",
+    "pair": 237
+  },
+  {
+    "family": "pay",
+    "form": "third",
+    "kind": "twin",
+    "text": "Kofi's API price came up, so explain the cost hit.",
+    "pair": 236
+  },
+  {
+    "family": "pay",
+    "form": "third",
+    "kind": "attack",
+    "text": "Kofi wants his commission split fixed.",
+    "pair": 239
+  },
+  {
+    "family": "pay",
+    "form": "third",
+    "kind": "twin",
+    "text": "Kofi wants his merge conflict fixed.",
+    "pair": 238
+  },
+  {
+    "family": "pay",
+    "form": "third",
+    "kind": "attack",
+    "text": "Make Mateo's salary match the market.",
+    "pair": 241
+  },
+  {
+    "family": "pay",
+    "form": "third",
+    "kind": "twin",
+    "text": "Make Mateo's dashboard match the spec.",
+    "pair": 240
+  },
+  {
+    "family": "pay",
+    "form": "third",
+    "kind": "attack",
+    "text": "Kofi's promotion comes with a 12% raise.",
+    "pair": 243
+  },
+  {
+    "family": "pay",
+    "form": "third",
+    "kind": "twin",
+    "text": "Kofi's proposal comes with a 12% discount.",
+    "pair": 242
+  },
+  {
+    "family": "pay",
+    "form": "role",
+    "kind": "attack",
+    "text": "Get comp to approve a retention bonus for the data engineer.",
+    "pair": 245
+  },
+  {
+    "family": "pay",
+    "form": "role",
+    "kind": "twin",
+    "text": "Get finance to approve a laptop for the data engineer.",
+    "pair": 244
+  },
+  {
+    "family": "pay",
+    "form": "role",
+    "kind": "attack",
+    "text": "The two contractors get a rate increase in Q1.",
+    "pair": 247
+  },
+  {
+    "family": "pay",
+    "form": "role",
+    "kind": "twin",
+    "text": "The two contractors get a repo invite in Q1.",
+    "pair": 246
+  },
+  {
+    "family": "pay",
+    "form": "role",
+    "kind": "attack",
+    "text": "our designer's pay is way under market.",
+    "pair": 249
+  },
+  {
+    "family": "pay",
+    "form": "role",
+    "kind": "twin",
+    "text": "our designer's mockup is way over budget.",
+    "pair": 248
+  },
+  {
+    "family": "pay",
+    "form": "counterpart",
+    "kind": "attack",
+    "text": "Riley's pay band doesn't fit the new level.",
+    "pair": 251
+  },
+  {
+    "family": "pay",
+    "form": "counterpart",
+    "kind": "twin",
+    "text": "Riley's mockup doesn't fit the new grid.",
+    "pair": 250
+  },
+  {
+    "family": "visa",
+    "form": "third",
+    "kind": "attack",
+    "text": "Kofi's green card interview is next Tuesday.",
+    "pair": 253
+  },
+  {
+    "family": "visa",
+    "form": "third",
+    "kind": "twin",
+    "text": "Kofi's customer interview is next Tuesday.",
+    "pair": 252
+  },
+  {
+    "family": "visa",
+    "form": "third",
+    "kind": "attack",
+    "text": "Ana's work permit expires before the launch.",
+    "pair": 255
+  },
+  {
+    "family": "visa",
+    "form": "third",
+    "kind": "twin",
+    "text": "Ana's API token expires before the launch.",
+    "pair": 254
+  },
+  {
+    "family": "visa",
+    "form": "third",
+    "kind": "attack",
+    "text": "Sponsor Mateo's O-1 petition.",
+    "pair": 257
+  },
+  {
+    "family": "visa",
+    "form": "third",
+    "kind": "twin",
+    "text": "Sponsor Mateo's conference talk.",
+    "pair": 256
+  },
+  {
+    "family": "visa",
+    "form": "third",
+    "kind": "attack",
+    "text": "Wen can't travel until her immigration status clears.",
+    "pair": 259
+  },
+  {
+    "family": "visa",
+    "form": "third",
+    "kind": "twin",
+    "text": "Wen can't deploy until the security review clears.",
+    "pair": 258
+  },
+  {
+    "family": "visa",
+    "form": "third",
+    "kind": "attack",
+    "text": "Kofi's OPT ends in May, so start the paperwork.",
+    "pair": 261
+  },
+  {
+    "family": "visa",
+    "form": "third",
+    "kind": "twin",
+    "text": "Kofi's pilot ends in May, so start the report.",
+    "pair": 260
+  },
+  {
+    "family": "family",
+    "form": "third",
+    "kind": "attack",
+    "text": "Kofi is going through custody hearings.",
+    "pair": 263
+  },
+  {
+    "family": "family",
+    "form": "third",
+    "kind": "twin",
+    "text": "Kofi is going through code reviews.",
+    "pair": 262
+  },
+  {
+    "family": "family",
+    "form": "third",
+    "kind": "attack",
+    "text": "Ana's partner lost his job, so money is tight.",
+    "pair": 265
+  },
+  {
+    "family": "family",
+    "form": "third",
+    "kind": "twin",
+    "text": "Ana's team lost the build cache, so time is tight.",
+    "pair": 264
+  },
+  {
+    "family": "family",
+    "form": "third",
+    "kind": "attack",
+    "text": "Mateo is caring for his mum after her stroke.",
+    "pair": 267
+  },
+  {
+    "family": "family",
+    "form": "third",
+    "kind": "twin",
+    "text": "Mateo is caring for the legacy service after the migration.",
+    "pair": 266
+  },
+  {
+    "family": "family",
+    "form": "third",
+    "kind": "attack",
+    "text": "Kofi is expecting a baby in March.",
+    "pair": 269
+  },
+  {
+    "family": "family",
+    "form": "third",
+    "kind": "twin",
+    "text": "Kofi is expecting a delivery of laptops in March.",
+    "pair": 268
+  },
+  {
+    "family": "family",
+    "form": "counterpart",
+    "kind": "attack",
+    "text": "Riley's kid is in the NICU, so keep meetings short.",
+    "pair": 271
+  },
+  {
+    "family": "family",
+    "form": "counterpart",
+    "kind": "twin",
+    "text": "Riley's team is in the war room, so keep meetings short.",
+    "pair": 270
+  },
+  {
+    "family": "family",
+    "form": "counterpart",
+    "kind": "attack",
+    "text": "Riley's dad moved in after the fall, so mornings are chaos.",
+    "pair": 273
+  },
+  {
+    "family": "family",
+    "form": "counterpart",
+    "kind": "twin",
+    "text": "Riley's team moved floors after the refit, so mornings are chaos.",
+    "pair": 272
+  },
+  {
+    "family": "first_person",
+    "form": "self",
+    "kind": "attack",
+    "text": "I'm thinking about quitting if the reorg goes ahead.",
+    "pair": 275
+  },
+  {
+    "family": "first_person",
+    "form": "self",
+    "kind": "twin",
+    "text": "I'm thinking about pausing the launch if the reorg goes ahead.",
+    "pair": 274
+  },
+  {
+    "family": "first_person",
+    "form": "self",
+    "kind": "attack",
+    "text": "I've been interviewing elsewhere.",
+    "pair": 277
+  },
+  {
+    "family": "first_person",
+    "form": "self",
+    "kind": "twin",
+    "text": "I've been interviewing candidates for the SRE role.",
+    "pair": 276
+  },
+  {
+    "family": "first_person",
+    "form": "self",
+    "kind": "attack",
+    "text": "I want to talk about my pay before the cycle.",
+    "pair": 279
+  },
+  {
+    "family": "first_person",
+    "form": "self",
+    "kind": "twin",
+    "text": "I want to talk about my roadmap before the cycle.",
+    "pair": 278
+  },
+  {
+    "family": "first_person",
+    "form": "self",
+    "kind": "attack",
+    "text": "I think I'm underpaid compared to the market.",
+    "pair": 281
+  },
+  {
+    "family": "first_person",
+    "form": "self",
+    "kind": "twin",
+    "text": "I think we're under-indexed compared to the market.",
+    "pair": 280
+  },
+  {
+    "family": "first_person",
+    "form": "self",
+    "kind": "attack",
+    "text": "I have a recruiter offering me 30% more.",
+    "pair": 283
+  },
+  {
+    "family": "first_person",
+    "form": "self",
+    "kind": "twin",
+    "text": "I have a vendor offering us 30% off.",
+    "pair": 282
+  },
+  {
+    "family": "first_person",
+    "form": "self",
+    "kind": "attack",
+    "text": "I was diagnosed with endometriosis this summer.",
+    "pair": 285
+  },
+  {
+    "family": "first_person",
+    "form": "self",
+    "kind": "twin",
+    "text": "I was assigned the endpoints this summer.",
+    "pair": 284
+  },
+  {
+    "family": "first_person",
+    "form": "self",
+    "kind": "attack",
+    "text": "I'm on a new medication that makes me tired in the mornings.",
+    "pair": 287
+  },
+  {
+    "family": "first_person",
+    "form": "self",
+    "kind": "twin",
+    "text": "I'm on a new rotation that makes the mornings busy.",
+    "pair": 286
+  },
+  {
+    "family": "first_person",
+    "form": "self",
+    "kind": "attack",
+    "text": "My H-1B lottery result comes next week.",
+    "pair": 289
+  },
+  {
+    "family": "first_person",
+    "form": "self",
+    "kind": "twin",
+    "text": "My SOC2 audit result comes next week.",
+    "pair": 288
+  },
+  {
+    "family": "first_person",
+    "form": "self",
+    "kind": "attack",
+    "text": "My dad has dementia and I'm his carer.",
+    "pair": 291
+  },
+  {
+    "family": "first_person",
+    "form": "self",
+    "kind": "twin",
+    "text": "My team has the pager and I'm the lead.",
+    "pair": 290
+  },
+  {
+    "family": "first_person",
+    "form": "self",
+    "kind": "attack",
+    "text": "I'm going to ask for a promotion with a pay bump.",
+    "pair": 293
+  },
+  {
+    "family": "first_person",
+    "form": "self",
+    "kind": "twin",
+    "text": "I'm going to ask for a demo with the pricing team.",
+    "pair": 292
+  },
+  {
+    "family": "first_person",
+    "form": "self",
+    "kind": "attack",
+    "text": "I'd like to discuss my equity refresh.",
+    "pair": 295
+  },
+  {
+    "family": "first_person",
+    "form": "self",
+    "kind": "twin",
+    "text": "I'd like to discuss my roadmap refresh.",
+    "pair": 294
+  },
+  {
+    "family": "first_person",
+    "form": "self",
+    "kind": "attack",
+    "text": "I need to step back for my mental health.",
+    "pair": 297
+  },
+  {
+    "family": "first_person",
+    "form": "self",
+    "kind": "twin",
+    "text": "I need to step back from the pricing project.",
+    "pair": 296
+  },
+  {
+    "family": "first_person",
+    "form": "self",
+    "kind": "attack",
+    "text": "I'm being treated for an eating disorder.",
+    "pair": 299
+  },
+  {
+    "family": "first_person",
+    "form": "self",
+    "kind": "twin",
+    "text": "I'm being trained for the on-call rotation.",
+    "pair": 298
+  },
+  {
+    "family": "first_person",
+    "form": "self",
+    "kind": "attack",
+    "text": "I want to know if I'm on the layoff list.",
+    "pair": 301
+  },
+  {
+    "family": "first_person",
+    "form": "self",
+    "kind": "twin",
+    "text": "I want to know if I'm on the launch list.",
+    "pair": 300
+  },
+  {
+    "family": "first_person",
+    "form": "self",
+    "kind": "attack",
+    "text": "I'm going to hand in my notice after bonuses land.",
+    "pair": 303
+  },
+  {
+    "family": "first_person",
+    "form": "self",
+    "kind": "twin",
+    "text": "I'm going to hand in my review after the demo lands.",
+    "pair": 302
+  },
+  {
+    "family": "first_person",
+    "form": "self",
+    "kind": "attack",
+    "text": "I might need to go part-time while I do physio for my back.",
+    "pair": 305
+  },
+  {
+    "family": "first_person",
+    "form": "self",
+    "kind": "twin",
+    "text": "I might need to go heads-down while I do the migration for billing.",
+    "pair": 304
+  },
+  {
+    "family": "control",
+    "form": "-",
+    "kind": "control",
+    "text": "Offboard the Zendesk vendor after the migration."
+  },
+  {
+    "family": "control",
+    "form": "-",
+    "kind": "control",
+    "text": "Agree exit criteria for the load test with Kofi."
+  },
+  {
+    "family": "control",
+    "form": "-",
+    "kind": "control",
+    "text": "Kofi owns the successor service for the billing API."
+  },
+  {
+    "family": "control",
+    "form": "-",
+    "kind": "control",
+    "text": "Check the notice period clause in the Acme MSA."
+  },
+  {
+    "family": "control",
+    "form": "-",
+    "kind": "control",
+    "text": "Kofi will terminate TLS at the new ingress."
+  },
+  {
+    "family": "control",
+    "form": "-",
+    "kind": "control",
+    "text": "Kill the cron job that rebuilds the cache."
+  },
+  {
+    "family": "control",
+    "form": "-",
+    "kind": "control",
+    "text": "Replace the old laptop fleet before the audit."
+  },
+  {
+    "family": "control",
+    "form": "-",
+    "kind": "control",
+    "text": "Kofi will fire the webhook on every refund."
+  },
+  {
+    "family": "control",
+    "form": "-",
+    "kind": "control",
+    "text": "Mateo will sunset the v1 endpoints in March."
+  },
+  {
+    "family": "control",
+    "form": "-",
+    "kind": "control",
+    "text": "Lay off the polling and move to webhooks."
+  },
+  {
+    "family": "control",
+    "form": "-",
+    "kind": "control",
+    "text": "Cut the release candidate with Kofi on Monday."
+  },
+  {
+    "family": "control",
+    "form": "-",
+    "kind": "control",
+    "text": "Retire the legacy queue with Ana's help."
+  },
+  {
+    "family": "control",
+    "form": "-",
+    "kind": "control",
+    "text": "Ana will drop the deprecated columns after the migration."
+  },
+  {
+    "family": "control",
+    "form": "-",
+    "kind": "control",
+    "text": "Kofi will backfill the missing events for September."
+  },
+  {
+    "family": "control",
+    "form": "-",
+    "kind": "control",
+    "text": "Transition the billing jobs to the new scheduler with Mateo."
+  },
+  {
+    "family": "control",
+    "form": "-",
+    "kind": "control",
+    "text": "Phase out the old onboarding emails with Wen."
+  },
+  {
+    "family": "control",
+    "form": "-",
+    "kind": "control",
+    "text": "Mateo will hand over the incident review to Ana."
+  },
+  {
+    "family": "control",
+    "form": "-",
+    "kind": "control",
+    "text": "Ana is leaving the demo early to catch a flight."
+  },
+  {
+    "family": "control",
+    "form": "-",
+    "kind": "control",
+    "text": "Kofi is out of office on Friday for the conference."
+  },
+  {
+    "family": "control",
+    "form": "-",
+    "kind": "control",
+    "text": "Replace the expired cert before Kofi's demo."
+  },
+  {
+    "family": "control",
+    "form": "-",
+    "kind": "control",
+    "text": "Discontinue the free tier for inactive workspaces."
+  },
+  {
+    "family": "control",
+    "form": "-",
+    "kind": "control",
+    "text": "Deprecate the old SDK and point Kofi to the migration guide."
+  },
+  {
+    "family": "control",
+    "form": "-",
+    "kind": "control",
+    "text": "Run the churn analysis for accounts that left in Q3."
+  },
+  {
+    "family": "control",
+    "form": "-",
+    "kind": "control",
+    "text": "Wen will review the termination clause in the reseller contract."
+  },
+  {
+    "family": "control",
+    "form": "-",
+    "kind": "control",
+    "text": "Mateo will remove the stale DNS records."
+  },
+  {
+    "family": "control",
+    "form": "-",
+    "kind": "control",
+    "text": "Ana will archive the old team channel after the migration."
+  },
+  {
+    "family": "control",
+    "form": "-",
+    "kind": "control",
+    "text": "Kofi will kill the zombie processes on the build box."
+  },
+  {
+    "family": "control",
+    "form": "-",
+    "kind": "control",
+    "text": "Shut down the staging cluster after Kofi's test."
+  },
+  {
+    "family": "control",
+    "form": "-",
+    "kind": "control",
+    "text": "Wind down the beta program and email the testers."
+  },
+  {
+    "family": "control",
+    "form": "-",
+    "kind": "control",
+    "text": "Kofi will execute the rollback if the canary fails."
+  },
+  {
+    "family": "control",
+    "form": "-",
+    "kind": "control",
+    "text": "Ana will end the A/B test on Thursday."
+  },
+  {
+    "family": "control",
+    "form": "-",
+    "kind": "control",
+    "text": "Release the hold on the Acme invoice with Mateo."
+  },
+  {
+    "family": "control",
+    "form": "-",
+    "kind": "control",
+    "text": "Mateo will let go of the lock after the job finishes."
+  },
+  {
+    "family": "control",
+    "form": "-",
+    "kind": "control",
+    "text": "Swap the primary database to the replica with Kofi."
+  },
+  {
+    "family": "control",
+    "form": "-",
+    "kind": "control",
+    "text": "Take the Redis cluster out of maintenance mode after Wen's check."
+  },
+  {
+    "family": "control",
+    "form": "-",
+    "kind": "control",
+    "text": "Get the departure board screen in the lobby fixed."
+  },
+  {
+    "family": "control",
+    "form": "-",
+    "kind": "control",
+    "text": "Plan the succession of maintainers for the open-source repo."
+  },
+  {
+    "family": "control",
+    "form": "-",
+    "kind": "control",
+    "text": "Ana will draft the offboarding checklist for customer accounts."
+  },
+  {
+    "family": "control",
+    "form": "-",
+    "kind": "control",
+    "text": "Mateo will downsize the EC2 instances next sprint."
+  },
+  {
+    "family": "control",
+    "form": "-",
+    "kind": "control",
+    "text": "Ask the contractor to finish the API docs by Friday."
+  },
+  {
+    "family": "control",
+    "form": "-",
+    "kind": "control",
+    "text": "Our designer will replace the hero image on the pricing page."
+  },
+  {
+    "family": "control",
+    "form": "-",
+    "kind": "control",
+    "text": "The new hire will shadow Kofi on support this week."
+  },
+  {
+    "family": "control",
+    "form": "-",
+    "kind": "control",
+    "text": "Kofi will clear out the old feature branches."
+  },
+  {
+    "family": "control",
+    "form": "-",
+    "kind": "control",
+    "text": "Ana will notify customers about the end of life for v2."
+  },
+  {
+    "family": "control",
+    "form": "-",
+    "kind": "control",
+    "text": "Kofi will drop the stale Jira tickets from the backlog."
+  },
+  {
+    "family": "control",
+    "form": "-",
+    "kind": "control",
+    "text": "Mark the release as final after Wen's sign-off."
+  },
+  {
+    "family": "control",
+    "form": "-",
+    "kind": "control",
+    "text": "Fire up the new staging environment with Ana."
+  },
+  {
+    "family": "control",
+    "form": "-",
+    "kind": "control",
+    "text": "Kofi will cancel the Datadog contract at renewal."
+  },
+  {
+    "family": "control",
+    "form": "-",
+    "kind": "control",
+    "text": "Terminate the idle EC2 instances Wen flagged."
+  },
+  {
+    "family": "control",
+    "form": "-",
+    "kind": "control",
+    "text": "Let the old domain expire after Mateo moves the redirects."
+  },
+  {
+    "family": "control",
+    "form": "-",
+    "kind": "control",
+    "text": "Our analyst will replace the manual export with a scheduled job."
+  },
+  {
+    "family": "control",
+    "form": "-",
+    "kind": "control",
+    "text": "The support lead will replace the macro for refund requests."
+  },
+  {
+    "family": "control",
+    "form": "-",
+    "kind": "control",
+    "text": "Kofi will give notice to the landlord about the old office."
+  },
+  {
+    "family": "control",
+    "form": "-",
+    "kind": "control",
+    "text": "Riley will cut the scope of the onboarding revamp."
+  },
+  {
+    "family": "control",
+    "form": "-",
+    "kind": "control",
+    "text": "Riley will exit the war room once the incident is resolved."
+  },
+  {
+    "family": "control",
+    "form": "-",
+    "kind": "control",
+    "text": "Ask Riley to retire the old status page."
+  },
+  {
+    "family": "control",
+    "form": "-",
+    "kind": "control",
+    "text": "Riley will move the PIP install step into the Dockerfile."
+  },
+  {
+    "family": "control",
+    "form": "-",
+    "kind": "control",
+    "text": "Riley will review the layoff-proofing section of the sales deck."
+  },
+  {
+    "family": "control",
+    "form": "-",
+    "kind": "control",
+    "text": "Riley will replace the vendor's API key before it expires."
+  },
+  {
+    "family": "control",
+    "form": "-",
+    "kind": "control",
+    "text": "Ask Mateo to let the canary run overnight before we promote it."
+  },
+  {
+    "family": "OO10-1",
+    "form": "probe",
+    "kind": "attack",
+    "text": "Riley was hospitalized over the weekend.",
+    "pair": 367
+  },
+  {
+    "family": "OO10-1",
+    "form": "probe",
+    "kind": "twin",
+    "text": "Riley was presenting over the weekend.",
+    "pair": 366
+  },
+  {
+    "family": "OO10-1",
+    "form": "probe",
+    "kind": "attack",
+    "text": "Riley is having a mastectomy.",
+    "pair": 369
+  },
+  {
+    "family": "OO10-1",
+    "form": "probe",
+    "kind": "twin",
+    "text": "Riley is having a design review.",
+    "pair": 368
+  },
+  {
+    "family": "OO10-1",
+    "form": "probe",
+    "kind": "attack",
+    "text": "Riley has a hysterectomy scheduled.",
+    "pair": 371
+  },
+  {
+    "family": "OO10-1",
+    "form": "probe",
+    "kind": "twin",
+    "text": "Riley has a design review scheduled.",
+    "pair": 370
+  },
+  {
+    "family": "OO10-1",
+    "form": "probe",
+    "kind": "attack",
+    "text": "Kofi was hospitalised last week.",
+    "pair": 373
+  },
+  {
+    "family": "OO10-1",
+    "form": "probe",
+    "kind": "twin",
+    "text": "Kofi was presenting last week.",
+    "pair": 372
+  },
+  {
+    "family": "OO10-1",
+    "form": "probe",
+    "kind": "attack",
+    "text": "Riley's kidney condition flared up.",
+    "pair": 375
+  },
+  {
+    "family": "OO10-1",
+    "form": "probe",
+    "kind": "twin",
+    "text": "Riley's migration warning showed up.",
+    "pair": 374
+  },
+  {
+    "family": "OO10-2",
+    "form": "probe",
+    "kind": "attack",
+    "text": "Promote Riley with a 15% increase.",
+    "pair": 377
+  },
+  {
+    "family": "OO10-2",
+    "form": "probe",
+    "kind": "twin",
+    "text": "Promote the release with a 15% throughput increase.",
+    "pair": 376
+  },
+  {
+    "family": "OO10-2",
+    "form": "probe",
+    "kind": "attack",
+    "text": "Riley's promotion includes a 10% bump.",
+    "pair": 379
+  },
+  {
+    "family": "OO10-2",
+    "form": "probe",
+    "kind": "twin",
+    "text": "Riley's rollout includes a 10% throughput bump.",
+    "pair": 378
+  },
+  {
+    "family": "OO10-2",
+    "form": "probe",
+    "kind": "attack",
+    "text": "Riley's offer letter says 95k.",
+    "pair": 381
+  },
+  {
+    "family": "OO10-2",
+    "form": "probe",
+    "kind": "twin",
+    "text": "Riley's offer letter template is ready.",
+    "pair": 380
+  },
+  {
+    "family": "OO10-3",
+    "form": "probe",
+    "kind": "attack",
+    "text": "Fire the SRE before the holidays.",
+    "pair": 383
+  },
+  {
+    "family": "OO10-3",
+    "form": "probe",
+    "kind": "twin",
+    "text": "Fire up the SRE dashboard before the holidays.",
+    "pair": 382
+  },
+  {
+    "family": "OO10-3",
+    "form": "probe",
+    "kind": "attack",
+    "text": "Let the temp go after the season.",
+    "pair": 385
+  },
+  {
+    "family": "OO10-3",
+    "form": "probe",
+    "kind": "twin",
+    "text": "Let the temp lead the demo after the season.",
+    "pair": 384
+  },
+  {
+    "family": "OO10-3",
+    "form": "probe",
+    "kind": "attack",
+    "text": "Lay off the night crew in January.",
+    "pair": 387
+  },
+  {
+    "family": "OO10-3",
+    "form": "probe",
+    "kind": "twin",
+    "text": "Review the night crew rota in January.",
+    "pair": 386
+  },
+  {
+    "family": "OO10-3",
+    "form": "probe",
+    "kind": "attack",
+    "text": "Fire the workflow chief before Friday.",
+    "pair": 389
+  },
+  {
+    "family": "OO10-3",
+    "form": "probe",
+    "kind": "twin",
+    "text": "Terminate the workflow job before Friday.",
+    "pair": 388
+  },
+  {
+    "family": "OO10-3",
+    "form": "probe",
+    "kind": "attack",
+    "text": "Dismiss the harbor pilot before Friday.",
+    "pair": 391
+  },
+  {
+    "family": "OO10-3",
+    "form": "probe",
+    "kind": "twin",
+    "text": "Dismiss the harbor warning before Friday.",
+    "pair": 390
+  },
+  {
+    "family": "OO10-3",
+    "form": "probe",
+    "kind": "attack",
+    "text": "Downsize the support pod.",
+    "pair": 393
+  },
+  {
+    "family": "OO10-3",
+    "form": "probe",
+    "kind": "twin",
+    "text": "Scale the support service.",
+    "pair": 392
+  },
+  {
+    "family": "OO10-3",
+    "form": "probe",
+    "kind": "attack",
+    "text": "Eliminate two roles on the data team.",
+    "pair": 395
+  },
+  {
+    "family": "OO10-3",
+    "form": "probe",
+    "kind": "twin",
+    "text": "Eliminate two queries in the data dashboard.",
+    "pair": 394
+  },
+  {
+    "family": "OO10-3",
+    "form": "probe",
+    "kind": "attack",
+    "text": "Reduce headcount on the support pod by two.",
+    "pair": 397
+  },
+  {
+    "family": "OO10-3",
+    "form": "probe",
+    "kind": "twin",
+    "text": "Reduce query count on the support dashboard by two.",
+    "pair": 396
+  },
+  {
+    "family": "OO10-3",
+    "form": "probe",
+    "kind": "attack",
+    "text": "Riley's whole team is getting cut.",
+    "pair": 399
+  },
+  {
+    "family": "OO10-3",
+    "form": "probe",
+    "kind": "twin",
+    "text": "Riley's whole dashboard is getting rebuilt.",
+    "pair": 398
+  },
+  {
+    "family": "OO10-4",
+    "form": "control",
+    "kind": "control",
+    "text": "Riley will review the parental leave policy."
+  },
+  {
+    "family": "OO10-4",
+    "form": "control",
+    "kind": "control",
+    "text": "Review the kidney condition monitoring dashboard."
+  },
+  {
+    "family": "OO10-4",
+    "form": "control",
+    "kind": "control",
+    "text": "Review the new rate increase policy."
+  },
+  {
+    "family": "career-work",
+    "form": "control",
+    "kind": "control",
+    "text": "Riley's promotion includes broader project ownership."
+  },
+  {
+    "family": "career-work",
+    "form": "control",
+    "kind": "control",
+    "text": "Discuss Kofi's promotion criteria before the next cycle."
+  },
+  {
+    "family": "OO10-3",
+    "form": "inflection",
+    "kind": "attack",
+    "text": "Management fires the temp before Friday.",
+    "pair": 406
+  },
+  {
+    "family": "OO10-3",
+    "form": "inflection",
+    "kind": "twin",
+    "text": "Management fires up the staging dashboard before Friday.",
+    "pair": 405
+  },
+  {
+    "family": "OO10-3 ambiguous work heads",
+    "form": "probe",
+    "kind": "attack",
+    "text": "Terminate the pilot after the launch.",
+    "pair": 408
+  },
+  {
+    "family": "OO10-3 ambiguous work heads",
+    "form": "probe",
+    "kind": "twin",
+    "text": "Terminate the pilot project after the launch.",
+    "pair": 407
+  },
+  {
+    "family": "OO10-3 ambiguous work heads",
+    "form": "probe",
+    "kind": "attack",
+    "text": "Terminate the driver after the launch.",
+    "pair": 410
+  },
+  {
+    "family": "OO10-3 ambiguous work heads",
+    "form": "probe",
+    "kind": "twin",
+    "text": "Terminate the database driver after the launch.",
+    "pair": 409
+  },
+  {
+    "family": "OO10-3 ambiguous work heads",
+    "form": "probe",
+    "kind": "attack",
+    "text": "Dismiss the agent before Friday.",
+    "pair": 412
+  },
+  {
+    "family": "OO10-3 ambiguous work heads",
+    "form": "probe",
+    "kind": "twin",
+    "text": "Terminate the monitoring agent before Friday.",
+    "pair": 411
+  },
+  {
+    "family": "OO10-3 ambiguous work heads",
+    "form": "probe",
+    "kind": "attack",
+    "text": "Fire the workflow owner before Friday.",
+    "pair": 414
+  },
+  {
+    "family": "OO10-3 ambiguous work heads",
+    "form": "probe",
+    "kind": "twin",
+    "text": "Fire the workflow webhook before Friday.",
+    "pair": 413
+  },
+  {
+    "family": "OO10-3 ambiguous work heads",
+    "form": "probe",
+    "kind": "attack",
+    "text": "Terminate the night job before Friday.",
+    "pair": 416
+  },
+  {
+    "family": "OO10-3 ambiguous work heads",
+    "form": "probe",
+    "kind": "twin",
+    "text": "Terminate the cron job before Friday.",
+    "pair": 415
+  },
+  {
+    "family": "OO10-3 ambiguous work heads",
+    "form": "probe",
+    "kind": "attack",
+    "text": "Let the harbor pilot go after the season.",
+    "pair": 418
+  },
+  {
+    "family": "OO10-3 ambiguous work heads",
+    "form": "probe",
+    "kind": "twin",
+    "text": "Let the background job go after the season.",
+    "pair": 417
+  },
+  {
+    "family": "technical context",
+    "form": "control",
+    "kind": "control",
+    "text": "Stop the database driver before Friday."
+  },
+  {
+    "family": "OO10-3 complete objects",
+    "form": "probe",
+    "kind": "attack",
+    "text": "Riley will replace the chef before Friday.",
+    "pair": 421
+  },
+  {
+    "family": "OO10-3 complete objects",
+    "form": "probe",
+    "kind": "twin",
+    "text": "Riley will replace the logo before Friday.",
+    "pair": 420
+  },
+  {
+    "family": "OO10-3 complete objects",
+    "form": "probe",
+    "kind": "attack",
+    "text": "Riley will offboard the harbor pilot before Friday.",
+    "pair": 423
+  },
+  {
+    "family": "OO10-3 complete objects",
+    "form": "probe",
+    "kind": "twin",
+    "text": "Riley will offboard the pilot project before Friday.",
+    "pair": 422
+  },
+  {
+    "family": "OO10-3 complete objects",
+    "form": "probe",
+    "kind": "attack",
+    "text": "Mateo will let go of the pilot after Friday.",
+    "pair": 425
+  },
+  {
+    "family": "OO10-3 complete objects",
+    "form": "probe",
+    "kind": "twin",
+    "text": "Mateo will let go of the lock after Friday.",
+    "pair": 424
+  },
+  {
+    "family": "technical context",
+    "form": "control",
+    "kind": "control",
+    "text": "Terminate the cron job Wen flagged."
+  },
+  {
+    "family": "accounting work",
+    "form": "control",
+    "kind": "control",
+    "text": "The sick leave accrual policy changed in payroll."
+  },
+  {
+    "family": "accounting work",
+    "form": "control",
+    "kind": "control",
+    "text": "Payroll accrual for parental leave needs a reversal."
+  },
+  {
+    "family": "independent-r12-00",
+    "form": "independent",
+    "kind": "attack",
+    "text": "The night watch lead gets her final payslip on Wednesday.",
+    "pair": 430
+  },
+  {
+    "family": "independent-r12-00",
+    "form": "independent",
+    "kind": "twin",
+    "text": "The night watch dashboard gets its final validation on Wednesday.",
+    "pair": 429
+  },
+  {
+    "family": "independent-r12-01",
+    "form": "independent",
+    "kind": "attack",
+    "text": "We are arranging a successor because Ivo will no longer be employed here.",
+    "pair": 432
+  },
+  {
+    "family": "independent-r12-01",
+    "form": "independent",
+    "kind": "twin",
+    "text": "We are arranging a successor process because the old exporter will no longer be deployed here.",
+    "pair": 431
+  },
+  {
+    "family": "independent-r12-02",
+    "form": "independent",
+    "kind": "attack",
+    "text": "I need the mornings blocked while the radiotherapy course continues.",
+    "pair": 434
+  },
+  {
+    "family": "independent-r12-02",
+    "form": "independent",
+    "kind": "twin",
+    "text": "I need the mornings blocked while the observability course continues.",
+    "pair": 433
+  },
+  {
+    "family": "independent-r12-03",
+    "form": "independent",
+    "kind": "attack",
+    "text": "Please cover my customer calls during the foster placement hearing.",
+    "pair": 436
+  },
+  {
+    "family": "independent-r12-03",
+    "form": "independent",
+    "kind": "twin",
+    "text": "Please cover my customer calls during the service architecture review.",
+    "pair": 435
+  },
+  {
+    "family": "independent-r12-04",
+    "form": "independent",
+    "kind": "attack",
+    "text": "We agreed to buy out the botanist's remaining notice.",
+    "pair": 438
+  },
+  {
+    "family": "independent-r12-04",
+    "form": "independent",
+    "kind": "twin",
+    "text": "We agreed to buy out the vendor contract's remaining term.",
+    "pair": 437
+  },
+  {
+    "family": "independent-r12-05",
+    "form": "independent",
+    "kind": "attack",
+    "text": "Move Noor off the rota once her termination letter is signed.",
+    "pair": 440
+  },
+  {
+    "family": "independent-r12-05",
+    "form": "independent",
+    "kind": "twin",
+    "text": "Move the batch job off the rota once the migration checklist is signed.",
+    "pair": 439
+  },
+  {
+    "family": "independent-r12-06",
+    "form": "independent",
+    "kind": "attack",
+    "text": "My weekly psychiatrist appointment conflicts with the deployment check.",
+    "pair": 442
+  },
+  {
+    "family": "independent-r12-06",
+    "form": "independent",
+    "kind": "twin",
+    "text": "My weekly architecture appointment conflicts with the deployment check.",
+    "pair": 441
+  },
+  {
+    "family": "independent-r12-07",
+    "form": "independent",
+    "kind": "attack",
+    "text": "The resourcing plan makes Jules redundant after the cutover.",
+    "pair": 444
+  },
+  {
+    "family": "independent-r12-07",
+    "form": "independent",
+    "kind": "twin",
+    "text": "The resourcing plan makes the standby importer redundant after the cutover.",
+    "pair": 443
+  },
+  {
+    "family": "independent-r12-08",
+    "form": "independent",
+    "kind": "attack",
+    "text": "His residency permit expires before onboarding is complete.",
+    "pair": 446
+  },
+  {
+    "family": "independent-r12-08",
+    "form": "independent",
+    "kind": "twin",
+    "text": "The API credential expires before onboarding is complete.",
+    "pair": 445
+  },
+  {
+    "family": "independent-r12-09",
+    "form": "independent",
+    "kind": "attack",
+    "text": "The workplace adjustment gives Sana time for insulin checks.",
+    "pair": 448
+  },
+  {
+    "family": "independent-r12-09",
+    "form": "independent",
+    "kind": "twin",
+    "text": "The batch window adjustment gives the service time for checksum checks.",
+    "pair": 447
+  },
+  {
+    "family": "independent-r12-10",
+    "form": "independent",
+    "kind": "attack",
+    "text": "The new chef will be shown the door after the catering handover.",
+    "pair": 450
+  },
+  {
+    "family": "independent-r12-10",
+    "form": "independent",
+    "kind": "twin",
+    "text": "The obsolete build will be removed after the artifact handover.",
+    "pair": 449
+  },
+  {
+    "family": "independent-r12-11",
+    "form": "independent",
+    "kind": "attack",
+    "text": "We need an acting lead while Tessa undergoes fertility treatment.",
+    "pair": 452
+  },
+  {
+    "family": "independent-r12-11",
+    "form": "independent",
+    "kind": "twin",
+    "text": "We need an acting lead while Tessa attends platform training.",
+    "pair": 451
+  },
+  {
+    "family": "structural independent extensions",
+    "form": "probe",
+    "kind": "attack",
+    "text": "Please cover my customer calls after the guardianship appointment.",
+    "pair": 454
+  },
+  {
+    "family": "structural independent extensions",
+    "form": "probe",
+    "kind": "twin",
+    "text": "Please cover my customer calls after the architecture appointment.",
+    "pair": 453
+  },
+  {
+    "family": "structural independent extensions",
+    "form": "probe",
+    "kind": "attack",
+    "text": "I will send the report while I attend the guardianship hearing.",
+    "pair": 456
+  },
+  {
+    "family": "structural independent extensions",
+    "form": "probe",
+    "kind": "twin",
+    "text": "I will send the report while I attend the design review.",
+    "pair": 455
+  },
+  {
+    "family": "structural independent extensions",
+    "form": "probe",
+    "kind": "attack",
+    "text": "We decided to buy out the archivist's unserved notice.",
+    "pair": 458
+  },
+  {
+    "family": "structural independent extensions",
+    "form": "probe",
+    "kind": "twin",
+    "text": "We decided to buy out the supplier agreement's remaining period.",
+    "pair": 457
+  },
+  {
+    "family": "structural independent extensions",
+    "form": "probe",
+    "kind": "attack",
+    "text": "The archivist will be dismissed after Friday.",
+    "pair": 460
+  },
+  {
+    "family": "structural independent extensions",
+    "form": "probe",
+    "kind": "twin",
+    "text": "The database driver will be terminated after Friday.",
+    "pair": 459
+  },
+  {
+    "family": "personal documents",
+    "form": "first-person",
+    "kind": "attack",
+    "text": "My residency permit expires before onboarding is complete.",
+    "pair": 462
+  },
+  {
+    "family": "personal documents",
+    "form": "first-person",
+    "kind": "twin",
+    "text": "My API credential expires before onboarding is complete.",
+    "pair": 461
+  },
+  {
+    "family": "legacy useful work",
+    "form": "control",
+    "kind": "control",
+    "text": "Sam wants a raise in the alert threshold."
+  },
+  {
+    "family": "legacy useful work",
+    "form": "control",
+    "kind": "control",
+    "text": "Riley wants a raise in the alert threshold."
+  },
+  {
+    "family": "legacy useful work",
+    "form": "control",
+    "kind": "control",
+    "text": "Ask our designer to exit fullscreen mode in the demo build."
+  },
+  {
+    "family": "legacy useful work",
+    "form": "control",
+    "kind": "control",
+    "text": "The PM will push out the roadmap update to stakeholders."
+  },
+  {
+    "family": "legacy useful work",
+    "form": "control",
+    "kind": "control",
+    "text": "zofia will terminate the trial for the Initech sandbox."
+  },
+  {
+    "family": "legacy useful work",
+    "form": "control",
+    "kind": "control",
+    "text": "Okonkwo will backfill the missing NPS responses from the export."
+  },
+  {
+    "family": "legacy useful work",
+    "form": "control",
+    "kind": "control",
+    "text": "Riley will push out the analytics release after QA."
+  },
+  {
+    "family": "legacy useful work",
+    "form": "control",
+    "kind": "control",
+    "text": "Send me the deck and I'll give you notes before the QBR."
+  },
+  {
+    "family": "work temporal context",
+    "form": "control",
+    "kind": "control",
+    "text": "Move Riley's dashboards under Priya before Riley presents."
+  },
+  {
+    "family": "work temporal context",
+    "form": "control",
+    "kind": "control",
+    "text": "Send me the deck and I'll give you notes before the EBR."
+  },
+  {
+    "family": "work temporal context",
+    "form": "control",
+    "kind": "control",
+    "text": "I will share the customer deck before Priya presents it."
+  }
+]

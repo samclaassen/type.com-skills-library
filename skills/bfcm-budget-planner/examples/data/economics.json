@@ -1,0 +1,43 @@
+{
+  "brand": "Fernhill Goods",
+  "currency": "USD",
+  "plan_year": 2026,
+  "plan_window": {
+    "start": "2026-11-01",
+    "end": "2026-12-06"
+  },
+  "cyber_week": {
+    "start": "2026-11-26",
+    "end": "2026-12-01"
+  },
+  "sale_window": {
+    "start": "2026-11-24",
+    "end": "2026-12-01"
+  },
+  "gross_margin_pct": 64,
+  "shipping_fulfillment_per_order": 11.0,
+  "payment_fee_pct": 2.9,
+  "payment_fee_fixed": 0.3,
+  "return_rate_pct": 7,
+  "discount_pct": 25,
+  "target": {
+    "type": "margin_floor",
+    "min_contribution_pct": 12
+  },
+  "total_budget_cap": 87000,
+  "max_daily_increase_pct": 30,
+  "channel_shares": {
+    "meta": {
+      "min": 45,
+      "max": 65
+    },
+    "google": {
+      "min": 25,
+      "max": 40
+    },
+    "tiktok": {
+      "min": 8,
+      "max": 18
+    }
+  }
+}

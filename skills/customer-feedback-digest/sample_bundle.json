@@ -1,0 +1,669 @@
+{
+  "schema_version": 1,
+  "_note": "FICTIONAL sample data. Every company, person, domain and link is invented; Granola links are placeholders.",
+  "period": {
+    "start": "2026-09-28",
+    "end": "2026-10-04",
+    "timezone_label": "PT"
+  },
+  "sources": {
+    "meetings": {
+      "provider": "granola",
+      "status": "ok",
+      "detail": null,
+      "history_days": null
+    },
+    "transcripts": {
+      "provider": "granola",
+      "status": "partial",
+      "detail": "1 meeting's workspace does not allow transcript access"
+    },
+    "crm": {
+      "provider": "hubspot",
+      "status": "ok"
+    },
+    "billing": {
+      "provider": "stripe",
+      "status": "not_configured",
+      "detail": "ARR taken from the CRM"
+    },
+    "issue_tracker": {
+      "provider": "linear",
+      "status": "ok",
+      "detail": "read-only search"
+    }
+  },
+  "accounts": [
+    {
+      "key": "outfitters.example",
+      "name": "Example Outfitters Co",
+      "domains": [
+        "outfitters.example"
+      ],
+      "status": "customer",
+      "segment": "Mid-market",
+      "plan": "Growth",
+      "arr": 24000,
+      "arr_source": "crm"
+    },
+    {
+      "key": "marrowbyvane.example",
+      "name": "Marrowby & Vane",
+      "domains": [
+        "marrowbyvane.example"
+      ],
+      "status": "customer",
+      "segment": "Enterprise",
+      "plan": "Enterprise",
+      "arr": 60000,
+      "arr_source": "crm"
+    },
+    {
+      "key": "plimsollquist.example",
+      "name": "Plimsoll & Quist",
+      "domains": [
+        "plimsollquist.example"
+      ],
+      "status": "prospect",
+      "segment": "Mid-market"
+    },
+    {
+      "key": "brackenvolt.example",
+      "name": "Brackenvolt Labs",
+      "domains": [
+        "brackenvolt.example"
+      ],
+      "status": "customer",
+      "segment": "SMB",
+      "plan": "Starter",
+      "arr": 6000,
+      "arr_source": "crm"
+    },
+    {
+      "key": "kestrovane.example",
+      "name": "Kestrovane Supply",
+      "domains": [
+        "kestrovane.example"
+      ],
+      "status": "customer",
+      "segment": "Mid-market",
+      "plan": "Growth",
+      "arr": 18000,
+      "arr_source": "crm"
+    },
+    {
+      "key": "quirnwell.example",
+      "name": "Quirnwell Studio",
+      "domains": [
+        "quirnwell.example"
+      ],
+      "status": "prospect",
+      "segment": "Agency"
+    }
+  ],
+  "meetings": [
+    {
+      "meeting_id": "sample-m01",
+      "title": "Example Outfitters QBR",
+      "start": "2026-09-29T10:00:00-07:00",
+      "url": "https://notes.granola.ai/d/sample-m01",
+      "kind": "customer",
+      "account_key": "outfitters.example",
+      "transcript": "ok",
+      "attendees": [
+        {
+          "email": "dana@tamsquill.example",
+          "name": "Dana Ortiz (sample)",
+          "org": "Tamsquill"
+        },
+        {
+          "email": "priya@outfitters.example",
+          "name": "Priya Sharma (sample)",
+          "org": "Example Outfitters"
+        },
+        {
+          "email": "lee@outfitters.example",
+          "name": "Lee Park (sample)",
+          "org": "Example Outfitters"
+        }
+      ]
+    },
+    {
+      "meeting_id": "sample-m02",
+      "title": "Example Outfitters QBR",
+      "start": "2026-09-29T10:00:00-07:00",
+      "url": "https://notes.granola.ai/d/sample-m02",
+      "kind": "customer",
+      "account_key": "outfitters.example",
+      "transcript": "not_requested",
+      "attendees": [
+        {
+          "email": "sam@tamsquill.example",
+          "name": "Sam Kim (sample)",
+          "org": "Tamsquill"
+        },
+        {
+          "email": "dana@tamsquill.example",
+          "name": "Dana Ortiz (sample)",
+          "org": "Tamsquill"
+        },
+        {
+          "email": "priya@outfitters.example",
+          "name": "Priya Sharma (sample)",
+          "org": "Example Outfitters"
+        }
+      ]
+    },
+    {
+      "meeting_id": "sample-m03",
+      "title": "Marrowby & Vane weekly sync",
+      "start": "2026-09-30T09:00:00-07:00",
+      "url": "https://notes.granola.ai/d/sample-m03",
+      "kind": "customer",
+      "account_key": "marrowbyvane.example",
+      "transcript": "ok",
+      "attendees": [
+        {
+          "email": "dana@tamsquill.example",
+          "name": "Dana Ortiz (sample)",
+          "org": "Tamsquill"
+        },
+        {
+          "email": "ops@marrowbyvane.example",
+          "name": "Rae Quinn (sample)",
+          "org": "Marrowby & Vane"
+        }
+      ]
+    },
+    {
+      "meeting_id": "sample-m04",
+      "title": "Plimsoll & Quist discovery",
+      "start": "2026-10-01T11:00:00-07:00",
+      "url": "https://notes.granola.ai/d/sample-m04",
+      "kind": "prospect",
+      "account_key": "plimsollquist.example",
+      "transcript": "denied",
+      "attendees": [
+        {
+          "email": "sam@tamsquill.example",
+          "name": "Sam Kim (sample)",
+          "org": "Tamsquill"
+        },
+        {
+          "email": "marcus@plimsollquist.example",
+          "name": "Marcus Lee (sample)",
+          "org": "Plimsoll & Quist"
+        }
+      ]
+    },
+    {
+      "meeting_id": "sample-m05",
+      "title": "Brackenvolt onboarding check-in",
+      "start": "2026-10-01T14:00:00-07:00",
+      "url": "https://notes.granola.ai/d/sample-m05",
+      "kind": "customer",
+      "account_key": "brackenvolt.example",
+      "transcript": "ok",
+      "attendees": [
+        {
+          "email": "dana@tamsquill.example",
+          "name": "Dana Ortiz (sample)",
+          "org": "Tamsquill"
+        },
+        {
+          "email": "jo@brackenvolt.example",
+          "name": "Jo Lin (sample)",
+          "org": "Brackenvolt Labs"
+        }
+      ]
+    },
+    {
+      "meeting_id": "sample-m06",
+      "title": "Kestrovane Supply renewal call",
+      "start": "2026-10-02T08:30:00-07:00",
+      "url": "https://notes.granola.ai/d/sample-m06",
+      "kind": "customer",
+      "account_key": "kestrovane.example",
+      "transcript": "ok",
+      "attendees": [
+        {
+          "email": "dana@tamsquill.example",
+          "name": "Dana Ortiz (sample)",
+          "org": "Tamsquill"
+        },
+        {
+          "email": "finance@kestrovane.example",
+          "name": "Ari Stone (sample)",
+          "org": "Kestrovane Supply"
+        },
+        {
+          "email": "notetaker+x1y2@recorder.example"
+        }
+      ]
+    },
+    {
+      "meeting_id": "sample-m07",
+      "title": "Weekly pipeline review",
+      "start": "2026-09-29T08:00:00-07:00",
+      "url": "https://notes.granola.ai/d/sample-m07",
+      "kind": "unknown",
+      "transcript": "not_requested",
+      "attendees": [
+        {
+          "email": "dana@tamsquill.example",
+          "name": "Dana Ortiz (sample)",
+          "org": "Tamsquill"
+        },
+        {
+          "email": "sam@tamsquill.example",
+          "name": "Sam Kim (sample)",
+          "org": "Tamsquill"
+        }
+      ]
+    },
+    {
+      "meeting_id": "sample-m08",
+      "title": "Product standup",
+      "start": "2026-10-02T09:30:00-07:00",
+      "url": "https://notes.granola.ai/d/sample-m08",
+      "transcript": "not_requested",
+      "attendees": [
+        {
+          "email": "sam@tamsquill.example",
+          "name": "Sam Kim (sample)",
+          "org": "Tamsquill"
+        },
+        {
+          "email": "dana@tamsquill.example",
+          "name": "Dana Ortiz (sample)",
+          "org": "Tamsquill"
+        },
+        {
+          "email": "eng@eu.tamsquill.example",
+          "name": "Kai Moss (sample)"
+        }
+      ]
+    },
+    {
+      "meeting_id": "sample-m09",
+      "title": "Intro with Wexfenn Capital",
+      "start": "2026-10-02T13:00:00-07:00",
+      "url": "https://notes.granola.ai/d/sample-m09",
+      "kind": "investor",
+      "transcript": "not_requested",
+      "attendees": [
+        {
+          "email": "sam@tamsquill.example",
+          "name": "Sam Kim (sample)",
+          "org": "Tamsquill"
+        },
+        {
+          "email": "partner@wexfenn.example",
+          "name": "Lou Hart (sample)",
+          "org": "Wexfenn Capital"
+        }
+      ]
+    },
+    {
+      "meeting_id": "sample-m10",
+      "title": "Coffee chat",
+      "start": "2026-10-03T10:00:00-07:00",
+      "url": "https://notes.granola.ai/d/sample-m10",
+      "transcript": "not_requested",
+      "attendees": [
+        {
+          "email": "sam@tamsquill.example",
+          "name": "Sam Kim (sample)",
+          "org": "Tamsquill"
+        }
+      ]
+    },
+    {
+      "meeting_id": "sample-m11",
+      "title": "Quirnwell Studio demo",
+      "start": "2026-10-02T15:00:00-07:00",
+      "url": "https://notes.granola.ai/d/sample-m11",
+      "kind": "prospect",
+      "account_key": "quirnwell.example",
+      "transcript": "ok",
+      "attendees": [
+        {
+          "email": "sam@tamsquill.example",
+          "name": "Sam Kim (sample)",
+          "org": "Tamsquill"
+        },
+        {
+          "email": "mina@quirnwell.example",
+          "name": "Mina Cole (sample)",
+          "org": "Quirnwell Studio"
+        }
+      ]
+    }
+  ],
+  "themes": [
+    {
+      "key": "bulk-csv-import",
+      "title": "Bulk CSV import for orders",
+      "description": "Customers want to load historical and weekly orders from a CSV file instead of entering them one by one.",
+      "tracker_search": {
+        "status": "searched",
+        "query": "bulk import csv"
+      },
+      "issue_matches": [
+        {
+          "provider": "linear",
+          "id": "TAM-142",
+          "title": "Bulk import orders from CSV",
+          "url": "https://issues.tamsquill.example/TAM-142",
+          "state": "In Progress",
+          "confidence": "high",
+          "reason": "same capability: CSV upload of orders"
+        }
+      ]
+    },
+    {
+      "key": "sso-saml",
+      "title": "Single sign-on (SAML)",
+      "description": "Security reviews require SAML single sign-on before rollout.",
+      "tracker_search": {
+        "status": "searched",
+        "query": "SSO SAML"
+      },
+      "issue_matches": []
+    },
+    {
+      "key": "dashboard-load-time",
+      "title": "Dashboards slow to load",
+      "tracker_search": {
+        "status": "searched",
+        "query": "dashboard slow load"
+      },
+      "issue_matches": [
+        {
+          "provider": "linear",
+          "id": "TAM-120",
+          "title": "Dashboard performance",
+          "url": "https://issues.tamsquill.example/TAM-120",
+          "state": "Backlog",
+          "confidence": "medium",
+          "reason": "covers dashboard speed but not the filters customers named"
+        }
+      ]
+    },
+    {
+      "key": "countwhistle-comparison",
+      "title": "Compared with Countwhistle",
+      "tracker_search": {
+        "status": "not_searched"
+      }
+    },
+    {
+      "key": "weekly-report-automation",
+      "title": "Weekly report automation saves time",
+      "tracker_search": {
+        "status": "not_searched"
+      }
+    },
+    {
+      "key": "slack-alert-delay",
+      "title": "Slack alerts arrive late",
+      "description": "Low-stock alerts reach Slack hours after the threshold is crossed.",
+      "tracker_search": {
+        "status": "searched",
+        "query": "slack alert delay"
+      },
+      "issue_matches": [
+        {
+          "provider": "linear",
+          "id": "TAM-98",
+          "title": "Notification queue backlog",
+          "url": "https://issues.tamsquill.example/TAM-98",
+          "state": "Done",
+          "confidence": "low",
+          "reason": "older queue issue; unclear if Slack alerts were affected"
+        }
+      ]
+    },
+    {
+      "key": "renewal-price-increase",
+      "title": "Price increase at renewal",
+      "tracker_search": {
+        "status": "not_searched"
+      }
+    },
+    {
+      "key": "export-pdf",
+      "title": "Export reports to PDF",
+      "tracker_search": {
+        "status": "searched",
+        "query": "export pdf"
+      },
+      "issue_matches": []
+    }
+  ],
+  "items": [
+    {
+      "id": "i01",
+      "meeting_id": "sample-m01",
+      "type": "feature_request",
+      "theme": "bulk-csv-import",
+      "summary": "Wants CSV upload for weekly orders",
+      "evidence": {
+        "kind": "transcript",
+        "text": "Every Monday someone on my team re-types two hundred orders. If we could just drop in the CSV we'd get a day back.",
+        "speaker_role": "Head of Ops",
+        "speaker_side": "customer"
+      }
+    },
+    {
+      "id": "i02",
+      "meeting_id": "sample-m01",
+      "type": "feature_request",
+      "theme": "bulk-csv-import",
+      "summary": "Raised CSV import again at the end of the call",
+      "evidence": {
+        "kind": "transcript",
+        "text": "So the import thing, that's really the one for us.",
+        "speaker_role": "Head of Ops",
+        "speaker_side": "customer"
+      }
+    },
+    {
+      "id": "i03",
+      "meeting_id": "sample-m02",
+      "type": "feature_request",
+      "theme": "bulk-csv-import",
+      "summary": "Same request, captured in the second note of the QBR",
+      "evidence": {
+        "kind": "note",
+        "text": "Asked again for CSV import of weekly orders",
+        "speaker_role": "Head of Ops",
+        "speaker_side": "customer"
+      }
+    },
+    {
+      "id": "i04",
+      "meeting_id": "sample-m01",
+      "type": "usability",
+      "theme": "dashboard-load-time",
+      "summary": "Dashboards slow with filters",
+      "evidence": {
+        "kind": "transcript",
+        "text": "The regional dashboard takes about thirty seconds once I add the store filter.",
+        "speaker_role": "Operations analyst",
+        "speaker_side": "customer"
+      }
+    },
+    {
+      "id": "i05",
+      "meeting_id": "sample-m03",
+      "type": "feature_request",
+      "theme": "bulk-csv-import",
+      "evidence": {
+        "kind": "transcript",
+        "text": "We're migrating three years of orders. Is there any way to bulk load them?",
+        "speaker_role": "Operations lead",
+        "speaker_side": "customer"
+      }
+    },
+    {
+      "id": "i06",
+      "meeting_id": "sample-m03",
+      "type": "feature_request",
+      "theme": "sso-saml",
+      "evidence": {
+        "kind": "transcript",
+        "text": "IT won't let us add more seats until it's behind single sign-on.",
+        "speaker_role": "Operations lead",
+        "speaker_side": "customer"
+      }
+    },
+    {
+      "id": "i07",
+      "meeting_id": "sample-m03",
+      "type": "praise",
+      "theme": "weekly-report-automation",
+      "evidence": {
+        "kind": "transcript",
+        "text": "The Friday report alone saves me most of an afternoon.",
+        "speaker_role": "Operations lead",
+        "speaker_side": "customer"
+      }
+    },
+    {
+      "id": "i08",
+      "meeting_id": "sample-m04",
+      "type": "objection",
+      "theme": "sso-saml",
+      "evidence": {
+        "kind": "note",
+        "text": "Security review blocks purchase until SAML SSO is available",
+        "speaker_role": "VP Finance",
+        "speaker_side": "customer"
+      }
+    },
+    {
+      "id": "i09",
+      "meeting_id": "sample-m04",
+      "type": "feature_request",
+      "theme": "bulk-csv-import",
+      "evidence": {
+        "kind": "note",
+        "text": "Needs to import existing order history from spreadsheets during onboarding",
+        "speaker_role": "VP Finance",
+        "speaker_side": "customer"
+      }
+    },
+    {
+      "id": "i10",
+      "meeting_id": "sample-m04",
+      "type": "competitor",
+      "theme": "countwhistle-comparison",
+      "competitor": "Countwhistle",
+      "evidence": {
+        "kind": "note",
+        "text": "Also evaluating Countwhistle; likes its spreadsheet import",
+        "speaker_role": "VP Finance",
+        "speaker_side": "customer"
+      }
+    },
+    {
+      "id": "i11",
+      "meeting_id": "sample-m05",
+      "type": "bug",
+      "theme": "slack-alert-delay",
+      "evidence": {
+        "kind": "transcript",
+        "text": "The low-stock alert hit Slack at 4pm. We'd sold out by noon.",
+        "speaker_role": "Founder",
+        "speaker_side": "customer"
+      }
+    },
+    {
+      "id": "i12",
+      "meeting_id": "sample-m05",
+      "type": "praise",
+      "theme": "weekly-report-automation",
+      "evidence": {
+        "kind": "transcript",
+        "text": "Honestly the weekly report is why we signed.",
+        "speaker_role": "Founder",
+        "speaker_side": "customer"
+      }
+    },
+    {
+      "id": "i13",
+      "meeting_id": "sample-m06",
+      "type": "churn_risk",
+      "theme": "renewal-price-increase",
+      "evidence": {
+        "kind": "transcript",
+        "text": "If the price goes up again at renewal, we'll have to look at Countwhistle seriously.",
+        "speaker_role": "Finance director",
+        "speaker_side": "customer"
+      }
+    },
+    {
+      "id": "i14",
+      "meeting_id": "sample-m06",
+      "type": "competitor",
+      "theme": "countwhistle-comparison",
+      "competitor": "Countwhistle",
+      "evidence": {
+        "kind": "transcript",
+        "text": "Countwhistle quoted us about a third less for the same seats.",
+        "speaker_role": "Finance director",
+        "speaker_side": "customer"
+      }
+    },
+    {
+      "id": "i15",
+      "meeting_id": "sample-m06",
+      "type": "usability",
+      "theme": "dashboard-load-time",
+      "evidence": {
+        "kind": "transcript",
+        "text": "Half the team gave up on the dashboards because they spin forever.",
+        "speaker_role": "Customer participant",
+        "speaker_side": "unconfirmed"
+      }
+    },
+    {
+      "id": "i16",
+      "meeting_id": "sample-m11",
+      "type": "feature_request",
+      "theme": "bulk-csv-import",
+      "evidence": {
+        "kind": "transcript",
+        "text": "For our clients we'd need to load their order files in bulk, not by hand.",
+        "speaker_role": "Managing director",
+        "speaker_side": "customer"
+      }
+    },
+    {
+      "id": "i17",
+      "meeting_id": "sample-m11",
+      "type": "feature_request",
+      "theme": "export-pdf",
+      "evidence": {
+        "kind": "transcript",
+        "text": "Could the client report come out as a PDF we can brand?",
+        "speaker_role": "Managing director",
+        "speaker_side": "customer"
+      }
+    },
+    {
+      "id": "i18",
+      "meeting_id": "sample-m09",
+      "type": "feature_request",
+      "theme": "export-pdf",
+      "evidence": {
+        "kind": "note",
+        "text": "Asked whether investor updates could be exported",
+        "speaker_role": "Partner",
+        "speaker_side": "customer"
+      }
+    }
+  ],
+  "date_gaps": []
+}

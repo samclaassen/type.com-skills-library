@@ -1,0 +1,190 @@
+=== 1. Deal closed-won: scheduled run writes the handoff doc (logged as pending) ===
+# Sales-to-CS handoff: Quillfen Freight Co (fictional)
+
+_As of Oct 1, 2026 · 5 sales meetings (Aug 20 – Sep 29) · CRM: HubSpot deal found · Internal, for the account team._
+
+## Read this first
+- ⚠️ **Conflicting terms on First-year discount**: 15% off year one ([Commercials and rollout plan, Sep 15](https://notes.granola.ai/d/sample-k4a)) vs 20% off year one if signed by Sep 30 ([Final terms, Sep 29](https://notes.granola.ai/d/sample-k6)). Confirm which is binding with Dana Ortiz before kickoff.
+- ⚠️ Promised but **not in the contract**: Multi-depot routing (available in Q1 2027 as part of their plan), First-year discount (15% off year one) and SAML SSO (included at no extra cost).
+- Roadmap items sold: Multi-depot routing. Check dates with product before the customer asks.
+- Non-standard terms: Dispatcher training, P1 response time and First-year discount.
+- Not checked against the contract (the contract does not settle them either way): Dispatcher training and P1 response time.
+- Unresolved objections: 30-day termination clause in year one and Dispatcher adoption.
+- Went quiet: Owen Pratt (procurement, detractor, last seen Aug 27).
+- Appeared once: Hannah Cole (end user) and Tomás Ruiz (technical owner, data owner).
+- Milestone due in 9 days: Carrier API connected in staging (Oct 10).
+- Transcript access was denied for 1 meeting; see Coverage.
+
+## Deal snapshot
+| Field | Value |
+|---|---|
+| Deal | [Quillfen Freight – Corvalto Dispatch](https://app.hubspot.example/deal/48213) |
+| Stage | Closed won |
+| Amount | \$48,000/yr |
+| Close date | Sep 30 |
+| Contract | starts Oct 15, 12-month term |
+| Products | Corvalto Dispatch (25 seats), Carrier API add-on |
+| Owner (AE) | Dana Ortiz |
+| Contract read | yes |
+
+## Why they bought
+**Pains, in their words**
+- **Every load is typed in twice**: “Every load gets typed in twice, once in the TMS and once in the dispatch spreadsheet.” — Elena Novak (VP Operations), [Quillfen &lt;&gt; Corvalto intro &amp; discovery, Aug 20](https://notes.granola.ai/d/sample-k1) · transcript
+- **Late-delivery penalties**: “We paid about forty thousand in late penalties last quarter alone.” — Marcus Bell (CFO), [Commercials and rollout plan, Sep 15](https://notes.granola.ai/d/sample-k4a) · transcript
+
+**Trigger event**
+- **November peak season**: “If this isn't live before the November peak, we'll just limp through another season on spreadsheets.” — Elena Novak (VP Operations), [Quillfen &lt;&gt; Corvalto intro &amp; discovery, Aug 20](https://notes.granola.ai/d/sample-k1) · transcript
+
+## Success criteria and how they'll measure them
+- **Cut double data entry in dispatch** (metric: share of loads entered by hand; target: under 5% by end of Q1; measured by: weekly TMS export). “Honestly if we get manual entry under five percent, that's a win.” — Elena Novak (VP Operations), [Technical deep dive: TMS integration, Aug 27](https://notes.granola.ai/d/sample-k2) · transcript
+- **Fewer late-delivery penalties** (metric: carrier penalty spend; target: down 30% year over year; measured by: finance quarterly review). “Thirty percent less in penalties and I'll call it a success.” — Marcus Bell (CFO), [Final terms, Sep 29](https://notes.granola.ai/d/sample-k6) · transcript
+
+## Timeline and milestones
+| Milestone | Target | Status | Source |
+|---|---|---|---|
+| Carrier API connected in staging | Oct 10 | due in 9 days | notes: “Staging connection targeted for Oct 10.” ([Commercials and rollout plan, Sep 15](https://notes.granola.ai/d/sample-k4a)) |
+| Go-live for 25 dispatchers | Nov 1 | due in 31 days | “Go-live November first, that's the date I'm holding you to.” — Marcus Bell (CFO), [Final terms, Sep 29](https://notes.granola.ai/d/sample-k6) · transcript |
+| Dispatcher training | — | no date given | notes: “Training for the dispatch team to be scheduled before go-live.” ([Dispatch team demo, Sep 3](https://notes.granola.ai/d/sample-k3)) |
+
+## What sales promised
+8 promises · 2 conflicting · 3 not in contract · 1 roadmap · 3 non-standard · 2 not checked against the contract
+
+**Integrations**
+- **Bramblecore TMS sync**: native two-way sync, no middleware. [in contract]
+  - “Yes, the two-way sync with Bramblecore is native, no middleware.” — Sam Kim, [Technical deep dive: TMS integration, Aug 27](https://notes.granola.ai/d/sample-k2) · transcript
+
+**Discounts**
+- **First-year discount**: 15% off year one. [⚠️ conflicting terms; ⚠️ not in contract]
+  - notes: “Dana offered 15% off the first year.” ([Commercials and rollout plan, Sep 15](https://notes.granola.ai/d/sample-k4a))
+- **First-year discount**: 20% off year one if signed by Sep 30. [⚠️ conflicting terms; non-standard; in contract]
+  - “If you sign by the thirtieth I can get you to twenty percent off year one.” — Dana Ortiz, [Final terms, Sep 29](https://notes.granola.ai/d/sample-k6) · transcript
+
+**SLAs**
+- **P1 response time**: 1-hour response, 24/7. [non-standard; contract not checked]
+  - “For P1s we'll respond within the hour, any time of day.” — Dana Ortiz, [Commercials and rollout plan, Sep 15](https://notes.granola.ai/d/sample-k4a) · transcript
+
+**Training and onboarding**
+- **Dispatcher training**: two live sessions for the dispatch team before go-live. [non-standard; contract not checked]
+  - notes: “Sam will run two live sessions for the dispatch team before go-live.” ([Dispatch team demo, Sep 3](https://notes.granola.ai/d/sample-k3))
+
+**Timelines**
+- **Go-live date**: live by Nov 1. [in contract]
+  - “We'll have you live by November first.” — Dana Ortiz, [Final terms, Sep 29](https://notes.granola.ai/d/sample-k6) · transcript
+
+**Roadmap**
+- **Multi-depot routing**: available in Q1 2027 as part of their plan. [⚠️ not in contract; roadmap]
+  - “Multi-depot routing is on the roadmap for Q1, you'd get it as part of your plan.” — Sam Kim, [Technical deep dive: TMS integration, Aug 27](https://notes.granola.ai/d/sample-k2) · transcript
+
+**Security and compliance**
+- **SAML SSO**: included at no extra cost. [⚠️ not in contract]
+  - “Confirming SAML SSO is included in your plan at no extra cost.” — Dana Ortiz, Email from Dana Ortiz, Sep 30 · email
+
+**Conflicts between meetings**
+- **First-year discount**
+  - 15% off year one: notes: “Dana offered 15% off the first year.” ([Commercials and rollout plan, Sep 15](https://notes.granola.ai/d/sample-k4a))
+  - 20% off year one if signed by Sep 30: “If you sign by the thirtieth I can get you to twenty percent off year one.” — Dana Ortiz, [Final terms, Sep 29](https://notes.granola.ai/d/sample-k6) · transcript
+  - Latest stated: 20% off year one if signed by Sep 30 ([Final terms, Sep 29](https://notes.granola.ai/d/sample-k6)). Do not pick one yourself; confirm with Dana Ortiz.
+
+## Stakeholder map
+- **Elena Novak**, VP Operations — champion, day-to-day contact. 5 meetings (Aug 20 – Sep 29).
+  - Cares about: being live before peak season ([Quillfen &lt;&gt; Corvalto intro &amp; discovery, Aug 20](https://notes.granola.ai/d/sample-k1)); fewer manual steps for dispatchers ([Technical deep dive: TMS integration, Aug 27](https://notes.granola.ai/d/sample-k2))
+- **Marcus Bell**, CFO — economic buyer, signer. 2 meetings (Sep 15 – Sep 29).
+  - Cares about: late-delivery penalty spend: “We paid about forty thousand in late penalties last quarter alone.” — Marcus Bell (CFO), [Commercials and rollout plan, Sep 15](https://notes.granola.ai/d/sample-k4a) · transcript
+- **Hannah Cole**, Dispatch Manager — end user. 1 meeting (Sep 3). ⚠️ Appeared once (Sep 3).
+- **Tomás Ruiz**, IT Lead — technical owner, data owner. 1 meeting (Aug 27). ⚠️ Appeared once (Aug 27).
+  - Cares about: EU data residency ([Technical deep dive: TMS integration, Aug 27](https://notes.granola.ai/d/sample-k2))
+- **Owen Pratt**, Procurement Lead — procurement, detractor. 2 meetings (Aug 20 – Aug 27). ⚠️ Went quiet: last seen Aug 27, missed the last 3 meetings.
+  - Cares about: a 30-day termination clause in year one: “We'd need a thirty-day out in year one, that's standard for us.” — Owen Pratt (Procurement Lead), [Technical deep dive: TMS integration, Aug 27](https://notes.granola.ai/d/sample-k2) · transcript
+  - Note (CRM or user): Procurement contact on the HubSpot deal.
+- **Jordan Lee** — role not recorded. 1 meeting (Aug 27). ⚠️ Appeared once (Aug 27). Not described in the notes. Email domain is not the account's.
+- Our side (ask them for context): Dana Ortiz (4 meetings), Sam Kim (3 meetings)
+
+## Technical requirements, integrations, data and security
+- **Integration**: Two-way load and status sync with Bramblecore TMS (cloud). “We need loads to flow both ways, status included.” — Tomás Ruiz (IT Lead), [Technical deep dive: TMS integration, Aug 27](https://notes.granola.ai/d/sample-k2) · transcript
+- **Migration**: 18 months of load history on day one. “We'd want eighteen months of history in there on day one.” — Tomás Ruiz (IT Lead), [Technical deep dive: TMS integration, Aug 27](https://notes.granola.ai/d/sample-k2) · transcript
+- **SSO**: SAML SSO through their identity provider. ([Technical deep dive: TMS integration, Aug 27](https://notes.granola.ai/d/sample-k2))
+- **Compliance**: EU entity's data must stay in an EU region. “Anything from the EU entity has to stay in an EU region.” — Tomás Ruiz (IT Lead), [Technical deep dive: TMS integration, Aug 27](https://notes.granola.ai/d/sample-k2) · transcript
+
+## Objections, risks and competitors
+**Unresolved objections**
+- **30-day termination clause in year one**: “We'd need a thirty-day out in year one, that's standard for us.” — Owen Pratt (Procurement Lead), [Technical deep dive: TMS integration, Aug 27](https://notes.granola.ai/d/sample-k2) · transcript
+- **Dispatcher adoption**: notes: “Hannah worried the dispatch team will ignore anything that adds clicks.” ([Dispatch team demo, Sep 3](https://notes.granola.ai/d/sample-k3)) Partly addressed: two live training sessions offered.
+
+**Resolved during the sale (context)**
+- **Price above budget**: Closed with a first-year discount. “We budgeted closer to forty for this.” — Marcus Bell (CFO), [Commercials and rollout plan, Sep 15](https://notes.granola.ai/d/sample-k4a) · transcript
+
+**Risks**
+- Go-live sits right before their peak; any slip lands in their busiest weeks. “If this slips into November we'll be onboarding in the middle of peak.” — Elena Novak (VP Operations), [Final terms, Sep 29](https://notes.granola.ai/d/sample-k6) · transcript
+
+**Competitors evaluated**
+- **Trundlebay**, chosen over (cheaper, but needed middleware for their TMS): “Trundlebay was cheaper but they'd need middleware for Bramblecore.” — Elena Novak (VP Operations), [Commercials and rollout plan, Sep 15](https://notes.granola.ai/d/sample-k4a) · transcript
+
+## Don't ask them again
+- **How many dispatchers will use it?** 25 across two depots; the EU team joins in phase 2. ([Quillfen &lt;&gt; Corvalto intro &amp; discovery, Aug 20](https://notes.granola.ai/d/sample-k1))
+- **Which TMS do they run?** Bramblecore TMS, cloud; the EU entity is on the same instance. “We're on Bramblecore cloud, EU included, same instance.” — Tomás Ruiz (IT Lead), [Technical deep dive: TMS integration, Aug 27](https://notes.granola.ai/d/sample-k2) · transcript
+- **Who signs?** Marcus Bell (CFO); procurement reviews the terms first. ([Commercials and rollout plan, Sep 15](https://notes.granola.ai/d/sample-k4a))
+
+## Open questions
+- Did procurement's 30-day termination ask make it into the signed contract? (we owe the answer; [Technical deep dive: TMS integration, Aug 27](https://notes.granola.ai/d/sample-k2))
+- Who on their side owns the 18-month data migration? (customer to answer)
+- Is the EU entity in scope for the Nov 1 go-live or phase 2? (customer to answer; [Quillfen &lt;&gt; Corvalto intro &amp; discovery, Aug 20](https://notes.granola.ai/d/sample-k1))
+
+## Handoff checklist
+12 of 12 covered.
+- [x] Products bought and contract terms (CRM deal)
+- [x] Why they bought: pains in their words
+- [x] Their definition of success, with metrics
+- [x] Timeline expectations set during the sale
+- [x] Commitments and promises made during the sale
+- [x] Champion or day-to-day owner identified
+- [x] Economic buyer or signer identified
+- [x] Technical owner identified
+- [x] Integration, data, security and migration requirements
+- [x] Concerns and objections raised
+- [x] Competitive evaluation
+- [x] Meeting notes linked for the sales calls
+
+## Coverage
+**Meetings read**: 5 meetings from 6 notes (Aug 20 – Sep 29).
+
+| # | Date | Meeting | Matched by | Notes | Transcript |
+|---|---|---|---|---|---|
+| 1 | Aug 20 | [Quillfen &lt;&gt; Corvalto intro &amp; discovery](https://notes.granola.ai/d/sample-k1) | domain, title | ✓ | ✓ |
+| 2 | Aug 27 | [Technical deep dive: TMS integration](https://notes.granola.ai/d/sample-k2) | domain | ✓ | ✓ |
+| 3 | Sep 3 | [Dispatch team demo](https://notes.granola.ai/d/sample-k3) | domain | ✓ | denied |
+| 4 | Sep 15 | [Commercials and rollout plan](https://notes.granola.ai/d/sample-k4a) (also captured as [copy 2](https://notes.granola.ai/d/sample-k4b)) | domain | ✓ | ✓ |
+| 5 | Sep 29 | [Final terms](https://notes.granola.ai/d/sample-k6) | domain | ✓ | ✓ |
+
+- Searched Aug 1 to Oct 1 (Granola list\_meetings by attendee domain; Granola query\_granola\_meetings for the account name). Terms: Quillfen, Quillfen Freight, quillfenfreight\.example, quillfen-eu\.example.
+- Excluded: 1 internal-only meeting (Quillfen deal review, Sep 22); Quillfen Bakery tasting, Sep 10: different company (Quillfen Bakery), title match only.
+- Merged: 1 duplicate note of the same meeting; 1 duplicate stakeholder entry; 1 note-taker bot dropped from attendee lists.
+- Transcript access: 4 ok, 1 denied, 0 unavailable, 0 not requested.
+- Sources: Meeting notes: Granola ✓ (business plan, personal + public notes) · CRM: HubSpot ✓ (deal found, contract read) · Email: Gmail ✓ (4 threads)
+- Gaps: Transcript access denied for 1 meeting: quotes from it come from the notes, not verbatim speech. Notes can omit details, so absence there does not mean it was not discussed.
+
+Handoff key: `hubspot:deal/48213` · as of 2026-10-01T09:00:00-07:00
+
+_Internal handoff: it holds verbatim customer quotes and commercial terms. Review before sharing anything from it outside the account team._
+
+=== 2. Slack post draft for the CS channel (not posted) ===
+DRAFT Slack post for #cs-handoffs: not posted. Post only after the user approves.
+
+*New customer handoff: Quillfen Freight Co (fictional)* · closed Sep 30 · $48,000/yr · AE Dana Ortiz
+*Why they bought:* Every load is typed in twice; Late-delivery penalties.
+*Success looks like:* Cut double data entry in dispatch (under 5% by end of Q1); Fewer late-delivery penalties (down 30% year over year).
+*Watch-outs:*
+• Conflicting terms on First-year discount: 15% off year one vs 20% off year one if signed by Sep 30
+• Promised, not in contract: Multi-depot routing (available in Q1 2027 as part of their plan), First-year discount (15% off year one) and SAML SSO (included at no extra cost)
+• Roadmap sold: Multi-depot routing
+• Open objections: 30-day termination clause in year one and Dispatcher adoption
+• Owen Pratt (procurement, detractor): went quiet: last seen Aug 27, missed the last 3 meetings
+• Hannah Cole (end user): appeared once (Sep 3)
+• +1 more in the doc
+_From 5 sales meetings (Aug 20 – Sep 29). Gaps: see Coverage._
+Full handoff: https://type.com/sample/quillfen-handoff
+
+=== 3. Doc saved and post sent: the agent confirms delivery ===
+Confirmed: hubspot:deal/48213 marked delivered.
+
+=== 4. Next scheduled run: this deal is already handed off ===
+Skipped: already handed off hubspot:deal/48213 (delivered 2026-10-01T09:05:00-07:00).

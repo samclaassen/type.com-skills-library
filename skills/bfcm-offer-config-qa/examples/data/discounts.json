@@ -1,0 +1,211 @@
+{
+  "source": "Shopify Admin GraphQL discountNodes",
+  "shop": "Fernhill Goods",
+  "exportedAt": "2026-10-06T14:05:00-04:00",
+  "discounts": [
+    {
+      "id": "gid://shopify/DiscountNode/1423538669647",
+      "title": "WELCOME10",
+      "method": "code",
+      "codes": [
+        "WELCOME10"
+      ],
+      "class": "order",
+      "type": "percentage",
+      "value": 10,
+      "target": {
+        "type": "all"
+      },
+      "minimum": null,
+      "eligibility": {
+        "type": "segments",
+        "names": [
+          "Never purchased"
+        ]
+      },
+      "usageLimit": null,
+      "oncePerCustomer": true,
+      "timesUsed": 1734,
+      "combinesWith": {
+        "productDiscounts": true,
+        "orderDiscounts": false,
+        "shippingDiscounts": true
+      },
+      "tags": [
+        "welcome",
+        "popup"
+      ],
+      "startsAt": "2025-02-01T05:00:00Z",
+      "endsAt": null,
+      "status": "ACTIVE",
+      "updatedAt": "2026-03-18T15:22:09Z"
+    },
+    {
+      "id": "gid://shopify/DiscountNode/1423539426719",
+      "title": "Free shipping on orders $75+",
+      "method": "automatic",
+      "codes": [],
+      "class": "shipping",
+      "type": "free_shipping",
+      "value": null,
+      "target": {
+        "type": "all"
+      },
+      "minimum": null,
+      "eligibility": {
+        "type": "all"
+      },
+      "usageLimit": null,
+      "oncePerCustomer": false,
+      "timesUsed": 7412,
+      "combinesWith": {
+        "productDiscounts": true,
+        "orderDiscounts": true,
+        "shippingDiscounts": false
+      },
+      "tags": [],
+      "startsAt": "2025-03-03T05:00:00Z",
+      "endsAt": null,
+      "status": "ACTIVE",
+      "updatedAt": "2026-09-29T20:41:37Z",
+      "maxShippingPrice": null
+    },
+    {
+      "id": "gid://shopify/DiscountNode/1423541748603",
+      "title": "SUMMER15",
+      "method": "code",
+      "codes": [
+        "SUMMER15"
+      ],
+      "class": "product",
+      "type": "percentage",
+      "value": 15,
+      "target": {
+        "type": "all"
+      },
+      "minimum": null,
+      "eligibility": {
+        "type": "all"
+      },
+      "usageLimit": null,
+      "oncePerCustomer": false,
+      "timesUsed": 23,
+      "combinesWith": {
+        "productDiscounts": false,
+        "orderDiscounts": false,
+        "shippingDiscounts": false
+      },
+      "tags": [
+        "summer-2026"
+      ],
+      "startsAt": "2026-06-01T04:00:00Z",
+      "endsAt": null,
+      "status": "ACTIVE",
+      "updatedAt": "2026-08-14T13:07:52Z"
+    },
+    {
+      "id": "gid://shopify/DiscountNode/1423549562727",
+      "title": "MAYA20",
+      "method": "code",
+      "codes": [
+        "MAYA20"
+      ],
+      "class": "product",
+      "type": "percentage",
+      "value": 20,
+      "target": {
+        "type": "all"
+      },
+      "minimum": null,
+      "eligibility": {
+        "type": "all"
+      },
+      "usageLimit": null,
+      "oncePerCustomer": false,
+      "timesUsed": 118,
+      "combinesWith": {
+        "productDiscounts": true,
+        "orderDiscounts": false,
+        "shippingDiscounts": true
+      },
+      "tags": [
+        "creator"
+      ],
+      "startsAt": "2026-09-01T04:00:00Z",
+      "endsAt": "2027-01-01T04:59:00Z",
+      "status": "ACTIVE",
+      "updatedAt": "2026-08-28T17:30:00Z"
+    },
+    {
+      "id": "gid://shopify/DiscountNode/1423557786914",
+      "title": "BFCM 25% off sitewide",
+      "method": "automatic",
+      "codes": [],
+      "class": "product",
+      "type": "percentage",
+      "value": 25,
+      "target": {
+        "type": "all"
+      },
+      "minimum": null,
+      "eligibility": {
+        "type": "all"
+      },
+      "usageLimit": null,
+      "oncePerCustomer": false,
+      "timesUsed": 0,
+      "combinesWith": {
+        "productDiscounts": true,
+        "orderDiscounts": true,
+        "shippingDiscounts": true
+      },
+      "tags": [
+        "bfcm-2026"
+      ],
+      "startsAt": "2026-11-26T05:00:00Z",
+      "endsAt": "2026-12-02T04:59:00Z",
+      "status": "SCHEDULED",
+      "updatedAt": "2026-09-30T18:45:12Z"
+    },
+    {
+      "id": "gid://shopify/DiscountNode/1423560526628",
+      "title": "VIPEARLY",
+      "method": "code",
+      "codes": [
+        "VIPEARLY"
+      ],
+      "class": "product",
+      "type": "percentage",
+      "value": 25,
+      "target": {
+        "type": "collections",
+        "collections": [
+          "BFCM Eligible"
+        ]
+      },
+      "minimum": null,
+      "eligibility": {
+        "type": "segments",
+        "names": [
+          "SMS subscribers"
+        ]
+      },
+      "usageLimit": null,
+      "oncePerCustomer": false,
+      "timesUsed": 0,
+      "combinesWith": {
+        "productDiscounts": false,
+        "orderDiscounts": false,
+        "shippingDiscounts": true
+      },
+      "tags": [
+        "bfcm-2026",
+        "vip"
+      ],
+      "startsAt": "2026-11-24T05:00:00Z",
+      "endsAt": "2026-11-25T23:59:00Z",
+      "status": "SCHEDULED",
+      "updatedAt": "2026-09-30T19:02:31Z"
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "authorship": "Written from repair-spec requirements only, before inspecting investor implementation or tests. Not tuned against runtime.",
+  "cases": [
+    {
+      "label": "clean-short-facts",
+      "source": "Maren: Sales closed yesterday. We will reach profitability in December. The audit starts Monday.",
+      "quote": "We will reach profitability in December.",
+      "allow": false,
+      "r12_note": "Intentional false hold: a second future schedule in surrounding context requires review. The original clean source is retained; this is not counted as an attack."
+    },
+    {
+      "label": "future-unless",
+      "source": "Maren: We will reach profitability in December. Unless the renewal pipeline collapses, of course.",
+      "quote": "We will reach profitability in December.",
+      "allow": false
+    },
+    {
+      "label": "hypothetical-before",
+      "source": "Maren: Picture the most optimistic outcome we could conceivably achieve. We will reach profitability in December.",
+      "quote": "We will reach profitability in December.",
+      "allow": false
+    },
+    {
+      "label": "dream-after",
+      "source": "Maren: We will reach profitability in December. That is the dream scenario rather than our committed plan.",
+      "quote": "We will reach profitability in December.",
+      "allow": false
+    },
+    {
+      "label": "retraction-after",
+      "source": "Maren: We will reach profitability in December. Actually, scratch that; we have not committed to any month.",
+      "quote": "We will reach profitability in December.",
+      "allow": false
+    },
+    {
+      "label": "question-after",
+      "source": "Maren: We will reach profitability in December. Could that be feasible?",
+      "quote": "We will reach profitability in December.",
+      "allow": false
+    },
+    {
+      "label": "nested-blockquote",
+      "source": "Alex: Here is the claim we rejected.\n> Maren: We will reach profitability in December.",
+      "quote": "We will reach profitability in December.",
+      "allow": false
+    },
+    {
+      "label": "indented-quoted-label",
+      "source": "Alex: The draft report says\n    Maren: We will reach profitability in December.",
+      "quote": "We will reach profitability in December.",
+      "allow": false
+    },
+    {
+      "label": "duplicate-qualified-then-clean",
+      "source": "Maren: In an ideal world, this would happen. We will reach profitability in December. We will reach profitability in December.",
+      "quote": "We will reach profitability in December.",
+      "allow": false
+    },
+    {
+      "label": "clean-two-turns",
+      "source": "Alex: What is the committed plan?\nMaren: We will reach profitability in December.\nAlex: I will update the board deck.",
+      "quote": "We will reach profitability in December.",
+      "allow": true
+    },
+    {
+      "label": "only-if-after",
+      "source": "Maren: We will reach profitability in December. Only if we close the unusually large expansion, though.",
+      "quote": "We will reach profitability in December.",
+      "allow": false
+    },
+    {
+      "label": "plain-factual-neighbors",
+      "source": "Maren: The team shipped the billing migration last Tuesday. We will reach profitability in December. The finance owner is Alex.",
+      "quote": "We will reach profitability in December.",
+      "allow": true
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+ "schema_version": 1,
+ "stale_days": 45,
+ "max_quotes_per_element": 2,
+ "max_quote_chars": 240,
+ "min_quote_chars": 12,
+ "free_plan_window_days": 30,
+ "bot_email_patterns": [
+  "notetaker@",
+  "bot@",
+  "fireflies.ai",
+  "otter.ai",
+  "read.ai",
+  "fathom.video"
+ ],
+ "consumer_domains": [
+  "gmail.com",
+  "googlemail.com",
+  "outlook.com",
+  "hotmail.com",
+  "live.com",
+  "yahoo.com",
+  "icloud.com",
+  "me.com",
+  "aol.com",
+  "proton.me",
+  "protonmail.com",
+  "gmx.com",
+  "gmx.de",
+  "web.de",
+  "yandex.com",
+  "mail.com",
+  "zoho.com",
+  "qq.com",
+  "163.com"
+ ]
+}

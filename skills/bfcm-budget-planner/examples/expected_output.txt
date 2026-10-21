@@ -1,0 +1,133 @@
+## BFCM Budget Plan: Fernhill Goods, Nov 1–Dec 6 2026
+
+_History through 2026-10-06. Black Friday Nov 27, Cyber Monday Nov 30, cyber week Nov 26–Dec 1, sale Nov 24–Dec 1 (25% off). Amounts in USD._
+
+**Plan: $61,059 ad spend over 36 days. Base case $237,995 net sales, MER 3.90, $28,562 contribution after ads (12.0% of net sales).**
+
+- Target: keep 12% of net sales after ads across the window (MER ≥ 4.83 on sale days, ≥ 3.15 at full price). Breakeven MER: **3.06** at 25% off, **2.29** at full price.
+- Spend stops at: margin floor. Budget cap: $87,000. Today's run rate $951/day; day-over-day change capped at +30% / -50%.
+- Peak budget $6,672 on Nov 27 (Black Friday). Projected new customers 1,582, blended new-customer cost $39.
+
+**Warnings**
+- On 1 day(s) (Nov 25) the plan spends more than 2x last year. Revenue there is extrapolated beyond the fitted range.
+- Warm-up elasticity is assumed, not fitted: last year's raw fit was 1.04, outside 0.20–0.70, so 0.70 (the ceiling, the most optimistic response to extra spend allowed) is used.
+- Cyber week elasticity is assumed, not fitted: last year's raw fit was 1.06, outside 0.20–0.70, so 0.70 (the ceiling, the most optimistic response to extra spend allowed) is used.
+- The Black Friday budget rests on an assumed cyber-week curve, not a fitted one. If the real elasticity were 0.40 in every phase, this same budget would bring $234,716 net sales (MER 3.84, $27,548 contribution after ads, 11.7% of net sales).
+
+### Unit economics (per $100 of net sales)
+
+Net sales = gross sales − discounts, before returns/refunds, excluding tax and shipping. AOV $89 on sale days, $88 at full price. Gross margin 64% at full price, returns 7% (goods restocked, shipping and fees not recovered). The 25% off sale runs Nov 24–Dec 1; the other days of the window sell at full price.
+
+| Line | 25% off | Full price |
+| --- | ---: | ---: |
+| Sales kept after returns | 93.00 | 93.00 |
+| COGS on kept goods | -44.64 | -33.48 |
+| Payment fees | -3.24 | -3.24 |
+| Shipping and fulfillment | -12.41 | -12.54 |
+| **Contribution before ads** | **32.72** | **43.74** |
+
+Breakeven MER = 100 / 32.72 = **3.06** at 25% off, 100 / 43.74 = **2.29** at full price. Target MER = 100 / (32.72 − 12.00) = **4.83** at 25% off, 100 / (43.74 − 12.00) = **3.15** at full price.
+
+### Last year's curve (aligned to Black Friday)
+
+Last year's dates are shifted 364 days so Black Friday lines up with Black Friday.
+
+| Phase | Last year's dates | Days | Net sales | Share of window | Ad spend | MER | Best day |
+| --- | --- | ---: | ---: | ---: | ---: | ---: | --- |
+| warm-up | Nov 2–Nov 26 | 25 | $85,865 | 39.8% | $28,083 | 3.06 | Nov 26 ($7,440) |
+| cyber week | Nov 27–Dec 2 | 6 | $101,520 | 47.0% | $25,240 | 4.02 | Nov 28 ($28,320) |
+| taper | Dec 3–Dec 7 | 5 | $28,578 | 13.2% | $8,249 | 3.46 | Dec 3 ($6,248) |
+
+**Diminishing returns (estimate).** Log-log fit of daily net sales on daily ad spend within each phase. Elasticity 0.5 means doubling spend lifts sales about 41%. Fits on last year's days mix demand with spend, so read them as rough. A fit outside 0.20–0.70 is clamped to the nearer bound and labelled assumed, not fitted. Warm-up and taper days use a 7-day centered average of last year so one lucky day doesn't steer the plan; cyber-week days are kept as they were.
+
+| Curve | Days | Fitted on daily spend | Elasticity | r² | Note |
+| --- | ---: | --- | ---: | ---: | --- |
+| last October | 31 | $693–$1,161 | 0.59 | 0.86 | — |
+| warm-up | 25 | $753–$1,940 | 0.70 | 0.83 | assumed 0.70 (clamped from 1.04); demand rose with spend |
+| cyber week | 6 | $2,410–$6,660 | 0.70 | 0.98 | assumed 0.70 (clamped from 1.06); demand rose with spend |
+| taper | 5 | $1,394–$1,954 | 0.47 | 0.48 | — |
+
+Sensitivity: at elasticity 0.40 in every phase, the same budget projects $234,716 net sales (MER 3.84, $27,548 contribution after ads, 11.7% of net sales; Black Friday $31,376).
+
+**Demand index 1.11** (estimated: Sep 9–Oct 6 actual sales vs what last October's curve predicts at the same spend). Every day's projection is last year's same day × this index, adjusted along the curve for the planned spend.
+
+### Daily plan (base scenario)
+
+| Date | Day | Phase | Price | Budget | Meta | Google | TikTok | vs prior day | Proj. net sales | MER | Contribution | Pull back below | Scale above |
+| --- | --- | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| Nov 1 | Sun | warm-up | full price | $951 | $526 | $301 | $124 | — | $2,908 | 3.06 | $321 | 2.60 | 3.36 |
+| Nov 2 | Mon | warm-up | full price | $951 | $526 | $301 | $124 | +0% | $2,885 | 3.03 | $311 | 2.58 | 3.34 |
+| Nov 3 | Tue | warm-up | full price | $951 | $526 | $301 | $124 | +0% | $2,926 | 3.08 | $329 | 2.62 | 3.38 |
+| Nov 4 | Wed | warm-up | full price | $951 | $526 | $301 | $124 | +0% | $2,963 | 3.12 | $345 | 2.65 | 3.43 |
+| Nov 5 | Thu | warm-up | full price | $951 | $526 | $301 | $124 | +0% | $2,966 | 3.12 | $346 | 2.65 | 3.43 |
+| Nov 6 | Fri | warm-up | full price | $951 | $526 | $301 | $124 | +0% | $2,974 | 3.13 | $350 | 2.66 | 3.44 |
+| Nov 7 | Sat | warm-up | full price | $951 | $526 | $301 | $124 | +0% | $3,027 | 3.18 | $373 | 2.71 | 3.50 |
+| Nov 8 | Sun | warm-up | full price | $951 | $526 | $301 | $124 | +0% | $3,063 | 3.22 | $389 | 2.74 | 3.54 |
+| Nov 9 | Mon | warm-up | full price | $951 | $526 | $301 | $124 | +0% | $3,110 | 3.27 | $409 | 2.78 | 3.60 |
+| Nov 10 | Tue | warm-up | full price | $951 | $526 | $301 | $124 | +0% | $3,153 | 3.32 | $428 | 2.82 | 3.65 |
+| Nov 11 | Wed | warm-up | full price | $951 | $526 | $301 | $124 | +0% | $3,145 | 3.31 | $425 | 2.81 | 3.64 |
+| Nov 12 | Thu | warm-up | full price | $951 | $526 | $301 | $124 | +0% | $3,182 | 3.35 | $441 | 2.84 | 3.68 |
+| Nov 13 | Fri | warm-up | full price | $951 | $526 | $301 | $124 | +0% | $3,199 | 3.36 | $448 | 2.86 | 3.70 |
+| Nov 14 | Sat | warm-up | full price | $951 | $526 | $301 | $124 | +0% | $3,174 | 3.34 | $438 | 2.84 | 3.67 |
+| Nov 15 | Sun | warm-up | full price | $951 | $526 | $301 | $124 | +0% | $3,178 | 3.34 | $439 | 2.84 | 3.68 |
+| Nov 16 | Mon | warm-up | full price | $951 | $526 | $301 | $124 | +0% | $3,192 | 3.36 | $445 | 2.85 | 3.69 |
+| Nov 17 | Tue | warm-up | full price | $951 | $526 | $301 | $124 | +0% | $3,183 | 3.35 | $441 | 2.84 | 3.68 |
+| Nov 18 | Wed | warm-up | full price | $951 | $526 | $301 | $124 | +0% | $3,238 | 3.40 | $465 | 2.89 | 3.74 |
+| Nov 19 | Thu | warm-up | full price | $951 | $526 | $301 | $124 | +0% | $3,315 | 3.49 | $499 | 2.96 | 3.83 |
+| Nov 20 | Fri | warm-up | full price | $1,190 | $659 | $376 | $155 | +25% | $4,188 | 3.52 | $642 | 2.99 | 3.87 |
+| Nov 21 | Sat | warm-up | full price | $1,423 | $788 | $450 | $185 | +20% | $5,006 | 3.52 | $767 | 2.99 | 3.87 |
+| Nov 22 | Sun | warm-up | full price | $1,798 | $995 | $569 | $234 | +26% | $6,294 | 3.50 | $955 | 2.98 | 3.85 |
+| Nov 23 | Mon | warm-up | full price | $2,337 | $1,294 | $739 | $304 | +30% | $7,818 | 3.35 | $1,083 | 2.84 | 3.68 |
+| Nov 24 | Tue | warm-up | 25% off | $3,038 | $1,682 | $961 | $395 | +30% | $9,754 | 3.21 | $153 | 3.06 | 4.83 |
+| Nov 25 | Wed | warm-up | 25% off | $3,949 | $2,186 | $1,249 | $514 | +30% | $12,268 | 3.11 | $65 | 3.06 | 4.83 |
+| Nov 26 **Thanksgiving** | Thu | cyber week | 25% off | $5,133 | $2,841 | $1,624 | $668 | +30% | $18,945 | 3.69 | $1,065 | 3.14 | 4.83 |
+| Nov 27 **Black Friday** | Fri | cyber week | 25% off | $6,672 | $3,693 | $2,110 | $869 | +30% | $31,393 | 4.71 | $3,598 | 4.00 | 5.18 |
+| Nov 28 | Sat | cyber week | 25% off | $3,336 | $1,847 | $1,055 | $434 | -50% | $15,399 | 4.62 | $1,702 | 3.92 | 5.08 |
+| Nov 29 | Sun | cyber week | 25% off | $3,390 | $1,876 | $1,073 | $441 | +2% | $15,946 | 4.70 | $1,827 | 4.00 | 5.17 |
+| Nov 30 **Cyber Monday** | Mon | cyber week | 25% off | $3,954 | $2,188 | $1,251 | $515 | +17% | $18,599 | 4.70 | $2,131 | 4.00 | 5.17 |
+| Dec 1 | Tue | cyber week | 25% off | $1,977 | $1,094 | $626 | $257 | -50% | $9,021 | 4.56 | $974 | 3.88 | 5.02 |
+| Dec 2 | Wed | taper | full price | $989 | $547 | $313 | $129 | -50% | $5,100 | 5.16 | $1,242 | 4.38 | 5.67 |
+| Dec 3 | Thu | taper | full price | $951 | $526 | $301 | $124 | -4% | $4,895 | 5.15 | $1,190 | 4.37 | 5.66 |
+| Dec 4 | Fri | taper | full price | $951 | $526 | $301 | $124 | +0% | $4,895 | 5.15 | $1,190 | 4.37 | 5.66 |
+| Dec 5 | Sat | taper | full price | $951 | $526 | $301 | $124 | +0% | $4,895 | 5.15 | $1,190 | 4.37 | 5.66 |
+| Dec 6 | Sun | taper | full price | $951 | $526 | $301 | $124 | +0% | $4,799 | 5.05 | $1,148 | 4.29 | 5.55 |
+| **Total** | | | | **$61,059** | **$33,788** | **$19,319** | **$7,952** | | **$237,995** | **3.90** | **$28,562** | | |
+
+Channel split: meta 55%, google 32%, tiktok 13% (this year's trailing mix, held inside your min/max). MER is blended across all channels on purpose: no per-channel revenue is projected.
+
+### Scenarios
+
+| Phase | Spend | Low sales | Low MER | Base sales | Base MER | High sales | High MER | Base contribution | Base margin |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| warm-up | $31,804 | $88,492 | 2.78 | $104,108 | 3.27 | $114,519 | 3.60 | $11,305 | 10.9% |
+| cyber week | $24,462 | $92,908 | 3.80 | $109,304 | 4.47 | $120,234 | 4.92 | $11,297 | 10.3% |
+| taper | $4,793 | $20,896 | 4.36 | $24,583 | 5.13 | $27,041 | 5.64 | $5,960 | 24.2% |
+| **Window** | $61,059 | $202,296 | 3.31 | $237,995 | 3.90 | $261,795 | 4.29 | $28,562 | 12.0% |
+
+Low = demand 0.85x base, high = 1.10x, same spend. Window contribution after ads: low $15,119, base $28,562, high $37,524.
+
+### Guardrails
+
+MER to date = Shopify net sales so far today ÷ total ad spend so far today across every platform. Never use a platform's ROAS for these calls. Each day has its own lines, set from that day's plan MER: pull back below the higher of breakeven MER and plan MER x 0.85; scale above the higher of target MER and plan MER x 1.10. Every pull-back line sits below its day's plan MER and every scale line above it. They are the last two columns of the daily plan and the `pull_back_mer` and `scale_mer` columns of the `--csv` plan. The table below summarises them by phase.
+
+| Phase | Dates | Pricing | Plan MER | Breakeven MER | Target MER | Pull back if MER to date is below | Scale if above | Check at (store time) |
+| --- | --- | --- | ---: | ---: | ---: | ---: | ---: | --- |
+| warm-up | Nov 1–Nov 23 | full price | 3.31 | 2.29 | 3.15 | 2.58–2.99 | 3.34–3.87 | 2 pm |
+| warm-up | Nov 24–Nov 25 | 25% off | 3.15 | 3.06 | 4.83 | 3.06 | 4.83 | 2 pm |
+| cyber week | Nov 26–Dec 1 | 25% off | 4.47 | 3.06 | 4.83 | 3.14–4.00 | 4.83–5.18 | noon and 6 pm |
+| taper | Dec 2–Dec 6 | full price | 5.13 | 2.29 | 3.15 | 4.29–4.38 | 5.55–5.67 | 2 pm |
+
+- **Warm-up, Nov 1–Nov 23 (full price):** if MER to date is below that day's pull-back line (2.58–2.99) by 2 pm, cut the rest of today's budgets 20% and hold tomorrow at today's level. If it is above that day's scale line (3.34–3.87) by 2 pm two days running, raise tomorrow's budget by up to 30%, never more.
+- **Warm-up, Nov 24–Nov 25 (25% off):** if MER to date is below that day's pull-back line (3.06) by 2 pm, cut the rest of today's budgets 20% and hold tomorrow at today's level. If it is above that day's scale line (4.83) by 2 pm two days running, raise tomorrow's budget by up to 30%, never more.
+- **Cyber week, Nov 26–Dec 1 (25% off):** if MER to date is below that day's pull-back line (3.14–4.00) by noon, cut the rest of today's budgets 20% and hold tomorrow at today's level. If it is above that day's scale line (4.83–5.18) by noon two days running, raise tomorrow's budget by up to 30%, never more. Check again at 6 pm. On Black Friday and Cyber Monday, judge from noon onward, not the first hours after a midnight launch.
+- **Taper, Dec 2–Dec 6 (full price):** if MER to date is below that day's pull-back line (4.29–4.38) by 2 pm, cut the rest of today's budgets 20% and hold tomorrow at today's level. If it is above that day's scale line (5.55–5.67) by 2 pm two days running, raise tomorrow's budget by up to 30%, never more.
+- Every morning, compare yesterday's full-day MER with the plan row. Re-run the plan with the new days if actuals miss the base case by more than 15% for three days.
+
+### Hand-off
+
+- 2026-11: $54,289 (meta $30,043, google $17,176, tiktok $7,070)
+- 2026-12: $6,770 (meta $3,745, google $2,143, tiktok $882)
+- Budget Pacer: use each month's total as that month's committed media spend and the daily rows as campaign bounds. December above covers only the days in this window; add the rest of December yourself.
+- Meta Budget Scaling: use the Meta column as the daily budget path and the 30% daily increase limit as its scaling guardrail.
+
+_Estimates from last year's curve, an elasticity per phase (fitted or assumed) and a demand index; not a forecast guarantee. There is no organic baseline: every projected sale is tied to ad spend, so the model projects $0 at $0 spend. Read-only: no ad account or budget was changed._

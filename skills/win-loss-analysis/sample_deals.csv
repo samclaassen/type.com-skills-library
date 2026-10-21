@@ -1,0 +1,5 @@
+Deal ID,Account,Domains,Outcome,Close Date,Amount,Segment,Stage Lost At,Competitors,Lost To,Closed Lost Reason,Win Reason
+Q-201,Gorsebury Kitchens,gorsebury.example,Closed Won,2026-09-04,"$18,500.00",SMB,,Countwhistle,,,Easy setup
+Q-202,Quellmark Foods,quellmark.example,Closed Lost,2026-09-17,"42,000",Mid-market,Proposal,Countwhistle,Countwhistle,Went with Countwhistle - bundled pricing,
+Q-203,Fennaroot Bakery,fennaroot.example,Closed Won,2026-09-22,9600,SMB,,,,,Referral from existing customer
+Q-204,Plimsoll & Quist,plimsollquist.example,Closed Lost,2026-09-29,,Mid-market,Evaluation,,,No decision,

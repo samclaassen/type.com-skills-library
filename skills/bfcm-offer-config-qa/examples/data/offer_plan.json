@@ -1,0 +1,110 @@
+{
+  "store": "Fernhill Goods",
+  "timezone": "America/New_York",
+  "currency": "USD",
+  "launch": "2026-11-24",
+  "max_item_discount_pct": 25,
+  "margin_floor_pct": 15,
+  "shopify_plus": false,
+  "economics": {
+    "shipping_cost_per_order": 11.0,
+    "last_bfcm_orders": 1356,
+    "last_bfcm_orders_under_free_shipping_min": 556,
+    "orders_per_day_now": 32
+  },
+  "offers": [
+    {
+      "name": "VIP early access",
+      "phase": "VIP early access",
+      "method": "code",
+      "code": "VIPEARLY",
+      "type": "percentage",
+      "value": 25,
+      "class": "product",
+      "eligible": "all",
+      "exclude_collections": [
+        "Gift Cards",
+        "New Arrivals",
+        "Last Chance"
+      ],
+      "customer_eligibility": {
+        "segments": [
+          "SMS subscribers"
+        ]
+      },
+      "usage_limit": null,
+      "once_per_customer": false,
+      "combines_with": [
+        "shipping"
+      ],
+      "starts": "2026-11-24 00:00",
+      "ends": "2026-11-25 23:59"
+    },
+    {
+      "name": "Main sale",
+      "phase": "Main sale",
+      "method": "automatic",
+      "title": "BFCM 25% off sitewide",
+      "type": "percentage",
+      "value": 25,
+      "class": "product",
+      "eligible": "all",
+      "exclude_collections": [
+        "Gift Cards",
+        "New Arrivals",
+        "Last Chance"
+      ],
+      "combines_with": [
+        "shipping"
+      ],
+      "starts": "2026-11-26 00:00",
+      "ends": "2026-12-01 23:59"
+    },
+    {
+      "name": "Free shipping $75+",
+      "method": "automatic",
+      "title": "Free shipping on orders $75+",
+      "type": "free_shipping",
+      "min_subtotal": 75,
+      "combines_with": [
+        "product",
+        "order"
+      ]
+    },
+    {
+      "name": "Welcome offer",
+      "method": "code",
+      "code": "WELCOME10",
+      "type": "percentage",
+      "value": 10,
+      "class": "order",
+      "customer_eligibility": {
+        "first_order": true,
+        "segment": "Never purchased"
+      },
+      "once_per_customer": true,
+      "combines_with": [
+        "shipping"
+      ]
+    },
+    {
+      "name": "Creator code (Maya)",
+      "method": "code",
+      "code": "MAYA20",
+      "type": "percentage",
+      "value": 20,
+      "class": "product",
+      "eligible": "all",
+      "usage_limit": 300,
+      "once_per_customer": true,
+      "combines_with": [
+        "shipping"
+      ],
+      "starts": "2026-09-01 00:00",
+      "ends": "2026-12-31 23:59"
+    }
+  ],
+  "must_not_be_active": [
+    "SUMMER15"
+  ]
+}

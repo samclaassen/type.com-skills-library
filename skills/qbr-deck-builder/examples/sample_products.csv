@@ -1,0 +1,5 @@
+product_code,product_name,list_price_per_seat_usd,signal_metric,signal_threshold,value_statement
+ANALYTICS,Advanced Analytics,220,key_actions,50000,"Above 50k monthly actions teams cannot answer performance questions without manual exports."
+INTL,International Compliance,180,international_shipments,500,"Automates customs paperwork once cross-border volume is routine rather than occasional."
+TRACKING,Branded Tracking,90,monthly_active_users,100,"Customer-facing tracking pages that carry the customer's own brand."
+WMS,Warehouse Sync,150,warehouse_count,10,"Direct warehouse management integration pays off past roughly ten sites."

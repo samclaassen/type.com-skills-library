@@ -1,0 +1,114 @@
+PIPELINE HYGIENE AUDIT — as of 2026-09-22
+deals: examples/sample_deals.csv   stages: examples/sample_stages.csv
+rules: config/rules.json
+scoring: finding score = severity points x amount weight; amount weight = 1 + min(amount / 50,000, 4.00)
+
+SUMMARY
+  Deals in export            24 (20 open, 4 closed)
+  Open pipeline value        $1,648,000
+  Open deals with findings   14 of 20 (70.0%)
+  Pipeline value flagged     $1,172,500 (71.1%)
+
+FINDINGS BY TYPE
+  check               deals           value     score
+  missing_owner           2        $225,000     252.0
+  missing_amount          2            $500      60.3
+  close_date_past         4        $405,000     416.5
+  stale_activity          5        $381,000     310.5
+  stuck_in_stage          6        $730,000     360.0
+  stage_skipped           3        $680,000     210.0
+  duplicate_account       4        $222,000      84.4
+
+DAYS-IN-STAGE MEDIANS (open deals, the basis for stuck_in_stage)
+  Discovery             median    21d   limit    32d   open deals 5
+  Negotiation           median    24d   limit    37d   open deals 3
+  Proposal              median    24d   limit    37d   open deals 3
+  Qualification         median    25d   limit    38d   open deals 5
+  Evaluation            median    28d   limit    43d   open deals 4
+  Stages with fewer than 4 open deals fall back to the all-stage median of 24d.
+
+DUPLICATE ACCOUNT CLUSTERS
+  globex analytics
+    - ACC-1007  Globex Analytics
+    - ACC-1055  Globex Data Group
+  northwind logistics
+    - ACC-1001  Northwind Logistics
+    - ACC-1042  Northwind Logistics Inc.
+
+REMEDIATION BY OWNER
+
+  (unassigned) — score 727.0, 2 deal(s), $225,000 affected
+    [ 675.0] D-1014  Silverline Energy  $210,000  stage: Evaluation (115d)
+        - missing_owner (+200.0): owner_name is blank
+          action: Assign an owner before the next forecast call.
+        - close_date_past (+175.0): close_date 2026-08-31 is 22d in the past
+          action: Re-date the close or move the deal out of the open forecast.
+        - stale_activity (+125.0): last activity 2026-06-18 (96d ago, threshold 21d)
+          action: Log the last touch or schedule a next step this week.
+        - stuck_in_stage (+100.0): 115d in 'Evaluation' vs stage median 28d (limit 43d)
+          action: Run an exit-criteria check; advance, push, or disqualify.
+        - stage_skipped (+75.0): stage history jumps Discovery -> Evaluation
+          action: Backfill the skipped stage so cycle-time reporting stays usable.
+    [  52.0] D-1005  Solstice Apparel Supply  $15,000  stage: Discovery (21d)
+        - missing_owner (+52.0): owner_name is blank
+          action: Assign an owner before the next forecast call.
+
+  Tomas Beck — score 430.6, 4 deal(s), $183,000 affected
+    [ 232.0] D-1010  Pinewood Manufacturing  $95,000  stage: Qualification (83d)
+        - close_date_past (+101.5): close_date 2026-09-05 is 17d in the past
+          action: Re-date the close or move the deal out of the open forecast.
+        - stale_activity (+72.5): last activity 2026-08-30 (23d ago, threshold 21d)
+          action: Log the last touch or schedule a next step this week.
+        - stuck_in_stage (+58.0): 83d in 'Qualification' vs stage median 25d (limit 38d)
+          action: Run an exit-criteria check; advance, push, or disqualify.
+    [ 103.2] D-1019  Mapleview School District  $36,000  stage: Negotiation (35d)
+        - close_date_past (+60.2): close_date is blank on an open deal
+          action: Re-date the close or move the deal out of the open forecast.
+        - stale_activity (+43.0): last activity 2026-08-12 (41d ago, threshold 21d)
+          action: Log the last touch or schedule a next step this week.
+    [  75.0] D-1004  Vertex Freight  (no amount)  stage: Discovery (113d)
+        - missing_amount (+30.0): amount_usd is blank
+          action: Ask the rep for a sized amount or mark the deal closed lost.
+        - stale_activity (+25.0): last activity 2026-07-02 (82d ago, threshold 21d)
+          action: Log the last touch or schedule a next step this week.
+        - stuck_in_stage (+20.0): 113d in 'Discovery' vs stage median 21d (limit 32d)
+          action: Run an exit-criteria check; advance, push, or disqualify.
+    [  20.4] D-1013  Northwind Logistics Inc.  $52,000  stage: Evaluation (20d)
+        - duplicate_account (+20.4): account Northwind Logistics Inc. (ACC-1042) looks like Northwind Logistics (ACC-1001)
+          action: Merge the duplicate account records in the CRM.
+
+  Marcus Oyelaran — score 295.3, 4 deal(s), $445,500 affected
+    [ 175.0] D-1016  Atlas Bio Labs  $320,000  stage: Proposal (43d)
+        - stuck_in_stage (+100.0): 43d in 'Proposal' vs stage median 24d (limit 37d)
+          action: Run an exit-criteria check; advance, push, or disqualify.
+        - stage_skipped (+75.0): stage history jumps Qualification -> Proposal
+          action: Backfill the skipped stage so cycle-time reporting stays usable.
+    [  63.0] D-1008  Globex Data Group  $40,000  stage: Qualification (21d)
+        - stale_activity (+45.0): last activity 2026-08-05 (48d ago, threshold 21d)
+          action: Log the last touch or schedule a next step this week.
+        - duplicate_account (+18.0): account Globex Data Group (ACC-1055) looks like Globex Analytics (ACC-1007)
+          action: Merge the duplicate account records in the CRM.
+    [  30.3] D-1020  Oakhart Capital  $500  stage: Negotiation (12d)
+        - missing_amount (+30.3): amount_usd $500 is below the $1,000 floor
+          action: Ask the rep for a sized amount or mark the deal closed lost.
+    [  27.0] D-1007  Globex Analytics  $85,000  stage: Qualification (25d)
+        - duplicate_account (+27.0): account Globex Analytics (ACC-1007) looks like Globex Data Group (ACC-1055)
+          action: Merge the duplicate account records in the CRM.
+
+  Dana Whitfield — score 161.0, 3 deal(s), $255,000 affected
+    [  60.0] D-1011  Trailhead Robotics  $150,000  stage: Evaluation (33d)
+        - stage_skipped (+60.0): stage history jumps Discovery -> Evaluation
+          action: Backfill the skipped stage so cycle-time reporting stays usable.
+    [  57.0] D-1001  Northwind Logistics  $45,000  stage: Discovery (33d)
+        - stuck_in_stage (+38.0): 33d in 'Discovery' vs stage median 21d (limit 32d)
+          action: Run an exit-criteria check; advance, push, or disqualify.
+        - duplicate_account (+19.0): account Northwind Logistics (ACC-1001) looks like Northwind Logistics Inc. (ACC-1042)
+          action: Merge the duplicate account records in the CRM.
+    [  44.0] D-1006  Ridgeline Insurance  $60,000  stage: Qualification (39d)
+        - stuck_in_stage (+44.0): 39d in 'Qualification' vs stage median 25d (limit 38d)
+          action: Run an exit-criteria check; advance, push, or disqualify.
+
+  Priya Raman — score 79.8, 1 deal(s), $64,000 affected
+    [  79.8] D-1017  Fairmont Civic Partners  $64,000  stage: Proposal (28d)
+        - close_date_past (+79.8): close_date 2026-09-12 is 10d in the past
+          action: Re-date the close or move the deal out of the open forecast.

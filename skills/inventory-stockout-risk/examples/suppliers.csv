@@ -1,0 +1,4 @@
+supplier_id,supplier_name,lead_time_days,moq_units,case_pack_units
+SUP-COASTAL,Coastal Rigging Ltd,35,50,10
+SUP-NORTHPINE,Northpine Outdoor Works,60,25,5
+SUP-MILLBROOK,Millbrook Textiles,21,100,12

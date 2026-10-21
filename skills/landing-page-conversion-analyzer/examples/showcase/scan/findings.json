@@ -1,0 +1,701 @@
+{
+  "mode": "scan",
+  "meta": {
+    "timezone": "UTC",
+    "currency": "USD",
+    "source_system": "synthetic_showcase",
+    "landing_page_form": "path",
+    "sampled": false,
+    "sampling_rate": null,
+    "other_row_sessions": 0,
+    "reconciliation_delta_pct": 0.0,
+    "date_range": [
+      "2026-07-25",
+      "2026-09-04"
+    ],
+    "complete_through": "2026-09-04",
+    "extracted_at": "2026-09-04T23:59:59Z",
+    "synthetic": true
+  },
+  "windows": {
+    "current": [
+      "2026-08-29",
+      "2026-09-04"
+    ],
+    "baseline": [
+      "2026-08-01",
+      "2026-08-28"
+    ],
+    "baseline_mode": "trailing",
+    "excluded_dates": [],
+    "notes": []
+  },
+  "site": {
+    "level": 0,
+    "dims": {
+      "scope": "site"
+    },
+    "step": "step_purchase",
+    "cur_sessions": 84000.0,
+    "cur_count": 3080.0,
+    "cur_revenue": 308000.0,
+    "cur_rate": 0.03667,
+    "base_sessions": 336000.0,
+    "base_count": 13440.0,
+    "base_rate_adj": 0.04,
+    "rel_change": -0.0833,
+    "abs_change_pp": -0.3333,
+    "z": -4.4453,
+    "p": 0.0,
+    "revenue_at_stake": 28000.0,
+    "direction": "down",
+    "mde_rel": 5.2945,
+    "mix": {
+      "total_delta": -0.003333,
+      "within": -0.003333,
+      "mix": 0.0,
+      "interaction": 0.0,
+      "top_mix_movers": [],
+      "mix_share": 0.0
+    },
+    "funnel": {
+      "transitions": [
+        {
+          "transition": "sessions -> step_view_item",
+          "base_rate": 0.7,
+          "cur_rate": 0.7,
+          "rel_change": 0.0
+        },
+        {
+          "transition": "step_view_item -> step_add_to_cart",
+          "base_rate": 0.28571,
+          "cur_rate": 0.28571,
+          "rel_change": 0.0
+        },
+        {
+          "transition": "step_add_to_cart -> step_begin_checkout",
+          "base_rate": 0.5,
+          "cur_rate": 0.5,
+          "rel_change": 0.0
+        },
+        {
+          "transition": "step_begin_checkout -> step_purchase",
+          "base_rate": 0.4,
+          "cur_rate": 0.36667,
+          "rel_change": -0.0833
+        }
+      ],
+      "worst_transition": "step_begin_checkout -> step_purchase",
+      "worst_rel_change": -0.0833
+    },
+    "status": "new",
+    "tier": "context",
+    "tier_reason": "",
+    "is_root": false,
+    "explained_by": null,
+    "rel_change_ex_roots": null,
+    "survived": false,
+    "notes": [
+      "Site conversion rate moved -8.3%, and only 0% of that is traffic mix -- the observed rate change is within the tested components, not a composition effect."
+    ],
+    "fingerprint": "L0:step_purchase:scope=site:down"
+  },
+  "alerts": [
+    {
+      "level": 2,
+      "dims": {
+        "landing_page": "/starter-kit",
+        "utm_source": "google"
+      },
+      "step": "step_purchase",
+      "cur_sessions": 14000.0,
+      "cur_count": 280.0,
+      "cur_revenue": 28000.0,
+      "cur_rate": 0.02,
+      "base_sessions": 56000.0,
+      "base_count": 2240.0,
+      "base_rate_adj": 0.04,
+      "rel_change": -0.5,
+      "abs_change_pp": -2.0,
+      "z": -11.3619,
+      "p": 0.0,
+      "revenue_at_stake": 28000.0,
+      "direction": "down",
+      "mde_rel": 12.9688,
+      "mix": {
+        "total_delta": -0.02,
+        "within": -0.02,
+        "mix": 0.0,
+        "interaction": 0.0,
+        "top_mix_movers": [],
+        "mix_share": 0.0,
+        "decomposed_by": "device|new_vs_returning",
+        "all_dimensions_tested": {
+          "device|new_vs_returning": 0.0,
+          "utm_campaign": 0.0
+        }
+      },
+      "funnel": {
+        "transitions": [
+          {
+            "transition": "sessions -> step_view_item",
+            "base_rate": 0.7,
+            "cur_rate": 0.7,
+            "rel_change": 0.0
+          },
+          {
+            "transition": "step_view_item -> step_add_to_cart",
+            "base_rate": 0.28571,
+            "cur_rate": 0.28571,
+            "rel_change": 0.0
+          },
+          {
+            "transition": "step_add_to_cart -> step_begin_checkout",
+            "base_rate": 0.5,
+            "cur_rate": 0.5,
+            "rel_change": 0.0
+          },
+          {
+            "transition": "step_begin_checkout -> step_purchase",
+            "base_rate": 0.4,
+            "cur_rate": 0.2,
+            "rel_change": -0.5
+          }
+        ],
+        "worst_transition": "step_begin_checkout -> step_purchase",
+        "worst_rel_change": -0.5
+      },
+      "status": "new",
+      "tier": "notify",
+      "tier_reason": "$28,000 at stake and 9.1% of revenue -- clears both the $5,000 and 2% notify bars.",
+      "is_root": true,
+      "explained_by": null,
+      "rel_change_ex_roots": null,
+      "survived": true,
+      "notes": [],
+      "fingerprint": "L2:step_purchase:landing_page=/starter-kit|utm_source=google:down"
+    },
+    {
+      "level": 1,
+      "dims": {
+        "landing_page": "/starter-kit"
+      },
+      "step": "step_purchase",
+      "cur_sessions": 42000.0,
+      "cur_count": 1400.0,
+      "cur_revenue": 140000.0,
+      "cur_rate": 0.03333,
+      "base_sessions": 168000.0,
+      "base_count": 6720.0,
+      "base_rate_adj": 0.04,
+      "rel_change": -0.1667,
+      "abs_change_pp": -0.6667,
+      "z": -6.3383,
+      "p": 0.0,
+      "revenue_at_stake": 28000.0,
+      "direction": "down",
+      "mde_rel": 7.4876,
+      "mix": {
+        "total_delta": -0.006667,
+        "within": -0.006667,
+        "mix": 0.0,
+        "interaction": 0.0,
+        "top_mix_movers": [],
+        "mix_share": 0.0,
+        "decomposed_by": "device|new_vs_returning",
+        "all_dimensions_tested": {
+          "device|new_vs_returning": 0.0,
+          "utm_source": 0.0
+        }
+      },
+      "funnel": {
+        "transitions": [
+          {
+            "transition": "sessions -> step_view_item",
+            "base_rate": 0.7,
+            "cur_rate": 0.7,
+            "rel_change": 0.0
+          },
+          {
+            "transition": "step_view_item -> step_add_to_cart",
+            "base_rate": 0.28571,
+            "cur_rate": 0.28571,
+            "rel_change": 0.0
+          },
+          {
+            "transition": "step_add_to_cart -> step_begin_checkout",
+            "base_rate": 0.5,
+            "cur_rate": 0.5,
+            "rel_change": 0.0
+          },
+          {
+            "transition": "step_begin_checkout -> step_purchase",
+            "base_rate": 0.4,
+            "cur_rate": 0.33333,
+            "rel_change": -0.1667
+          }
+        ],
+        "worst_transition": "step_begin_checkout -> step_purchase",
+        "worst_rel_change": -0.1667
+      },
+      "status": "new",
+      "tier": "context",
+      "tier_reason": "Explained by another finding; kept for traceability.",
+      "is_root": false,
+      "explained_by": "L2:step_purchase:landing_page=/starter-kit|utm_source=google:down",
+      "rel_change_ex_roots": null,
+      "survived": true,
+      "notes": [
+        "EXPLAINED BY `/starter-kit / google`. With that cell removed this moves +0.0% instead of -16.7% -- below the reporting threshold. Nothing is separately wrong here; it is the same problem through a wider lens. Fix the root and this resolves with it."
+      ],
+      "fingerprint": "L1:step_purchase:landing_page=/starter-kit:down"
+    },
+    {
+      "level": 1,
+      "dims": {
+        "utm_source": "google"
+      },
+      "step": "step_purchase",
+      "cur_sessions": 28000.0,
+      "cur_count": 840.0,
+      "cur_revenue": 84000.0,
+      "cur_rate": 0.03,
+      "base_sessions": 112000.0,
+      "base_count": 4480.0,
+      "base_rate_adj": 0.04,
+      "rel_change": -0.25,
+      "abs_change_pp": -1.0,
+      "z": -7.8279,
+      "p": 0.0,
+      "revenue_at_stake": 28000.0,
+      "direction": "down",
+      "mde_rel": 9.1703,
+      "mix": {
+        "total_delta": -0.01,
+        "within": -0.01,
+        "mix": 0.0,
+        "interaction": 0.0,
+        "top_mix_movers": [],
+        "mix_share": 0.0,
+        "decomposed_by": "device|new_vs_returning",
+        "all_dimensions_tested": {
+          "device|new_vs_returning": 0.0,
+          "landing_page": 0.0
+        }
+      },
+      "funnel": {
+        "transitions": [
+          {
+            "transition": "sessions -> step_view_item",
+            "base_rate": 0.7,
+            "cur_rate": 0.7,
+            "rel_change": 0.0
+          },
+          {
+            "transition": "step_view_item -> step_add_to_cart",
+            "base_rate": 0.28571,
+            "cur_rate": 0.28571,
+            "rel_change": 0.0
+          },
+          {
+            "transition": "step_add_to_cart -> step_begin_checkout",
+            "base_rate": 0.5,
+            "cur_rate": 0.5,
+            "rel_change": 0.0
+          },
+          {
+            "transition": "step_begin_checkout -> step_purchase",
+            "base_rate": 0.4,
+            "cur_rate": 0.3,
+            "rel_change": -0.25
+          }
+        ],
+        "worst_transition": "step_begin_checkout -> step_purchase",
+        "worst_rel_change": -0.25
+      },
+      "status": "new",
+      "tier": "context",
+      "tier_reason": "Explained by another finding; kept for traceability.",
+      "is_root": false,
+      "explained_by": "L2:step_purchase:landing_page=/starter-kit|utm_source=google:down",
+      "rel_change_ex_roots": null,
+      "survived": true,
+      "notes": [
+        "EXPLAINED BY `/starter-kit / google`. With that cell removed this moves +0.0% instead of -25.0% -- below the reporting threshold. Nothing is separately wrong here; it is the same problem through a wider lens. Fix the root and this resolves with it."
+      ],
+      "fingerprint": "L1:step_purchase:utm_source=google:down"
+    },
+    {
+      "level": 1,
+      "dims": {
+        "utm_medium": "cpc"
+      },
+      "step": "step_purchase",
+      "cur_sessions": 28000.0,
+      "cur_count": 840.0,
+      "cur_revenue": 84000.0,
+      "cur_rate": 0.03,
+      "base_sessions": 112000.0,
+      "base_count": 4480.0,
+      "base_rate_adj": 0.04,
+      "rel_change": -0.25,
+      "abs_change_pp": -1.0,
+      "z": -7.8279,
+      "p": 0.0,
+      "revenue_at_stake": 28000.0,
+      "direction": "down",
+      "mde_rel": 9.1703,
+      "mix": {
+        "total_delta": -0.01,
+        "within": -0.01,
+        "mix": 0.0,
+        "interaction": 0.0,
+        "top_mix_movers": [],
+        "mix_share": 0.0,
+        "decomposed_by": "device|new_vs_returning",
+        "all_dimensions_tested": {
+          "device|new_vs_returning": 0.0,
+          "utm_source": 0.0
+        }
+      },
+      "funnel": {
+        "transitions": [
+          {
+            "transition": "sessions -> step_view_item",
+            "base_rate": 0.7,
+            "cur_rate": 0.7,
+            "rel_change": 0.0
+          },
+          {
+            "transition": "step_view_item -> step_add_to_cart",
+            "base_rate": 0.28571,
+            "cur_rate": 0.28571,
+            "rel_change": 0.0
+          },
+          {
+            "transition": "step_add_to_cart -> step_begin_checkout",
+            "base_rate": 0.5,
+            "cur_rate": 0.5,
+            "rel_change": 0.0
+          },
+          {
+            "transition": "step_begin_checkout -> step_purchase",
+            "base_rate": 0.4,
+            "cur_rate": 0.3,
+            "rel_change": -0.25
+          }
+        ],
+        "worst_transition": "step_begin_checkout -> step_purchase",
+        "worst_rel_change": -0.25
+      },
+      "status": "new",
+      "tier": "context",
+      "tier_reason": "Explained by another finding; kept for traceability.",
+      "is_root": false,
+      "explained_by": "L2:step_purchase:landing_page=/starter-kit|utm_source=google:down",
+      "rel_change_ex_roots": null,
+      "survived": true,
+      "notes": [
+        "EXPLAINED BY `/starter-kit / google`. With that cell removed this moves +0.0% instead of -25.0% -- below the reporting threshold. Nothing is separately wrong here; it is the same problem through a wider lens. Fix the root and this resolves with it."
+      ],
+      "fingerprint": "L1:step_purchase:utm_medium=cpc:down"
+    },
+    {
+      "level": 3,
+      "dims": {
+        "landing_page": "/starter-kit",
+        "utm_source": "google",
+        "utm_campaign": "evergreen"
+      },
+      "step": "step_purchase",
+      "cur_sessions": 14000.0,
+      "cur_count": 280.0,
+      "cur_revenue": 28000.0,
+      "cur_rate": 0.02,
+      "base_sessions": 56000.0,
+      "base_count": 2240.0,
+      "base_rate_adj": 0.04,
+      "rel_change": -0.5,
+      "abs_change_pp": -2.0,
+      "z": -11.3619,
+      "p": 0.0,
+      "revenue_at_stake": 28000.0,
+      "direction": "down",
+      "mde_rel": 12.9688,
+      "mix": {
+        "total_delta": -0.02,
+        "within": -0.02,
+        "mix": 0.0,
+        "interaction": 0.0,
+        "top_mix_movers": [],
+        "mix_share": 0.0,
+        "decomposed_by": "device|new_vs_returning",
+        "all_dimensions_tested": {
+          "device|new_vs_returning": 0.0
+        }
+      },
+      "funnel": {
+        "transitions": [
+          {
+            "transition": "sessions -> step_view_item",
+            "base_rate": 0.7,
+            "cur_rate": 0.7,
+            "rel_change": 0.0
+          },
+          {
+            "transition": "step_view_item -> step_add_to_cart",
+            "base_rate": 0.28571,
+            "cur_rate": 0.28571,
+            "rel_change": 0.0
+          },
+          {
+            "transition": "step_add_to_cart -> step_begin_checkout",
+            "base_rate": 0.5,
+            "cur_rate": 0.5,
+            "rel_change": 0.0
+          },
+          {
+            "transition": "step_begin_checkout -> step_purchase",
+            "base_rate": 0.4,
+            "cur_rate": 0.2,
+            "rel_change": -0.5
+          }
+        ],
+        "worst_transition": "step_begin_checkout -> step_purchase",
+        "worst_rel_change": -0.5
+      },
+      "status": "new",
+      "tier": "context",
+      "tier_reason": "Explained by another finding; kept for traceability.",
+      "is_root": false,
+      "explained_by": "L2:step_purchase:landing_page=/starter-kit|utm_source=google:down",
+      "rel_change_ex_roots": null,
+      "survived": true,
+      "notes": [
+        "EXPLAINED BY `/starter-kit / google`. With that cell removed this moves +0.0% instead of -50.0% -- below the reporting threshold. Nothing is separately wrong here; it is the same problem through a wider lens. Fix the root and this resolves with it."
+      ],
+      "fingerprint": "L3:step_purchase:landing_page=/starter-kit|utm_campaign=evergreen|utm_source=google:down"
+    }
+  ],
+  "mix_shifts": [],
+  "resolved": [],
+  "drift": [
+    {
+      "landing_page": "/starter-kit",
+      "sessions_in_window": 252000,
+      "mean_rate": 0.03889,
+      "change_per_30d_rel": -0.1021,
+      "projected_90d_rel": -0.3063,
+      "p": 0.0,
+      "direction": "declining"
+    }
+  ],
+  "tracking_breaks": [],
+  "untested_but_material": [],
+  "scan_stats": {
+    "cells_tested": 84,
+    "cells_untested_but_material": 0,
+    "candidates_after_effect_size": 84,
+    "survived_fdr": 5,
+    "reported": 5,
+    "suppressed_below_revenue_floor": 0,
+    "deduped_to_one_per_cell": 5,
+    "roots": 1,
+    "explained_by_a_root": 4,
+    "conversion_findings": 5,
+    "mix_shift_findings": 0,
+    "runtime_seconds": 0.33
+  },
+  "channel_stack": [
+    {
+      "utm_medium": "email",
+      "sessions": 28000,
+      "revenue": 112000.0,
+      "revenue_share": 0.3636,
+      "traffic_share": 0.3333,
+      "traffic_share_before": 0.3333,
+      "cvr": 0.04,
+      "cvr_baseline": 0.04,
+      "rel_change": 0.0,
+      "p": 1.0,
+      "mde_rel": 9.2,
+      "testable": false,
+      "revenue_impact": 0.0,
+      "within_contribution_pp": 0.0,
+      "mix_contribution_pp": 0.0,
+      "standardised_cvr": null,
+      "mix_effect_pp": null,
+      "rank": 1
+    },
+    {
+      "utm_medium": "organic",
+      "sessions": 28000,
+      "revenue": 112000.0,
+      "revenue_share": 0.3636,
+      "traffic_share": 0.3333,
+      "traffic_share_before": 0.3333,
+      "cvr": 0.04,
+      "cvr_baseline": 0.04,
+      "rel_change": 0.0,
+      "p": 1.0,
+      "mde_rel": 9.2,
+      "testable": false,
+      "revenue_impact": 0.0,
+      "within_contribution_pp": 0.0,
+      "mix_contribution_pp": 0.0,
+      "standardised_cvr": null,
+      "mix_effect_pp": null,
+      "rank": 2
+    },
+    {
+      "utm_medium": "cpc",
+      "sessions": 28000,
+      "revenue": 84000.0,
+      "revenue_share": 0.2727,
+      "traffic_share": 0.3333,
+      "traffic_share_before": 0.3333,
+      "cvr": 0.03,
+      "cvr_baseline": 0.04,
+      "rel_change": -0.25,
+      "p": 0.0,
+      "mde_rel": 9.2,
+      "testable": true,
+      "revenue_impact": -28000.0,
+      "within_contribution_pp": -0.3333,
+      "mix_contribution_pp": 0.0,
+      "standardised_cvr": null,
+      "mix_effect_pp": null,
+      "rank": 3
+    }
+  ],
+  "source_stack": [
+    {
+      "utm_source": "bing",
+      "sessions": 28000,
+      "revenue": 112000.0,
+      "revenue_share": 0.3636,
+      "traffic_share": 0.3333,
+      "traffic_share_before": 0.3333,
+      "cvr": 0.04,
+      "cvr_baseline": 0.04,
+      "rel_change": 0.0,
+      "p": 1.0,
+      "mde_rel": 9.2,
+      "testable": false,
+      "revenue_impact": 0.0,
+      "within_contribution_pp": 0.0,
+      "mix_contribution_pp": 0.0,
+      "standardised_cvr": null,
+      "mix_effect_pp": null,
+      "rank": 1
+    },
+    {
+      "utm_source": "newsletter",
+      "sessions": 28000,
+      "revenue": 112000.0,
+      "revenue_share": 0.3636,
+      "traffic_share": 0.3333,
+      "traffic_share_before": 0.3333,
+      "cvr": 0.04,
+      "cvr_baseline": 0.04,
+      "rel_change": 0.0,
+      "p": 1.0,
+      "mde_rel": 9.2,
+      "testable": false,
+      "revenue_impact": 0.0,
+      "within_contribution_pp": 0.0,
+      "mix_contribution_pp": 0.0,
+      "standardised_cvr": null,
+      "mix_effect_pp": null,
+      "rank": 2
+    },
+    {
+      "utm_source": "google",
+      "sessions": 28000,
+      "revenue": 84000.0,
+      "revenue_share": 0.2727,
+      "traffic_share": 0.3333,
+      "traffic_share_before": 0.3333,
+      "cvr": 0.03,
+      "cvr_baseline": 0.04,
+      "rel_change": -0.25,
+      "p": 0.0,
+      "mde_rel": 9.2,
+      "testable": true,
+      "revenue_impact": -28000.0,
+      "within_contribution_pp": -0.3333,
+      "mix_contribution_pp": 0.0,
+      "standardised_cvr": null,
+      "mix_effect_pp": null,
+      "rank": 3
+    }
+  ],
+  "page_stack": [
+    {
+      "landing_page": "/refill",
+      "sessions": 42000,
+      "revenue": 168000.0,
+      "revenue_share": 0.5455,
+      "traffic_share": 0.5,
+      "traffic_share_before": 0.5,
+      "cvr": 0.04,
+      "cvr_baseline": 0.04,
+      "rel_change": 0.0,
+      "p": 1.0,
+      "mde_rel": 7.5,
+      "testable": false,
+      "revenue_impact": 0.0,
+      "within_contribution_pp": 0.0,
+      "mix_contribution_pp": 0.0,
+      "standardised_cvr": 0.04,
+      "mix_effect_pp": 0.0,
+      "rank": 1
+    },
+    {
+      "landing_page": "/starter-kit",
+      "sessions": 42000,
+      "revenue": 140000.0,
+      "revenue_share": 0.4545,
+      "traffic_share": 0.5,
+      "traffic_share_before": 0.5,
+      "cvr": 0.03333,
+      "cvr_baseline": 0.04,
+      "rel_change": -0.1667,
+      "p": 0.0,
+      "mde_rel": 7.5,
+      "testable": true,
+      "revenue_impact": -28000.0,
+      "within_contribution_pp": -0.3333,
+      "mix_contribution_pp": 0.0,
+      "standardised_cvr": 0.03333,
+      "mix_effect_pp": 0.0,
+      "rank": 2
+    }
+  ],
+  "restatement": {
+    "days_compared": 14,
+    "days_moved": 0,
+    "moved": [],
+    "tolerance": 0.01,
+    "note": "Silent unless a previously reported day changed. This is not a lag model -- schedule the run when the data is settled and refresh whenever."
+  },
+  "notification": {
+    "should_notify": true,
+    "notify_count": 1,
+    "flag_count": 0,
+    "always_notify_triggered": [],
+    "policy": {
+      "notify": {
+        "min_revenue_at_stake": 5000,
+        "min_revenue_share": 0.02,
+        "require_both": true
+      },
+      "flag": {
+        "min_revenue_at_stake": 250
+      }
+    },
+    "note": "Everything was evaluated and everything is in this file. This block decides only what is worth interrupting someone for."
+  },
+  "data_findings": [],
+  "note": "Nothing here is measured against an external benchmark. Every comparison is this brand against its own history."
+}

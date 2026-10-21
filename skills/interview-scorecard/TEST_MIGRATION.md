@@ -1,0 +1,12 @@
+# Round-12 test migration
+
+The raw-prose export contract changed deliberately. It is no longer correct to assert that benign source wording prints, that keywords assign a category, or that a suggested number survives. Every evidence/rationale/gap string is input-only, regardless of the scanner's result. Structured labels are independently checked as useful output.
+
+- test_structured.py uses r12_source_cases.json (all collected repair, round-9, round-10 and QA-repro source rows) through real build/render paths, including all ATS formats and JSON. It requires useful work labels and exact review reasons, checks source-text invariance, tests every code combination, malicious/unknown codes, false/unknown consent, human-rating linkage and panel readiness. Actual CLI provider probes independently check JSON/ATS. These are regression data, not a blind holdout.
+- test_validation.sh retains the previous schema/rubric errors and durable delivery checks: malformed input, privacy keys, date/type/length errors, log corruption, dry runs, pending/resume/confirm/skip behavior, stale/busy locks, closed stdout/broken pipe, concurrency and the two-week schedule simulation. Fixtures that remove evidence now also remove stale observation references so they still reach the same scheduler branch.
+- test_r9.py, test_r10.py and test_repair.py are preserved as historical reproduction sources and are not current-contract tests. Their raw-text/keyword-category expectations are superseded by test_structured.py; their source strings remain exercised. scanner_corpus.json likewise supplies regression strings, not a safety guarantee.
+- Sample output and listing sample are regenerated from run.sh and checked byte-for-byte.
+
+Legacy code for metadata/rubric screening remains heuristic. This suite does not prove semantic correctness, universal fairness, source attribution or real human provenance, and makes no live integration claim.
+
+Four retained shell assertions were explicitly updated after the first migration run: finance-number and ordinary-finance controls now require the supported work observation rather than raw words; the duplicate-evidence fixture now duplicates a structured observation and checks one output count with no suggested rating; the outside-stage fixture now supplies a supported observation and a separately entered human rating and verifies that both remain visible. No failing schema or scheduler assertion was removed.

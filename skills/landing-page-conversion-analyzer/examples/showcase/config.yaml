@@ -1,0 +1,24 @@
+# Synthetic demonstration only. These are not recommended business thresholds.
+brand: "Demo Store (synthetic)"
+currency: USD
+timezone: UTC
+funnel:
+  steps:
+    - {name: view_item, event: view_item}
+    - {name: add_to_cart, event: add_to_cart}
+    - {name: begin_checkout, event: begin_checkout}
+    - {name: purchase, event: purchase, is_conversion: true}
+windows: {current_days: 7, baseline_days: 28, gap_days: 0, drift_days: 90}
+floors: {min_sessions_current: 300, min_sessions_baseline: 1000, min_conversions_baseline: 25}
+stats: {fdr_q: 0.10, min_relative_change: 0.10, min_absolute_change_pp: 0.15, mix_dominance_threshold: 0.60}
+scan: {drill_revenue_share: 0.01, max_depth: 3, top_n_findings: 20}
+landing_pages: {keep_params: [], known_tracking_params: []}
+source_groups: {}
+acknowledged_sources: [google, newsletter, bing]
+known_events: []
+business: {shippable_countries: [US], non_converting_paths: []}
+notification:
+  notify: {min_revenue_at_stake: 5000, min_revenue_share: 0.02, require_both: true}
+  flag: {min_revenue_at_stake: 250}
+output: {view: both}
+schedule: {cadence: weekly, settles_by: "12:00", reread_trailing_days: 14}

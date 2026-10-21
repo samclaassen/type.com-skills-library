@@ -1,0 +1,4 @@
+id,date,amount,description,reference
+B001,2026-08-03,-12450.00,Payroll - August first half,JE-1201
+B002,2026-08-05,48.900,Northwind Labs INV-4471,JE-1203
+B003,2026-08-06,not-a-number,AWS - August infrastructure,JE-1205

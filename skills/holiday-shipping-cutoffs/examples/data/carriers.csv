@@ -1,0 +1,6 @@
+carrier,service,checkout_rate,zone_1,zone_2,zone_3,zone_4,zone_5,zone_6,zone_7,zone_8,peak_extra_days,delivery_days,non_delivery_dates,ship_by_date,source
+USPS,Ground Advantage,Standard,2,2,2-3,3,3-4,4-5,4-5,5,2,Mon-Sat,2026-11-26;2026-12-25,,sample
+UPS,Ground,Standard,1,1,1-2,2,3,3-4,4,4-5,2,Mon-Fri,2026-11-26;2026-12-25,,sample
+UPS,2nd Day Air,Express,2,2,2,2,2,2,2,2,1,Mon-Fri,2026-11-26;2026-12-25,,sample
+USPS,Ground Advantage,,,,,,,,,,,,,2026-12-14,sample
+UPS,2nd Day Air,,,,,,,,,,,,,2026-12-22,sample

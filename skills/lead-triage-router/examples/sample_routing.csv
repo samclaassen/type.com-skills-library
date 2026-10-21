@@ -1,0 +1,10 @@
+rule_id,priority,tier,segment,region,assignee,queue,sla_hours
+R-01,10,A,enterprise,NA,Alex Rivera,enterprise-na,2
+R-02,10,A,enterprise,EMEA,Ingrid Solberg,enterprise-emea,4
+R-03,10,A,enterprise,APAC,Wei Chen,enterprise-apac,4
+R-04,20,A,mid-market,*,Jordan Pike,midmarket-pooled,4
+R-05,30,B,enterprise,*,Alex Rivera,enterprise-na,8
+R-06,40,B,*,*,SDR pod 1,sdr-outbound,12
+R-07,50,C,*,*,SDR pod 2,sdr-sequence,48
+R-08,60,D,*,*,(none),marketing-nurture,168
+R-09,99,*,*,*,SDR triage,sdr-triage,24

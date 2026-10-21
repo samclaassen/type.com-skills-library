@@ -1,0 +1,176 @@
+===== Scenario 1: no finance definitions file =====
+
+> **No finance definitions file found** (looked for `finance/revenue_definitions.json`; pass `--definitions <path>` to use one). This report uses the skill's own defaults, which are not finance's definitions:
+> - Attributed revenue: each platform's claimed conversion value as exported, shown per platform and never summed.
+> - Attribution windows: whatever each platform export used; not verified.
+> - MER: net_sales / total_marketing_spend, with net sales from `--finance-totals`; not computed without it.
+> - New-customer CAC: total_marketing_spend / new_customers, with new customers as counted in `--finance-totals` (no finance definition of a new customer); not computed without it.
+> - Total marketing spend: paid media spend in the paid export.
+> - Blended CAC: paid spend / every analytics conversion. Blended ROAS: analytics revenue / paid spend.
+> - Currency: one currency as exported, shown as $; no FX conversion.
+
+# Northwind Coffee Co. — Performance Report, August 2026
+
+Prepared 2026-09-02 | Comparison period: July 2026 | Reporting window: 31 of 31 days
+
+## Executive summary
+
+- Paid media spend was $44,650 against a committed $46,500 (96.0% of plan), +12.8% versus July 2026.
+- The site recorded 3,180 conversions (+3.6%) and $269,000 of revenue (+4.7%).
+- Blended CAC was $14.04 (+8.9%) and blended ROAS was 6.02x (-7.2%).
+- By each platform's own claimed ROAS, Google Ads was the strongest channel at 4.21x on $21,600; TikTok Ads was the weakest at 0.67x on $5,200.
+- 6 changes are queued for next month, 2 of them urgent.
+
+## Headline metrics
+
+| Metric | This month | Last month | Change |
+| --- | ---: | ---: | ---: |
+| Paid spend | $44,650 | $39,600 | +12.8% |
+| Site conversions | 3,180 | 3,070 | +3.6% |
+| Site revenue | $269,000 | $257,000 | +4.7% |
+| Blended CAC | $14.04 | $12.90 | +8.9% |
+| Blended ROAS | 6.02x | 6.49x | -7.2% |
+
+Site revenue and conversions come from analytics, the source of truth for blended figures in this report. Blended CAC divides total paid media spend by every conversion the analytics property recorded, including organic and direct, so it measures what the whole program costs per conversion rather than what any single platform claims.
+
+MER and new-customer CAC: not computed; no finance totals file (`--finance-totals`) was supplied.
+
+## Paid channel performance
+
+| Channel | Attribution window | Spend | vs LM | Claimed conv. | CPA | vs LM | Claimed revenue | Claimed ROAS | vs LM |
+| --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| Google Ads | as exported (unverified) | $21,600 | +3.8% | 1,098 | $19.67 | -4.5% | $90,940 | 4.21x | +4.3% |
+| Meta Ads | as exported (unverified) | $15,500 | +12.3% | 430 | $36.05 | +22.8% | $38,250 | 2.47x | -15.9% |
+| Microsoft Ads | as exported (unverified) | $1,450 | +3.6% | 61 | $23.77 | -1.5% | $5,185 | 3.58x | +1.5% |
+| Pinterest Ads | as exported (unverified) | $900 | n/a | 0 | n/a | n/a | $0 | 0.00x | n/a |
+| TikTok Ads | as exported (unverified) | $5,200 | +44.4% | 58 | $89.66 | +27.0% | $3,480 | 0.67x | -41.0% |
+| **Total spend** | | **$44,650** | **+12.8%** | — | — | — | — | — | — |
+
+Claimed conversions, revenue and ROAS are each platform's own credit in its own attribution window. Platforms' credit overlaps, so they are not additive and no total is shown; total sales come only from analytics or finance.
+
+## Budget pacing
+
+| Channel | Committed | Spent | Expected to date | Pace | Variance |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| Google Ads | $22,000 | $21,600 | $22,000 | 98.2% | -$400 |
+| Meta Ads | $14,000 | $15,500 | $14,000 | 110.7% | +$1,500 |
+| Microsoft Ads | $2,000 | $1,450 | $2,000 | 72.5% | -$550 |
+| Pinterest Ads | $1,000 | $900 | $1,000 | 90.0% | -$100 |
+| Reddit Ads | $1,500 | $0 | $1,500 | 0.0% | -$1,500 |
+| TikTok Ads | $6,000 | $5,200 | $6,000 | 86.7% | -$800 |
+| **Total** | **$46,500** | **$44,650** | **$46,500** | **96.0%** | **-$1,850** |
+
+## Site-wide channel mix
+
+| Channel group | Sessions | Conversions | Revenue | Revenue vs LM |
+| --- | ---: | ---: | ---: | ---: |
+| Direct | 42,000 | 410 | $34,850 | +5.0% |
+| Email | 31,000 | 520 | $46,800 | +11.4% |
+| Organic Search | 88,000 | 690 | $55,200 | +5.3% |
+| Organic Social | 12,000 | 60 | $4,800 | +17.1% |
+| Paid Search | 96,000 | 1,020 | $84,600 | +6.0% |
+| Paid Social | 74,000 | 395 | $35,100 | -9.1% |
+| Referral | 9,000 | 85 | $7,650 | +10.9% |
+
+## What we're changing next month
+
+1. **Cut TikTok Ads budget by 30% and rebuild targeting** (P1) — Platform-claimed ROAS of 0.67x is below the 1.51x floor on $5,200 of spend. Pulling $1,560 out funds the channels that are already clearing the floor.
+2. **Fix conversion tracking before spending further** (P1) — Pinterest Ads spent $900 and reported zero conversions. Every efficiency number for this channel is unusable until the conversion action fires, so treat the spend as unmeasured, not as proven waste.
+3. **Rebuild the worst-performing Meta Ads segments** (P2) — Cost per conversion moved from $29.36 to $36.05 (+22.8%). Prune the bottom-decile ad sets and refresh creative before raising spend.
+4. **Cap Meta Ads daily budgets** (P2) — Meta Ads ran $1,500 over its committed $14,000 (110.7% of plan). Reset daily caps so the next cycle reconciles to the committed total.
+5. **Recover $550 of unspent Microsoft Ads budget** (P2) — Microsoft Ads delivered 72.5% of its committed $2,000. Raise daily caps or widen targeting so the committed budget actually ships.
+6. **Scale Google Ads by $4,320** (P3) — Google Ads claims 4.21x against a median platform-claimed ROAS of 3.02x across paid channels. A 20% increase is the largest step that historically holds efficiency within one reporting cycle.
+
+## Data notes
+
+- Reddit Ads carries a committed budget of $1,500 but has no delivery rows in the paid export for August 2026.
+
+===== Scenario 2: finance definitions and finance totals =====
+
+> **Finance definitions:** `examples/data/revenue_definitions.json`, version 2026-09-23, owner finance@example.com.
+> - Attributed revenue basis: platform_claimed_in_platform_window; shown per platform and never summed.
+> - Attribution windows: google 30d_click; meta 7d_click_1d_view; tiktok 7d_click_1d_view.
+> - New customer: first order ever, any channel, by customer email.
+> - MER: net_sales / total_marketing_spend. New-customer CAC: total_marketing_spend / new_customers.
+> - Total marketing spend: paid media spend in the paid export.
+> - Reporting currency: USD; amounts are taken as exported in that currency (this skill does no FX conversion).
+
+# Northwind Coffee Co. — Performance Report, August 2026
+
+Prepared 2026-09-02 | Comparison period: July 2026 | Reporting window: 31 of 31 days
+
+## Executive summary
+
+- Paid media spend was $44,650 against a committed $46,500 (96.0% of plan), +12.8% versus July 2026.
+- The site recorded 3,180 conversions (+3.6%) and $269,000 of revenue (+4.7%).
+- Blended CAC was $14.04 (+8.9%) and blended ROAS was 6.02x (-7.2%).
+- MER was 5.54x on $247,300 of finance net sales (-8.1%) and new-customer CAC was $36.90 across 1,210 new customers (+7.2%).
+- By each platform's own claimed ROAS, Google Ads was the strongest channel at 4.21x on $21,600; TikTok Ads was the weakest at 0.67x on $5,200.
+- 6 changes are queued for next month, 2 of them urgent.
+
+## Headline metrics
+
+| Metric | This month | Last month | Change |
+| --- | ---: | ---: | ---: |
+| Paid spend | $44,650 | $39,600 | +12.8% |
+| Site conversions | 3,180 | 3,070 | +3.6% |
+| Site revenue | $269,000 | $257,000 | +4.7% |
+| Blended CAC | $14.04 | $12.90 | +8.9% |
+| Blended ROAS | 6.02x | 6.49x | -7.2% |
+| MER (net sales / marketing spend) | 5.54x | 6.03x | -8.1% |
+| New-customer CAC | $36.90 | $34.43 | +7.2% |
+
+Site revenue and conversions come from analytics, the source of truth for blended figures in this report. Blended CAC divides total paid media spend by every conversion the analytics property recorded, including organic and direct, so it measures what the whole program costs per conversion rather than what any single platform claims.
+
+MER and new-customer CAC use finance's net sales and new-customer counts from `examples/data/finance_totals.csv` over the paid media spend in the paid export ($44,650); costs outside that export are not included.
+
+## Paid channel performance
+
+| Channel | Attribution window | Spend | vs LM | Claimed conv. | CPA | vs LM | Claimed revenue | Claimed ROAS | vs LM |
+| --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| Google Ads | 30d_click | $21,600 | +3.8% | 1,098 | $19.67 | -4.5% | $90,940 | 4.21x | +4.3% |
+| Meta Ads | 7d_click_1d_view | $15,500 | +12.3% | 430 | $36.05 | +22.8% | $38,250 | 2.47x | -15.9% |
+| Microsoft Ads | not defined by finance | $1,450 | +3.6% | 61 | $23.77 | -1.5% | $5,185 | 3.58x | +1.5% |
+| Pinterest Ads | not defined by finance | $900 | n/a | 0 | n/a | n/a | $0 | 0.00x | n/a |
+| TikTok Ads | 7d_click_1d_view | $5,200 | +44.4% | 58 | $89.66 | +27.0% | $3,480 | 0.67x | -41.0% |
+| **Total spend** | | **$44,650** | **+12.8%** | — | — | — | — | — | — |
+
+Claimed conversions, revenue and ROAS are each platform's own credit in its own attribution window. Platforms' credit overlaps, so they are not additive and no total is shown; total sales come only from analytics or finance.
+
+## Budget pacing
+
+| Channel | Committed | Spent | Expected to date | Pace | Variance |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| Google Ads | $22,000 | $21,600 | $22,000 | 98.2% | -$400 |
+| Meta Ads | $14,000 | $15,500 | $14,000 | 110.7% | +$1,500 |
+| Microsoft Ads | $2,000 | $1,450 | $2,000 | 72.5% | -$550 |
+| Pinterest Ads | $1,000 | $900 | $1,000 | 90.0% | -$100 |
+| Reddit Ads | $1,500 | $0 | $1,500 | 0.0% | -$1,500 |
+| TikTok Ads | $6,000 | $5,200 | $6,000 | 86.7% | -$800 |
+| **Total** | **$46,500** | **$44,650** | **$46,500** | **96.0%** | **-$1,850** |
+
+## Site-wide channel mix
+
+| Channel group | Sessions | Conversions | Revenue | Revenue vs LM |
+| --- | ---: | ---: | ---: | ---: |
+| Direct | 42,000 | 410 | $34,850 | +5.0% |
+| Email | 31,000 | 520 | $46,800 | +11.4% |
+| Organic Search | 88,000 | 690 | $55,200 | +5.3% |
+| Organic Social | 12,000 | 60 | $4,800 | +17.1% |
+| Paid Search | 96,000 | 1,020 | $84,600 | +6.0% |
+| Paid Social | 74,000 | 395 | $35,100 | -9.1% |
+| Referral | 9,000 | 85 | $7,650 | +10.9% |
+
+## What we're changing next month
+
+1. **Cut TikTok Ads budget by 30% and rebuild targeting** (P1) — Platform-claimed ROAS of 0.67x is below the 1.51x floor on $5,200 of spend. Pulling $1,560 out funds the channels that are already clearing the floor.
+2. **Fix conversion tracking before spending further** (P1) — Pinterest Ads spent $900 and reported zero conversions. Every efficiency number for this channel is unusable until the conversion action fires, so treat the spend as unmeasured, not as proven waste.
+3. **Rebuild the worst-performing Meta Ads segments** (P2) — Cost per conversion moved from $29.36 to $36.05 (+22.8%). Prune the bottom-decile ad sets and refresh creative before raising spend.
+4. **Cap Meta Ads daily budgets** (P2) — Meta Ads ran $1,500 over its committed $14,000 (110.7% of plan). Reset daily caps so the next cycle reconciles to the committed total.
+5. **Recover $550 of unspent Microsoft Ads budget** (P2) — Microsoft Ads delivered 72.5% of its committed $2,000. Raise daily caps or widen targeting so the committed budget actually ships.
+6. **Scale Google Ads by $4,320** (P3) — Google Ads claims 4.21x against a median platform-claimed ROAS of 3.02x across paid channels. A 20% increase is the largest step that historically holds efficiency within one reporting cycle.
+
+## Data notes
+
+- Microsoft Ads, Pinterest Ads have no attribution window in examples/data/revenue_definitions.json; claimed figures for them use whatever window the export used. Ask finance to add one.
+- Reddit Ads carries a committed budget of $1,500 but has no delivery rows in the paid export for August 2026.

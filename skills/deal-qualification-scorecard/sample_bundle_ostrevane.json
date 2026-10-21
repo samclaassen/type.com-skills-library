@@ -1,0 +1,379 @@
+{
+ "schema_version": 1,
+ "account": {
+  "name": "Ostrevane Freight (fictional)",
+  "domains": [
+   "ostrevane.example"
+  ]
+ },
+ "sources": {
+  "meeting_notes": {
+   "provider": "granola",
+   "status": "ok",
+   "plan": "business"
+  },
+  "crm": {
+   "provider": "hubspot",
+   "status": "ok"
+  }
+ },
+ "window": {
+  "start": "2026-08-01",
+  "end": "2026-10-12"
+ },
+ "deal": {
+  "name": "Ostrevane — dispatch visibility",
+  "stage": "Proposal",
+  "record_ref": "hubspot:deal/58120",
+  "url": "https://crm.example/deals/58120",
+  "fields": {
+   "close_date": "2026-11-30",
+   "economic_buyer": "Ruth Abernathy",
+   "champion": "Teodor Vasko",
+   "amount": "52000"
+  }
+ },
+ "meetings": [
+  {
+   "meeting_id": "sample-o1",
+   "title": "Ostrevane intro call",
+   "start": "2026-08-18T10:00:00-07:00",
+   "url": "https://notes.granola.ai/d/sample-o1",
+   "attendees": [
+    {
+     "name": "Mara Lindqvist",
+     "email": "mara@talvessa.example"
+    },
+    {
+     "name": "Ines Marlowe",
+     "email": "ines.marlowe@ostrevane.example"
+    },
+    {
+     "name": "Notetaker",
+     "email": "notetaker@recorder.example"
+    }
+   ],
+   "matched_by": [
+    "domain"
+   ],
+   "notes_read": true,
+   "transcript": "ok",
+   "notes_text": "### Intro call\n- Ines (Head of Logistics Ops) says the team loses ~6 hours/week reconciling carrier ETAs\n- Looked at building on their TMS last year, parked it\n- Next: discovery with Teodor (dispatch)",
+   "transcript_text": "Microphone: Thanks for making time, Ines. What made you take the call?\nSystem audio (Ines Marlowe): Honestly, we lose about six hours a week reconciling carrier ETAs by hand, and customers still call us before we know a truck is late.\nSystem audio (Ines Marlowe): We looked at building it on top of our TMS last year and parked it. Nobody had time to maintain it.\nMicrophone: Got it. Who else should be part of this?\nSystem audio (Ines Marlowe): Teodor runs the dispatch floor, so he should see it next."
+  },
+  {
+   "meeting_id": "sample-o2",
+   "title": "Ostrevane discovery: carrier ETAs",
+   "start": "2026-09-02T10:00:00-07:00",
+   "url": "https://notes.granola.ai/d/sample-o2",
+   "attendees": [
+    {
+     "name": "Mara Lindqvist",
+     "email": "mara@talvessa.example"
+    },
+    {
+     "name": "Joel Ferrante",
+     "email": "joel@talvessa.example"
+    },
+    {
+     "name": "Ines Marlowe",
+     "email": "ines.marlowe@ostrevane.example"
+    },
+    {
+     "name": "Teodor Vasko",
+     "email": "teodor.vasko@ostrevane.example"
+    }
+   ],
+   "matched_by": [
+    "domain",
+    "title"
+   ],
+   "notes_read": true,
+   "transcript": "ok",
+   "notes_text": "### Discovery: carrier ETAs\n- On-time rate 86% last quarter (board metric)\n- Target: 92% on-time by end of Q1\n- Decision by Nov 20, roll out before peak\n- Criteria: live ETAs from every carrier, Slack alerts, no extra data entry",
+   "transcript_text": "System audio (Teodor Vasko): Our on-time rate was 86% last quarter. That's the number the board looks at.\nMicrophone: And where does it need to be?\nSystem audio (Teodor Vasko): If we get to 92% on-time by the end of Q1, this pays for itself.\nSystem audio (Ines Marlowe): We want to decide by November 20 so we can roll out before peak.\nSystem audio (Teodor Vasko): For us it comes down to three things: live ETAs from every carrier, alerts in Slack, and no extra data entry for dispatchers.\nSystem audio (Teodor Vasko): If peak season looks like last year, we will miss our on-time target again and lose the retail contracts up for renewal."
+  },
+  {
+   "meeting_id": "sample-o3a",
+   "title": "Pricing and rollout review",
+   "start": "2026-09-23T13:00:00-07:00",
+   "url": "https://notes.granola.ai/d/sample-o3a",
+   "attendees": [
+    {
+     "name": "Mara Lindqvist",
+     "email": "mara@talvessa.example"
+    },
+    {
+     "name": "Joel Ferrante",
+     "email": "joel@talvessa.example"
+    },
+    {
+     "name": "Ines Marlowe",
+     "email": "ines.marlowe@ostrevane.example"
+    }
+   ],
+   "matched_by": [
+    "domain"
+   ],
+   "notes_read": true,
+   "transcript": "denied",
+   "notes_text": "### Pricing and rollout review\n- Walked through the 40-seat proposal\n- Mara: \"Ruth Abernathy, your CFO, will sign this, right?\" Ines nodded, no verbal confirmation\n- Ines said she will present the business case to Ruth herself next week\n- Rollout: 2 depots first, then the rest"
+  },
+  {
+   "meeting_id": "sample-o3b",
+   "title": "Pricing & rollout review",
+   "start": "2026-09-23T20:00:00Z",
+   "url": "https://notes.granola.ai/d/sample-o3b",
+   "attendees": [
+    {
+     "name": "Joel Ferrante",
+     "email": "joel@talvessa.example"
+    },
+    {
+     "name": "Ines Marlowe",
+     "email": "ines.marlowe@ostrevane.example"
+    }
+   ],
+   "matched_by": [
+    "domain"
+   ],
+   "notes_read": true,
+   "transcript": "not_requested",
+   "notes_text": "### Pricing & rollout review (Joel's notes)\n- 40 seats, annual\n- Ines will present the business case to Ruth herself\n- Security questionnaire to come from Kofi"
+  },
+  {
+   "meeting_id": "sample-o4",
+   "title": "Ostrevane deal review",
+   "start": "2026-09-30T16:00:00-07:00",
+   "url": "https://notes.granola.ai/d/sample-o4",
+   "attendees": [
+    {
+     "name": "Mara Lindqvist",
+     "email": "mara@talvessa.example"
+    },
+    {
+     "name": "Joel Ferrante",
+     "email": "joel@talvessa.example"
+    },
+    {
+     "name": "Sam Okonjo",
+     "email": "sam@talvessa.example"
+    }
+   ],
+   "matched_by": [
+    "title"
+   ],
+   "notes_read": true,
+   "transcript": "not_requested",
+   "notes_text": "### Ostrevane deal review (internal)\n- Mara: Ines is our champion, Ruth signs.\n- Risk: procurement timing"
+  },
+  {
+   "meeting_id": "sample-o5",
+   "title": "Ostrevane security and next steps",
+   "start": "2026-10-06T09:00:00-07:00",
+   "url": "https://notes.granola.ai/d/sample-o5",
+   "attendees": [
+    {
+     "name": "Mara Lindqvist",
+     "email": "mara@talvessa.example"
+    },
+    {
+     "name": "Ines Marlowe",
+     "email": "ines.marlowe@ostrevane.example"
+    },
+    {
+     "name": "Kofi Brandt",
+     "email": "kofi.brandt@ostrevane.example"
+    }
+   ],
+   "matched_by": [
+    "domain"
+   ],
+   "notes_read": true,
+   "transcript": "ok",
+   "transcript_text": "System audio (Ines Marlowe): Realistically we need to decide by January 29, before the new budget year starts. Procurement is involved now.\nSystem audio (Kofi Brandt): Once Ines signs off, I run the vendor review, then it goes to Ruth for signature.\nSystem audio (Ines Marlowe): And we'd now hold ourselves to 95% on-time, not 92. The board raised the bar.\nMicrophone: Understood. Anything else on security?\nSystem audio (Kofi Brandt): Send the questionnaire back by the 20th and we're fine."
+  }
+ ],
+ "findings": [
+  {
+   "element": "identify_pain",
+   "parts": [
+    "pain"
+   ],
+   "meeting_id": "sample-o1",
+   "quote": "Honestly, we lose about six hours a week reconciling carrier ETAs by hand, and customers still call us before we know a truck is late.",
+   "quote_from": "transcript",
+   "speaker_side": "customer",
+   "speaker": "Ines Marlowe"
+  },
+  {
+   "element": "competition",
+   "parts": [
+    "alternatives"
+   ],
+   "meeting_id": "sample-o1",
+   "quote": "We looked at building it on top of our TMS last year and parked it.",
+   "quote_from": "transcript",
+   "speaker_side": "customer",
+   "speaker": "Ines Marlowe"
+  },
+  {
+   "element": "metrics",
+   "parts": [
+    "baseline"
+   ],
+   "meeting_id": "sample-o2",
+   "quote": "Our on-time rate was 86% last quarter. That's the number the board looks at.",
+   "quote_from": "transcript",
+   "speaker_side": "customer",
+   "speaker": "Teodor Vasko"
+  },
+  {
+   "element": "metrics",
+   "parts": [
+    "target"
+   ],
+   "meeting_id": "sample-o2",
+   "quote": "If we get to 92% on-time by the end of Q1, this pays for itself.",
+   "quote_from": "transcript",
+   "speaker_side": "customer",
+   "speaker": "Teodor Vasko",
+   "claim": {
+    "topic": "Target",
+    "value": "92% on-time by end of Q1"
+   }
+  },
+  {
+   "element": "decision_process",
+   "parts": [
+    "date"
+   ],
+   "meeting_id": "sample-o2",
+   "quote": "We want to decide by November 20 so we can roll out before peak.",
+   "quote_from": "transcript",
+   "speaker_side": "customer",
+   "speaker": "Ines Marlowe",
+   "claim": {
+    "topic": "Decision date",
+    "value": "2026-11-20"
+   }
+  },
+  {
+   "element": "decision_criteria",
+   "parts": [
+    "criteria"
+   ],
+   "meeting_id": "sample-o2",
+   "quote": "For us it comes down to three things: live ETAs from every carrier, alerts in Slack, and no extra data entry for dispatchers.",
+   "quote_from": "transcript",
+   "speaker_side": "customer",
+   "speaker": "Teodor Vasko"
+  },
+  {
+   "element": "identify_pain",
+   "parts": [
+    "pain",
+    "urgency"
+   ],
+   "meeting_id": "sample-o2",
+   "quote": "If peak season looks like last year, we will miss our on-time target again and lose the retail contracts up for renewal.",
+   "quote_from": "transcript",
+   "speaker_side": "customer",
+   "speaker": "Teodor Vasko"
+  },
+  {
+   "element": "economic_buyer",
+   "parts": [
+    "named"
+   ],
+   "meeting_id": "sample-o3a",
+   "quote": "\"Ruth Abernathy, your CFO, will sign this, right?\" Ines nodded, no verbal confirmation",
+   "quote_from": "notes",
+   "speaker_side": "ours",
+   "speaker": "Mara Lindqvist",
+   "claim": {
+    "topic": "Economic buyer",
+    "value": "Ruth Abernathy"
+   }
+  },
+  {
+   "element": "champion",
+   "parts": [
+    "named",
+    "acting"
+   ],
+   "meeting_id": "sample-o3b",
+   "quote": "Ines will present the business case to Ruth herself",
+   "quote_from": "notes",
+   "speaker_side": "customer",
+   "speaker": "Ines Marlowe",
+   "claim": {
+    "topic": "Champion",
+    "value": "Ines Marlowe"
+   }
+  },
+  {
+   "element": "champion",
+   "parts": [
+    "named"
+   ],
+   "meeting_id": "sample-o4",
+   "quote": "Ines is our champion, Ruth signs.",
+   "quote_from": "notes",
+   "speaker_side": "ours",
+   "speaker": "Mara Lindqvist",
+   "claim": {
+    "topic": "Champion",
+    "value": "Ines Marlowe"
+   }
+  },
+  {
+   "element": "decision_process",
+   "parts": [
+    "date"
+   ],
+   "meeting_id": "sample-o5",
+   "quote": "Realistically we need to decide by January 29, before the new budget year starts.",
+   "quote_from": "transcript",
+   "speaker_side": "customer",
+   "speaker": "Ines Marlowe",
+   "claim": {
+    "topic": "Decision date",
+    "value": "2027-01-29"
+   }
+  },
+  {
+   "element": "decision_process",
+   "parts": [
+    "steps"
+   ],
+   "meeting_id": "sample-o5",
+   "quote": "Once Ines signs off, I run the vendor review, then it goes to Ruth for signature.",
+   "quote_from": "transcript",
+   "speaker_side": "customer",
+   "speaker": "Kofi Brandt"
+  },
+  {
+   "element": "metrics",
+   "parts": [
+    "target"
+   ],
+   "meeting_id": "sample-o5",
+   "quote": "And we'd now hold ourselves to 95% on-time, not 92. The board raised the bar.",
+   "quote_from": "transcript",
+   "speaker_side": "customer",
+   "speaker": "Ines Marlowe",
+   "claim": {
+    "topic": "Target",
+    "value": "95% on-time",
+    "supersedes_earlier": true
+   }
+  }
+ ],
+ "questions": {
+  "decision_process": [
+   "Earlier we heard November 20 and now January 29. Which date is real, and what moved it?",
+   "Who has to approve before Kofi's vendor review can start?"
+  ]
+ }
+}

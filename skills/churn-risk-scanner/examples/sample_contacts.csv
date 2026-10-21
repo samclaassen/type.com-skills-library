@@ -1,0 +1,19 @@
+contact_id,account_id,full_name,role,status,departure_date
+CT-01,ACC-3001,Priya Shah,champion,active,
+CT-02,ACC-3001,Dale Renner,admin,active,
+CT-03,ACC-3002,Marcus Feld,champion,departed,2026-08-10
+CT-04,ACC-3002,Ilse Brandt,economic_buyer,departed,2026-05-02
+CT-05,ACC-3002,Tobias Lund,user,active,
+CT-06,ACC-3003,Amara Osei,champion,departed,2026-07-05
+CT-07,ACC-3003,Ben Sorrell,economic_buyer,active,
+CT-08,ACC-3004,Owen Castellanos,champion,active,
+CT-09,ACC-3005,Elena Marchetti,champion,active,
+CT-10,ACC-3005,Gordon Blythe,economic_buyer,active,
+CT-11,ACC-3006,Tomas Rivera,champion,departed,2026-06-20
+CT-12,ACC-3006,Sasha Nurmi,champion,active,
+CT-13,ACC-3007,Robert Kline,champion,active,
+CT-14,ACC-3008,Derek Nwosu,admin,active,
+CT-15,ACC-3008,Lena Pardo,user,active,
+CT-16,ACC-3009,Mira Lindqvist,champion,active,
+CT-17,ACC-3010,Ken Arai,champion,active,
+CT-18,ACC-3010,Yuki Tanabe,economic_buyer,active,

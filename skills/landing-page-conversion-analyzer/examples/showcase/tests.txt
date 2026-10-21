@@ -1,0 +1,38 @@
+/tmp/showcase-skill/tests/make_test_data.py:78: DeprecationWarning: The 'generic' unit for NumPy timedelta is deprecated, and will raise an error in the future. This includes implicit conversion of bare integers (e.g. `+ 1`). Please use a specific unit instead.
+  dates = pd.date_range(end - pd.Timedelta(days=days - 1), end)
+
+BASELINE
+  PASS  E  alias fragmentation reported
+  PASS  E  fb~facebook found behaviourally
+  PASS  E  partner-a/partner-b NOT called aliases  -- trailing-character variants must not cluster
+  PASS  F  unrendered template variable caught
+  PASS  G  incomplete final day excluded
+  PASS     sensitivity reported for every level
+  PASS     baseline emits no alerts
+
+SCAN
+  PASS  A  real break is the TOP conversion finding  -- /checkout-lp / google / always-on-prospecting
+  PASS  A  break localised to checkout -> purchase  -- step_begin_checkout -> step_purchase
+  PASS  A  real break not mislabelled as mix  -- mix_share=0.0226
+  PASS  B  site move identified as mix, not conversion  -- mix_share=0.892
+  PASS  B  mix artifacts kept OUT of the conversion list
+  PASS  B  mix artifacts still reported separately  -- 4 mix findings
+  PASS  C  tracking break detected in the BASELINE window
+  PASS  C  broken day excluded from the windows  -- ['2026-08-16', '2026-08-25']
+  PASS  D  slow drift surfaced
+  PASS  D  non-converting blog pages excluded from drift
+  PASS     one finding per cell, not one per funnel step
+  PASS     untested-but-material surfaced
+  PASS     payload stays small regardless of cardinality  -- 77,630 bytes
+
+RESTATEMENT + TIERS
+  PASS  H  restated days detected on re-read  -- days_moved=2
+  PASS  H  data_restated raised
+  PASS  H  changed days are named, with the size of the change
+  PASS  H  affected findings marked provisional
+  PASS  H  restatement forces a notification
+  PASS  I  every finding carries a tier
+  PASS  I  notify is a strict subset, nothing suppressed  -- 3 notify of 12 findings
+  PASS  I  small findings flagged, not dropped
+
+28 passed, 0 failed

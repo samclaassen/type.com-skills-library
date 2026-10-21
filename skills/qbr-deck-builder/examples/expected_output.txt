@@ -1,0 +1,72 @@
+QUARTERLY BUSINESS REVIEW — Northwind Logistics (ACC-1001)
+as of 2026-09-22   CSM: Helena Voss
+ARR $420,000   licensed seats 300   renews 2026-11-30 (69d)   products: CORE, TRACKING
+
+SECTION 1. EXECUTIVE SUMMARY
+  - Adoption: 286 active users in 2026-09, +13.7% vs the prior 3-month average, 95% seat utilization
+  - Goals: 3 of 4 on track or achieved
+  - Support: 14 tickets in the last 90 days (2 P1), 2 still open
+  - Risks: 2 high, 3 medium
+  - Expansion: 3 opportunities worth $156,760 weighted
+  - Renewal: 2026-11-30 (69d), $420,000 ARR
+
+SECTION 2. ADOPTION TREND
+  Metric: monthly_active_users (monthly), utilization against licensed_seats where reported
+  month       active users    seats  utilization   key actions
+  2026-03              210      300          70%        48,200
+  2026-04              228      300          76%        50,100
+  2026-05              245      300          82%        52,800
+  2026-06              262      300          87%        55,600
+  2026-07              271      300          90%        57,900
+  2026-08              279      300          93%        60,200
+  2026-09              286      300          95%        62,400
+  Trailing 3 months vs prior 3: active users 245 -> 279 (+13.7%); key actions 52,833 -> 60,167 (+13.9%)
+
+SECTION 3. VALUE DELIVERED AGAINST STATED GOALS
+  [on track ] G-01  Lift on-time delivery to 95% before peak season
+      on_time_delivery_pct: baseline 86.2 -> current 92.4 (2026-09) -> target 95 by 2026-12-31 = 70% attained
+  [on track ] G-02  Cut manual touches per order from 3.4 to 1.5
+      manual_touches_per_order: baseline 3.4 -> current 1.9 (2026-09) -> target 1.5 by 2026-10-31 = 79% attained
+  [achieved ] G-03  Roll the platform out to 280 dispatch and warehouse users
+      monthly_active_users: baseline 210 -> current 286 (2026-09) -> target 280 by 2026-09-30 = 109% attained
+  [off track] G-04  Reduce average dock wait to 20 minutes
+      avg_dock_wait_minutes: baseline 41 -> current 38 (2026-09) -> target 20 by 2026-11-30 = 14% attained
+
+SECTION 4. SUPPORT HEALTH
+  Window: 2026-06-25 to 2026-09-22 (90 days)
+  Tickets 14 (prior window 8, +75%)   P1 2   open now 2
+  Median time to resolve 3.0 days across 12 resolved ticket(s)
+  Average CSAT 3.4 from 12 response(s)
+  Open tickets:
+    T-512  P1  opened 2026-09-05 (17d)  Inventory sync failing for two warehouses
+    T-514  P3  opened 2026-09-17 (5d)  Request bulk edit for carrier rules
+
+SECTION 5. OPEN RISKS
+  [ high ] Open P1 T-512 is aging
+      evidence: opened 2026-09-05 (17d), threshold 7d: Inventory sync failing for two warehouses
+  [ high ] Goal G-04 is off track
+      evidence: 14% attained, target 20 by 2026-11-30
+  [medium] Support satisfaction is below target
+      evidence: average CSAT 3.4 over 12 response(s), floor 4.0
+  [medium] Renewal is inside the decision window
+      evidence: renews 2026-11-30 in 69d
+  [medium] Support volume is climbing
+      evidence: 8 -> 14 tickets (+75%) across 90-day windows
+
+SECTION 6. EXPANSION OPPORTUNITIES (ranked by estimated ARR x confidence)
+     $77,140 weighted  |  $81,200 ARR x 0.95  |  Seat expansion (+58 seats) [seats]
+      signal: 286 active users on 300 seats = 95% utilization (trigger 85%); 358 seats needed to sit at 80% at $1,400/seat
+      talk track: Buying seats ahead of the next hiring wave avoids mid-term amendments.
+     $42,900 weighted  |  $66,000 ARR x 0.65  |  Advanced Analytics (ANALYTICS) [cross-sell]
+      signal: key_actions = 62400 in 2026-09, 1.25x the 50000 trigger; $220/seat x 300 seats
+      talk track: Above 50k monthly actions teams cannot answer performance questions without manual exports.
+     $36,720 weighted  |  $54,000 ARR x 0.68  |  International Compliance (INTL) [cross-sell]
+      signal: international_shipments = 640 in 2026-09, 1.28x the 500 trigger; $180/seat x 300 seats
+      talk track: Automates customs paperwork once cross-border volume is routine rather than occasional.
+
+SECTION 7. DATA COVERAGE
+  Reporting window: 2026-03 to 2026-09 (7 months)
+  monthly_active_users: complete
+  key_actions: complete
+  licensed_seats: complete
+  Every figure above is computed only from the months actually present.

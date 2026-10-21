@@ -1,0 +1,61 @@
+query,device,clicks,impressions,ctr,position
+best wine for thanksgiving,DESKTOP,15,1152,0.0130,9.0
+best wine for thanksgiving,MOBILE,23,1888,0.0122,9.5
+best wine for thanksgiving,TABLET,2,160,0.0125,9.3
+best wine gifts,DESKTOP,36,594,0.0606,3.3
+best wine gifts,MOBILE,55,974,0.0565,3.8
+best wine gifts,TABLET,4,82,0.0488,3.6
+buy rose wine online,DESKTOP,32,684,0.0468,4.8
+buy rose wine online,MOBILE,50,1121,0.0446,5.3
+buy rose wine online,TABLET,3,95,0.0316,5.1
+harbor & vine wine bar,DESKTOP,11,14,0.7857,1.0
+harbor & vine wine bar,MOBILE,18,24,0.7500,1.2
+harbor & vine wine bar,TABLET,1,2,0.5000,1.0
+harbor and vine,DESKTOP,344,724,0.4751,1.0
+harbor and vine,MOBILE,525,1186,0.4427,1.3
+harbor and vine,TABLET,36,100,0.3600,1.1
+harbor and vine tasting room,DESKTOP,20,47,0.4255,1.0
+harbor and vine tasting room,MOBILE,30,77,0.3896,1.3
+harbor and vine tasting room,TABLET,2,6,0.3333,1.1
+harbor and vine wine club,DESKTOP,14,31,0.4516,1.0
+harbor and vine wine club,MOBILE,22,50,0.4400,1.2
+harbor and vine wine club,TABLET,2,4,0.5000,1.0
+how long does opened wine last,DESKTOP,23,864,0.0266,3.1
+how long does opened wine last,MOBILE,35,1416,0.0247,3.6
+how long does opened wine last,TABLET,2,120,0.0167,3.4
+how to store wine,DESKTOP,19,594,0.0320,5.8
+how to store wine,MOBILE,29,974,0.0298,6.3
+how to store wine,TABLET,2,82,0.0244,6.1
+monthly wine subscription,DESKTOP,23,900,0.0256,5.8
+monthly wine subscription,MOBILE,35,1475,0.0237,6.3
+monthly wine subscription,TABLET,2,125,0.0160,6.1
+natural wine explained,DESKTOP,27,936,0.0288,9.3
+natural wine explained,MOBILE,40,1534,0.0261,9.8
+natural wine explained,TABLET,3,130,0.0231,9.6
+orange wine,DESKTOP,10,252,0.0397,10.1
+orange wine,MOBILE,14,413,0.0339,10.6
+orange wine,TABLET,1,35,0.0286,10.4
+pinot noir,DESKTOP,37,1080,0.0343,5.8
+pinot noir,MOBILE,57,1770,0.0322,6.3
+pinot noir,TABLET,4,150,0.0267,6.1
+pinot noir under $30,DESKTOP,120,3000,0.0400,1.0
+pinot noir under $30,MOBILE,66,3000,0.0220,4.0
+pinot noir under $30,TABLET,4,200,0.0200,2.0
+rosé wine delivery,DESKTOP,22,540,0.0407,4.3
+rosé wine delivery,MOBILE,33,885,0.0373,4.8
+rosé wine delivery,TABLET,2,75,0.0267,4.6
+wine club membership,DESKTOP,46,1404,0.0328,6.5
+wine club membership,MOBILE,69,2301,0.0300,7.0
+wine club membership,TABLET,5,195,0.0256,6.8
+wine gift ideas,DESKTOP,19,360,0.0528,3.8
+wine gift ideas,MOBILE,29,590,0.0492,4.3
+wine gift ideas,TABLET,2,50,0.0400,4.1
+wine pairing for salmon,DESKTOP,11,288,0.0382,6.9
+wine pairing for salmon,MOBILE,18,472,0.0381,7.4
+wine pairing for salmon,TABLET,1,40,0.0250,7.2
+wine store hours,DESKTOP,17,108,0.1574,1.7
+wine store hours,MOBILE,26,177,0.1469,2.2
+wine store hours,TABLET,2,15,0.1333,2.0
+wine tasting near me,DESKTOP,27,522,0.0517,2.6
+wine tasting near me,MOBILE,40,856,0.0467,3.1
+wine tasting near me,TABLET,3,72,0.0417,2.9

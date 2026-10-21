@@ -1,0 +1,70 @@
+{
+  "gsc_property": "",
+  "compare_period": 28,
+  "data_lag_days": 3,
+  "min_impressions": 50,
+  "min_position_change": 3,
+  "ctr_benchmark": "auto",
+  "ctr_curve_custom": {},
+  "cannibalization_threshold": 2,
+  "cannibalization_min_impression_share": 0.10,
+  "post_to": "",
+
+  "low_volume_click_threshold": 1000,
+  "max_rows_per_section": 10,
+  "max_priority_actions": 15,
+
+  "decline_min_drop_pct": 20,
+  "decline_min_impressions": 100,
+  "decline_min_click_loss": 10,
+
+  "cause_min_position_worsening": 1.0,
+  "cause_min_impression_drop_pct": 15,
+  "cause_min_ctr_drop_pct": 20,
+
+  "ctr_max_position": 5.0,
+  "ctr_min_gap_pp": 1.0,
+
+  "rising_min_impression_growth_pct": 30,
+  "rising_min_impression_gain": 100,
+  "rising_new_query_min_impressions": 200,
+
+  "page1_min_position": 8.0,
+  "page1_max_position": 12.0,
+  "page1_target_position": 5,
+
+  "breakdown_top_queries": 5,
+  "breakdown_top_countries": 3,
+  "breakdown_min_country_share": 0.01,
+
+  "brand_terms": [],
+  "exclude_query_patterns": [],
+
+  "priority_rules": {
+    "declining_page": {"metric": "click_loss", "critical": 150, "high": 40},
+    "ctr_opportunity": {"metric": "est_click_gain", "critical": 300, "high": 100},
+    "rising_query": {"metric": "impression_gain", "critical": null, "high": 1000},
+    "cannibalization": {"metric": "query_impressions", "critical": 10000, "high": 1000},
+    "page1_opportunity": {"metric": "est_click_gain", "critical": 300, "high": 100}
+  },
+
+  "section_actions": {
+    "declining_page": "Open each page's top query in a live search and check URL Inspection. Position drops: refresh the content and internal links. Stable position with fewer impressions: demand fell, monitor rather than rewrite.",
+    "ctr_opportunity": "Rewrite title tag and meta description. Test question-format title.",
+    "rising_query": "Strengthen the ranking page for these queries (section, FAQ, internal links) or create a dedicated page to accelerate.",
+    "cannibalization": "Pick one canonical URL per query, merge the overlapping content into it, and 301-redirect or de-optimize the others after checking they serve the same intent.",
+    "page1_opportunity": "Expand the ranking page for the query (comparison table, fresher content, updated date in title) and add internal links from strong pages."
+  },
+
+  "finding_actions": {
+    "declining_page:position_drop": "Check {page} for recent edits, indexing or canonical changes; refresh content for \"{query}\".",
+    "declining_page:impressions_drop": "Position held but impressions fell on {page}; likely lower demand. Monitor; no on-page fix indicated by the data.",
+    "declining_page:ctr_drop": "CTR fell at a similar position on {page}; look at the live result for \"{query}\" and refresh the title and description.",
+    "declining_page:absent": "{page} has no impressions this period; check URL Inspection for indexing, redirect or removal.",
+    "declining_page:unexplained": "No single metric explains the drop on {page}; inspect manually.",
+    "ctr_opportunity": "Rewrite the title and meta description for \"{query}\" (ranks {position}, CTR {gap} vs. benchmark).",
+    "rising_query": "Build on momentum for \"{query}\": strengthen the ranking page or create a dedicated page.",
+    "cannibalization": "Consolidate \"{query}\" onto {page}; merge or redirect the competing URLs after an intent check.",
+    "page1_opportunity": "Push \"{query}\" from position {position} onto page 1: expand {page} and add internal links."
+  }
+}

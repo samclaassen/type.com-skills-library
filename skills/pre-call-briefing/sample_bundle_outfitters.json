@@ -1,0 +1,136 @@
+{
+  "schema_version": 1,
+  "_note": "FICTIONAL sample data. Example Outfitters Co (fictional), Ledgerline and every person, email and quote here are invented for testing.",
+  "company": {
+    "name": "Example Outfitters Co (fictional)",
+    "domain": "outfitters.example"
+  },
+  "sources": {
+    "calendar": {"provider": "google", "status": "ok"},
+    "crm": {"provider": "hubspot", "status": "ok"},
+    "email": {"provider": "gmail", "status": "ok"},
+    "slack": {"provider": "slack", "status": "ok"},
+    "enrichment": {"provider": null, "status": "not_requested"}
+  },
+  "meeting": {
+    "event_id": "7kq2n4rp9d0v1s3h5j6m8b2c4f",
+    "calendar_source": "google",
+    "title": "Q4 rollout & pricing",
+    "start": "2026-10-06T10:00:00-07:00",
+    "end": "2026-10-06T10:45:00-07:00",
+    "timezone_label": "PDT",
+    "status": "confirmed",
+    "attendees": [
+      {"email": "dana.ortiz@ledgerline.example", "name": "Dana Ortiz", "response": "accepted"},
+      {"email": "sam.kim@ledgerline.example", "name": "Sam Kim", "response": "accepted"},
+      {"email": "priya.sharma@outfitters.example", "name": "Priya Sharma", "response": "accepted"},
+      {"email": "marcus.lee@outfitters.example", "name": "Marcus Lee", "response": "accepted"}
+    ]
+  },
+  "crm": {
+    "record_found": true,
+    "record_ref": "hubspot:deal/48210933175",
+    "notes_count": 4,
+    "deal": {
+      "name": "Example Outfitters Co - Ops Analytics",
+      "stage": "Evaluation",
+      "amount": 24000,
+      "amount_period": "yr",
+      "close_date": "2026-10-30",
+      "last_activity_at": "2026-10-03T16:12:00Z",
+      "owner": "Dana Ortiz"
+    },
+    "contacts": [
+      {
+        "email": "priya.sharma@outfitters.example",
+        "name": "Priya Sharma",
+        "title": "Head of Ops",
+        "role": "influencer",
+        "prior_meetings": 3,
+        "prior_emails": 7,
+        "last_touchpoint": {"date": "2026-10-03", "summary": "asked for security questionnaire (sent ✓)"}
+      },
+      {
+        "email": "marcus.lee@outfitters.example",
+        "name": "Marcus Lee",
+        "title": "VP Finance",
+        "role": "signer",
+        "prior_meetings": 0,
+        "prior_emails": 0,
+        "last_touchpoint": null
+      }
+    ],
+    "open_tasks": [
+      {"id": "task-9001", "subject": "Send 3-seat quote", "owner": "Dana Ortiz", "due": "2026-10-02", "done": false}
+    ]
+  },
+  "email": {
+    "threads": [
+      {"thread_id": "t-5", "subject": "Re: Security questionnaire", "last_message_at": "2026-10-03T16:12:00Z", "last_message_from": "dana.ortiz@ledgerline.example"},
+      {"thread_id": "t-4", "subject": "Seats and pricing", "last_message_at": "2026-09-29T18:40:00Z", "last_message_from": "dana.ortiz@ledgerline.example"},
+      {"thread_id": "t-3", "subject": "SSO + user provisioning", "last_message_at": "2026-09-28T21:05:00Z", "last_message_from": "priya.sharma@outfitters.example"},
+      {"thread_id": "t-2", "subject": "Black Friday timing", "last_message_at": "2026-09-22T15:30:00Z", "last_message_from": "priya.sharma@outfitters.example"},
+      {"thread_id": "t-1", "subject": "Recap: discovery call", "last_message_at": "2026-09-11T17:00:00Z", "last_message_from": "dana.ortiz@ledgerline.example"}
+    ]
+  },
+  "slack": {
+    "mentions": [
+      {"channel": "#deal-outfitters", "author": "Sam Kim", "posted_at": "2026-10-05T14:20:00-07:00", "text": "Priya says Marcus wants a cost comparison against the BI seats they already pay for."},
+      {"channel": "#sales", "author": "Dana Ortiz", "posted_at": "2026-09-24T11:02:00-07:00", "text": "Outfitters discovery went well, moving to Evaluation."}
+    ]
+  },
+  "signals": {
+    "budget_statements": [
+      {
+        "amount": 18000,
+        "period": "yr",
+        "qualifier": "approx_ceiling",
+        "quote": "Realistically we're around eighteen thousand a year, and that's the ceiling this fiscal year.",
+        "speaker": "Priya Sharma",
+        "source": {"type": "call_note", "date": "2026-09-24", "ref": "HubSpot note: Evaluation kickoff"}
+      }
+    ],
+    "timeline_statements": [
+      {
+        "label": "Black Friday prep",
+        "quote": "Before Black Friday",
+        "stated_date": null,
+        "speaker": "Priya Sharma",
+        "source": {"type": "email", "date": "2026-09-22", "ref": "thread t-2"}
+      }
+    ],
+    "competitor_mentions": [
+      {
+        "competitor": "Tallyboard",
+        "context": "Trialed in spring",
+        "quote": "nobody opened the dashboards",
+        "speaker": "Priya Sharma",
+        "source": {"type": "call_note", "date": "2026-09-10", "ref": "HubSpot note: Discovery call"}
+      }
+    ],
+    "questions": [
+      {"asked_by": "Priya Sharma", "topic": "SSO support", "asked_at": "2026-09-28", "channel": "email", "answered": false},
+      {"asked_by": "Priya Sharma", "topic": "the security questionnaire", "asked_at": "2026-09-30", "channel": "email", "answered": true}
+    ],
+    "commitments": [
+      {
+        "side": "ours",
+        "owner": "Dana Ortiz",
+        "what": "a 3-seat quote",
+        "due": "2026-10-02",
+        "done": false,
+        "crm_task_id": "task-9001",
+        "source": {"type": "email", "date": "2026-09-29", "ref": "thread t-4"}
+      },
+      {
+        "side": "theirs",
+        "owner": "Priya Sharma",
+        "what": "Q4 order-volume forecast",
+        "due": "2026-10-09",
+        "done": false,
+        "source": {"type": "email", "date": "2026-09-29", "ref": "thread t-4"}
+      }
+    ]
+  },
+  "enrichment": {"items": []}
+}

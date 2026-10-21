@@ -1,0 +1,3 @@
+customer_id,customer_name,subscription_id,plan,mrr,start_date,end_date
+C001,Northwind Labs,sub_1001,Growth,2400.00,2025-03-01,
+C002,Calder Group,sub_1002,Growth,-1800.00,2024-11-01,2026-08-10

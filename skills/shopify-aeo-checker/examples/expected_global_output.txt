@@ -1,0 +1,17 @@
+AEO share of shelf: Northfield Knit (northfield-knit.example), 2026-09-25
+Product: Harbor Merino Crew Oatmeal
+Visibility: 52/100 (Weak). Brand holds 3 of 15 results (20%); top-10 on 2 of 3 searches.
+Source: Shopify Global Catalog (all Shopify stores), anonymous agent tier. Not ChatGPT/Gemini final rankings.
+
+  'mens merino sweater'                    brand  2/6  positions #2, #3  (product #3)
+  'warm crew neck sweater'                 brand  1/5  positions #5
+  'wool sweater gift'                      brand  0/4  positions none
+
+Top sellers on these searches:
+   1. Woolworth Mills                    6 results, best #1, on 3/3 searches
+   2. Basics Bros                        3 results, best #1, on 3/3 searches
+   3. Coastline Cashmere                 3 results, best #1, on 3/3 searches
+   4. Northfield Knit (YOU)              3 results, best #2, on 2/3 searches
+
+Fixes:
+  - High: Brand is absent from the top 20 for 'wool sweater gift'; shelf is led by Woolworth Mills (2), Basics Bros (1), Coastline Cashmere (1)

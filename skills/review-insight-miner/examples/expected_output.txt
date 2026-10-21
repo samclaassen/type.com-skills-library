@@ -1,0 +1,98 @@
+REVIEW AND TICKET THEME MINER
+documents: 100   reviews: 86   tickets: 14   rated reviews: 86   mean rating: 3.15
+========================================================================================================
+
+METHOD
+  Vocabulary: terms in at least 3 documents and at most 35% of them (55 terms kept).
+  Themes: terms merged by average pointwise mutual information at or above 1.0 bits, then every document assigned to its best-matching cluster by inverse document frequency.
+  Categories come from a signal lexicon applied AFTER clustering; they label a theme, they never create one.
+  Rating drag = (overall mean rating - theme mean rating) x rated reviews in the theme, in star-points.
+  A negative drag means the theme rates ABOVE the overall mean: those clusters are praise, not a problem.
+
+THEMES, RANKED BY RATING DRAG
+  #  theme                               docs   share  revs  tix  rating    drag  category
+  1  lid / leaks / gasket                  15   15.0%    12    3    2.25    10.8  PRODUCT DEFECT
+  2  chipped / coating / desk               9    9.0%     7    2    2.14     7.1  PRODUCT DEFECT
+  3  base / fit / cup                       8    8.0%     7    1    2.43     5.1  EXPECTATION MISMATCH
+  4  replacement / support / took           8    8.0%     6    2    2.33     4.9  SERVICE
+  5  arrived / shipping                     5    5.0%     4    1    2.00     4.6  LOGISTICS
+  6  straw / clean / smell                  4    4.0%     3    1    1.67     4.5  USABILITY
+  7  color / photo / listing                6    6.0%     5    1    2.80     1.8  EXPECTATION MISMATCH
+  8  price / good                           5    5.0%     5    0    3.20    -0.2  VALUE
+  9  bottle / laptop                        3    3.0%     3    0    4.00    -2.5  VALUE
+  10 exactly                                3    3.0%     3    0    5.00    -5.5  UNCLASSIFIED
+  -  (no recurring theme)                  34   34.0%    31    3    4.13       -  one-off feedback
+
+THEME DETAIL
+
+  [1] lid / leaks / gasket  —  PRODUCT DEFECT
+      terms: lid, leaks, gasket, seal, bag
+      volume: 15 documents, 9 reviews at 1-2 stars, mean rating 2.25, drag 10.8 star-points
+      signal counts: product defect 17, expectation mismatch 2, service 2, usability 3
+      skus: NF-LID-STR (5), NF-BTL-20 (4), NF-BTL-32 (4), NF-BAG-SLING (1), NF-MUG-12 (1)
+      "A leak from the lid seal ruined a notebook in my bag. The gasket is far too thin." [NF-RV-010, 1*]
+      "Bought this for the gym and the lid leaked in my bag on day one. The lid does not seal." [NF-RV-006, 1*]
+      owner: Product and QA
+      action: Pull a sample against the supplier spec for the failing part, quantify the failure rate by production lot, and decide between a design change and a supplier change. Until it ships, arm support with a no-questions replacement macro so this theme stops generating tickets.
+
+  [2] chipped / coating / desk  —  PRODUCT DEFECT
+      terms: chipped, coating, desk, paint
+      volume: 9 documents, 6 reviews at 1-2 stars, mean rating 2.14, drag 7.1 star-points
+      signal counts: product defect 12, expectation mismatch 3, service 1, value 1
+      skus: NF-BTL-32 (3), NF-TUMB-16 (3), NF-BTL-20 (2), NF-MUG-12 (1)
+      "Chipped paint after a short drop from a desk. The coating quality is poor for the price." [NF-RV-016, 1*]
+      "Paint chipped at the base within a week of completely normal desk use." [NF-RV-013, 2*]
+      owner: Product and QA
+      action: Pull a sample against the supplier spec for the failing part, quantify the failure rate by production lot, and decide between a design change and a supplier change. Until it ships, arm support with a no-questions replacement macro so this theme stops generating tickets.
+
+  [3] base / fit / cup  —  EXPECTATION MISMATCH
+      terms: base, fit, cup, holder, car, wide
+      volume: 8 documents, 4 reviews at 1-2 stars, mean rating 2.43, drag 5.1 star-points
+      signal counts: expectation mismatch 13
+      skus: NF-BTL-32 (7), NF-BTL-20 (1)
+      "Does not fit in my car cup holder. The base is far too wide." [NF-RV-021, 2*]
+      "Fits nothing. Cup holder, bike cage or bag pocket, the base is simply too wide." [NF-RV-026, 2*]
+      owner: Listing copy and imagery
+      action: The product is doing what it does; the page is promising something else. Put the disputed attribute in the spec table in explicit units, name it in the first three bullets, and add one photo or a short clip that shows it in context at real scale.
+
+  [4] replacement / support / took  —  SERVICE
+      terms: replacement, support, took, emails, sent
+      volume: 8 documents, 3 reviews at 1-2 stars, mean rating 2.33, drag 4.9 star-points
+      signal counts: logistics 4, service 19
+      skus: NF-BTL-32 (4), NF-BTL-20 (2), NF-LID-STR (2)
+      "Support finally replied and sent a replacement lid, but it took three emails to get there." [NF-RV-049, 3*]
+      "Emailed support twice about a replacement lid and never got a reply." [NF-RV-044, 1*]
+      owner: Support operations
+      action: Measure first-response and resolution time for this theme specifically, then fix the top driver with a macro, a self-serve flow, or a policy change. Volume here is usually a symptom of one of the other themes going unaddressed.
+
+  [5] arrived / shipping  —  LOGISTICS
+      terms: arrived, shipping
+      volume: 5 documents, 4 reviews at 1-2 stars, mean rating 2.00, drag 4.6 star-points
+      signal counts: product defect 2, logistics 10, service 1
+      skus: NF-TUMB-16 (3), NF-BAG-SLING (1), NF-BTL-32 (1)
+      "Shipping took two weeks and the box arrived crushed on one corner." [NF-RV-037, 2*]
+      "Ordered on the third and it arrived on the nineteenth with no shipping notification." [NF-RV-043, 2*]
+      owner: Fulfilment and carrier
+      action: Trace these orders back to the warehouse and carrier service level, check pack-out and carton spec for the damaged cases, and set delivery expectations on the product page and in the shipping confirmation rather than in the support queue.
+
+  [6] straw / clean / smell  —  USABILITY
+      terms: straw, clean, smell
+      volume: 4 documents, 3 reviews at 1-2 stars, mean rating 1.67, drag 4.5 star-points
+      signal counts: usability 10
+      skus: NF-LID-STR (3), NF-BTL-32 (1)
+      "The straw holds a smell and cannot be cleaned properly with any brush." [NF-RV-060, 1*]
+      "Customer asking how to clean the straw assembly, reports a lingering smell." [NF-TK-061, ticket]
+      owner: Product design and care content
+      action: Customers can use the product but not live with it. Fix the part that makes daily care hard, and in the meantime put care and cleaning instructions on the product page, in the packaging insert, and in the post-purchase email rather than leaving them for the support queue.
+
+  ... 4 further theme(s); raise --top to detail them.
+
+DEFECT VERSUS EXPECTATION
+  product defects (the item is failing):        24 document(s)
+  expectation mismatch (the page is failing):   14 document(s)
+  logistics, service, usability, value:         28 document(s)
+  no recurring theme:                           34 document(s)
+  Defect themes cost margin through replacements and returns; expectation themes are usually cheaper to fix and fix faster, because the change is copy, spec, and photography.
+
+========================================================================================================
+Themes are statistical groupings of shared vocabulary, not a reading of intent. Sentiment is not modelled: a theme mixes praise and complaint about the same subject, so read the verbatims before acting.

@@ -1,0 +1,10 @@
+# Live mode only. Fixture mode (--fixture) and examples/run.sh need only python3.
+# google-ads 32.0.0 (2026-09-09) ships Google Ads API v25, which the script pins
+# (GOOGLE_ADS_API_VERSION = "v25"; supported until August 2027).
+# https://pypi.org/project/google-ads/
+# https://github.com/googleads/google-ads-python/blob/main/ChangeLog
+# https://developers.google.com/google-ads/api/docs/sunset-dates
+google-ads==32.0.0
+PyYAML==6.0.3
+# Optional, only for --sheet-id:
+# gspread==6.2.1

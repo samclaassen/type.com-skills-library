@@ -1,0 +1,30 @@
+{
+ "schema_version": 1,
+ "account": {
+  "name": "Dunnolark Studio (fictional)",
+  "domains": [
+   "dunnolark.example"
+  ]
+ },
+ "sources": {
+  "meeting_notes": {
+   "provider": "granola",
+   "status": "unavailable",
+   "detail": "Granola is not added to this Space"
+  },
+  "crm": {
+   "provider": "hubspot",
+   "status": "ok"
+  }
+ },
+ "deal": {
+  "name": "Dunnolark — agency plan",
+  "stage": "Negotiation",
+  "record_ref": "hubspot:deal/58377",
+  "fields": {
+   "close_date": "2026-10-31"
+  }
+ },
+ "meetings": [],
+ "findings": []
+}

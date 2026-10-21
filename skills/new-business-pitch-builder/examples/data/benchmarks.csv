@@ -1,0 +1,11 @@
+metric,scope,value,source
+paid_conversion_rate,Google Search,2.8,vertical median - outdoor apparel
+paid_conversion_rate,Google Shopping,2.4,vertical median - outdoor apparel
+paid_conversion_rate,Meta Ads,1.6,vertical median - outdoor apparel
+paid_conversion_rate,TikTok Ads,0.9,vertical median - outdoor apparel
+paid_conversion_rate,Microsoft Ads,2.5,vertical median - outdoor apparel
+funnel_step_rate,Product view,45,agency portfolio median
+funnel_step_rate,Add to cart,24,agency portfolio median
+funnel_step_rate,Checkout started,50,agency portfolio median
+funnel_step_rate,Purchase,40,agency portfolio median
+organic_ctr,3,11.0,position-ctr study

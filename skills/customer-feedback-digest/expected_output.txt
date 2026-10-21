@@ -1,0 +1,142 @@
+=== 1. Scheduled Monday run: digest for last week (Type doc) ===
+# Customer Feedback Digest — 2026-W40 (Sep 28 – Oct 4, 2026)
+
+**At a glance** — 6 customer and prospect meetings with 6 accounts scanned. 5 themes raised by 2+ accounts; top: Bulk CSV import for orders — 4 accounts, growing (+1 vs 2026-W39). 1 churn-risk signal. 2 issue drafts awaiting approval.
+
+## Top themes
+_Ranked by distinct accounts, not raw mentions. One account mentioning something five times counts once._
+
+### 1. Bulk CSV import for orders
+Feature request · 4 accounts · 4 meetings · 5 mentions · growing (+1 vs 2026-W39)
+
+Customers want to load historical and weekly orders from a CSV file instead of entering them one by one.
+
+Accounts: Example Outfitters Co \(Growth, Mid-market\); Marrowby & Vane \(Enterprise\); Plimsoll & Quist \(Mid-market, prospect\); Quirnwell Studio \(Agency, prospect\)
+- “Every Monday someone on my team re-types two hundred orders. If we could just drop in the CSV we'd get a day back.” — Head of Ops, Example Outfitters Co · [Example Outfitters QBR, Sep 29](https://notes.granola.ai/d/sample-m01)
+- “We're migrating three years of orders. Is there any way to bulk load them?” — Operations lead, Marrowby & Vane · [Marrowby & Vane weekly sync, Sep 30](https://notes.granola.ai/d/sample-m03)
+- “For our clients we'd need to load their order files in bulk, not by hand.” — Managing director, Quirnwell Studio · [Quirnwell Studio demo, Oct 2](https://notes.granola.ai/d/sample-m11)
+Issue: [TAM-142 Bulk import orders from CSV](https://issues.tamsquill.example/TAM-142) — In Progress · match: high — same capability: CSV upload of orders
+
+### 2. Single sign-on \(SAML\)
+Objection / blocker · 2 accounts · 2 meetings · 2 mentions · new
+
+Security reviews require SAML single sign-on before rollout.
+
+Accounts: Marrowby & Vane \(Enterprise\); Plimsoll & Quist \(Mid-market, prospect\)
+- “IT won't let us add more seats until it's behind single sign-on.” — Operations lead, Marrowby & Vane · [Marrowby & Vane weekly sync, Sep 30](https://notes.granola.ai/d/sample-m03)
+- Note excerpt (AI meeting notes, not verbatim speech): _Security review blocks purchase until SAML SSO is available_ — Plimsoll & Quist · [Plimsoll & Quist discovery, Oct 1](https://notes.granola.ai/d/sample-m04)
+Issue: no matching issue found in Linear for “SSO SAML”.
+Draft: see D1 below (not created).
+
+### 3. Dashboards slow to load
+Usability friction · 2 accounts · 2 meetings · 2 mentions · growing (+1 vs 2026-W39)
+
+Accounts: Example Outfitters Co \(Growth, Mid-market\); Kestrovane Supply \(Growth, Mid-market\)
+- “The regional dashboard takes about thirty seconds once I add the store filter.” — Operations analyst, Example Outfitters Co · [Example Outfitters QBR, Sep 29](https://notes.granola.ai/d/sample-m01)
+- “Half the team gave up on the dashboards because they spin forever.” — Customer participant \(speaker unconfirmed\), Kestrovane Supply · [Kestrovane Supply renewal call, Oct 2](https://notes.granola.ai/d/sample-m06)
+Issue: [TAM-120 Dashboard performance](https://issues.tamsquill.example/TAM-120) — Backlog · likely match (medium) — confirm before linking — covers dashboard speed but not the filters customers named
+
+### 4. Compared with Countwhistle
+Competitor mention · 2 accounts · 2 meetings · 2 mentions · returning (not in 2026-W39)
+
+Accounts: Kestrovane Supply \(Growth, Mid-market\); Plimsoll & Quist \(Mid-market, prospect\)
+- “Countwhistle quoted us about a third less for the same seats.” — Finance director, Kestrovane Supply · [Kestrovane Supply renewal call, Oct 2](https://notes.granola.ai/d/sample-m06)
+- Note excerpt (AI meeting notes, not verbatim speech): _Also evaluating Countwhistle; likes its spreadsheet import_ — Plimsoll & Quist · [Plimsoll & Quist discovery, Oct 1](https://notes.granola.ai/d/sample-m04)
+
+### 5. Weekly report automation saves time
+Praise · 2 accounts · 2 meetings · 2 mentions · recurring (also in 2026-W39)
+
+Accounts: Brackenvolt Labs \(Starter, SMB\); Marrowby & Vane \(Enterprise\)
+- “The Friday report alone saves me most of an afternoon.” — Operations lead, Marrowby & Vane · [Marrowby & Vane weekly sync, Sep 30](https://notes.granola.ai/d/sample-m03)
+- “Honestly the weekly report is why we signed.” — Founder, Brackenvolt Labs · [Brackenvolt onboarding check-in, Oct 1](https://notes.granola.ai/d/sample-m05)
+
+## Churn-risk signals
+- **Kestrovane Supply \(Growth, Mid-market\)** — “If the price goes up again at renewal, we'll have to look at Countwhistle seriously.” — Finance director, Kestrovane Supply · [Kestrovane Supply renewal call, Oct 2](https://notes.granola.ai/d/sample-m06)
+
+## Competitors mentioned
+| Competitor | Accounts | Meetings |
+|---|---|---|
+| Countwhistle | 2 (Kestrovane Supply, Plimsoll & Quist) | 2 |
+
+## New-issue drafts (not created — reply e.g. “approve D1” to create one)
+### D1. [Objection / blocker] Single sign-on \(SAML\)
+
+```markdown
+Title: Single sign-on \(SAML\)
+Labels: customer-feedback, objection
+
+**Source:** Customer Feedback Digest 2026-W40 — 2 accounts, 2 mentions across 2 meetings (Sep 28 – Oct 4, 2026).
+
+**What customers are asking for:** Security reviews require SAML single sign-on before rollout.
+
+**Accounts:** Marrowby & Vane \(Enterprise\); Plimsoll & Quist \(Mid-market, prospect\)
+
+**Evidence:**
+- “IT won't let us add more seats until it's behind single sign-on.” — Operations lead, Marrowby & Vane · [Marrowby & Vane weekly sync, Sep 30](https://notes.granola.ai/d/sample-m03)
+- Note excerpt (AI meeting notes, not verbatim speech): _Security review blocks purchase until SAML SSO is available_ — Plimsoll & Quist · [Plimsoll & Quist discovery, Oct 1](https://notes.granola.ai/d/sample-m04)
+```
+
+### D2. [Bug / defect] Slack alerts arrive late
+_Low-confidence candidate TAM-98 exists; check it before creating._
+
+```markdown
+Title: Slack alerts arrive late
+Labels: customer-feedback, bug
+
+**Source:** Customer Feedback Digest 2026-W40 — 1 account, 1 mention across 1 meeting (Sep 28 – Oct 4, 2026).
+
+**What customers are asking for:** Low-stock alerts reach Slack hours after the threshold is crossed.
+
+**Accounts:** Brackenvolt Labs \(Starter, SMB\)
+
+**Evidence:**
+- “The low-stock alert hit Slack at 4pm. We'd sold out by noon.” — Founder, Brackenvolt Labs · [Brackenvolt onboarding check-in, Oct 1](https://notes.granola.ai/d/sample-m05)
+```
+
+## Notable single mentions
+- **Price increase at renewal** (Churn risk, new) — “If the price goes up again at renewal, we'll have to look at Countwhistle seriously.” — Finance director, Kestrovane Supply · [Kestrovane Supply renewal call, Oct 2](https://notes.granola.ai/d/sample-m06)
+- **Slack alerts arrive late** (Bug / defect, new) — “The low-stock alert hit Slack at 4pm. We'd sold out by noon.” — Founder, Brackenvolt Labs · [Brackenvolt onboarding check-in, Oct 1](https://notes.granola.ai/d/sample-m05)
+- **Export reports to PDF** (Feature request, new) — “Could the client report come out as a PDF we can brand?” — Managing director, Quirnwell Studio · [Quirnwell Studio demo, Oct 2](https://notes.granola.ai/d/sample-m11)
+
+## Quieter than 2026-W39
+- Offline mode on mobile (was 2 accounts)
+
+## Coverage
+- Period: Sep 28 – Oct 4, 2026 (2026-W40), as of 2026-10-05T08:00:00-07:00.
+- Meetings listed: 11, 1 duplicate note of the same call merged.
+- Scanned (external customer/prospect): 6 meetings, 6 accounts; 0 with no feedback items.
+- Skipped, internal-only (all attendees on tamsquill\.example): 2.
+- Skipped, external but not a customer or prospect: 1 (investor 1).
+- Attendees unknown (only the note taker listed; not scanned): [Coffee chat, Oct 3](https://notes.granola.ai/d/sample-m10).
+- Transcripts: 5 read, 1 denied.
+- Transcript denied or unavailable, so evidence there is note excerpts only (not "not discussed"): [Plimsoll & Quist discovery, Oct 1](https://notes.granola.ai/d/sample-m04).
+- Date gaps: none reported.
+- Items dropped because their meeting was not scanned: 1 (not customer).
+
+Sources: Meeting notes: Granola ✓ · Transcripts: Granola partial · CRM: HubSpot ✓ · Billing: Stripe not configured · Issue tracker: Linear ✓
+Gaps: Transcripts partial (1 meeting's workspace does not allow transcript access); Billing not configured (ARR taken from the CRM).
+Digest key: 2026-W40 · 17 feedback items → 15 after dedupe (same account + theme + meeting)
+_Internal only — contains customer quotes. Quotes in “ ” are verbatim from transcripts; note excerpts are from AI meeting notes._
+
+=== 2. Slack summary for the configured channel (reads state, never writes it) ===
+*Customer feedback digest — 2026-W40 (Sep 28 – Oct 4, 2026)*
+6 customer/prospect meetings · 6 accounts · 1 churn-risk signal · 2 issue drafts awaiting approval
+
+*Top themes (distinct accounts)*
+1. Bulk CSV import for orders — 4 accounts · growing (+1 vs 2026-W39) · <https://issues.tamsquill.example/TAM-142|TAM-142> (In Progress)
+2. Single sign-on (SAML) — 2 accounts · new · draft D1
+3. Dashboards slow to load — 2 accounts · growing (+1 vs 2026-W39) · <https://issues.tamsquill.example/TAM-120|TAM-120> (Backlog)
+4. Compared with Countwhistle — 2 accounts · returning (not in 2026-W39)
+5. Weekly report automation saves time — 2 accounts · recurring (also in 2026-W39)
+
+*Churn risk*
+• Kestrovane Supply — <https://notes.granola.ai/d/sample-m06|Kestrovane Supply renewal call, Oct 2>
+
+Coverage: 2 internal-only skipped · 1 transcript denied/unavailable · source gaps: Transcripts, Billing
+Full digest with quotes and coverage: https://type.com/sample-workspace/docs/sample-digest-2026-w40
+
+=== 3. After the Slack post succeeds: confirm it ===
+Confirmed: 2026-W40 marked as posted.
+
+=== 4. A second scheduled run for the same week posts nothing ===
+Skipped: customer feedback digest for 2026-W40 already posted (2026-10-05T08:01:00-07:00).

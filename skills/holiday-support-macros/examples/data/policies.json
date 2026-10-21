@@ -1,0 +1,151 @@
+{
+  "store": "Fernhill Goods",
+  "macros_live_by": "2026-11-20",
+  "shipping": {
+    "source": "Holiday Shipping Cutoff Checker, run Oct 6, 2026 (delivery by Dec 24 to 95% of customers)",
+    "ships_from": "Columbus, Ohio",
+    "same_day_cutoff": "1 pm ET",
+    "ship_days": "Monday to Friday",
+    "closed_dates": [
+      "2026-11-26",
+      "2026-12-25"
+    ],
+    "deliver_by": "2026-12-24",
+    "delivery_coverage_pct": 95,
+    "services": [
+      {
+        "name": "USPS Ground Advantage",
+        "last_order_date": "2026-12-14",
+        "checkout_rate": "Standard"
+      },
+      {
+        "name": "UPS Ground",
+        "last_order_date": "2026-12-15",
+        "checkout_rate": "Standard"
+      },
+      {
+        "name": "UPS 2nd Day Air",
+        "last_order_date": "2026-12-21",
+        "checkout_rate": "Express"
+      }
+    ]
+  },
+  "bfcm_backlog": {
+    "orders_from": "2026-11-26",
+    "orders_to": "2026-11-30",
+    "ships_within_business_days": 3,
+    "clears_by": "2026-12-03"
+  },
+  "returns": {
+    "standard_days": 30,
+    "counted_from": "delivery",
+    "holiday_window": {
+      "orders_from": "2026-11-01",
+      "orders_to": "2026-12-24",
+      "return_by": "2027-01-31"
+    },
+    "condition": "unused and in the original packaging",
+    "start_url": "fernhillgoods.com/returns",
+    "refund_to": "your original payment method",
+    "return_label_fee": 0,
+    "exchanges": true,
+    "final_sale": [
+      "Last Chance",
+      "Gift Cards"
+    ],
+    "gift_returns": "Received a gift from us? You can return it for store credit with the order number from the packing slip, and we won't tell the sender."
+  },
+  "price_adjustment": null,
+  "discounts": {
+    "one_code_per_order": true,
+    "codes_combine_with_sale": false,
+    "free_shipping_threshold": 75,
+    "free_shipping_combines": true,
+    "sale": {
+      "name": "BFCM sale (25% off sitewide)",
+      "starts": "2026-11-26",
+      "ends": "2026-12-01",
+      "automatic": true,
+      "excludes": [
+        "Gift Cards",
+        "New Arrivals",
+        "Last Chance"
+      ]
+    },
+    "codes": [
+      {
+        "code": "VIPEARLY",
+        "offer": "25% off sitewide for SMS and VIP subscribers",
+        "starts": "2026-11-24",
+        "ends": "2026-11-25"
+      },
+      {
+        "code": "WELCOME10",
+        "offer": "10% off a first order"
+      },
+      {
+        "code": "MAYA20",
+        "offer": "20% off, creator code, once per customer"
+      }
+    ]
+  },
+  "order_changes": {
+    "window_minutes": 60,
+    "how": "Reply to your order confirmation email or message us with your order number."
+  },
+  "address_change": {
+    "until": "your order ships",
+    "after_shipping": "Once a package has shipped, we can't redirect it."
+  },
+  "gift_options": {
+    "gift_message": true,
+    "gift_receipt": true,
+    "gift_wrap": false,
+    "ship_to_another_address": true,
+    "e_gift_cards": "Our digital gift cards are emailed right away, or on a date you choose."
+  },
+  "out_of_stock": {
+    "backorders": false,
+    "restock_alerts": true
+  },
+  "damaged_defective": {
+    "report_within_days": 14,
+    "photo_required": true,
+    "resolution": "a free replacement, or a full refund if it's sold out",
+    "return_required": false
+  },
+  "international": {
+    "ships_to": "the United States only, including APO/FPO addresses"
+  },
+  "support_hours": {
+    "regular": "Monday to Friday, 9 am to 5 pm ET",
+    "holiday_note": "From November 28 to December 20 we also answer on weekends, 10 am to 2 pm ET.",
+    "closed_dates": [
+      "2026-11-26",
+      "2026-12-25",
+      "2027-01-01"
+    ],
+    "first_reply_hours": 24,
+    "weekend_coverage": {
+      "from": "2026-11-28",
+      "to": "2026-12-20"
+    }
+  },
+  "escalation": {
+    "order_value_over": 250,
+    "refund_over": 150,
+    "owner": "the support lead",
+    "keywords": [
+      "chargeback",
+      "dispute",
+      "fraud",
+      "lawyer",
+      "attorney",
+      "injured",
+      "injury",
+      "cut myself",
+      "allergic",
+      "bbb"
+    ]
+  }
+}

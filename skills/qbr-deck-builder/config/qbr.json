@@ -1,0 +1,41 @@
+{
+  "metrics": {
+    "adoption": "monthly_active_users",
+    "licensed": "licensed_seats",
+    "engagement": "key_actions"
+  },
+  "history_months": 7,
+  "trend_window_months": 3,
+  "support_window_days": 90,
+  "goal_status_thresholds": {
+    "achieved": 100.0,
+    "on_track": 70.0,
+    "at_risk": 30.0
+  },
+  "risk_rules": {
+    "adoption_decline_pct": 10.0,
+    "engagement_decline_pct": 10.0,
+    "utilization_floor": 0.6,
+    "open_p1_age_days": 7,
+    "support_volume_increase_pct": 50.0,
+    "csat_floor": 4.0,
+    "renewal_horizon_days": 90
+  },
+  "risk_severity": {
+    "adoption_decline": "high",
+    "engagement_decline": "high",
+    "low_utilization": "medium",
+    "goal_off_track": "high",
+    "goal_at_risk": "medium",
+    "aging_p1": "high",
+    "support_volume_spike": "medium",
+    "low_csat": "medium",
+    "renewal_near": "medium"
+  },
+  "expansion": {
+    "seat_utilization_trigger": 0.85,
+    "target_utilization": 0.8,
+    "confidence_floor": 0.4,
+    "confidence_cap": 0.95
+  }
+}

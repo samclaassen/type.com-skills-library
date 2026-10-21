@@ -1,0 +1,6 @@
+step_order,step_name,users
+1,Sessions,240000
+2,Product view,96000
+3,Add to cart,21120
+4,Checkout started,9504
+5,Purchase,3326

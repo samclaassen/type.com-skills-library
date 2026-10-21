@@ -1,0 +1,25 @@
+deal_id,account_id,account_name,account_domain,owner_name,stage,amount_usd,created_date,close_date,last_activity_date,stage_entered_date,status
+D-1001,ACC-1001,Northwind Logistics,northwindlogistics.example,Dana Whitfield,Discovery,45000,2026-08-20,2026-11-30,2026-09-18,2026-08-20,open
+D-1002,ACC-1002,Cascade Fintech,cascadefintech.example,Marcus Oyelaran,Discovery,28000,2026-09-02,2026-12-15,2026-09-15,2026-09-02,open
+D-1003,ACC-1003,Harbor Point Health,harborpointhealth.example,Priya Raman,Discovery,120000,2026-09-08,2026-12-31,2026-09-19,2026-09-08,open
+D-1004,ACC-1004,Vertex Freight,vertexfreight.example,Tomas Beck,Discovery,,2026-06-01,2026-10-15,2026-07-02,2026-06-01,open
+D-1005,ACC-1005,Solstice Apparel Supply,solsticeapparel.example,,Discovery,15000,2026-09-01,2026-11-01,2026-09-10,2026-09-01,open
+D-1006,ACC-1006,Ridgeline Insurance,ridgelineins.example,Dana Whitfield,Qualification,60000,2026-07-10,2026-10-30,2026-09-16,2026-08-14,open
+D-1007,ACC-1007,Globex Analytics,globex.example,Marcus Oyelaran,Qualification,85000,2026-07-22,2026-11-15,2026-09-12,2026-08-28,open
+D-1008,ACC-1055,Globex Data Group,www.globex.example,Marcus Oyelaran,Qualification,40000,2026-08-05,2026-10-09,2026-08-05,2026-09-01,open
+D-1009,ACC-1009,Beacon Street Legal,beaconstreetlegal.example,Priya Raman,Qualification,22000,2026-08-25,2026-11-20,2026-09-20,2026-09-05,open
+D-1010,ACC-1010,Pinewood Manufacturing,pinewoodmfg.example,Tomas Beck,Qualification,95000,2026-05-04,2026-09-05,2026-08-30,2026-07-01,open
+D-1011,ACC-1011,Trailhead Robotics,trailheadrobotics.example,Dana Whitfield,Evaluation,150000,2026-06-15,2026-10-31,2026-09-21,2026-08-20,open
+D-1012,ACC-1012,Quill and Bramble Retail Group,quillbramble.example,Priya Raman,Evaluation,47500,2026-07-01,2026-11-10,2026-09-17,2026-08-29,open
+D-1013,ACC-1042,Northwind Logistics Inc.,northwind-logistics.example,Tomas Beck,Evaluation,52000,2026-07-12,2026-10-20,2026-09-14,2026-09-02,open
+D-1014,ACC-1014,Silverline Energy,silverlineenergy.example,,Evaluation,210000,2026-04-20,2026-08-31,2026-06-18,2026-05-30,open
+D-1015,ACC-1015,Copperfield Media,copperfieldmedia.example,Dana Whitfield,Proposal,78000,2026-05-30,2026-10-05,2026-09-19,2026-09-04,open
+D-1016,ACC-1016,Atlas Bio Labs,atlasbiolabs.example,Marcus Oyelaran,Proposal,320000,2026-04-10,2026-09-30,2026-09-08,2026-08-10,open
+D-1017,ACC-1017,Fairmont Civic Partners,fairmontcivic.example,Priya Raman,Proposal,64000,2026-06-22,2026-09-12,2026-09-11,2026-08-25,open
+D-1018,ACC-1018,Kestrel Payments,kestrelpayments.example,Dana Whitfield,Negotiation,180000,2026-03-15,2026-09-25,2026-09-22,2026-09-01,open
+D-1019,ACC-1019,Mapleview School District,mapleview.example,Tomas Beck,Negotiation,36000,2026-05-11,,2026-08-12,2026-08-18,open
+D-1020,ACC-1020,Oakhart Capital,oakhartcapital.example,Marcus Oyelaran,Negotiation,500,2026-08-01,2026-10-10,2026-09-13,2026-09-10,open
+D-1021,ACC-1021,Lantern Bay Hotels,lanternbayhotels.example,Dana Whitfield,Closed Won,92000,2026-03-02,2026-08-28,2026-08-28,2026-08-28,won
+D-1022,ACC-1022,Orchard Lane Grocers,orchardlane.example,Priya Raman,Closed Lost,45000,2026-04-18,2026-07-30,2026-07-30,2026-07-30,lost
+D-1023,ACC-1023,Brightwater Utilities,brightwaterutil.example,Tomas Beck,Closed Won,137000,2026-02-09,2026-06-30,2026-06-30,2026-06-30,won
+D-1024,ACC-1011,Trailhead Robotics,trailheadrobotics.example,Dana Whitfield,Closed Lost,60000,2026-01-22,2026-05-19,2026-05-19,2026-05-19,lost

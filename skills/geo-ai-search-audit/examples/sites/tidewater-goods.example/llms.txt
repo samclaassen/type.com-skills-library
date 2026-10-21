@@ -1,0 +1,12 @@
+# Tidewater Goods
+
+> Tidewater Goods sells organic cotton percale and linen bedding online in the United States.
+
+## Products
+
+- [Percale sheets](https://tidewater-goods.example/percale): Organic cotton percale, 300 thread count.
+- [Linen sheets](https://tidewater-goods.example/linen): Belgian flax linen sheet sets.
+
+## Company
+
+- [About](https://tidewater-goods.example/about): Founded in 2019 in Charleston, South Carolina.

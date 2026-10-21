@@ -1,0 +1,944 @@
+{
+ "schema_version": 1,
+ "_note": "Fictional sample data. Every company, person, domain and link is invented.",
+ "period": {
+  "start": "2026-07-01",
+  "end": "2026-09-30",
+  "label": "Q3 2026"
+ },
+ "currency": "USD",
+ "sources": {
+  "deals": {
+   "provider": "hubspot",
+   "status": "ok"
+  },
+  "meetings": {
+   "provider": "granola",
+   "status": "ok"
+  },
+  "transcripts": {
+   "provider": "granola",
+   "status": "partial",
+   "detail": "2 meetings' workspace does not allow transcript access"
+  }
+ },
+ "deals": [
+  {
+   "deal_id": "D-1001",
+   "account": "Example Outfitters Co",
+   "domains": [
+    "outfitters.example"
+   ],
+   "outcome": "won",
+   "close_date": "2026-08-14",
+   "amount": 24000,
+   "segment": "Mid-market",
+   "competitors": [
+    "Countwhistle"
+   ],
+   "crm_url": "https://crm.tamsquill.example/deals/D-1001",
+   "crm_fields": {
+    "Win reason": "Fast rollout"
+   }
+  },
+  {
+   "deal_id": "D-1002",
+   "account": "Marrowby & Vane",
+   "domains": [
+    "marrowbyvane.example"
+   ],
+   "outcome": "lost",
+   "close_date": "2026-09-12",
+   "amount": 60000,
+   "segment": "Enterprise",
+   "stage_lost_at": "Proposal",
+   "competitors": [
+    "Countwhistle"
+   ],
+   "lost_to": "Countwhistle",
+   "crm_url": "https://crm.tamsquill.example/deals/D-1002",
+   "crm_fields": {
+    "Closed lost reason": "Price",
+    "Competitor won": "Countwhistle"
+   }
+  },
+  {
+   "deal_id": "D-1003",
+   "account": "Plimsoll & Quist",
+   "domains": [
+    "plimsollquist.example"
+   ],
+   "outcome": "lost",
+   "close_date": "2026-07-22",
+   "amount": 18000,
+   "segment": "Mid-market",
+   "stage_lost_at": "Evaluation",
+   "competitors": [],
+   "crm_url": "https://crm.tamsquill.example/deals/D-1003",
+   "crm_fields": {
+    "Closed lost reason": "No decision"
+   }
+  },
+  {
+   "deal_id": "D-1004",
+   "account": "Thrumcastle Supply",
+   "domains": [
+    "thrumcastle.example"
+   ],
+   "outcome": "lost",
+   "close_date": "2026-08-29",
+   "amount": 32000,
+   "segment": "Mid-market",
+   "stage_lost_at": "Security review",
+   "competitors": [],
+   "crm_url": "https://crm.tamsquill.example/deals/D-1004",
+   "crm_fields": {}
+  },
+  {
+   "deal_id": "D-1005",
+   "account": "Brackenvolt Labs",
+   "domains": [
+    "brackenvolt.example"
+   ],
+   "outcome": "won",
+   "close_date": "2026-07-10",
+   "amount": 9000,
+   "segment": "SMB",
+   "competitors": [],
+   "crm_url": "https://crm.tamsquill.example/deals/D-1005",
+   "crm_fields": {}
+  },
+  {
+   "deal_id": "D-1006",
+   "account": "Quirnwell Studio",
+   "domains": [
+    "quirnwell.example"
+   ],
+   "outcome": "won",
+   "close_date": "2026-09-03",
+   "amount": 12000,
+   "segment": "Agency",
+   "competitors": [
+    "Countwhistle"
+   ],
+   "crm_url": "https://crm.tamsquill.example/deals/D-1006",
+   "crm_fields": {}
+  },
+  {
+   "deal_id": "D-1007",
+   "account": "Wrenholt Clinics",
+   "domains": [
+    "wrenholt.example"
+   ],
+   "outcome": "lost",
+   "close_date": "2026-09-25",
+   "amount": 45000,
+   "segment": "Enterprise",
+   "stage_lost_at": "Negotiation",
+   "competitors": [
+    "Pindleworth"
+   ],
+   "lost_to": "Pindleworth",
+   "crm_url": "https://crm.tamsquill.example/deals/D-1007",
+   "crm_fields": {}
+  },
+  {
+   "deal_id": "D-1008",
+   "account": "Dovecrane Logistics",
+   "domains": [
+    "dovecrane.example"
+   ],
+   "outcome": "lost",
+   "close_date": "2026-08-05",
+   "amount": 15000,
+   "segment": "SMB",
+   "stage_lost_at": "Discovery",
+   "competitors": [],
+   "crm_url": "https://crm.tamsquill.example/deals/D-1008",
+   "crm_fields": {
+    "Closed lost reason": "Timing - revisit in Q1"
+   }
+  },
+  {
+   "deal_id": "D-1009",
+   "account": "Tarnwick Freight",
+   "domains": [
+    "tarnwick.example"
+   ],
+   "outcome": "won",
+   "close_date": "2026-09-18",
+   "amount": 27000,
+   "segment": "Mid-market",
+   "competitors": [],
+   "crm_url": "https://crm.tamsquill.example/deals/D-1009",
+   "crm_fields": {
+    "Win reason": "Product fit for multi-depot routing"
+   }
+  },
+  {
+   "deal_id": "D-1010",
+   "account": "Sallowfen Dental",
+   "domains": [
+    "sallowfen.example"
+   ],
+   "outcome": "lost",
+   "close_date": "2026-09-08",
+   "amount": 22000,
+   "segment": "Mid-market",
+   "stage_lost_at": "Proposal",
+   "competitors": [
+    "countwhistle"
+   ],
+   "lost_to": "Countwhistle",
+   "crm_url": "https://crm.tamsquill.example/deals/D-1010",
+   "crm_fields": {
+    "Closed lost reason": "Competitor",
+    "Competitor won": "Countwhistle"
+   }
+  },
+  {
+   "deal_id": "D-1011",
+   "account": "Corrabeck Studio",
+   "domains": [
+    "corrabeck.example"
+   ],
+   "outcome": "lost",
+   "close_date": "2026-07-30",
+   "amount": null,
+   "segment": "SMB",
+   "stage_lost_at": "Evaluation",
+   "competitors": [],
+   "crm_url": "https://crm.tamsquill.example/deals/D-1011",
+   "crm_fields": {}
+  },
+  {
+   "deal_id": "D-1012",
+   "account": "Brimvasse Labs",
+   "domains": [
+    "brimvasse.example"
+   ],
+   "outcome": "won",
+   "close_date": "2026-09-29",
+   "amount": 40000,
+   "segment": "Enterprise",
+   "competitors": [
+    "Countwhistle"
+   ],
+   "crm_url": "https://crm.tamsquill.example/deals/D-1012",
+   "crm_fields": {}
+  },
+  {
+   "deal_id": "D-1013",
+   "account": "Brackenvolt Labs",
+   "domains": [
+    "brackenvolt.example"
+   ],
+   "outcome": "won",
+   "close_date": "2026-10-02",
+   "amount": 6000,
+   "segment": "SMB",
+   "competitors": [],
+   "crm_url": "https://crm.tamsquill.example/deals/D-1013",
+   "crm_fields": {}
+  }
+ ],
+ "meetings": [
+  {
+   "meeting_id": "w01",
+   "title": "Example Outfitters trial review",
+   "start": "2026-07-28T10:00:00-07:00",
+   "url": "https://notes.granola.ai/d/sample-w01",
+   "attendees": [
+    {
+     "email": "dana@tamsquill.example"
+    },
+    {
+     "email": "priya@outfitters.example"
+    },
+    {
+     "email": "notetaker@recorder.example"
+    }
+   ],
+   "transcript": "ok",
+   "notes": "ok",
+   "transcript_text": "Microphone: How did the two-store trial go? System audio (Outfitters): Better than we hoped. We were live in a week, which is what sold the ops team. The regional managers already asked when the other stores get it.",
+   "notes_text": "Trial on two stores convinced the team; regional managers want the rest of the stores next."
+  },
+  {
+   "meeting_id": "w02",
+   "title": "Example Outfitters commercial close",
+   "start": "2026-08-12T09:00:00-07:00",
+   "url": "https://notes.granola.ai/d/sample-w02",
+   "attendees": [
+    {
+     "email": "dana@tamsquill.example"
+    },
+    {
+     "email": "priya@outfitters.example"
+    },
+    {
+     "email": "marcus@outfitters.example"
+    }
+   ],
+   "transcript": "ok",
+   "notes": "ok",
+   "transcript_text": "System audio (Outfitters): Countwhistle came back with a lower number, but they wanted eight weeks to set up. We can't wait eight weeks before peak season."
+  },
+  {
+   "meeting_id": "w02b",
+   "title": "Outfitters close (Sam's notes)",
+   "start": "2026-08-12T09:00:00-07:00",
+   "url": "https://notes.granola.ai/d/sample-w02b",
+   "attendees": [
+    {
+     "email": "sam@tamsquill.example"
+    },
+    {
+     "email": "priya@outfitters.example"
+    }
+   ],
+   "transcript": "not_requested",
+   "notes": "ok"
+  },
+  {
+   "meeting_id": "w03",
+   "title": "Marrowby & Vane pricing review",
+   "start": "2026-08-20T11:00:00-07:00",
+   "url": "https://notes.granola.ai/d/sample-w03",
+   "attendees": [
+    {
+     "email": "sam@tamsquill.example"
+    },
+    {
+     "email": "procurement@marrowbyvane.example"
+    },
+    {
+     "email": "ops@marrowbyvane.example"
+    }
+   ],
+   "transcript": "ok",
+   "notes": "ok",
+   "transcript_text": "System audio (Marrowby & Vane): That number is well above what we planned for. Countwhistle is pitching us hard on price, and they include the reporting module."
+  },
+  {
+   "meeting_id": "w04",
+   "title": "Marrowby & Vane decision call",
+   "start": "2026-09-10T08:30:00-07:00",
+   "url": "https://notes.granola.ai/d/sample-w04",
+   "attendees": [
+    {
+     "email": "sam@tamsquill.example"
+    },
+    {
+     "email": "procurement@marrowbyvane.example"
+    }
+   ],
+   "transcript": "ok",
+   "notes": "ok",
+   "transcript_text": "System audio (Marrowby & Vane): We liked the product, honestly. But at sixty thousand against their forty, finance would not sign it."
+  },
+  {
+   "meeting_id": "w05",
+   "title": "Plimsoll & Quist evaluation check-in",
+   "start": "2026-07-14T14:00:00-07:00",
+   "url": "https://notes.granola.ai/d/sample-w05",
+   "attendees": [
+    {
+     "email": "lee@tamsquill.example"
+    },
+    {
+     "email": "ana@plimsollquist.example"
+    }
+   ],
+   "transcript": "ok",
+   "notes": "ok",
+   "transcript_text": "System audio (Plimsoll & Quist): The spreadsheets work fine for now, if I'm honest. Honestly we're going to stick with the spreadsheets this year and look again in spring."
+  },
+  {
+   "meeting_id": "w06",
+   "title": "Thrumcastle Supply security review",
+   "start": "2026-07-09T09:30:00-07:00",
+   "url": "https://notes.granola.ai/d/sample-w06",
+   "attendees": [
+    {
+     "email": "dana@tamsquill.example"
+    },
+    {
+     "email": "it@thrumcastle.example"
+    },
+    {
+     "email": "finance@thrumcastle.example"
+    }
+   ],
+   "transcript": "ok",
+   "notes": "ok",
+   "transcript_text": "System audio: Do you support SAML? That's a hard requirement for anything new. We also looked at Ostlemere, but they have the same single sign-on gap."
+  },
+  {
+   "meeting_id": "w07",
+   "title": "Thrumcastle Supply next steps",
+   "start": "2026-08-27T13:00:00-07:00",
+   "url": "https://notes.granola.ai/d/sample-w07",
+   "attendees": [
+    {
+     "email": "dana@tamsquill.example"
+    },
+    {
+     "email": "it@thrumcastle.example"
+    }
+   ],
+   "transcript": "ok",
+   "notes": "ok",
+   "transcript_text": "System audio (Thrumcastle): Without SAML single sign-on our IT team won't sign off, full stop. Come back when it ships."
+  },
+  {
+   "meeting_id": "w08",
+   "title": "Brackenvolt Labs onboarding scope",
+   "start": "2026-07-02T10:00:00-07:00",
+   "url": "https://notes.granola.ai/d/sample-w08",
+   "attendees": [
+    {
+     "email": "lee@tamsquill.example"
+    },
+    {
+     "email": "founder@brackenvolt.example"
+    }
+   ],
+   "transcript": "ok",
+   "notes": "ok",
+   "transcript_text": "System audio (Brackenvolt): My team just got it without training. And it fit the budget we had without a fight."
+  },
+  {
+   "meeting_id": "w09",
+   "title": "Quirnwell Studio demo",
+   "start": "2026-08-25T15:00:00-07:00",
+   "url": "https://notes.granola.ai/d/sample-w09",
+   "attendees": [
+    {
+     "email": "lee@tamsquill.example"
+    },
+    {
+     "email": "jo@quirnwell.example"
+    }
+   ],
+   "transcript": "ok",
+   "notes": "ok",
+   "transcript_text": "System audio (Quirnwell): The fact that it talks to our project tool is the whole reason. Countwhistle couldn't pull client data from our project tool at all."
+  },
+  {
+   "meeting_id": "w10",
+   "title": "Wrenholt Clinics negotiation",
+   "start": "2026-09-02T09:00:00-07:00",
+   "url": "https://notes.granola.ai/d/sample-w10",
+   "attendees": [
+    {
+     "email": "dana@tamsquill.example"
+    },
+    {
+     "email": "sam@tamsquill.example"
+    },
+    {
+     "email": "ops.lead@wrenholt.example"
+    }
+   ],
+   "transcript": "ok",
+   "notes": "ok",
+   "transcript_text": "System audio (Wrenholt): Pindleworth is already in the building, so you have to be clearly better, not just a bit better."
+  },
+  {
+   "meeting_id": "w11",
+   "title": "Wrenholt Clinics loss debrief",
+   "start": "2026-09-30T10:00:00-07:00",
+   "url": "https://notes.granola.ai/d/sample-w11",
+   "attendees": [
+    {
+     "email": "dana@tamsquill.example"
+    },
+    {
+     "email": "ops.lead@wrenholt.example"
+    }
+   ],
+   "transcript": "ok",
+   "notes": "ok",
+   "transcript_text": "System audio (Wrenholt): Pindleworth already runs our scheduling, so adding their module was the easy path. We needed the HL7 feed on day one and that's on your roadmap, not in the product. Rolling out a second system would have taken a quarter."
+  },
+  {
+   "meeting_id": "w12",
+   "title": "Sallowfen Dental proposal walkthrough",
+   "start": "2026-09-01T12:00:00-07:00",
+   "url": "https://notes.granola.ai/d/sample-w12",
+   "attendees": [
+    {
+     "email": "sam@tamsquill.example"
+    },
+    {
+     "email": "practice@sallowfen.example"
+    }
+   ],
+   "transcript": "denied",
+   "notes": "ok",
+   "notes_text": "Concerned about price compared with Countwhistle's quote. Wants a decision before month end."
+  },
+  {
+   "meeting_id": "w12b",
+   "title": "Sallowfen Dental decision",
+   "start": "2026-09-08T12:00:00-07:00",
+   "url": "https://notes.granola.ai/d/sample-w12b",
+   "attendees": [
+    {
+     "email": "sam@tamsquill.example"
+    },
+    {
+     "email": "practice@sallowfen.example"
+    }
+   ],
+   "transcript": "denied",
+   "notes": "ok",
+   "notes_text": "Chose Countwhistle; their quote came in roughly 30% lower for the same seats."
+  },
+  {
+   "meeting_id": "w13",
+   "title": "Corrabeck Studio evaluation",
+   "start": "2026-07-20T16:00:00-07:00",
+   "url": "https://notes.granola.ai/d/sample-w13",
+   "attendees": [
+    {
+     "email": "lee@tamsquill.example"
+    },
+    {
+     "email": "studio@corrabeck.example"
+    }
+   ],
+   "transcript": "not_requested",
+   "notes": "ok"
+  },
+  {
+   "meeting_id": "w14",
+   "title": "Intro call",
+   "start": "2026-07-24T10:00:00-07:00",
+   "url": "https://notes.granola.ai/d/sample-w14",
+   "attendees": [
+    {
+     "email": "lee@tamsquill.example"
+    },
+    {
+     "email": "owner@freemail.example"
+    }
+   ],
+   "transcript": "not_requested",
+   "notes": "ok",
+   "deal_ids": [
+    "D-1011"
+   ]
+  },
+  {
+   "meeting_id": "w15",
+   "title": "Brimvasse Labs pricing",
+   "start": "2026-08-18T09:00:00-07:00",
+   "url": "https://notes.granola.ai/d/sample-w15",
+   "attendees": [
+    {
+     "email": "dana@tamsquill.example"
+    },
+    {
+     "email": "cto@brimvasse.example"
+    }
+   ],
+   "transcript": "ok",
+   "notes": "ok",
+   "transcript_text": "System audio (Brimvasse): It's more than we budgeted, I'll be honest. Can you do anything on the first year?"
+  },
+  {
+   "meeting_id": "w16",
+   "title": "Brimvasse Labs security deep-dive",
+   "start": "2026-09-15T11:00:00-07:00",
+   "url": "https://notes.granola.ai/d/sample-w16",
+   "attendees": [
+    {
+     "email": "dana@tamsquill.example"
+    },
+    {
+     "email": "cto@brimvasse.example"
+    }
+   ],
+   "transcript": "ok",
+   "notes": "ok",
+   "transcript_text": "System audio (Brimvasse): You were the only one with SAML and audit logs out of the box. That made the security review a non-event."
+  },
+  {
+   "meeting_id": "w17",
+   "title": "Brimvasse Labs rollout planning",
+   "start": "2026-09-21T11:00:00-07:00",
+   "url": "https://notes.granola.ai/d/sample-w17",
+   "attendees": [
+    {
+     "email": "dana@tamsquill.example"
+    },
+    {
+     "email": "cto@brimvasse.example"
+    }
+   ],
+   "transcript": "not_requested",
+   "notes": "ok",
+   "notes_text": "Two-week rollout plan was a deciding factor for the CTO."
+  },
+  {
+   "meeting_id": "w18",
+   "title": "Weekly pipeline review",
+   "start": "2026-08-31T09:00:00-07:00",
+   "url": "https://notes.granola.ai/d/sample-w18",
+   "attendees": [
+    {
+     "email": "dana@tamsquill.example"
+    },
+    {
+     "email": "sam@tamsquill.example"
+    },
+    {
+     "email": "ops@sales.tamsquill.example"
+    }
+   ],
+   "transcript": "not_requested",
+   "notes": "ok"
+  },
+  {
+   "meeting_id": "w19",
+   "title": "Coffee chat",
+   "start": "2026-09-14T08:00:00-07:00",
+   "url": "https://notes.granola.ai/d/sample-w19",
+   "attendees": [
+    {
+     "email": "lee@tamsquill.example"
+    }
+   ],
+   "transcript": "not_requested",
+   "notes": "ok"
+  },
+  {
+   "meeting_id": "w20",
+   "title": "Partnership sync",
+   "start": "2026-09-09T13:00:00-07:00",
+   "url": "https://notes.granola.ai/d/sample-w20",
+   "attendees": [
+    {
+     "email": "sam@tamsquill.example"
+    },
+    {
+     "email": "alliances@integrator.example"
+    }
+   ],
+   "transcript": "not_requested",
+   "notes": "ok"
+  }
+ ],
+ "evidence": [
+  {
+   "id": "e01",
+   "deal_id": "D-1001",
+   "kind": "win_reason",
+   "category": "time_to_value",
+   "source": "transcript",
+   "meeting_id": "w01",
+   "quote": "We were live in a week, which is what sold the ops team.",
+   "speaker_role": "Head of Ops"
+  },
+  {
+   "id": "e02",
+   "deal_id": "D-1001",
+   "kind": "win_reason",
+   "category": "proof_trial",
+   "source": "note",
+   "meeting_id": "w01",
+   "quote": "Trial on two stores convinced the team; regional managers want the rest of the stores next."
+  },
+  {
+   "id": "e03",
+   "deal_id": "D-1001",
+   "kind": "win_reason",
+   "category": "time_to_value",
+   "source": "crm_field",
+   "crm_field": "Win reason",
+   "quote": "Fast rollout"
+  },
+  {
+   "id": "e04",
+   "deal_id": "D-1001",
+   "kind": "competitor_mention",
+   "competitor": "Countwhistle",
+   "source": "transcript",
+   "meeting_id": "w02",
+   "quote": "Countwhistle came back with a lower number, but they wanted eight weeks to set up.",
+   "speaker_role": "Head of Ops"
+  },
+  {
+   "id": "e05",
+   "deal_id": "D-1002",
+   "kind": "objection",
+   "category": "price_value",
+   "source": "transcript",
+   "meeting_id": "w03",
+   "quote": "That number is well above what we planned for.",
+   "speaker_role": "Procurement lead"
+  },
+  {
+   "id": "e06",
+   "deal_id": "D-1002",
+   "kind": "objection",
+   "category": "competitive_comparison",
+   "competitor": "Countwhistle",
+   "source": "transcript",
+   "meeting_id": "w03",
+   "quote": "Countwhistle is pitching us hard on price, and they include the reporting module.",
+   "speaker_role": "Procurement lead"
+  },
+  {
+   "id": "e07",
+   "deal_id": "D-1002",
+   "kind": "loss_reason",
+   "category": "price_value",
+   "competitor": "Countwhistle",
+   "source": "transcript",
+   "meeting_id": "w04",
+   "quote": "But at sixty thousand against their forty, finance would not sign it.",
+   "speaker_role": "Procurement lead"
+  },
+  {
+   "id": "e08",
+   "deal_id": "D-1002",
+   "kind": "loss_reason",
+   "category": "price_value",
+   "source": "crm_field",
+   "crm_field": "Closed lost reason",
+   "quote": "Price"
+  },
+  {
+   "id": "e09",
+   "deal_id": "D-1003",
+   "kind": "objection",
+   "category": "status_quo",
+   "source": "transcript",
+   "meeting_id": "w05",
+   "quote": "The spreadsheets work fine for now, if I'm honest.",
+   "speaker_role": "Operations director"
+  },
+  {
+   "id": "e10",
+   "deal_id": "D-1003",
+   "kind": "loss_reason",
+   "category": "no_decision_status_quo",
+   "source": "transcript",
+   "meeting_id": "w05",
+   "quote": "Honestly we're going to stick with the spreadsheets this year and look again in spring.",
+   "speaker_role": "Operations director"
+  },
+  {
+   "id": "e11",
+   "deal_id": "D-1003",
+   "kind": "loss_reason",
+   "category": "no_decision_status_quo",
+   "source": "crm_field",
+   "crm_field": "Closed lost reason",
+   "quote": "No decision"
+  },
+  {
+   "id": "e12",
+   "deal_id": "D-1004",
+   "kind": "objection",
+   "category": "security_compliance",
+   "source": "transcript",
+   "meeting_id": "w06",
+   "quote": "Do you support SAML? That's a hard requirement for anything new.",
+   "speaker_role": "IT manager",
+   "speaker_side": "unconfirmed"
+  },
+  {
+   "id": "e13",
+   "deal_id": "D-1004",
+   "kind": "competitor_mention",
+   "competitor": "Ostlemere",
+   "source": "transcript",
+   "meeting_id": "w06",
+   "quote": "We also looked at Ostlemere, but they have the same single sign-on gap.",
+   "speaker_role": "IT manager",
+   "speaker_side": "unconfirmed"
+  },
+  {
+   "id": "e14",
+   "deal_id": "D-1004",
+   "kind": "loss_reason",
+   "category": "security_compliance",
+   "source": "transcript",
+   "meeting_id": "w07",
+   "quote": "Without SAML single sign-on our IT team won't sign off, full stop.",
+   "speaker_role": "IT manager"
+  },
+  {
+   "id": "e15",
+   "deal_id": "D-1004",
+   "kind": "loss_reason",
+   "category": "budget",
+   "source": "note",
+   "meeting_id": "w18",
+   "quote": "Rep thinks budget was the real issue"
+  },
+  {
+   "id": "e16",
+   "deal_id": "D-1005",
+   "kind": "win_reason",
+   "category": "ease_of_use",
+   "source": "transcript",
+   "meeting_id": "w08",
+   "quote": "My team just got it without training.",
+   "speaker_role": "Founder"
+  },
+  {
+   "id": "e17",
+   "deal_id": "D-1005",
+   "kind": "win_reason",
+   "category": "price_value",
+   "source": "transcript",
+   "meeting_id": "w08",
+   "quote": "And it fit the budget we had without a fight.",
+   "speaker_role": "Founder"
+  },
+  {
+   "id": "e18",
+   "deal_id": "D-1006",
+   "kind": "win_reason",
+   "category": "integrations",
+   "source": "transcript",
+   "meeting_id": "w09",
+   "quote": "The fact that it talks to our project tool is the whole reason.",
+   "speaker_role": "Managing director"
+  },
+  {
+   "id": "e19",
+   "deal_id": "D-1006",
+   "kind": "competitor_mention",
+   "competitor": "Countwhistle",
+   "source": "transcript",
+   "meeting_id": "w09",
+   "quote": "Countwhistle couldn't pull client data from our project tool at all.",
+   "speaker_role": "Managing director"
+  },
+  {
+   "id": "e20",
+   "deal_id": "D-1007",
+   "kind": "objection",
+   "category": "competitive_comparison",
+   "competitor": "Pindleworth",
+   "source": "transcript",
+   "meeting_id": "w10",
+   "quote": "Pindleworth is already in the building, so you have to be clearly better, not just a bit better.",
+   "speaker_role": "Clinical ops lead"
+  },
+  {
+   "id": "e21",
+   "deal_id": "D-1007",
+   "kind": "loss_reason",
+   "category": "competitor_strength",
+   "competitor": "Pindleworth",
+   "source": "transcript",
+   "meeting_id": "w11",
+   "quote": "Pindleworth already runs our scheduling, so adding their module was the easy path.",
+   "speaker_role": "Clinical ops lead"
+  },
+  {
+   "id": "e22",
+   "deal_id": "D-1007",
+   "kind": "loss_reason",
+   "category": "missing_capability",
+   "source": "transcript",
+   "meeting_id": "w11",
+   "quote": "We needed the HL7 feed on day one and that's on your roadmap, not in the product.",
+   "speaker_role": "Clinical ops lead"
+  },
+  {
+   "id": "e23",
+   "deal_id": "D-1007",
+   "kind": "objection",
+   "category": "implementation_effort",
+   "source": "transcript",
+   "meeting_id": "w11",
+   "quote": "Rolling out a second system would have taken a quarter.",
+   "speaker_role": "Clinical ops lead"
+  },
+  {
+   "id": "e24",
+   "deal_id": "D-1008",
+   "kind": "loss_reason",
+   "category": "no_decision_priority",
+   "source": "crm_field",
+   "crm_field": "Closed lost reason",
+   "quote": "Timing - revisit in Q1"
+  },
+  {
+   "id": "e25",
+   "deal_id": "D-1009",
+   "kind": "win_reason",
+   "category": "product_fit",
+   "source": "crm_field",
+   "crm_field": "Win reason",
+   "quote": "Product fit for multi-depot routing"
+  },
+  {
+   "id": "e26",
+   "deal_id": "D-1010",
+   "kind": "objection",
+   "category": "price_value",
+   "competitor": "Countwhistle",
+   "source": "note",
+   "meeting_id": "w12",
+   "quote": "Concerned about price compared with Countwhistle's quote."
+  },
+  {
+   "id": "e27",
+   "deal_id": "D-1010",
+   "kind": "loss_reason",
+   "category": "price_value",
+   "competitor": "Countwhistle",
+   "source": "note",
+   "meeting_id": "w12b",
+   "quote": "Chose Countwhistle; their quote came in roughly 30% lower for the same seats."
+  },
+  {
+   "id": "e28",
+   "deal_id": "D-1012",
+   "kind": "objection",
+   "category": "price_value",
+   "source": "transcript",
+   "meeting_id": "w15",
+   "quote": "It's more than we budgeted, I'll be honest.",
+   "speaker_role": "CTO"
+  },
+  {
+   "id": "e29",
+   "deal_id": "D-1012",
+   "kind": "win_reason",
+   "category": "security_compliance",
+   "source": "transcript",
+   "meeting_id": "w16",
+   "quote": "You were the only one with SAML and audit logs out of the box.",
+   "speaker_role": "CTO"
+  },
+  {
+   "id": "e30",
+   "deal_id": "D-1012",
+   "kind": "win_reason",
+   "category": "time_to_value",
+   "source": "note",
+   "meeting_id": "w17",
+   "quote": "Two-week rollout plan was a deciding factor for the CTO."
+  },
+  {
+   "id": "e31",
+   "deal_id": "D-1013",
+   "kind": "win_reason",
+   "category": "ease_of_use",
+   "source": "transcript",
+   "meeting_id": "w08",
+   "quote": "My team just got it without training.",
+   "speaker_role": "Founder"
+  }
+ ]
+}

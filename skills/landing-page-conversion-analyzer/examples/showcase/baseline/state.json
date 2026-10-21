@@ -1,0 +1,282 @@
+{
+  "schema_version": 1,
+  "updated_at": "2026-09-10T14:55:29.750615+00:00",
+  "last_run_mode": "baseline",
+  "complete_through": "2026-08-28",
+  "windows": {
+    "current": [
+      "2026-08-22",
+      "2026-08-28"
+    ],
+    "baseline": [
+      "2026-07-25",
+      "2026-08-21"
+    ],
+    "baseline_mode": "trailing",
+    "excluded_dates": [],
+    "notes": []
+  },
+  "conversion_step": "step_purchase",
+  "funnel": [
+    "step_view_item",
+    "step_add_to_cart",
+    "step_begin_checkout",
+    "step_purchase"
+  ],
+  "open_findings": [],
+  "day_fingerprints": {
+    "2026-08-15": {
+      "sessions": 12000,
+      "conversions": 480,
+      "revenue": 48000.0
+    },
+    "2026-08-16": {
+      "sessions": 12000,
+      "conversions": 480,
+      "revenue": 48000.0
+    },
+    "2026-08-17": {
+      "sessions": 12000,
+      "conversions": 480,
+      "revenue": 48000.0
+    },
+    "2026-08-18": {
+      "sessions": 12000,
+      "conversions": 480,
+      "revenue": 48000.0
+    },
+    "2026-08-19": {
+      "sessions": 12000,
+      "conversions": 480,
+      "revenue": 48000.0
+    },
+    "2026-08-20": {
+      "sessions": 12000,
+      "conversions": 480,
+      "revenue": 48000.0
+    },
+    "2026-08-21": {
+      "sessions": 12000,
+      "conversions": 480,
+      "revenue": 48000.0
+    },
+    "2026-08-22": {
+      "sessions": 12000,
+      "conversions": 480,
+      "revenue": 48000.0
+    },
+    "2026-08-23": {
+      "sessions": 12000,
+      "conversions": 480,
+      "revenue": 48000.0
+    },
+    "2026-08-24": {
+      "sessions": 12000,
+      "conversions": 480,
+      "revenue": 48000.0
+    },
+    "2026-08-25": {
+      "sessions": 12000,
+      "conversions": 480,
+      "revenue": 48000.0
+    },
+    "2026-08-26": {
+      "sessions": 12000,
+      "conversions": 480,
+      "revenue": 48000.0
+    },
+    "2026-08-27": {
+      "sessions": 12000,
+      "conversions": 480,
+      "revenue": 48000.0
+    },
+    "2026-08-28": {
+      "sessions": 12000,
+      "conversions": 480,
+      "revenue": 48000.0
+    }
+  },
+  "baselines": {
+    "landing_page": [
+      {
+        "landing_page": "/refill",
+        "sessions": 210000,
+        "conversions": 8400,
+        "cvr_pooled": 0.04,
+        "cvr_daily_median": 0.04,
+        "cvr_p25": 0.04,
+        "cvr_p75": 0.04,
+        "volatility": 0.0,
+        "revenue": 840000.0
+      },
+      {
+        "landing_page": "/starter-kit",
+        "sessions": 210000,
+        "conversions": 8400,
+        "cvr_pooled": 0.04,
+        "cvr_daily_median": 0.04,
+        "cvr_p25": 0.04,
+        "cvr_p75": 0.04,
+        "volatility": 0.0,
+        "revenue": 840000.0
+      }
+    ],
+    "utm_source": [
+      {
+        "utm_source": "bing",
+        "sessions": 140000,
+        "conversions": 5600,
+        "cvr_pooled": 0.04,
+        "cvr_daily_median": 0.04,
+        "cvr_p25": 0.04,
+        "cvr_p75": 0.04,
+        "volatility": 0.0,
+        "revenue": 560000.0
+      },
+      {
+        "utm_source": "google",
+        "sessions": 140000,
+        "conversions": 5600,
+        "cvr_pooled": 0.04,
+        "cvr_daily_median": 0.04,
+        "cvr_p25": 0.04,
+        "cvr_p75": 0.04,
+        "volatility": 0.0,
+        "revenue": 560000.0
+      },
+      {
+        "utm_source": "newsletter",
+        "sessions": 140000,
+        "conversions": 5600,
+        "cvr_pooled": 0.04,
+        "cvr_daily_median": 0.04,
+        "cvr_p25": 0.04,
+        "cvr_p75": 0.04,
+        "volatility": 0.0,
+        "revenue": 560000.0
+      }
+    ],
+    "landing_page_x_utm_source": [
+      {
+        "landing_page": "/refill",
+        "utm_source": "bing",
+        "sessions": 70000,
+        "conversions": 2800,
+        "cvr_pooled": 0.04,
+        "cvr_daily_median": 0.04,
+        "cvr_p25": 0.04,
+        "cvr_p75": 0.04,
+        "volatility": 0.0,
+        "revenue": 280000.0
+      },
+      {
+        "landing_page": "/refill",
+        "utm_source": "google",
+        "sessions": 70000,
+        "conversions": 2800,
+        "cvr_pooled": 0.04,
+        "cvr_daily_median": 0.04,
+        "cvr_p25": 0.04,
+        "cvr_p75": 0.04,
+        "volatility": 0.0,
+        "revenue": 280000.0
+      },
+      {
+        "landing_page": "/refill",
+        "utm_source": "newsletter",
+        "sessions": 70000,
+        "conversions": 2800,
+        "cvr_pooled": 0.04,
+        "cvr_daily_median": 0.04,
+        "cvr_p25": 0.04,
+        "cvr_p75": 0.04,
+        "volatility": 0.0,
+        "revenue": 280000.0
+      },
+      {
+        "landing_page": "/starter-kit",
+        "utm_source": "bing",
+        "sessions": 70000,
+        "conversions": 2800,
+        "cvr_pooled": 0.04,
+        "cvr_daily_median": 0.04,
+        "cvr_p25": 0.04,
+        "cvr_p75": 0.04,
+        "volatility": 0.0,
+        "revenue": 280000.0
+      },
+      {
+        "landing_page": "/starter-kit",
+        "utm_source": "google",
+        "sessions": 70000,
+        "conversions": 2800,
+        "cvr_pooled": 0.04,
+        "cvr_daily_median": 0.04,
+        "cvr_p25": 0.04,
+        "cvr_p75": 0.04,
+        "volatility": 0.0,
+        "revenue": 280000.0
+      },
+      {
+        "landing_page": "/starter-kit",
+        "utm_source": "newsletter",
+        "sessions": 70000,
+        "conversions": 2800,
+        "cvr_pooled": 0.04,
+        "cvr_daily_median": 0.04,
+        "cvr_p25": 0.04,
+        "cvr_p75": 0.04,
+        "volatility": 0.0,
+        "revenue": 280000.0
+      }
+    ]
+  },
+  "sensitivity": {
+    "conversion_rate_observed": 0.04,
+    "current_window_sessions": 84000,
+    "method": "two-proportion z, alpha=0.05 two-sided, power=0.80",
+    "levels": [
+      {
+        "level": "site",
+        "cells_total": 1,
+        "cells_testable": 1,
+        "sessions_covered_share": 1.0,
+        "median_mde_rel": 5.3,
+        "best_mde_rel": 5.3
+      },
+      {
+        "level": "landing_page",
+        "cells_total": 2,
+        "cells_testable": 2,
+        "sessions_covered_share": 1.0,
+        "median_mde_rel": 7.5,
+        "best_mde_rel": 7.5
+      },
+      {
+        "level": "utm_source",
+        "cells_total": 3,
+        "cells_testable": 3,
+        "sessions_covered_share": 1.0,
+        "median_mde_rel": 9.2,
+        "best_mde_rel": 9.2
+      },
+      {
+        "level": "landing_page x utm_source",
+        "cells_total": 6,
+        "cells_testable": 6,
+        "sessions_covered_share": 1.0,
+        "median_mde_rel": 13.0,
+        "best_mde_rel": 13.0
+      },
+      {
+        "level": "landing_page x utm_source x utm_campaign",
+        "cells_total": 6,
+        "cells_testable": 6,
+        "sessions_covered_share": 1.0,
+        "median_mde_rel": 13.0,
+        "best_mde_rel": 13.0
+      }
+    ],
+    "recommendations": []
+  }
+}

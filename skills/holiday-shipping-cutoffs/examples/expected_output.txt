@@ -1,0 +1,118 @@
+## Holiday Shipping Cutoff Check: Fernhill Goods, as of 2026-10-07
+
+**Verdict: NOT READY.** 1 risky promise, 2 warnings and 1 note. Goal: delivery by Thu Dec 24, 2026 for at least 95% of customers.
+
+**Last safe order dates** (orders placed by 1:00 pm ET):
+- USPS Ground Advantage (Standard): **Mon Dec 14**, from the carrier ship-by date (source: sample)
+- UPS Ground (Standard): **Tue Dec 15**, from transit by zone (source: sample)
+- UPS 2nd Day Air (Express): **Mon Dec 21**, from transit by zone (source: sample)
+- By checkout rate (a rate that uses several carriers gets the earliest date): Standard **Mon Dec 14**, Express **Mon Dec 21**
+
+**BFCM backlog:** orders placed Thu Nov 26 – Mon Nov 30 ship within 3 business days; the backlog clears Thu Dec 3.
+
+**Issues, most severe first** (all detected, none changed)
+1. **RISKY**: Site banner says order by Dec 18; Standard needs orders by Mon Dec 14 (4 days earlier).
+2. **WARNING**: Email: Holiday gift guide (sends Thu Dec 3): "Guaranteed delivery by Christmas on every order." has no order-by date or shipping method.
+3. **WARNING**: FAQ: Shipping says orders ship within 1 business day; orders placed Fri Nov 27 – Tue Dec 1 take up to 3 (BFCM backlog).
+4. **INFO**: Gift guide page says order by Dec 10, 4 days earlier than Standard needs (Mon Dec 14).
+
+### 1. Last safe order dates (deliver by Thu Dec 24, 2026)
+
+Safe means at least 95% of customers, weighted by where your orders go, get the order by Thu Dec 24. Dates are for orders placed by 1:00 pm ET; an order placed later counts as the next working day's order.
+
+Zone mix (destinations.csv, 3,292 orders): zone 1 1.9%, zone 2 6.9%, zone 3 10.1%, zone 4 30.0%, zone 5 22.1%, zone 6 10.0%, zone 7 5.0%, zone 8 14.0%.
+
+| Service | Checkout rate | Last safe (≥ 95%) | At 80% | At 99% | From transit | Carrier ship-by date | Based on |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| USPS Ground Advantage | Standard | **Mon Dec 14** | Mon Dec 14 | Mon Dec 14 | Wed Dec 16 | Mon Dec 14 (sample) | carrier ship-by date |
+| UPS Ground | Standard | **Tue Dec 15** | Wed Dec 16 | Tue Dec 15 | Tue Dec 15 | — | transit by zone |
+| UPS 2nd Day Air | Express | **Mon Dec 21** | Mon Dec 21 | Mon Dec 21 | Mon Dec 21 | Tue Dec 22 (sample) | transit by zone |
+
+Standard ships with USPS Ground Advantage and UPS Ground. Customers can't pick the carrier, so Standard's last safe date is the earlier one, Mon Dec 14. To keep Standard open until Tue Dec 15, ship every Standard order placed after 1:00 pm ET Mon Dec 14 with UPS Ground.
+
+Where each date comes from:
+- USPS Ground Advantage: transit 2, 2, 2–3, 3, 3–4, 4–5, 4–5, 5 business days for zones 1–8, plus 2 peak days you added for December delays; delivers Mon–Sat; no delivery Thu Nov 26, Fri Dec 25. Source: sample (fictional carrier data). Ship-by date Mon Dec 14. Source: sample (fictional, not a date USPS published).
+- UPS Ground: transit 1, 1, 1–2, 2, 3, 3–4, 4, 4–5 business days for zones 1–8, plus 2 peak days you added for December delays; delivers Mon–Fri; no delivery Thu Nov 26, Fri Dec 25. Source: sample (fictional carrier data).
+- UPS 2nd Day Air: transit 2 business days in every zone, plus 1 peak day you added for December delays; delivers Mon–Fri; no delivery Thu Nov 26, Fri Dec 25. Source: sample (fictional carrier data). Ship-by date Tue Dec 22. Source: sample (fictional, not a date UPS published).
+
+Share of customers who get an order by Thu Dec 24, by order date (orders placed by 1:00 pm ET):
+
+| Order date | Ships (ordered by 1:00 pm) | Ships (ordered later) | USPS Ground Advantage | UPS Ground | UPS 2nd Day Air |
+| --- | --- | --- | ---: | ---: | ---: |
+| Thu Dec 10 | Thu Dec 10 | Fri Dec 11 | 100% | 100% | 100% |
+| Fri Dec 11 | Fri Dec 11 | Mon Dec 14 | 100% | 100% | 100% |
+| Sat Dec 12 (closed) | Mon Dec 14 | Mon Dec 14 | 100% | 100% | 100% |
+| Sun Dec 13 (closed) | Mon Dec 14 | Mon Dec 14 | 100% | 100% | 100% |
+| Mon Dec 14 | Mon Dec 14 | Tue Dec 15 | 100% | 100% | 100% |
+| Tue Dec 15 | Tue Dec 15 | Wed Dec 16 | after ship-by | 100% | 100% |
+| Wed Dec 16 | Wed Dec 16 | Thu Dec 17 | after ship-by | 93.0% | 100% |
+| Thu Dec 17 | Thu Dec 17 | Fri Dec 18 | after ship-by | 76.0% | 100% |
+| Fri Dec 18 | Fri Dec 18 | Mon Dec 21 | after ship-by | 48.9% | 100% |
+| Sat Dec 19 (closed) | Mon Dec 21 | Mon Dec 21 | after ship-by | 13.9% | 100% |
+| Sun Dec 20 (closed) | Mon Dec 21 | Mon Dec 21 | after ship-by | 13.9% | 100% |
+| Mon Dec 21 | Mon Dec 21 | Tue Dec 22 | after ship-by | 13.9% | 100% |
+| Tue Dec 22 | Tue Dec 22 | Wed Dec 23 | after ship-by | 0% | 0% |
+| Wed Dec 23 | Wed Dec 23 | Thu Dec 24 | after ship-by | 0% | after ship-by |
+
+### 2. Fulfillment and the BFCM backlog
+
+Columbus, OH warehouse (America/New_York): orders placed by 1:00 pm ET on a working day (Mon–Fri) ship the same day; later orders and orders placed on a closed day count from the next working day. Closed: Thu Nov 26 (Thanksgiving), Fri Dec 25 (Christmas Day). Capacity 250 orders per working day. 60% of orders come in after the cutoff.
+Demand: demand.csv, Sun Nov 1 – Thu Dec 24 (3,543 orders).
+
+**Orders placed Thu Nov 26 – Mon Nov 30 ship within 3 business days; the backlog clears Thu Dec 3.** The worst extra delay is 2 business days (orders placed Sun Nov 29 – Tue Dec 1).
+Orders placed Tue Dec 1 – Wed Dec 2 also wait, up to 2 extra business days. Peak backlog: 451 orders at close on Mon Nov 30.
+
+| Date | Orders placed | Ready to ship | Shipped | Backlog at close | That day's orders ship | Business days to ship |
+| --- | ---: | ---: | ---: | ---: | --- | --- |
+| Wed Nov 25 | 120 | 132 | 132 | 0 | Wed Nov 25 – Fri Nov 27 | 0–1 |
+| Thu Nov 26 (closed: Thanksgiving) | 132 | — | closed | 0 | Fri Nov 27 | 1 |
+| Fri Nov 27 | 330 | 336 | 250 | 86 | Fri Nov 27 – Tue Dec 1 | 0–2 |
+| Sat Nov 28 (closed) | 185 | — | closed | 86 | Tue Dec 1 | 2 |
+| Sun Nov 29 (closed) | 150 | — | closed | 86 | Tue Dec 1 – Wed Dec 2 | 2–3 |
+| Mon Nov 30 | 205 | 701 | 250 | 451 | Wed Dec 2 – Thu Dec 3 | 2–3 |
+| Tue Dec 1 | 94 | 612 | 250 | 362 | Thu Dec 3 | 2 |
+| Wed Dec 2 | 52 | 439 | 250 | 189 | Thu Dec 3 | 1 |
+| Thu Dec 3 | 44 | 238 | 238 | 0 | Thu Dec 3 – Fri Dec 4 | 0–1 |
+
+Business days to ship count working days after the order date: 0 means it ships the day it was placed. Orders ship first in, first out.
+
+### 3. Delivery promises
+
+| # | Where | Says | Implies | Order-by | Status | Why |
+| ---: | --- | --- | --- | --- | --- | --- |
+| 1 | Site banner | "Order by Dec 18 for Christmas delivery" | Standard | Fri Dec 18 | RISKY | Dec 18 is 4 days after the last safe order date for Standard (Mon Dec 14). Express (by Mon Dec 21) still arrives in time. |
+| 2 | Checkout rate name | "Express (UPS 2nd Day Air): order by 1 pm ET Dec 21 for delivery by Dec 24" | Express | Mon Dec 21 | OK | Matches the last safe order date for Express (Mon Dec 21). Gives the cutoff time. |
+| 3 | Email: Holiday gift guide (sends Thu Dec 3) | "Guaranteed delivery by Christmas on every order." | any (none named) | — | WARNING | Promises holiday delivery with no order-by date or shipping method and says guaranteed. Standard needs orders by Mon Dec 14 and Express needs orders by Mon Dec 21. |
+| 4 | FAQ: Shipping | "Orders placed by 1 pm ET on a business day ship the same day. All other orders ship the next business day." | — | — | WARNING | Says orders ship within 1 business day. Orders placed Fri Nov 27 – Tue Dec 1 take up to 3 business days (BFCM backlog). |
+| 5 | Gift guide page | "Order by Dec 10 for Christmas delivery with Standard shipping." | Standard | Thu Dec 10 | INFO | 4 days earlier than needed: Standard orders placed by Mon Dec 14 still arrive in time, so this tells customers ordering Dec 11 – Dec 14 they are too late. |
+
+_Items 3 and 4: The FTC's Mail, Internet, or Telephone Order Merchandise Rule (16 CFR Part 435) requires a reasonable basis for any shipping time you state or imply, and when you can't ship on time, a notice that lets the customer agree to the delay or cancel for a prompt refund. Not legal advice._
+
+### 4. Messaging calendar
+
+Plain copy you can paste; adjust names to your checkout. Delivery dates are estimates, not guarantees.
+
+| When | Switch | Where | Suggested copy |
+| --- | --- | --- | --- |
+| Thu Nov 26 – Wed Dec 2 | BFCM shipping-time note (take it down Thu Dec 3) | Shipping FAQ, cart, order confirmation email | "Orders placed Nov 26 – Dec 2 ship within 3 business days." |
+| Mon Dec 7 | Start holiday cutoff messaging | Site banner, product pages, cart, emails | "Order by 1 pm ET Mon, Dec 14 for Standard shipping, or by 1 pm ET Mon, Dec 21 for Express shipping, to arrive by Thu, Dec 24." |
+| Mon Dec 14, morning | Last day for Standard | Email, SMS | "Last day for Standard shipping to arrive by Thu, Dec 24: order by 1 pm ET today." |
+| Mon Dec 14, 1:00 pm ET | Switch to expedited only (Express) | Site banner, cart, checkout | "Standard shipping will now arrive after Thu, Dec 24. For delivery by Thu, Dec 24, choose Express shipping and order by 1 pm ET Mon, Dec 21." |
+| Mon Dec 21, morning | Last day for Express | Email, SMS | "Last day for Express shipping to arrive by Thu, Dec 24: order by 1 pm ET today." |
+| Mon Dec 21, 1:00 pm ET | Switch to e-gift cards | Site banner, homepage, email | "Orders placed now will arrive after Thu, Dec 24. Gift cards are delivered by email right away." |
+| Thu Dec 24, 1:00 pm ET | Closure notice | Site banner, cart | "We're closed Fri, Dec 25. Orders placed after 1 pm ET Thu, Dec 24 ship Mon, Dec 28." |
+| Fri Dec 25 | Take down holiday delivery messaging (schedule it ahead) | Everywhere above | — |
+
+### 5. Fix list (nothing has been changed)
+
+| # | Severity | What to do | State | By |
+| ---: | --- | --- | --- | --- |
+| 1 | RISKY | Site banner: replace "Order by Dec 18 for Christmas delivery" with "Order by 1 pm ET Mon, Dec 14 for Standard shipping, or by 1 pm ET Mon, Dec 21 for Express shipping, to arrive by Thu, Dec 24." | recommended | now |
+| 2 | WARNING | Email: Holiday gift guide (sends Thu Dec 3): replace "Guaranteed delivery by Christmas on every order." with "Order by 1 pm ET Mon, Dec 14 for Standard shipping, or by 1 pm ET Mon, Dec 21 for Express shipping, to arrive by Thu, Dec 24." | recommended | Wed Dec 2 |
+| 3 | WARNING | FAQ: Shipping: add "Orders placed Nov 26 – Dec 2 ship within 3 business days." above the current text, and the same line in the order confirmation email for those orders. If orders fall further behind than you state, email the affected customers a delay notice that offers to cancel. | recommended | Wed Nov 25 |
+| 4 | INFO | Gift guide page: move the date to Dec 14: "Order by 1 pm ET Mon, Dec 14 for Standard shipping to arrive by Thu, Dec 24." | recommended | Mon Dec 7 |
+| 5 | PLAN | Replace the `sample` rows in carriers.csv with your own transit days by zone and each carrier's published holiday ship-by dates, with the page URL in `source` (references/playbook.md §1), then re-run. The dates above come from fictional sample data. | recommended | now |
+| 6 | PLAN | Re-run with actual orders to date and the carriers' latest holiday dates, before the cutoff messaging starts Mon Dec 7. | recommended | Thu Dec 3 |
+| 7 | PLAN | Schedule every switch in the messaging calendar (section 4) in the site, cart, checkout, email and SMS tools so each goes live on its date without anyone on call. | recommended | Wed Nov 25 |
+
+_Coverage is the share of customers, weighted by zone mix, whose order arrives by the target; a transit range like 3–5 days is spread evenly across its days, and a carrier ship-by date overrides a later transit-based date. Promises: RISKY = order-by date after the last safe date (or sent after it), or a stated time later than the cutoff on the last safe day; WARNING = no order-by date, no cutoff time on the last safe day, or a shipping time the backlog breaks; INFO = order-by date 3+ days earlier than needed. Each day's coverage uses the latest ship date of that day's orders (conservative). States: detected → recommended → applied → verified. Read-only: no site, checkout, email, SMS or carrier setting was changed._

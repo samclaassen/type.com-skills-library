@@ -1,0 +1,35 @@
+{
+  "stale_activity_days": 21,
+  "stuck_multiplier": 1.5,
+  "stuck_min_sample": 4,
+  "min_amount_usd": 1000,
+  "amount_reference_usd": 50000,
+  "amount_weight_cap": 4.0,
+  "severity_points": {
+    "missing_owner": 40,
+    "missing_amount": 30,
+    "close_date_past": 35,
+    "stale_activity": 25,
+    "stuck_in_stage": 20,
+    "stage_skipped": 15,
+    "duplicate_account": 10
+  },
+  "legal_suffixes": [
+    "inc",
+    "llc",
+    "ltd",
+    "limited",
+    "corp",
+    "corporation",
+    "co",
+    "company",
+    "gmbh",
+    "plc",
+    "sa",
+    "bv",
+    "pty",
+    "holdings",
+    "group",
+    "the"
+  ]
+}

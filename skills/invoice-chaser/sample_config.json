@@ -1,0 +1,101 @@
+{
+  "_comment": "FICTIONAL sample config for run.sh. Fernhill Studio and every client are made up.",
+  "business_name": "Fernhill Studio",
+  "business_address": "400 Example Street, Portland, OR 97201",
+  "from_email": "billing@fernhill.example",
+  "sender_name": "Maya Okafor",
+  "billing_source": "manual",
+  "currency": "USD",
+  "payment_terms_days": 30,
+  "payment_instructions_ref": "Fernhill payment details (secure note)",
+  "invoice_prefix": "INV",
+  "tax_rate": null,
+  "tax_label": "Tax",
+  "late_fee": null,
+  "chase_schedule": [
+    {
+      "days": 1,
+      "tone": "gentle"
+    },
+    {
+      "days": 7,
+      "tone": "firm"
+    },
+    {
+      "days": 14,
+      "tone": "escalation"
+    },
+    {
+      "days": 30,
+      "tone": "final"
+    }
+  ],
+  "follow_up": "draft",
+  "ledger_file": "invoice-ledger.md",
+  "post_to": "",
+  "aging_buckets_days": [
+    30,
+    60,
+    90
+  ],
+  "forbidden_phrases_without_late_fee": [
+    "late fee",
+    "late charge",
+    "interest",
+    "penalty",
+    "penalties",
+    "legal",
+    "legally",
+    "lawyer",
+    "attorney",
+    "solicitor",
+    "court",
+    "collection",
+    "debt collector",
+    "small claims"
+  ],
+  "allowed_phrases_without_late_fee": [
+    "interest-free",
+    "no interest",
+    "0% interest",
+    "zero interest",
+    "without interest"
+  ],
+  "currencies": {
+    "symbols": {
+      "USD": "$",
+      "EUR": "€",
+      "GBP": "£",
+      "JPY": "¥",
+      "CAD": "CA$",
+      "AUD": "A$",
+      "NZD": "NZ$",
+      "INR": "₹"
+    },
+    "zero_decimal": [
+      "BIF",
+      "CLP",
+      "DJF",
+      "GNF",
+      "JPY",
+      "KMF",
+      "KRW",
+      "MGA",
+      "PYG",
+      "RWF",
+      "UGX",
+      "VND",
+      "VUV",
+      "XAF",
+      "XOF",
+      "XPF"
+    ],
+    "three_decimal": [
+      "BHD",
+      "JOD",
+      "KWD",
+      "OMR",
+      "TND"
+    ]
+  }
+}

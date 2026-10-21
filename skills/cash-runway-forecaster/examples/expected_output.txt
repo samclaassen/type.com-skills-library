@@ -1,0 +1,140 @@
+### 1. Base case: 13 weeks from 2026-09-07, 97% collection rate, 7-day lag
+13-WEEK DIRECT CASH FORECAST
+========================================================================================================
+Forecast start   : 2026-09-07 (week 1 runs 2026-09-07 to 2026-09-13)
+Horizon ends     : 2026-12-06
+Opening balance  : 1,284,905.22
+Minimum cash     : 750,000.00
+Scenario         : collection lag 7d, collection rate 97%, payment lag 0d, recurring spend change 0%
+
+WEEKLY CASH FLOW
+--------------------------------------------------------------------------------------------------------
+wk  start            opening       ar in    other in     payroll      ap out   other out          net       closing  flag
+--  ----------  ------------  ----------  ----------  ----------  ----------  ----------  -----------  ------------  ------
+1   2026-09-07  1,284,905.22  126,633.50  118,000.00        0.00  105,520.00   34,650.00   104,463.50  1,389,368.72
+2   2026-09-14  1,389,368.72   61,983.00  118,000.00  332,000.00   18,900.00   26,800.00  -197,717.00  1,191,651.72
+3   2026-09-21  1,191,651.72  114,945.00  118,000.00        0.00   12,480.00   27,850.00   192,615.00  1,384,266.72
+4   2026-09-28  1,384,266.72   52,671.00  118,000.00  332,000.00   28,600.00   46,250.00  -236,179.00  1,148,087.72
+5   2026-10-05  1,148,087.72   69,112.50  118,000.00        0.00   74,200.00   94,350.00    18,562.50  1,166,650.22
+6   2026-10-12  1,166,650.22   38,606.00  118,000.00  334,500.00        0.00        0.00  -177,894.00    988,756.22
+7   2026-10-19    988,756.22        0.00  118,000.00        0.00   22,150.00   49,050.00    46,800.00  1,035,556.22
+8   2026-10-26  1,035,556.22   45,299.00  118,000.00  334,500.00        0.00   51,850.00  -223,051.00    812,505.22
+9   2026-11-02    812,505.22   56,260.00  118,000.00        0.00   41,300.00   53,750.00    79,210.00    891,715.22
+10  2026-11-09    891,715.22        0.00  118,000.00  341,000.00   68,900.00   12,400.00  -304,300.00    587,415.22  BREACH
+11  2026-11-16    587,415.22   89,628.00  118,000.00        0.00   16,750.00  145,050.00    45,828.00    633,243.22  BREACH
+12  2026-11-23    633,243.22        0.00  118,000.00        0.00        0.00   24,350.00    93,650.00    726,893.22  BREACH
+13  2026-11-30    726,893.22   32,592.00  118,000.00  341,000.00        0.00   81,250.00  -271,658.00    455,235.22  BREACH
+
+RUNWAY AND COVENANT
+--------------------------------------------------------------------------------------------------------
+measure                            value
+---------------------------------  ------------------------------------------------------------------------------------------
+Closing balance at end of horizon  455,235.22
+Total inflows over horizon         2,221,730.00
+Total outflows over horizon        3,051,400.00
+Net movement over horizon          -829,670.00
+Lowest weekly closing              455,235.22 in week 13 (2026-11-30)
+First covenant breach              week 10 (2026-11-09), short by 162,584.78
+Cash runs out                      not inside the horizon; extrapolated at week 17.2
+Runway                             13 + 4.2 (extrapolated) (last 4 weeks average net -109,120.00 per week, assumed to repeat)
+
+COMPLETENESS AND RECONCILIATION
+--------------------------------------------------------------------------------------------------------
+source         rows    file total    in horizon  after horizon  before start  not expected  residual
+-------------  ----  ------------  ------------  -------------  ------------  ------------  --------
+ar               12    742,318.40    687,730.00      32,318.85          0.00     22,269.55      0.00
+ap               11    413,450.00    388,800.00      24,650.00          0.00          0.00      0.00
+payroll           8  2,686,000.00  2,015,000.00     341,000.00    330,000.00          0.00      0.00
+recurring_in      1  1,534,000.00  1,534,000.00           0.00          0.00          0.00      0.00
+recurring_out     9    647,600.00    647,600.00           0.00          0.00          0.00      0.00
+
+check                                        amount
+------------------------------------  -------------
+opening balance                        1,284,905.22
+plus inflows scheduled in horizon      2,221,730.00
+less outflows scheduled in horizon    -3,051,400.00
+= closing balance at end of horizon      455,235.22
+closing balance per the weekly table     455,235.22
+residual (must be 0.00)                        0.00
+
+ITEMS OUTSIDE THE HORIZON (not in the forecast above)
+--------------------------------------------------------------------------------------------------------
+  ar: INV-4527 Lumen Foods 32,318.85 expected 2026-12-18
+  ap: BILL-8860 Tessellate Design 24,650.00 expected 2026-12-18
+  payroll: Payroll - December first half 341,000.00 on 2026-12-15
+
+Expected AR shortfall from the collection rate: 22,269.55 is assumed never to arrive.
+
+VERDICT
+--------------------------------------------------------------------------------------------------------
+Every input row is scheduled, deferred beyond the horizon, or reported as not expected. Exit status 0.
+Action required: the minimum cash covenant of 750,000.00 is breached in week 10 (2026-11-09).
+exit status: 0
+
+### 2. Downside: collections slip to 21 days, 90% collected, AP stretched 14 days, spend cut 10%
+WEEKLY CASH FLOW
+--------------------------------------------------------------------------------------------------------
+wk  start            opening       ar in    other in     payroll     ap out   other out          net       closing  flag
+--  ----------  ------------  ----------  ----------  ----------  ---------  ----------  -----------  ------------  ------
+1   2026-09-07  1,284,905.22   79,560.00  118,000.00        0.00       0.00   31,185.00   166,375.00  1,451,280.22
+2   2026-09-14  1,451,280.22        0.00  118,000.00  332,000.00  34,120.00   24,120.00  -272,240.00  1,179,040.22
+3   2026-09-21  1,179,040.22   37,935.00  118,000.00        0.00  71,400.00   25,065.00    59,470.00  1,238,510.22
+4   2026-09-28  1,238,510.22   57,510.00  118,000.00  332,000.00  18,900.00   41,625.00  -217,015.00  1,021,495.22
+5   2026-10-05  1,021,495.22  106,650.00  118,000.00        0.00  12,480.00   84,915.00   127,255.00  1,148,750.22
+6   2026-10-12  1,148,750.22   48,870.00  118,000.00  334,500.00  28,600.00        0.00  -196,230.00    952,520.22
+7   2026-10-19    952,520.22   64,125.00  118,000.00        0.00  74,200.00   44,145.00    63,780.00  1,016,300.22
+8   2026-10-26  1,016,300.22   35,820.00  118,000.00  334,500.00       0.00   46,665.00  -227,345.00    788,955.22
+9   2026-11-02    788,955.22        0.00  118,000.00        0.00  22,150.00   48,375.00    47,475.00    836,430.22
+10  2026-11-09    836,430.22   42,030.00  118,000.00  341,000.00       0.00   11,160.00  -192,130.00    644,300.22  BREACH
+11  2026-11-16    644,300.22   52,200.00  118,000.00        0.00  41,300.00  130,545.00    -1,645.00    642,655.22  BREACH
+12  2026-11-23    642,655.22        0.00  118,000.00        0.00  68,900.00   21,915.00    27,185.00    669,840.22  BREACH
+13  2026-11-30    669,840.22   83,160.00  118,000.00  341,000.00  16,750.00   73,125.00  -229,715.00    440,125.22  BREACH
+
+RUNWAY AND COVENANT
+--------------------------------------------------------------------------------------------------------
+measure                            value
+---------------------------------  -----------------------------------------------------------------------------------------
+Closing balance at end of horizon  440,125.22
+Total inflows over horizon         2,141,860.00
+Total outflows over horizon        2,986,640.00
+Net movement over horizon          -844,780.00
+Lowest weekly closing              440,125.22 in week 13 (2026-11-30)
+First covenant breach              week 10 (2026-11-09), short by 105,699.78
+Cash runs out                      not inside the horizon; extrapolated at week 17.4
+Runway                             13 + 4.4 (extrapolated) (last 4 weeks average net -99,076.25 per week, assumed to repeat)
+
+COMPLETENESS AND RECONCILIATION
+exit status: 0
+
+### 3. First three weeks, item by item
+SCHEDULED ITEMS BY WEEK
+--------------------------------------------------------------------------------------------------------
+Week 1 (2026-09-07 to 2026-09-13)
+  2026-09-07  -     34,120.00  ap             Halberd Logistics (BILL-8801)
+  2026-09-07  +     85,748.00  ar             Northwind Labs (INV-4471)
+  2026-09-10  -     71,400.00  ap             Northwind Cloud Services (BILL-8809)
+  2026-09-10  -     12,400.00  recurring_out  Software and tools
+  2026-09-11  +    118,000.00  recurring_in   New billings collected
+  2026-09-11  -     22,250.00  recurring_out  Contractor payments
+  2026-09-12  +     40,885.50  ar             Calder Group (INV-4482)
+
+Week 2 (2026-09-14 to 2026-09-20)
+  2026-09-15  -    332,000.00  payroll        Payroll - September first half
+  2026-09-17  -     18,900.00  ap             Tessellate Design (BILL-8814)
+  2026-09-18  +    118,000.00  recurring_in   New billings collected
+  2026-09-19  +     61,983.00  ar             Vela Systems (INV-4488)
+  2026-09-20  -     26,800.00  recurring_out  Cloud infrastructure
+
+Week 3 (2026-09-21 to 2026-09-27)
+  2026-09-24  -     12,480.00  ap             Pinewood Facilities (BILL-8820)
+  2026-09-25  +    114,945.00  ar             Lumen Foods (INV-4491)
+  2026-09-25  +    118,000.00  recurring_in   New billings collected
+  2026-09-25  -     22,250.00  recurring_out  Contractor payments
+  2026-09-27  -      5,600.00  recurring_out  Equipment lease
+
+RUNWAY AND COVENANT
+exit status: 0
+
+### 4. Bad input is rejected loudly
+error: examples/broken_recurring.csv line 2: column 'frequency' value 'every_week' is not one of weekly, biweekly, monthly, quarterly, one_off
+exit status: 2

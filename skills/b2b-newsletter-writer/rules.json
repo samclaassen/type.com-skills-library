@@ -1,0 +1,129 @@
+{
+  "section_words_min": 80,
+  "section_words_max": 150,
+  "opener_sentences_min": 2,
+  "opener_sentences_max": 3,
+  "subject_max_chars": 49,
+  "preheader_max_chars": 100,
+  "headline_max_chars": 70,
+  "cta_max_words": 60,
+  "quote_min_words": 4,
+  "verbatim_ngram_words": 8,
+  "ignore_years": true,
+  "voice_issue_count": 3,
+  "acronyms": [
+    "AI", "API", "APIs", "ARR", "B2B", "B2C", "CEO", "CFO", "CMO", "COO", "CRM", "CSV", "CTO",
+    "EU", "FAQ", "GA4", "GTM", "HR", "ICP", "KPI", "KPIs", "LLM", "MRR", "NPS", "OKR", "OKRs",
+    "PDF", "PM", "PMs", "Q1", "Q2", "Q3", "Q4", "QA", "ROI", "RFP", "SEO", "SLA", "SOW", "SQL",
+    "UI", "UK", "US", "UX"
+  ],
+  "banned_phrases": [
+    "in today's fast-paced", "fast-paced world", "in today's digital landscape", "in today's world",
+    "ever-evolving", "ever-changing landscape", "rapidly evolving landscape",
+    "game-changer", "game changer", "game-changing",
+    "delv*", "unlock*", "unleash*", "revolutioniz*", "supercharg*", "turbocharg*",
+    "cutting-edge", "next-level", "elevate your", "harness the power", "the power of",
+    "navigate the complexities", "navigating the complexities", "it's important to note",
+    "it's worth noting", "it is worth noting", "in conclusion", "without further ado",
+    "look no further", "at the end of the day", "tapestry", "testament to", "a myriad of",
+    "let's dive in", "dive into", "deep dive", "buckle up", "synergy", "synergies", "paradigm shift",
+    "best-in-class", "world-class", "move the needle", "we're excited to", "we are excited to",
+    "we're thrilled", "we are thrilled", "stay tuned", "hope this email finds you",
+    "welcome to this week's edition", "welcome to another edition", "in this edition",
+    "embark on", "on a journey", "in the realm of", "landscape of", "seamless*", "robust", "holistic",
+    "empower*", "transformative", "streamline your", "take it to the next level",
+    "here's the kicker", "the secret sauce", "needle-moving", "thought leader*"
+  ],
+  "banned_openers": [
+    "welcome to", "hello and welcome", "hi everyone", "hey everyone", "hi all", "hey all",
+    "hey there", "hi there", "hello everyone", "happy monday", "happy tuesday", "happy wednesday",
+    "happy thursday", "happy friday", "happy weekend", "in this issue", "in this week's",
+    "this week's edition", "this week's issue", "another week", "it's that time", "i hope",
+    "hope you", "greetings", "good morning", "dear reader", "we're back"
+  ],
+  "spam_trigger_words": [
+    "free", "100% free", "act now", "limited time", "guarantee*", "risk-free", "no cost",
+    "cash", "winner", "congratulations", "click here", "buy now", "order now", "earn",
+    "double your", "miracle", "amazing deal", "special promotion", "exclusive deal", "cheap",
+    "lowest price", "make money", "no obligation", "apply now", "call now",
+    "once in a lifetime", "you've been selected", "$$$", "bonus", "prize"
+  ],
+  "false_urgency_words": [
+    "last chance", "act now", "hurry", "expires", "expiring", "final hours", "only today",
+    "ends tonight", "don't miss out", "don't miss", "deadline today", "deadline tomorrow", "before the deadline", "final deadline", "urgent", "immediately",
+    "now or never", "before it's gone", "time is running out", "last call", "final notice",
+    "ending soon", "today only"
+  ],
+  "clickbait_patterns": [
+    "you won't believe", "won't believe", "shocking", "this one trick", "what happened next",
+    "mind-blowing", "mind blowing", "jaw-dropping", "will blow your mind", "you need to see",
+    "the truth about", "nobody is talking about", "secret"
+  ],
+  "fake_reply_prefixes": ["re:", "fw:", "fwd:"],
+  "attribution_cues": [
+    "according to", "report", "reports", "reported", "survey", "surveyed", "study", "research",
+    "found", "finds", "data from", "announced", "published", "said", "says", "told",
+    "interview", "episode", "podcast", "benchmark", "paper", "analysis by"
+  ],
+  "stance_markers": [
+    "we think", "i think", "our take", "the take", "my take", "should", "shouldn't", "don't",
+    "do this", "steal this", "worth", "mistake", "wrong", "right", "better", "instead",
+    "which means", "that's why", "the point", "the real", "matters", "the gap", "useful",
+    "skip", "ignore", "start with", "stop", "try"
+  ],
+  "placeholder_patterns": [
+    "\\[(?:link|url|todo|tk|tbd|insert[^\\]]*|source|name|company|date|cta)\\]",
+    "\\bTODO\\b",
+    "\\bTKTK?\\b",
+    "\\bTBD\\b",
+    "lorem ipsum",
+    "\\{\\{[^}]*\\}\\}",
+    "\\bXX+\\b"
+  ],
+  "unverified_marker": "[unverified]",
+  "generic_button_labels": ["click here", "learn more", "read more", "here", "submit", "go", "more"],
+  "sentence_abbreviations": ["e.g.", "i.e.", "vs.", "etc.", "Mr.", "Ms.", "Mrs.", "Dr.", "U.S.", "U.K.", "Inc.", "Ltd.", "Co.", "approx.", "No."],
+  "render": {
+    "default_button_labels": {
+      "product": "Try it now",
+      "content": "Read it",
+      "event": "Save your seat"
+    },
+    "brand": {
+      "accent_color": "#1f4fd1",
+      "button_text_color": "#ffffff",
+      "text_color": "#1f2933",
+      "muted_color": "#6b7280",
+      "background_color": "#f4f4f5",
+      "content_background_color": "#ffffff",
+      "rule_color": "#e4e4e7",
+      "font_family": "Helvetica, Arial, sans-serif"
+    },
+    "text_wrap_width": 72,
+    "preheader_padding_entities": 40
+  },
+  "html": {
+    "max_width_px": 600,
+    "max_bytes": 102000,
+    "warn_bytes": 90000,
+    "forbidden_tags": [
+      "style", "link", "div", "script", "iframe", "form", "input", "select", "textarea",
+      "button", "video", "audio", "object", "embed", "svg", "canvas", "section", "article",
+      "header", "footer", "nav", "main", "aside", "base", "frame", "frameset"
+    ],
+    "forbidden_css": [
+      {"pattern": "display\\s*:\\s*(?:inline-)?flex", "severity": "FAIL", "reason": "flexbox is not supported in Outlook/Gmail"},
+      {"pattern": "display\\s*:\\s*(?:inline-)?grid", "severity": "FAIL", "reason": "CSS grid is not supported in Outlook/Gmail"},
+      {"pattern": "(?:^|;)\\s*(?:flex|flex-[a-z-]+|grid|grid-[a-z-]+|gap|justify-content|align-items)\\s*:", "severity": "FAIL", "reason": "flex/grid properties have no effect in most email clients"},
+      {"pattern": "position\\s*:\\s*(?:absolute|fixed|sticky|relative)", "severity": "FAIL", "reason": "positioning is stripped by Gmail and Outlook"},
+      {"pattern": "@import|@media|@font-face", "severity": "FAIL", "reason": "at-rules cannot live in inline styles"},
+      {"pattern": "var\\(--", "severity": "FAIL", "reason": "CSS variables are unsupported in Outlook and older Gmail"},
+      {"pattern": "float\\s*:", "severity": "WARN", "reason": "float is unreliable in Outlook; use table cells"},
+      {"pattern": "url\\(", "severity": "WARN", "reason": "background images need a VML fallback in Outlook"},
+      {"pattern": "!important", "severity": "WARN", "reason": "!important in inline styles is ignored by some clients"}
+    ],
+    "allowed_href_schemes": ["https", "http", "mailto", "tel"],
+    "merge_tag_patterns": ["^\\{\\{.*\\}\\}$", "^\\*\\|.*\\|\\*$", "^%%.*%%$", "^\\{\\$.*\\}$"],
+    "void_tags": ["area", "base", "br", "col", "embed", "hr", "img", "input", "link", "meta", "param", "source", "track", "wbr"]
+  }
+}

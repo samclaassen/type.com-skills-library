@@ -1,0 +1,5 @@
+PASS Headline uses the configured purchase conversion, not the first funnel step
+PASS Finds the planted page/source segment with its expected rate and modeled impact
+PASS Localizes the change to checkout and leaves preceding transitions unchanged
+PASS Explains overlapping aggregates without inventing mix or tracking findings
+4 passed, 0 failed

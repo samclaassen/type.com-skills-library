@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "_note": "FICTIONAL sample: a manager's first 1:1 with a new report, so there is no history yet.",
+  "user": {"name": "Dana Ortiz", "email": "dana@feltharrow.example", "role": "manager"},
+  "counterpart": {"name": "Ade Okonkwo", "email": "ade@feltharrow.example"},
+  "series": {"titles": ["Dana / Ade 1:1"]},
+  "upcoming": {"start": "2026-10-14T15:30:00+01:00"},
+  "sources": {
+    "meetings": {"provider": "granola", "status": "ok"},
+    "issues": {"provider": "jira", "status": "unavailable", "detail": "token expired"}
+  },
+  "meetings": [],
+  "items": []
+}

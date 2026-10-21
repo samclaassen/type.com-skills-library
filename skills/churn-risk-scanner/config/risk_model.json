@@ -1,0 +1,133 @@
+{
+  "history_months": 6,
+  "trend_window_months": 3,
+  "support_window_days": 90,
+  "csat_window_days": 180,
+  "invoice_window_days": 365,
+  "champion_departure_window_days": 180,
+  "champion_roles": ["champion", "economic_buyer"],
+  "support_index": {
+    "p1_points": 5.0,
+    "escalation_points": 3.0
+  },
+  "invoice_index": {
+    "overdue_points": 15.0
+  },
+  "bands": [
+    { "name": "critical", "min_score": 70 },
+    { "name": "high", "min_score": 50 },
+    { "name": "medium", "min_score": 30 },
+    { "name": "low", "min_score": 0 }
+  ],
+  "factors": {
+    "usage_decline": {
+      "weight": 25,
+      "direction": "lower_is_worse",
+      "description": "trailing vs prior average of key_actions",
+      "bands": [
+        {
+          "at_or_below": -30,
+          "score": 100,
+          "label": "core usage down more than 30%"
+        },
+        { "at_or_below": -15, "score": 75, "label": "core usage down 15-30%" },
+        { "at_or_below": -5, "score": 50, "label": "core usage down 5-15%" },
+        { "at_or_below": 5, "score": 20, "label": "core usage flat" },
+        { "at_or_below": null, "score": 0, "label": "core usage growing" }
+      ]
+    },
+    "user_attrition": {
+      "weight": 15,
+      "direction": "lower_is_worse",
+      "description": "trailing vs prior average of active_users",
+      "bands": [
+        {
+          "at_or_below": -25,
+          "score": 100,
+          "label": "active users down more than 25%"
+        },
+        {
+          "at_or_below": -10,
+          "score": 70,
+          "label": "active users down 10-25%"
+        },
+        {
+          "at_or_below": -3,
+          "score": 45,
+          "label": "active users drifting down"
+        },
+        { "at_or_below": 5, "score": 15, "label": "active users flat" },
+        { "at_or_below": null, "score": 0, "label": "active users growing" }
+      ]
+    },
+    "license_utilization": {
+      "weight": 10,
+      "direction": "lower_is_worse",
+      "description": "latest active_users / licensed_seats",
+      "bands": [
+        {
+          "at_or_below": 0.3,
+          "score": 100,
+          "label": "under 30% of seats active"
+        },
+        { "at_or_below": 0.5, "score": 70, "label": "30-50% of seats active" },
+        { "at_or_below": 0.7, "score": 40, "label": "50-70% of seats active" },
+        { "at_or_below": 0.85, "score": 15, "label": "70-85% of seats active" },
+        { "at_or_below": null, "score": 0, "label": "over 85% of seats active" }
+      ]
+    },
+    "support_burden": {
+      "weight": 15,
+      "direction": "higher_is_worse",
+      "description": "tickets per 100 seats + weighted P1s and escalations in the support window",
+      "bands": [
+        { "at_or_above": 20, "score": 100, "label": "very heavy support load" },
+        { "at_or_above": 12, "score": 75, "label": "heavy support load" },
+        { "at_or_above": 6, "score": 50, "label": "elevated support load" },
+        { "at_or_above": 2, "score": 25, "label": "normal support load" },
+        { "at_or_above": null, "score": 0, "label": "quiet" }
+      ]
+    },
+    "sentiment": {
+      "weight": 15,
+      "direction": "lower_is_worse",
+      "description": "average CSAT in the sentiment window",
+      "bands": [
+        { "at_or_below": 2.5, "score": 100, "label": "CSAT at or below 2.5" },
+        { "at_or_below": 3.0, "score": 80, "label": "CSAT 2.5-3.0" },
+        { "at_or_below": 3.5, "score": 60, "label": "CSAT 3.0-3.5" },
+        { "at_or_below": 4.0, "score": 35, "label": "CSAT 3.5-4.0" },
+        { "at_or_below": 4.5, "score": 15, "label": "CSAT 4.0-4.5" },
+        { "at_or_below": null, "score": 0, "label": "CSAT above 4.5" }
+      ]
+    },
+    "champion_departure": {
+      "weight": 10,
+      "direction": "rule",
+      "description": "status of champion and economic-buyer contacts",
+      "scores": {
+        "all_champions_departed_recently": 100,
+        "all_champions_departed_earlier": 60,
+        "no_champion_on_record": 60,
+        "partial_departure": 40,
+        "champion_active": 0
+      }
+    },
+    "invoice_history": {
+      "weight": 10,
+      "direction": "higher_is_worse",
+      "description": "average days late on paid invoices plus weighted overdue invoices",
+      "bands": [
+        {
+          "at_or_above": 45,
+          "score": 100,
+          "label": "chronically late or overdue"
+        },
+        { "at_or_above": 25, "score": 75, "label": "frequently late" },
+        { "at_or_above": 10, "score": 45, "label": "occasionally late" },
+        { "at_or_above": 3, "score": 20, "label": "slightly late" },
+        { "at_or_above": null, "score": 0, "label": "pays on time" }
+      ]
+    }
+  }
+}

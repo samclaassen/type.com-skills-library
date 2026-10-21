@@ -1,0 +1,162 @@
+### Scenario 1: first run of the morning
+DAILY REVENUE CHECK - 2026-09-22 (America/New_York)
+as of 2026-09-23T07:00:00-04:00   workdir examples/fernhill
+================================================================================================
+
+DEFINITIONS  version 2026-09-23  owner finance@example.com  (examples/fernhill/finance/revenue_definitions.json)
+  net sales = gross product sales - discounts - refunds
+  shipping charged excluded; tax excluded; gift-card sales excluded
+  sales dated by order_created; refunds on refund_date basis; late refund = older than 7 days
+  reporting currency USD; rates from finance/fx_rates.csv (daily ECB close)
+  excluded: tags test, internal, replacement; financial status voided; cancelled yes; zero value yes
+  cross-channel duplicates removed from Shopify: tag amazon-mcf (Amazon MCF fulfilment orders mirrored into Shopify); tag wholesale (Wholesale draft orders created in Shopify for invoicing)
+
+VERDICT: HOLD
+  1. [Reconciliation to source reports] wholesale: export 1,440.00 vs Invoices in the accounting system 2,410.00 (after_exclusions); diff -970.00 (40.25%) - outside 0.5% and 50.00 USD
+     do: Re-pull the 2026-09-22 total from Invoices in the accounting system (America/New_York day, after_exclusions) and compare it with the wholesale export row by row; do not post until they agree. The source figure equals the retailer sell-through for the day, which is not revenue; use the invoice total.
+
+NET SALES - 2026-09-22 (USD)
+  channel     records       gross   discounts    refunds    net sales   source of truth
+  shopify          12      684.00       42.90     120.00       521.10   Shopify Finance > Sales report
+  amazon            4      195.00        4.70       0.00       190.30   Amazon Seller Central > Date Range Report
+  wholesale         2    1,440.00        0.00       0.00     1,440.00   Invoices in the accounting system
+  TOTAL            18    2,319.00       47.60     120.00     2,151.40
+
+BRIDGE: export -> net sales
+  channel          export    excluded     mirrors    net sales      source       diff
+  shopify        1,155.10      -90.00     -544.00       521.10    1,156.00      -0.90
+  amazon           242.30      -52.00        0.00       190.30      190.30       0.00
+  wholesale      1,740.00     -300.00        0.00     1,440.00    2,410.00    -970.00
+  source is compared with 'export' (scope all_records) or 'export' + 'excluded' (scope after_exclusions)
+
+CHECKS
+  [PASS] 1. Freshness
+         shopify: extracted 2026-09-23 06:00 EDT (1.0h before as-of; limit 6h); latest record 2026-09-22 23:30 EDT
+         amazon: extracted 2026-09-23 05:45 EDT (1.3h before as-of; limit 6h); latest record 2026-09-22 22:05 EDT
+         wholesale: extracted 2026-09-23 05:30 EDT (1.5h before as-of; limit 6h); latest record 2026-09-22 16:10 EDT
+  [PASS] 2. Completeness
+         shopify: 12 sale records in the export for 2026-09-22
+         amazon: 5 sale records in the export for 2026-09-22
+         wholesale: 3 sale records in the export for 2026-09-22
+         shopify: longest run with no orders is 3h (02:00-05:00 local); limit 4h
+  [PASS] 3. Duplicates
+         shopify: FH-1006 appears twice (examples/fernhill/shopify_orders.csv row 8; examples/fernhill/shopify_orders.csv row 9); counted once
+         shopify: FH-1007 tagged amazon-mcf mirrors amazon 113-4410002-0000002 dated 2026-09-22; removed from Shopify (64.00 USD)
+         shopify: FH-1008 tagged wholesale mirrors wholesale INV-2041 dated 2026-09-22; removed from Shopify (480.00 USD)
+  [FAIL] 4. Reconciliation to source reports
+         shopify: export 1,155.10 vs Shopify Finance > Sales report 1,156.00 (all_records); diff -0.90 (0.08%) - within tolerance
+         amazon: export 190.30 vs Amazon Seller Central > Date Range Report 190.30 (after_exclusions); diff 0.00 (0.00%) - within tolerance
+         FAIL: wholesale: export 1,440.00 vs Invoices in the accounting system 2,410.00 (after_exclusions); diff -970.00 (40.25%) - outside 0.5% and 50.00 USD
+         tolerance: 0.5% OR 50.00 USD (checks.reconciliation_tolerance_pct / _abs)
+  [NOTE] 5. Late refunds
+         shopify: FH-0921 refund RF-5501 issued 2026-09-22 against sale of 2026-09-08 (14 days; limit 7): 70.00 USD; counted in 2026-09-22 (refund_date basis); no prior day moves
+  [PASS] 6. Excluded orders
+         amazon cancelled: 1 sale(s), 0 refund(s), value 52.00 USD
+         shopify tag:test: 1 sale(s), 0 refund(s), value 90.00 USD
+         wholesale financial_status:voided: 1 sale(s), 0 refund(s), value 300.00 USD
+  [PASS] 7. Currency conversion
+         EUR->USD 2026-09-22: 1.1750 from examples/fernhill/finance/fx_rates.csv (daily ECB close)
+
+RETAILER SELL-THROUGH - context only, not revenue (examples/fernhill/sell_through.csv)
+  Bloom & Co: 34 units, 1,870.00 USD at retail
+  Greenleaf Market: 12 units, 540.00 USD at retail
+  NOT added to wholesale revenue: wholesale revenue is what was invoiced (channels.wholesale.exclude_retailer_sell_through = true; definitions rule 5).
+
+SLACK MESSAGE (DRAFT)
+  [DRAFT - ON HOLD. Do not post until the HOLD reasons above are resolved.]
+  Net sales Tue 22 Sep 2026 (America/New_York): 2,151.40 USD (provisional, on hold)
+  Shopify 521.10 | Amazon 190.30 | Wholesale 1,440.00
+  Definitions v2026-09-23: net of discounts and refunds (refund-date basis); excludes tax, shipping, gift-card sales; wholesale = invoiced.
+  Caveats:
+  - On hold: 1 check(s) failed; see the HOLD reasons.
+  - Includes a 70.00 USD late refund on a Shopify order from 8 Sep (refund-date basis, so it lands today).
+  - Excluded 3 record(s) worth 442.00 USD per finance rules (cancelled 1, tag:test 1, financial_status:voided 1).
+  - EUR converted at 1.1750 (daily ECB close, 2026-09-22).
+### exit code: 1 (expected 1 = HOLD)
+
+### Scenario 2: wholesale total re-pulled from invoices in the accounting system
+DAILY REVENUE CHECK - 2026-09-22 (America/New_York)
+as of 2026-09-23T07:10:00-04:00   workdir examples/fernhill
+================================================================================================
+
+DEFINITIONS  version 2026-09-23  owner finance@example.com  (examples/fernhill/finance/revenue_definitions.json)
+  net sales = gross product sales - discounts - refunds
+  shipping charged excluded; tax excluded; gift-card sales excluded
+  sales dated by order_created; refunds on refund_date basis; late refund = older than 7 days
+  reporting currency USD; rates from finance/fx_rates.csv (daily ECB close)
+  excluded: tags test, internal, replacement; financial status voided; cancelled yes; zero value yes
+  cross-channel duplicates removed from Shopify: tag amazon-mcf (Amazon MCF fulfilment orders mirrored into Shopify); tag wholesale (Wholesale draft orders created in Shopify for invoicing)
+
+VERDICT: PUBLISH
+  every check passed; the number below can be posted after a human reads the draft
+
+NET SALES - 2026-09-22 (USD)
+  channel     records       gross   discounts    refunds    net sales   source of truth
+  shopify          12      684.00       42.90     120.00       521.10   Shopify Finance > Sales report
+  amazon            4      195.00        4.70       0.00       190.30   Amazon Seller Central > Date Range Report
+  wholesale         2    1,440.00        0.00       0.00     1,440.00   Invoices in the accounting system
+  TOTAL            18    2,319.00       47.60     120.00     2,151.40
+
+BRIDGE: export -> net sales
+  channel          export    excluded     mirrors    net sales      source       diff
+  shopify        1,155.10      -90.00     -544.00       521.10    1,156.00      -0.90
+  amazon           242.30      -52.00        0.00       190.30      190.30       0.00
+  wholesale      1,740.00     -300.00        0.00     1,440.00    1,440.00       0.00
+  source is compared with 'export' (scope all_records) or 'export' + 'excluded' (scope after_exclusions)
+
+CHECKS
+  [PASS] 1. Freshness
+         shopify: extracted 2026-09-23 06:00 EDT (1.2h before as-of; limit 6h); latest record 2026-09-22 23:30 EDT
+         amazon: extracted 2026-09-23 05:45 EDT (1.4h before as-of; limit 6h); latest record 2026-09-22 22:05 EDT
+         wholesale: extracted 2026-09-23 05:30 EDT (1.7h before as-of; limit 6h); latest record 2026-09-22 16:10 EDT
+  [PASS] 2. Completeness
+         shopify: 12 sale records in the export for 2026-09-22
+         amazon: 5 sale records in the export for 2026-09-22
+         wholesale: 3 sale records in the export for 2026-09-22
+         shopify: longest run with no orders is 3h (02:00-05:00 local); limit 4h
+  [PASS] 3. Duplicates
+         shopify: FH-1006 appears twice (examples/fernhill/shopify_orders.csv row 8; examples/fernhill/shopify_orders.csv row 9); counted once
+         shopify: FH-1007 tagged amazon-mcf mirrors amazon 113-4410002-0000002 dated 2026-09-22; removed from Shopify (64.00 USD)
+         shopify: FH-1008 tagged wholesale mirrors wholesale INV-2041 dated 2026-09-22; removed from Shopify (480.00 USD)
+  [PASS] 4. Reconciliation to source reports
+         shopify: export 1,155.10 vs Shopify Finance > Sales report 1,156.00 (all_records); diff -0.90 (0.08%) - within tolerance
+         amazon: export 190.30 vs Amazon Seller Central > Date Range Report 190.30 (after_exclusions); diff 0.00 (0.00%) - within tolerance
+         wholesale: export 1,440.00 vs Invoices in the accounting system 1,440.00 (after_exclusions); diff 0.00 (0.00%) - within tolerance
+         tolerance: 0.5% OR 50.00 USD (checks.reconciliation_tolerance_pct / _abs)
+  [NOTE] 5. Late refunds
+         shopify: FH-0921 refund RF-5501 issued 2026-09-22 against sale of 2026-09-08 (14 days; limit 7): 70.00 USD; counted in 2026-09-22 (refund_date basis); no prior day moves
+  [PASS] 6. Excluded orders
+         amazon cancelled: 1 sale(s), 0 refund(s), value 52.00 USD
+         shopify tag:test: 1 sale(s), 0 refund(s), value 90.00 USD
+         wholesale financial_status:voided: 1 sale(s), 0 refund(s), value 300.00 USD
+  [PASS] 7. Currency conversion
+         EUR->USD 2026-09-22: 1.1750 from examples/fernhill/finance/fx_rates.csv (daily ECB close)
+
+RETAILER SELL-THROUGH - context only, not revenue (examples/fernhill/sell_through.csv)
+  Bloom & Co: 34 units, 1,870.00 USD at retail
+  Greenleaf Market: 12 units, 540.00 USD at retail
+  NOT added to wholesale revenue: wholesale revenue is what was invoiced (channels.wholesale.exclude_retailer_sell_through = true; definitions rule 5).
+
+MARKETING EFFICIENCY (examples/fernhill/spend.csv)
+  MER definition (marketing.mer): net_sales / total_marketing_spend
+  spend google: 250.00 USD
+  spend meta: 410.00 USD
+  spend tiktok: 120.00 USD
+  total marketing spend: 780.00 USD
+  MER = 2,151.40 / 780.00 = 2.76
+  platform-claimed revenue (each platform's own window; overlapping; never summed, not sales):
+    meta: 1,380.00 USD (7d_click_1d_view)
+    google: 920.00 USD (30d_click)
+    tiktok: 310.00 USD (7d_click_1d_view)
+
+SLACK MESSAGE (DRAFT)
+  [DRAFT - not posted. A person reviews this and posts it.]
+  Net sales Tue 22 Sep 2026 (America/New_York): 2,151.40 USD
+  Shopify 521.10 | Amazon 190.30 | Wholesale 1,440.00
+  Definitions v2026-09-23: net of discounts and refunds (refund-date basis); excludes tax, shipping, gift-card sales; wholesale = invoiced.
+  MER 2.76 (net sales / total marketing spend 780.00 USD)
+  Caveats:
+  - Includes a 70.00 USD late refund on a Shopify order from 8 Sep (refund-date basis, so it lands today).
+  - Excluded 3 record(s) worth 442.00 USD per finance rules (cancelled 1, tag:test 1, financial_status:voided 1).
+  - EUR converted at 1.1750 (daily ECB close, 2026-09-22).
+### exit code: 0 (expected 0 = PUBLISH)

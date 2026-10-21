@@ -1,0 +1,11 @@
+account_id,account_name,arr_usd,segment,contract_start,renewal_date,csm_owner
+ACC-3001,Northwind Logistics,420000,enterprise,2024-10-01,2026-11-30,Helena Voss
+ACC-3002,Atlas Bio Labs,310000,enterprise,2023-12-01,2026-12-15,Helena Voss
+ACC-3003,Cascade Fintech,180000,mid-market,2025-01-15,2026-10-31,Ana Duarte
+ACC-3004,Pinewood Manufacturing,96000,mid-market,2025-03-01,2027-03-01,Ana Duarte
+ACC-3005,Harbor Point Health,240000,enterprise,2024-06-01,2026-11-05,Luis Ferreira
+ACC-3006,Quill and Bramble Retail,64000,smb,2025-08-01,2026-10-10,Ana Duarte
+ACC-3007,Silverline Energy,150000,mid-market,2024-02-20,2027-01-20,Luis Ferreira
+ACC-3008,Kestrel Payments,520000,enterprise,2025-04-01,2026-12-31,Helena Voss
+ACC-3009,Lantern Bay Hotels,45000,smb,2025-10-01,2026-10-05,Ana Duarte
+ACC-3010,Meridian Manufacturing,380000,enterprise,2024-09-01,2027-02-28,Luis Ferreira

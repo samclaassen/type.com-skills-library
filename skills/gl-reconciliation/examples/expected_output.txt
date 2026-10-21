@@ -1,0 +1,104 @@
+### 1. Operating bank account vs GL 1000, August 2026
+LEDGER RECONCILIATION
+==============================================================================
+As of            : 2026-08-31
+Ledger A         : Meridian Bank 8841 -- 13 rows, total 81,449.52
+Ledger B         : GL 1000 Cash - operating -- 17 rows, total 83,430.75
+Movement gap A-B : -1,981.23
+
+MATCHING STAGES
+------------------------------------------------------------------------------
+stage           groups  a_rows  b_rows   a_amount
+--------------  ------  ------  ------  ---------
+exact                8       8       8  33,030.75
+date_tolerance       2       2       2   6,360.00
+batch                1       1       4  41,782.33
+unmatched            -       2       3  -1,981.21
+
+MATCHED ITEMS
+------------------------------------------------------------------------------
+group  stage           a_ids                b_ids    a_amount    b_amount   diff  description
+-----  --------------  -----  -------------------  ----------  ----------  -----  ------------------------------------
+M001   exact           A001                  B001  -12,450.00  -12,450.00   0.00  ACH payroll run - first half August
+M002   exact           A002                  B002   48,900.00   48,900.00   0.00  Wire in - Northwind Labs
+M003   exact           A003                  B003   -3,275.40   -3,275.40   0.00  Card payment - AWS infrastructure
+M004   exact           A004                  B004   -1,899.00   -1,899.00   0.00  ACH out - Fulton Street rent
+M005   exact           A006                  B006   22,145.75   22,145.75   0.00  ACH in - Calder Group
+M006   exact           A008                  B011  -12,450.00  -12,450.00   0.00  ACH payroll run - second half August
+M007   exact           A009                  B012   -2,340.60   -2,340.60   0.00  Card payment - SaaS subscriptions
+M008   exact           A011                  B014   -5,600.00   -5,600.00   0.00  ACH out - equipment lease
+M009   date_tolerance  A005                  B005   -8,640.00   -8,640.00   0.00  Check 10241 presented
+M010   date_tolerance  A010                  B013   15,000.00   15,000.00   0.00  Deposit - Vela Systems check
+M011   batch           A007   B007,B008,B009,B010   41,782.33   41,782.35  -0.02  Stripe payout
+
+UNMATCHED -- Meridian Bank 8841
+------------------------------------------------------------------------------
+id    date        amount  reference  description
+----  ----------  ------  ---------  ----------------------------
+A012  2026-08-31  -42.50  FEE-0831   Monthly account analysis fee
+A013  2026-08-31  318.94  INT-0831   Interest credit
+Subtotal: 276.44 across 2 row(s)
+
+UNMATCHED -- GL 1000 Cash - operating
+------------------------------------------------------------------------------
+id    date           amount  reference  description
+----  ----------  ---------  ---------  -----------------------------------
+B015  2026-08-28  -6,412.80  JE-1229    Check 10259 - Tessellate Design
+B016  2026-08-29  -1,204.55  JE-1230    Check 10260 - Pinewood Facilities
+B017  2026-08-31   9,875.00  JE-1233    Deposit in transit - Orchard Retail
+Subtotal: 2,257.65 across 3 row(s)
+
+RECONCILING ITEMS
+------------------------------------------------------------------------------
+item                                                                           amount
+-----------------------------------------------------------------------  ------------
+Control total per Meridian Bank 8841                                     1,081,449.52
+add: in GL 1000 Cash - operating not in Meridian Bank 8841 (3 item(s))       2,257.65
+less: in Meridian Bank 8841 not in GL 1000 Cash - operating (2 item(s))       -276.44
+less: differences inside matched groups                                          0.02
+= computed control total per GL 1000 Cash - operating                    1,083,430.75
+actual control total per GL 1000 Cash - operating                        1,083,430.75
+residual (must be 0.00)                                                          0.00
+
+Matched groups carrying a difference (inside --amount-tolerance):
+  M011 batch: A 41,782.33 vs B 41,782.35 = -0.02
+
+VERDICT
+------------------------------------------------------------------------------
+RECONCILED. The bridge ties to 1,083,430.75 exactly. Exit status 0.
+5 open reconciling item(s) still require action; they are listed above.
+exit status: 0
+
+### 2. Same data, GL control total overstated by a prior-period break
+less: differences inside matched groups                                          0.02
+= computed control total per GL 1000 Cash - operating                    1,083,430.75
+actual control total per GL 1000 Cash - operating                        1,084,635.30
+residual (must be 0.00)                                                     -1,204.55
+
+Matched groups carrying a difference (inside --amount-tolerance):
+  M011 batch: A 41,782.33 vs B 41,782.35 = -0.02
+
+VERDICT
+------------------------------------------------------------------------------
+DOES NOT TIE. Residual of -1,204.55 is unexplained.
+Most often this is a prior-period break (opening balances did not agree), an export covering a different date range, or rows filtered out upstream.
+Exit status 1.
+5 open reconciling item(s) still require action; they are listed above.
+exit status: 1
+
+### 3. The bridge as JSON
+{
+  "controlTotalA": "1081449.52",
+  "inBNotInA": "2257.65",
+  "inANotInB": "276.44",
+  "matchedDifferences": "-0.02",
+  "computedControlTotalB": "1083430.75",
+  "actualControlTotalB": "1083430.75",
+  "residual": "0.00",
+  "balancesSupplied": true
+}
+exit status: 0
+
+### 4. Bad input is rejected loudly
+error: examples/broken_gl.csv line 3: column 'amount' value '48.900' has more than 2 decimal places; round to the minor unit before reconciling
+exit status: 2

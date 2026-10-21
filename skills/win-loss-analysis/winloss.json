@@ -1,0 +1,43 @@
+{
+  "min_sample_for_percent": 5,
+  "recurring_min_deals": 2,
+  "max_quotes_per_reason": 3,
+  "max_quotes_per_competitor": 3,
+  "max_quote_chars": 400,
+  "max_role_chars": 60,
+  "currency_symbol": "$",
+  "stage_order": [
+    "Discovery",
+    "Evaluation",
+    "Security review",
+    "Proposal",
+    "Negotiation"
+  ],
+  "ignored_attendee_domains": [
+    "fireflies.ai",
+    "otter.ai",
+    "fathom.video",
+    "read.ai",
+    "tldv.io",
+    "meetgeek.ai"
+  ],
+  "ignored_attendee_local_parts": [
+    "notetaker",
+    "no-reply",
+    "noreply",
+    "calendar-notification"
+  ],
+  "free_email_domains": [
+    "gmail.com",
+    "googlemail.com",
+    "outlook.com",
+    "hotmail.com",
+    "live.com",
+    "yahoo.com",
+    "icloud.com",
+    "me.com",
+    "proton.me",
+    "protonmail.com",
+    "aol.com"
+  ]
+}

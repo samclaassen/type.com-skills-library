@@ -1,0 +1,153 @@
+# MCC security audit: login manager 100-000-0001
+
+As of 2026-09-20. Read-only scan: nothing was removed, declined or changed. Internal agency report, not client-facing.
+
+Scanned 7 accounts (2 agency managers), 10 manager links, 9 user grants, 1 pending invitation(s), against 4 client profiles. 1 account(s) had query errors. Recent window: 30 days.
+
+| Severity | Findings |
+|---|---|
+| CRITICAL | 2 |
+| HIGH | 2 |
+| MEDIUM | 2 |
+| LOW | 6 |
+| INFO | 2 |
+
+## Findings
+
+### 1. [CRITICAL] Hostile manager 739-204-5518 is linked (status ACTIVE)
+- Client: Summit Outdoor Co (summit-outdoor)
+- Account: 201-555-0102 Summit Outdoor - Main [ENABLED]
+- hostile_note: Linked via phished client admin in a prior incident; revoked elsewhere
+- link_status: ACTIVE
+- manager_id: 739-204-5518
+- manager_link_id: 400951
+- Why: This manager ID is on your hostile list and currently has (or is requesting) access.
+- Recommended action: Incident mode: in the Google Ads UI (Admin > Access and security > Managers) decline/remove the link, have the client rotate admin credentials, and review change history since the link appeared.
+
+### 2. [CRITICAL] Unknown user ads.support.verify@gmail.example has ADMIN access, granted 6 days ago
+- Client: Summit Outdoor Co (summit-outdoor)
+- Account: 201-555-0102 Summit Outdoor - Main [ENABLED]
+- granted: 2026-09-14 03:12:45
+- inviter: owner@summitoutdoor.com
+- role: ADMIN
+- user_email: ads.support.verify@gmail.example
+- user_id: 32
+- Why: Email is not on the allowlist and not on the client's own website domain. Admin access can add managers and users.
+- Recommended action: Confirm with the account lead and client who this is. If unrecognized, remove the user in the UI (Admin > Access and security > Users) and ask the inviter how it was granted; if expected, add the email or domain to the allowlist.
+
+### 3. [HIGH] Pending link request from unknown manager 482-116-9031
+- Client: Harbor & Vine (harbor-and-vine)
+- Account: 201-555-0101 Harbor & Vine - Search [ENABLED]
+- link_status: PENDING
+- manager_id: 482-116-9031
+- manager_link_id: 400977
+- manager_seen_on_accounts: 2
+- Why: A live invitation from a manager outside your tree and allowlist is awaiting acceptance. Catching it before acceptance is the highest-value outcome of this scan.
+- Recommended action: Do not accept. Put a name on the ID via the account's Access and security page, ask the client whether they authorized it, and decline it in the UI if nobody can.
+
+### 4. [HIGH] Pending ADMIN invitation to unknown email billing-update@brightdental-support.example
+- Client: Bright Dental Group (bright-dental)
+- Account: 201-555-0103 Bright Dental - Leads [ENABLED]
+- created: 2026-09-18 22:41:03
+- invitation_id: 9001
+- invite_email: billing-update@brightdental-support.example
+- role: ADMIN
+- Why: An unaccepted invitation would grant admin access to an address outside the allowlist and client domain.
+- Recommended action: Confirm who sent it; if unrecognized, revoke the invitation in the UI before it is accepted.
+
+### 5. [MEDIUM] Unknown manager 482-116-9031: REFUSED here, live link elsewhere in the book
+- Client: Bright Dental Group (bright-dental)
+- Account: 201-555-0103 Bright Dental - Leads [ENABLED]
+- link_status: REFUSED
+- live_on_accounts: 201-555-0101
+- manager_id: 482-116-9031
+- manager_link_id: 400960
+- manager_seen_on_accounts: 2
+- Why: Refused or cancelled attempts from a manager that holds or requests access on other accounts in the book look like probing across clients.
+- Recommended action: Treat together with that manager's live-link findings; investigate as one incident across the affected clients.
+
+### 6. [MEDIUM] Account is not mapped to any client profile
+- Client: UNMAPPED
+- Account: 201-555-0199 Q3 Promo Test (old) [ENABLED]
+- Why: No clients/*/client.json lists this customer ID, so nobody owns its access review.
+- Recommended action: Identify the owner. Add accounts.google_ads_customer_id to the right client.json, or unlink the account from the agency MCC (with approval) if it no longer belongs in the book.
+
+### 7. [LOW] Account is not mapped to any client profile
+- Client: UNMAPPED
+- Account: 201-555-0150 Legacy - Oakline [CANCELED]
+- Why: No clients/*/client.json lists this customer ID, so nobody owns its access review.
+- Recommended action: Identify the owner. Add accounts.google_ads_customer_id to the right client.json, or unlink the account from the agency MCC (with approval) if it no longer belongs in the book.
+
+### 8. [LOW] Queries failed; this account was not audited
+- Client: UNMAPPED
+- Account: 201-555-0150 Legacy - Oakline [CANCELED]
+- error: customer_manager_link: authorization_error: CUSTOMER_NOT_ENABLED | customer_user_access: authorization_error: CUSTOMER_NOT_ENABLED | customer_user_access_invitation: authorization_error: CUSTOMER_NOT_ENABLED
+- Why: Absence of findings here is not evidence of safety. Errors are common on cancelled or closed accounts.
+- Recommended action: Re-run this account alone and read the error; fix credentials or access if it is not a closed account.
+
+### 9. [LOW] Unknown user jo.designer@outlook.example has READ_ONLY access
+- Client: Harbor & Vine (harbor-and-vine)
+- Account: 201-555-0101 Harbor & Vine - Search [ENABLED]
+- granted: 2025-06-01 16:20:00
+- inviter: marketing@harborandvine.com
+- role: READ_ONLY
+- user_email: jo.designer@outlook.example
+- user_id: 22
+- Why: Email is not on the allowlist and not on the client's own website domain.
+- Recommended action: Confirm with the account lead and client who this is. If unrecognized, remove the user in the UI (Admin > Access and security > Users) and ask the inviter how it was granted; if expected, add the email or domain to the allowlist.
+
+### 10. [LOW] Unknown manager 555-000-1234 in link history (CANCELED)
+- Client: Bright Dental Group (bright-dental)
+- Account: 201-555-0103 Bright Dental - Leads [ENABLED]
+- link_status: CANCELED
+- manager_id: 555-000-1234
+- manager_link_id: 400050
+- Why: Not live access. Attempt and teardown records still show who has tried to get in.
+- Recommended action: Read for patterns; no action unless the same ID appears elsewhere.
+
+### 11. [LOW] Admin dana@northwind-agency.example has no passkey enabled
+- Client: (agency login MCC)
+- Account: 100-000-0001 Northwind Agency MCC [ENABLED]
+- granted: 2024-03-02 11:30:00
+- inviter: ops@northwind-agency.example
+- role: ADMIN
+- user_email: dana@northwind-agency.example
+- user_id: 12
+- Why: Admin credentials are the known entry path for manager-link fraud.
+- Recommended action: Ask the user to enable a passkey or 2-step verification on their Google account.
+
+### 12. [LOW] Client profile points at an account outside this manager tree
+- Client: Fernwood Bakery (fernwood-bakery)
+- Account: 201-555-0177
+- Why: This run cannot see the account, so its access was not audited.
+- Recommended action: Check the customer ID in client.json, or run the audit from the manager that owns it.
+
+### 13. [INFO] Recent access grant: sam@northwind-agency.example (STANDARD), 12 days ago
+- Client: Summit Outdoor Co (summit-outdoor)
+- Account: 201-555-0102 Summit Outdoor - Main [ENABLED]
+- granted: 2026-09-08 15:00:00
+- inviter: ops@northwind-agency.example
+- role: STANDARD
+- user_email: sam@northwind-agency.example
+- user_id: 33
+- Why: Known user (allowlisted domain) but new within the 30-day window.
+- Recommended action: Confirm the grant matches an onboarding or staffing change.
+
+### 14. [INFO] Recent access grant: freelance.analyst@fastmail.example (READ_ONLY), 15 days ago
+- Client: Harbor & Vine (harbor-and-vine)
+- Account: 201-555-0101 Harbor & Vine - Search [ENABLED]
+- granted: 2026-09-05 08:00:00
+- inviter: ops@northwind-agency.example
+- role: READ_ONLY
+- user_email: freelance.analyst@fastmail.example
+- user_id: 23
+- Why: Known user (allowlisted email) but new within the 30-day window.
+- Recommended action: Confirm the grant matches an onboarding or staffing change.
+
+## Allowlisted managers with live links (re-audit on cadence)
+
+| Client | Account | Manager | Link ID | Status | Allowlist note |
+|---|---|---|---|---|---|
+| Harbor & Vine | 201-555-0101 | 300-000-0009 | 400180 | ACTIVE | Harbor & Vine parent company MCC (confirmed with client 2026-05) |
+
+Any removal of a link, user or invitation is a manual action in the Google Ads UI and needs explicit approval naming the client and the change. Client messages drafted from this report are drafts for the account lead.

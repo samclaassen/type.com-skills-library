@@ -1,0 +1,122 @@
+{
+  "_note": "FICTIONAL sample rubric for the bundled examples. Copy rubric_template.json for your own roles.",
+  "schema_version": 1,
+  "role_id": "finance-ops-analyst",
+  "role_title": "Finance Operations Analyst",
+  "version": "2026-09-15",
+  "status": "approved",
+  "approved_by": "Hiring manager, Finance (sample)",
+  "scale_labels": {
+    "1": "Does not meet the bar",
+    "2": "Partly meets the bar",
+    "3": "Meets the bar",
+    "4": "Exceeds the bar"
+  },
+  "competencies": [
+    {
+      "id": "reconciliation",
+      "name": "Reconciliation & accuracy",
+      "definition": "Finds, explains and resolves differences between ledgers, bank data and subledgers, and prevents repeats.",
+      "must_have": true,
+      "anchors": {
+        "1": "Describes reconciliations only in general terms; cannot explain how a specific difference was found or resolved.",
+        "2": "Walks through a reconciliation they ran, but relied on others to investigate differences or did not follow up on root cause.",
+        "3": "Gives a specific example of finding, explaining and clearing a difference, with the checks they used and the outcome.",
+        "4": "As 3, and changed a process or control so the same class of difference stopped recurring, with a measurable result."
+      }
+    },
+    {
+      "id": "close_process",
+      "name": "Month-end close ownership",
+      "definition": "Plans and delivers their part of the close on time, tracks dependencies and escalates early.",
+      "must_have": true,
+      "anchors": {
+        "1": "No example of owning close tasks or deadlines.",
+        "2": "Completed assigned close tasks; little evidence of planning ahead or managing dependencies.",
+        "3": "Owned a defined part of the close end to end, kept a checklist or calendar, and escalated a risk before it slipped.",
+        "4": "Shortened or de-risked the close for the team (e.g. moved work earlier, automated a step) and can say by how much."
+      }
+    },
+    {
+      "id": "systems_data",
+      "name": "Systems & spreadsheet fluency",
+      "definition": "Uses the ERP, bank exports and spreadsheets accurately, and builds work others can check and reuse.",
+      "must_have": false,
+      "anchors": {
+        "1": "Cannot describe how they built or checked a working file or report.",
+        "2": "Uses standard functions and exports with guidance; files are hard for others to follow.",
+        "3": "Builds clear, checkable workbooks or reports (lookups, pivots, tie-outs) and explains how they validate them.",
+        "4": "Built a reusable tool, template or system integration that others adopted, with checks built in."
+      }
+    },
+    {
+      "id": "stakeholder_comms",
+      "name": "Stakeholder communication",
+      "definition": "Explains finance issues clearly to non-finance colleagues and gets what is needed from them on time.",
+      "must_have": true,
+      "anchors": {
+        "1": "Examples show unclear requests or no follow-through with other teams.",
+        "2": "Communicates when asked; relies on the manager to chase or explain to other teams.",
+        "3": "Gives an example of explaining a finance issue to a non-finance colleague and agreeing a next step that happened.",
+        "4": "As 3, and changed how another team works with finance (e.g. a new intake form or SLA) with a visible result."
+      }
+    },
+    {
+      "id": "process_improvement",
+      "name": "Process improvement",
+      "definition": "Spots manual or error-prone steps and improves them, measuring the effect.",
+      "must_have": false,
+      "anchors": {
+        "1": "No example of improving a process.",
+        "2": "Suggested an improvement but did not implement it or measure it.",
+        "3": "Implemented an improvement to a finance process and can describe the before and after.",
+        "4": "Led an improvement across teams or systems with a measured saving in time or errors."
+      }
+    },
+    {
+      "id": "collaboration",
+      "name": "Collaboration & feedback",
+      "definition": "Shares work openly, asks for and acts on feedback, and helps teammates hit shared deadlines.",
+      "must_have": false,
+      "anchors": {
+        "1": "Examples show working in isolation or dismissing feedback.",
+        "2": "Accepts feedback when given; few examples of helping others.",
+        "3": "Gives a specific example of asking for feedback, acting on it, and helping a teammate meet a deadline.",
+        "4": "As 3, and set up a habit or practice that improved how the team shares work or feedback."
+      }
+    }
+  ],
+  "interview_plan": [
+    {
+      "stage_id": "hiring-manager",
+      "stage_name": "Hiring manager interview",
+      "competencies": ["reconciliation", "stakeholder_comms", "collaboration"],
+      "questions": [
+        {"id": "hm-1", "competency": "reconciliation", "text": "Tell me about a reconciliation difference you found that took real digging. How did you find the cause?"},
+        {"id": "hm-2", "competency": "reconciliation", "text": "What did you change afterwards so it didn't happen again?"},
+        {"id": "hm-3", "competency": "stakeholder_comms", "text": "Describe a time you had to explain a finance problem to someone outside finance. What happened next?"},
+        {"id": "hm-4", "competency": "collaboration", "text": "Tell me about feedback you got on your work and what you did with it."}
+      ]
+    },
+    {
+      "stage_id": "peer",
+      "stage_name": "Peer interview",
+      "competencies": ["close_process", "systems_data", "collaboration"],
+      "questions": [
+        {"id": "peer-1", "competency": "close_process", "text": "Walk me through the part of the month-end close you owned. How did you keep it on track?"},
+        {"id": "peer-2", "competency": "systems_data", "text": "Show or describe a workbook or report you built. How would someone else check it?"},
+        {"id": "peer-3", "competency": "collaboration", "text": "Tell me about a time you helped a teammate hit a deadline."}
+      ]
+    },
+    {
+      "stage_id": "case",
+      "stage_name": "Case study",
+      "competencies": ["reconciliation", "systems_data", "process_improvement"],
+      "questions": [
+        {"id": "case-1", "competency": "reconciliation", "text": "Here is a bank-to-ledger tie-out that is off. Talk me through how you would find the difference."},
+        {"id": "case-2", "competency": "systems_data", "text": "How would you set this file up so next month's tie-out is faster?"},
+        {"id": "case-3", "competency": "process_improvement", "text": "Which manual step in this process would you remove first, and how would you know it worked?"}
+      ]
+    }
+  ]
+}

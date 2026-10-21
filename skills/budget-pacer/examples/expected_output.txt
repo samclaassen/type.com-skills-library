@@ -1,0 +1,73 @@
+# Budget pacing — September 2026, as of 2026-09-18
+
+Day 18 of 30 (60.0% elapsed, 12 days remaining) | 4 clients | $94,000 committed | $59,806 spent | projected $100,027 (+6.4%)
+
+Run rate is the trailing 7-day average (2026-09-12 to 2026-09-18). Tolerance is 5.0% of the committed total.
+
+## Client pacing
+
+| Client | Committed | Spent | % delivered | Expected to date | Run rate/day | Projected | Variance | Status |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | --- |
+| Harbor & Vine | $9,000 | $9,491 | 105.5% | $5,400 | $539.63 | $15,967 | +$6,967 (+77.4%) | OVER |
+| Pinecrest Home Goods | $30,000 | $20,151 | 67.2% | $18,000 | $1,192.75 | $34,464 | +$4,464 (+14.9%) | OVER |
+| Solstice Athletics | $43,000 | $25,691 | 59.7% | $25,800 | $1,399.91 | $42,490 | -$510 (-1.2%) | ON PACE |
+| Verity Legal Group | $12,000 | $4,473 | 37.3% | $7,200 | $219.45 | $7,107 | -$4,893 (-40.8%) | UNDER |
+| **Total** | **$94,000** | **$59,806** | **63.6%** | **$56,400** | **$3,351.73** | **$100,027** | **+$6,027** (**+6.4%**) | |
+
+## Recommended daily budgets
+
+### Harbor & Vine
+
+| Campaign | Channel | Current/day | Recommended/day | Change | Bound |
+| --- | --- | ---: | ---: | ---: | --- |
+| HV_Meta_Prospecting | Meta Ads | $420.00 | $100.00 | -$320 (-76.2%) | at min |
+| HV_Search_Brand | Google Search | $115.00 | $50.00 | -$65 (-56.5%) | at min |
+| **Total** | | **$535.00** | **$150.00** | **-$385** | |
+
+Reconciliation: $9,491.20 spent + $150.00/day x 12 days = $11,291.20 against $9,000.00 committed (+$2,291.20). See the actions below: this client cannot be reconciled by budget changes alone.
+
+### Pinecrest Home Goods
+
+| Campaign | Channel | Current/day | Recommended/day | Change | Bound |
+| --- | --- | ---: | ---: | ---: | --- |
+| PC_Display_Retarget | Google Display | $100.00 | $80.00 | -$20 (-20.0%) | at min |
+| PC_Search_Brand | Google Search | $250.00 | $176.38 | -$74 (-29.4%) | — |
+| PC_Search_NonBrand | Google Search | $500.00 | $352.75 | -$147 (-29.5%) | — |
+| PC_Shopping_Core | Google Shopping | $300.00 | $211.65 | -$88 (-29.5%) | — |
+| **Total** | | **$1,150.00** | **$820.78** | **-$329** | |
+
+Reconciliation: $20,150.62 spent + $820.78/day x 12 days = $29,999.98 against $30,000.00 committed (-$0.02). Daily budgets are set in whole cents, so the remainder never lands on exactly zero.
+
+### Solstice Athletics
+
+| Campaign | Channel | Current/day | Recommended/day | Change | Bound |
+| --- | --- | ---: | ---: | ---: | --- |
+| SA_Meta_Prospecting | Meta Ads | $800.00 | $764.19 | -$36 (-4.5%) | — |
+| SA_Meta_Retargeting | Meta Ads | $350.00 | $334.33 | -$16 (-4.5%) | — |
+| SA_Search_Brand | Google Search | $60.00 | $57.31 | -$3 (-4.5%) | — |
+| SA_TikTok_Prospecting | TikTok Ads | $300.00 | $286.57 | -$13 (-4.5%) | — |
+| **Total** | | **$1,510.00** | **$1,442.40** | **-$68** | |
+
+Reconciliation: $25,691.18 spent + $1,442.40/day x 12 days = $42,999.98 against $43,000.00 committed (-$0.02). Daily budgets are set in whole cents, so the remainder never lands on exactly zero.
+
+### Verity Legal Group
+
+| Campaign | Channel | Current/day | Recommended/day | Change | Bound |
+| --- | --- | ---: | ---: | ---: | --- |
+| VL_LinkedIn_Leadgen | LinkedIn Ads | $100.00 | $200.00 | +$100 (+100.0%) | at max |
+| VL_Search_Core | Google Search | $200.00 | $350.00 | +$150 (+75.0%) | at max |
+| **Total** | | **$300.00** | **$550.00** | **+$250** | |
+
+Reconciliation: $4,473.14 spent + $550.00/day x 12 days = $11,073.14 against $12,000.00 committed (-$926.86). See the actions below: this client cannot be reconciled by budget changes alone.
+
+## Actions
+
+- Harbor & Vine: the commitment is exhausted — $9,491 spent against $9,000 committed, with 12 days still to run. Campaign minimums total $150.00/day, so pausing is the only lever that stops a further $1,800 of overspend.
+- Verity Legal Group: cannot reconcile. Hitting $12,000 needs $627.24/day but every campaign is already at its maximum, totalling $550.00/day — a shortfall of $77.24/day ($927 over the remaining days). Raise the caps, add a campaign, or agree a reduced commitment now rather than at month end.
+- Pinecrest Home Goods: projected $34,464 against $30,000 committed (+14.9%). Cut the daily total from $1,150.00 to $820.78 to land on the commitment.
+- Solstice Athletics: on pace at -1.2%, inside the 5.0% tolerance. Hold budgets; the recommended daily total of $1,442.40 is a minor trim, not a required change.
+
+## Notes
+
+- Wexford Interiors has a $5,000 commitment but no campaigns in the campaigns file; it is excluded from the totals.
+- Solstice Athletics / SA_Display_Legacy is paused and excluded from the reallocation.

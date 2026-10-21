@@ -1,0 +1,16 @@
+{
+  "newsletter_name": "",
+  "voice_file": "",
+  "from_name": "",
+  "audience": "",
+  "sections": 3,
+  "max_word_count": 600,
+  "cta_type": "",
+  "subject_line_count": 3,
+  "format": "html",
+  "past_issues": "",
+  "allow_emoji": false,
+  "extra_banned_phrases": [],
+  "extra_acronyms": [],
+  "brand": {}
+}

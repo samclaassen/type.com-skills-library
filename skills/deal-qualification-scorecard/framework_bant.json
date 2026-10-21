@@ -1,0 +1,109 @@
+{
+ "schema_version": 1,
+ "key": "bant",
+ "name": "BANT",
+ "elements": [
+  {
+   "key": "budget",
+   "short": "B",
+   "label": "Budget",
+   "description": "Money set aside for this, and whether it is approved.",
+   "parts": [
+    {
+     "key": "amount",
+     "label": "Budget amount or range",
+     "question": "What range have you set aside for this, per year?"
+    },
+    {
+     "key": "approved",
+     "label": "Budget approved",
+     "question": "Is that budget approved, or does it still need sign-off? By whom?"
+    }
+   ],
+   "topics": [
+    "Budget"
+   ]
+  },
+  {
+   "key": "authority",
+   "short": "A",
+   "label": "Authority",
+   "description": "Who makes the decision, and whether they are involved.",
+   "parts": [
+    {
+     "key": "decision_maker",
+     "label": "Decision maker named",
+     "question": "Who makes the final call on this?"
+    },
+    {
+     "key": "involved",
+     "label": "Decision maker involved",
+     "question": "How should we involve them before you decide?"
+    }
+   ],
+   "topics": [
+    "Decision maker"
+   ]
+  },
+  {
+   "key": "need",
+   "short": "N",
+   "label": "Need",
+   "description": "The problem in the customer's words, and its priority.",
+   "parts": [
+    {
+     "key": "problem",
+     "label": "Problem in their words",
+     "question": "What problem are you trying to solve, in your own words?"
+    },
+    {
+     "key": "priority",
+     "label": "Priority against other work",
+     "question": "Where does this sit against the other projects on your list?"
+    }
+   ],
+   "topics": []
+  },
+  {
+   "key": "timeline",
+   "short": "T",
+   "label": "Timeline",
+   "description": "When they decide or go live, and what drives that date.",
+   "parts": [
+    {
+     "key": "date",
+     "label": "Decision or go-live date",
+     "question": "When do you need this decided, and when live?"
+    },
+    {
+     "key": "driver",
+     "label": "What drives the date",
+     "question": "What is driving that date?"
+    }
+   ],
+   "topics": [
+    "Decision date"
+   ]
+  }
+ ],
+ "crm_fields": [
+  {
+   "field": "amount",
+   "label": "Amount",
+   "element": "budget",
+   "topic": "Budget"
+  },
+  {
+   "field": "economic_buyer",
+   "label": "Economic buyer",
+   "element": "authority",
+   "topic": "Decision maker"
+  },
+  {
+   "field": "close_date",
+   "label": "Close date",
+   "element": "timeline",
+   "topic": "Decision date"
+  }
+ ]
+}

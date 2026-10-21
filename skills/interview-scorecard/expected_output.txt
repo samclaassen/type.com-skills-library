@@ -1,0 +1,125 @@
+=== 1. Check the role's rubric before scoring anything ===
+Rubric sample_rubric_finance_ops_analyst.json: Finance Operations Analyst (finance-ops-analyst) v2026-09-15 — approved by Hiring manager, Finance \(sample\).
+6 competencies (3 must-have), each with 1–4 behavioural anchors.
+- Hiring manager interview: Reconciliation &amp; accuracy, Stakeholder communication, Collaboration &amp; feedback (4 planned question(s))
+- Peer interview: Month-end close ownership, Systems &amp; spreadsheet fluency, Collaboration &amp; feedback (3 planned question(s))
+- Case study: Reconciliation &amp; accuracy, Systems &amp; spreadsheet fluency, Process improvement (3 planned question(s))
+
+=== 2. Scheduled run after the hiring-manager interview: draft scorecard (logged as pending) ===
+## Interview scorecard (DRAFT): Jordan R. — Finance Operations Analyst
+
+_Draft for Amara O. to review. Work observations use a fixed vocabulary and link to their source. Ratings are entered by the interviewer; the script does not score unvalidated prose. Whether to hire is the interviewer's and panel's call._
+
+**Interview:** Hiring manager interview · Amara O. (Hiring manager) · Tue Sep 29, 2026 · [meeting notes](https://notes.granola.ai/d/sample-hm-0142)
+**Rubric:** finance-ops-analyst v2026-09-15 (approved by Hiring manager, Finance \(sample\)) · scale 1–4 · ★ = must-have
+
+**Summary** — 2 of 3 competencies in this stage's plan have structured observations; 0 interviewer rating(s). Not assessed: Stakeholder communication (must-have). Score withdrawn: Reconciliation &amp; accuracy (must-have), Collaboration &amp; feedback. 1 planned question(s) not asked; 3 review flag(s); 2 score(s) withdrawn.
+
+| Competency | Interviewer rating | Work observations |
+|---|---|---|
+| Reconciliation &amp; accuracy ★ | Awaiting interviewer rating | 2 quotes, 1 note |
+| Stakeholder communication ★ | No evidence — not assessed | — |
+| Collaboration &amp; feedback | Awaiting interviewer rating | 1 quote |
+
+Owned by other stages (not expected here): Month-end close ownership (Peer interview), Systems &amp; spreadsheet fluency (Peer interview, Case study), Process improvement (Case study).
+
+### Reconciliation &amp; accuracy (must-have)
+**Awaiting interviewer rating.** The script does not turn extracted prose into a numeric rating. Review the linked observations against the rubric and enter your own rating.
+Evidence:
+- Observation 1: Reconciled bank reconciliation; result: corrected. (transcript quote source row 1, [review meeting](https://notes.granola.ai/d/sample-hm-0142))
+- Observation 2: Implemented a reconciliation control; result: validated. (transcript quote source row 2, [review meeting](https://notes.granola.ai/d/sample-hm-0142))
+- Observation 3: Reconciled bank reconciliation; result: corrected. (interviewer note source row 3, [review meeting](https://notes.granola.ai/d/sample-hm-0142))
+
+### Stakeholder communication (must-have)
+**No evidence — not assessed.** Absence of evidence is not evidence of a weakness.
+
+### Collaboration &amp; feedback
+**Awaiting interviewer rating.** The script does not turn extracted prose into a numeric rating. Review the linked observations against the rubric and enter your own rating.
+Evidence:
+- Observation 4: Revised a feedback plan; result: documented. (transcript quote source row 4, [review meeting](https://notes.granola.ai/d/sample-hm-0142))
+
+### Gaps to probe next round
+1. Stakeholder communication (must-have) — not assessed. Planned question: “Describe a time you had to explain a finance problem to someone outside finance. What happened next?”
+2. Reconciliation &amp; accuracy (must-have) — score withdrawn. Planned question: “Here is a bank-to-ledger tie-out that is off. Talk me through how you would find the difference.”
+3. Collaboration &amp; feedback — score withdrawn. Planned question: “Tell me about a time you helped a teammate hit a deadline.”
+
+### Planned questions not asked
+- hm-3 (Stakeholder communication): “Describe a time you had to explain a finance problem to someone outside finance. What happened next?”
+
+### Fairness & compliance
+- Recording/transcription disclosure confirmed for every interview used.
+- ⚠️ A source item for Collaboration &amp; feedback has no structured observation and was not exported. Its text stays in the source; the reviewer may extract a supported work observation.
+- ⚠️ A free-text gap note for Collaboration &amp; feedback was not exported. Use the rubric's planned questions for follow-up.
+- ⚠️ A question in this interview touched on pregnancy, family, caregiving or marital status ([source](https://notes.granola.ai/d/sample-hm-0142)). This may be unlawful to ask. The candidate's answer is not recorded and must not be considered. Raise it with the recruiting lead or HR.
+
+Sources: Notes: Granola ✓ · Transcript: Granola ✓ · ATS: not configured
+Gaps: none.
+Prepared 2026-09-29 from 1 interview note(s).
+_Data handling: This draft exports controlled work observations; it does not verify that source material is accurate or job-related. The interviewer must review every source link. Delete the working bundle and any transcript copies once the scorecard is filed; keep the filed scorecard only as long as your hiring-records policy says. Candidates may ask to see or delete their data under applicable privacy law; route those requests to your recruiting lead._
+
+=== 3. The draft reached the interviewer privately: confirm delivery ===
+Confirmed: single:finance-ops-analyst:sample-hm-0142 marked delivered. Scheduled runs will skip it.
+
+=== 4. Next scheduled run: the same interview was already delivered ===
+Skipped: already delivered single:finance-ops-analyst:sample-hm-0142 (drafted 2026-09-29).
+
+=== 5. Panel debrief: all three interviewers have filed their scores ===
+## Panel debrief (DRAFT): Jordan R. — Finance Operations Analyst
+
+_Draft for the hiring panel. Every interviewer has filed (confirmed) their own scores, so this can be shared with the panel. Each column is one interviewer's filed scores. The hire/no-hire decision is the panel's. Read the scores before discussing, so nobody anchors on the first opinion voiced._
+
+**Rubric:** finance-ops-analyst v2026-09-15 (approved by Hiring manager, Finance \(sample\)) · scale 1–4 · ★ = must-have · — = in this interviewer's stage but no evidence (not assessed) · n/a = not in this interviewer's stage
+**Interviews:** Hiring manager interview — Amara O. (Hiring manager) · Tue Sep 29, 2026 · [meeting notes](https://notes.granola.ai/d/sample-hm-0142); Peer interview — Theo K. (Senior accountant) · Thu Oct 1, 2026 · [meeting notes](https://notes.granola.ai/d/sample-peer-0142); Case study — Lena V. (Controller) · Fri Oct 2, 2026 · [meeting notes](https://notes.granola.ai/d/sample-case-0142)
+
+**Summary** — 3 interview(s); 4 of 6 competencies assessed by at least one interviewer. Disagreement on Systems &amp; spreadsheet fluency. Nobody assessed Stakeholder communication (must-have), Process improvement.
+
+| Competency | Amara O. (Hiring manager interview) | Theo K. (Peer interview) | Lena V. (Case study) | Spread | Flag |
+|---|---|---|---|---|---|
+| Reconciliation &amp; accuracy ★ | 4 | n/a | 3 | 1 |  |
+| Month-end close ownership ★ | n/a | 3 | n/a |  |  |
+| Systems &amp; spreadsheet fluency | n/a | 4 | 2 | 2 | ⚠️ Disagreement |
+| Stakeholder communication ★ | — | n/a | n/a |  | ⚠️ Nobody assessed (must-have) |
+| Process improvement | n/a | n/a | — |  | ⚠️ Nobody assessed |
+| Collaboration &amp; feedback | 2 | 3 | n/a | 1 |  |
+
+### Discuss first: disagreements
+**Systems &amp; spreadsheet fluency** — spread 2 (threshold 2).
+- Theo K.: 4 — Exceeds the bar. Interviewer-entered rating linked to observations 2. Review the original source and rubric before filing.
+  - Observation 2: Designed data validation; result: proposed. (transcript quote source row 2, [review meeting](https://notes.granola.ai/d/sample-peer-0142))
+- Lena V.: 2 — Partly meets the bar. Interviewer-entered rating linked to observations 2. Review the original source and rubric before filing. ⚠️ AI summary only.
+  - Observation 2: Designed data validation; result: proposed. (AI summary source row 2, [review meeting](https://notes.granola.ai/d/sample-case-0142))
+
+### Not covered by anyone
+- Stakeholder communication (must-have) — no interviewer scored it. Suggested follow-up question: “Describe a time you had to explain a finance problem to someone outside finance. What happened next?”
+- Process improvement — no interviewer scored it. Suggested follow-up question: “Which manual step in this process would you remove first, and how would you know it worked?”
+
+### Evidence by competency
+**Reconciliation &amp; accuracy**
+- Amara O.: 4 — Exceeds the bar. Interviewer-entered rating linked to observations 1, 2. Review the original source and rubric before filing.
+  - Observation 1: Reconciled bank reconciliation; result: corrected. (transcript quote source row 1, [review meeting](https://notes.granola.ai/d/sample-hm-0142))
+- Lena V.: 3 — Meets the bar. Interviewer-entered rating linked to observations 1. Review the original source and rubric before filing.
+  - Observation 1: Reconciled bank reconciliation; result: corrected. (interviewer note source row 1, [review meeting](https://notes.granola.ai/d/sample-case-0142))
+**Month-end close ownership**
+- Theo K.: 3 — Meets the bar. Interviewer-entered rating linked to observations 1. Review the original source and rubric before filing.
+  - Observation 1: Coordinated the close checklist; result: completed. (transcript quote source row 1, [review meeting](https://notes.granola.ai/d/sample-peer-0142))
+**Collaboration &amp; feedback**
+- Amara O.: 2 — Partly meets the bar. Interviewer-entered rating linked to observations 3. Review the original source and rubric before filing.
+  - Observation 3: Revised a feedback plan; result: documented. (transcript quote source row 3, [review meeting](https://notes.granola.ai/d/sample-hm-0142))
+- Theo K.: 3 — Meets the bar. Interviewer-entered rating linked to observations 3. Review the original source and rubric before filing.
+  - Observation 3: Revised a feedback plan; result: documented. (interviewer note source row 3, [review meeting](https://notes.granola.ai/d/sample-peer-0142))
+
+### Gaps to probe and questions not asked
+- Amara O.: Stakeholder communication was in this stage's plan but not assessed.
+- Amara O.: planned question hm-3 not asked — “Describe a time you had to explain a finance problem to someone outside finance. What happened next?”
+- Lena V.: Process improvement was in this stage's plan but not assessed.
+- Lena V.: planned question case-3 not asked — “Which manual step in this process would you remove first, and how would you know it worked?”
+
+### Fairness & compliance
+- Recording/transcription disclosure confirmed for every interview used.
+- ⚠️ Amara O.'s interview: A question in this interview touched on pregnancy, family, caregiving or marital status ([source](https://notes.granola.ai/d/sample-hm-0142)). This may be unlawful to ask. The candidate's answer is not recorded and must not be considered. Raise it with the recruiting lead or HR.
+- ⚠️ Lena V.'s interview: A free-text gap note for Process improvement was not exported. Use the rubric's planned questions for follow-up.
+
+Sources: Notes: Granola ✓ · Transcript: Granola ✓ · ATS: not configured
+Gaps: transcript denied for Lena V.'s interview (Fri Oct 2, 2026).
+Prepared 2026-10-02 from 3 interview note(s).
+_Data handling: This draft exports controlled work observations; it does not verify that source material is accurate or job-related. The interviewer must review every source link. Delete the working bundle and any transcript copies once the scorecard is filed; keep the filed scorecard only as long as your hiring-records policy says. Candidates may ask to see or delete their data under applicable privacy law; route those requests to your recruiting lead._

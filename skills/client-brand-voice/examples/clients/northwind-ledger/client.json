@@ -1,0 +1,7 @@
+{
+  "name": "Northwind Ledger",
+  "website": "https://northwindledger.example",
+  "industry": "b2b",
+  "goals": ["Increase demo requests from finance teams at 50-500 person companies"],
+  "notes": "Synthetic example client. Accounting software for mid-market finance teams."
+}
